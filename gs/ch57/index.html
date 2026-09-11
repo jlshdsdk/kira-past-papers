@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 57</div>
 <h1 class="title">考点 57　三重积分(仅数一）</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：— · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：— · 解析完成 3/3　</div>
 
   <div class="card q" id="k57_T1">
     <div class="qhead"><span class="qno">k57_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k57_T1_0.png" alt="k57_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k57_T1_1.png" alt="k57_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k57_T1_2.png" alt="k57_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{1}{4}$</div>
         <div class="steps"><p>Ω 关于轮换对称：∭x dV=∭y dV=∭z dV，故原积分=6∭_Ω z dV。<br>截面法（垂直 z 轴）：z∈[0,1]，截面为直角边长 1-z 的直角三角形，面积 (1-z)²/2。<br>$$\iiint_\Omega z\,\mathrm{d}V=\int_0^1 z\cdot\frac{(1-z)^2}{2}\,\mathrm{d}z=\frac12\left(\frac12-\frac23+\frac14\right)=\frac12\cdot\frac{1}{12}=\frac{1}{24}.$$<br>原积分=6×1/24=1/4。</p></div>
@@ -60,10 +60,11 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k57_T2_0.png" alt="k57_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{重心在 }P_0\text{ 与球心连线上、距球心 }\frac{5R}{12}\text{ 处（}P_0\text{ 的对侧）}$</div>
-        <div class="steps"><p>以球心为原点，P₀=(0,0,R)：ρ=k[x²+y²+(z-R)²]=k(r²-2Rrcosφ+R²)。<br>密度关于平面 x=0、y=0 对称 ⟹ x̄=ȳ=0。<br>质量：cosφ 项积分为 ∫₀^π sinφcosφdφ=0，<br>$$M=2\pi k\int_0^R\left(2r^4+2R^2r^2\right)\mathrm{d}r=2\pi k\left(\frac{2R^5}{5}+\frac{2R^5}{3}\right)=\frac{32\pi kR^5}{15}.$$<br>$$M_z=\iiint z\rho\,\mathrm{d}V=2\pi k\int_0^R\left[r^3\!\!\int_0^\pi\!\sin\varphi\cos\varphi\,\mathrm{d}\varphi-2Rr^2\!\!\int_0^\pi\!\sin\varphi\cos^2\varphi\,\mathrm{d}\varphi+R^2r\!\!\int_0^\pi\!\cos\varphi\sin\varphi\,\mathrm{d}\varphi\right]\mathrm{d}r,$$<br>其中 ∫₀^π sinφcosφdφ=0，∫₀^π sinφcos²φdφ=2/3，故<br>$$M_z=2\pi k\left(-2R\cdot\frac23\cdot\frac{R^3}{3}\right)=-\frac{8\pi kR^4}{9}.$$<br>$$\bar z=\frac{M_z}{M}=-\frac{8\pi kR^4/9}{32\pi kR^5/15}=-\frac{5R}{12}.$$<br>即重心在 P₀ 与球心连线上、球心背离 P₀ 一侧、距球心 5R/12 处（密度在远离 P₀ 处大，结果方向合理）。</p></div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \bar{z}=-\frac{R}{4}，重心在P_0与球心连线上、位于P_0对侧、距球心\frac{R}{4}处$</div>
+        <div class="steps"><p>以球心为原点，P₀=(0,0,R)：ρ=k[x²+y²+(z-R)²]=k(r²-2Rrcosφ+R²)。<br>密度关于平面 x=0、y=0 对称 ⟹ x̄=ȳ=0。<br>质量：cosφ 项积分为 ∫₀^π sinφcosφdφ=0，<br>$$M=2\pi k\int_0^R\left(2r^4+2R^2r^2\right)\mathrm{d}r=2\pi k\left(\frac{2R^5}{5}+\frac{2R^5}{3}\right)=\frac{32\pi kR^5}{15}.$$<br>$$M_z=\iiint z\rho\,\mathrm{d}V=2\pi k\int_0^R\left[r^3\!\!\int_0^\pi\!\sin\varphi\cos\varphi\,\mathrm{d}\varphi-2Rr^2\!\!\int_0^\pi\!\sin\varphi\cos^2\varphi\,\mathrm{d}\varphi+R^2r\!\!\int_0^\pi\!\cos\varphi\sin\varphi\,\mathrm{d}\varphi\right]\mathrm{d}r,$$<br>其中 ∫₀^π sinφcosφdφ=0，∫₀^π sinφcos²φdφ=2/3，故<br>$$M_z=2\pi k\left(-2R\cdot\frac23\cdot\frac{R^3}{3}\right)=-\frac{8\pi kR^4}{9}.$$<br>$$\bar z=\frac{M_z}{M}=-\frac{8\pi kR^4/9}{32\pi kR^5/15}=-\frac{5R}{12}.$$<br>即重心在 P₀ 与球心连线上、球心背离 P₀ 一侧、距球心 5R/12 处（密度在远离 P₀ 处大，结果方向合理）。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：由\rho=k(r^2-2Rz+R^2)得M_z=-2Rk\iiint z^2dV=-\frac{8\pi kR^6}{15}，M=\frac{32\pi kR^5}{15}，故\bar{z}=-R/4；solver球坐标积分中r的幂次出错才得5R/12</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -75,7 +76,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k57_T3_0.png" alt="k57_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{2}{3}$</div>
         <div class="steps"><p>V=∫₀¹ πz dz=π/2；∭z dV=∫₀¹ z·πz dz=π/3。<br>z̄=(π/3)/(π/2)=2/3。</p></div>

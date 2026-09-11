@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">概率论与数理统计</a> / 考点 39</div>
 <h1 class="title">考点 39　数学期望</h1>
-<div class="sub">题组 9 · 覆盖年份 — · 题型：— · 解析完成 0/9　</div>
+<div class="sub">题组 9 · 覆盖年份 — · 题型：— · 解析完成 9/9　</div>
 
   <div class="card q" id="k39_T1">
     <div class="qhead"><span class="qno">k39_T1</span>
@@ -25,13 +25,14 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T1_0.png" alt="k39_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle EY = 0$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle EY=0$</div>
         <div class="steps"><p>由行列式定义 $Y=\sum_{\sigma}\operatorname{sgn}(\sigma)\prod_{i=1}^{n}X_{i\sigma(i)}$，利用期望的线性与独立性：</p>
 <p>$$EY=\sum_{\sigma}\operatorname{sgn}(\sigma)\prod_{i=1}^{n}EX_{i\sigma(i)}=2^n\sum_{\sigma}\operatorname{sgn}(\sigma).$$</p>
 <p>当 $n\ge 2$ 时奇、偶排列个数相等，$\sum_{\sigma}\operatorname{sgn}(\sigma)=0$，故 $EY=0$。</p>
-<p>也可按第一列展开验证：每个余子式的期望是元素全为 2 的 $n-1$ 阶行列式；$n=2$ 时 $E(X_{11}X_{22}-X_{12}X_{21})=2\cdot2-2\cdot2=0$；$n&gt;2$ 时全 2 阵行列式为 0。结论一致。</p></div>
+<p>也可按第一列展开验证：每个余子式的期望是元素全为 2 的 $n-1$ 阶行列式；$n=2$ 时 $E(X_{11}X_{22}-X_{12}X_{21})=2\cdot2-2\cdot2=0$；$n&gt;2$ 时全 2 阵行列式为 0。结论一致。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 漏掉行列式每项的符号 sgn(σ)：EY=\sum_\sigma \mathrm{sgn}(\sigma)\cdot 2^n=2^n\sum_\sigma\mathrm{sgn}(\sigma)=0（n≥2 时奇偶排列各半），亦即 EY=\det(EX_{ij})=全2矩阵行列式=0；B 的 n!\cdot 2^n 错，solver、A 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (B) EUV = EX\cdot EY$</div>
@@ -48,7 +49,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T2_0.png" alt="k39_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P{X=0}=27/125, P{X=1}=54/125, P{X=2}=36/125, P{X=3}=8/125; F(x)=0 (x<0), 27/125 (0<=x<1), 81/125 (1<=x<2), 117/125 (2<=x<3), 1 (x>=3); E(X)=6/5$</div>
         <div class="steps"><p>$X\sim B\left(3,\frac25\right)$，$P\{X=k\}=C_3^k\left(\frac25\right)^k\left(\frac35\right)^{3-k}$：</p>
@@ -76,7 +77,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T3_0.png" alt="k39_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \mu = 11 - \frac{1}{2}\ln\frac{25}{21} \approx 10.91$</div>
         <div class="steps"><p>记 $\Phi,\varphi$ 为标准正态的分布函数与密度，$X\sim N(\mu,1)$：</p>
@@ -98,7 +99,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T4_0.png" alt="k39_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T4_1.png" alt="k39_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P(X=i,Y=i)=1/9 (i=1,2,3); P(X=2,Y=1)=P(X=3,Y=1)=P(X=3,Y=2)=2/9; 其余 P(X=i,Y=j)=0 (i<j)$</div>
         <div class="steps"><p>逐点枚举 $\xi,\eta$ 的 9 个等可能独立组合：</p>
@@ -108,19 +109,21 @@
 <p>合计 $\frac19+\frac29+\frac29+\frac19+\frac29+\frac29+\frac19=1$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle E(X) = 22/9$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle E(X)=\frac{22}{9}$</div>
         <div class="steps"><p>由联合分布律得 $X$ 的边缘分布：</p>
 <p>$$P(X=1)=\frac19,\quad P(X=2)=\frac29+\frac19=\frac39=\frac13,\quad P(X=3)=\frac29+\frac29+\frac19=\frac59.$$</p>
-<p>$$E(X)=1\cdot\frac19+2\cdot\frac39+3\cdot\frac59=\frac{1+6+15}{9}=\frac{22}{9}.$$</p></div>
+<p>$$E(X)=1\cdot\frac19+2\cdot\frac39+3\cdot\frac59=\frac{1+6+15}{9}=\frac{22}{9}.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 答非所问（错位）：本问是 1996 数一求 max 的期望，B 在此位置答的是下一小问 2026 题的 E(XY)=4，未给出 EX；solver、A 一致正确（P{X=1,2,3}=1/9,3/9,5/9，EX=22/9）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle E(XY) = 4$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle E(XY)=4$</div>
         <div class="steps"><p>把 $Y$ 分解为 $Y=X+(Y-X)$。由 $E(Y)=3$（因 $Y\sim P(3)$），$E(X)=1$（因 $X\sim P(1)$）：</p>
 <p>$$E(Y-X)=E(Y)-E(X)=3-1=2.$$</p>
 <p>利用 $Y-X$ 与 $X$ 相互独立：</p>
 <p>$$E(XY)=E\left[X^2+X(Y-X)\right]=E(X^2)+E(X)\,E(Y-X).$$</p>
 <p>泊松分布 $P(1)$：$E(X^2)=\operatorname{Var}(X)+[E(X)]^2=1+1=2$。故</p>
-<p>$$E(XY)=2+1\times 2=4.$$</p></div>
+<p>$$E(XY)=2+1\times 2=4.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 本问未作答（null，其作答内容被错位记录到上一问，其中 E(XY)=EX^2+EX\cdot E(Y-X)=(1+1)+1\times 2=4 本身正确），无法三方比对；solver、A 的 4 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -132,7 +135,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T5_0.png" alt="k39_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T5_1.png" alt="k39_T5 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F_Y(y)=0 (y<0), 3y/4 (0<=y<1), 1/2+y/4 (1<=y<2), 1 (y>=2); EY = 3/4$</div>
         <div class="steps"><p>**(I)** 全概率公式：$F_Y(y)=P\{Y\le y\}=\frac12 P\{U(0,1)\le y\}+\frac12 P\{U(0,2)\le y\}$，其中 $U(0,i)$ 的分布函数为 $y/i$（$0&lt;y&lt;i$）：</p>
@@ -184,7 +187,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T6_0.png" alt="k39_T6 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T6_1.png" alt="k39_T6 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T6_2.png" alt="k39_T6 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle EZ = \frac{1}{a}\sqrt{\frac{\pi}{2}}$</div>
         <div class="steps"><p>$a&gt;0$。</p>
@@ -198,13 +201,14 @@
 <p>$$E\left(\frac{1}{X^2}\right)=\int_0^2 \frac{1}{x^2}\cdot\frac{3x^2}{8}\,dx=\int_0^2\frac38\,dx=\frac{3}{8}\times 2=\frac34.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 35/3 分钟 (约 11.67 分钟)$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle EW=\frac{35}{3}\ \text{分钟}\ (\approx 11.67)$</div>
         <div class="steps"><p>等候时间</p>
 <p>$$g(X)=\begin{cases}5-X, &amp; 0\le X\le 5,\\ 25-X, &amp; 5&lt;X\le 25,\\ 55-X, &amp; 25&lt;X\le 55,\\ 65-X, &amp; 55&lt;X\le 60.\end{cases}$$</p>
 <p>分段积分：</p>
 <p>$$\int_0^5(5-x)dx=12.5,\quad \int_5^{25}(25-x)dx=200,\quad \int_{25}^{55}(55-x)dx=450,\quad \int_{55}^{60}(65-x)dx=37.5.$$</p>
 <p>合计 700，由 $X\sim U[0,60]$：</p>
-<p>$$E(\text{等候})=\frac{1}{60}\times 700=\frac{35}{3}\approx 11.67\ (\text{分钟}).$$</p></div>
+<p>$$E(\text{等候})=\frac{1}{60}\times 700=\frac{35}{3}\approx 11.67\ (\text{分钟}).$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 第二段 \int_5^{25}(25-x)dx=200 误算成 100（该段是底20高20的三角形，得100），总数 600/60=10 错；正确 EW=(12.5+200+450+37.5)/60=700/60=35/3（1997 数三官方答案），solver、A 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) F(x)=e^x/(1+e^x); (II) f_Y(y)=1/(1+y)^2 (y>0), 其他 0; (III) 不存在$</div>
@@ -236,7 +240,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T7_0.png" alt="k39_T7 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T7_1.png" alt="k39_T7 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle E(XY) = 1$</div>
         <div class="steps"><p>$f(x,y)=e^{-x}\cdot e^{-y}$ 可分离，故 $X,Y$ 独立且都服从参数为 1 的指数分布，$EX=EY=1$。于是</p>
@@ -244,7 +248,7 @@
 <p>直接积分验证：$\displaystyle\int_0^{\infty}\int_0^{\infty}xy\,e^{-(x+y)}dxdy=\left(\int_0^{\infty}xe^{-x}dx\right)^2=1^2=1$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle E(T) = 42500/3 元 (约 14166.67 元)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle E(T)=\frac{42500}{3}\ \text{元}\ (\approx 14166.7)$</div>
         <div class="steps"><p>利润函数：售出 $\min(X,Y)$ 单位各获利 1000，超出部分 $(Y-X)^+$ 各获利 500：</p>
 <p>$$T=1000\min(X,Y)+500(Y-X)^+.$$</p>
 <p>**求 $E[\min(X,Y)]$**：$P\{\min&gt;t\}=P\{X&gt;t\}P\{Y&gt;t\}=\left(\frac{20-t}{10}\right)^2$（$10\le t\le 20$），</p>
@@ -253,7 +257,8 @@
 <p>$$E[(Y-X)^+]=\int_0^{10}u\cdot\frac{10-u}{100}du=\frac{1}{100}\left(500-\frac{1000}{3}\right)=\frac53.$$</p>
 <p>（校验：$E[\min]=E[X]-E[(X-Y)^+]=15-\frac53=\frac{40}{3}$，一致。）</p>
 <p>于是</p>
-<p>$$E(T)=1000\cdot\frac{40}{3}+500\cdot\frac53=\frac{40000+2500}{3}=\frac{42500}{3}\approx 14166.7\ (\text{元}).$$</p></div>
+<p>$$E(T)=1000\cdot\frac{40}{3}+500\cdot\frac53=\frac{40000+2500}{3}=\frac{42500}{3}\approx 14166.7\ (\text{元}).$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：Y&gt;X 时利润应为 1000X+500(Y-X)=500(X+Y)：A 误写成 500Y（漏掉 1000X 部分）得 32500/3；B 模型正确但结果 40000/3 算错（与其自给小数 14167 不符）；正确 ET=20000/3+7500=42500/3（1998 数三官方答案），solver 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) f_X(x)=1 (0<x<1); (II) f_Z(z)=2/(1+z)^2 (z>=1), 其他 0; (III) E(X/Y)=2\ln 2 - 1$</div>
@@ -276,7 +281,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.8）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T8_0.png" alt="k39_T8 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T8_1.png" alt="k39_T8 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 4$</div>
         <div class="steps"><p>$E(X)=\lambda=2$，由期望线性：$E(Z)=3E(X)-2=3\times2-2=4$。</p></div>
@@ -322,7 +327,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.9）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T9_0.png" alt="k39_T9 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \sqrt{2/\pi}$</div>
         <div class="steps"><p>$\xi-\eta\sim N(0,\sigma^2+\sigma^2)$，$\sigma^2=\dfrac12$，故 $\xi-\eta\sim N(0,1)$。</p>
