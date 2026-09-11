@@ -21,45 +21,146 @@
 
   <div class="card q" id="k40_T1">
     <div class="qhead"><span class="qno">k40_T1</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1991</span> <span class="badge year">1997</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.15.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k40_T1_0.png" alt="k40_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)，即 D(X+Y)=D(X)+D(Y)$</div>
+        <div class="steps"><p>E(XY)=E(X)E(Y) 等价于 Cov(X,Y)=E(XY)-E(X)E(Y)=0，即 X 与 Y 不相关。</p>
+<p>$$D(X+Y)=D(X)+D(Y)+2Cov(X,Y)=D(X)+D(Y),$$</p>
+<p>故 (B) 必然成立。</p>
+<p>不相关一般推不出独立：(C)(D) 均不必然（反例：X~U(-1,1)，Y=X²，此时 E(XY)=E(X³)=0=E(X)E(Y)，但 Y 由 X 完全确定，不独立）；(A) 亦无此性质。故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)，44$</div>
+        <div class="steps"><p>X,Y 独立 ⟹ Cov(X,Y)=0。</p>
+<p>$$D(3X-2Y)=3^2D(X)+(-2)^2D(Y)+2\cdot3\cdot(-2)Cov(X,Y)=9\times4+4\times2=36+8=44.$$</p>
+<p>故选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k40_T2">
     <div class="qhead"><span class="qno">k40_T2</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1992</span> <span class="badge year">2002</span> <span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.15.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k40_T2_0.png" alt="k40_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k40_T2_1.png" alt="k40_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle EX=0.6, DX=0.46$</div>
+        <div class="steps"><p>设 X_i=第 i 部件是否需要调整（0-1 变量），P(X_1=1)=0.10，P(X_2=1)=0.20，P(X_3=1)=0.30，相互独立，X=X_1+X_2+X_3（注意 X 不是二项分布，因 p_i 不同）。</p>
+<p>$$EX=\sum_{i=1}^3 EX_i=0.10+0.20+0.30=0.6,$$</p>
+<p>$$DX=\sum_{i=1}^3 p_i(1-p_i)=0.10\times0.90+0.20\times0.80+0.30\times0.70=0.09+0.16+0.21=0.46.$$</p>
+<p>（亦可列 X 的分布律 0,1,2,3 对应概率 0.504, 0.398, 0.092, 0.006 验证：EX=0.6，EX²=0.82，DX=0.82-0.36=0.46。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P(-1,-1)=1/4, P(-1,1)=0, P(1,-1)=1/2, P(1,1)=1/4；D(X+Y)=2$</div>
+        <div class="steps"><p>U 的密度为 1/4（区间长 4），各概率按长度计算：</p>
+<p>P(X=-1,Y=-1)=P(U≤-1)=1/4；P(X=-1,Y=1)=P(U≤-1 且 U&gt;1)=0；<br>P(X=1,Y=-1)=P(-1&lt;U≤1)=2/4=1/2；P(X=1,Y=1)=P(U&gt;1)=1/4。</p>
+<p>(I) 联合分布：</p>
+<p>| X\Y | -1 | 1 |<br>|---|---|---|<br>| -1 | 1/4 | 0 |<br>| 1 | 1/2 | 1/4 |</p>
+<p>(II) X+Y 取值 -2(概率 1/4)，0(概率 1/2)，2(概率 1/4)：</p>
+<p>$$E(X+Y)=(-2)\cdot\tfrac14+0\cdot\tfrac12+2\cdot\tfrac14=0,\qquad E[(X+Y)^2]=4\cdot\tfrac14+0+4\cdot\tfrac14=2,$$</p>
+<p>$$D(X+Y)=2-0=2.$$</p>
+<p>（另法：EX=1/2，EY=-1/2，DX=DY=1-1/4=3/4，Cov(X,Y)=E(XY)-EX·EY=1/4+1/4=1/2-1/4=1/4，D(X+Y)=3/4+3/4+2·(1/4)=2。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle DX=9/2$</div>
+        <div class="steps"><p>归一性：1/2+a+b=1 ⟹ a+b=1/2。<br>EX=-2·(1/2)+a+3b=0 ⟹ a+3b=1。<br>两式相减得 2b=1/2 ⟹ b=1/4，a=1/4。</p>
+<p>$$DX=E(X^2)-(EX)^2=4\cdot\tfrac12+1\cdot\tfrac14+9\cdot\tfrac14-0=2+\tfrac{10}{4}=\tfrac{9}{2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k40_T3">
     <div class="qhead"><span class="qno">k40_T3</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1990</span> <span class="badge year">2014</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.15.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k40_T3_0.png" alt="k40_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k40_T3_1.png" alt="k40_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=2x (0<x<1)；D(Z)=2/9$</div>
+        <div class="steps"><p>区域 D 的面积 = ∫₀¹ 2x dx = 1，故联合密度 f(x,y)=1（在 D 内）。</p>
+<p>$$f_X(x)=\int_{-x}^{x}1\,dy=2x,\quad 0&lt;x&lt;1.$$</p>
+<p>$$EX=\int_0^1 x\cdot2x\,dx=\tfrac23,\qquad E(X^2)=\int_0^1 x^2\cdot2x\,dx=\tfrac12,$$</p>
+<p>$$DX=\tfrac12-\tfrac49=\tfrac{1}{18},\qquad D(Z)=D(2X+1)=4DX=\tfrac{4}{18}=\tfrac29.$$</p>
+<p>边缘密度在 x≤0 或 x≥1 处为 0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)：EY_1=EY_2，DY_1>DY_2$</div>
+        <div class="steps"><p>记 E_i=EX_i，D_i=DX_i。</p>
+<p>EY_1=\frac12(\int y f_1 dy+\int y f_2 dy)=\frac12(E_1+E_2)=EY_2，期望相等。</p>
+<p>$$DY_2=\tfrac14(D_1+D_2).$$</p>
+<p>$$E(Y_1^2)=\tfrac12\left(E(X_1^2)+E(X_2^2)\right)=\tfrac12(D_1+E_1^2+D_2+E_2^2),$$</p>
+<p>$$DY_1=\tfrac12(D_1+D_2)+\tfrac12(E_1^2+E_2^2)-\tfrac14(E_1+E_2)^2=\tfrac12(D_1+D_2)+\tfrac14(E_1-E_2)^2.$$</p>
+<p>于是</p>
+<p>$$DY_1-DY_2=\tfrac14(D_1+D_2)+\tfrac14(E_1-E_2)^2&gt;0,$$</p>
+<p>（方差为正、E_1=E_2=E_1-E_2=0 时也因 D_1+D_2&gt;0 而严格大于）故 DY_1&gt;DY_2，选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (C)：\frac{1}{n}F(x)(1-F(x))$</div>
+        <div class="steps"><p>nF_n(x)=\sum_{i=1}^n I{X_i≤x}，各示性变量独立同 0-1 分布 B(1, F(x))，故 nF_n(x)~B(n, F(x))。</p>
+<p>$$D(nF_n(x))=nF(x)(1-F(x))\ \Longrightarrow\ D(F_n(x))=\frac{1}{n^2}\cdot nF(x)(1-F(x))=\frac{1}{n}F(x)(1-F(x)).$$</p>
+<p>选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k40_T4">
     <div class="qhead"><span class="qno">k40_T4</span>
-      <span class="badge">共 6 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1987</span> <span class="badge year">1995</span> <span class="badge year">1997</span> <span class="badge year">1998</span> <span class="badge year">2000</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.15.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k40_T4_0.png" alt="k40_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k40_T4_1.png" alt="k40_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle EX=1, DX=1/2$</div>
+        <div class="steps"><p>配方：-x²+2x-1=-(x-1)²。</p>
+<p>$$f(x)=\frac{1}{\sqrt{\pi}}e^{-(x-1)^2}=\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-1)^2}{2\sigma^2}}\ \Rightarrow\ 2\sigma^2=1,\ \sigma^2=\tfrac12,\ \mu=1,$$</p>
+<p>（检验归一常数：\frac{1}{\sqrt{2\pi}\cdot(1/\sqrt2)}=\frac{1}{\sqrt\pi}，吻合）即 X~N(1, 1/2)。</p>
+<p>故 EX=1，DX=1/2。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle E(X²)=18.4$</div>
+        <div class="steps"><p>X~B(10, 0.4)：EX=10×0.4=4，DX=10×0.4×0.6=2.4。</p>
+<p>$$E(X^2)=DX+(EX)^2=2.4+16=18.4.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(t)=25te^{-5t} (t>0，其余为0)；E(T)=2/5；D(T)=2/25$</div>
+        <div class="steps"><p>设两台寿命 X_1,X_2 独立同分布，密度 5e^{-5x}(x&gt;0)，T=X_1+X_2。由卷积公式，t&gt;0 时：</p>
+<p>$$f_T(t)=\int_0^t 5e^{-5x}\cdot5e^{-5(t-x)}\,dx=25e^{-5t}\int_0^t dx=25te^{-5t};$$</p>
+<p>t≤0 时 f_T(t)=0（伽马分布 Γ(2,5)）。</p>
+<p>$$E(T)=EX_1+EX_2=\tfrac15+\tfrac15=\tfrac25=0.4,\qquad D(T)=DX_1+DX_2=\tfrac{1}{25}+\tfrac{1}{25}=\tfrac{2}{25}=0.08.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle D(|X-Y|)=1-\frac{2}{\pi}$</div>
+        <div class="steps"><p>独立正态的线性组合仍正态：Z=X-Y~N(0, D(X)+D(Y))=N(0,1)。</p>
+<p>$$E|Z|=\int_{-\infty}^{+\infty}|z|\frac{1}{\sqrt{2\pi}}e^{-z^2/2}dz=2\int_0^{+\infty}z\frac{1}{\sqrt{2\pi}}e^{-z^2/2}dz=\sqrt{\tfrac2\pi},$$</p>
+<p>$$E(Z^2)=D(Z)+(EZ)^2=1,$$</p>
+<p>$$D(|X-Y|)=D(|Z|)=E(Z^2)-(E|Z|)^2=1-\frac{2}{\pi}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle E(X)=\frac{1}{p},\quad D(X)=\frac{1-p}{p^2}$</div>
+        <div class="steps"><p>X 服从几何分布：P(X=k)=(1-p)^{k-1}p，k=1,2,…。记 q=1-p。</p>
+<p>$$E(X)=\sum_{k=1}^{\infty}kq^{k-1}p=p\cdot\frac{1}{(1-q)^2}=\frac1p.$$</p>
+<p>（或用迭代：E(X)=1+qE(X) ⟹ E(X)=1/p。）</p>
+<p>$$E(X^2)=\sum_{k=1}^{\infty}k^2q^{k-1}p=p\cdot\frac{1+q}{(1-q)^3}=\frac{1+q}{p^2}=\frac{2-p}{p^2},$$</p>
+<p>$$D(X)=\frac{2-p}{p^2}-\frac{1}{p^2}=\frac{1-p}{p^2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle DY=\frac{8}{9}$</div>
+        <div class="steps"><p>P(X&gt;0)=\frac{2-0}{3}=\tfrac23，P(X&lt;0)=\frac{0-(-1)}{3}=\tfrac13，P(X=0)=0。</p>
+<p>$$EY=1\cdot\tfrac23+(-1)\cdot\tfrac13=\tfrac13,\qquad E(Y^2)=1\cdot\tfrac23+1\cdot\tfrac13=1,$$</p>
+<p>$$DY=1-\tfrac19=\tfrac89.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

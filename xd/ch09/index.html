@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 9</div>
 <h1 class="title">考点 9　矩阵方程</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二、题型三 · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二、题型三 · 解析完成 3/3　</div>
 
   <div class="card q" id="k09_T1">
     <div class="qhead"><span class="qno">k09_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.9.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k09_T1_0.png" alt="k09_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k09_T1_1.png" alt="k09_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k09_T1_2.png" alt="k09_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}5&-2&-2\\4&-3&-2\\-2&2&3\end{pmatrix}$</div>
         <div class="steps"><p>由 $AB=A+2B$ 得 $(A-2E)B=A$，故 $B=(A-2E)^{-1}A$。</p>
@@ -107,7 +107,8 @@
 <p>$$(A^{*})^{-1}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\-1&amp;0&amp;1&amp;0\\0&amp;\tfrac38&amp;0&amp;\tfrac18\end{pmatrix},\quad A=\begin{pmatrix}2&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\-2&amp;0&amp;2&amp;0\\0&amp;\tfrac34&amp;0&amp;\tfrac14\end{pmatrix}$$</p>
 <p>$$A-E=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\-2&amp;0&amp;1&amp;0\\0&amp;\tfrac34&amp;0&amp;-\tfrac34\end{pmatrix},\quad (A-E)^{-1}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\2&amp;0&amp;1&amp;0\\0&amp;1&amp;0&amp;-\tfrac43\end{pmatrix}$$</p>
 <p>（已验证 $(A-E)(A-E)^{-1}=E$。）于是</p>
-<p>$$B=3\begin{pmatrix}2&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\2&amp;0&amp;2&amp;0\\0&amp;1&amp;0&amp;-\tfrac13\end{pmatrix}=\begin{pmatrix}6&amp;0&amp;0&amp;0\\0&amp;6&amp;0&amp;0\\6&amp;0&amp;6&amp;0\\0&amp;3&amp;0&amp;-1\end{pmatrix}$$</p></div>
+<p>$$B=3\begin{pmatrix}2&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\2&amp;0&amp;2&amp;0\\0&amp;1&amp;0&amp;-\tfrac13\end{pmatrix}=\begin{pmatrix}6&amp;0&amp;0&amp;0\\0&amp;6&amp;0&amp;0\\6&amp;0&amp;6&amp;0\\0&amp;3&amp;0&amp;-1\end{pmatrix}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 把 (3,1) 处算成 3。按本题 A^{*}（(4,2)=-3）得 A=2(A^{*})^{-1}，B=3(A-E)^{-1}A，(3,1)=6；已数值验证 AB=B+3A 逐元素成立，solver 与 A 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle X=\begin{pmatrix}1&2&5\\0&1&2\\0&0&1\end{pmatrix}$</div>
@@ -125,9 +126,9 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k09_T2_0.png" alt="k09_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k09_T2_1.png" alt="k09_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \beta^T\alpha=2，A^2=2A，B^2=2B，A^4=8A，B^4=8B，B^2A^2=24\beta\beta^T；方程化为 8[(6u-v)\beta-u\alpha]=\gamma（u=\beta^Tx，v=\alpha^Tx），按图中所印数据方程无解（\gamma\notin\text{span}\{\alpha,\beta\}），疑题面有误$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 按真题原意 B=\beta^{T}\alpha=2：8(A-2E)x=\gamma，通解 x=\begin{pmatrix}0\\0\\-\tfrac12\end{pmatrix}+k\begin{pmatrix}1\\2\\1\end{pmatrix}（k\in R）$</div>
         <div class="steps"><p>$\beta^{T}\alpha=\alpha^{T}\beta=1+1+0=2$，$\alpha^{T}\alpha=6$。</p>
 <p>$$A^{2}=\alpha\beta^{T}\alpha\beta^{T}=2A,\quad B^{2}=2B,\quad A^{4}=8A,\quad B^{4}=8B$$</p>
 <p>$$B^{2}A^{2}=(2B)(2A)=4BA=4\,\beta(\alpha^{T}\alpha)\beta^{T}=24\beta\beta^{T}$$</p>
@@ -135,7 +136,8 @@
 <p>$$8\big[(6u-v)\beta-u\alpha\big]=\gamma$$</p>
 <p>按三个分量：第3分量 $-8u=8\Rightarrow u=-1$；第1分量 $40u-8v=0\Rightarrow v=5u=-5$；代回第2分量应为 $8u-4v=0$，但 $8(-1)-4(-5)=12\neq0$，矛盾。</p>
 <p>结构性原因：方程左端恒属于 $\operatorname{span}\{\alpha,\beta\}=\{z:\ z_1-2z_2+3z_3=0\}$，而 $\gamma=(0,0,8)^{T}$ 使 $0-0+24=24\neq0$，故 $\gamma\notin\operatorname{span}\{\alpha,\beta\}$，方程无解。</p>
-<p>卡点：按图中印刷数据（α=(1,2,1)ᵀ、β=(1,1/2,0)ᵀ、γ=(0,0,8)ᵀ、2B²A²x=A⁴x+B⁴x+γ）方程必无解，与「求解方程」的题意不符，疑原题某数据（最可能为 γ）在扫描/排版中有误；结论按所印数据给出。</p></div>
+<p>卡点：按图中印刷数据（α=(1,2,1)ᵀ、β=(1,1/2,0)ᵀ、γ=(0,0,8)ᵀ、2B²A²x=A⁴x+B⁴x+γ）方程必无解，与「求解方程」的题意不符，疑原题某数据（最可能为 γ）在扫描/排版中有误；结论按所印数据给出。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 按 B=\beta\alpha^{T} 误植题面判无解（对误植题面其证明本身成立，\gamma\notin span{\alpha,\beta} 属实），但 A、B 均按真题原意 B=\beta^{T}\alpha=2 求解且两者通解等价（(1/2,1,0)^{T}=\tfrac12(1,2,1)^{T}+(0,0,-\tfrac12)^{T}），solver 结论与其分歧，应为有解。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) \xi=(-1,2,3,1)^T；(II) B=\begin{pmatrix}2&6&-1\\-1&-3&1\\-1&-4&1\\0&0&0\end{pmatrix}+\begin{pmatrix}-1\\2\\3\\1\end{pmatrix}(k_1,k_2,k_3)，k_1,k_2,k_3\in R$</div>
@@ -148,7 +150,7 @@
 <p>验证 $k_j=0$ 时 $AB_0=E$ 逐元素成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a\neq1且a\neq-2：唯一解 X=\begin{pmatrix}1&\frac{3a}{a+2}\\0&\frac{a-4}{a+2}\\-1&0\end{pmatrix}；a=1：无穷多解 X=\begin{pmatrix}1&1\\s&t\\-1-s&-1-t\end{pmatrix}；a=-2：无解$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a\neq1且a\neq-2：唯一解 X=\begin{pmatrix}1&\frac{3a}{a+2}\\0&\frac{a-4}{a+2}\\-1&0\end{pmatrix}；a=1：无穷多解 X=\begin{pmatrix}1&1\\s&t\\-1-s&-1-t\end{pmatrix}（s,t\in R）；a=-2：无解$</div>
         <div class="steps"><p>对增广矩阵 $\begin{pmatrix}A&amp;B\end{pmatrix}$ 作行变换：</p>
 <p>$$\begin{pmatrix}1&amp;-1&amp;-1&amp;2&amp;2\\2&amp;a&amp;1&amp;1&amp;a\\-1&amp;1&amp;a&amp;-a-1&amp;-2\end{pmatrix}\to\begin{pmatrix}1&amp;-1&amp;-1&amp;2&amp;2\\0&amp;a+2&amp;3&amp;-3&amp;a-4\\0&amp;0&amp;a-1&amp;1-a&amp;0\end{pmatrix}$$</p>
 <p>$|A|=(a+2)(a-1)$。</p>
@@ -156,7 +158,8 @@
 <p>$$X=\begin{pmatrix}1&amp;\tfrac{3a}{a+2}\\0&amp;\tfrac{a-4}{a+2}\\-1&amp;0\end{pmatrix}$$</p>
 <p>② $a=1$：第三行为零行，前两行给出 $x_2+x_3=-1$（两列同），$x_1=2+(x_2+x_3)=1$，$x_2,x_3$ 各自任取：</p>
 <p>$$X=\begin{pmatrix}1&amp;1\\s&amp;t\\-1-s&amp;-1-t\end{pmatrix},\quad s,t\in R$$</p>
-<p>③ $a=-2$：第二列出现 $0=-6$ 型矛盾行（$3x_3=-6$ 与 $-3x_3=0$），无解。</p></div>
+<p>③ $a=-2$：第二列出现 $0=-6$ 型矛盾行（$3x_3=-6$ 与 $-3x_3=0$），无解。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：a=1 时 r(A)=2 而 B 是 3×2 矩阵，X 的两列各带一个自由参数，通解应含 s,t 两个独立参数；B 只写了一个参数 k（相当于 s=t 的子族），通解不完整。其余两种情形三方一致。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) a=2；(II) P=\begin{pmatrix}3-6t_1&4-6t_2&4-6t_3\\-1+2t_1&-1+2t_2&-1+2t_3\\t_1&t_2&t_3\end{pmatrix}（t_2\neq t_3），如 P=\begin{pmatrix}3&4&-2\\-1&-1&1\\0&0&1\end{pmatrix}$</div>
@@ -177,7 +180,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k09_T3_0.png" alt="k09_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=-1 且 b=0 时存在；C=\begin{pmatrix}1+s+t&-s\\s&t\end{pmatrix}（s,t 为任意常数）$</div>
         <div class="steps"><p>设 $C=\begin{pmatrix}x_1&amp;x_2\\x_3&amp;x_4\end{pmatrix}$，则</p>

@@ -21,34 +21,82 @@
 
   <div class="card q" id="k53_T1">
     <div class="qhead"><span class="qno">k53_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1989</span> <span class="badge year">2013</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k53_T1_0.png" alt="k53_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（S(-1/2)=-\frac{1}{4}）$</div>
+        <div class="steps"><p>b_n 恰为 f 在 [0,1] 上的正弦（奇延拓、周期 2）傅里叶系数，S 为其傅里叶级数之和函数。</p>
+<p>x=1/2 是 f 的连续点，且在延拓后仍连续，故 S(1/2)=f(1/2)=1/4。</p>
+<p>S 为奇函数：S(-1/2)=-S(1/2)=-1/4。选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C（S(-9/4)=-\frac{1}{4}）$</div>
+        <div class="steps"><p>S 是 f 的奇延拓（周期 2）的正弦级数和函数。</p>
+<p>周期性：S(-9/4)=S(-9/4+4)=S(-1/4)；奇性：S(-1/4)=-S(1/4)。</p>
+<p>x=1/4 为连续点：S(1/4)=f(1/4)=|1/4-1/2|=1/4。</p>
+<p>故 S(-9/4)=-1/4，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle S\left(-\frac72\right)=\frac{1}{8}$</div>
+        <div class="steps"><p>S 是 f 的奇延拓（周期 2）正弦级数和函数。周期 2：<br>$$S\left(-\frac72\right)=S\left(-\frac72+4\right)=S\left(\frac12\right)$$</p>
+<p>x=1/2 是 f 的间断点：f(1/2^-)=0，f(1/2^+)=(1/2)²=1/4。由狄利克雷收敛定理：<br>$$S\left(\frac12\right)=\frac{0+\frac14}{2}=\frac18$$</p>
+<p>故 S(-7/2)=1/8。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k53_T2">
     <div class="qhead"><span class="qno">k53_T2</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1999</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k53_T2_0.png" alt="k53_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（S(-5/2)=\frac{3}{4}）$</div>
+        <div class="steps"><p>a_n 是 f 的余弦（偶延拓、周期 2）傅里叶系数，S 为其和函数。</p>
+<p>偶延拓且周期 2：S(-5/2)=S(-5/2+2)=S(-1/2)=S(1/2)（偶函数）。</p>
+<p>x=1/2 处 f 间断：左值 f(1/2^-)=1/2，右值 \lim_{x\to(1/2)^+}(2-2x)=1。由狄利克雷定理：<br>$$S\left(\frac12\right)=\frac{\frac12+1}{2}=\frac34$$</p>
+<p>故 S(-5/2)=3/4，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\dfrac{1}{\pi}$</div>
+        <div class="steps"><p>$$a_n=\frac{2}{\pi}\int_0^\pi(x+1)\cos nx\,dx=\frac{2}{\pi}\left[\frac{(-1)^n-1}{n^2}\right]$$<br>（因 ∫_0^π x cos nx dx = ((-1)^n-1)/n²，∫_0^π cos nx dx = 0。）</p>
+<p>于是 a_{2n-1} = -\frac{4}{\pi(2n-1)^2}，a_{2n}=0。</p>
+<p>a_{2n-1}→0，用 sin u ~ u：<br>$$n^2\sin a_{2n-1}\sim n^2\cdot\left(-\frac{4}{\pi(2n-1)^2}\right)\longrightarrow-\frac{4}{\pi}\cdot\frac14=-\frac{1}{\pi}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k53_T3">
     <div class="qhead"><span class="qno">k53_T3</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1995</span> <span class="badge year">2008</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k53_T3_0.png" alt="k53_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=-\frac{8}{\pi^2}\sum_{k=1}^{\infty}\frac{1}{(2k-1)^2}\cos\frac{(2k-1)\pi x}{2}，0\le x\le2$</div>
+        <div class="steps"><p>周期 2l=4，l=2，作偶延拓。系数：<br>$$a_0=\frac{2}{l}\int_0^l f(x)dx=\int_0^2(x-1)dx=\left[\frac{x^2}{2}-x\right]_0^2=0$$</p>
+<p>n≥1（换元 u=nπx/2）：<br>$$a_n=\int_0^2(x-1)\cos\frac{n\pi x}{2}dx=\frac{2}{n\pi}\left[\frac{2}{n\pi}\int_0^{n\pi}u\cos u\,du-\int_0^{n\pi}\cos u\,du\right]=\frac{2}{n\pi}\cdot\frac{2}{n\pi}\left[(-1)^n-1\right]$$<br>（∫_0^{nπ}u cos u du = [u sin u+cos u]_0^{nπ} = (-1)^n-1；∫_0^{nπ}cos u du = 0。）</p>
+<p>即 a_n=\frac{4[(-1)^n-1]}{n^2\pi^2}：偶数 n 为 0，奇数 n 为 -8/(n²π²)。</p>
+<p>f 连续且偶延拓处处连续，级数在 [0,2] 上收敛于 f：<br>$$f(x)=-\frac{8}{\pi^2}\sum_{k=1}^{\infty}\frac{1}{(2k-1)^2}\cos\frac{(2k-1)\pi x}{2},\quad 0\le x\le2$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\cos nx（0\le x\le\pi）；\ \sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}=\frac{\pi^2}{12}$</div>
+        <div class="steps"><p>偶延拓，l=π。</p>
+<p>$$a_0=\frac{2}{\pi}\int_0^\pi(1-x^2)dx=\frac{2}{\pi}\left(\pi-\frac{\pi^3}{3}\right)=2-\frac{2\pi^2}{3}$$</p>
+<p>分部积分：<br>$$\int_0^\pi x^2\cos nx\,dx=\left[x^2\frac{\sin nx}{n}\right]_0^\pi-\frac{2}{n}\int_0^\pi x\sin nx\,dx=-\frac{2}{n}\left[-\frac{x\cos nx}{n}\right]_0^\pi=\frac{2(-1)^n}{n^2}$$<br>（∫_0^π x sin nx dx = [-x cos nx/n + sin nx/n²]_0^π = -π(-1)^n/n。）</p>
+<p>$$a_n=\frac{2}{\pi}\left(0-\frac{2(-1)^n}{n^2}\right)=\frac{4(-1)^{n+1}}{\pi n^2}$$</p>
+<p>f 连续、偶延拓处处连续，故在 [0,π] 上：<br>$$f(x)=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\cos nx$$</p>
+<p>令 x=0（f(0)=1）：<br>$$1=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\ \Rightarrow\ \sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}=\frac{\pi^2}{12}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

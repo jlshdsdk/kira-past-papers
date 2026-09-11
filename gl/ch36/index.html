@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">概率论与数理统计</a> / 考点 36</div>
 <h1 class="title">考点 36　二维连续型随机变量</h1>
-<div class="sub">题组 8 · 覆盖年份 — · 题型：— · 解析完成 0/8　</div>
+<div class="sub">题组 8 · 覆盖年份 — · 题型：— · 解析完成 8/8　</div>
 
   <div class="card q" id="k36_T1">
     <div class="qhead"><span class="qno">k36_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T1_0.png" alt="k36_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T1_1.png" alt="k36_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{1}{2}$</div>
         <div class="steps"><p>联合密度仅在第一象限非零，积分区域为 0&lt;x&lt;y&lt;+\infty：<br>$$P\{X&lt;Y\}=\int_0^{+\infty}dx\int_x^{+\infty}e^{-(x+y)}\,dy=\int_0^{+\infty}e^{-x}\cdot e^{-x}\,dx=\int_0^{+\infty}e^{-2x}\,dx=\frac12.$$<br>（由对称性 X&lt;Y 与 X&gt;Y 各占概率一半。）</p></div>
@@ -60,7 +60,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T2_0.png" alt="k36_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T2_1.png" alt="k36_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T2_2.png" alt="k36_T2 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}2x, & 0<x<1\\ 0, & \text{其他}\end{cases}$</div>
         <div class="steps"><p>D 的面积 S=\int_0^{1}2x\,dx=1，故 f(x,y)=1（(x,y)\in D）。<br>对 0&lt;x&lt;1，y 的变动范围为 -x&lt;y&lt;x：<br>$$f_X(x)=\int_{-x}^{x}1\,dy=2x.$$<br>其他处 f_X(x)=0。</p></div>
@@ -91,7 +91,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T3_0.png" alt="k36_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=\begin{cases}\dfrac{9y^2}{x}, & 0<y<x<1\\ 0, & \text{其他}\end{cases}$</div>
         <div class="steps"><p>$$f(x,y)=f_X(x)\,f_{Y|X}(y|x)=3x^2\cdot\frac{3y^2}{x^3}=\frac{9y^2}{x},\quad 0&lt;y&lt;x&lt;1,$$<br>其他处为 0。<br>校验：\int_0^1 dx\int_0^x \frac{9y^2}{x}\,dy=\int_0^1\frac{3x^3}{x}\,dx=\int_0^1 3x^2\,dx=1。</p></div>
@@ -114,7 +114,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T4_0.png" alt="k36_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T4_1.png" alt="k36_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_{Y|X}(y|x)=\begin{cases}\dfrac{1}{x}, & 0<y<x\\ 0, & \text{其他}\end{cases}$</div>
         <div class="steps"><p>x&gt;0 时的边缘密度：<br>$$f_X(x)=\int_0^{x}e^{-x}\,dy=xe^{-x}.$$<br>故当 x&gt;0：<br>$$f_{Y|X}(y|x)=\frac{f(x,y)}{f_X(x)}=\frac{e^{-x}}{xe^{-x}}=\frac{1}{x},\quad 0&lt;y&lt;x,$$<br>其他为 0（给定 X=x 时，Y 在区间 (0,x) 内均匀分布）。</p></div>
@@ -137,7 +137,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T5_0.png" alt="k36_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A=\dfrac{1}{\pi}；\quad f_{Y|X}(y|x)=\dfrac{1}{\sqrt{\pi}}\,e^{-(y-x)^2},\ -\infty<y<+\infty$</div>
         <div class="steps"><p>配方：-2x^2+2xy-y^2=-x^2-(y-x)^2，故 f(x,y)=Ae^{-x^2}e^{-(y-x)^2}。<br>由归一性（\int e^{-t^2}dt=\sqrt{\pi}）：<br>$$1=A\int_{-\infty}^{+\infty}e^{-x^2}dx\int_{-\infty}^{+\infty}e^{-(y-x)^2}dy=A\sqrt{\pi}\cdot\sqrt{\pi}=A\pi \ \Rightarrow\ A=\frac{1}{\pi}.$$<br>边缘密度：<br>$$f_X(x)=\frac{1}{\pi}e^{-x^2}\int_{-\infty}^{+\infty}e^{-(y-x)^2}dy=\frac{1}{\sqrt{\pi}}e^{-x^2}.$$<br>于是<br>$$f_{Y|X}(y|x)=\frac{f(x,y)}{f_X(x)}=\frac{1}{\sqrt{\pi}}e^{-(y-x)^2},\quad -\infty&lt;y&lt;+\infty.$$<br>（即 X\sim N(0,\frac12)，Y\mid X=x\sim N(x,\frac12)。）</p></div>
@@ -152,7 +152,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T6_0.png" alt="k36_T6 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T6_1.png" alt="k36_T6 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x,y)=\begin{cases}0, & x<0\ \text{或}\ y<0\\ x^2y^2, & 0\le x\le1,\ 0\le y\le1\\ x^2, & 0\le x\le1,\ y>1\\ y^2, & x>1,\ 0\le y\le1\\ 1, & x>1,\ y>1\end{cases}$</div>
         <div class="steps"><p>F(x,y)=\int_{-\infty}^{x}dx\int_{-\infty}^{y}f(u,v)\,dv，按 (x,y) 所在位置分块：<br>(1) x&lt;0 或 y&lt;0：F=0。<br>(2) 0≤x≤1, 0≤y≤1：<br>$$F=\int_0^{x}4u\,du\int_0^{y}v\,dv=\left(2\cdot\frac{x^2}{2}\right)\!\left(2\cdot\frac{y^2}{2}\right)=x^2y^2.$$<br>(3) 0≤x≤1, y&gt;1：F=\int_0^{x}4u\,du\int_0^{1}v\,dv=x^2。<br>(4) x&gt;1, 0≤y≤1：F=y^2。<br>(5) x&gt;1, y&gt;1：F=1。</p></div>
@@ -167,7 +167,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T7_0.png" alt="k36_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{3}{4}$</div>
         <div class="steps"><p>$$P\left\{X\le\frac12\right\}=\int_0^{1/2}2x\,dx=\frac14.$$<br>求 P{X≤1/2, Y≤1/2}：x&lt;1/4 时 y 上界为 2x（&lt;1/2）；x≥1/4 时上界为 1/2。<br>$$P\left\{X\le\frac12,\,Y\le\frac12\right\}=\int_0^{1/4}2x\,dx+\int_{1/4}^{1/2}\frac12\,dx=\frac{1}{16}+\frac18=\frac{3}{16}.$$<br>$$P\left\{Y\le\frac12\,\Big|\,X\le\frac12\right\}=\frac{3/16}{1/4}=\frac34.$$</p></div>
@@ -190,7 +190,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.11.8）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T8_0.png" alt="k36_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)\ f_X(x)$</div>
         <div class="steps"><p>二维正态分布中不相关（\rho=0）等价于 X 与 Y 相互独立，故给定 Y=y 时 X 的条件密度就等于 X 自身的边缘密度 f_X(x)。选 (A)。</p></div>

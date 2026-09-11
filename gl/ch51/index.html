@@ -21,45 +21,85 @@
 
   <div class="card q" id="k51_T1">
     <div class="qhead"><span class="qno">k51_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 1 小题</span><span class="badge year">1995</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例8.26.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k51_T1_0.png" alt="k51_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle t = \dfrac{\bar{X}\sqrt{n(n-1)}}{Q}$</div>
+        <div class="steps"><p>**思路**：σ² 未知，对 μ=0 用单样本 t 检验，统计量为 t = (X̄−μ₀)/(S/√n)，其中样本标准差 S 满足 S² = (1/(n−1))Σ(Xᵢ−X̄)² = Q²/(n−1)，即 S = Q/√(n−1)。</p>
+<p>代入 μ₀ = 0：</p>
+<p>$$t = \frac{\bar{X} - 0}{S/\sqrt{n}} = \frac{\bar{X}}{\dfrac{Q}{\sqrt{n-1}} \cdot \dfrac{1}{\sqrt{n}}} = \frac{\bar{X}\sqrt{n(n-1)}}{Q}.$$</p>
+<p>故假设 H₀: μ=0 的 t 检验使用统计量 $t = \dfrac{\bar{X}\sqrt{n(n-1)}}{Q}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k51_T2">
     <div class="qhead"><span class="qno">k51_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1998</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例8.26.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k51_T2_0.png" alt="k51_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 接受 H₀：在显著性水平 0.05 下可以认为这次考试全体考生的平均成绩为 70 分（|t|=1.4 < t_{0.975}(35)=2.0301）$</div>
+        <div class="steps"><p>**建立假设**：$H_0: \mu = 70$，$H_1: \mu \neq 70$（双侧检验）。</p>
+<p>**选统计量**：总体方差未知，取<br>$$t = \frac{\bar{X} - 70}{S/\sqrt{n}} \sim t(n-1), \quad n = 36, \ df = 35.$$</p>
+<p>**计算实现值**：<br>$$t = \frac{66.5 - 70}{15/\sqrt{36}} = \frac{-3.5}{2.5} = -1.4.$$</p>
+<p>**确定拒绝域**：α = 0.05，双侧检验查 $t_{0.975}(35) = 2.0301$，拒绝域为 $|t| &gt; 2.0301$。</p>
+<p>**判断**：$|t| = 1.4 &lt; 2.0301$，未落入拒绝域，接受 $H_0$。</p>
+<p>**结论**：在显著性水平 0.05 下可以认为这次考试全体考生的平均成绩为 70 分。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k51_T3">
     <div class="qhead"><span class="qno">k51_T3</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2018</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例8.27.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k51_T3_0.png" alt="k51_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k51_T3_1.png" alt="k51_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (D) 如果在检验水平 α=0.05 时接受 H₀，那么 α=0.01 时必接受 H₀$</div>
+        <div class="steps"><p>σ² 已知，用 Z 检验，统计量 $Z = \dfrac{\bar{X}-\mu_0}{\sigma/\sqrt{n}}$，水平 α 的拒绝域为<br>$$|Z| &gt; z_{\alpha/2}.$$</p>
+<p>α 越小，$z_{\alpha/2}$ 越大：$z_{0.005} &gt; z_{0.025}$。故 α 从 0.05 减小到 0.01 时，拒绝域变小、接受域 $\{|Z| \le z_{\alpha/2}\}$ 变大，且 α=0.05 的接受域包含于 α=0.01 的接受域。</p>
+<p>- (A) 0.05 时拒绝（$|Z| &gt; z_{0.025}$）不能保证 $|Z| &gt; z_{0.005}$（可能落在 $[z_{0.005}, z_{0.025})$ 内），故 α=0.01 时未必拒绝。错。<br>- (B) 0.05 时拒绝也可能 $|Z| &gt; z_{0.005}$，即 α=0.01 时仍拒绝，未必接受。错。<br>- (C) 0.05 时接受即 $|Z| \le z_{0.025} &lt; z_{0.005}$，α=0.01 时必接受，必不拒绝。错。<br>- (D) 0.05 时接受即 $|Z| \le z_{0.025} &lt; z_{0.005}$，故 α=0.01 时必接受。对。</p>
+<p>**选 (D)**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D) \left\{(X_1,\dots,X_n) \middle| \bar{X} > 1 + \sqrt{\dfrac{2}{n}}\, z_\alpha \right\}$</div>
+        <div class="steps"><p>总体 $N(\mu, 2)$，故 $\bar{X} \sim N\left(\mu, \dfrac{2}{n}\right)$。</p>
+<p>对右侧检验 $H_0: \mu \le 1$ vs $H_1: \mu &gt; 1$，取统计量<br>$$Z = \frac{\bar{X} - 1}{\sqrt{2/n}}.$$</p>
+<p>当 μ = 1 时 Z ~ N(0,1)；当 μ &lt; 1 时 P(拒绝) 更小，故犯第一类错误的概率在 μ=1 处取上确界，拒绝域 $Z &gt; z_\alpha$ 给出水平 α 的检验。</p>
+<p>$$P\left(\frac{\bar{X}-1}{\sqrt{2/n}} &gt; z_\alpha\right) = \alpha \iff \bar{X} &gt; 1 + \sqrt{\frac{2}{n}}\, z_\alpha.$$</p>
+<p>即拒绝域为 $\left\{\bar{X} &gt; 1 + \sqrt{\dfrac{2}{n}}\, z_\alpha\right\} = \left\{\bar{X} &gt; 1 + \dfrac{\sqrt{2}}{\sqrt{n}} z_\alpha\right\}$。</p>
+<p>对照选项：(A) $1+\frac{2}{n}z_\alpha$、(B) $1+\frac{\sqrt{2}}{n}z_\alpha$、(C) $1+\frac{2}{\sqrt{n}}z_\alpha$ 均不对，**选 (D)**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k51_T4">
     <div class="qhead"><span class="qno">k51_T4</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例8.26.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k51_T4_0.png" alt="k51_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B) 1 - \Phi(1)$</div>
+        <div class="steps"><p>**第二类错误** = H₁ 为真（μ=11.5）时接受了 H₀，即 $\bar{X} &lt; 11$ 的概率。</p>
+<p>$\bar{X} \sim N\left(\mu, \dfrac{4}{16}\right) = N(\mu, \dfrac{1}{4})$，标准差为 $\dfrac{\sigma}{\sqrt{n}} = \dfrac{2}{4} = 0.5$。</p>
+<p>当 μ = 11.5 时：</p>
+<p>$$\beta = P(\bar{X} &lt; 11) = P\left(\frac{\bar{X} - 11.5}{0.5} &lt; \frac{11 - 11.5}{0.5}\right) = P(Z &lt; -1) = \Phi(-1) = 1 - \Phi(1).$$</p>
+<p>**选 (B)**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

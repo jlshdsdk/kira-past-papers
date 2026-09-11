@@ -21,12 +21,59 @@
 
   <div class="card q" id="k52_T1">
     <div class="qhead"><span class="qno">k52_T1</span>
-      
+      <span class="badge">共 7 小题</span><span class="badge year">1988</span> <span class="badge year">1994</span> <span class="badge year">1997</span> <span class="badge year">1998</span> <span class="badge year">1999</span> <span class="badge year">2004</span> <span class="badge year">2014</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k52_T1_0.png" alt="k52_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k52_T1_1.png" alt="k52_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k52_T1_2.png" alt="k52_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle Σ|a_nb_n| 收敛（比较判别法），故 Σa_nb_n 绝对收敛$</div>
+        <div class="steps"><p>对任意 n：<br>$$2|a_nb_n|\le a_n^2+b_n^2\ \Rightarrow\ |a_nb_n|\le\frac{a_n^2+b_n^2}{2}$$</p>
+<p>Σ(a_n²+b_n²)/2 是两个收敛级数之和，收敛。由正项级数比较判别法，Σ|a_nb_n| 收敛，即 Σa_nb_n 绝对收敛。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle Σ|f(1/n)| 收敛，故 Σf(1/n) 绝对收敛$</div>
+        <div class="steps"><p>由 f 连续及 lim f(x)/x = 0：f(0)=\lim f(x)=0，f&#x27;(0)=\lim\frac{f(x)-f(0)}{x}=0。</p>
+<p>在邻域内用带拉格朗日余项的泰勒公式：<br>$$f(x)=f(0)+f&#x27;(0)x+\frac{f&#x27;&#x27;(\theta x)}{2}x^2=\frac{f&#x27;&#x27;(\theta x)}{2}x^2,\quad 0&lt;\theta&lt;1$$</p>
+<p>f&#x27;&#x27; 连续故在邻域内有界：|f&#x27;&#x27;|≤M。于是当 n 充分大（1/n 落在邻域内）：<br>$$|f(1/n)|\le\frac{M}{2n^2}$$</p>
+<p>Σ 1/n² 收敛，由比较判别法 Σ|f(1/n)| 收敛，即 Σf(1/n) 绝对收敛。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I)\ \lim a_n 存在（=1）；(II)\ \sum\left(\frac{a_n}{a_{n+1}}-1\right) 收敛$</div>
+        <div class="steps"><p>(I) 一切 a_n&gt;0。由均值不等式：<br>$$a_{n+1}=\frac12\left(a_n+\frac{1}{a_n}\right)\ge\sqrt{a_n\cdot\frac1{a_n}}=1\quad(n\ge1)$$</p>
+<p>n≥2 时 a_n≥1，且<br>$$a_{n+1}-a_n=\frac{1-a_n^2}{2a_n}\le 0$$<br>即 {a_n}（从第 2 项起）单调递减且有下界 1，故 \lim a_n 存在（令其为 L，取极限得 L=(L+1/L)/2，即 L=1）。</p>
+<p>(II) 各项非负：<br>$$0\le\frac{a_n}{a_{n+1}}-1=\frac{a_n-a_{n+1}}{a_{n+1}}\le a_n-a_{n+1}\quad(\text{因 } a_{n+1}\ge1)$$</p>
+<p>而 Σ(a_n-a_{n+1}) 的部分和为 a_1-a_{N+1} → a_1-\lim a_n，收敛。由比较判别法，Σ(a_n/a_{n+1}-1) 收敛。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 收敛$</div>
+        <div class="steps"><p>收敛。理由：单调有界数列有极限，设 a_n→a≥0。</p>
+<p>若 a=0，则由莱布尼茨审敛法（a_n 单调减趋于 0）Σ(-1)^{n-1}a_n 收敛，与题设发散矛盾，故 a&gt;0。</p>
+<p>于是对一切 n：<br>$$0&lt;\frac{1}{a_n+1}\le\frac{1}{a+1}&lt;1\ \Rightarrow\ \left(\frac{1}{a_n+1}\right)^n\le\left(\frac{1}{a+1}\right)^n$$</p>
+<p>而 Σ(1/(a+1))^n 是公比 q=1/(a+1)∈(0,1) 的收敛几何级数，由比较判别法，Σ(1/(a_n+1))^n 收敛。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I)\ \sum=\sum\frac{1}{n(n+1)}=1；(II)\ 由 a_n<\frac{1}{n+1} 与比较判别法得证$</div>
+        <div class="steps"><p>(I)<br>$$a_n+a_{n+2}=\int_0^{\pi/4}\tan^nx(1+\tan^2x)\,dx=\int_0^{\pi/4}\tan^nx\,d(\tan x)=\frac{\tan^{n+1}x}{n+1}\Big|_0^{\pi/4}=\frac{1}{n+1}$$</p>
+<p>$$\sum_{n=1}^{\infty}\frac{1}{n}(a_n+a_{n+2})=\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=\sum_{n=1}^{\infty}\left(\frac1n-\frac{1}{n+1}\right)=1$$</p>
+<p>(II) 由于 a_n&gt;0 且 a_n&lt;a_n+a_{n+2}=1/(n+1)：<br>$$0&lt;\frac{a_n}{n^\lambda}&lt;\frac{1}{n^\lambda(n+1)}&lt;\frac{1}{n^{\lambda+1}}$$</p>
+<p>因 λ&gt;0，λ+1&gt;1，p-级数 Σ1/n^{λ+1} 收敛，由比较判别法 Σa_n/n^λ 收敛。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 唯一正根 x_n∈(0,1)；α>1 时 Σx_n^α 收敛（因 x_n<1/n）$</div>
+        <div class="steps"><p>存在性：令 f_n(x)=x^n+nx-1，连续，f_n(0)=-1&lt;0，f_n(1)=n&gt;0，由零点定理存在根 x_n∈(0,1)。</p>
+<p>唯一性：f_n&#x27;(x)=nx^{n-1}+n&gt;0（x≥0），f_n 严格单调增，故正根唯一。</p>
+<p>收敛性：由 x_n^n+n x_n=1 得 n x_n&lt;1，即<br>$$0&lt;x_n&lt;\frac1n\ \Rightarrow\ 0&lt;x_n^\alpha&lt;\frac{1}{n^\alpha}$$</p>
+<p>当 α&gt;1 时 p-级数 Σ1/n^α 收敛，由比较判别法 Σx_n^α 收敛。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I)\ a_n\to0；(II)\ \sum a_n/b_n 收敛（a_n\le b_n^2）$</div>
+        <div class="steps"><p>(I) 由条件 a_n = cos a_n - cos b_n &gt; 0，即 cos a_n &gt; cos b_n。cos 在 (0,π/2) 上严格递减，故<br>$$0&lt;a_n&lt;b_n$$</p>
+<p>Σb_n 是收敛的正项级数，故 b_n→0。由 0&lt;a_n&lt;b_n 及夹逼准则，a_n→0。</p>
+<p>(II) 用和差化积：<br>$$a_n=\cos a_n-\cos b_n=2\sin\frac{a_n+b_n}{2}\sin\frac{b_n-a_n}{2}$$<br>由 sin u ≤ u（u≥0）：<br>$$a_n\le2\cdot\frac{a_n+b_n}{2}\cdot\frac{b_n-a_n}{2}&lt;\frac{(2b_n)(b_n)}{2}=b_n^2$$<br>（用到 a_n&lt;b_n&lt;π/2。）</p>
+<p>故 0&lt;a_n/b_n≤b_n，而 Σb_n 收敛，由比较判别法 Σa_n/b_n 收敛。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

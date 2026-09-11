@@ -21,67 +21,185 @@
 
   <div class="card q" id="k47_T1">
     <div class="qhead"><span class="qno">k47_T1</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1998</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k47_T1_0.png" alt="k47_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=\frac{1}{20},\quad b=\frac{1}{100},\quad \text{自由度为 } 2$</div>
+        <div class="steps"><p>样本各分量独立且 $X_i\sim N(0,2^2)$。</p>
+<p>1) $X_1-2X_2$ 是独立正态的线性组合：<br>$$X_1-2X_2\sim N\big(0,\; 2^2+(-2)^2\cdot 2^2\big)=N(0,4+16)=N(0,20),$$<br>故 $\dfrac{X_1-2X_2}{\sqrt{20}}\sim N(0,1)$，从而 $a(X_1-2X_2)^2=\left(\frac{X_1-2X_2}{\sqrt{20}}\right)^2\sim\chi^2(1)$ 当且仅当 $a=\dfrac{1}{20}$。</p>
+<p>2) 同理 $$3X_3-4X_4\sim N\big(0,\; 3^2\cdot 2^2+(-4)^2\cdot 2^2\big)=N(0,36+64)=N(0,100),$$<br>故 $b(3X_3-4X_4)^2=\left(\frac{3X_3-4X_4}{10}\right)^2\sim\chi^2(1)$ 当且仅当 $b=\dfrac{1}{100}$。</p>
+<p>3) 两组样本不相交，两个 $\chi^2(1)$ 变量相互独立，由 $\chi^2$ 分布可加性：<br>$$X=\frac{(X_1-2X_2)^2}{20}+\frac{(3X_3-4X_4)^2}{100}\sim\chi^2(1)+\chi^2(1)=\chi^2(2),$$<br>自由度为 $2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k47_T2">
     <div class="qhead"><span class="qno">k47_T2</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">2001</span> <span class="badge year">2002</span> <span class="badge year">2003</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k47_T2_0.png" alt="k47_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k47_T2_1.png" alt="k47_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle Y\sim F(10,5),\quad \text{参数为 } 10,\ 5$</div>
+        <div class="steps"><p>由 $X_i/2\sim N(0,1)$：<br>$$\frac{1}{4}\sum_{i=1}^{10}X_i^2\sim\chi^2(10),\qquad \frac{1}{4}\sum_{j=11}^{15}X_j^2\sim\chi^2(5),$$<br>且两段样本不相交，相互独立。</p>
+<p>于是<br>$$Y=\frac{\sum_{i=1}^{10}X_i^2}{2\sum_{j=11}^{15}X_j^2}<br>=\frac{4\,\chi^2(10)}{2\cdot 4\,\chi^2(5)}<br>=\frac{\chi^2(10)}{2\,\chi^2(5)}<br>=\frac{\chi^2(10)/10}{\chi^2(5)/5}\sim F(10,5).$$</p>
+<p>即 $Y$ 服从第一自由度 $10$、第二自由度 $5$ 的 $F$ 分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{选 (C)}$</div>
+        <div class="steps"><p>题中只给边缘分布 $X\sim N(0,1)$、$Y\sim N(0,1)$，未设 $X,Y$ 独立，故凡涉及联合性质的选项都不能保证：</p>
+<p>- (A) 不一定：仅当独立时 $X+Y$ 才必为正态，联合非正态时 $X+Y$ 可以不是正态；<br>- (B) 不一定：$X^2\sim\chi^2(1)$、$Y^2\sim\chi^2(1)$，但两者未必独立，$X^2+Y^2$ 未必是 $\chi^2(2)$；<br>- (D) 不一定：$X^2/Y^2\sim F(1,1)$ 需要 $X^2$ 与 $Y^2$ 独立；<br>- (C) 正确：单个标准正态变量的平方服从 $\chi^2(1)$ 分布，这只依赖各自边缘分布，无需独立性，故 $X^2$ 和 $Y^2$ 都服从 $\chi^2$ 分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle Y\sim F(n,1),\ \text{选 (C)}$</div>
+        <div class="steps"><p>按 $t$ 分布定义，可设 $X=\dfrac{Z}{\sqrt{W/n}}$，其中 $Z\sim N(0,1)$，$W\sim\chi^2(n)$，二者独立。</p>
+<p>则<br>$$X^2=\frac{Z^2/1}{W/n}=\frac{\chi^2(1)/1}{\chi^2(n)/n}\sim F(1,n).$$</p>
+<p>由 $F$ 分布性质 $\dfrac{1}{F(1,n)}\sim F(n,1)$，得<br>$$Y=\frac{1}{X^2}\sim F(n,1).$$</p>
+<p>故选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k47_T3">
     <div class="qhead"><span class="qno">k47_T3</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1997</span> <span class="badge year">2012</span> <span class="badge year">2013</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k47_T3_0.png" alt="k47_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k47_T3_1.png" alt="k47_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle U\sim t(9),\quad \text{参数为 } 9$</div>
+        <div class="steps"><p>1) $X_i$ 独立同 $N(0,9)$，故<br>$$\sum_{i=1}^{9}X_i\sim N(0,\,9\times 9)=N(0,81),\qquad \frac{1}{9}\sum_{i=1}^{9}X_i\sim N(0,1).$$</p>
+<p>2) $Y_j/3\sim N(0,1)$，故<br>$$\frac{1}{9}\sum_{j=1}^{9}Y_j^2=\sum_{j=1}^{9}\left(\frac{Y_j}{3}\right)^2\sim\chi^2(9).$$</p>
+<p>3) 两样本独立，分子与分母独立。于是<br>$$U=\frac{\sum X_i/9}{\sqrt{\sum Y_j^2/81}}<br>=\frac{\left(\sum X_i/9\right)}{\sqrt{\left(\sum Y_j^2/9\right)/9}}<br>\sim\frac{N(0,1)}{\sqrt{\chi^2(9)/9}}\sim t(9).$$</p>
+<p>即 $U$ 服从自由度为 $9$ 的 $t$ 分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle t(1),\ \text{选 (B)}$</div>
+        <div class="steps"><p>$X_1-X_2\sim N(0,2\sigma^2)$，$X_3+X_4-2\sim N(0,2\sigma^2)$，二者只涉及不相交的样本，相互独立。</p>
+<p>标准化：<br>$$A=\frac{X_1-X_2}{\sqrt{2}\,\sigma}\sim N(0,1),\qquad B=\frac{X_3+X_4-2}{\sqrt{2}\,\sigma}\sim N(0,1),\quad B^2\sim\chi^2(1).$$</p>
+<p>于是<br>$$\frac{X_1-X_2}{\lvert X_3+X_4-2\rvert}<br>=\frac{A}{\lvert B\rvert}<br>=\frac{A}{\sqrt{B^2/1}}<br>\sim\frac{N(0,1)}{\sqrt{\chi^2(1)/1}}\sim t(1).$$</p>
+<p>故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle t(1),\ \text{选 (C)}$</div>
+        <div class="steps"><p>$X_1-X_2\sim N(0,2\sigma^2)$，$X_3\sim N(0,\sigma^2)$，二者独立。标准化：<br>$$A=\frac{X_1-X_2}{\sqrt{2}\,\sigma}\sim N(0,1),\qquad \left(\frac{X_3}{\sigma}\right)^2\sim\chi^2(1).$$</p>
+<p>于是<br>$$S=\frac{X_1-X_2}{\sqrt{2}\,\lvert X_3\rvert}<br>=\frac{A}{\sqrt{(X_3/\sigma)^2/1}}<br>\sim\frac{N(0,1)}{\sqrt{\chi^2(1)/1}}\sim t(1).$$</p>
+<p>故选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 2\alpha,\ \text{选 (C)}$</div>
+        <div class="steps"><p>设 $X=\dfrac{Z}{\sqrt{W/n}}$（$Z\sim N(0,1)$，$W\sim\chi^2(n)$，独立），则<br>$$X^2=\frac{Z^2/1}{W/n}\sim F(1,n),$$<br>即 $Y$ 与 $X^2$ 同分布。</p>
+<p>由 $t(n)$ 分布密度关于原点对称：<br>$$P\{Y&gt;c^2\}=P\{X^2&gt;c^2\}=P\{\lvert X\rvert&gt;c\}=P\{X&gt;c\}+P\{X&lt;-c\}=\alpha+\alpha=2\alpha.$$</p>
+<p>又 $0&lt;\alpha&lt;0.5$ 保证 $2\alpha&lt;1$，是合法概率。故选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k47_T4">
     <div class="qhead"><span class="qno">k47_T4</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1990</span> <span class="badge year">1998</span> <span class="badge year">1999</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k47_T4_0.png" alt="k47_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k47_T4_1.png" alt="k47_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 0.682$</div>
+        <div class="steps"><p>设成绩 $X\sim N(72,\sigma^2)$。</p>
+<p>1) 由 $P\{X\ge 96\}=0.023$：<br>$$1-\Phi\left(\frac{96-72}{\sigma}\right)=0.023\ \Longrightarrow\ \Phi\left(\frac{24}{\sigma}\right)=0.977,$$<br>查表 $\Phi(2.0)=0.977$，故 $\dfrac{24}{\sigma}=2.0$，得 $\sigma=12$。</p>
+<p>2) 于是<br>$$P\{60\le X\le 84\}=\Phi\left(\frac{84-72}{12}\right)-\Phi\left(\frac{60-72}{12}\right)=\Phi(1)-\Phi(-1)=2\Phi(1)-1,$$<br>查表 $\Phi(1)=0.841$，故所求概率 $=2\times 0.841-1=0.682$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle n \text{ 至少取 } 35$</div>
+        <div class="steps"><p>$$\bar{X}\sim N\left(3.4,\ \frac{36}{n}\right).$$</p>
+<p>$$P\{1.4&lt;\bar X&lt;5.4\}=P\left\{\lvert \bar X-3.4\rvert&lt;2\right\}<br>=2\Phi\left(\frac{2}{6/\sqrt n}\right)-1=2\Phi\left(\frac{\sqrt n}{3}\right)-1\ge 0.95.$$</p>
+<p>故 $\Phi\left(\dfrac{\sqrt n}{3}\right)\ge 0.975$，查表 $\Phi(1.96)=0.975$，得<br>$$\frac{\sqrt n}{3}\ge 1.96\ \Longrightarrow\ \sqrt n\ge 5.88\ \Longrightarrow\ n\ge 5.88^2=34.5744.$$</p>
+<p>故 $n$ 至少取 $35$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 16$</div>
+        <div class="steps"><p>$$\bar X_n\sim N\left(a,\ \frac{0.2^2}{n}\right).$$</p>
+<p>$$P\{\lvert \bar X_n-a\rvert&lt;0.1\}=2\Phi\left(\frac{0.1}{0.2/\sqrt n}\right)-1=2\Phi\left(\frac{\sqrt n}{2}\right)-1\ge 0.95,$$</p>
+<p>故 $\Phi\left(\dfrac{\sqrt n}{2}\right)\ge 0.975=\Phi(1.96)$，得<br>$$\frac{\sqrt n}{2}\ge 1.96\ \Longrightarrow\ \sqrt n\ge 3.92\ \Longrightarrow\ n\ge 3.92^2=15.3664.$$</p>
+<p>故 $n$ 的最小值应不小于自然数 $16$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k47_T5">
     <div class="qhead"><span class="qno">k47_T5</span>
-      <span class="badge">共 6 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1994</span> <span class="badge year">1999</span> <span class="badge year">2005</span> <span class="badge year">2008</span> <span class="badge year">2017</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k47_T5_0.png" alt="k47_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k47_T5_1.png" alt="k47_T5 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k47_T5_2.png" alt="k47_T5 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{选 (B)}:\quad t=\frac{\bar{X}-\mu}{S_2/\sqrt{n-1}}\sim t(n-1)$</div>
+        <div class="steps"><p>标准分解：$\dfrac{\sqrt n(\bar X-\mu)}{\sigma}\sim N(0,1)$，且<br>$$\frac{\sum_{i=1}^n(X_i-\bar X)^2}{\sigma^2}=\frac{nS_2^2}{\sigma^2}\sim\chi^2(n-1),$$<br>二者相互独立（正态总体样本均值与样本（中心化）平方和独立）。</p>
+<p>按 $t$ 分布构造：<br>$$\frac{\sqrt n(\bar X-\mu)/\sigma}{\sqrt{\dfrac{nS_2^2/\sigma^2}{n-1}}}<br>=\frac{\sqrt n(\bar X-\mu)/\sigma}{\dfrac{\sqrt n S_2}{\sigma\sqrt{n-1}}}<br>=\frac{\sqrt{n-1}\,(\bar X-\mu)}{S_2}<br>=\frac{\bar X-\mu}{S_2/\sqrt{n-1}}\sim t(n-1).$$</p>
+<p>逐项检查：<br>- (A) $\dfrac{\bar X-\mu}{S_1/\sqrt{n-1}}=\sqrt{n-1}\dfrac{\bar X-\mu}{S_1}=\sqrt{\tfrac{n-1}{n}}\cdot\dfrac{\sqrt n(\bar X-\mu)}{S_1}$，是 $t(n-1)$ 的常数倍（$S_1$ 应配 $\sqrt n$），不是 $t$ 分布；<br>- (B) 正确（如上）；<br>- (C)(D) 中 $\dfrac{\sum(X_i-\mu)^2}{\sigma^2}\sim\chi^2(n)$，自由度是 $n$ 且与 $\bar X$ 不独立，构造不出 $t(n-1)$。</p>
+<p>故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle Z=\frac{N(0,1)}{\sqrt{\chi^2(2)/2}}\sim t(2),\ \text{证毕}$</div>
+        <div class="steps"><p>记总体 $X\sim N(\mu,\sigma^2)$。</p>
+<p>1) 分子的分布：<br>$$Y_1=\frac{1}{6}\sum_{i=1}^{6}X_i\sim N\left(\mu,\ \frac{\sigma^2}{6}\right),\qquad<br>Y_2=\frac{1}{3}\sum_{i=7}^{9}X_i\sim N\left(\mu,\ \frac{\sigma^2}{3}\right),$$<br>两组样本不相交，故 $Y_1,Y_2$ 独立，于是<br>$$Y_1-Y_2\sim N\left(0,\ \frac{\sigma^2}{6}+\frac{\sigma^2}{3}\right)=N\left(0,\ \frac{\sigma^2}{2}\right),<br>\qquad \frac{Y_1-Y_2}{\sigma/\sqrt2}\sim N(0,1).$$</p>
+<p>2) 分母的分布：对样本 $X_7,X_8,X_9$（容量 3），<br>$$\frac{(3-1)S^2}{\sigma^2}=\frac{1}{\sigma^2}\sum_{i=7}^{9}(X_i-Y_2)^2\sim\chi^2(2),$$<br>且由样本均值与残差平方和的独立性（或 $Y_2$ 只依赖 $X_7,X_8,X_9$、$Y_1$ 只依赖前 6 个），该 $\chi^2(2)$ 与 $Y_1$（从而与 $Y_1-Y_2$）独立。</p>
+<p>3) 构造 $t$：<br>$$Z=\frac{\sqrt2\,(Y_1-Y_2)}{S}<br>=\frac{\dfrac{Y_1-Y_2}{\sigma/\sqrt2}}{\sqrt{\dfrac{S^2}{\sigma^2}}}<br>=\frac{N(0,1)}{\sqrt{\dfrac{\chi^2(2)}{2}}},$$<br>分子分母独立，由 $t$ 分布定义得 $Z\sim t(2)$，自由度为 2。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \text{选 (D)}:\quad \frac{(n-1)X_1^2}{\sum_{i=2}^{n}X_i^2}\sim F(1,n-1)$</div>
+        <div class="steps"><p>- (A) 错：$\bar X\sim N(0,1/n)$，$n\bar X\sim N(0,n)$，不是 $N(0,1)$；<br>- (B) 错：正确关系是 $(n-1)S^2\sim\chi^2(n-1)$，而非 $nS^2\sim\chi^2(n)$；<br>- (C) 错：正确关系是 $\dfrac{\sqrt n\bar X}{S}\sim t(n-1)$；$(n-1)$ 倍的 $\bar X$ 配 $S$ 不满足该结构；<br>- (D) 对：$X_1^2\sim\chi^2(1)$，$\displaystyle\sum_{i=2}^{n}X_i^2\sim\chi^2(n-1)$，且二者独立，故<br>$$\frac{(n-1)X_1^2}{\sum_{i=2}^{n}X_i^2}=\frac{X_1^2/1}{\left(\sum_{i=2}^{n}X_i^2\right)/(n-1)}\sim F(1,\,n-1).$$</p>
+<p>故选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \text{(I) } E(T)=\mu^2;\qquad \text{(II) } D(T)=\frac{2}{n(n-1)}$</div>
+        <div class="steps"><p>**(I)** $E(\bar X)=\mu$，$D(\bar X)=\sigma^2/n$，$E(S^2)=\sigma^2$，且 $\bar X$ 与 $S^2$ 相互独立，但计算期望只需线性性：<br>$$E(T)=E(\bar X^2)-\frac{1}{n}E(S^2)=\left[D(\bar X)+(E\bar X)^2\right]-\frac{\sigma^2}{n}<br>=\left(\frac{\sigma^2}{n}+\mu^2\right)-\frac{\sigma^2}{n}=\mu^2.$$<br>故 $T$ 是 $\mu^2$ 的无偏估计。</p>
+<p>**(II)** 当 $\mu=0,\sigma=1$：</p>
+<p>1) $\bar X\sim N(0,1/n)$。对 $Z\sim N(0,\tau^2)$ 有 $E(Z^4)=3\tau^4$，故<br>$$E(\bar X^2)=\frac1n,\qquad E(\bar X^4)=\frac{3}{n^2},\qquad D(\bar X^2)=\frac{3}{n^2}-\frac{1}{n^2}=\frac{2}{n^2}.$$</p>
+<p>2) $(n-1)S^2\sim\chi^2(n-1)$，$D\big[(n-1)S^2\big]=2(n-1)$，故 $D(S^2)=\dfrac{2}{n-1}$，从而<br>$$D\left(\frac{S^2}{n}\right)=\frac{2}{n^2(n-1)}.$$</p>
+<p>3) $\bar X$ 与 $S^2$ 独立 $\Rightarrow\ \bar X^2$ 与 $S^2/n$ 独立，故<br>$$D(T)=D(\bar X^2)+D\left(\frac{S^2}{n}\right)=\frac{2}{n^2}+\frac{2}{n^2(n-1)}=\frac{2(n-1)+2}{n^2(n-1)}=\frac{2n}{n^2(n-1)}=\frac{2}{n(n-1)}.$$</p>
+<p>注：严格说 $T=\bar X^2-\frac1nS^2$ 中两项不独立不影响方差公式，$D(aX+bY)=a^2DX+b^2DY$ 只需不相关；由 $\bar X$ 与 $S^2$ 独立知 $\bar X^2$ 与 $S^2$ 独立，协方差为 0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \text{不正确的是 (B)}$</div>
+        <div class="steps"><p>- (A) 正确：$X_i-\mu\sim N(0,1)$，$\displaystyle\sum_{i=1}^{n}(X_i-\mu)^2\sim\chi^2(n)$；<br>- (B) 不正确：$X_n-X_1\sim N(0,2)$，故 $\dfrac{(X_n-X_1)^2}{2}\sim\chi^2(1)$，而<br>$$2(X_n-X_1)^2=4\cdot\frac{(X_n-X_1)^2}{2}\sim 4\,\chi^2(1),$$<br>不是 $\chi^2$ 分布（系数 2 放错了位置，应为 $\dfrac{(X_n-X_1)^2}{2}$）；<br>- (C) 正确：$\displaystyle\sum_{i=1}^{n}(X_i-\bar X)^2\sim\chi^2(n-1)$；<br>- (D) 正确：$\sqrt n(\bar X-\mu)\sim N(0,1)$，$n(\bar X-\mu)^2\sim\chi^2(1)$。</p>
+<p>故不正确的结论是 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \text{选 (B)}:\quad \frac{\sqrt{n}(\bar{X}-\mu)}{S}\sim t(n-1)$</div>
+        <div class="steps"><p>经典抽样分布：$\dfrac{\sqrt n(\bar X-\mu)}{\sigma}\sim N(0,1)$，$\dfrac{(n-1)S^2}{\sigma^2}\sim\chi^2(n-1)$，且二者独立，故<br>$$\frac{\sqrt n(\bar X-\mu)}{S}=\frac{\sqrt n(\bar X-\mu)/\sigma}{\sqrt{\dfrac{(n-1)S^2/\sigma^2}{n-1}}}\sim t(n-1).$$</p>
+<p>即 (B) 正确，(A) 的自由度 $t(n)$ 错误。</p>
+<p>(C)(D)：$\dfrac{\sum_{i=1}^{n}(X_i-\mu)^2}{\sigma^2}\sim\chi^2(n)$ 固然成立，但它含 $\mu$ 且与 $\bar X$ 不独立（$\sum(X_i-\mu)^2=\sum(X_i-\bar X)^2+n(\bar X-\mu)^2$），除以 $n$ 后再开方凑不出「独立的 $\chi^2(n-1)/(n-1)$」结构，故 $\dfrac{\sqrt n(\bar X-\mu)}{S^*}$ 不服从 $t$ 分布，(C)(D) 均错。</p>
+<p>故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k47_T6">
     <div class="qhead"><span class="qno">k47_T6</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2004</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k47_T6_0.png" alt="k47_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \sigma^2$</div>
+        <div class="steps"><p>对正态总体有 $\dfrac{(n_1-1)S_X^2}{\sigma^2}=\dfrac{\sum_{i=1}^{n_1}(X_i-\bar X)^2}{\sigma^2}\sim\chi^2(n_1-1)$，故<br>$$E\left[\sum_{i=1}^{n_1}(X_i-\bar X)^2\right]=(n_1-1)\sigma^2.$$</p>
+<p>同理（两总体方差均为 $\sigma^2$）<br>$$E\left[\sum_{j=1}^{n_2}(Y_j-\bar Y)^2\right]=(n_2-1)\sigma^2.$$</p>
+<p>由期望线性性：<br>$$E\left[\frac{\sum_{i=1}^{n_1}(X_i-\bar X)^2+\sum_{j=1}^{n_2}(Y_j-\bar Y)^2}{n_1+n_2-2}\right]<br>=\frac{(n_1-1)\sigma^2+(n_2-1)\sigma^2}{n_1+n_2-2}=\sigma^2.$$</p>
+<p>即合并样本方差（两样本 $t$ 统计量中的公共方差估计 $S_\omega^2$）是 $\sigma^2$ 的无偏估计。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

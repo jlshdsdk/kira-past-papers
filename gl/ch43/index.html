@@ -21,12 +21,41 @@
 
   <div class="card q" id="k43_T1">
     <div class="qhead"><span class="qno">k43_T1</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1989</span> <span class="badge year">2001</span> <span class="badge year">2022</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.18.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k43_T1_0.png" alt="k43_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{1}{9}$</div>
+        <div class="steps"><p>切比雪夫不等式：对任意 ε&gt;0，有 $P\{|X-E(X)|\ge \varepsilon\}\le \dfrac{D(X)}{\varepsilon^2}$。</p>
+<p>取 ε=3σ：</p>
+<p>$$P\{|X-\mu|\ge 3\sigma\}\le \frac{\sigma^2}{(3\sigma)^2}=\frac{1}{9}.$$</p>
+<p>上界与 σ 无关。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{1}{2}$</div>
+        <div class="steps"><p>由切比雪夫不等式，取 ε=2：</p>
+<p>$$P\{|X-E(X)|\ge 2\}\le \frac{D(X)}{2^2}=\frac{2}{4}=\frac{1}{2}.$$</p>
+<p>注意此题给的是方差而不是标准差，ε=2 恰为 $\sqrt{D(X)}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{1}{12}$</div>
+        <div class="steps"><p>令 Z=X-Y，则 E(Z)=E(X)-E(Y)=0。</p>
+<p>$$D(Z)=D(X)+D(Y)-2\,\mathrm{Cov}(X,Y)=1+4-2\rho\sqrt{D(X)}\sqrt{D(Y)}=5-2\times 0.5\times 1\times 2=3.$$</p>
+<p>由切比雪夫不等式，取 ε=6：</p>
+<p>$$P\{|X-Y|\ge 6\}\le \frac{D(X-Y)}{6^2}=\frac{3}{36}=\frac{1}{12}.$$</p>
+<p>关键点：先算出 X-Y 的方差（用到协方差），再套不等式。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>令 Y_i=X_i^2，则 Y_1,…,Y_n 独立同分布。</p>
+<p>$$E(Y_i)=E(X_i^2)=\mu_2,\qquad D(Y_i)=E(X_i^4)-\left[E(X_i^2)\right]^2=\mu_4-\mu_2^2.$$</p>
+<p>对 $\dfrac{1}{n}\sum_{i=1}^n Y_i$ 用切比雪夫不等式：其期望为 μ₂，方差为 $\dfrac{D(Y_1)}{n}=\dfrac{\mu_4-\mu_2^2}{n}$，故</p>
+<p>$$P\left\{\left|\frac{1}{n}\sum_{i=1}^n X_i^2-\mu_2\right|\ge \varepsilon\right\}\le \frac{\mu_4-\mu_2^2}{n\varepsilon^2}.$$</p>
+<p>选 (A)。(C) 的分子 μ₂−μ₁² 是 $X$ 本身（而非 X²）的方差，属干扰项。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

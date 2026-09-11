@@ -17,49 +17,244 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 50</div>
 <h1 class="title">考点 50　幂级数求和(仅数一、三）</h1>
-<div class="sub">题组 4 · 覆盖年份 — · 题型：— · 解析完成 0/4　</div>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：— · 解析完成 4/4　</div>
 
   <div class="card q" id="k50_T1">
     <div class="qhead"><span class="qno">k50_T1</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 15 小题</span><span class="badge year">1987</span> <span class="badge year">1990</span> <span class="badge year">2003</span> <span class="badge year">2005</span> <span class="badge year">2006</span> <span class="badge year">2010</span> <span class="badge year">2012</span> <span class="badge year">2014</span> <span class="badge year">2016</span> <span class="badge year">2017</span> <span class="badge year">2019</span> <span class="badge year">2021</span> <span class="badge year">2022</span> <span class="badge year">2023</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k50_T1_0.png" alt="k50_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k50_T1_1.png" alt="k50_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k50_T1_2.png" alt="k50_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 收敛域 [-2,2)；S(x)=-\frac{1}{x}\ln\left(1-\frac{x}{2}\right)\ (x\neq 0)，S(0)=\frac{1}{2}$</div>
+        <div class="steps"><p>系数 a_n = 1/(n·2^n)，lim |a_{n+1}/a_n| = lim (n·2^n)/((n+1)·2^{n+1}) = 1/2，收敛半径 R = 2。</p>
+<p>端点：x = 2 时级数为 Σ 1/(2n)，发散；x = -2 时级数为 Σ (-1)^{n-1}/(2n)，由莱布尼茨判别法收敛。</p>
+<p>故收敛域为 [-2, 2)。</p>
+<p>当 x ≠ 0 时：<br>$$xS(x)=\sum_{n=1}^{\infty}\frac{1}{n}\Big(\frac{x}{2}\Big)^n=-\ln\Big(1-\frac{x}{2}\Big)$$</p>
+<p>于是 S(x) = -\frac{1}{x}\ln(1-\frac{x}{2})（x≠0），而 S(0) = \lim_{x\to 0}\left(-\frac{\ln(1-x/2)}{x}\right) = \frac{1}{2}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 收敛域 (-1,1)；S(x)=\frac{1+x}{(1-x)^2}$</div>
+        <div class="steps"><p>lim (2n+1)/(2n+3) = 1，R = 1；x = ±1 时通项 (2n+1)(±1)^n 不趋于 0，发散。收敛域 (-1,1)。</p>
+<p>$$\sum_{n=0}^{\infty}(2n+1)x^n=2\sum_{n=1}^{\infty}nx^n+\sum_{n=0}^{\infty}x^n=\frac{2x}{(1-x)^2}+\frac{1}{1-x}=\frac{1+x}{(1-x)^2}$$<br>（用了 Σ n x^n = x/(1-x)^2，Σ x^n = 1/(1-x)。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(x)=1-\frac{1}{2}\ln(1+x^2)；极大值 f(0)=1，无极小值$</div>
+        <div class="steps"><p>在 |x|&lt;1 内逐项求导：<br>$$f&#x27;(x)=\sum_{n=1}^{\infty}(-1)^n x^{2n-1}=-x\sum_{n=1}^{\infty}(-1)^{n-1}(x^2)^{n-1}=-\frac{x}{1+x^2}$$</p>
+<p>积分（f(0)=1）：<br>$$f(x)=1-\int_0^x\frac{t}{1+t^2}\,dt=1-\frac{1}{2}\ln(1+x^2)$$</p>
+<p>极值：f&#x27;(x) = -x/(1+x²)，x&lt;0 时 f&#x27;&gt;0，x&gt;0 时 f&#x27;&lt;0，故 f 在 x=0 取极大值 f(0)=1；无极小值。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 收敛区间 (-1,1)；f(x)=\frac{x^2}{1+x^2}+2x\arctan x-\ln(1+x^2)$</div>
+        <div class="steps"><p>系数趋于 1 且只有偶次幂，收敛半径 R=1，收敛区间 (-1,1)。</p>
+<p>拆两部分。第一部分：<br>$$\sum_{n=1}^{\infty}(-1)^{n-1}x^{2n}=\frac{x^2}{1+x^2}$$</p>
+<p>第二部分记 g(x)=Σ (-1)^{n-1} x^{2n}/(n(2n-1))，则<br>$$g&#x27;(x)=2\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^{2n-1}}{2n-1},\qquad g&#x27;&#x27;(x)=2\sum_{n=1}^{\infty}(-1)^{n-1}x^{2n-2}=\frac{2}{1+x^2}$$</p>
+<p>积分（g(0)=g&#x27;(0)=0）：g&#x27;(x)=2\arctan x，g(x)=2\int_0^x\arctan t\,dt=2x\arctan x-\ln(1+x^2)。</p>
+<p>故<br>$$f(x)=\frac{x^2}{1+x^2}+2x\arctan x-\ln(1+x^2),\quad x\in(-1,1)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle S(x)=\frac{1}{2x}\ln\frac{1+x}{1-x}-1-\frac{x^2}{1-x^2}\ (0<|x|<1)，S(0)=0$</div>
+        <div class="steps"><p>$$\sum_{n=1}^{\infty}\frac{x^{2n}}{2n+1}=\frac{1}{x}\left[\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}-x\right]=\frac{1}{x}\left[\frac{1}{2}\ln\frac{1+x}{1-x}-x\right]$$<br>（用 Σ_{n≥0} x^{2n+1}/(2n+1) = \frac{1}{2}\ln\frac{1+x}{1-x}，0&lt;|x|&lt;1。）</p>
+<p>又 Σ_{n=1}^∞ x^{2n} = \frac{x^2}{1-x^2}。两部分相减：<br>$$S(x)=\frac{1}{2x}\ln\frac{1+x}{1-x}-1-\frac{x^2}{1-x^2},\quad 0&lt;|x|&lt;1$$</p>
+<p>x=0 时原级数每项含 x^{2n}(n≥1) 均为 0，故 S(0)=0（与上式取极限一致）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 收敛域 [-1,1]；S(x)=2x^2\arctan x-x\ln(1+x^2)$</div>
+        <div class="steps"><p>系数 1/(n(2n-1))，相邻比值趋于 1，R=1；x=±1 时 Σ 1/(n(2n-1)) 与 1/n² 比较知绝对收敛。收敛域 [-1,1]。</p>
+<p>记 S(x) = x·h(x)，其中 h(x)=Σ (-1)^{n-1}x^{2n}/(n(2n-1))。对 h 两次求导：<br>$$h&#x27;&#x27;(x)=2\sum_{n=1}^{\infty}(-1)^{n-1}x^{2n-2}=\frac{2}{1+x^2}\ \Rightarrow\ h&#x27;(x)=2\arctan x\ \Rightarrow\ h(x)=2x\arctan x-\ln(1+x^2)$$</p>
+<p>故<br>$$S(x)=2x^2\arctan x-x\ln(1+x^2),\quad x\in[-1,1]$$<br>（验证：x=1 时 S(1)=\frac{\pi}{2}-\ln 2，与 Σ(-1)^{n-1}/(n(2n-1))=\ln 2+\frac{\pi}{2} 一致……实际部分分式给出 1/(n(2n-1))=-1/n+2/(2n-1)，和为 ln2+π/2，相符。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle 收敛域 [-1,1]；S(x)=x\arctan x$</div>
+        <div class="steps"><p>R=1；x=±1 时为交错级数 Σ(-1)^{n-1}/(2n-1)，由莱布尼茨判别法收敛。收敛域 [-1,1]。</p>
+<p>由 arctan x = Σ_{n=1}^∞ (-1)^{n-1} x^{2n-1}/(2n-1)（|x|≤1），提取因子 x：<br>$$S(x)=x\sum_{n=1}^{\infty}\frac{(-1)^{n-1}x^{2n-1}}{2n-1}=x\arctan x,\quad x\in[-1,1]$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle 收敛域 (-1,1)；S(x)=\frac{1+x^2}{(1-x^2)^2}+\frac{1}{x}\ln\frac{1+x}{1-x}\ (x\neq0)，S(0)=3$</div>
+        <div class="steps"><p>因 4n²+4n+3=(2n+1)²+2，故系数 (4n²+4n+3)/(2n+1) = (2n+1) + 2/(2n+1)。</p>
+<p>收敛域：通项系数 ~2n，x=±1 时发散，收敛域 (-1,1)。</p>
+<p>第一部分：<br>$$\sum_{n=0}^{\infty}(2n+1)x^{2n}=\left(\frac{x}{1-x^2}\right)&#x27;=\frac{1+x^2}{(1-x^2)^2}$$</p>
+<p>第二部分（x≠0）：<br>$$2\sum_{n=0}^{\infty}\frac{x^{2n}}{2n+1}=\frac{2}{x}\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}=\frac{1}{x}\ln\frac{1+x}{1-x}$$<br>（x=0 时该部分值为 2。）</p>
+<p>$$S(x)=\frac{1+x^2}{(1-x^2)^2}+\frac{1}{x}\ln\frac{1+x}{1-x}\ (0&lt;|x|&lt;1),\qquad S(0)=1+2=3$$<br>（验证展开：S = 3 + 11x²/3 + …，与级数前两项 3 + 11x²/3 一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle 收敛域 (-1,1)；S(x)=\frac{3-x}{(1-x)^3}$</div>
+        <div class="steps"><p>R=1，x=±1 时通项趋于无穷，发散，收敛域 (-1,1)。</p>
+<p>(n+1)(n+3)=n²+4n+3，用 Σx^n=1/(1-x)、Σnx^n=x/(1-x)²、Σn²x^n=x(1+x)/(1-x)³：<br>$$S(x)=\frac{x(1+x)}{(1-x)^3}+\frac{4x}{(1-x)^2}+\frac{3}{1-x}$$</p>
+<p>通分至 (1-x)³，分子 = (x+x²)+(4x-4x²)+(3-6x+3x²) = 3-x。故<br>$$S(x)=\frac{3-x}{(1-x)^3},\quad x\in(-1,1)$$<br>（验证：3+8x+15x²+…，与 (n+1)(n+3) 前几项 3, 8, 15 一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle 收敛域 [-1,1]；S(x)=(1+x)\ln(1+x)+(1-x)\ln(1-x)$</div>
+        <div class="steps"><p>R=1；x=±1 时 Σ 1/((n+1)(2n+1)) 与 1/n² 比较收敛。收敛域 [-1,1]。</p>
+<p>逐项求导（|x|&lt;1 内）：<br>$$S&#x27;(x)=\sum_{n=0}^{\infty}\frac{2(n+1)x^{2n+1}}{(n+1)(2n+1)}=2\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}=\ln\frac{1+x}{1-x}$$</p>
+<p>积分（S(0)=0）：<br>$$S(x)=\int_0^x\left[\ln(1+t)-\ln(1-t)\right]dt=(1+x)\ln(1+x)-x+(1-x)\ln(1-x)+x$$<br>$$\boxed{S(x)=(1+x)\ln(1+x)+(1-x)\ln(1-x)},\quad x\in[-1,1]$$<br>（x=±1 处取极限值 2ln2，与 Σ1/((n+1)(2n+1))=2ln2 一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle S(x)=\frac{1}{(1+x)^2}$</div>
+        <div class="steps"><p>Σ n u^{n-1} = 1/(1-u)²（|u|&lt;1）。令 u = -x：<br>$$S(x)=\sum_{n=1}^{\infty}n(-x)^{n-1}=\frac{1}{(1+x)^2},\quad x\in(-1,1)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle S(x)=\cos\sqrt{x}$</div>
+        <div class="steps"><p>对 x&gt;0 写 x=(√x)²：<br>$$S(x)=\sum_{n=0}^{\infty}\frac{(-1)^n(\sqrt{x})^{2n}}{(2n)!}=\cos\sqrt{x},\quad x\in(0,+\infty)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle 收敛域 (0,1]；S(x)=\frac{1}{e^x-1}+(1-x)\ln(1-x)+x$</div>
+        <div class="steps"><p>Σ e^{-nx} 是公比 e^{-x} 的等比级数，仅当 x&gt;0 时收敛；</p>
+<p>Σ x^{n+1}/(n(n+1))：系数趋于 1/n²，R=1，x=1 时 Σ1/(n(n+1))=1 收敛，x=-1 也（绝对）收敛，收敛域 [-1,1]。</p>
+<p>故原级数收敛域为交集 (0,1]。</p>
+<p>$$\sum_{n=1}^{\infty}e^{-nx}=\frac{e^{-x}}{1-e^{-x}}=\frac{1}{e^x-1}$$</p>
+<p>第二部分用 1/(n(n+1))=1/n-1/(n+1) 与 Σ x^n/n = -ln(1-x)：<br>$$\sum_{n=1}^{\infty}\frac{x^{n+1}}{n}-\sum_{n=1}^{\infty}\frac{x^{n+1}}{n+1}=-x\ln(1-x)-\left[-\ln(1-x)-x\right]=(1-x)\ln(1-x)+x$$</p>
+<p>$$S(x)=\frac{1}{e^x-1}+(1-x)\ln(1-x)+x,\quad x\in(0,1]$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle 收敛域 [-1,1]；S(x)=\frac{1}{x}\left[\arctan x+\ln\frac{2+x}{2-x}\right]\ (x\neq0)，S(0)=2$</div>
+        <div class="steps"><p>拆分：[(-4)^n+1]/(4^n(2n+1)) = (-1)^n/(2n+1) + (1/4^n)/(2n+1)。</p>
+<p>第一部分 Σ(-1)^n x^{2n}/(2n+1) 收敛域 |x|≤1；第二部分 Σ (x/2)^{2n}/(2n+1) 需 |x/2|&lt;1（x=±2 时调和发散），即 |x|&lt;2。故收敛域为 [-1,1]。</p>
+<p>求和（x≠0）：<br>$$\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n}}{2n+1}=\frac{1}{x}\arctan x$$<br>$$\sum_{n=0}^{\infty}\frac{(x/2)^{2n}}{2n+1}=\frac{2}{x}\cdot\frac{1}{2}\ln\frac{1+x/2}{1-x/2}=\frac{1}{x}\ln\frac{2+x}{2-x}$$</p>
+<p>$$S(x)=\frac{1}{x}\left[\arctan x+\ln\frac{2+x}{2-x}\right],\quad 0&lt;|x|\le1;\qquad S(0)=1+1=2$$<br>（验证展开：S=2-x²/4+…，与级数前两项 2-x²/4 一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle \cosh x=\dfrac{e^x+e^{-x}}{2}$</div>
+        <div class="steps"><p>与 e^x = Σ x^n/n! 比较，取出偶数次幂项：<br>$$\sum_{n=0}^{\infty}\frac{x^{2n}}{(2n)!}=\frac{e^x+e^{-x}}{2}=\cosh x$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：原题为 [2023,三] 求 Σ_{n=0}^∞ x^{2n}/(2n)! 的和函数，正确答案 cosh x=(e^x+e^{-x})/2（solver、B 均对）；A 写成 cosh√x=(e^{√x}+e^{-√x})/2，那是 Σ x^n/(2n)! 的和函数，自变量多套了一层根号，属实质错误。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k50_T2">
     <div class="qhead"><span class="qno">k50_T2</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 10 小题</span><span class="badge year">1991</span> <span class="badge year">1993</span> <span class="badge year">1996</span> <span class="badge year">1997</span> <span class="badge year">1998</span> <span class="badge year">1999</span> <span class="badge year">2000</span> <span class="badge year">2009</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k50_T2_0.png" alt="k50_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k50_T2_1.png" alt="k50_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k50_T2_2.png" alt="k50_T2 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac{2}{2-\ln 3}$</div>
+        <div class="steps"><p>公比 q = ln3/2 的等比级数：<br>$$\sum_{n=0}^{\infty}\left(\frac{\ln 3}{2}\right)^n=\frac{1}{1-\frac{\ln3}{2}}=\frac{2}{2-\ln 3}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C（\sum a_n = 8）$</div>
+        <div class="steps"><p>记奇数项和 A=Σa_{2n-1}=5，偶数项和 B=Σa_{2n}。</p>
+<p>Σ(-1)^{n-1}a_n = A - B = 2 ⟹ B = 3。</p>
+<p>故 Σa_n = A + B = 8，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac{22}{27}$</div>
+        <div class="steps"><p>设 φ(x)=Σ_{n=0}^∞ (n²-n+1)x^n（|x|&lt;1）。用<br>$$\sum nx^n=\frac{x}{(1-x)^2},\qquad \sum n^2x^n=\frac{x(1+x)}{(1-x)^3},\qquad \sum x^n=\frac{1}{1-x}$$</p>
+<p>$$\varphi(x)=\frac{x(1+x)}{(1-x)^3}-\frac{x}{(1-x)^2}+\frac{1}{1-x}$$</p>
+<p>代入 x=-1/2（1-x=3/2）：<br>$$\varphi\left(-\frac12\right)=\frac{-\frac14}{\frac{27}{8}}-\frac{-\frac12}{\frac94}+\frac{2}{3}=-\frac{2}{27}+\frac{6}{27}+\frac{18}{27}=\frac{22}{27}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac{5}{8}-\dfrac{3}{4}\ln 2$</div>
+        <div class="steps"><p>设 S(x)=Σ_{n=2}^∞ x^n/(n²-1)（|x|&lt;1），所求为 S(1/2)。由<br>$$\frac{1}{n^2-1}=\frac12\left(\frac{1}{n-1}-\frac{1}{n+1}\right)$$</p>
+<p>$$\sum_{n=2}^{\infty}\frac{x^n}{n-1}=x\sum_{m=1}^{\infty}\frac{x^m}{m}=-x\ln(1-x)$$<br>$$\sum_{n=2}^{\infty}\frac{x^n}{n+1}=\frac{1}{x}\left[-\ln(1-x)-x-\frac{x^2}{2}\right]$$</p>
+<p>$$S(x)=\frac12\left[\left(\frac1x-x\right)\ln(1-x)+1+\frac{x}{2}\right]$$</p>
+<p>代入 x=1/2：S(1/2) = \frac12\left[\frac32\cdot(-\ln2)+\frac54\right] = \frac58-\frac34\ln 2。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I)\ \overline{OP_n}=\frac{1}{2^{n-1}}；(II)\ 和为\ \frac{4}{3}$</div>
+        <div class="steps"><p>(I) 设 P_n=(p,0)，则 Q_n=(p,p²)。抛物线在 Q_n 处切线斜率 2p，切线 y-p²=2p(x-p)。令 y=0 得 x=p/2，即<br>$$x_{P_{n+1}}=\frac{1}{2}x_{P_n},\qquad x_{P_1}=1\ \Rightarrow\ x_{P_n}=\left(\frac12\right)^{n-1}$$</p>
+<p>故 \overline{OP_n} = (1/2)^{n-1}。</p>
+<p>(II) Q_nP_n 为竖直线段，长度 = Q_n 的纵坐标 = p² = (1/4)^{n-1}：<br>$$\sum_{n=1}^{\infty}\overline{Q_nP_n}=\sum_{n=1}^{\infty}\left(\frac14\right)^{n-1}=\frac{1}{1-\frac14}=\frac43$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (I)\ S_n=\frac{4}{3[n(n+1)]^{3/2}}（a_n=\frac{1}{\sqrt{n(n+1)}}）；(II)\ 和为\ \frac{4}{3}$</div>
+        <div class="steps"><p>联立：nx²+1/n=(n+1)x²+1/(n+1) ⟹ x² = 1/(n(n+1))，故 a_n = 1/\sqrt{n(n+1)}。</p>
+<p>(I) 在 (-a_n, a_n) 上 y=nx²+1/n 在上（比较 x=0 处值 1/n &gt; 1/(n+1)）：<br>$$S_n=2\int_0^{a_n}\left[\frac{1}{n(n+1)}-x^2\right]dx=2\left[\frac{a_n}{n(n+1)}-\frac{a_n^3}{3}\right]=\frac{4}{3}a_n^3=\frac{4}{3[n(n+1)]^{3/2}}$$<br>（因 a_n² = 1/(n(n+1))，中括号内 = a_n³ - a_n³/3。）</p>
+<p>(II)<br>$$\frac{S_n}{a_n}=\frac43 a_n^2=\frac{4}{3n(n+1)}\ \Rightarrow\ \sum_{n=1}^{\infty}\frac{S_n}{a_n}=\frac43\sum_{n=1}^{\infty}\left(\frac1n-\frac{1}{n+1}\right)=\frac43$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle 4$</div>
+        <div class="steps"><p>$$\sum_{n=1}^{\infty}nq^{n-1}=\frac{1}{(1-q)^2},\quad q=\frac12\ \Rightarrow\ \sum_{n=1}^{\infty}n\left(\frac12\right)^{n-1}=\frac{1}{(1/2)^2}=4$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \ln(2+\sqrt{2})$</div>
+        <div class="steps"><p>凑微分：令 u=sin x，<br>$$I_n=\int_0^{\pi/4}\sin^nx\,d(\sin x)=\frac{\sin^{n+1}x}{n+1}\Big|_0^{\pi/4}=\frac{1}{n+1}\left(\frac{\sqrt2}{2}\right)^{n+1}$$</p>
+<p>记 q=√2/2：<br>$$\sum_{n=0}^{\infty}I_n=\sum_{m=1}^{\infty}\frac{q^m}{m}=-\ln(1-q)=\ln\frac{1}{1-\frac{\sqrt2}{2}}=\ln(2+\sqrt2)$$<br>（因 1/(1-√2/2)=2/(2-√2)=2+√2。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle S_1=\frac{1}{2}，S_2=1-\ln 2$</div>
+        <div class="steps"><p>在 (0,1) 上 x^n &gt; x^{n+1}：<br>$$a_n=\int_0^1(x^n-x^{n+1})\,dx=\frac{1}{n+1}-\frac{1}{n+2}=\frac{1}{(n+1)(n+2)}$$</p>
+<p>$$S_1=\sum_{n=1}^{\infty}\left(\frac{1}{n+1}-\frac{1}{n+2}\right)=\frac12$$</p>
+<p>$$S_2=\sum_{n=1}^{\infty}a_{2n-1}=\sum_{n=1}^{\infty}\left(\frac{1}{2n}-\frac{1}{2n+1}\right)=\frac12-\frac13+\frac14-\frac15+\cdots=1-\ln 2$$<br>（由 ln2 = 1-1/2+1/3-1/4+… 移项即得。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle B（\cos 1+2\sin 1）$</div>
+        <div class="steps"><p>拆分子：2n+3=(2n+1)+2：<br>$$\frac{2n+3}{(2n+1)!}=\frac{1}{(2n)!}+\frac{2}{(2n+1)!}$$</p>
+<p>$$\sum_{n=0}^{\infty}\frac{(-1)^n}{(2n)!}=\cos 1,\qquad \sum_{n=0}^{\infty}\frac{(-1)^n}{(2n+1)!}=\sin 1$$</p>
+<p>故和 = cos1 + 2sin1，选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k50_T3">
     <div class="qhead"><span class="qno">k50_T3</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 5 小题</span><span class="badge year">2001</span> <span class="badge year">2002</span> <span class="badge year">2004</span> <span class="badge year">2020</span> <span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k50_T3_0.png" alt="k50_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k50_T3_1.png" alt="k50_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_n(x)=\frac{e^x x^n}{n}；和函数 S(x)=-e^x\ln(1-x)，x\in[-1,1)$</div>
+        <div class="steps"><p>一阶线性方程两边乘 e^{-x}：<br>$$\left(e^{-x}f_n(x)\right)&#x27;=e^{-x}f_n&#x27;(x)-e^{-x}f_n(x)=x^{n-1}$$</p>
+<p>积分：e^{-x}f_n(x) = x^n/n + C，即 f_n(x)=e^x(x^n/n+C)。由 f_n(1)=e(1/n+C)=e/n 得 C=0，故<br>$$f_n(x)=\frac{e^x x^n}{n}$$</p>
+<p>于是<br>$$\sum_{n=1}^{\infty}f_n(x)=e^x\sum_{n=1}^{\infty}\frac{x^n}{n}=-e^x\ln(1-x)$$</p>
+<p>Σ x^n/n 的收敛域为 [-1,1)，故和函数定义域为 [-1,1)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \sum_{n=0}^{\infty}\frac{x^{3n}}{(3n)!}=\frac{1}{3}e^x+\frac{2}{3}e^{-x/2}\cos\frac{\sqrt{3}}{2}x，x\in\mathbb{R}$</div>
+        <div class="steps"><p>(I) 对任意 x 逐项求导（收敛半径 ∞）：<br>$$y=\sum_{n=0}^{\infty}\frac{x^{3n}}{(3n)!},\quad y&#x27;=\sum_{n=1}^{\infty}\frac{x^{3n-1}}{(3n-1)!},\quad y&#x27;&#x27;=\sum_{n=1}^{\infty}\frac{x^{3n-2}}{(3n-2)!}$$</p>
+<p>y 含 0,3,6,… 次幂，y&#x27;&#x27; 含 1,4,7,… 次幂，y&#x27; 含 2,5,8,… 次幂，三者恰好不重不漏地拼成全部非负次幂，每个系数均为 1/m!：<br>$$y&#x27;&#x27;+y&#x27;+y=\sum_{m=0}^{\infty}\frac{x^m}{m!}=e^x$$</p>
+<p>(II) 由 (I)，所求和函数是初值问题 y&#x27;&#x27;+y&#x27;+y=e^x，y(0)=1（级数首项），y&#x27;(0)=0（y&#x27; 各项含正幂）的解。</p>
+<p>特征方程 r²+r+1=0，r=-1/2±(√3/2)i；特解 y*=e^x/3。通解：<br>$$y=e^{-x/2}\left(C_1\cos\frac{\sqrt3}{2}x+C_2\sin\frac{\sqrt3}{2}x\right)+\frac13 e^x$$</p>
+<p>y(0)=C_1+1/3=1 ⟹ C_1=2/3；<br>y&#x27;(0)=-\frac12 C_1+\frac{\sqrt3}{2}C_2+\frac13=0 ⟹ C_2=0。</p>
+<p>$$\sum_{n=0}^{\infty}\frac{x^{3n}}{(3n)!}=\frac{2}{3}e^{-x/2}\cos\frac{\sqrt3}{2}x+\frac{1}{3}e^x,\quad -\infty&lt;x&lt;+\infty$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I)\ S'-xS=\frac{x^3}{2}，S(0)=0；(II)\ S(x)=e^{x^2/2}-1-\frac{x^2}{2}$</div>
+        <div class="steps"><p>S(x)=\sum_{n=1}^{\infty}\frac{x^{2n+2}}{2\cdot4\cdots(2n+2)}=\sum_{n=1}^{\infty}\frac{x^{2n+2}}{2^{n+1}(n+1)!}。</p>
+<p>(I) 逐项求导：<br>$$S&#x27;(x)=\sum_{n=1}^{\infty}\frac{(2n+2)x^{2n+1}}{2^{n+1}(n+1)!}=\sum_{n=1}^{\infty}\frac{x^{2n+1}}{2^n n!}$$<br>而 xS(x)=Σ_{n=1}^∞ x^{2n+3}/(2^{n+1}(n+1)!) 恰为 S&#x27;(x) 去掉首项 x³/2 后的部分，故<br>$$S&#x27;(x)-xS(x)=\frac{x^3}{2},\qquad S(0)=0$$</p>
+<p>(II) 一阶线性方程，积分因子 e^{-x²/2}：<br>$$\left(S e^{-x^2/2}\right)&#x27;=\frac{x^3}{2}e^{-x^2/2}$$<br>令 u=x²/2，∫_0^x (t³/2)e^{-t²/2}dt = ∫_0^{x²/2} ue^{-u}du = 1-\left(1+\frac{x^2}{2}\right)e^{-x^2/2}。</p>
+<p>$$S(x)=e^{x^2/2}\left[1-\left(1+\frac{x^2}{2}\right)e^{-x^2/2}\right]=e^{x^2/2}-1-\frac{x^2}{2},\quad -\infty&lt;x&lt;+\infty$$<br>（验证：直接由定义 S(x)=Σ_{k=2}^∞ (x²/2)^k/k! = e^{x²/2}-1-x²/2，一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I)\ f(x)=e^{-x}\cos 2x；(II)\ \sum_{n=1}^{\infty}a_n=\frac{1}{5(e^{\pi}-1)}$</div>
+        <div class="steps"><p>(I) 特征方程 r²+2r+5=0，r=-1±2i：<br>$$f(x)=e^{-x}(C_1\cos 2x+C_2\sin 2x)$$<br>f(0)=C_1=1；f&#x27;(0)=-C_1+2C_2=-1 ⟹ C_2=0。故<br>$$f(x)=e^{-x}\cos 2x$$</p>
+<p>(II) 由 \int e^{-x}\cos 2x\,dx=\frac{e^{-x}}{5}(2\sin 2x-\cos 2x)+C（求导验证），且 x→+∞ 时 e^{-x}→0：<br>$$a_n=\int_{n\pi}^{+\infty}e^{-x}\cos 2x\,dx=0-\frac{e^{-n\pi}}{5}(2\sin 2n\pi-\cos 2n\pi)=\frac{e^{-n\pi}}{5}$$</p>
+<p>$$\sum_{n=1}^{\infty}a_n=\frac15\sum_{n=1}^{\infty}e^{-n\pi}=\frac15\cdot\frac{e^{-\pi}}{1-e^{-\pi}}=\frac{1}{5(e^{\pi}-1)}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I)\ y_n(x)=\frac{x^{n+1}}{n(n+1)}；(II)\ 收敛域 [-1,1]，S(x)=(1-x)\ln(1-x)+x$</div>
+        <div class="steps"><p>(I) 分离变量：dy/y=(n+1)dx/x ⟹ y=Cx^{n+1}。由 y_n(1)=1/(n(n+1)) 得 C=1/(n(n+1))：<br>$$y_n(x)=\frac{x^{n+1}}{n(n+1)}$$</p>
+<p>(II) 系数 ~1/n²，R=1；x=1 时 Σ1/(n(n+1))=1 收敛，x=-1 时绝对收敛。收敛域 [-1,1]。</p>
+<p>用 1/(n(n+1))=1/n-1/(n+1) 与 Σx^n/n=-ln(1-x)：<br>$$\sum_{n=1}^{\infty}\frac{x^{n+1}}{n(n+1)}=-x\ln(1-x)+\ln(1-x)+x=(1-x)\ln(1-x)+x$$</p>
+<p>$$S(x)=(1-x)\ln(1-x)+x,\quad x\in[-1,1]$$<br>（x=1 时规定 0·ln0=0，S(1)=1，与级数一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k50_T4">
     <div class="qhead"><span class="qno">k50_T4</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2007</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k50_T4_0.png" alt="k50_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ a_{n+2}=\frac{2}{n+1}a_n；(II)\ y(x)=xe^{x^2}$</div>
+        <div class="steps"><p>(I) 在 R 上逐项求导：<br>$$y&#x27;=\sum_{n=1}^{\infty}na_nx^{n-1},\qquad y&#x27;&#x27;=\sum_{n=2}^{\infty}n(n-1)a_nx^{n-2}=\sum_{n=0}^{\infty}(n+2)(n+1)a_{n+2}x^n$$</p>
+<p>代入方程：<br>$$\sum_{n=0}^{\infty}\left[(n+2)(n+1)a_{n+2}-2na_n-4a_n\right]x^n=0$$</p>
+<p>由幂级数解的唯一性（各系数为 0）：<br>$$(n+2)(n+1)a_{n+2}=2(n+2)a_n\ \Rightarrow\ a_{n+2}=\frac{2}{n+1}a_n,\quad n=0,1,2,\dots$$<br>特别地对 n=1,2,… 成立。</p>
+<p>(II) y(0)=0 ⟹ a_0=0 ⟹ 所有偶系数 a_{2k}=0；y&#x27;(0)=1 ⟹ a_1=1。</p>
+<p>对奇数链：a_{2k+1} = \frac{2}{2k-1+1}a_{2k-1} = \frac{a_{2k-1}}{k}，递推得<br>$$a_{2k+1}=\frac{1}{k!}\quad(k=0,1,2,\dots)$$</p>
+<p>$$y(x)=\sum_{k=0}^{\infty}\frac{x^{2k+1}}{k!}=x\sum_{k=0}^{\infty}\frac{(x^2)^k}{k!}=xe^{x^2}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：原题为 [2007,一] y&#x27;&#x27;-2xy&#x27;-4y=0, y(0)=0, y&#x27;(0)=1，(II) 奇次项系数应为 a_{2k+1}=1/k!，即 y=x+\sum_{k=0}^{\infty}x^{2k+1}/k!=xe^{x^2}；B 写的系数 2^n/(1·3·5⋯(2n-1)) 不满足递推（x^3 系数 B 为 2，应为 1；x^5 应为 1/2，B 为 4/3），级数实质不同，B 错。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

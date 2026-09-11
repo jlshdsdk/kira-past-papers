@@ -21,34 +21,123 @@
 
   <div class="card q" id="k46_T1">
     <div class="qhead"><span class="qno">k46_T1</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">2001</span> <span class="badge year">2005</span> <span class="badge year">2010</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.21.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k46_T1_0.png" alt="k46_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k46_T1_1.png" alt="k46_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2(n-1)\sigma^2$</div>
+        <div class="steps"><p>令 $Z_i=X_i+X_{n+i}\ (i=1,\dots,n)$，则 $Z_1,\dots,Z_n$ 独立同分布，且</p>
+<p>$$E(Z_i)=2\mu,\qquad D(Z_i)=D(X_i)+D(X_{n+i})=2\sigma^2.$$</p>
+<p>其样本均值为 $\bar Z=\dfrac{1}{n}\sum_{i=1}^n Z_i=\dfrac{1}{n}\sum_{i=1}^{2n}X_i=2\bar X$，于是</p>
+<p>$$Y=\sum_{i=1}^n (Z_i-\bar Z)^2.$$</p>
+<p>这是总体 $Z$（方差 $2\sigma^2$）的样本离差平方和，$\dfrac{Y}{2\sigma^2}\sim\chi^2(n-1)$，故</p>
+<p>$$EY=(n-1)\cdot 2\sigma^2=2(n-1)\sigma^2.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ \frac{n-1}{n};\quad (II)\ -\frac{1}{n};\quad (III)\ c=\frac{n}{2(n-2)}$</div>
+        <div class="steps"><p>**(I)** $\mathrm{Cov}(X_i,\bar X)=\dfrac{1}{n}D(X_i)=\dfrac{1}{n}$，$D(\bar X)=\dfrac{1}{n}$，故</p>
+<p>$$D(Y_i)=D(X_i)+D(\bar X)-2\mathrm{Cov}(X_i,\bar X)=1+\frac{1}{n}-\frac{2}{n}=1-\frac{1}{n}=\frac{n-1}{n}.$$</p>
+<p>**(II)**<br>$$\mathrm{Cov}(Y_1,Y_n)=\mathrm{Cov}(X_1,\bar X)-\mathrm{Cov}(X_1,\bar X)-\mathrm{Cov}(\bar X,X_n)+D(\bar X).$$<br>逐项写开：$\mathrm{Cov}(X_1,X_n)-\mathrm{Cov}(X_1,\bar X)-\mathrm{Cov}(\bar X,X_n)+D(\bar X)=0-\dfrac{1}{n}-\dfrac{1}{n}+\dfrac{1}{n}=-\dfrac{1}{n}.$</p>
+<p>**(III)** 此时 $D(Y_i)=\sigma^2\dfrac{n-1}{n}$，$\mathrm{Cov}(Y_1,Y_n)=-\dfrac{\sigma^2}{n}$，故</p>
+<p>$$E(Y_1+Y_n)=0,\qquad D(Y_1+Y_n)=\frac{2(n-1)\sigma^2}{n}-\frac{2\sigma^2}{n}=\frac{2(n-2)\sigma^2}{n}.$$</p>
+<p>于是 $E\left[c(Y_1+Y_n)^2\right]=c\,D(Y_1+Y_n)=c\cdot\dfrac{2(n-2)\sigma^2}{n}=\sigma^2$，解得</p>
+<p>$$c=\frac{n}{2(n-2)}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \mu^2+\sigma^2$</div>
+        <div class="steps"><p>由样本与总体同分布，$E(X_i^2)=E(X^2)=D(X)+\left[E(X)\right]^2=\sigma^2+\mu^2$，故</p>
+<p>$$ET=\frac{1}{n}\sum_{i=1}^n E(X_i^2)=\mu^2+\sigma^2.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a_1=0,\ a_2=\frac{1}{n},\ a_3=\frac{1}{n};\quad D(T)=\frac{\theta(1-\theta)}{n}$</div>
+        <div class="steps"><p>$N_i\sim B(n,p_i)$，其中 $p_1=1-\theta,\ p_2=\theta-\theta^2,\ p_3=\theta^2$，故</p>
+<p>$$E(N_1)=n(1-\theta),\quad E(N_2)=n(\theta-\theta^2),\quad E(N_3)=n\theta^2.$$</p>
+<p>$$E(T)=na_1+n(a_2-a_1)\theta+n(a_3-a_2)\theta^2.$$</p>
+<p>要对一切 θ∈(0,1) 有 $E(T)=\theta$，比较系数：常数项 $na_1=0\Rightarrow a_1=0$；θ 系数 $n(a_2-a_1)=1\Rightarrow a_2=\dfrac{1}{n}$；θ² 系数 $n(a_3-a_2)=0\Rightarrow a_3=\dfrac{1}{n}$。</p>
+<p>此时 $T=\dfrac{N_2+N_3}{n}$，即样本中 X≠1 的个数除以 n。而 $P\{X\ne 1\}=\theta$，故 $N_2+N_3\sim B(n,\theta)$，</p>
+<p>$$D(T)=\frac{1}{n^2}\,n\theta(1-\theta)=\frac{\theta(1-\theta)}{n}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k46_T2">
     <div class="qhead"><span class="qno">k46_T2</span>
-      <span class="badge">共 6 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">2004</span> <span class="badge year">2006</span> <span class="badge year">2009</span> <span class="badge year">2010</span> <span class="badge year">2014</span> <span class="badge year">2015</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.21.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k46_T2_0.png" alt="k46_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k46_T2_1.png" alt="k46_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k46_T2_2.png" alt="k46_T2 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>$Y=\dfrac{1}{n}\sum_{i=1}^n X_i$。由独立性，交叉协方差全为零：</p>
+<p>$$\mathrm{Cov}(X_1,Y)=\frac{1}{n}\mathrm{Cov}\left(X_1,\sum_{i=1}^n X_i\right)=\frac{1}{n}D(X_1)=\frac{\sigma^2}{n}.$$</p>
+<p>故 (A) 对，(B) 错。</p>
+<p>$$D(X_1+Y)=D(X_1)+D(Y)+2\mathrm{Cov}(X_1,Y)=\sigma^2+\frac{\sigma^2}{n}+\frac{2\sigma^2}{n}=\frac{n+3}{n}\sigma^2 \ne \frac{n+2}{n}\sigma^2,$$</p>
+<p>$$D(X_1-Y)=\sigma^2+\frac{\sigma^2}{n}-\frac{2\sigma^2}{n}=\frac{n-1}{n}\sigma^2 \ne \frac{n+1}{n}\sigma^2,$$</p>
+<p>故 (C)、(D) 均错。选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>样本方差满足 $E(S^2)=D(X)$（S² 是总体方差的无偏估计），只需求 $D(X)$。</p>
+<p>密度为偶函数，故 $E(X)=0$，且</p>
+<p>$$E(X^2)=\int_{-\infty}^{+\infty}x^2\cdot\frac{1}{2}e^{-|x|}dx=\int_0^{+\infty}x^2 e^{-x}dx=\Gamma(3)=2!=2.$$</p>
+<p>故 $D(X)=E(X^2)-[E(X)]^2=2$，从而 $ES^2=2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle np^2$</div>
+        <div class="steps"><p>样本均值、样本方差分别为总体期望与方差的无偏估计：$E\bar X=np$，$E(S^2)=D(X)=np(1-p)$。</p>
+<p>故</p>
+<p>$$ET=E\bar X-E(S^2)=np-np(1-p)=np^2.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (D)$</div>
+        <div class="steps"><p>期望：$ET_1=\lambda$；$ET_2=\dfrac{n-1}{n-1}\lambda+\dfrac{\lambda}{n}=\lambda\left(1+\dfrac{1}{n}\right)&gt;\lambda$，故 $ET_1&lt;ET_2$。</p>
+<p>方差（各项独立）：</p>
+<p>$$DT_1=\frac{\lambda}{n},\qquad DT_2=\frac{1}{(n-1)^2}(n-1)\lambda+\frac{1}{n^2}\lambda=\frac{\lambda}{n-1}+\frac{\lambda}{n^2}&gt;\frac{\lambda}{n}=DT_1.$$</p>
+<p>故 $ET_1&lt;ET_2$ 且 $DT_1&lt;DT_2$，选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac{2}{5n}$</div>
+        <div class="steps"><p>$$E(X^2)=\int_{\theta}^{2\theta}x^2\cdot\frac{2x}{3\theta^2}dx=\frac{2}{3\theta^2}\int_\theta^{2\theta}x^3dx=\frac{2}{3\theta^2}\cdot\frac{(2\theta)^4-\theta^4}{4}=\frac{2}{3\theta^2}\cdot\frac{15\theta^4}{4}=\frac{5}{2}\theta^2.$$</p>
+<p>无偏性要求 $E\left[c\sum_{i=1}^n X_i^2\right]=cn\cdot\dfrac{5}{2}\theta^2=\theta^2$，解得</p>
+<p>$$c=\frac{2}{5n}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (C)$</div>
+        <div class="steps"><p>样本离差平方和与样本方差满足 $\sum_{i=1}^n (X_i-\bar X)^2=(n-1)S^2$，而 $E(S^2)=D(X)$，故</p>
+<p>$$E\left[\sum_{i=1}^n (X_i-\bar X)^2\right]=(n-1)D(X)=(n-1)\,m\theta(1-\theta).$$</p>
+<p>选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k46_T3">
     <div class="qhead"><span class="qno">k46_T3</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.21.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k46_T3_0.png" alt="k46_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{n+1}{n}$</div>
+        <div class="steps"><p>$X_{(n)}$ 的分布函数 $F(t)=(t/\theta)^n\ (0\le t\le \theta)$，密度 $f(t)=\dfrac{nt^{n-1}}{\theta^n}$。</p>
+<p>$$E(X_{(n)})=\int_0^\theta t\cdot\frac{nt^{n-1}}{\theta^n}dt=\frac{n}{n+1}\theta.$$</p>
+<p>令 $E(T_c)=c\cdot\dfrac{n}{n+1}\theta=\theta$，解得 $c=\dfrac{n+1}{n}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{n+2}{n+1}$</div>
+        <div class="steps"><p>先算 $E(X_{(n)}^2)=\displaystyle\int_0^\theta t^2\cdot\frac{nt^{n-1}}{\theta^n}dt=\frac{n}{n+2}\theta^2$，故 $E(T_c^2)=\dfrac{c^2 n}{n+2}\theta^2$。</p>
+<p>$$h(c)=E(T_c^2)-2\theta E(T_c)+\theta^2=\frac{c^2 n}{n+2}\theta^2-\frac{2cn}{n+1}\theta^2+\theta^2.$$</p>
+<p>对 c 求导：</p>
+<p>$$h&#x27;(c)=\frac{2cn}{n+2}\theta^2-\frac{2n}{n+1}\theta^2=0\ \Longrightarrow\ c=\frac{n+2}{n+1}.$$</p>
+<p>$h&#x27;&#x27;(c)=\dfrac{2n\theta^2}{n+2}&gt;0$，故 $c=\dfrac{n+2}{n+1}$ 时 $h(c)$ 取最小值。</p>
+<p>（对比 (I) 的 $\frac{n+1}{n}$：均方误差最优的 c 略大于无偏修正的 c。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

@@ -21,12 +21,27 @@
 
   <div class="card q" id="k51_T1">
     <div class="qhead"><span class="qno">k51_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1989</span> <span class="badge year">2003</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k51_T1_0.png" alt="k51_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=\frac{\pi}{4}+\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}，-1\le x<1$</div>
+        <div class="steps"><p>求导：<br>$$f&#x27;(x)=\frac{\left(\frac{1+x}{1-x}\right)&#x27;}{1+\left(\frac{1+x}{1-x}\right)^2}=\frac{\frac{2}{(1-x)^2}}{\frac{(1-x)^2+(1+x)^2}{(1-x)^2}}=\frac{1}{1+x^2}$$</p>
+<p>故 f(x)=f(0)+\int_0^x \frac{dt}{1+t^2}=\frac{\pi}{4}+\arctan x（f(0)=arctan 1=π/4）。</p>
+<p>代入 arctan x = Σ_{n=0}^∞ (-1)^n x^{2n+1}/(2n+1)（|x|≤1）：<br>$$f(x)=\frac{\pi}{4}+\sum_{n=0}^{\infty}\frac{(-1)^n x^{2n+1}}{2n+1}$$</p>
+<p>x=1 处 f 无定义，故展开式成立范围为 -1≤x&lt;1（x=-1 处级数收敛且值为 f(-1)=0）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=\frac{\pi}{4}-2\sum_{n=0}^{\infty}\frac{(-1)^n4^nx^{2n+1}}{2n+1}，-\frac12<x\le\frac12；\ \sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}=\frac{\pi}{4}$</div>
+        <div class="steps"><p>求导：<br>$$f&#x27;(x)=\frac{-\frac{4}{(1+2x)^2}}{1+\left(\frac{1-2x}{1+2x}\right)^2}=\frac{-4}{(1+2x)^2+(1-2x)^2}=-\frac{2}{1+4x^2}$$</p>
+<p>当 |x|&lt;1/2：<br>$$f&#x27;(x)=-2\sum_{n=0}^{\infty}(-1)^n4^nx^{2n}$$</p>
+<p>逐项积分（f(0)=arctan 1=π/4）：<br>$$f(x)=\frac{\pi}{4}-2\sum_{n=0}^{\infty}\frac{(-1)^n4^nx^{2n+1}}{2n+1}$$</p>
+<p>收敛范围：|4x²|&lt;1 即 |x|&lt;1/2；x=1/2 时级数收敛（莱布尼茨）且由阿贝尔定理其和为 f(1/2)=0，故成立范围 -1/2&lt;x≤1/2。</p>
+<p>令 x=1/2：0=\frac{\pi}{4}-2\sum\frac{(-1)^n4^n(1/2)^{2n+1}}{2n+1}，其中 4^n(1/2)^{2n+1}=1/2，故<br>$$\sum_{n=0}^{\infty}\frac{(-1)^n}{2n+1}=\frac{\pi}{4}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

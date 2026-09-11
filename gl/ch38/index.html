@@ -17,93 +17,311 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">概率论与数理统计</a> / 考点 38</div>
 <h1 class="title">考点 38　二维随机变量函数ZgX,Y的分布</h1>
-<div class="sub">题组 8 · 覆盖年份 — · 题型：— · 解析完成 0/8　</div>
+<div class="sub">题组 8 · 覆盖年份 — · 题型：— · 解析完成 8/8　</div>
 
   <div class="card q" id="k38_T1">
     <div class="qhead"><span class="qno">k38_T1</span>
-      <span class="badge">共 6 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1994</span> <span class="badge year">2004</span> <span class="badge year">2011</span> <span class="badge year">2018</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T1_0.png" alt="k38_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T1_1.png" alt="k38_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T1_2.png" alt="k38_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P{X=-1}=0.1344, P{X=0}=0.7312, P{X=1}=0.1344$</div>
+        <div class="steps"><p>X 按对角线展开为 X = X1·X4 - X2·X3，可能取值 -1, 0, 1。<br>记 A = X1X4, B = X2X3，由独立性 A 与 B 独立，且 P{A=1} = 0.4² = 0.16，P{A=0} = 0.84。</p>
+<p>$$P\{X=1\}=P\{A=1,B=0\}=0.16\times 0.84=0.1344$$</p>
+<p>$$P\{X=-1\}=P\{A=0,B=1\}=0.84\times 0.16=0.1344$$</p>
+<p>$$P\{X=0\}=1-2\times 0.1344=0.7312$$</p>
+<p>即 X 的分布律为：取 -1, 0, 1 的概率分别为 0.1344, 0.7312, 0.1344。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P{Z=0}=1/4, P{Z=1}=3/4$</div>
+        <div class="steps"><p>Z = max{X,Y} 仅当 X=0 且 Y=0 时取 0：</p>
+<p>$$P\{Z=0\}=P\{X=0,Y=0\}=\frac{1}{2}\cdot\frac{1}{2}=\frac{1}{4}$$</p>
+<p>$$P\{Z=1\}=1-\frac{1}{4}=\frac{3}{4}$$</p>
+<p>即 Z 取 0, 1 的概率分别为 1/4, 3/4。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (X,Y) 联合分布：P{1,1}=1/12, P{1,0}=1/6, P{0,1}=1/12, P{0,0}=2/3；Z=X²+Y²：P{Z=0}=2/3, P{Z=1}=1/4, P{Z=2}=1/12$</div>
+        <div class="steps"><p>P(AB) = P(A)P(B|A) = (1/4)(1/3) = 1/12；P(B) = P(AB)/P(A|B) = (1/12)/(1/2) = 1/6。</p>
+<p>(I) 联合分布：<br>- P{X=1,Y=1} = P(AB) = 1/12<br>- P{X=1,Y=0} = P(A\B) = 1/4 - 1/12 = 1/6<br>- P{X=0,Y=1} = P(B\A) = 1/6 - 1/12 = 1/12<br>- P{X=0,Y=0} = 1 - 1/12 - 1/6 - 1/12 = 2/3</p>
+<p>(III) Z = X²+Y² 取值 0, 1, 2：<br>- P{Z=0} = P{X=0,Y=0} = 2/3<br>- P{Z=1} = P{X=1,Y=0} + P{X=0,Y=1} = 1/6 + 1/12 = 1/4<br>- P{Z=2} = P{X=1,Y=1} = 1/12</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 联合分布：P{X=0,Y=0}=1/3, P{X=1,Y=-1}=P{X=1,Y=1}=1/3, 其余为 0；Z=XY：P{Z=-1}=P{Z=0}=P{Z=1}=1/3$</div>
+        <div class="steps"><p>由 P{X²=Y²}=1，在 {X=0, Y=±1} 与 {X=1, Y=0} 上 X²≠Y²，故这些格点概率为 0。<br>于是 P{X=0,Y=0} = P{X=0} = 1/3。设 P{X=1,Y=1} = P{X=1,Y=-1} = a，由 P{Y=1} = a + 0 = 1/3 得 a = 1/3。</p>
+<p>联合分布表：</p>
+<p>| | Y=-1 | Y=0 | Y=1 |<br>|---|---|---|---|<br>| X=0 | 0 | 1/3 | 0 |<br>| X=1 | 1/3 | 0 | 1/3 |</p>
+<p>(II) Z=XY 取值 -1, 0, 1：<br>- P{Z=-1} = P{X=1,Y=-1} = 1/3<br>- P{Z=0} = P{X=0,Y=0} = 1/3<br>- P{Z=1} = P{X=1,Y=1} = 1/3</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle P{Z=0}=e^{-λ}；对 n=1,2,…，P{Z=n}=P{Z=-n}=(1/2)e^{-λ}λ^n/n!$</div>
+        <div class="steps"><p>Z = XY。当 Y=0 时 Z=0，故</p>
+<p>$$P\{Z=0\}=P\{Y=0\}=e^{-\lambda}$$</p>
+<p>对 n = 1, 2, …：</p>
+<p>$$P\{Z=n\}=P\{X=1\}P\{Y=n\}=\frac{1}{2}\cdot\frac{e^{-\lambda}\lambda^n}{n!}$$</p>
+<p>$$P\{Z=-n\}=P\{X=-1\}P\{Y=n\}=\frac{1}{2}\cdot\frac{e^{-\lambda}\lambda^n}{n!}$$</p>
+<p>即 Z 以 e^{-λ} 取 0，以 (1/2)e^{-λ}λ^n/n! 取每个非零整数 ±n。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle p=P{Y>0}=1/4；M~π(δ/4)，P{M=m}=e^{-δ/4}(δ/4)^m/m! (m=0,1,2,…)$</div>
+        <div class="steps"><p>先求 p：</p>
+<p>$$p=P\{Y&gt;0\}=P\{X&gt;100\}=\int_{100}^{\infty}\frac{2\cdot 100^2}{(100+x)^3}dx=100^2\cdot\frac{1}{(100+100)^2}=\frac{1}{4}$$</p>
+<p>再由全概率公式（泊松稀疏化）：对 m = 0, 1, 2, …</p>
+<p>$$P\{M=m\}=\sum_{n=m}^{\infty}\frac{\delta^n e^{-\delta}}{n!}C_n^m\left(\frac{1}{4}\right)^m\left(\frac{3}{4}\right)^{n-m}$$</p>
+<p>令 k=n-m：</p>
+<p>$$P\{M=m\}=e^{-\delta}\frac{(\delta/4)^m}{m!}\sum_{k=0}^{\infty}\frac{(3\delta/4)^k}{k!}=e^{-\delta/4}\frac{(\delta/4)^m}{m!}$$</p>
+<p>即 M ~ π(δ/4)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T2">
     <div class="qhead"><span class="qno">k38_T2</span>
-      <span class="badge">共 8 小题</span>
+      <span class="badge">共 8 小题</span><span class="badge year">1987</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">2003</span> <span class="badge year">2005</span> <span class="badge year">2007</span> <span class="badge year">2021</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T2_0.png" alt="k38_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T2_1.png" alt="k38_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T2_2.png" alt="k38_T2 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_Z(z)=0 (z<0)；(1-e^{-z})/2 (0≤z<2)；((e²-1)/2)e^{-z} (z≥2)$</div>
+        <div class="steps"><p>令 W=2X，则 f_W(w)=1/2 (0≤w≤2)。Z=W+Y，由独立卷积公式：</p>
+<p>$$f_Z(z)=\int_{-\infty}^{\infty}f_W(w)f_Y(z-w)dw=\frac{1}{2}\int_{0}^{2}e^{-(z-w)}\cdot 1\{w&lt;z\}\,dw$$</p>
+<p>- z&lt;0 时：f_Z(z)=0。<br>- 0&lt;z&lt;2 时：$$f_Z(z)=\frac{1}{2}\int_0^{z}e^{-(z-w)}dw=\frac{1}{2}(1-e^{-z})$$<br>- z&gt;2 时：$$f_Z(z)=\frac{1}{2}e^{-z}\int_0^{2}e^{w}dw=\frac{1}{2}(e^2-1)e^{-z}$$</p>
+<p>两段在 z=2 处衔接连续，均为 (1/2)(1-e^{-2})。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle F_Z(z)=0 (z≤0)；1-(1+z)e^{-z} (z>0)$</div>
+        <div class="steps"><p>z≤0 时 F_Z(z)=0。z&gt;0 时积分区域为 x&gt;0, y&gt;0, x+2y≤z：</p>
+<p>$$F_Z(z)=\int_{0}^{z/2}dy\int_{0}^{z-2y}2e^{-(x+2y)}dx$$</p>
+<p>内层积分：$$\int_0^{z-2y}2e^{-(x+2y)}dx=2e^{-2y}-2e^{-z}$$</p>
+<p>再对 y 从 0 到 z/2：</p>
+<p>$$F_Z(z)=\int_0^{z/2}(2e^{-2y}-2e^{-z})dy=(1-e^{-z})-ze^{-z}=1-(1+z)e^{-z}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f_Z(z)=(1/(2π))[Φ((z+π-μ)/σ) - Φ((z-π-μ)/σ)]$</div>
+        <div class="steps"><p>f_Y(y)=1/(2π) (-π≤y≤π)。由独立性用卷积：</p>
+<p>$$f_Z(z)=\int_{-\pi}^{\pi}\frac{1}{2\pi}\cdot\frac{1}{\sqrt{2\pi}\sigma}\exp\left\{-\frac{(z-y-\mu)^2}{2\sigma^2}\right\}dy$$</p>
+<p>令 u=(z-y-μ)/σ（dy=-σdu），y=-π 对应 u=(z+π-μ)/σ，y=π 对应 u=(z-π-μ)/σ：</p>
+<p>$$f_Z(z)=\frac{1}{2\pi}\int_{(z-\pi-\mu)/\sigma}^{(z+\pi-\mu)/\sigma}\frac{1}{\sqrt{2\pi}}e^{-u^2/2}du=\frac{1}{2\pi}\left[\Phi\left(\frac{z+\pi-\mu}{\sigma}\right)-\Phi\left(\frac{z-\pi-\mu}{\sigma}\right)\right]$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle p(u)=(2-u)/2 (0<u<2)；0（其他）$</div>
+        <div class="steps"><p>G 面积为 4，f(x,y)=1/4。F(u)=P{|X-Y|≤u}。</p>
+<p>- u&lt;0：F(u)=0；u≥2：正方形内 |x-y|≤2 恒成立，F(u)=1。<br>- 0≤u&lt;2：事件 {|X-Y|&gt;u} 对应正方形内两个等腰直角三角形（分别位于 x-y&gt;u 与 y-x&gt;u），直角边长均为 2-u，面积之和为 (2-u)²。</p>
+<p>$$F(u)=1-\frac{(2-u)^2}{4}$$</p>
+<p>求导得</p>
+<p>$$p(u)=\frac{2-u}{2},\quad 0&lt;u&lt;2$$</p>
+<p>其余处 p(u)=0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) fX(x)=2x (0<x<1)，fY(y)=1-y/2 (0<y<2)；(II) fZ(z)=1-z/2 (0<z<2)；(III) 3/4$</div>
+        <div class="steps"><p>(I) </p>
+<p>$$f_X(x)=\int_0^{2x}1\,dy=2x\ (0&lt;x&lt;1)$$</p>
+<p>$$f_Y(y)=\int_{y/2}^{1}1\,dx=1-\frac{y}{2}\ (0&lt;y&lt;2)$$</p>
+<p>其余处为 0。</p>
+<p>(II) Z=2X-Y：直线 y=2x-z 落入区域需 0&lt;2x-z&lt;2x，即 x&gt;z/2；且 x&lt;1。0&lt;z&lt;2 时</p>
+<p>$$f_Z(z)=\int_{z/2}^{1}1\,dx=1-\frac{z}{2}$$</p>
+<p>其余处为 0。</p>
+<p>(III) </p>
+<p>$$P\{X\le 1/2\}=\int_0^{1/2}2x\,dx=\frac{1}{4}$$</p>
+<p>$$P\{X\le 1/2, Y\le 1/2\}=\int_0^{1/4}\!\!\int_0^{2x}dy\,dx+\int_{1/4}^{1/2}\!\!\int_0^{1/2}dy\,dx=\frac{1}{16}+\frac{1}{8}=\frac{3}{16}$$</p>
+<p>$$P\{Y\le 1/2\mid X\le 1/2\}=\frac{3/16}{1/4}=\frac{3}{4}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle fZ(z)=z(2-z) (0<z<1)；(2-z)² (1≤z<2)；0（其他）$</div>
+        <div class="steps"><p>由卷积公式 f_Z(z)=∫f(x, z-x)dx，积分域为 0&lt;x&lt;1 且 0&lt;z-x&lt;1，即 max(0, z-1)&lt;x&lt;min(1, z)；被积函数 2-x-(z-x)=2-z 与 x 无关。</p>
+<p>- 0&lt;z&lt;1：x∈(0, z)，</p>
+<p>$$f_Z(z)=\int_0^{z}(2-z)dx=z(2-z)$$</p>
+<p>- 1≤z&lt;2：x∈(z-1, 1)，</p>
+<p>$$f_Z(z)=\int_{z-1}^{1}(2-z)dx=(2-z)^2$$</p>
+<p>- 其他 z：f_Z(z)=0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I) fX(x)=1 (0<x<1)；(II) fZ(z)=2/(1+z)² (z>1)，其他为 0$</div>
+        <div class="steps"><p>设取点位置 U~U(0,2)，X=min(U, 2-U)。</p>
+<p>(I) 0&lt;x&lt;1 时</p>
+<p>$$F_X(x)=P\{U\le x\text{ 或 }U\ge 2-x\}=\frac{x+x}{2}=x$$</p>
+<p>故 f_X(x)=1 (0&lt;x&lt;1)，即 X~U(0,1)。</p>
+<p>(II) u&lt;1 时 Z=(2-u)/u=2/u-1 单调递减；u&gt;1 时 Z=u/(2-u) 单调递增。Z≥1。对 z≥1：<br>- u&lt;1 段：Z≤z ⟺ 2/u-1≤z ⟺ u≥2/(1+z)；<br>- u&gt;1 段：Z≤z ⟺ u≤2z/(1+z)。</p>
+<p>$$F_Z(z)=\frac{\left(1-\frac{2}{1+z}\right)+\left(\frac{2z}{1+z}-1\right)}{2}=\frac{z-1}{z+1}$$</p>
+<p>求导得</p>
+<p>$$f_Z(z)=\frac{2}{(1+z)^2},\quad z&gt;1$$</p>
+<p>z≤1 时 f_Z(z)=0。（校验：∫_1^∞ 2/(1+z)² dz = 1。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (D)$</div>
+        <div class="steps"><p>z≥0 时，由对称性</p>
+<p>$$P\{Z&gt;z\}=P\{X-Y&gt;z\}+P\{Y-X&gt;z\}=2P\{X-Y&gt;z\}$$</p>
+<p>X-Y 服从对称 Laplace 分布：</p>
+<p>$$P\{X-Y&gt;z\}=\int_z^{\infty}(1-e^{-\lambda(x-z)})\lambda e^{-\lambda x}dx=e^{-\lambda z}-\frac{1}{2}e^{-\lambda z}=\frac{1}{2}e^{-\lambda z}$$</p>
+<p>故 P{Z&gt;z}=e^{-λz}，即 Z~Exp(λ)，与 X 同分布。</p>
+<p>排除：(A) X+Y~Γ(2,λ)；(B) (X+Y)/2 是 Γ(2,λ) 的线性变换，不是指数分布；(C) 2X~Exp(λ/2)。选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T3">
     <div class="qhead"><span class="qno">k38_T3</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1989</span> <span class="badge year">1999</span> <span class="badge year">2012</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T3_0.png" alt="k38_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T3_1.png" alt="k38_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle fZ(z)=1/(3√(2π)) · e^{-(z-5)²/18}$</div>
+        <div class="steps"><p>独立正态随机变量的线性组合仍为正态：</p>
+<p>$$E(Z)=2\times 1-0+3=5,\qquad D(Z)=4\times 2+1=9$$</p>
+<p>故 Z~N(5, 9)，</p>
+<p>$$f_Z(z)=\frac{1}{3\sqrt{2\pi}}e^{-\frac{(z-5)^2}{18}},\quad -\infty&lt;z&lt;+\infty$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>X+Y~N(1, 2)：P{X+Y≤0}=Φ(-1/√2)&lt;1/2，(A) 错；P{X+Y≤1}=Φ(0)=1/2，(B) 对。<br>X-Y~N(-1, 2)：P{X-Y≤0}=Φ(1/√2)&gt;1/2，(C) 错；P{X-Y≤1}=Φ(√2)&gt;1/2，(D) 错。选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(z;σ²)=1/(√(6π)σ) · e^{-z²/(6σ²)}$</div>
+        <div class="steps"><p>Z = X-Y 是独立正态之差：</p>
+<p>$$Z=X-Y\sim N(\mu-\mu,\ \sigma^2+2\sigma^2)=N(0,\ 3\sigma^2)$$</p>
+<p>故</p>
+<p>$$f(z;\sigma^2)=\frac{1}{\sqrt{2\pi\cdot 3\sigma^2}}\exp\left\{-\frac{z^2}{2\cdot 3\sigma^2}\right\}=\frac{1}{\sqrt{6\pi}\,\sigma}e^{-\frac{z^2}{6\sigma^2}}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T4">
     <div class="qhead"><span class="qno">k38_T4</span>
-      <span class="badge">共 5 小题</span>
+      <span class="badge">共 5 小题</span><span class="badge year">2003</span> <span class="badge year">2008</span> <span class="badge year">2009</span> <span class="badge year">2017</span> <span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T4_0.png" alt="k38_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T4_1.png" alt="k38_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle g(u)=0.3f(u-1)+0.7f(u-2)$</div>
+        <div class="steps"><p>对 X 的取值用全概率公式分解：</p>
+<p>$$g(u)=P\{X=1\}f(u-1)+P\{X=2\}f(u-2)=0.3f(u-1)+0.7f(u-2)$$</p>
+<p>（X=k 时 U=X+Y 的密度即 f(u-k)。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) 1/2；(II) fZ(z)=1/3 (-1≤z≤2)，其他为 0$</div>
+        <div class="steps"><p>(I) 由独立性，X=0 时 Z=0+Y：</p>
+<p>$$P\{Z\le 1/2\mid X=0\}=P\{Y\le 1/2\}=\int_0^{1/2}1\,dy=\frac{1}{2}$$</p>
+<p>(II) 离散-连续混合的卷积：</p>
+<p>$$f_Z(z)=\sum_{i=-1}^{1}P\{X=i\}f_Y(z-i)=\frac{1}{3}\left[f_Y(z+1)+f_Y(z)+f_Y(z-1)\right]$$</p>
+<p>f_Y 的支撑为 [0,1]，三项分别给出 z∈[-1,0], [0,1], [1,2]，恰好首尾相接，故</p>
+<p>$$f_Z(z)=\frac{1}{3},\ -1\le z\le 2;\qquad f_Z(z)=0,\ \text{其他}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>Y=0 时 Z=0，Y=1 时 Z=X~N(0,1)，由全概率公式：</p>
+<p>$$F_Z(z)=\frac{1}{2}P\{0\le z\}+\frac{1}{2}\Phi(z)$$</p>
+<p>即</p>
+<p>$$F_Z(z)=\begin{cases}\dfrac{1}{2}\Phi(z), &amp; z&lt;0\\[2mm] \dfrac{1}{2}+\dfrac{1}{2}\Phi(z), &amp; z\ge 0\end{cases}$$</p>
+<p>z→0⁻ 时 F_Z→1/4，而 F_Z(0)=1/2+1/4=3/4，在 z=0 处有幅度 1/2 的跳跃；其余处处连续。间断点个数为 1，选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle fZ(z)=z (0<z<1)；z-2 (2<z<3)；0（其他）$</div>
+        <div class="steps"><p>离散-连续混合卷积：</p>
+<p>$$f_Z(z)=P\{X=0\}f_Y(z)+P\{X=2\}f_Y(z-2)=\frac{1}{2}f_Y(z)+\frac{1}{2}f_Y(z-2)$$</p>
+<p>- 0&lt;z&lt;1：f_Y(z)=2z，f_Z(z)=(1/2)·2z=z；<br>- 2&lt;z&lt;3：f_Y(z-2)=2(z-2)，f_Z(z)=(1/2)·2(z-2)=z-2；<br>- 其他：0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle fZ(z)=p·e^{z} (z<0)；(1-p)·e^{-z} (z≥0)；0（其他）$</div>
+        <div class="steps"><p>由全概率公式</p>
+<p>$$F_Z(z)=P\{XY\le z\}=p\,P\{-X\le z\}+(1-p)\,P\{X\le z\}$$</p>
+<p>对 z 求导（dP{-X≤z}/dz = f_X(-z)）：</p>
+<p>$$f_Z(z)=p\,f_X(-z)+(1-p)\,f_X(z)$$</p>
+<p>X~Exp(1)，f_X(t)=e^{-t} (t&gt;0)：<br>- z&lt;0 时：f_Z(z)=p·e^{-(-z)}=p e^{z}；<br>- z&gt;0 时：f_Z(z)=(1-p)e^{-z}。</p>
+<p>P{Z=0}=0，无原子。即 f_Z(z)=p e^{z} (z&lt;0)，(1-p)e^{-z} (z≥0)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T5">
     <div class="qhead"><span class="qno">k38_T5</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2020</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T5_0.png" alt="k38_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x,y)=\frac12\Phi(x)\Phi(y)+\frac12\Phi(\min\{x,y\})；(II) F_Y(y)=\Phi(y)，Y~N(0,1)$</div>
+        <div class="steps"><p>(I) 对 X_3 用全概率公式：</p>
+<p>$$F(x,y)=P\{X_1\le x,\, Y\le y\}=P\{X_3=0\}P\{X_1\le x,\, X_2\le y\}+P\{X_3=1\}P\{X_1\le x,\, X_1\le y\}$$</p>
+<p>X_3=0 时 Y=X_2；X_3=1 时 Y=X_1。故</p>
+<p>$$F(x,y)=\frac{1}{2}\Phi(x)\Phi(y)+\frac{1}{2}\Phi(\min\{x,y\})$$</p>
+<p>(II) 令 x→+∞ 得 Y 的边缘分布函数：</p>
+<p>$$F_Y(y)=\lim_{x\to+\infty}F(x,y)=\frac{1}{2}\Phi(y)+\frac{1}{2}\Phi(y)=\Phi(y)$$</p>
+<p>即 Y~N(0,1)。证毕。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 第二项误为 \frac12\Phi(x)\Phi(\min{x,y})（多乘 Φ(x)），其分段式 {Φ²(x), Φ(x)Φ(y)} 也与真值不符（x=0,y=1 时真值≈0.4603，B 给 0.25），且 B 的展开式与自身分段式互相矛盾</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T6">
     <div class="qhead"><span class="qno">k38_T6</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2016</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T6_0.png" alt="k38_T6 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T6_1.png" alt="k38_T6 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(z)=0\ (z<0);\ \tfrac32 z^2-z^3\ (0\le z<1);\ \tfrac12+2(z-1)^{3/2}-\tfrac32(z-1)^2\ (1\le z<2);\ 1\ (z\ge2)$</div>
+        <div class="steps"><p>D 的面积 A=∫_0^1 (√x-x²)dx = 2/3-1/3 = 1/3，故 f(x,y)=3（D 内），边缘 f_X(x)=3(√x-x²) (0&lt;x&lt;1)。</p>
+<p>给定 X=x 时 Y 在 (x², √x) 内均匀。记 t=√x（0&lt;t&lt;1），由 x²&lt;x&lt;√x：</p>
+<p>$$P\{U=1\mid X=x\}=\frac{\sqrt{x}-x}{\sqrt{x}-x^2}=\frac{1-t}{1-t^3}=\frac{1}{1+t+t^2},\qquad P\{U=0\mid X=x\}=\frac{t+t^2}{1+t+t^2}$$</p>
+<p>Z=U+X，故 F(z)=P{U=0, X≤z}+P{U=1, X≤z-1}。以 t=√x 换元（dx=2t dt，√x-x²=t(1-t)(1+t+t²)）：</p>
+<p>$$A(s):=P\{U=0, X\le s\}=\int_0^{s}3\cdot\frac{t+t^2}{1+t+t^2}(\sqrt{x}-x^2)dx=\int_0^{\sqrt{s}}6t^3(1-t^2)dt=\frac{3}{2}s^4-s^6$$</p>
+<p>$$B(s):=P\{U=1, X\le s\}=\int_0^{s}3\cdot\frac{1}{1+t+t^2}(\sqrt{x}-x^2)dx=\int_0^{\sqrt{s}}6t^2(1-t)dt=2s^3-\frac{3}{2}s^4$$</p>
+<p>（校验：A(1)+B(1)=1/2+1/2=1。）</p>
+<p>- z&lt;0：F(z)=0。<br>- 0≤z&lt;1：只有 U=0 项有贡献（U=1 时 Z=X+1&gt;1），F(z)=A(√z)=(3/2)z²-z³。<br>- 1≤z&lt;2：F(z)=A(1)+B(√(z-1))=1/2+2(z-1)^{3/2}-(3/2)(z-1)²。<br>- z≥2：F(z)=1。</p>
+<p>（衔接校验：z=1 处左极限=F(1)=1/2，右支也为 1/2；z=2 处 1/2+2-3/2=1。）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 把 0≤z&lt;1 段误用 X 的边缘分布 2z^{3/2}-z^3（正确为 P{U=0,X≤z}=(3/2)z²-z³），第三段 -(z-1)^3 应为 -(3/2)(z-1)^2；A 的函数在 z=1 处由 1 跳回 1/2 且 F(2)=3/2&gt;1，不是分布函数</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T7">
     <div class="qhead"><span class="qno">k38_T7</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1995</span> <span class="badge year">2006</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T7_0.png" alt="k38_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 5/7$</div>
+        <div class="steps"><p>{max(X,Y)≥0} = {X≥0} ∪ {Y≥0}，由加法公式：</p>
+<p>$$P\{\max(X,Y)\ge 0\}=P\{X\ge 0\}+P\{Y\ge 0\}-P\{X\ge 0, Y\ge 0\}=\frac{4}{7}+\frac{4}{7}-\frac{3}{7}=\frac{5}{7}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 1/9$</div>
+        <div class="steps"><p>由独立性：</p>
+<p>$$P\{\max\{X,Y\}\le 1\}=P\{X\le 1\}P\{Y\le 1\}=\frac{1}{3}\cdot\frac{1}{3}=\frac{1}{9}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k38_T8">
     <div class="qhead"><span class="qno">k38_T8</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2008</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.13.8）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T8_0.png" alt="k38_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>$$F_Z(z)=P\{\max\{X,Y\}\le z\}=P\{X\le z, Y\le z\}=P\{X\le z\}P\{Y\le z\}=F^2(z)$$</p>
+<p>由独立同分布即得 (A)。</p>
+<p>辨析：(B) F(x)F(y) 是二维 (X,Y) 的联合分布函数，是二元函数；一维随机变量 Z 的分布函数必须是单个变量 z 的一元函数，故 (B) 不对；(C)(D) 是与 min{X,Y} 相关的形式。选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

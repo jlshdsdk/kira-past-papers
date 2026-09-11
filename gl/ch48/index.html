@@ -21,56 +21,303 @@
 
   <div class="card q" id="k48_T1">
     <div class="qhead"><span class="qno">k48_T1</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2002</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例7.23.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k48_T1_0.png" alt="k48_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \hat{\theta}=\frac{1}{4}$</div>
+        <div class="steps"><p>先求总体一阶矩：</p>
+<p>$$E(X)=0\cdot\theta^2+1\cdot 2\theta(1-\theta)+2\cdot\theta^2+3\cdot(1-2\theta)=2\theta-2\theta^2+2\theta^2+3-6\theta=3-4\theta$$</p>
+<p>样本均值：</p>
+<p>$$\bar{x}=\frac{3+1+3+0+3+1+2+3}{8}=\frac{16}{8}=2$$</p>
+<p>令 $E(X)=\bar{x}$，即 $3-4\theta=2$，解得 $\theta=\frac{1}{4}\in\left(0,\frac{1}{2}\right)$，故矩估计值 $\hat{\theta}=\frac{1}{4}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k48_T2">
     <div class="qhead"><span class="qno">k48_T2</span>
-      <span class="badge">共 8 小题</span>
+      <span class="badge">共 8 小题</span><span class="badge year">1999</span> <span class="badge year">2002</span> <span class="badge year">2006</span> <span class="badge year">2007</span> <span class="badge year">2009</span> <span class="badge year">2013</span> <span class="badge year">2015</span> <span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例7.23.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k48_T2_0.png" alt="k48_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T2_1.png" alt="k48_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T2_2.png" alt="k48_T2 题目图 3"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T2_3.png" alt="k48_T2 题目图 4">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) \hat{\theta}=2\bar{X}； (II) D(\hat{\theta})=\frac{\theta^2}{5n}$</div>
+        <div class="steps"><p>(I)</p>
+<p>$$E(X)=\int_0^{\theta}x\cdot\frac{6x}{\theta^3}(\theta-x)\,dx=\frac{6}{\theta^3}\int_0^{\theta}(\theta x^2-x^3)\,dx=\frac{6}{\theta^3}\left(\frac{\theta^4}{3}-\frac{\theta^4}{4}\right)=\frac{6}{\theta^3}\cdot\frac{\theta^4}{12}=\frac{\theta}{2}$$</p>
+<p>令 $E(X)=\bar{X}$，得 $\frac{\theta}{2}=\bar{X}$，故 $\hat{\theta}=2\bar{X}$。</p>
+<p>(II) 先求二阶矩：</p>
+<p>$$E(X^2)=\int_0^{\theta}\frac{6x^3}{\theta^3}(\theta-x)\,dx=\frac{6}{\theta^3}\left(\theta\cdot\frac{\theta^4}{4}-\frac{\theta^5}{5}\right)=\frac{6}{\theta^3}\cdot\frac{\theta^5}{20}=\frac{3\theta^2}{10}$$</p>
+<p>$$D(X)=\frac{3\theta^2}{10}-\left(\frac{\theta}{2}\right)^2=\frac{6\theta^2-5\theta^2}{20}=\frac{\theta^2}{20}$$</p>
+<p>由样本的独立性与 $D(cY)=c^2D(Y)$：</p>
+<p>$$D(\hat{\theta})=D(2\bar{X})=\frac{4}{n}D(X)=\frac{4}{n}\cdot\frac{\theta^2}{20}=\frac{\theta^2}{5n}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \hat{\theta}=\bar{X}-1$</div>
+        <div class="steps"><p>$$E(X)=\int_{\theta}^{+\infty}x\,e^{-(x-\theta)}\,dx$$</p>
+<p>令 $t=x-\theta$：</p>
+<p>$$E(X)=\int_0^{+\infty}(t+\theta)e^{-t}\,dt=\int_0^{+\infty}te^{-t}dt+\theta\int_0^{+\infty}e^{-t}dt=1+\theta$$</p>
+<p>令 $E(X)=\bar{X}$，即 $1+\theta=\bar{X}$，解得 $\hat{\theta}=\bar{X}-1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \hat{\theta}=\frac{3}{2}-\bar{X}$</div>
+        <div class="steps"><p>$$E(X)=\int_0^1 x\theta\,dx+\int_1^2 x(1-\theta)\,dx=\frac{\theta}{2}+(1-\theta)\cdot\frac{2^2-1^2}{2}=\frac{\theta}{2}+\frac{3(1-\theta)}{2}=\frac{3}{2}-\theta$$</p>
+<p>令 $E(X)=\bar{X}$，即 $\frac{3}{2}-\theta=\bar{X}$，解得 $\hat{\theta}=\frac{3}{2}-\bar{X}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \hat{\theta}=2\bar{X}-\frac{1}{2}$</div>
+        <div class="steps"><p>$$E(X)=\int_0^{\theta}\frac{x}{2\theta}dx+\int_{\theta}^1\frac{x}{2(1-\theta)}dx=\frac{\theta}{4}+\frac{1-\theta^2}{4(1-\theta)}=\frac{\theta}{4}+\frac{1+\theta}{4}=\frac{2\theta+1}{4}$$</p>
+<p>令 $E(X)=\bar{X}$：$\frac{2\theta+1}{4}=\bar{X}$，解得 $\hat{\theta}=2\bar{X}-\frac{1}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \hat{\lambda}=\frac{2}{\bar{X}}$</div>
+        <div class="steps"><p>$$E(X)=\int_0^{+\infty}x\cdot\lambda^2 xe^{-\lambda x}dx=\lambda^2\int_0^{+\infty}x^2e^{-\lambda x}dx=\lambda^2\cdot\frac{\Gamma(3)}{\lambda^3}=\lambda^2\cdot\frac{2}{\lambda^3}=\frac{2}{\lambda}$$</p>
+<p>令 $\frac{2}{\lambda}=\bar{X}$，解得 $\hat{\lambda}=\frac{2}{\bar{X}}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \hat{\theta}=\bar{X}$</div>
+        <div class="steps"><p>$$E(X)=\int_0^{+\infty}x\cdot\frac{\theta^2}{x^3}e^{-\frac{\theta}{x}}dx=\int_0^{+\infty}\frac{\theta^2}{x^2}e^{-\frac{\theta}{x}}dx$$</p>
+<p>令 $t=\frac{\theta}{x}$，则 $x=\frac{\theta}{t}$，$dx=-\frac{\theta}{t^2}dt$：</p>
+<p>$$E(X)=\int_{+\infty}^{0}t^2e^{-t}\left(-\frac{\theta}{t^2}\right)dt=\theta\int_0^{+\infty}e^{-t}dt=\theta$$</p>
+<p>令 $E(X)=\bar{X}$，故 $\hat{\theta}=\bar{X}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle \hat{\theta}=2\bar{X}-1$</div>
+        <div class="steps"><p>$$E(X)=\int_{\theta}^1\frac{x}{1-\theta}dx=\frac{1-\theta^2}{2(1-\theta)}=\frac{1+\theta}{2}$$</p>
+<p>令 $\frac{1+\theta}{2}=\bar{X}$，解得 $\hat{\theta}=2\bar{X}-1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (I) f_Z(z)=\sqrt{\frac{2}{\pi}}\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}\ (z>0),\ 0\ (z\le 0)； (II) \hat{\sigma}=\sqrt{\frac{\pi}{2}}\cdot\frac{1}{n}\sum_{i=1}^n|X_i-\mu|$</div>
+        <div class="steps"><p>(I) $X_1-\mu\sim N(0,\sigma^2)$。对 $z\ge 0$：</p>
+<p>$$F_Z(z)=P\{|X_1-\mu|\le z\}=P\{-z\le X_1-\mu\le z\}=2\Phi\left(\frac{z}{\sigma}\right)-1$$</p>
+<p>求导得</p>
+<p>$$f_Z(z)=\frac{2}{\sigma}\varphi\left(\frac{z}{\sigma}\right)=\sqrt{\frac{2}{\pi}}\cdot\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}},\quad z&gt;0;\qquad f_Z(z)=0,\ z\le 0$$</p>
+<p>(II)</p>
+<p>$$E(Z_1)=\int_0^{+\infty}z\sqrt{\frac{2}{\pi}}\cdot\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}dz=\sqrt{\frac{2}{\pi}}\cdot\frac{1}{\sigma}\cdot\sigma^2=\sqrt{\frac{2}{\pi}}\,\sigma$$</p>
+<p>（其中 $\int_0^{+\infty}ze^{-\frac{z^2}{2\sigma^2}}dz=\sigma^2$。）令 $E(Z_1)=\bar{Z}=\frac{1}{n}\sum_{i=1}^n|X_i-\mu|$，解得</p>
+<p>$$\hat{\sigma}=\sqrt{\frac{\pi}{2}}\,\bar{Z}=\sqrt{\frac{\pi}{2}}\cdot\frac{1}{n}\sum_{i=1}^n|X_i-\mu|$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k48_T3">
     <div class="qhead"><span class="qno">k48_T3</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2002</span> <span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例7.23.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k48_T3_0.png" alt="k48_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \hat{\theta}=\frac{7-\sqrt{13}}{12}$</div>
+        <div class="steps"><p>样本值中 0 出现 1 次、1 出现 2 次、2 出现 1 次、3 出现 4 次，似然函数：</p>
+<p>$$L(\theta)=\left(\theta^2\right)^1\left[2\theta(1-\theta)\right]^2\left(\theta^2\right)^1(1-2\theta)^4=4\theta^6(1-\theta)^2(1-2\theta)^4$$</p>
+<p>$$\ln L=\ln 4+6\ln\theta+2\ln(1-\theta)+4\ln(1-2\theta)$$</p>
+<p>$$\frac{d\ln L}{d\theta}=\frac{6}{\theta}-\frac{2}{1-\theta}-\frac{8}{1-2\theta}=0$$</p>
+<p>通分并乘 $\theta(1-\theta)(1-2\theta)$：</p>
+<p>$$6(1-\theta)(1-2\theta)-2\theta(1-2\theta)-8\theta(1-\theta)=0$$</p>
+<p>展开：$6-18\theta+12\theta^2-2\theta+4\theta^2-8\theta+8\theta^2=0$，即 $24\theta^2-28\theta+6=0$，约简为 $12\theta^2-14\theta+3=0$。</p>
+<p>$$\theta=\frac{14\pm\sqrt{196-144}}{24}=\frac{7\pm\sqrt{13}}{12}$$</p>
+<p>$\frac{7+\sqrt{13}}{12}\approx 0.884&gt;\frac{1}{2}$ 舍去；$\frac{7-\sqrt{13}}{12}\approx 0.283\in\left(0,\frac{1}{2}\right)$，故 $\hat{\theta}=\frac{7-\sqrt{13}}{12}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (A)，\hat{\theta}=\frac{1}{4}$</div>
+        <div class="steps"><p>样本值中 1 出现 3 次、2 出现 3 次、3 出现 2 次：</p>
+<p>$$L(\theta)=\left(\frac{1-\theta}{2}\right)^3\left(\frac{1+\theta}{4}\right)^3\left(\frac{1+\theta}{4}\right)^2=\frac{(1-\theta)^3(1+\theta)^5}{2^3\cdot 4^5}$$</p>
+<p>$$\ln L=3\ln(1-\theta)+5\ln(1+\theta)+C,\qquad \frac{d\ln L}{d\theta}=\frac{-3}{1-\theta}+\frac{5}{1+\theta}=0$$</p>
+<p>$5(1-\theta)=3(1+\theta)\Rightarrow 8\theta=2\Rightarrow\hat{\theta}=\frac{1}{4}$。故选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k48_T4">
     <div class="qhead"><span class="qno">k48_T4</span>
-      <span class="badge">共 9 小题</span>
+      <span class="badge">共 15 小题</span><span class="badge year">1991</span> <span class="badge year">1997</span> <span class="badge year">2004</span> <span class="badge year">2006</span> <span class="badge year">2009</span> <span class="badge year">2011</span> <span class="badge year">2012</span> <span class="badge year">2013</span> <span class="badge year">2014</span> <span class="badge year">2017</span> <span class="badge year">2018</span> <span class="badge year">2019</span> <span class="badge year">2020</span> <span class="badge year">2022</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例7.23.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_0.png" alt="k48_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_1.png" alt="k48_T4 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_2.png" alt="k48_T4 题目图 3"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_3.png" alt="k48_T4 题目图 4"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_4.png" alt="k48_T4 题目图 5"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_5.png" alt="k48_T4 题目图 6"><img class="qimg" loading="lazy" src="../../assets/q/down/k48_T4_6.png" alt="k48_T4 题目图 7">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \hat{\lambda}=\frac{n}{\sum_{i=1}^n X_i^a}$</div>
+        <div class="steps"><p>$$L(\lambda)=\prod_{i=1}^n\lambda a\, x_i^{a-1}e^{-\lambda x_i^a}=(\lambda a)^n\left(\prod_{i=1}^n x_i\right)^{a-1}e^{-\lambda\sum_{i=1}^n x_i^a}$$</p>
+<p>$$\ln L=n\ln\lambda+n\ln a+(a-1)\sum_{i=1}^n\ln x_i-\lambda\sum_{i=1}^n x_i^a$$</p>
+<p>$$\frac{d\ln L}{d\lambda}=\frac{n}{\lambda}-\sum_{i=1}^n x_i^a=0\ \Rightarrow\ \hat{\lambda}=\frac{n}{\sum_{i=1}^n X_i^a}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 矩估计 \hat{\theta}=\frac{2\bar{X}-1}{1-\bar{X}}；最大似然 \hat{\theta}=-\frac{n}{\sum_{i=1}^n\ln X_i}$</div>
+        <div class="steps"><p>矩估计：</p>
+<p>$$E(X)=\int_0^1 x(\theta+1)x^{\theta}dx=(\theta+1)\int_0^1 x^{\theta+1}dx=\frac{\theta+1}{\theta+2}$$</p>
+<p>令 $\frac{\theta+1}{\theta+2}=\bar{X}$：$\bar{X}(\theta+2)=\theta+1\Rightarrow\theta(\bar{X}-1)=1-2\bar{X}$，得</p>
+<p>$$\hat{\theta}_{矩}=\frac{2\bar{X}-1}{1-\bar{X}}$$</p>
+<p>最大似然：$L(\theta)=(\theta+1)^n\left(\prod_{i=1}^n x_i\right)^{\theta}$（$0&lt;x_i&lt;1$），</p>
+<p>$$\ln L=n\ln(\theta+1)+\theta\sum_{i=1}^n\ln x_i,\qquad \frac{d\ln L}{d\theta}=\frac{n}{\theta+1}+\sum_{i=1}^n\ln x_i=0$$</p>
+<p>$$\hat{\theta}_{MLE}=-\frac{n}{\sum_{i=1}^n\ln X_i}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) \hat{\beta}=\frac{\bar{X}}{\bar{X}-1}； (II) \hat{\beta}=\frac{n}{\sum_{i=1}^n\ln X_i}； (III) \hat{\alpha}=\min\{X_1,\dots,X_n\}$</div>
+        <div class="steps"><p>密度：$f(x;\alpha,\beta)=\beta\alpha^{\beta}x^{-\beta-1}$（$x&gt;\alpha$），其余为 0。</p>
+<p>(I) $\alpha=1$：$f(x;\beta)=\beta x^{-\beta-1}$（$x&gt;1$）。</p>
+<p>$$E(X)=\int_1^{+\infty}x\cdot\beta x^{-\beta-1}dx=\beta\int_1^{+\infty}x^{-\beta}dx=\beta\cdot\frac{1}{\beta-1}=\frac{\beta}{\beta-1}$$</p>
+<p>令 $\frac{\beta}{\beta-1}=\bar{X}$：$\bar{X}(\beta-1)=\beta\Rightarrow\beta(\bar{X}-1)=\bar{X}$，得 $\hat{\beta}=\frac{\bar{X}}{\bar{X}-1}$。</p>
+<p>(II) $\alpha=1$：$L(\beta)=\beta^n\left(\prod x_i\right)^{-\beta-1}$（要求 $x_i&gt;1$），</p>
+<p>$$\ln L=n\ln\beta-(\beta+1)\sum_{i=1}^n\ln x_i,\qquad \frac{d\ln L}{d\beta}=\frac{n}{\beta}-\sum_{i=1}^n\ln x_i=0$$</p>
+<p>得 $\hat{\beta}=\frac{n}{\sum_{i=1}^n\ln X_i}$。</p>
+<p>(III) $\beta=2$：$f(x;\alpha)=2\alpha^2x^{-3}$（$x&gt;\alpha$），</p>
+<p>$$L(\alpha)=2^n\alpha^{2n}\left(\prod x_i\right)^{-3},\qquad \alpha\le\min\{x_1,\dots,x_n\}$$</p>
+<p>$L(\alpha)$ 关于 $\alpha$ 严格单调增加，故在定义域上界处取最大：$\hat{\alpha}=\min\{X_1,\dots,X_n\}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) \hat{\theta}=\frac{3}{2}-\bar{X}； (II) \hat{\theta}=\frac{N}{n}$</div>
+        <div class="steps"><p>(I) $$E(X)=\int_0^1 x\theta\,dx+\int_1^2 x(1-\theta)dx=\frac{\theta}{2}+\frac{3(1-\theta)}{2}=\frac{3}{2}-\theta$$</p>
+<p>令 $E(X)=\bar{X}$，得 $\hat{\theta}=\frac{3}{2}-\bar{X}$。</p>
+<p>(II) 每个样本值小于 1 的概率为 $\theta$，不小于 1 的概率为 $1-\theta$，且样本独立，故</p>
+<p>$$L(\theta)=\theta^N(1-\theta)^{n-N}$$</p>
+<p>$$\ln L=N\ln\theta+(n-N)\ln(1-\theta),\qquad \frac{d\ln L}{d\theta}=\frac{N}{\theta}-\frac{n-N}{1-\theta}=0$$</p>
+<p>$N(1-\theta)=(n-N)\theta\Rightarrow N=n\theta$，故 $\hat{\theta}=\frac{N}{n}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \hat{\lambda}=\frac{2}{\bar{X}}=\frac{2n}{\sum_{i=1}^n X_i}$</div>
+        <div class="steps"><p>$$L(\lambda)=\prod_{i=1}^n\lambda^2 x_ie^{-\lambda x_i}=\lambda^{2n}\left(\prod_{i=1}^n x_i\right)e^{-\lambda\sum_{i=1}^n x_i}$$</p>
+<p>$$\ln L=2n\ln\lambda+\sum_{i=1}^n\ln x_i-\lambda\sum_{i=1}^n x_i$$</p>
+<p>$$\frac{d\ln L}{d\lambda}=\frac{2n}{\lambda}-\sum_{i=1}^n x_i=0\ \Rightarrow\ \hat{\lambda}=\frac{2n}{\sum_{i=1}^n X_i}=\frac{2}{\bar{X}}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (I) \hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n(X_i-\mu_0)^2； (II) E(\hat{\sigma}^2)=\sigma^2,\ D(\hat{\sigma}^2)=\frac{2\sigma^4}{n}$</div>
+        <div class="steps"><p>(I)</p>
+<p>$$L(\sigma^2)=\left(\frac{1}{\sqrt{2\pi\sigma^2}}\right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu_0)^2}$$</p>
+<p>$$\ln L=-\frac{n}{2}\ln(2\pi\sigma^2)-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu_0)^2$$</p>
+<p>令 $u=\sigma^2$，$\frac{d\ln L}{du}=-\frac{n}{2u}+\frac{\sum(x_i-\mu_0)^2}{2u^2}=0$，得</p>
+<p>$$\hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n(X_i-\mu_0)^2$$</p>
+<p>(II) $E\left[(X_i-\mu_0)^2\right]=D(X_i)=\sigma^2$，故 $E(\hat{\sigma}^2)=\frac{1}{n}\cdot n\sigma^2=\sigma^2$。</p>
+<p>又因 $\mu_0$ 已知，$\frac{\sum_{i=1}^n(X_i-\mu_0)^2}{\sigma^2}\sim\chi^2(n)$，于是</p>
+<p>$$D(\hat{\sigma}^2)=\frac{\sigma^4}{n^2}D\left(\chi^2(n)\right)=\frac{\sigma^4}{n^2}\cdot 2n=\frac{2\sigma^4}{n}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I) f(z;\sigma^2)=\frac{1}{\sqrt{6\pi}\,\sigma}e^{-\frac{z^2}{6\sigma^2}}； (II) \hat{\sigma}^2=\frac{1}{3n}\sum_{i=1}^n Z_i^2； (III) E(\hat{\sigma}^2)=\sigma^2，是无偏估计$</div>
+        <div class="steps"><p>(I) $Z=X-Y\sim N(0,\ \sigma^2+2\sigma^2)=N(0,3\sigma^2)$，故</p>
+<p>$$f(z;\sigma^2)=\frac{1}{\sqrt{2\pi}\cdot\sqrt{3}\,\sigma}e^{-\frac{z^2}{2\cdot 3\sigma^2}}=\frac{1}{\sqrt{6\pi}\,\sigma}e^{-\frac{z^2}{6\sigma^2}},\quad -\infty&lt;z&lt;+\infty$$</p>
+<p>(II)</p>
+<p>$$L(\sigma^2)=\prod_{i=1}^n\frac{1}{\sqrt{6\pi\sigma^2}}e^{-\frac{z_i^2}{6\sigma^2}}=(6\pi\sigma^2)^{-n/2}e^{-\frac{1}{6\sigma^2}\sum_{i=1}^n z_i^2}$$</p>
+<p>$$\ln L=-\frac{n}{2}\ln(6\pi\sigma^2)-\frac{\sum z_i^2}{6\sigma^2}$$</p>
+<p>令 $u=\sigma^2$：$\frac{d\ln L}{du}=-\frac{n}{2u}+\frac{\sum z_i^2}{6u^2}=0$，得 $\hat{\sigma}^2=\frac{1}{3n}\sum_{i=1}^n Z_i^2$。</p>
+<p>(III) $E(Z_i)=0$，$D(Z_i)=3\sigma^2$，故 $E(Z_i^2)=D(Z_i)+[E(Z_i)]^2=3\sigma^2$，从而</p>
+<p>$$E(\hat{\sigma}^2)=\frac{1}{3n}\sum_{i=1}^n E(Z_i^2)=\frac{1}{3n}\cdot 3n\sigma^2=\sigma^2$$</p>
+<p>即 $\hat{\sigma}^2$ 为 $\sigma^2$ 的无偏估计量。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \hat{\theta}=\frac{2n}{\sum_{i=1}^n\frac{1}{X_i}}$</div>
+        <div class="steps"><p>$$L(\theta)=\prod_{i=1}^n\frac{\theta^2}{x_i^3}e^{-\frac{\theta}{x_i}}=\theta^{2n}\left(\prod_{i=1}^n x_i\right)^{-3}e^{-\theta\sum_{i=1}^n\frac{1}{x_i}}$$</p>
+<p>$$\ln L=2n\ln\theta-3\sum_{i=1}^n\ln x_i-\theta\sum_{i=1}^n\frac{1}{x_i}$$</p>
+<p>$$\frac{d\ln L}{d\theta}=\frac{2n}{\theta}-\sum_{i=1}^n\frac{1}{x_i}=0\ \Rightarrow\ \hat{\theta}=\frac{2n}{\sum_{i=1}^n\frac{1}{X_i}}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle (I) E(X)=\frac{\sqrt{\pi\theta}}{2},\ E(X^2)=\theta； (II) \hat{\theta}_n=\frac{1}{n}\sum_{i=1}^n X_i^2； (III) 存在，a=\theta$</div>
+        <div class="steps"><p>(I) $f(x;\theta)=F&#x27;(x)=\frac{2x}{\theta}e^{-\frac{x^2}{\theta}}$（$x&gt;0$）。</p>
+<p>对 $E(X)$ 令 $u=\frac{x^2}{\theta}$，则 $x=\sqrt{\theta u}$，$dx=\frac{\sqrt{\theta}}{2\sqrt{u}}du$：</p>
+<p>$$E(X)=\int_0^{+\infty}x\cdot\frac{2x}{\theta}e^{-\frac{x^2}{\theta}}dx=\int_0^{+\infty}\theta u\cdot\frac{2}{\theta}e^{-u}\cdot\frac{\sqrt{\theta}}{2\sqrt{u}}du=\sqrt{\theta}\int_0^{+\infty}u^{1/2}e^{-u}du=\sqrt{\theta}\,\Gamma\left(\frac{3}{2}\right)=\frac{\sqrt{\pi\theta}}{2}$$</p>
+<p>对 $E(X^2)$ 用 $2x\,dx=\theta\,du$：</p>
+<p>$$E(X^2)=\int_0^{+\infty}x^2\cdot\frac{2x}{\theta}e^{-\frac{x^2}{\theta}}dx=\frac{1}{\theta}\int_0^{+\infty}\theta u\cdot\theta e^{-u}du=\theta\int_0^{+\infty}ue^{-u}du=\theta$$</p>
+<p>(II)</p>
+<p>$$L(\theta)=\left(\frac{2}{\theta}\right)^n\left(\prod x_i\right)e^{-\frac{1}{\theta}\sum x_i^2},\qquad \ln L=C-n\ln\theta-\frac{1}{\theta}\sum_{i=1}^n x_i^2$$</p>
+<p>$$\frac{d\ln L}{d\theta}=-\frac{n}{\theta}+\frac{\sum x_i^2}{\theta^2}=0\ \Rightarrow\ \hat{\theta}_n=\frac{1}{n}\sum_{i=1}^n X_i^2$$</p>
+<p>(III) $X_1^2,\dots,X_n^2$ 独立同分布且 $E(X_i^2)=\theta&lt;\infty$，由辛钦大数定律</p>
+<p>$$\hat{\theta}_n=\frac{1}{n}\sum_{i=1}^n X_i^2\xrightarrow{P}\theta$$</p>
+<p>即对任意 $\varepsilon&gt;0$，$\lim_{n\to\infty}P\left\{|\hat{\theta}_n-\theta|\ge\varepsilon\right\}=0$。故存在 $a=\theta$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle (I) f_{Z_1}(z)=\sqrt{\frac{2}{\pi}}\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}\ (z>0),\ 0\ (z\le 0)； (III) \hat{\sigma}=\sqrt{\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2}$</div>
+        <div class="steps"><p>(I) 与 7.23.2(8) 相同：$F_Z(z)=2\Phi\left(\frac{z}{\sigma}\right)-1$（$z\ge 0$），求导得</p>
+<p>$$f_{Z_1}(z)=\sqrt{\frac{2}{\pi}}\cdot\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}},\ z&gt;0;\qquad f_{Z_1}(z)=0,\ z\le 0$$</p>
+<p>(III)</p>
+<p>$$L(\sigma)=\left(\frac{1}{\sigma}\sqrt{\frac{2}{\pi}}\right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n z_i^2}$$</p>
+<p>$$\ln L=n\ln\sqrt{\frac{2}{\pi}}-n\ln\sigma-\frac{1}{2\sigma^2}\sum_{i=1}^n z_i^2$$</p>
+<p>$$\frac{d\ln L}{d\sigma}=-\frac{n}{\sigma}+\frac{\sum z_i^2}{\sigma^3}=0\ \Rightarrow\ \hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n z_i^2,\quad \hat{\sigma}=\sqrt{\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle (I) \hat{\sigma}=\frac{1}{n}\sum_{i=1}^n|X_i|； (II) E(\hat{\sigma})=\sigma,\ D(\hat{\sigma})=\frac{\sigma^2}{n}$</div>
+        <div class="steps"><p>(I)</p>
+<p>$$L(\sigma)=\prod_{i=1}^n\frac{1}{2\sigma}e^{-\frac{|x_i|}{\sigma}}=(2\sigma)^{-n}e^{-\frac{1}{\sigma}\sum_{i=1}^n|x_i|}$$</p>
+<p>$$\ln L=-n\ln(2\sigma)-\frac{1}{\sigma}\sum_{i=1}^n|x_i|,\qquad \frac{d\ln L}{d\sigma}=-\frac{n}{\sigma}+\frac{\sum|x_i|}{\sigma^2}=0$$</p>
+<p>$$\hat{\sigma}=\frac{1}{n}\sum_{i=1}^n|X_i|$$</p>
+<p>(II)</p>
+<p>$$E(|X|)=\int_{-\infty}^{+\infty}|x|\cdot\frac{1}{2\sigma}e^{-\frac{|x|}{\sigma}}dx=\int_0^{+\infty}\frac{x}{\sigma}e^{-\frac{x}{\sigma}}dx=\sigma$$</p>
+<p>故 $E(\hat{\sigma})=\frac{1}{n}\sum E(|X_i|)=\sigma$（无偏）。</p>
+<p>$$E(X^2)=\int_0^{+\infty}\frac{x^2}{\sigma}e^{-\frac{x}{\sigma}}dx=2\sigma^2\ \Rightarrow\ D(|X|)=E(X^2)-[E(|X|)]^2=2\sigma^2-\sigma^2=\sigma^2$$</p>
+<p>$$D(\hat{\sigma})=\frac{1}{n^2}\sum D(|X_i|)=\frac{\sigma^2}{n}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle (1) A=\sqrt{\frac{2}{\pi}}； (2) \hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2$</div>
+        <div class="steps"><p>(1) 由概率密度的归一性 $\int_{\mu}^{+\infty}\frac{A}{\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}dx=1$，令 $t=\frac{x-\mu}{\sigma}$：</p>
+<p>$$A\int_0^{+\infty}e^{-\frac{t^2}{2}}dt=A\cdot\frac{\sqrt{2\pi}}{2}=A\sqrt{\frac{\pi}{2}}=1\ \Rightarrow\ A=\sqrt{\frac{2}{\pi}}$$</p>
+<p>(2)</p>
+<p>$$L=\left(\frac{A}{\sigma}\right)^n e^{-\frac{1}{2\sigma^2}\sum_{i=1}^n(x_i-\mu)^2},\qquad \ln L=n\ln A-n\ln\sigma-\frac{1}{2\sigma^2}\sum(x_i-\mu)^2$$</p>
+<p>令 $u=\sigma^2$：$\frac{d\ln L}{du}=-\frac{n}{2u}+\frac{\sum(x_i-\mu)^2}{2u^2}=0$，得</p>
+<p>$$\hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle (I) P\{T>t\}=e^{-(t/\theta)^m},\quad P\{T>s+t|T>s\}=e^{-\frac{(s+t)^m-s^m}{\theta^m}}； (II) \hat{\theta}=\left(\frac{1}{n}\sum_{i=1}^n t_i^m\right)^{1/m}$</div>
+        <div class="steps"><p>(I) $P\{T&gt;t\}=1-F(t)=e^{-\left(\frac{t}{\theta}\right)^m}$。</p>
+<p>$$P\{T&gt;s+t|T&gt;s\}=\frac{P\{T&gt;s+t\}}{P\{T&gt;s\}}=\frac{e^{-\left(\frac{s+t}{\theta}\right)^m}}{e^{-\left(\frac{s}{\theta}\right)^m}}=e^{-\frac{(s+t)^m-s^m}{\theta^m}}$$</p>
+<p>(II) $f(t;\theta)=F&#x27;(t)=\frac{m}{\theta}\left(\frac{t}{\theta}\right)^{m-1}e^{-\left(\frac{t}{\theta}\right)^m}=\frac{m}{\theta^m}t^{m-1}e^{-\frac{t^m}{\theta^m}}$（$t\ge 0$）。</p>
+<p>$$L(\theta)=\frac{m^n}{\theta^{mn}}\left(\prod_{i=1}^n t_i\right)^{m-1}e^{-\frac{1}{\theta^m}\sum_{i=1}^n t_i^m}$$</p>
+<p>$$\ln L=n\ln m+(m-1)\sum\ln t_i-mn\ln\theta-\frac{\sum t_i^m}{\theta^m}$$</p>
+<p>$$\frac{d\ln L}{d\theta}=-\frac{mn}{\theta}+\frac{m\sum t_i^m}{\theta^{m+1}}=0\ \Rightarrow\ \theta^m=\frac{1}{n}\sum_{i=1}^n t_i^m$$</p>
+<p>$$\hat{\theta}=\left(\frac{1}{n}\sum_{i=1}^n t_i^m\right)^{1/m}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle \hat{\theta}=\frac{\sum_{i=1}^n X_i+\frac{1}{2}\sum_{j=1}^m Y_j}{n+m},\qquad D(\hat{\theta})=\frac{\theta^2}{n+m}$</div>
+        <div class="steps"><p>密度：$f_X(x)=\frac{1}{\theta}e^{-\frac{x}{\theta}}$（$x&gt;0$），$f_Y(y)=\frac{1}{2\theta}e^{-\frac{y}{2\theta}}$（$y&gt;0$）。</p>
+<p>$$L(\theta)=\theta^{-n}e^{-\frac{\sum x_i}{\theta}}(2\theta)^{-m}e^{-\frac{\sum y_j}{2\theta}}$$</p>
+<p>$$\ln L=-(n+m)\ln\theta-m\ln 2-\frac{\sum x_i}{\theta}-\frac{\sum y_j}{2\theta}$$</p>
+<p>$$\frac{d\ln L}{d\theta}=-\frac{n+m}{\theta}+\frac{\sum x_i}{\theta^2}+\frac{\sum y_j}{2\theta^2}=0$$</p>
+<p>两边乘 $\theta^2$：$(n+m)\theta=\sum_{i=1}^n x_i+\frac{1}{2}\sum_{j=1}^m y_j$，故</p>
+<p>$$\hat{\theta}=\frac{\sum_{i=1}^n X_i+\frac{1}{2}\sum_{j=1}^m Y_j}{n+m}$$</p>
+<p>求方差：$D(X_i)=\theta^2$，$D\left(\frac{Y_j}{2}\right)=\frac{1}{4}\cdot D(Y_j)=\frac{1}{4}\cdot(2\theta)^2=\theta^2$，且所有变量相互独立，故</p>
+<p>$$D(\hat{\theta})=\frac{n\theta^2+m\theta^2}{(n+m)^2}=\frac{\theta^2}{n+m}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle (1)(i) f_T(t)=\frac{n}{\theta}e^{-\frac{nt}{\theta}}\ (t>0)；(ii) a=n,\ D(\hat{\theta})=\theta^2； (2) \hat{\theta}=\frac{1}{k}\left[\sum_{i=1}^k t_i+(n-k)t_k\right]$</div>
+        <div class="steps"><p>(1) 各元件寿命 $X_1,\dots,X_n$ 独立同服从均值为 $\theta$ 的指数分布。$k=1$ 时 $T=\min\{X_1,\dots,X_n\}$，</p>
+<p>$$F_T(t)=P\{\min X_i\le t\}=1-P\{X_1&gt;t,\dots,X_n&gt;t\}=1-e^{-\frac{nt}{\theta}}$$</p>
+<p>(i) $$f_T(t)=\frac{n}{\theta}e^{-\frac{nt}{\theta}},\quad t&gt;0$$</p>
+<p>(ii) $E(T)=\frac{\theta}{n}$，令 $E(aT)=\frac{a\theta}{n}=\theta$ 得 $a=n$，即 $\hat{\theta}=nT$。</p>
+<p>$$D(\hat{\theta})=D(nT)=n^2D(T)=n^2\cdot\frac{\theta^2}{n^2}=\theta^2$$</p>
+<p>（数一问「$\theta=aT$ 为无偏估计」与数三问「$E(aT)=\theta$」条件相同，答案均为 $a=n$，$D(\hat{\theta})=\theta^2$。）</p>
+<p>(2)</p>
+<p>$$\ln L=-k\ln\theta-\frac{1}{\theta}\left[\sum_{i=1}^k t_i+(n-k)t_k\right]$$</p>
+<p>$$\frac{d\ln L}{d\theta}=-\frac{k}{\theta}+\frac{\sum_{i=1}^k t_i+(n-k)t_k}{\theta^2}=0$$</p>
+<p>$$\hat{\theta}=\frac{1}{k}\left[\sum_{i=1}^k t_i+(n-k)t_k\right]$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k48_T5">
     <div class="qhead"><span class="qno">k48_T5</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2000</span> <span class="badge year">2015</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例7.23.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k48_T5_0.png" alt="k48_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \hat{\theta}=\min\{x_1,\dots,x_n\}$</div>
+        <div class="steps"><p>$$L(\theta)=\prod_{i=1}^n 2e^{-2(x_i-\theta)}=2^n e^{-2\sum x_i+2n\theta},\qquad \theta\le x_1,\dots,x_n$$</p>
+<p>$\ln L=n\ln 2-2\sum x_i+2n\theta$ 关于 $\theta$ 严格单调增加，故 $\theta$ 越大 $L$ 越大；而定义域要求 $\theta\le\min\{x_i\}$，故 $\theta$ 取上界时似然最大：</p>
+<p>$$\hat{\theta}=\min\{x_1,\dots,x_n\}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \hat{\theta}=\min\{X_1,\dots,X_n\}$</div>
+        <div class="steps"><p>$$L(\theta)=(1-\theta)^{-n},\qquad \theta\le x_i\le 1\ (i=1,\dots,n)$$</p>
+<p>$$\frac{d\ln L}{d\theta}=\frac{n}{1-\theta}&gt;0$$</p>
+<p>$L(\theta)$ 关于 $\theta$ 单调增加，$\theta$ 应尽量小；定义域要求 $\theta\le\min\{x_i\}$，故</p>
+<p>$$\hat{\theta}=\min\{X_1,\dots,X_n\}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
