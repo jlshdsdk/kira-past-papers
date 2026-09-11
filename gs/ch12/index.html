@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 12</div>
 <h1 class="title">考点 12　求各类函数的导数或微分</h1>
-<div class="sub">题组 15 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 0/15　</div>
+<div class="sub">题组 15 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 15/15　</div>
 
   <div class="card q" id="k12_T1">
     <div class="qhead"><span class="qno">k12_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.12.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T1_0.png" alt="k12_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T1_1.png" alt="k12_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y'=\frac{a}{1+ax},\quad y''=-\frac{a^2}{(1+ax)^2}$</div>
         <div class="steps"><p>由链式法则：<br>$$y&#x27;=\frac{a}{1+ax}$$<br>再求导：<br>$$y&#x27;&#x27;=a\cdot\left[-\frac{a}{(1+ax)^2}\right]=-\frac{a^2}{(1+ax)^2}.$$</p></div>
@@ -88,7 +88,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.12.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T2_0.png" alt="k12_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f'(t)=(1+2t)e^{2t}$</div>
         <div class="steps"><p>$$\left(1+\frac{1}{x}\right)^{2tx}=e^{2tx\ln(1+1/x)}\to e^{2t}\quad(x\ln(1+1/x)\to 1)$$<br>故 $f(t)=te^{2t}$，<br>$$f&#x27;(t)=e^{2t}+2te^{2t}=(1+2t)e^{2t}.$$</p></div>
@@ -123,7 +123,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.12.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T3_0.png" alt="k12_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=2,\ b=-1$</div>
         <div class="steps"><p>x=1 处连续要求：$a+b=f(1)=1$。<br>x=1 处可导要求左、右导数相等：<br>$$f_- &#x27;(1)=2x\big|_{x=1}=2,\qquad f_+ &#x27;(1)=a$$<br>故 $a=2$，代回得 $b=-1$。<br>此时 $f&#x27;(x)=2\ (x&gt;1)$，$f&#x27;(x)=2x\ (x\le 1)$，$f&#x27;$ 处处连续，f 处处可导。</p></div>
@@ -142,7 +142,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T4_0.png" alt="k12_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) f'(x)=\frac{x[g'(x)+e^{-x}]-[g(x)-e^{-x}]}{x^2}\ (x\ne 0)，f'(0)=\frac{g''(0)-1}{2}；(II) f'(x) 在 (-\infty,+\infty) 上处处连续$</div>
         <div class="steps"><p>(I) $x\ne 0$ 时直接求导：<br>$$f&#x27;(x)=\frac{x[g&#x27;(x)+e^{-x}]-[g(x)-e^{-x}]}{x^2}.$$<br>x=0 处用定义。由泰勒公式（$g$ 二阶连续可导）：<br>$$g(x)=1-x+\frac{g&#x27;&#x27;(0)}{2}x^2+o(x^2),\qquad e^{-x}=1-x+\frac{x^2}{2}+o(x^2)$$<br>$$g(x)-e^{-x}=\frac{g&#x27;&#x27;(0)-1}{2}x^2+o(x^2)$$<br>$$f&#x27;(0)=\lim_{x\to 0}\frac{f(x)-f(0)}{x}=\lim_{x\to 0}\frac{g(x)-e^{-x}}{x^2}=\frac{g&#x27;&#x27;(0)-1}{2}.$$<br>(II) $x\ne 0$ 时 $f&#x27;$ 由连续函数（$g$ 二阶连续可导）构成，连续。考察 $x\to 0$：<br>$$g&#x27;(x)=-1+g&#x27;&#x27;(0)x+o(x)\ \Rightarrow\ g&#x27;(x)+e^{-x}=(g&#x27;&#x27;(0)-1)x+o(x)$$<br>$$x[g&#x27;(x)+e^{-x}]=(g&#x27;&#x27;(0)-1)x^2+o(x^2)$$<br>$$\lim_{x\to 0}f&#x27;(x)=\lim_{x\to 0}\frac{(g&#x27;&#x27;(0)-1)x^2-\frac{g&#x27;&#x27;(0)-1}{2}x^2+o(x^2)}{x^2}=\frac{g&#x27;&#x27;(0)-1}{2}=f&#x27;(0)$$<br>故 $f&#x27;$ 在 $x=0$ 处也连续，从而 $f&#x27;(x)$ 在 $(-\infty,+\infty)$ 上连续。</p></div>
@@ -157,7 +157,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T5_0.png" alt="k12_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T5_1.png" alt="k12_T5 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y''=y+\sin x（即 y''-y=\sin x）$</div>
         <div class="steps"><p>$$\frac{dx}{dy}=\frac{1}{y&#x27;}$$<br>$$\frac{d^2x}{dy^2}=\frac{d}{dx}\left(\frac{1}{y&#x27;}\right)\cdot\frac{dx}{dy}=-\frac{y&#x27;&#x27;}{(y&#x27;)^2}\cdot\frac{1}{y&#x27;}=-\frac{y&#x27;&#x27;}{(y&#x27;)^3}$$<br>代入原方程：<br>$$-\frac{y&#x27;&#x27;}{(y&#x27;)^3}+(y+\sin x)\cdot\frac{1}{(y&#x27;)^3}=0$$<br>两边乘 $(y&#x27;)^3$：<br>$$y&#x27;&#x27;=y+\sin x.$$</p></div>
@@ -176,14 +176,15 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T6_0.png" alt="k12_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) g(x)=\begin{cases}-\sqrt{\frac{1-x}{2}}, & x<-1\\ \sqrt[3]{x}, & -1\le x\le 8\\ \frac{x+16}{12}, & x>8\end{cases}；(II) g 无间断点，在 x=-1 和 x=0 处不可导$</div>
         <div class="steps"><p>(I) 三段分别严格单调，值域为 $(-\infty,-1]$、$[-1,8]$、$(8,+\infty)$，逐一反解：<br>$$g(x)=\begin{cases}-\sqrt{\dfrac{1-x}{2}}, &amp; x&lt;-1,\\[2mm] \sqrt[3]{x}, &amp; -1\le x\le 8,\\[2mm] \dfrac{x+16}{12}, &amp; x&gt;8.\end{cases}$$<br>(II) 在 $x=-1$ 处左右极限均为 $-1$，在 $x=8$ 处左右极限均为 $2$，故 $g$ 处处连续，无间断点。<br>可导性：<br>- $x\to(-1)^-$：$g&#x27;(x)=\frac{1}{2\sqrt{2(1-x)}}\to\frac{1}{4}$；$x\to(-1)^+$：$g&#x27;(x)=\frac{1}{3}x^{-2/3}\to\frac{1}{3}$。左右导数不等，$x=-1$ 处不可导。<br>- $x=0$（属 $\sqrt[3]{x}$ 段）：$\lim_{h\to 0}\frac{h^{1/3}-0}{h}=\lim_{h\to 0}h^{-2/3}=+\infty$，不可导。<br>- $x=8$：左导数 $\frac{1}{3}\cdot 8^{-2/3}=\frac{1}{12}$，右导数 $\frac{1}{12}$，相等，可导。<br>综上：$g$ 没有间断点，在 $x=-1$ 与 $x=0$ 处不可导。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（g(0)=1，g'(0)=\frac{2}{3e}）$</div>
-        <div class="steps"><p>$f(1)=0$，故 $g(0)=1$（排除 C、D）。<br>由变限积分求导：<br>$$f&#x27;(x)=\frac{e^{x^3}}{1+x^6}\cdot 3x^2,\qquad f&#x27;(1)=\frac{e}{2}\cdot 3=\frac{3e}{2}$$<br>由反函数求导法则：<br>$$g&#x27;(0)=\frac{1}{f&#x27;(g(0))}=\frac{1}{f&#x27;(1)}=\frac{2}{3e}$$<br>故选 B。</p></div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（g(0)=1,\ g'(0)=\frac{2}{3e}）$</div>
+        <div class="steps"><p>$f(1)=0$，故 $g(0)=1$（排除 C、D）。<br>由变限积分求导：<br>$$f&#x27;(x)=\frac{e^{x^3}}{1+x^6}\cdot 3x^2,\qquad f&#x27;(1)=\frac{e}{2}\cdot 3=\frac{3e}{2}$$<br>由反函数求导法则：<br>$$g&#x27;(0)=\frac{1}{f&#x27;(g(0))}=\frac{1}{f&#x27;(1)}=\frac{2}{3e}$$<br>故选 B。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：三方数值一致且正确（f(1)=0 故 g(0)=1；f&#x27;(1)=3e/2 故 g&#x27;(0)=2/(3e)）；原题选项 (B) 恰为此组数值、(D) 为 g(1)=0, g&#x27;(1)=2/(3e)，A 把选项字母误标为 D</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -195,7 +196,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.12.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T7_0.png" alt="k12_T7 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T7_1.png" alt="k12_T7 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle dy=\frac{dx}{(x+y)^2}（即 \cot^2 y\,dx）$</div>
         <div class="steps"><p>两边对 x 求导：<br>$$\sec^2 y\cdot y&#x27;=1+y&#x27;$$<br>$$y&#x27;(\sec^2 y-1)=1\ \Rightarrow\ y&#x27;\tan^2 y=1\ \Rightarrow\ y&#x27;=\cot^2 y$$<br>由 $\tan y=x+y$ 得 $\cot^2 y=\frac{1}{(x+y)^2}$，故<br>$$dy=\frac{dx}{(x+y)^2}.$$</p></div>
@@ -230,7 +231,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle -\frac{e}{2}$</div>
-        <div class="steps"><p>x=0 代入方程：$y=1$。<br>两边对 x 求导：<br>$$y&#x27;=-e^y-xe^y y&#x27;\ \Rightarrow\ y&#x27;(1+xe^y)=-e^y$$<br>代入 $(0,1)$：<br>$$y&#x27;\cdot 2=-e\ \Rightarrow\ y&#x27;(0)=-\frac{e}{2}.$$</p></div>
+        <div class="steps"><p>x=0 代入方程：$y=1$。<br>两边对 x 求导：<br>$$y&#x27;=-e^y-xe^y y&#x27;\ \Rightarrow\ y&#x27;(1+xe^y)=-e^y$$<br>代入 $(0,1)$：<br>$$y&#x27;\cdot 2=-e\ \Rightarrow\ y&#x27;(0)=-\frac{e}{2}.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：y&#x27;(1+xe^y)=-e^y，代入 (0,1) 得 y&#x27;(0)·2=-e，故 -e/2；A、B 漏掉因子 (1+xe^y)=2，误得 -e（solver 正确）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle -1$</div>
@@ -250,10 +252,11 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.12.8）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T8_0.png" alt="k12_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y'(0)=1,\qquad y''(0)=2e$</div>
-        <div class="steps"><p>x=0 代入：$y(0)=1$。<br>两边求导：<br>$$y&#x27;=e^{xy}+xe^{xy}(y+xy&#x27;)=e^{xy}(1+xy+x^2y&#x27;)$$<br>代入 $(0,1)$：$y&#x27;(0)=1$。<br>再求导：<br>$$y&#x27;&#x27;=e^{xy}(y+xy&#x27;)(1+xy+x^2y&#x27;)+e^{xy}(y+3xy&#x27;+x^2y&#x27;&#x27;)$$<br>代入 $x=0,\ y=1,\ y&#x27;=1$：<br>$$y&#x27;&#x27;(0)=e\cdot 1\cdot 1+e\cdot 1=2e.$$</p></div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y'(0)=1,\quad y''(0)=2$</div>
+        <div class="steps"><p>x=0 代入：$y(0)=1$。<br>两边求导：<br>$$y&#x27;=e^{xy}+xe^{xy}(y+xy&#x27;)=e^{xy}(1+xy+x^2y&#x27;)$$<br>代入 $(0,1)$：$y&#x27;(0)=1$。<br>再求导：<br>$$y&#x27;&#x27;=e^{xy}(y+xy&#x27;)(1+xy+x^2y&#x27;)+e^{xy}(y+3xy&#x27;+x^2y&#x27;&#x27;)$$<br>代入 $x=0,\ y=1,\ y&#x27;=1$：<br>$$y&#x27;&#x27;(0)=e\cdot 1\cdot 1+e\cdot 1=2e.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：x=0 处 e^{xy}=e^0=1，解题代理误代成 e 致 y&#x27;&#x27;(0)=2e；直接求导或泰勒展开（y=1+x+x²+…）均得 y&#x27;&#x27;(0)=2，A、B 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 2e^2$</div>
@@ -273,7 +276,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T9_0.png" alt="k12_T9 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T9_1.png" alt="k12_T9 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 0$</div>
         <div class="steps"><p>当 $|x|&lt;1$：<br>$$\frac{1}{1+x^2}=\sum_{k=0}^{\infty}(-1)^k x^{2k}=1-x^2+x^4-\cdots$$<br>展开式中不含 $x^3$ 项，由泰勒系数唯一性 $\frac{f^{(3)}(0)}{3!}=0$，故<br>$$f^{(3)}(0)=0.$$<br>（另法：f 为偶函数，奇数阶导数在 $x=0$ 处必为 0。）</p></div>
@@ -292,7 +295,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T10_0.png" alt="k12_T10 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f^{(n)}(x)=\frac{2(-1)^n n!}{(1+x)^{n+1}}\quad(n\ge 1)$</div>
         <div class="steps"><p>$$f(x)=\frac{1-x}{1+x}=-1+\frac{2}{1+x}$$<br>由 $\left(\frac{1}{1+x}\right)^{(n)}=\frac{(-1)^n n!}{(1+x)^{n+1}}$ 得<br>$$f^{(n)}(x)=\frac{2(-1)^n n!}{(1+x)^{n+1}}\quad(n\ge 1).$$</p></div>
@@ -307,7 +310,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle y^{(n)}(0)=-2^n(n-1)!\quad(n\ge 1)$</div>
-        <div class="steps"><p>$$y&#x27;=-\frac{2}{1-2x},\qquad y^{(n)}(x)=-\frac{2^n(n-1)!}{(1-2x)^n}\quad(n\ge 1)$$<br>（$n=2$：$y&#x27;&#x27;=-\frac{4}{(1-2x)^2}$，验证成立。）<br>$$y^{(n)}(0)=-2^n(n-1)!.$$</p></div>
+        <div class="steps"><p>$$y&#x27;=-\frac{2}{1-2x},\qquad y^{(n)}(x)=-\frac{2^n(n-1)!}{(1-2x)^n}\quad(n\ge 1)$$<br>（$n=2$：$y&#x27;&#x27;=-\frac{4}{(1-2x)^2}$，验证成立。）<br>$$y^{(n)}(0)=-2^n(n-1)!.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：y=ln(1-2x) 各阶导数在 x=0 恒为负（-2, -4, -16, …），不含 (-1)^n 交替因子；B 的 (-1)^n 2^n (n-1)! 错误（solver、A 正确）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -319,14 +323,15 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T11_0.png" alt="k12_T11 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f^{(n)}(0)=n(n-1)(\ln 2)^{n-2}\ (n\ge 2)，且 f(0)=f'(0)=0$</div>
         <div class="steps"><p>莱布尼茨公式：$f^{(n)}(0)=\sum_{k=0}^{n}\binom{n}{k}[x^2]^{(k)}\big|_{x=0}\cdot[2^x]^{(n-k)}\big|_{x=0}$。<br>$[x^2]^{(k)}$ 在 0 处仅 $k=2$ 时非零（值为 2）：<br>$$f^{(n)}(0)=\binom{n}{2}\cdot 2\cdot(2^x)^{(n-2)}\Big|_{x=0}=\frac{n(n-1)}{2}\cdot 2\cdot(\ln 2)^{n-2}=n(n-1)(\ln 2)^{n-2}\quad(n\ge 2)$$<br>另 $f&#x27;(0)=0$，$f(0)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 31e$</div>
-        <div class="steps"><p>莱布尼茨公式（$u=x^2$，$v=e^x+1$，$u^{(k)}$ 在 $k\ge 3$ 时为 0）：<br>$$f^{(5)}(x)=\binom{5}{1}(2x)e^x+\binom{5}{2}\cdot 2\cdot e^x+x^2 e^x=10xe^x+20e^x+x^2e^x$$<br>$$f^{(5)}(1)=(10+20+1)e=31e.$$</p></div>
+        <div class="steps"><p>莱布尼茨公式（$u=x^2$，$v=e^x+1$，$u^{(k)}$ 在 $k\ge 3$ 时为 0）：<br>$$f^{(5)}(x)=\binom{5}{1}(2x)e^x+\binom{5}{2}\cdot 2\cdot e^x+x^2 e^x=10xe^x+20e^x+x^2e^x$$<br>$$f^{(5)}(1)=(10+20+1)e=31e.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：莱布尼茨公式 f^{(5)}=x^2e^x+\binom51(2x)e^x+\binom52\cdot2e^x=x^2e^x+10xe^x+20e^x，x=1 处三项全取 =31e；A 只取第三项得 20e、B 得 30e 均漏项（solver 正确）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -338,7 +343,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T12_0.png" alt="k12_T12 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T12_1.png" alt="k12_T12 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f^{(n)}(0)=\frac{(-1)^{n-1}n!}{n-2}$</div>
         <div class="steps"><p>莱布尼茨公式，注意 $[\ln(1+x)]^{(k)}\big|_{x=0}=(-1)^{k-1}(k-1)!$，而 $x^2$ 在 0 处只有二阶导数非零（值为 2）：<br>$$f^{(n)}(0)=\binom{n}{2}\cdot 2\cdot[\ln(1+x)]^{(n-2)}\Big|_{x=0}=n(n-1)\cdot(-1)^{n-3}(n-3)!=\frac{(-1)^{n-1}n!}{n-2}$$<br>验证：由 $x^2\ln(1+x)=x^3-\frac{x^4}{2}+\cdots$ 得 $f^{(3)}(0)=3!=6=\frac{(-1)^2 3!}{1}$ ✓，$f^{(4)}(0)=-\frac{4!}{2}=-12$ ✓。</p></div>

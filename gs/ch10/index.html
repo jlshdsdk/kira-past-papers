@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 10</div>
 <h1 class="title">考点 10　导数的定义</h1>
-<div class="sub">题组 13 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五 · 解析完成 0/13　</div>
+<div class="sub">题组 13 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五 · 解析完成 13/13　</div>
 
   <div class="card q" id="k10_T1">
     <div class="qhead"><span class="qno">k10_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T1_0.png" alt="k10_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{D}$</div>
         <div class="steps"><p>由导数定义：</p>
@@ -46,7 +46,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T2_0.png" alt="k10_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{C}$</div>
         <div class="steps"><p>由定义 $f&#x27;(0)=\lim_{x\to0}\dfrac{f(x)-f(0)}{x}&gt;0$，由函数极限的局部保号性，存在 $\delta&gt;0$，当 $0&lt;|x|&lt;\delta$ 时</p>
@@ -65,7 +65,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.10.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T3_0.png" alt="k10_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k10_T3_1.png" alt="k10_T3 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k10_T3_2.png" alt="k10_T3 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{A}$</div>
         <div class="steps"><p>$x\neq1$ 时 $f(x)=\dfrac{|x^2-1|}{x-1}=|x+1|\cdot\dfrac{|x-1|}{x-1}$。</p>
@@ -74,13 +74,14 @@
 <p>选 **A**。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{B}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B$</div>
         <div class="steps"><p>$f(1)=\dfrac23$。</p>
 <p>$$f&#x27;_-(1)=\lim_{h\to0^-}\frac{\frac23(1+h)^3-\frac23}{h}=\frac23\lim_{h\to0^-}\frac{3h+3h^2+h^3}{h}=\frac23\cdot3=2$$</p>
 <p>存在。</p>
 <p>$$f&#x27;_+(1)=\lim_{h\to0^+}\frac{(1+h)^2-\frac23}{h}=\lim_{h\to0^+}\frac{\frac13+2h+h^2}{h}=+\infty$$</p>
 <p>不存在。</p>
-<p>故左导数存在、右导数不存在，选 **B**。</p></div>
+<p>故左导数存在、右导数不存在，选 **B**。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：f(1)=2/3。左导数 = lim_{x→1⁻} [(2/3)x³ − 2/3]/(x−1) = (2/3)lim(x²+x+1) = 2，存在。右导数 = lim_{x→1⁺} [x² − 2/3]/(x−1)：分子→1/3≠0，分母→0⁺，极限为 +∞，不存在（事实上 f 在 x=1 处右不连续：lim_{x→1⁺}x²=1≠2/3=f(1)）。故左导数存在（=2）而右导数不存在，选 B。校验 A 的错误：直接对右段用求导公式 2x→2，但右差商必须以 f(1)=2/3 为基点，(1+h)²−2/3 的常数项 1/3 不为零，差商发散。解题代理与校验 B 正确。｜官方核对：官方答案 B。该题为 1994 年考研数学二真题（标准答案 B：左导数存在，右导数不存在）；2023 年考研数学二第 4 题几乎原题复刻，教育部教育考试院曾发布公告确认参考答案为 (B)。检索来源：知乎专栏、百度题库、中国教育在线等。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(x) \text{ 在 } x=0 \text{ 处连续且可导，} f'(0)=0$</div>
@@ -138,7 +139,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T4_0.png" alt="k10_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{C}$</div>
         <div class="steps"><p>**连续性**：$|f(x)|\le\sqrt{|x|}\to0=f(0)$，故 $f$ 在 $0$ 连续。</p>
@@ -176,7 +177,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T5_0.png" alt="k10_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{A}$</div>
         <div class="steps"><p>记 $g(x)=f(x)|\sin x|$，则 $F=f+g$，$f$ 可导，故 $F$ 在 0 可导 $\iff g$ 在 0 可导。</p>
@@ -198,7 +199,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T6_0.png" alt="k10_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{C}\ (n=2)$</div>
         <div class="steps"><p>$x^2|x|=\begin{cases}x^3,&amp;x&gt;0\\-x^3,&amp;x&lt;0\end{cases}$，$f(0)=0$。</p>
@@ -226,7 +227,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T7_0.png" alt="k10_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{B}$</div>
         <div class="steps"><p>若 $f(a)\neq0$，则 $|\cdot|$ 在 $f(a)$ 的邻域内为光滑函数（$f(a)&gt;0$ 时 $|y|=y$；$f(a)&lt;0$ 时 $|y|=-y$），由复合函数可导性 $|f|$ 在 $a$ 必可导，排除 C、D。</p>
@@ -261,7 +262,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T8_0.png" alt="k10_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{C}$</div>
         <div class="steps"><p>由 $|f(0)|\le0$ 得 $f(0)=0$。对 $x\neq0$：</p>
@@ -287,7 +288,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T9_0.png" alt="k10_T9 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k10_T9_1.png" alt="k10_T9 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{D}$</div>
         <div class="steps"><p>取 $x=0$ 得 $f(1)=af(0)$。</p>
@@ -331,7 +332,7 @@
 <p>错误的命题是 **D**。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \text{C}$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \text{B}$</div>
         <div class="steps"><p>关键：条件只给 $\lim_{x\to0}f(x)=0$，**未设 $f(0)=0$**。</p>
 <p>**A 错误**：取 $f(0)=1$，$f(x)=x^2\ (x\neq0)$：$\lim\dfrac{f(x)}{\sqrt{|x|}}=0$，但 $f$ 在 0 不连续，不可导；即使 $f(0)=0$，取 $f(x)=|x|^{3/4}$：$\dfrac{f(x)}{\sqrt{|x|}}=|x|^{1/4}\to0$，但 $\dfrac{f(x)}{x}=\pm|x|^{-1/4}\to\infty$，不可导。</p>
 <p>**B 错误**：取 $f(0)=1$，$f(x)=x^3\ (x\neq0)$：$\lim\dfrac{f(x)}{x^2}=\lim x=0$，但 $\dfrac{f(x)-f(0)}{x}=\dfrac{x^3-1}{x}\to\infty$，不可导。</p>
@@ -339,7 +340,8 @@
 <p>$$\frac{f(x)}{\sqrt{|x|}}=\frac{f(x)-f(0)}{x}\cdot\frac{x}{\sqrt{|x|}},\qquad \left|\frac{x}{\sqrt{|x|}}\right|=\sqrt{|x|}\to0$$</p>
 <p>故极限为 $f&#x27;(0)\cdot0=0$。</p>
 <p>**D 错误**：$f(x)=x$ 可导（且 $f(0)=0$），但 $\dfrac{f(x)}{x^2}=\dfrac1x\to\infty\neq0$。</p>
-<p>选 **C**。</p></div>
+<p>选 **C**。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：f在x=0连续且lim f(x)/x²有限，故f(0)=0且f&#x27;(0)=lim[f(x)/x²]·x=0存在，选B；A的反例f(0)=1违反连续性属误读，官方2020数一答案亦为B</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -351,7 +353,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T10_0.png" alt="k10_T10 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle n!$</div>
         <div class="steps"><p>记 $g(x)=(x+1)(x+2)\cdots(x+n)$，则 $f(x)=x\,g(x)$，$g$ 为多项式。由乘积求导（只有因子 $x$ 求导项在 $x=0$ 处非零）：</p>
@@ -374,7 +376,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.10.11）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T11_0.png" alt="k10_T11 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{B}\ (2f'(a))$</div>
         <div class="steps"><p>$$\frac{f(a+x)-f(a-x)}{x}=\underbrace{\frac{f(a+x)-f(a)}{x}}_{\to\ f&#x27;(a)}-\underbrace{\frac{f(a-x)-f(a)}{x}}_{\to\ -f&#x27;(a)}$$</p>
@@ -415,7 +417,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T12_0.png" alt="k10_T12 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f'(1)=-1$</div>
         <div class="steps"><p>由 $f$ 在 $x=1$ 可导：$f(1+u)=f(1)+f&#x27;(1)u+o(u)\ (u\to0)$。又 $e^{x^2}-1=x^2+o(x^2)$，$\sin^2x=x^2+o(x^2)$，故</p>

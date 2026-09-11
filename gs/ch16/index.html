@@ -17,27 +17,85 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 16</div>
 <h1 class="title">考点 16　函数图形的描绘</h1>
-<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 0/2　</div>
+<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 2/2　</div>
 
   <div class="card q" id="k16_T1">
     <div class="qhead"><span class="qno">k16_T1</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1989</span> <span class="badge year">1994</span> <span class="badge year">1999</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.16.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k16_T1_0.png" alt="k16_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k16_T1_1.png" alt="k16_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 单调减区间 (-∞,-2) 与 (0,+∞)；单调增区间 (-2,0)；极小值点 x=-2，极小值 -1/4；凹区间 (-3,0) 与 (0,+∞)；凸区间 (-∞,-3)；拐点 (-3,-2/9)；渐近线 x=0 与 y=0$</div>
+        <div class="steps"><p>定义域 $x\ne0$。$y=\dfrac{x+1}{x^2}=\dfrac1x+\dfrac{1}{x^2}$。</p>
+<p>$$y&#x27;=-\frac{1}{x^2}-\frac{2}{x^3}=\frac{-(x+2)}{x^3},\qquad y&#x27;&#x27;=\frac{2}{x^3}+\frac{6}{x^4}=\frac{2(x+3)}{x^4}.$$</p>
+<p>**单调性与极值**：$y&#x27;=0\iff x=-2$。</p>
+<p>- $x&lt;-2$：$-(x+2)&gt;0,\ x^3&lt;0\Rightarrow y&#x27;&lt;0$，减；<br>- $-2&lt;x&lt;0$：$-(x+2)&lt;0,\ x^3&lt;0\Rightarrow y&#x27;&gt;0$，增；<br>- $x&gt;0$：$-(x+2)&lt;0,\ x^3&gt;0\Rightarrow y&#x27;&lt;0$，减。</p>
+<p>故单调减区间 $(-\infty,-2)$ 与 $(0,+\infty)$，单调增区间 $(-2,0)$；极小值点 $x=-2$，极小值 $y(-2)=\dfrac{-1}{4}=-\dfrac14$，无极大值。</p>
+<p>**凹凸与拐点**：$y&#x27;&#x27;=0\iff x=-3$（$x=0$ 不在定义域）。$x&lt;-3$ 时 $y&#x27;&#x27;&lt;0$（凸）；$-3&lt;x&lt;0$ 及 $x&gt;0$ 时 $y&#x27;&#x27;&gt;0$（凹）。$y(-3)=\dfrac{-2}{9}$，拐点 $\left(-3,-\dfrac29\right)$。</p>
+<p>**渐近线**：$x\to0$ 时 $y\to+\infty$，铅直渐近线 $x=0$；$x\to\pm\infty$ 时 $y\to0$，水平渐近线 $y=0$；无斜渐近线。</p>
+<p>**填表**：</p>
+<p>| 项目 | 结果 |<br>|---|---|<br>| 单调减区间 | $(-\infty,-2)$，$(0,+\infty)$ |<br>| 单调增区间 | $(-2,0)$ |<br>| 极值点 | $x=-2$（极小值点） |<br>| 极值 | 极小值 $y=-\dfrac14$ |<br>| 凹区间 | $(-3,0)$，$(0,+\infty)$ |<br>| 凸区间 | $(-\infty,-3)$ |<br>| 拐点 | $\left(-3,\,-\dfrac29\right)$ |<br>| 渐近线 | $x=0$（铅直），$y=0$（水平） |</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 增区间 (-∞,0) 与 (2,+∞)，减区间 (0,2)，极小值 y(2)=3；凹区间 (-∞,0) 与 (0,+∞)，无拐点；渐近线 x=0（铅直）与 y=x（斜）；图象两支均位于 y=x 上方，右支极小值点 (2,3)$</div>
+        <div class="steps"><p>$y=\dfrac{x^3+4}{x^2}=x+\dfrac{4}{x^2}$，定义域 $x\ne0$。</p>
+<p>$$y&#x27;=1-\frac{8}{x^3}=\frac{x^3-8}{x^3},\qquad y&#x27;&#x27;=\frac{24}{x^4}&gt;0\ (x\ne0).$$</p>
+<p>**(1) 增减与极值**：$y&#x27;=0\iff x=2$。</p>
+<p>- $x&lt;0$：$\dfrac{8}{x^3}&lt;0\Rightarrow y&#x27;&gt;0$，增；<br>- $0&lt;x&lt;2$：$\dfrac{8}{x^3}&gt;1\Rightarrow y&#x27;&lt;0$，减；<br>- $x&gt;2$：$0&lt;\dfrac{8}{x^3}&lt;1\Rightarrow y&#x27;&gt;0$，增。</p>
+<p>增区间 $(-\infty,0)$ 与 $(2,+\infty)$，减区间 $(0,2)$；$x=2$ 处取极小值 $y(2)=2+\dfrac44=3$，无极大值。</p>
+<p>**(2) 凹凸与拐点**：$x\ne0$ 时 $y&#x27;&#x27;=\dfrac{24}{x^4}&gt;0$ 恒成立，凹区间为 $(-\infty,0)$ 与 $(0,+\infty)$，无凸区间；$x=0$ 为无定义点而非拐点，曲线无拐点。</p>
+<p>**(3) 渐近线**：$x\to0$ 时 $y\to+\infty$，铅直渐近线 $x=0$；$x\to\pm\infty$ 时 $y-x=\dfrac{4}{x^2}\to0$，斜渐近线 $y=x$；无水平渐近线。</p>
+<p>**(4) 图形**：右支：$x\to0^+$ 时 $y\to+\infty$，在 $(0,2)$ 减、$(2,+\infty)$ 增，极小值点 $(2,3)$，全程凹，位于 $y=x$ 上方，$x\to+\infty$ 时贴向 $y=x$；左支：$x&lt;0$ 单调增且凹，$x\to-\infty$ 时沿 $y=x$ 上方趋于 $-\infty$，$x\to0^-$ 时 $y\to+\infty$。（两支均过点 $(-\sqrt[3]{4},0)$：左支与 $x$ 轴交于 $x=-\sqrt[3]{4}$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 增区间 (-∞,1) 与 (3,+∞)，减区间 (1,3)，极小值 y(3)=27/4（无极大值）；凸区间 (-∞,0)，凹区间 (0,1) 与 (1,+∞)，拐点 (0,0)；渐近线 x=1（铅直）与 y=x+2（斜）$</div>
+        <div class="steps"><p>定义域 $x\ne1$。</p>
+<p>$$y&#x27;=\frac{3x^2(x-1)^2-x^3\cdot2(x-1)}{(x-1)^4}=\frac{3x^2(x-1)-2x^3}{(x-1)^3}=\frac{x^2(x-3)}{(x-1)^3},$$</p>
+<p>$$y&#x27;&#x27;=\frac{(3x^2-6x)(x-1)^3-x^2(x-3)\cdot3(x-1)^2}{(x-1)^6}=\frac{(3x^2-6x)(x-1)-3x^2(x-3)}{(x-1)^4}=\frac{6x}{(x-1)^4}.$$</p>
+<p>**(1) 增减与极值**：$y&#x27;=0\iff x=0$ 或 $x=3$。</p>
+<p>- $x&lt;0$：$x^2&gt;0,\ x-3&lt;0,\ (x-1)^3&lt;0\Rightarrow y&#x27;&gt;0$，增；<br>- $0&lt;x&lt;1$：$y&#x27;&gt;0$，增；<br>- $1&lt;x&lt;3$：$x-3&lt;0,\ (x-1)^3&gt;0\Rightarrow y&#x27;&lt;0$，减；<br>- $x&gt;3$：$y&#x27;&gt;0$，增。</p>
+<p>增区间 $(-\infty,1)$ 与 $(3,+\infty)$，减区间 $(1,3)$；$x=0$ 处 $y&#x27;$ 不变号（两侧均正），非极值点；$x=3$ 处取极小值 $y(3)=\dfrac{27}{4}$，无极大值。</p>
+<p>**(2) 凹凸与拐点**：$y&#x27;&#x27;=\dfrac{6x}{(x-1)^4}$ 符号同 $x$：$x&lt;0$ 时 $y&#x27;&#x27;&lt;0$（凸），$0&lt;x&lt;1$ 与 $x&gt;1$ 时 $y&#x27;&#x27;&gt;0$（凹）。凸区间 $(-\infty,0)$，凹区间 $(0,1)$ 与 $(1,+\infty)$；$y(0)=0$，拐点 $(0,0)$。</p>
+<p>**(3) 渐近线**：$x\to1$ 时 $y\to+\infty$，铅直渐近线 $x=1$。作除法：</p>
+<p>$$y=\frac{x^3}{(x-1)^2}=x+2+\frac{3x-2}{(x-1)^2},$$</p>
+<p>$x\to\pm\infty$ 时尾项 $\to0$，故斜渐近线 $y=x+2$；无水平渐近线。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k16_T2">
     <div class="qhead"><span class="qno">k16_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2000</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k16_T2_0.png" alt="k16_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 增区间 (-∞,-1] 与 [0,+∞)，减区间 [-1,0]；极大值 y(-1)=-2e^{π/4}，极小值 y(0)=-e^{π/2}；渐近线 y=x-2（x→-∞）与 y=e^π x-2e^π（x→+∞）$</div>
+        <div class="steps"><p>$y=(x-1)e^{\frac{\pi}{2}+\arctan x}$ 在 $\mathbb{R}$ 上可导。</p>
+<p>$$y&#x27;=e^{\frac{\pi}{2}+\arctan x}\left[1+\frac{x-1}{1+x^2}\right]=e^{\frac{\pi}{2}+\arctan x}\cdot\frac{x(x+1)}{1+x^2}.$$</p>
+<p>**单调区间与极值**：$e^{(\cdot)}&gt;0,\ 1+x^2&gt;0$，故 $y&#x27;$ 符号同 $x(x+1)$：</p>
+<p>- $x&lt;-1$：$y&#x27;&gt;0$，增；<br>- $-1&lt;x&lt;0$：$y&#x27;&lt;0$，减；<br>- $x&gt;0$：$y&#x27;&gt;0$，增。</p>
+<p>单调增区间 $(-\infty,-1]$ 与 $[0,+\infty)$，单调减区间 $[-1,0]$。极大值</p>
+<p>$$y(-1)=(-2)\,e^{\frac{\pi}{2}+\arctan(-1)}=-2e^{\frac{\pi}{2}-\frac{\pi}{4}}=-2e^{\frac{\pi}{4}},$$</p>
+<p>极小值 $y(0)=(-1)e^{\frac{\pi}{2}}=-e^{\frac{\pi}{2}}$。</p>
+<p>**渐近线**：$y$ 在 $\mathbb{R}$ 上连续，无铅直渐近线；两端 $y\to\pm\infty$，分别考察斜渐近线。</p>
+<p>$x\to+\infty$：$\arctan x\to\dfrac{\pi}{2}$，</p>
+<p>$$a_1=\lim_{x\to+\infty}\frac{y}{x}=\lim\frac{x-1}{x}\,e^{\frac{\pi}{2}+\arctan x}=e^{\pi}.$$</p>
+<p>利用 $x&gt;0$ 时 $\arctan x=\dfrac{\pi}{2}-\arctan\dfrac1x=\dfrac{\pi}{2}-\dfrac1x+O(x^{-3})$：</p>
+<p>$$y=e^{\pi}\,e^{-\arctan\frac1x}(x-1)=e^{\pi}(x-1)\left(1-\frac1x+O(x^{-3})\right)=e^{\pi}x-2e^{\pi}+o(1),$$</p>
+<p>故 $b_1=\lim_{x\to+\infty}(y-e^{\pi}x)=-2e^{\pi}$，得渐近线 $y=e^{\pi}x-2e^{\pi}$。</p>
+<p>$x\to-\infty$：$\arctan x\to-\dfrac{\pi}{2}$，</p>
+<p>$$a_2=\lim_{x\to-\infty}\frac{y}{x}=e^{\frac{\pi}{2}-\frac{\pi}{2}}=1.$$</p>
+<p>利用 $x&lt;0$ 时 $\arctan x=-\dfrac{\pi}{2}-\arctan\dfrac1x=-\dfrac{\pi}{2}-\dfrac1x+O(x^{-3})$：</p>
+<p>$$y=e^{-\arctan\frac1x}(x-1)=(x-1)\left(1-\frac1x+O(x^{-3})\right)=x-2+o(1),$$</p>
+<p>故 $b_2=\lim_{x\to-\infty}(y-x)=-2$，得渐近线 $y=x-2$。</p>
+<p>综上：单调增区间 $(-\infty,-1]$ 与 $[0,+\infty)$，单调减区间 $[-1,0]$；极大值 $-2e^{\frac{\pi}{4}}$（$x=-1$），极小值 $-e^{\frac{\pi}{2}}$（$x=0$）；渐近线 $y=x-2$ 与 $y=e^{\pi}x-2e^{\pi}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

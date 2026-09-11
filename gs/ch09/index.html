@@ -17,38 +17,115 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 9</div>
 <h1 class="title">考点 9　夹逼准则</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 3/3　</div>
 
   <div class="card q" id="k09_T1">
     <div class="qhead"><span class="qno">k09_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2000</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k09_T1_0.png" alt="k09_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2n\le S(x)<2(n+1)\quad(n\pi\le x<(n+1)\pi)，证毕$</div>
+        <div class="steps"><p>**(I) 证明**</p>
+<p>由周期性 |\cos(t+k\pi)|=|\cos t|，每个周期段上积分相等：</p>
+<p>$$\int_{k\pi}^{(k+1)\pi}|\cos t|\,dt=\int_0^{\pi}|\cos t|\,dt=\int_0^{\pi/2}\cos t\,dt-\int_{\pi/2}^{\pi}\cos t\,dt=1+1=2,$$</p>
+<p>故</p>
+<p>$$S(n\pi)=\sum_{k=0}^{n-1}\int_{k\pi}^{(k+1)\pi}|\cos t|\,dt=\sum_{k=0}^{n-1}2=2n.$$</p>
+<p>又 |\cos t|\ge 0 连续且在任何正长度区间上不恒为零，故对任意 a&lt;b 有 \int_a^b|\cos t|\,dt&gt;0，即 S(x) 严格单调增加。于是当 n\pi\le x&lt;(n+1)\pi 时</p>
+<p>$$S(n\pi)\le S(x)&lt;S((n+1)\pi),$$</p>
+<p>即</p>
+<p>$$2n\le S(x)&lt;2(n+1).\qquad\blacksquare$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac{2}{\pi}$</div>
+        <div class="steps"><p>当 x\in[n\pi,(n+1)\pi) 时，x\to+\infty 当且仅当 n\to\infty。将 (I) 的不等式除以 x&gt;0：</p>
+<p>$$\frac{2n}{x}\le\frac{S(x)}{x}&lt;\frac{2(n+1)}{x}.$$</p>
+<p>由 n\pi\le x&lt;(n+1)\pi 得</p>
+<p>$$\frac{n}{(n+1)\pi}&lt;\frac{n}{x}\le\frac{1}{\pi},\qquad \frac{1}{\pi}=\frac{n+1}{(n+1)\pi}&lt;\frac{n+1}{x}\le\frac{n+1}{n\pi}.$$</p>
+<p>令 n\to\infty，两端均趋于 1/\pi，由夹逼准则 n/x\to 1/\pi，(n+1)/x\to 1/\pi。于是两端 2n/x\to 2/\pi，2(n+1)/x\to 2/\pi，再次用夹逼准则得</p>
+<p>$$\lim_{x\to+\infty}\frac{S(x)}{x}=\frac{2}{\pi}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k09_T2">
     <div class="qhead"><span class="qno">k09_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1995</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k09_T2_0.png" alt="k09_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac{1}{2}$</div>
+        <div class="steps"><p>记 S_n=\sum_{k=1}^{n}\dfrac{k}{n^2+n+k}。当 1\le k\le n 时</p>
+<p>$$n^2+n+1\le n^2+n+k\le n^2+n+n,$$</p>
+<p>故</p>
+<p>$$\frac{k}{n^2+2n}\le\frac{k}{n^2+n+k}\le\frac{k}{n^2+n+1}.$$</p>
+<p>对 k=1,\cdots,n 求和，并利用 \sum_{k=1}^n k=\dfrac{n(n+1)}{2}：</p>
+<p>$$\frac{n(n+1)}{2(n^2+2n)}\le S_n\le\frac{n(n+1)}{2(n^2+n+1)},$$</p>
+<p>左端即 \dfrac{n+1}{2(n+2)}。当 n\to\infty 时：左端 \dfrac{n+1}{2(n+2)}\to\dfrac12，右端 \dfrac{n(n+1)}{2(n^2+n+1)}\to\dfrac12。由夹逼准则</p>
+<p>$$\lim_{n\to\infty}S_n=\dfrac12.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k09_T3">
     <div class="qhead"><span class="qno">k09_T3</span>
-      
+      <span class="badge">共 4 小题</span><span class="badge year">2010</span> <span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k09_T3_0.png" alt="k09_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \int_0^1|\ln t|[\ln(1+t)]^n\,dt<\int_0^1 t^n|\ln t|\,dt$</div>
+        <div class="steps"><p>先证 0&lt;\ln(1+t)&lt;t（0&lt;t&lt;1）：令 \varphi(t)=t-\ln(1+t)，\varphi(0)=0，\varphi&#x27;(t)=\dfrac{t}{1+t}&gt;0（0&lt;t\le 1），故 \varphi(t)&gt;\varphi(0)=0，即 \ln(1+t)&lt;t。</p>
+<p>于是对 n\ge 1：</p>
+<p>$$0&lt;[\ln(1+t)]^n&lt;t^n\quad(0&lt;t&lt;1).$$</p>
+<p>两边同乘 |\ln t|（在 (0,1) 内 |\ln t|&gt;0）：</p>
+<p>$$|\ln t|[\ln(1+t)]^n&lt;t^n|\ln t|\quad(0&lt;t&lt;1).$$</p>
+<p>两被积函数在 (0,1] 上可积（t\to 0^+ 时 |\ln t| 的奇异性可积，因子 [\ln(1+t)]^n、t^n 均有界），且严格不等式在 (0,1) 内除 t=1/e 一点外处处成立，积分保持严格不等号：</p>
+<p>$$\int_0^1|\ln t|[\ln(1+t)]^n\,dt&lt;\int_0^1 t^n|\ln t|\,dt.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>由 (I) 得</p>
+<p>$$0&lt;u_n&lt;\int_0^1 t^n|\ln t|\,dt.$$</p>
+<p>分部积分计算右端：</p>
+<p>$$\int_0^1 t^n|\ln t|\,dt=-\int_0^1 t^n\ln t\,dt=-\left[\frac{t^{n+1}\ln t}{n+1}\right]_0^1+\frac{1}{n+1}\int_0^1 t^n\,dt=0+\frac{1}{(n+1)^2}=\frac{1}{(n+1)^2},$$</p>
+<p>其中边界项：t\to 0^+ 时 t^{n+1}\ln t\to 0，t=1 处 \ln 1=0。</p>
+<p>于是</p>
+<p>$$0&lt;u_n&lt;\frac{1}{(n+1)^2}\to 0\quad(n\to\infty).$$</p>
+<p>由夹逼准则得 \lim_{n\to\infty}u_n=0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \{a_n\} 单调减少，且 a_n=\dfrac{n-1}{n+2}\,a_{n-2}\ (n=2,3,\cdots)，证毕$</div>
+        <div class="steps"><p>**单调减少**：当 0&lt;x&lt;1 时 x^{n+1}&lt;x^n，而 \sqrt{1-x^2}&gt;0（0\le x&lt;1），故 a_n&gt;0 且</p>
+<p>$$a_{n+1}=\int_0^1 x^{n+1}\sqrt{1-x^2}\,dx&lt;\int_0^1 x^n\sqrt{1-x^2}\,dx=a_n,$$</p>
+<p>即 \{a_n\} 单调减少。</p>
+<p>**递推式**：注意到</p>
+<p>$$\mathrm{d}\big[(1-x^2)^{3/2}\big]=-3x\sqrt{1-x^2}\,\mathrm{d}x,$$</p>
+<p>当 n\ge 2 时</p>
+<p>$$a_n=\int_0^1 x^{n-1}\cdot x\sqrt{1-x^2}\,\mathrm{d}x=-\frac13\int_0^1 x^{n-1}\,\mathrm{d}\big[(1-x^2)^{3/2}\big]$$</p>
+<p>$$=-\frac13\Big[x^{n-1}(1-x^2)^{3/2}\Big]_0^1+\frac{n-1}{3}\int_0^1 x^{n-2}(1-x^2)^{3/2}\,\mathrm{d}x.$$</p>
+<p>n\ge 2 时边界项为 0（x=1 处 (1-x^2)^{3/2}=0；x=0 处 x^{n-1}=0），故</p>
+<p>$$a_n=\frac{n-1}{3}\int_0^1 x^{n-2}(1-x^2)\sqrt{1-x^2}\,\mathrm{d}x=\frac{n-1}{3}\,(a_{n-2}-a_n).$$</p>
+<p>整理得 (n+2)a_n=(n-1)a_{n-2}，即</p>
+<p>$$a_n=\frac{n-1}{n+2}\,a_{n-2}\quad(n=2,3,\cdots).\qquad\blacksquare$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>由 \{a_n\} 单调减少且 a_n&gt;0 知 0&lt;a_n\le a_{n-1}\le a_{n-2}，从而（把分母换大、不等号反向）</p>
+<p>$$\frac{a_n}{a_{n-2}}\le\frac{a_n}{a_{n-1}}\le\frac{a_n}{a_n}=1.$$</p>
+<p>由 (I) 的递推式 a_n=\dfrac{n-1}{n+2}\,a_{n-2} 得</p>
+<p>$$\frac{a_n}{a_{n-2}}=\frac{n-1}{n+2}\to 1\quad(n\to\infty).$$</p>
+<p>由夹逼准则</p>
+<p>$$\lim_{n\to\infty}\frac{a_n}{a_{n-1}}=1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

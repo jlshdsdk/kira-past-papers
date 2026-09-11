@@ -17,27 +17,50 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 11</div>
 <h1 class="title">考点 11　可微定义</h1>
-<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 0/2　</div>
+<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 2/2　</div>
 
   <div class="card q" id="k11_T1">
     <div class="qhead"><span class="qno">k11_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1988</span> <span class="badge year">2002</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.11.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k11_T1_0.png" alt="k11_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>由微分定义，$f(x)$ 在 $x_0$ 处的微分为<br>$$dy = f&#x27;(x_0)\,\Delta x = \frac{1}{2}\Delta x.$$<br>考察与 $\Delta x$ 的比值：<br>$$\lim_{\Delta x\to 0}\frac{dy}{\Delta x}=\lim_{\Delta x\to 0}\frac{\frac{1}{2}\Delta x}{\Delta x}=\frac{1}{2}.$$<br>极限为有限非零常数，且不等于 1，故 $dy$ 与 $\Delta x$ 是**同阶**无穷小（但不等价）。</p>
+<p>- 若极限为 1 才是等价（A 错）；<br>- 极限为 0 是高阶（D 错）；<br>- 极限为 $\infty$ 是低阶（C 错）。</p>
+<p>故选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D（f'(1)=0.5）$</div>
+        <div class="steps"><p>函数增量 $\Delta y$ 的线性主部即微分 $dy$。</p>
+<p>由复合函数求导：<br>$$y&#x27; = f&#x27;(x^2)\cdot 2x.$$</p>
+<p>在 $x=-1$ 处，取 $dx=\Delta x=-0.1$：<br>$$dy = f&#x27;(x^2)\cdot 2x \,dx \Big|_{x=-1,\,dx=-0.1} = f&#x27;(1)\cdot 2\cdot(-1)\cdot(-0.1) = 0.2\,f&#x27;(1).$$</p>
+<p>由题设线性主部为 $0.1$：<br>$$0.2\,f&#x27;(1)=0.1 \implies f&#x27;(1)=0.5.$$</p>
+<p>故选 **D**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k11_T2">
     <div class="qhead"><span class="qno">k11_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2006</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.11.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k11_T2_0.png" alt="k11_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>**判断符号。** 微分<br>$$dy = f&#x27;(x_0)\,\Delta x &gt; 0 \qquad (f&#x27;(x_0)&gt;0,\ \Delta x&gt;0).$$</p>
+<p>**比较 Δy 与 dy。** 由拉格朗日中值定理的泰勒展开（一阶带拉格朗日余项）：存在 $\xi$ 介于 $x_0$ 与 $x_0+\Delta x$ 之间，使<br>$$\Delta y = f(x_0+\Delta x)-f(x_0) = f&#x27;(x_0)\,\Delta x + \frac{f&#x27;&#x27;(\xi)}{2}(\Delta x)^2 = dy + \frac{f&#x27;&#x27;(\xi)}{2}(\Delta x)^2.$$</p>
+<p>因 $f&#x27;&#x27;(x)&gt;0$ 且 $(\Delta x)^2&gt;0$，余项<br>$$\frac{f&#x27;&#x27;(\xi)}{2}(\Delta x)^2 &gt; 0,$$</p>
+<p>故<br>$$\Delta y &gt; dy &gt; 0, \quad\text{即}\quad 0 &lt; dy &lt; \Delta y.$$</p>
+<p>**几何解释**：$f&#x27;&#x27;&gt;0$ 说明曲线严格下凸（凹弧），切线在曲线下方，故曲线的真实增量 $\Delta y$ 大于切线增量 $dy$。</p>
+<p>故选 **A**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

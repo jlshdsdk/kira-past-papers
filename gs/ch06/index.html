@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 6</div>
 <h1 class="title">考点 6　函数的连续与间断</h1>
-<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/5　</div>
+<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 5/5　</div>
 
   <div class="card q" id="k06_T1">
     <div class="qhead"><span class="qno">k06_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T1_0.png" alt="k06_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k06_T1_1.png" alt="k06_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
         <div class="steps"><p>逐项检查定义域内（尤其分段点与定义边缘）的连续性。</p>
@@ -68,7 +68,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T2_0.png" alt="k06_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k06_T2_1.png" alt="k06_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=1$</div>
         <div class="steps"><p>在 $x=0$ 处：左极限与函数值 $f(0)=2\cdot 0+a=a$；右极限 $\lim_{x\to 0^+}e^{x}(\sin x+\cos x)=e^{0}(0+1)=1$。</p>
@@ -139,7 +139,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T3_0.png" alt="k06_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k06_T3_1.png" alt="k06_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 可去间断点（第一类）：x=\frac{3\pi}{4},\ \frac{7\pi}{4}；无穷间断点（第二类）：x=\frac{\pi}{4},\ \frac{5\pi}{4}$</div>
         <div class="steps"><p>$$f(x)=(1+x)^{\frac{x}{\tan(x-\pi/4)}}=\exp\left(\frac{x\ln(1+x)}{\tan(x-\pi/4)}\right),$$</p>
@@ -216,13 +216,14 @@
 <p>第二类间断点共 3 个（$x=-1,1,2$），选 C。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle B（2 个：x=0 可去，x=1 跳跃）$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle A（第一类间断点仅 1 个：x=1 为可去间断点，\lim_{x\to1}f(x)=e；x=0 与 x=2 均为第二类无穷间断点）$</div>
         <div class="steps"><p>$f(x)=e^{\frac{\ln|x|}{|1-x|\,|x-2|}}$，无定义点为 $x=0$（底数取对数）与 $x=1,2$（指数分母为零）。</p>
 <p>（1）$x=0$：$\dfrac{\ln|x|}{|1-x||x-2|}\to\dfrac{-\infty}{1\cdot 2}=-\infty$，故 $\lim_{x\to 0}f(x)=0$ 存在，而 $f$ 在 $x=0$ 无定义，为可去间断点（第一类）。</p>
 <p>（2）$x=1$：令 $h=x-1\to 0$，$\ln|x|=\ln(1+h)\sim h$，$|1-x|=|h|$，$|x-2|\to 1$，故 $\ln f\sim\dfrac{h}{|h|}$：左极限 $\ln f\to-1$，$f\to e^{-1}$；右极限 $\ln f\to 1$，$f\to e$。左右极限存在不相等，为跳跃间断点（第一类）。</p>
 <p>（3）$x=2$：$\ln f=\dfrac{\ln|x|}{|1-x||x-2|}\sim\dfrac{\ln 2}{|x-2|}\to+\infty$，$f\to+\infty$，为第二类（无穷）间断点。</p>
 <p>第一类间断点共 2 个，选 B。</p>
-<p>注：幂指函数按 $|x|^u=e^{u\ln|x|}$ 理解时 $x=0$ 处无定义、为可去间断点；若另行规定 $f(0)=0$ 则 $x=0$ 连续、第一类仅 1 个。按真题标准口径取 B。</p></div>
+<p>注：幂指函数按 $|x|^u=e^{u\ln|x|}$ 理解时 $x=0$ 处无定义、为可去间断点；若另行规定 $f(0)=0$ 则 $x=0$ 连续、第一类仅 1 个。按真题标准口径取 B。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：原题印刷为 f(x)=|x|^{1/((1-x)(x-2))}，指数分母无绝对值（书页原图核实）；解题代理误读为 |1-x||x-2| 才得 B。按原题：x=0 处指数 ln|x|/((1-x)(x-2))→(-∞)/(-2)=+∞，f→+∞（第二类）；x=1 处比值→1，f→e（可去）；x=2 处指数→±∞（第二类）。第一类共 1 个，选 A（A、B 正确）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -234,7 +235,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T4_0.png" alt="k06_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（存在间断点 x=1，跳跃间断点）$</div>
         <div class="steps"><p>由 $|x|&lt;1$ 时 $x^{2n}\to 0$，$|x|=1$ 时 $x^{2n}=1$，$|x|&gt;1$ 时 $x^{2n}\to+\infty$，得</p>
@@ -267,7 +268,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T5_0.png" alt="k06_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（第一类间断点）$</div>
         <div class="steps"><p>由 $f(0)=0$ 且 $f$ 在 $x=0$ 可导：</p>
