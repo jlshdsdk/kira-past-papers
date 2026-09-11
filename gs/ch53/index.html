@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 53</div>
 <h1 class="title">考点 53　傅里叶级数(仅数一）</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：— · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：— · 解析完成 3/3　</div>
 
   <div class="card q" id="k53_T1">
     <div class="qhead"><span class="qno">k53_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k53_T1_0.png" alt="k53_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（S(-1/2)=-\frac{1}{4}）$</div>
         <div class="steps"><p>b_n 恰为 f 在 [0,1] 上的正弦（奇延拓、周期 2）傅里叶系数，S 为其傅里叶级数之和函数。</p>
@@ -55,7 +55,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k53_T2_0.png" alt="k53_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（S(-5/2)=\frac{3}{4}）$</div>
         <div class="steps"><p>a_n 是 f 的余弦（偶延拓、周期 2）傅里叶系数，S 为其和函数。</p>
@@ -79,7 +79,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k53_T3_0.png" alt="k53_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=-\frac{8}{\pi^2}\sum_{k=1}^{\infty}\frac{1}{(2k-1)^2}\cos\frac{(2k-1)\pi x}{2}，0\le x\le2$</div>
         <div class="steps"><p>周期 2l=4，l=2，作偶延拓。系数：<br>$$a_0=\frac{2}{l}\int_0^l f(x)dx=\int_0^2(x-1)dx=\left[\frac{x^2}{2}-x\right]_0^2=0$$</p>
@@ -88,13 +88,14 @@
 <p>f 连续且偶延拓处处连续，级数在 [0,2] 上收敛于 f：<br>$$f(x)=-\frac{8}{\pi^2}\sum_{k=1}^{\infty}\frac{1}{(2k-1)^2}\cos\frac{(2k-1)\pi x}{2},\quad 0\le x\le2$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\cos nx（0\le x\le\pi）；\ \sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}=\frac{\pi^2}{12}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 1-x^2=1-\frac{\pi^2}{3}+4\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}\cos nx\ (0\le x\le\pi)；\ \sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}=\frac{\pi^2}{12}$</div>
         <div class="steps"><p>偶延拓，l=π。</p>
 <p>$$a_0=\frac{2}{\pi}\int_0^\pi(1-x^2)dx=\frac{2}{\pi}\left(\pi-\frac{\pi^3}{3}\right)=2-\frac{2\pi^2}{3}$$</p>
 <p>分部积分：<br>$$\int_0^\pi x^2\cos nx\,dx=\left[x^2\frac{\sin nx}{n}\right]_0^\pi-\frac{2}{n}\int_0^\pi x\sin nx\,dx=-\frac{2}{n}\left[-\frac{x\cos nx}{n}\right]_0^\pi=\frac{2(-1)^n}{n^2}$$<br>（∫_0^π x sin nx dx = [-x cos nx/n + sin nx/n²]_0^π = -π(-1)^n/n。）</p>
 <p>$$a_n=\frac{2}{\pi}\left(0-\frac{2(-1)^n}{n^2}\right)=\frac{4(-1)^{n+1}}{\pi n^2}$$</p>
 <p>f 连续、偶延拓处处连续，故在 [0,π] 上：<br>$$f(x)=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\cos nx$$</p>
-<p>令 x=0（f(0)=1）：<br>$$1=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\ \Rightarrow\ \sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}=\frac{\pi^2}{12}$$</p></div>
+<p>令 x=0（f(0)=1）：<br>$$1=1-\frac{\pi^2}{3}+\frac{4}{\pi}\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n^2}\ \Rightarrow\ \sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^2}=\frac{\pi^2}{12}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 把余弦级数系数写成 4/π，正确为 4（a_n=(2/π)∫₀^π(1-x²)cos nx dx=4(-1)^{n-1}/n²，π 已消去）；按 4/π 在 x=0 代回得 π³/12，与其自己给出的 π²/12 矛盾。A、B 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
