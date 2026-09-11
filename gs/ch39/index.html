@@ -25,19 +25,40 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k39_T1_0.png" alt="k39_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：empty）</summary>
       <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
     </details>
   </div>
 
   <div class="card q" id="k39_T2">
     <div class="qhead"><span class="qno">k39_T2</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1989</span> <span class="badge year">2006</span> <span class="badge year">2010</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k39_T2_0.png" alt="k39_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{(D)}\ C_1y_1+C_2y_2+(1-C_1-C_2)y_3$</div>
+        <div class="steps"><p>记 $L[y]=y&#x27;&#x27;+p(x)y&#x27;+q(x)y$，则 $L[y_i]=f\ (i=1,2,3)$。</p>
+<p>由线性性：<br>$$L[y_1-y_3]=f-f=0,\qquad L[y_2-y_3]=f-f=0,$$<br>即 $y_1-y_3,\ y_2-y_3$ 都是对应齐次方程的解。</p>
+<p>再证它们线性无关：若 $A(y_1-y_3)+B(y_2-y_3)=0$，即 $Ay_1+By_2-(A+B)y_3=0$，由 $y_1,y_2,y_3$ 线性无关得 $A=0,\ B=0,\ A+B=0$，故只有零组合，二者线性无关，为齐次方程的两个线性无关解。</p>
+<p>二阶非齐次线性方程通解 = 齐次方程通解 + 非齐次方程任一特解：<br>$$y=C_1(y_1-y_3)+C_2(y_2-y_3)+y_3=C_1y_1+C_2y_2+(1-C_1-C_2)y_3 .$$</p>
+<p>验证：$L[y]=C_1f+C_2f+(1-C_1-C_2)f=f$，确为非齐次方程的解，含两个独立任意常数。故选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{(B)}\ y_1(x)+C\,[\,y_1(x)-y_2(x)\,]$</div>
+        <div class="steps"><p>记 $L[y]=y&#x27;+P(x)y$。则 $L[y_1]=L[y_2]=Q(x)$，故<br>$$L[y_1-y_2]=Q-Q=0,$$<br>即 $y_1-y_2$ 是对应齐次方程 $y&#x27;+P(x)y=0$ 的非零解，从而 $C[y_1-y_2]$ 是齐次方程的通解。</p>
+<p>非齐次方程通解 = 齐次通解 + 任一特解：<br>$$y=y_1(x)+C\,[y_1(x)-y_2(x)].$$</p>
+<p>排除其他选项：$(A)$：$L\{C[y_1-y_2]\}=0\neq Q$，只满足齐次方程；$(C)$：$L\{C[y_1+y_2]\}=2CQ$，一般不为 $Q$；$(D)$：$L\{y_1+C(y_1+y_2)\}=(1+2C)Q\neq Q$（一般）。故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \text{(A)}\ \lambda=\frac12,\ \mu=\frac12$</div>
+        <div class="steps"><p>记 $L[y]=y&#x27;+p(x)y$，则对任意常数 $a,b$ 有 $L[ay_1+by_2]=(a+b)\,q(x)$。</p>
+<p>条件一：$\lambda y_1+\mu y_2$ 是非齐次方程的解<br>$$(\lambda+\mu)\,q(x)=q(x)\ \Rightarrow\ \lambda+\mu=1 .$$</p>
+<p>条件二：$\lambda y_1-\mu y_2$ 是齐次方程的解<br>$$(\lambda-\mu)\,q(x)=0\ \Rightarrow\ \lambda=\mu .$$</p>
+<p>联立解得 $\lambda=\mu=\dfrac12$，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
