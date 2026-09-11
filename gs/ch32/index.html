@@ -21,56 +21,132 @@
 
   <div class="card q" id="k32_T1">
     <div class="qhead"><span class="qno">k32_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1997</span> <span class="badge year">2008</span> <span class="badge year">2020</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.32.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k32_T1_0.png" alt="k32_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（不连续，偏导数存在）$</div>
+        <div class="steps"><p>连续性：沿直线 y=kx 趋于原点，f(x,kx)=kx²/[x²(1+k²)]=k/(1+k²) 与 k 有关（如 y=0 时极限 0，y=x 时极限 1/2），故极限不存在，f 在 (0,0) 不连续。</p>
+<p>偏导数：$$f_x&#x27;(0,0)=\lim_{x\to0}\frac{f(x,0)-f(0,0)}{x}=\lim_{x\to0}\frac{0}{x}=0$$ 同理 f_y&#x27;(0,0)=0，两个偏导数都存在。</p>
+<p>故不连续但偏导数存在，选C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（f_x'不存在，f_y'存在）$</div>
+        <div class="steps"><p>$$f_x&#x27;(0,0)=\lim_{x\to0}\frac{e^{\sqrt{x^2}}-1}{x}=\lim_{x\to0}\frac{e^{|x|}-1}{x}$$</p>
+<p>右极限 lim_{x→0⁺}(e^x−1)/x=1，左极限 lim_{x→0⁻}(e^{−x}−1)/x=−1，不相等，f_x&#x27;(0,0) 不存在。</p>
+<p>$$f_y&#x27;(0,0)=\lim_{y\to0}\frac{e^{\sqrt{y^4}}-1}{y}=\lim_{y\to0}\frac{e^{y^2}-1}{y}=\lim_{y\to0}\frac{y^2}{y}=0\ \text{存在}$$</p>
+<p>选B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle B（3个）$</div>
+        <div class="steps"><p>①：y=0 时 f(x,0)=x，$$\left.\frac{\partial f}{\partial x}\right|_{(0,0)}=\lim_{x\to0}\frac{f(x,0)-f(0,0)}{x}=\frac{x}{x}=1$$ 正确。</p>
+<p>②：对 y≠0，$$f_x&#x27;(0,y)=\lim_{x\to0}\frac{f(x,y)-f(0,y)}{x}=\lim_{x\to0}\frac{xy-y}{x}=\lim_{x\to0}y\frac{x-1}{x}$$ 该极限不存在（x→0 时发散），故 f_x&#x27;(0,y)（y≠0）不存在，进而 ∂²f/∂x∂y|(0,0)=lim_{y→0}[f_x&#x27;(0,y)−f_x&#x27;(0,0)]/y 无意义，②错误。</p>
+<p>③：无论沿哪条路径趋于原点，f 取值为 xy、x 或 y 三者之一，都趋于 0，故二重极限存在且为 0，③正确。</p>
+<p>④：固定 y≠0 时 lim_{x→0}f(x,y)=lim xy=0，再令 y→0 得 0，④正确。</p>
+<p>正确的为①③④，共3个，选B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T2">
     <div class="qhead"><span class="qno">k32_T2</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2012</span> <span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.32.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k32_T2_0.png" alt="k32_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（x₁<x₂，y₁>y₂）$</div>
+        <div class="steps"><p>f 对 x 严格增、对 y 严格减。要保证 f(x₁,y₁)&lt;f(x₂,y₂)，应让 x₁&lt;x₂（增方向占优）且 y₁&gt;y₂（y₁ 大使 f 值更小）：</p>
+<p>f(x₁,y₁)≤f(x₂,y₁)（x₁&lt;x₂，严格增）&lt;f(x₂,y₂)（y₁&gt;y₂，对 y 严格减）。</p>
+<p>A 两个方向都反了（实际给出反向不等式的充分条件）；B、C 各有一项方向相反，均为混合情形不能保证。选D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D（f(0,1)<f(1,0)）$</div>
+        <div class="steps"><p>固定 y=0：g(x)=f(x,0) 满足 g&#x27;(x)=f_x&#x27;(x,0)&gt;0，严格增，故 f(0,0)&lt;f(1,0)。</p>
+<p>固定 x=0：h(y)=f(0,y) 满足 h&#x27;(y)=f_y&#x27;(0,y)&lt;0，严格减，故 f(0,1)&lt;f(0,0)。</p>
+<p>串联得 f(0,1)&lt;f(0,0)&lt;f(1,0)，即 f(0,1)&lt;f(1,0) 恒成立，D 正确。</p>
+<p>A、B 涉及 f(1,1)：f(1,1) 与 f(1,0) 的比较需 ∂f/∂y 的积分（变号未知），与 f(0,0) 的比较亦不确定，无法保证。C 与推导矛盾。选D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T3">
     <div class="qhead"><span class="qno">k32_T3</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2007</span> <span class="badge year">2012</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k32_T3_0.png" alt="k32_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k32_T3_1.png" alt="k32_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>C 选项给出 lim_{(x,y)→(0,0)}[f(x,y)−f(0,0)]/√(x²+y²)=0，即 f(x,y)−f(0,0)=o(ρ)。取 A=B=0，则 f(x,y)−f(0,0)=0·x+0·y+o(ρ)，恰符合可微定义，故 C 是充分条件（此时 f_x&#x27;(0,0)=f_y&#x27;(0,0)=0）。</p>
+<p>A 只是 f 在 (0,0) 连续，推不出可微。</p>
+<p>B 只保证两个偏导数存在且为 0（偏导存在≠可微，如 f=√|xy| 的反例类型）。</p>
+<p>D 只给出偏导数沿两条坐标轴方向趋于该点处的值，不是偏导数在该点邻域连续，推不出可微。</p>
+<p>选C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>B：设 lim f/(x²+y²)=L（存在），分母→0 故分子必→0，由连续性 f(0,0)=0，且 f(x,y)=L(x²+y²)+o(ρ²)。于是</p>
+<p>$$f(x,y)-f(0,0)=L(x^2+y^2)+o(\rho^2)=o(\rho)$$</p>
+<p>即 f(x,y)=f(0,0)+0·x+0·y+o(ρ)，f 在(0,0)可微（f_x&#x27;=f_y&#x27;=0）。B 正确。</p>
+<p>A：反例 f=|x|+|y|，lim f/(|x|+|y|)=1 存在，但 f 在原点不可微。</p>
+<p>C：反例 f=x（可微），x/(|x|+|y|) 沿 x 轴正负两侧分别趋于 ±1，极限不存在。</p>
+<p>D：反例 f=x，x/(x²+y²) 沿 x 轴趋于 ∞，极限不存在。</p>
+<p>选B。</p>
+<p>（附注：本组第二张图片 k32_T3_1.png 仅为下一例【例4.32.4】分段函数定义开头的残片，无独立新题。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T4">
     <div class="qhead"><span class="qno">k32_T4</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.32.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k32_T4_0.png" alt="k32_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（∂f/∂x不连续，f(x,y)可微）$</div>
+        <div class="steps"><p>可微性：f_x&#x27;(0,0)=lim_{x→0}[f(x,0)−f(0,0)]/x=0（x 轴上 f≡0），同理 f_y&#x27;(0,0)=0，且</p>
+<p>$$\frac{|f(x,y)-f(0,0)-0\cdot x-0\cdot y|}{\sqrt{x^2+y^2}}=\sqrt{x^2+y^2}\,\big|\sin\tfrac1{xy}\big|\le\sqrt{x^2+y^2}\to0$$</p>
+<p>故 f 在 (0,0) 可微。</p>
+<p>偏导连续性：xy≠0 时</p>
+<p>$$f_x&#x27;=2x\sin\frac{1}{xy}-\frac{x^2+y^2}{x^2y}\cos\frac{1}{xy}$$</p>
+<p>沿 y=x 趋于原点，第二项为 −(2/x)cos(1/x²)，无界振荡，lim f_x&#x27; 不存在，故 ∂f/∂x 在 (0,0) 处不连续。</p>
+<p>综上选C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T5">
     <div class="qhead"><span class="qno">k32_T5</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1994</span> <span class="badge year">2002</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.32.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k32_T5_0.png" alt="k32_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（既非充分条件又非必要条件）$</div>
+        <div class="steps"><p>不充分：f=xy/(x²+y²)（(x,y)≠(0,0)），f(0,0)=0，两偏导在原点都存在（均为0），但沿 y=x 极限为 1/2≠0，不连续。</p>
+<p>不必要：f=√(x²+y²) 在原点连续，但 f_x&#x27;(0,0)=lim_{x→0}|x|/x 不存在。</p>
+<p>故既非充分又非必要，选D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle A（②⇒③⇒①）$</div>
+        <div class="steps"><p>基本关系链：②偏导连续 ⟹ ③可微 ⟹ ①连续；③ ⟹ ④偏导存在。而 ④⇏①（f=xy/(x²+y²) 反例），①⇏④（f=√(x²+y²) 反例），③⇏②（存在可微但偏导不连续的函数）。</p>
+<p>A：②⇒③⇒①，每一步成立，正确。</p>
+<p>B：③⇒② 不成立。C：③⇒④ 成立但 ④⇒① 不成立。D：③⇒① 成立但 ①⇒④ 不成立。</p>
+<p>选A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

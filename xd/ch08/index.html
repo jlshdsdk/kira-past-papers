@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 8</div>
 <h1 class="title">考点 8　矩阵的秩</h1>
-<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五 · 解析完成 0/5　</div>
+<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五 · 解析完成 5/5　</div>
 
   <div class="card q" id="k08_T1">
     <div class="qhead"><span class="qno">k08_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.8.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k08_T1_0.png" alt="k08_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{正确 }(\sqrt{})$</div>
         <div class="steps"><p>结论正确。设 D 位于行组 I、列组 J (|I|=|J|=r)。因 |D|≠0, 对任意列 q 与任意行 p∉I, 含 D 的加边子式 (行 I∪{p}, 列 J∪{q}) 为零, 这说明列 q 限制在行组 I∪{p} 上可由 D 的 r 个列 (限制在同一行组) 唯一线性表出, 且表出系数由前 r 行决定、与 p 无关, 因而第 r+1 个方程成立时恰给出<br>$$a_{pq}=\sum_{k=1}^{r}c_k\,a_{pj_k},\qquad c=D^{-1}A[I,q]\ \text{与 } p\ \text{无关};$$<br>当 p∈I 时, 按 D 可逆解出的正是同一组系数 c, 该关系也成立。于是 A 的每一列都是第 j₁,…,j_r 列的线性组合 (系数对全列统一), 从而任意 r+1 个列向量线性相关, A 的一切 r+1 阶子式全为零。证毕。</p></div>
@@ -48,7 +48,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.8.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k08_T2_0.png" alt="k08_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k08_T2_1.png" alt="k08_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{正确 }(\sqrt{})$</div>
         <div class="steps"><p>正确。反证: 若 $r(A)=n$, 则 A 可逆, $B=A^{-1}(AB)=A^{-1}O=O$, 与 B≠0 矛盾。故 $r(A)&lt;n$。</p></div>
@@ -95,7 +95,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.8.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k08_T3_0.png" alt="k08_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2$</div>
         <div class="steps"><p>相邻向量作差: $\alpha_2-\alpha_1=\alpha_3-\alpha_2=\alpha_4-\alpha_3=(1,1,1,1)=d$, 即<br>$$\alpha_2=\alpha_1+d,\quad \alpha_3=\alpha_1+2d,\quad \alpha_4=\alpha_1+3d,$$<br>向量组可由 $\alpha_1,d$ 线性表示; 而 $\alpha_1=(1,2,3,4)$ 与 $d=(1,1,1,1)$ 分量不成比例, 线性无关。故秩为 2。</p></div>
@@ -114,7 +114,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k08_T4_0.png" alt="k08_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{(B)}$</div>
         <div class="steps"><p>A 的特征值: $1+(n-1)a$ (对应特征向量 $(1,1,\dots,1)^T$) 与 $1-a$ ($n-1$ 重), 故<br>$$|A|=\bigl(1+(n-1)a\bigr)(1-a)^{n-1}.$$<br>$r(A)=n-1\Rightarrow|A|=0\Rightarrow a=1$ 或 $a=\dfrac{1}{1-n}$。<br>$a=1$: A 为全 1 矩阵, 秩为 $1&lt;n-1$ (因 $n\ge3$), 舍去;<br>$a=\dfrac{1}{1-n}$: $1-a=\dfrac{n}{n-1}\ne0$ (n−1 重), 恰有一个零特征值, $r(A)=n-1$ ✓。<br>选 (B)。</p></div>
@@ -129,7 +129,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.8.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k08_T5_0.png" alt="k08_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 1$</div>
         <div class="steps"><p>$$A=\begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix}(b_1,\ b_2,\ \dots,\ b_n),$$<br>即列向量全是 $(a_1,\dots,a_n)^T$ 的倍数; 又 $a_i\ne0,b_j\ne0$ 保证 $A\ne O$, 故 $r(A)=1$。</p></div>

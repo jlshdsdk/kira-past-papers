@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 7</div>
 <h1 class="title">考点 7　矩阵的初等变换</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二、题型三 · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二、题型三 · 解析完成 3/3　</div>
 
   <div class="card q" id="k07_T1">
     <div class="qhead"><span class="qno">k07_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k07_T1_0.png" alt="k07_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{B}$</div>
         <div class="steps"><p>(注: 切片图上缘截去了目标矩阵首行 (1,1,0,1), 已按 2025 年数二官方真题核实补全。) 初等行变换不改变矩阵的秩与行空间, 且两矩阵行等价 ⟺ 行空间相同。目标矩阵<br>$$B=\begin{pmatrix}1&amp;1&amp;0&amp;1\\0&amp;0&amp;1&amp;2\\0&amp;0&amp;0&amp;0\end{pmatrix},\qquad r(B)=2,\ \text{行空间}=\operatorname{span}\{(1,1,0,1),(0,0,1,2)\}.$$<br>逐项检验:<br>A: $r_3=r_1+r_2$, 行空间 $=\operatorname{span}\{(1,1,0,1),(0,1,1,2)\}$, $(0,0,1,2)$ 不在其中, 不同;<br>B: $r_2-r_1=(0,0,2,4)=2(0,0,1,2)$, $r_3-r_1=(0,0,1,2)$, 行空间恰为 $\operatorname{span}\{(1,1,0,1),(0,0,1,2)\}$, 与 B 相同;<br>C: 秩为 $3\ne2$;<br>D: $r_3=r_1+r_2$, 行空间 $=\operatorname{span}\{(1,1,2,3),(0,1,0,0)\}$, 不同。<br>对选项 B 显式实现: $r_2\to r_2-r_1$, $r_2\to\frac12 r_2$, $r_3\to r_3-r_1$, $r_3\to r_3-r_2$, 即得目标矩阵。故选 B。</p></div>
@@ -40,7 +40,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k07_T2_0.png" alt="k07_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=2$</div>
         <div class="steps"><p>等价 ⟺ 秩相等。先求 $r(B)$:<br>$$|B|=\begin{vmatrix}1&amp;1&amp;0\\0&amp;-1&amp;1\\1&amp;0&amp;1\end{vmatrix}=1\cdot(-1)-1\cdot(-1)+0=0,\qquad r_3=r_1+r_2,$$<br>而 $r_1=(1,1,0),r_2=(0,-1,1)$ 线性无关, 故 $r(B)=2$。<br>$$|A|=(a-2)(a+1)^2\quad(\text{A 的特征值为 } a-2,\ a+1,\ a+1).$$<br>$|A|=0\iff a=2$ 或 $a=-1$。$a=-1$ 时 $A$ 为全 $-1$ 矩阵, 秩为 $1\ne2$, 舍去; $a=2$ 时 $r(A)=2$。故 $a=2$。</p></div>
@@ -59,7 +59,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k07_T3_0.png" alt="k07_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k07_T3_1.png" alt="k07_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{(C)}$</div>
         <div class="steps"><p>左乘初等阵即行变换。从 A 出发: 先 $r_3\to r_3+r_1$ (对应左乘 $P_2$, 其第 3 行为 $(1,0,1)$), 得<br>$$P_2A=\begin{pmatrix}a_{11}&amp;a_{12}&amp;a_{13}\\a_{21}&amp;a_{22}&amp;a_{23}\\a_{31}+a_{11}&amp;a_{32}+a_{12}&amp;a_{33}+a_{13}\end{pmatrix};$$<br>再 $r_1\leftrightarrow r_2$ (左乘 $P_1$) 即得 B。故<br>$$B=P_1P_2A,$$<br>选 (C)。若先换行后加行, 第 3 行会变成 $a_{3j}+a_{2j}$, 与 B 不符, 故 (D) 错。</p></div>
