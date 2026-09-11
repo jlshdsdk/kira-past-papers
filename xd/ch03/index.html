@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 3</div>
 <h1 class="title">考点 3　克拉默法则</h1>
-<div class="sub">题组 2 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/2　</div>
+<div class="sub">题组 2 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 2/2　</div>
 
   <div class="card q" id="k03_T1">
     <div class="qhead"><span class="qno">k03_T1</span>
@@ -25,12 +25,13 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k03_T1_0.png" alt="k03_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle X=(1,0,\cdots,0)^{T}$</div>
         <div class="steps"><p>系数行列式 |A^{T}|=|A|=\prod_{1\le i&lt;j\le n}(a_j-a_i)\ne0（a_i 互异），故方程组有唯一解。</p>
 <p>取 X=(1,0,\cdots,0)^{T}，则 A^{T}X 为 A^{T} 的第一列，即 A 的第一行的转置 (1,1,\cdots,1)^{T}=B，故它是解；由唯一性它就是全部解。</p>
-<p>（亦符合克拉默法则：把第 j 列换成全 1 后的范德蒙德行列式仅在 j=1 时等于 D，其余为 0。）</p></div>
+<p>（亦符合克拉默法则：把第 j 列换成全 1 后的范德蒙德行列式仅在 j=1 时等于 D，其余为 0。）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A^T X=B（B=全1）即 p(a_j)=1，其中 p(t)=\sum_k x_k t^{k-1} 次数≤n-1，有 n 个互异零点处取值 1，故 p\equiv1，X=e_1；A 把条件误写成 \sum_j x_j a_j^k=1（相当于解 AX=B），其 Lagrange 公式 L_j(1) 一般不满足原方程（如 n=2, a_1=2, a_2=3 时给 (2,-1)^T，A^T X≠B）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) |A|=(n+1)a^n；(II) a\ne0 时有唯一解，x_1=\frac{n}{(n+1)a}$</div>
@@ -54,7 +55,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.3.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k03_T2_0.png" alt="k03_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \lambda\ne1\ \text{且}\ \lambda\ne-2$</div>
         <div class="steps"><p>齐次方程组只有零解 \iff 系数行列式 \ne0：</p>

@@ -27,11 +27,8 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k02_T1_0.png" alt="k02_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
-        <div class="steps"><p>取 $\varepsilon=\dfrac{|a|}{2}&gt;0$。由 $\lim\limits_{n\to\infty}a_n=a$，存在 $N$，当 $n&gt;N$ 时 $|a_n-a|&lt;\dfrac{|a|}{2}$。</p>
-<p>由三角不等式，<br>$$|a_n|\ge |a|-|a_n-a|&gt;|a|-\frac{|a|}{2}=\frac{|a|}{2},$$<br>即 $n$ 充分大时恒有 $|a_n|&gt;\dfrac{|a|}{2}$，A 正确（B 与 A 矛盾，不成立）。</p>
-<p>C、D 的右端含随 $n$ 变化的 $\dfrac1n\to 0$：极限定义只保证 $|a_n-a|$ 小于任意**固定**正数，保证不了 $a_n-a$ 被趋于 0 的 $\dfrac1n$ 控制。反例：<br>- 取 $a_n=a-\dfrac2n$，则 $a_n\to a$，但 $a_n=a-\dfrac2n&lt;a-\dfrac1n$，C 不成立；<br>- 取 $a_n=a+\dfrac2n$，则 $a_n\to a$，但 $a_n=a+\dfrac2n&gt;a+\dfrac1n$，D 不成立。</p>
-<p>故选 A。</p></div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{A}$</div>
+        <div class="steps"><p>lim a_n = a ≠ 0，取 ε = |a|/2 &gt; 0，存在 N 使 n&gt;N 时 |a_n − a| &lt; |a|/2，由极限保号性得 |a_n| &gt; |a|/2，故选 A。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>

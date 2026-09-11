@@ -21,34 +21,54 @@
 
   <div class="card q" id="k06_T1">
     <div class="qhead"><span class="qno">k06_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1994</span> <span class="badge year">2003</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k06_T1_0.png" alt="k06_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A^n=3^{n-1}\begin{pmatrix}1&\tfrac12&\tfrac13\\2&1&\tfrac23\\3&\tfrac32&1\end{pmatrix}$</div>
+        <div class="steps"><p>A=αᵀβ 为 3×3 矩阵, 而 βαᵀ 是一个数:<br>$$\beta\alpha^T=1\cdot1+\tfrac12\cdot2+\tfrac13\cdot3=1+1+1=3.$$<br>由矩阵乘法结合律,<br>$$A^n=(\alpha^T\beta)^n=\alpha^T(\beta\alpha^T)^{n-1}\beta=3^{n-1}\alpha^T\beta=3^{n-1}A.$$<br>而<br>$$A=\begin{pmatrix}1&amp;\tfrac12&amp;\tfrac13\\2&amp;1&amp;\tfrac23\\3&amp;\tfrac32&amp;1\end{pmatrix},$$<br>故<br>$$A^n=3^{n-1}\begin{pmatrix}1&amp;\tfrac12&amp;\tfrac13\\2&amp;1&amp;\tfrac23\\3&amp;\tfrac32&amp;1\end{pmatrix}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 3$</div>
+        <div class="steps"><p>αᵀα 是 1×1 的数, 且等于 ααᵀ 的迹:<br>$$\alpha^T\alpha=\operatorname{tr}(\alpha\alpha^T)=1+1+1=3.$$<br>(即 α 各分量平方之和, 每个主对角元恰为一个分量的平方。)</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k06_T2">
     <div class="qhead"><span class="qno">k06_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1999</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k06_T2_0.png" alt="k06_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle O\ (\text{零矩阵})$</div>
+        <div class="steps"><p>(注: 切片图上缘截去了矩阵首行 (1,0,1), 按 1999 年数三原题补全, A 为对称矩阵)<br>$$A=\begin{pmatrix}1&amp;0&amp;1\\0&amp;2&amp;0\\1&amp;0&amp;1\end{pmatrix}.$$<br>直接计算:<br>$$A^2=\begin{pmatrix}2&amp;0&amp;2\\0&amp;4&amp;0\\2&amp;0&amp;2\end{pmatrix}=2A.$$<br>由归纳法得 $A^n=2^{n-1}A\ (n\ge1)$。于是当 $n\ge2$ 时<br>$$A^n-2A^{n-1}=2^{n-1}A-2\cdot2^{n-2}A=O.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k06_T3">
     <div class="qhead"><span class="qno">k06_T3</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1988</span> <span class="badge year">2000</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k06_T3_0.png" alt="k06_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A=A^5=\begin{pmatrix}1&0&0\\2&0&0\\6&-1&-1\end{pmatrix}$</div>
+        <div class="steps"><p>$|P|=\begin{vmatrix}1&amp;0&amp;0\\2&amp;-1&amp;0\\2&amp;1&amp;1\end{vmatrix}=-1\ne0$, 可逆。对 $(P|E)$ 作初等行变换求逆:<br>$$P^{-1}=\begin{pmatrix}1&amp;0&amp;0\\2&amp;-1&amp;0\\-4&amp;1&amp;1\end{pmatrix}.$$<br>由 $AP=PB$ 得 $A=PBP^{-1}$:<br>$$PB=\begin{pmatrix}1&amp;0&amp;0\\2&amp;-1&amp;0\\2&amp;1&amp;1\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;-1\end{pmatrix}=\begin{pmatrix}1&amp;0&amp;0\\2&amp;0&amp;0\\2&amp;0&amp;-1\end{pmatrix},$$<br>$$A=PBP^{-1}=\begin{pmatrix}1&amp;0&amp;0\\2&amp;0&amp;0\\2&amp;0&amp;-1\end{pmatrix}\begin{pmatrix}1&amp;0&amp;0\\2&amp;-1&amp;0\\-4&amp;1&amp;1\end{pmatrix}=\begin{pmatrix}1&amp;0&amp;0\\2&amp;0&amp;0\\6&amp;-1&amp;-1\end{pmatrix}.$$<br>B 为对角阵, $B^5=\operatorname{diag}(1^5,0^5,(-1)^5)=\operatorname{diag}(1,0,-1)=B$, 故<br>$$A^5=PB^5P^{-1}=PBP^{-1}=A.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ A=\begin{pmatrix}9/10&2/5\\[2pt]1/10&3/5\end{pmatrix};\quad (II)\ \lambda_1=1\ (\eta_1),\ \lambda_2=\tfrac12\ (\eta_2);\quad (III)\ \begin{pmatrix}x_{n+1}\\y_{n+1}\end{pmatrix}=\begin{pmatrix}\dfrac45-\dfrac{3}{10}\cdot\dfrac{1}{2^n}\\[6pt]\dfrac15+\dfrac{3}{10}\cdot\dfrac{1}{2^n}\end{pmatrix}$</div>
+        <div class="steps"><p>(I) 熟练工留 $\frac56x_n$; 非熟练工补缺额后为 $\frac{x_n}{6}+y_n$, 其中 $\frac25$ 升为熟练工、$\frac35$ 仍为非熟练工:<br>$$x_{n+1}=\frac56x_n+\frac25\Big(\frac{x_n}{6}+y_n\Big)=\frac9{10}x_n+\frac25y_n,\qquad<br>y_{n+1}=\frac35\Big(\frac{x_n}{6}+y_n\Big)=\frac1{10}x_n+\frac35y_n,$$<br>$$\begin{pmatrix}x_{n+1}\\y_{n+1}\end{pmatrix}=A\begin{pmatrix}x_n\\y_n\end{pmatrix},\qquad<br>A=\begin{pmatrix}9/10&amp;2/5\\[2pt]1/10&amp;3/5\end{pmatrix}.$$<br>(II)<br>$$A\eta_1=\Big(\frac9{10}\cdot4+\frac25\cdot1,\ \frac1{10}\cdot4+\frac35\cdot1\Big)^{T}=(4,1)^T=\eta_1\ \Rightarrow\ \lambda_1=1;$$<br>$$A\eta_2=\Big(-\frac9{10}+\frac25,\ -\frac1{10}+\frac35\Big)^{T}=\Big(-\frac12,\frac12\Big)^T=\frac12\eta_2\ \Rightarrow\ \lambda_2=\frac12.$$<br>不同特征值对应的特征向量线性无关, 故 $\eta_1,\eta_2$ 线性无关。<br>(III) 用 $\eta_1,\eta_2$ 表示 $(1/2,1/2)^T=c_1\eta_1+c_2\eta_2$:<br>$$4c_1-c_2=\frac12,\quad c_1+c_2=\frac12\ \Rightarrow\ c_1=\frac15,\ c_2=\frac3{10}.$$<br>于是<br>$$\begin{pmatrix}x_{n+1}\\y_{n+1}\end{pmatrix}=A^n\begin{pmatrix}1/2\\1/2\end{pmatrix}<br>=\frac15\cdot1^n\,\eta_1+\frac3{10}\Big(\frac12\Big)^n\eta_2<br>=\begin{pmatrix}\dfrac45-\dfrac{3}{10}\cdot\dfrac{1}{2^n}\\[6pt]\dfrac15+\dfrac{3}{10}\cdot\dfrac{1}{2^n}\end{pmatrix}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

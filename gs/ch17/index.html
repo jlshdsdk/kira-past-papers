@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 17</div>
 <h1 class="title">考点 17　零点定理与介值定理</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 3/3　</div>
 
   <div class="card q" id="k17_T1">
     <div class="qhead"><span class="qno">k17_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k17_T1_0.png" alt="k17_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b)，使 f(\xi)=0$</div>
         <div class="steps"><p>因 $f&#x27;(a)f&#x27;(b)&gt;0$，不妨设 $f&#x27;(a)&gt;0,\ f&#x27;(b)&gt;0$（若同为负，对 $-f$ 作同样论证即可）。</p>
@@ -43,12 +43,13 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k17_T2_0.png" alt="k17_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \eta\in(1/2,1)，使 f(\eta)=\eta$</div>
         <div class="steps"><p>令 $g(x)=f(x)-x$，则 $g$ 在 $\left[\dfrac12,1\right]$ 上连续，且</p>
 <p>$$g\!\left(\frac12\right)=f\!\left(\frac12\right)-\frac12=1-\frac12=\frac12&gt;0,\qquad g(1)=f(1)-1=0-1=-1&lt;0.$$</p>
-<p>由零点定理，存在 $\eta\in\left(\dfrac12,1\right)$ 使 $g(\eta)=0$，即 $f(\eta)=\eta$。</p></div>
+<p>由零点定理，存在 $\eta\in\left(\dfrac12,1\right)$ 使 $g(\eta)=0$，即 $f(\eta)=\eta$。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 给出的结论 \exists a&gt;0 使 f(a)=1 是另一小题（存在 a&gt;0 使 f(a)=1）的结论，与本小题要求的 f(\eta)=\eta（\eta\in(1/2,1)）不一致，solver 与 A 的结论正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f(\xi)=1-\xi$</div>
@@ -80,7 +81,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k17_T3_0.png" alt="k17_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (Ⅰ) f(x)=f'(0)x+\dfrac{x^2}{2}f''(\theta x)，0<\theta<1；(Ⅱ) 存在 \eta\in[-a,a]，使 a^3f''(\eta)=3\int_{-a}^{a}f(x)\,dx$</div>
         <div class="steps"><p>**(Ⅰ)** 对任意 $x\in[-a,a]$，带拉格朗日余项的一阶麦克劳林公式为</p>
@@ -92,7 +93,8 @@
 <p>其中 $\xi_x$ 介于 $0$ 与 $x$ 之间。记 $m=\min\limits_{[-a,a]}f&#x27;&#x27;,\ M=\max\limits_{[-a,a]}f&#x27;&#x27;$，由 $x^2\ge0$ 得</p>
 <p>$$\frac{m}{2}\int_{-a}^{a}x^2dx\le\int_{-a}^{a}f(x)dx\le\frac{M}{2}\int_{-a}^{a}x^2dx,\qquad \int_{-a}^{a}x^2dx=\frac{2a^3}{3},$$</p>
 <p>即 $\dfrac{a^3}{3}\,m\le\displaystyle\int_{-a}^{a}f(x)\,dx\le\dfrac{a^3}{3}\,M$，于是 $\dfrac{3}{a^3}\displaystyle\int_{-a}^{a}f(x)\,dx\in[m,M]$。由 $f&#x27;&#x27;$ 在 $[-a,a]$ 上连续及介值定理，存在 $\eta\in[-a,a]$ 使</p>
-<p>$$f&#x27;&#x27;(\eta)=\frac{3}{a^3}\int_{-a}^{a}f(x)\,dx,\qquad\text{即}\quad a^3f&#x27;&#x27;(\eta)=3\int_{-a}^{a}f(x)\,dx.$$</p></div>
+<p>$$f&#x27;&#x27;(\eta)=\frac{3}{a^3}\int_{-a}^{a}f(x)\,dx,\qquad\text{即}\quad a^3f&#x27;&#x27;(\eta)=3\int_{-a}^{a}f(x)\,dx.$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 给出的是另一小题（存在 a&gt;0 使 f(a)=1）的介值定理解答，与本小题（泰勒公式及积分后得 a^3f&#x27;&#x27;(\eta)=3\int_{-a}^a f dx）的结论无关，solver 与 B 的结论一致且正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in[a,b]，使 \int_a^b f(x)g(x)\,dx=f(\xi)\int_a^b g(x)\,dx$</div>
