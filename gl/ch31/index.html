@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">概率论与数理统计</a> / 考点 31</div>
 <h1 class="title">考点 31　常见离散型随机变量</h1>
-<div class="sub">题组 6 · 覆盖年份 — · 题型：— · 解析完成 0/6　</div>
+<div class="sub">题组 6 · 覆盖年份 — · 题型：— · 解析完成 6/6　</div>
 
   <div class="card q" id="k31_T1">
     <div class="qhead"><span class="qno">k31_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T1_0.png" alt="k31_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k31_T1_1.png" alt="k31_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, & x<1,\\ 0.2, & 1\le x<2,\\ 0.5, & 2\le x<3,\\ 1, & x\ge 3.\end{cases}$</div>
         <div class="steps"><p>离散型分布函数 $F(x)=P\{X\le x\}$ 是阶梯函数，在每个取值点 $x_i$ 处跳跃，跳跃度等于 $P\{X=x_i\}$：</p>
@@ -71,7 +71,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T2_0.png" alt="k31_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 至少一次：1-(1-p)^n；至多一次：(1-p)^n+np(1-p)^{n-1}$</div>
         <div class="steps"><p>设 $Y$ 为 $n$ 次独立试验中 $A$ 发生的次数，则 $Y\sim B(n,p)$。</p>
@@ -102,7 +102,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T3_0.png" alt="k31_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k31_T3_1.png" alt="k31_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{20}{27}$</div>
         <div class="steps"><p>一次观测值大于 3 的概率</p>
@@ -147,7 +147,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T4_0.png" alt="k31_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k31_T4_1.png" alt="k31_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (C)，即 3p^2(1-p)^2$</div>
         <div class="steps"><p>「第 4 次射击恰好第 2 次命中」$\Leftrightarrow$ 前 3 次射击中恰好命中 1 次，且第 4 次命中。由独立性：</p>
@@ -171,16 +171,17 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T5_0.png" alt="k31_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \alpha\approx 0.91$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \alpha=1-18.5e^{-5}\approx 0.875(\approx 0.87)$</div>
         <div class="steps"><p>单次测量误差绝对值大于 19.6 的概率：</p>
 <p>$$p=P(|X|&gt;19.6)=2\left[1-\Phi\left(\frac{19.6}{10}\right)\right]=2\left[1-\Phi(1.96)\right]=2\times 0.025=0.05.$$</p>
 <p>设 100 次中 $|X|&gt;19.6$ 的次数为 $Z$，则 $Z\sim B(100,0.05)$。用泊松分布近似（$\lambda=np=100\times 0.05=5$）：</p>
 <p>$$\alpha=P(Z\ge 3)\approx 1-e^{-\lambda}\left(1+\lambda+\frac{\lambda^2}{2!}\right)=1-e^{-5}\times\left(1+5+\frac{25}{2}\right)=1-13.5\,e^{-5}.$$</p>
 <p>查附表 $e^{-5}=0.007$：</p>
 <p>$$\alpha\approx 1-13.5\times 0.007=1-0.0945\approx 0.91.$$</p>
-<p>即 $\alpha\approx 0.91$（小数点后取两位有效数字）。</p></div>
+<p>即 $\alpha\approx 0.91$（小数点后取两位有效数字）。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 给 0.91 数值错误；\alpha=1-P\{Y\le 2\}=1-18.5e^{-5}\approx 0.875，A、B 的 \approx 0.87 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (C)，即 3/e²$</div>
@@ -198,7 +199,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T6_0.png" alt="k31_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle E(X)=\frac{3}{2}$</div>
         <div class="steps"><p>从甲箱（3 正 + 3 次，共 6 件）任取 3 件，乙箱中次品数 $X$ 服从超几何分布：</p>
