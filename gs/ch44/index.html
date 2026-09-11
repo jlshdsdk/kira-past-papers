@@ -21,34 +21,118 @@
 
   <div class="card q" id="k44_T1">
     <div class="qhead"><span class="qno">k44_T1</span>
-      
+      <span class="badge">共 3 小题</span><span class="badge year">1998</span> <span class="badge year">2002</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k44_T1_0.png" alt="k44_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y(1)=\pi e^{\frac{\pi}{4}}，选 (D)$</div>
+        <div class="steps"><p>由 \Delta y=\frac{y}{1+x^2}\Delta x+o(\Delta x) 知 \mathrm{d}y=\frac{y}{1+x^2}\mathrm{d}x，即<br>$$y&#x27;=\frac{y}{1+x^2}.$$<br>分离变量：\frac{\mathrm{d}y}{y}=\frac{\mathrm{d}x}{1+x^2}，积分得 \ln y=\arctan x+C，即 y=Ce^{\arctan x}。<br>由 y(0)=\pi 得 C=\pi，故 y(1)=\pi e^{\arctan 1}=\pi e^{\frac{\pi}{4}}，选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=e^{-\frac{1}{x}}$</div>
+        <div class="steps"><p>设 L=\lim_{h\to0}\left[\frac{f(x+hx)}{f(x)}\right]^{1/h}，取对数：<br>$$\ln L=\lim_{h\to0}\frac{\ln f(x+hx)-\ln f(x)}{h}=x[\ln f(x)]&#x27;=\frac{xf&#x27;(x)}{f(x)}.$$<br>由题意 \frac{xf&#x27;(x)}{f(x)}=\frac{1}{x}，即 \frac{f&#x27;}{f}=\frac{1}{x^2}，积分得 \ln f=-\frac{1}{x}+C，f=Ce^{-1/x}。<br>令 x\to+\infty：1=\lim f=C，故 f(x)=e^{-1/x}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(1)=2e$</div>
+        <div class="steps"><p>由 \frac{f(x+\Delta x)-f(x)}{\Delta x}=2xf(x)+\frac{o(\Delta x)}{\Delta x}，令 \Delta x\to0 得 f&#x27;(x)=2xf(x)。<br>分离变量 \frac{\mathrm{d}f}{f}=2x\,\mathrm{d}x，得 f=Ce^{x^2}；由 f(0)=2 得 C=2，故 f(x)=2e^{x^2}，f(1)=2e。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k44_T2">
     <div class="qhead"><span class="qno">k44_T2</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 9 小题</span><span class="badge year">1989</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1993</span> <span class="badge year">1995</span> <span class="badge year">1997</span> <span class="badge year">2001</span> <span class="badge year">2007</span> <span class="badge year">2011</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.44.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k44_T2_0.png" alt="k44_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k44_T2_1.png" alt="k44_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=\frac{1}{2}(\sin x+x\cos x)$</div>
+        <div class="steps"><p>改写 f(x)=\sin x-x\int_0^x f(t)\,\mathrm{d}t+\int_0^x tf(t)\,\mathrm{d}t，则<br>$$f&#x27;(x)=\cos x-\int_0^x f(t)\,\mathrm{d}t,\qquad f&#x27;&#x27;(x)=-\sin x-f(x),$$<br>且 f(0)=0,\ f&#x27;(0)=1。即 f&#x27;&#x27;+f=-\sin x。<br>齐次通解 C_1\cos x+C_2\sin x；令特解 y_p=\frac{1}{2}x\cos x，验证 y_p&#x27;&#x27;+y_p=-\sin x ✓。<br>故 f=C_1\cos x+C_2\sin x+\frac{1}{2}x\cos x。由 f(0)=0 得 C_1=0；f&#x27;(0)=C_2+\frac{1}{2}=1 得 C_2=\frac{1}{2}。<br>$$f(x)=\frac{1}{2}\sin x+\frac{1}{2}x\cos x.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=e^{2x}\ln 2，选 (B)$</div>
+        <div class="steps"><p>两边求导（变限积分求导）：f&#x27;(x)=2f(x)，且 f(0)=\ln 2。<br>解得 f=Ce^{2x}，代入 f(0)=\ln 2 得 C=\ln 2，故 f(x)=e^{2x}\ln 2，选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(x)=x-\frac{1}{2}+\frac{1}{2}e^{-2x}$</div>
+        <div class="steps"><p>代入 x=0 得 f(0)=0；求导得<br>$$f&#x27;(x)+2f(x)=2x.$$<br>一阶线性方程，通解 f=e^{-2x}\left(\int 2xe^{2x}\,\mathrm{d}x+C\right)=e^{-2x}\left(xe^{2x}-\frac{1}{2}e^{2x}+C\right)=x-\frac{1}{2}+Ce^{-2x}。<br>由 f(0)=0 得 C=\frac{1}{2}，故 f(x)=x-\frac{1}{2}+\frac{1}{2}e^{-2x}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f(x)=\frac{1}{2}\left(e^{x}-e^{-x}\right)$</div>
+        <div class="steps"><p>S=\int_0^x f(t)\,\mathrm{d}t；|P_1P_2|=e^x-1-f(x)（因 f\le e^x-1）。<br>由题意 \int_0^x f\,\mathrm{d}t=e^x-1-f(x)，两边求导：<br>$$f=e^x-f&#x27;\ \Longrightarrow\ f&#x27;+f=e^x,\quad f(0)=0.$$<br>解得 f=e^{-x}\left(\frac{1}{2}e^{2x}+C\right)=\frac{1}{2}e^x+Ce^{-x}；由 f(0)=0 得 C=-\frac{1}{2}。<br>$$f(x)=\frac{e^x-e^{-x}}{2}=\sinh x,$$<br>显然满足 0\le f(x)\le e^x-1。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle f(x)=3e^{3x}-2e^{2x}$</div>
+        <div class="steps"><p>令 u=t/3：\int_0^{3x}f(t/3)\,\mathrm{d}t=3\int_0^x f(u)\,\mathrm{d}u，故 f=3\int_0^x f\,\mathrm{d}u+e^{2x}，f(0)=1。<br>求导：f&#x27;-3f=2e^{2x}。通解 f=e^{3x}\left(\int 2e^{2x}e^{-3x}\,\mathrm{d}x+C\right)=e^{3x}\left(-2e^{-x}+C\right)=-2e^{2x}+Ce^{3x}。<br>由 f(0)=1 得 C=3，故 f(x)=3e^{3x}-2e^{2x}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle f(x)=(1+4\pi x^2)e^{4\pi x^2}$</div>
+        <div class="steps"><p>极坐标：<br>$$\iint_{x^2+y^2\le 4t^2} f\!\left(\tfrac{1}{2}\sqrt{x^2+y^2}\right)\mathrm{d}x\mathrm{d}y=\int_0^{2\pi}\!\mathrm{d}\theta\int_0^{2t} f\!\left(\tfrac{r}{2}\right)r\,\mathrm{d}r \overset{r=2s}{=} 2\pi\cdot 4\int_0^t s f(s)\,\mathrm{d}s=8\pi\int_0^t sf(s)\,\mathrm{d}s.$$<br>故 f(t)=e^{4\pi t^2}+8\pi\int_0^t sf(s)\,\mathrm{d}s，f(0)=1，且<br>$$f&#x27;-8\pi t f=8\pi t\,e^{4\pi t^2}.$$<br>乘积分因子 e^{-4\pi t^2}：\left(fe^{-4\pi t^2}\right)&#x27;=8\pi t，积分得 fe^{-4\pi t^2}=4\pi t^2+C；由 f(0)=1 得 C=1。<br>$$f(x)=(4\pi x^2+1)e^{4\pi x^2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle f(x)=(x+1)e^{x}-1$</div>
+        <div class="steps"><p>两边对 x 求导：g(f(x))\,f&#x27;(x)=(2x+x^2)e^x。<br>由 g 为 f 的反函数，g(f(x))=x，故 xf&#x27;(x)=x(x+2)e^x，即 f&#x27;(x)=(x+2)e^x。<br>积分 f=(x+1)e^x+C；由 f(0)=0 得 C=-1，故 f(x)=(x+1)e^x-1。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle f(x)=\ln(\sin x+\cos x)$</div>
+        <div class="steps"><p>左边对 x 求导（把 u=f(x) 看作上限、被积函数为 f^{-1}）：<br>$$\frac{\mathrm{d}}{\mathrm{d}x}\int_0^{f(x)}f^{-1}(t)\,\mathrm{d}t=f^{-1}(f(x))f&#x27;(x)=xf&#x27;(x).$$<br>右边求导为 x\frac{\cos x-\sin x}{\sin x+\cos x}。故<br>$$f&#x27;(x)=\frac{\cos x-\sin x}{\cos x+\sin x}=[\ln(\sin x+\cos x)]&#x27;.$$<br>取 x=0：\int_0^{f(0)}f^{-1}(t)\,\mathrm{d}t=0，由 f 单调得 f(0)=0，故 C=0。<br>$$f(x)=\ln(\sin x+\cos x).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle f(x)=\frac{4}{(2-x)^2}$</div>
+        <div class="steps"><p>令 u=x+y：\iint_{D_t}f&#x27;(x+y)\,\mathrm{d}x\mathrm{d}y=\int_0^t\!\mathrm{d}x\int_x^t f&#x27;(u)\,\mathrm{d}u=\int_0^t[f(t)-f(x)]\,\mathrm{d}x=tf(t)-\int_0^t f(x)\,\mathrm{d}x。<br>而 \iint_{D_t}f(t)\,\mathrm{d}x\mathrm{d}y=f(t)\cdot\frac{t^2}{2}。故<br>$$\left(t-\frac{t^2}{2}\right)f(t)=\int_0^t f(x)\,\mathrm{d}x.$$<br>求导：(1-t)f+\left(t-\frac{t^2}{2}\right)f&#x27;=f，即 \left(t-\frac{t^2}{2}\right)f&#x27;=tf，得 \frac{f&#x27;}{f}=\frac{2}{2-t}。<br>积分 \ln f=-2\ln(2-t)+C，f=\frac{C}{(2-t)^2}；由 f(0)=1 得 C=4。<br>$$f(x)=\frac{4}{(2-x)^2},\quad 0\le x\le 1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k44_T3">
     <div class="qhead"><span class="qno">k44_T3</span>
-      
+      <span class="badge">共 9 小题</span><span class="badge year">1995</span> <span class="badge year">1996</span> <span class="badge year">1998</span> <span class="badge year">2001</span> <span class="badge year">2005</span> <span class="badge year">2006</span> <span class="badge year">2009</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.44.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k44_T3_0.png" alt="k44_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k44_T3_1.png" alt="k44_T3 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k44_T3_2.png" alt="k44_T3 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle x^2+y^2=3x\ (y>0)$</div>
+        <div class="steps"><p>设 M(x,y)，切线 Y-y=y&#x27;(X-x) 交 y 轴于 A(0,\ y-xy&#x27;)。<br>|MA|=\sqrt{x^2+x^2y&#x27;^2}，|OA|=|y-xy&#x27;|。由 |MA|=|OA|：<br>$$x^2(1+y&#x27;^2)=(y-xy&#x27;)^2\ \Longrightarrow\ x^2=y^2-2xyy&#x27;\ \Longrightarrow\ y&#x27;=\frac{y^2-x^2}{2xy}.$$<br>齐次方程，令 y=ux：u+xu&#x27;=\frac{u^2-1}{2u}，得 x\frac{\mathrm{d}u}{\mathrm{d}x}=-\frac{u^2+1}{2u}，<br>$$\frac{2u\,\mathrm{d}u}{u^2+1}=-\frac{\mathrm{d}x}{x}\ \Longrightarrow\ \ln(u^2+1)=-\ln x+C\ \Longrightarrow\ x^2+y^2=Cx.$$<br>代入 \left(\frac{3}{2},\frac{3}{2}\right)：C=3。故 L：x^2+y^2=3x（第一象限部分，y=\sqrt{3x-x^2}）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=C_1\ln x+C_2\ (x>0，C_1,C_2 为任意常数)$</div>
+        <div class="steps"><p>切线在 y 轴截距为 y-xy&#x27;，故 y-xy&#x27;=\frac{1}{x}\int_0^x f\,\mathrm{d}t，即 xy-x^2y&#x27;=\int_0^x f(t)\,\mathrm{d}t。<br>两边求导：y+xy&#x27;-2xy&#x27;-x^2y&#x27;&#x27;=y，即 x^2y&#x27;&#x27;+xy&#x27;=0，亦即 (xy&#x27;)&#x27;=0。<br>令 p=y&#x27;：xp=C_1，y&#x27;=\frac{C_1}{x}，积分得<br>$$f(x)=C_1\ln x+C_2.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 微分方程 x²y'=3y²-2xy；满足条件的解 y=\frac{x}{1+x³}$</div>
+        <div class="steps"><p>V(t)=\pi\int_1^t f^2(x)\,\mathrm{d}x=\frac{\pi}{3}\left[t^2f(t)-f(1)\right]，即 \int_1^t f^2\,\mathrm{d}x=\frac{1}{3}\left[t^2f(t)-f(1)\right]。<br>两边对 t 求导：f^2(t)=\frac{1}{3}\left[2tf(t)+t^2f&#x27;(t)\right]，得微分方程<br>$$x^2y&#x27;=3y^2-2xy.$$<br>令 y=ux：u+xu&#x27;=3u^2-2u，xu&#x27;=3u(u-1)，\frac{\mathrm{d}u}{u(u-1)}=\frac{3\,\mathrm{d}x}{x}，<br>$$\ln\frac{u-1}{u}=3\ln x+C\ \Longrightarrow\ \frac{y-x}{y}=Cx^3\ \Longrightarrow\ y=\frac{x}{1-Cx^3}.$$<br>由 y(2)=\frac{2}{9}：\frac{2}{1-8C}=\frac{2}{9}，得 C=-1，故 y=\dfrac{x}{1+x^3}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) y=\frac14-x²； (II) 切线 y=-\frac{\sqrt3}{3}x+\frac13，最小面积 \frac{2\sqrt3-3}{36}$</div>
+        <div class="steps"><p>(I) 由题意 y-xy&#x27;=\sqrt{x^2+y^2}。令 y=ux：<br>$$x\frac{\mathrm{d}u}{\mathrm{d}x}=-\sqrt{1+u^2}\ \Longrightarrow\ \ln\!\left(u+\sqrt{1+u^2}\right)=-\ln x+C\ \Longrightarrow\ u+\sqrt{1+u^2}=\frac{C}{x}.$$<br>过 \left(\frac12,0\right) 得 C=\frac12，故 \sqrt{1+u^2}=\frac{1}{2x}-u，平方解出 u=\frac{1}{4x}-x，即<br>$$L:\ y=\frac{1}{4}-x^2.$$<br>(II) 设切点 (t,\frac14-t^2)\ (0&lt;t&lt;\frac12)，切线 y=-2tx+\frac14+t^2，两截距 x_A=\frac{\frac14+t^2}{2t},\ y_B=\frac14+t^2，切线在 L 上方。所围面积<br>$$A(t)=\frac{1}{2}x_Ay_B-\int_0^{1/2}\!\left(\frac14-x^2\right)\mathrm{d}x=\frac{(\frac14+t^2)^2}{4t}-\frac{1}{12}.$$<br>令 \left[\frac{(\frac14+t^2)^2}{4t}\right]&#x27;=\frac{1}{8}+\frac{3}{4}t^2-\frac{1}{64t^2}=0，即 48t^4+8t^2-1=0，得 t^2=\frac{1}{12},\ t=\frac{\sqrt3}{6}。<br>A_{\min}=\frac{1}{36t}-\frac{1}{12}=\frac{1}{6\sqrt3}-\frac{1}{12}=\frac{2\sqrt3-3}{36}，切线为 y=-\frac{\sqrt3}{3}x+\frac{1}{3}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle x=\varphi(y)=\ln y-\frac12+\frac{1}{2y}$</div>
+        <div class="steps"><p>C_1、C_2 都过 (0,1)。S_1(x)=\int_0^x\left[e^t-\frac{1+e^t}{2}\right]\mathrm{d}t=\frac{1}{2}\left(e^x-1-x\right)。<br>C_3 在 C_2 左侧，S_2(y)=\int_1^y[\ln t-\varphi(t)]\,\mathrm{d}t。由 S_1(x)=S_2(y) 且 y=e^x：<br>$$\frac{1}{2}(e^x-1-x)=\int_1^{e^x}[\ln t-\varphi(t)]\,\mathrm{d}t.$$<br>两边对 x 求导：\frac{1}{2}(e^x-1)=e^x\left[x-\varphi(e^x)\right]。令 y=e^x：<br>$$\frac{y-1}{2}=y(\ln y-\varphi(y))\ \Longrightarrow\ \varphi(y)=\ln y-\frac{y-1}{2y}=\ln y-\frac12+\frac{1}{2y}.$$<br>验证 \varphi(1)=0，即 C_3 过 (0,1) ✓。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (I) y=ax\ln x； (II) a=\frac{32}{3e^2}$</div>
+        <div class="steps"><p>(I) y&#x27;-\frac{y}{x}=ax，即 \left(\frac{y}{x}\right)&#x27;=\frac{xy&#x27;-y}{x^2}=\frac{a}{x}，故 \frac{y}{x}=a\ln x+C；由 (1,0) 得 C=0，<br>$$L:\ y=ax\ln x\ (x&gt;0).$$<br>(II) y=ax\ln x 与 y=ax 的交点：\ln x=1 得 x=e，另一交点为原点（x\to0^+ 时两者均趋于 0）。在 (0,e) 上 ax\ln x&lt;ax，<br>$$A=\int_0^e ax(1-\ln x)\,\mathrm{d}x=a\left[\frac{e^2}{2}-\left(\frac{e^2}{2}-\frac{e^2}{4}\right)\right]=\frac{ae^2}{4}=\frac{8}{3},$$<br>故 a=\dfrac{32}{3e^2}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle y=\sqrt{\pi^2-x^2}\ (-π<x<0)；y=\pi\cos x+\sin x-x\ (0≤x<π)$</div>
+        <div class="steps"><p>当 -\pi&lt;x&lt;0：点 (x,y) 处法线斜率为 -\frac{1}{y&#x27;}，法线过原点要求 \frac{y-0}{x-0}=-\frac{1}{y&#x27;}，即 yy&#x27;=-x，(y^2)&#x27;=-2x，得 x^2+y^2=C。代入 \left(-\frac{\pi}{\sqrt2},\frac{\pi}{\sqrt2}\right)：C=\pi^2，故<br>$$y=\sqrt{\pi^2-x^2}.$$<br>当 0\le x&lt;\pi：y&#x27;&#x27;+y=-x 的通解 y=C_3\cos x+C_4\sin x-x。曲线光滑：在 x=0 处 y,y&#x27; 连续，<br>y(0^-)=\pi,\ y&#x27;(0^-)=\lim_{x\to0^-}\frac{-x}{\sqrt{\pi^2-x^2}}=0，故 C_3=\pi,\ C_4-1=0\Rightarrow C_4=1。<br>$$y=\pi\cos x+\sin x-x.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle x=\frac{2}{3}y+\frac{1}{3\sqrt{y}}\quad(即\ 3x=2y+y^{-1/2})$</div>
+        <div class="steps"><p>由题意 \pi\int_1^t f^2\,\mathrm{d}x=\pi t\int_1^t f\,\mathrm{d}x，即 \int_1^t f^2\,\mathrm{d}x=t\int_1^t f\,\mathrm{d}x。<br>求导：f^2=\int_1^t f\,\mathrm{d}x+tf，即 \int_1^x f\,\mathrm{d}t=f^2-xf。取 x=1 得 f(1)^2=f(1)，由 f&gt;0 得 f(1)=1。<br>再求导：f=2ff&#x27;-f-xf&#x27;，即 f&#x27;=\dfrac{2f}{2f-x}。视 x 为 y 的函数：<br>$$\frac{\mathrm{d}x}{\mathrm{d}y}=1-\frac{x}{2y},\quad\text{即}\ \frac{\mathrm{d}x}{\mathrm{d}y}+\frac{x}{2y}=1.$$<br>积分因子 \sqrt y：\left(x\sqrt y\right)&#x27;=\sqrt y，x\sqrt y=\frac{2}{3}y^{3/2}+C。由 x=1 时 y=f(1)=1：C=\frac13。<br>$$x=\frac{2}{3}y+\frac{1}{3\sqrt{y}}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle f(x)=\frac{8}{4-x}$</div>
+        <div class="steps"><p>切线 Y=f(x_0)+f&#x27;(x_0)(X-x_0) 交 x 轴于 X=x_0-\frac{f(x_0)}{f&#x27;(x_0)}。围成三角形两直角边为 \frac{f}{f&#x27;} 与 f，<br>$$S=\frac{1}{2}\cdot\frac{f}{f&#x27;}\cdot f=\frac{f^2}{2f&#x27;}=4\ \Longrightarrow\ f&#x27;=\frac{f^2}{8}.$$<br>即 -\frac{1}{f}=\frac{x}{8}+C，由 f(0)=2 得 C=-\frac{1}{2}，故 \frac{1}{f}=\frac{1}{2}-\frac{x}{8}，<br>$$f(x)=\frac{8}{4-x}\quad(\text{验证 } f&#x27;=\frac{8}{(4-x)^2}&gt;0\ ✓).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

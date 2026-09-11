@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 41</div>
 <h1 class="title">考点 41　二阶微分方程求解</h1>
-<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一二、题型二二 · 解析完成 0/5　</div>
+<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一二、题型二二 · 解析完成 5/5　</div>
 
   <div class="card q" id="k41_T1">
     <div class="qhead"><span class="qno">k41_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T1_0.png" alt="k41_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T1_1.png" alt="k41_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = C_1 + \dfrac{C_2}{x^2}$</div>
         <div class="steps"><p>由 $(x^3y&#x27;)&#x27;=x^3y&#x27;&#x27;+3x^2y&#x27;=x^2(xy&#x27;&#x27;+3y&#x27;)$，方程（$x\ne0$）等价于 $(x^3y&#x27;)&#x27;=0$。<br>$$x^3y&#x27;=C \Rightarrow y&#x27;=\frac{C}{x^3} \Rightarrow y=-\frac{C}{2x^2}+C_2$$<br>记 $C_1=-C/2$，得通解 $y=\dfrac{C_1}{x^2}+C_2$。</p></div>
@@ -64,7 +64,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T2_0.png" alt="k41_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = \sqrt{x+1}$</div>
         <div class="steps"><p>注意到 $(yy&#x27;)&#x27;=yy&#x27;&#x27;+(y&#x27;)^2=0\Rightarrow yy&#x27;=C_1$。由 $y(0)y&#x27;(0)=\dfrac12$ 得 $C_1=\dfrac12$，即 $y\dfrac{dy}{dx}=\dfrac12$：<br>$$\frac12y^2=\frac12x+C_2\Rightarrow y^2=x+C_2&#x27;$$<br>$y(0)=1\Rightarrow C_2&#x27;=1$，又 $y(0)=1&gt;0$ 取正根：$y=\sqrt{x+1}$。</p></div>
@@ -83,7 +83,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.41.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T3_0.png" alt="k41_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T3_1.png" alt="k41_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = e^{-x}\left(C_1\cos 2x + C_2\sin 2x\right)$</div>
         <div class="steps"><p>特征方程 $r^2+2r+5=0$，$r=-1\pm2i$，故 $y=e^{-x}(C_1\cos2x+C_2\sin2x)$。</p></div>
@@ -105,8 +105,9 @@
         <div class="steps"><p>任一解都有界 $\iff$ 特征根为互异纯虚根 $\pm i\omega$：<br>- $a\ne0$ 时根有非零实部（或实根），$e^{\alpha x}$ 型解总在一端无界；<br>- $a=0,\ b=0$：$y=C_1+C_2x$ 无界；$a=0,\ b&lt;0$：正实根无界；重虚根给出 $x\sin\omega x$ 型无界解；<br>- $a=0,\ b&gt;0$：$y=C_1\cos\sqrt b\,x+C_2\sin\sqrt b\,x$ 全体有界。<br>选 C。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle C\ (a\in(-2,0))$</div>
-        <div class="steps"><p>特征方程 $r^2-2ar+(a+2)=0$，$r=a\pm\sqrt{a^2-a-2}$。基解组每个函数必须在 $[0,+\infty)$ 可积。<br>① 复根（$-1&lt;a&lt;2$）：解为 $e^{ax}(C_1\cos\omega x+C_2\sin\omega x)$ 型，$\int_0^{+\infty}$ 收敛 $\iff a&lt;0$，得 $-1&lt;a&lt;0$；<br>② 重根：$a=-1$ 时 $r=-1$ 二重，$e^{-x},\ xe^{-x}$ 可积，纳入；$a=2$ 时 $r=2$，$\int e^{2x}dx$ 发散，排除；<br>③ 单实根（$a&lt;-1$ 或 $a&gt;2$）：需大根 $r_+=a+\sqrt{(a-2)(a+1)}&lt;0\iff\sqrt{(a-2)(a+1)}&lt;-a\iff a^2-a-2&lt;a^2\iff a&gt;-2$，得 $-2&lt;a&lt;-1$；$a=-2$ 时出现根 $r=0$，$\int 1\,dx$ 发散，排除；<br>④ $a\ge0$ 时（复根指数增长或实正根）均发散。<br>综上 $a\in(-2,0)$，选 C。</p></div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle C（a\in(-2,0)）$</div>
+        <div class="steps"><p>特征方程 $r^2-2ar+(a+2)=0$，$r=a\pm\sqrt{a^2-a-2}$。基解组每个函数必须在 $[0,+\infty)$ 可积。<br>① 复根（$-1&lt;a&lt;2$）：解为 $e^{ax}(C_1\cos\omega x+C_2\sin\omega x)$ 型，$\int_0^{+\infty}$ 收敛 $\iff a&lt;0$，得 $-1&lt;a&lt;0$；<br>② 重根：$a=-1$ 时 $r=-1$ 二重，$e^{-x},\ xe^{-x}$ 可积，纳入；$a=2$ 时 $r=2$，$\int e^{2x}dx$ 发散，排除；<br>③ 单实根（$a&lt;-1$ 或 $a&gt;2$）：需大根 $r_+=a+\sqrt{(a-2)(a+1)}&lt;0\iff\sqrt{(a-2)(a+1)}&lt;-a\iff a^2-a-2&lt;a^2\iff a&gt;-2$，得 $-2&lt;a&lt;-1$；$a=-2$ 时出现根 $r=0$，$\int 1\,dx$ 发散，排除；<br>④ $a\ge0$ 时（复根指数增长或实正根）均发散。<br>综上 $a\in(-2,0)$，选 C。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：复根情形(-1&lt;a&lt;2)需实部 a&lt;0 得 a∈(-1,0)，实负根情形得 a∈(-2,-1]（a=-1 重根-1 收敛），并集为 (-2,0) 选 C；A 漏掉复根区间</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -118,10 +119,11 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.41.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T4_0.png" alt="k41_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T4_1.png" alt="k41_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
-        <div class="steps"><p>$r^2-1=0,\ r=\pm1$。右端 $e^x$：$\lambda=1$ 为单根 $\to$ 设 $axe^x$；右端 $1$：$\lambda=0$ 非根 $\to$ 设 $bx$。由叠加原理 $y^*=axe^x+bx$，选 D。</p></div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（y*=axe^x+b）$</div>
+        <div class="steps"><p>$r^2-1=0,\ r=\pm1$。右端 $e^x$：$\lambda=1$ 为单根 $\to$ 设 $axe^x$；右端 $1$：$\lambda=0$ 非根 $\to$ 设 $bx$。由叠加原理 $y^*=axe^x+bx$，选 D。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：特征方程 r^2-1=0 根为 ±1，0 非特征根：e^x 项特解为 axe^x、常数 1 项特解为 b，故 y*=axe^x+b 即选项 B；选 D（axe^x+bx）错在常数项写成 bx</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle A$</div>
@@ -132,8 +134,9 @@
         <div class="steps"><p>$r^2-\lambda^2=0,\ r=\pm\lambda$。$e^{\lambda x}$ 与 $e^{-\lambda x}$ 对应的 $\pm\lambda$ 均为单根，各需乘 $x$：$y^*=x(ae^{\lambda x}+be^{-\lambda x})$，选 C。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle C$</div>
-        <div class="steps"><p>$r^2-4r+8=0,\ r=2\pm2i$。$e^{2x}$：$\lambda=2$ 非根 $\to Ae^{2x}$；$e^{2x}\cos2x$：$\lambda=2+2i$ 为单根 $\to xe^{2x}(B\cos2x+C\sin2x)$。故<br>$$y^*=Ae^{2x}+xe^{2x}(B\cos2x+C\sin2x)$$<br>选 C。</p></div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle C（y*=Ae^{2x}+xe^{2x}(B\cos 2x+C\sin 2x)）$</div>
+        <div class="steps"><p>$r^2-4r+8=0,\ r=2\pm2i$。$e^{2x}$：$\lambda=2$ 非根 $\to Ae^{2x}$；$e^{2x}\cos2x$：$\lambda=2+2i$ 为单根 $\to xe^{2x}(B\cos2x+C\sin2x)$。故<br>$$y^*=Ae^{2x}+xe^{2x}(B\cos2x+C\sin2x)$$<br>选 C。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：特征根 2±2i，2 非根对应 Ae^{2x}，2+2i 为单复根须乘 x；A 给的形式本身正确但选项标号错，该形式即选项 C（选项 A 缺因子 x）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -145,7 +148,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.41.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T5_0.png" alt="k41_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T5_1.png" alt="k41_T5 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T5_2.png" alt="k41_T5 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = (C_1+C_2x)e^{-x} + \dfrac{1}{4}(x-1)e^x$</div>
         <div class="steps"><p>$r^2+2r+1=0,\ r=-1$ 二重：$Y=(C_1+C_2x)e^{-x}$。$\lambda=1$ 非根，设 $y^*=e^x(ax+b)$。令 $y=e^xu$，左端为 $e^x(u&#x27;&#x27;+4u&#x27;+4u)$，取 $u=ax+b$：<br>$$e^x[4ax+4(a+b)]=xe^x\Rightarrow a=\frac14,\ b=-\frac14$$<br>故 $y^*=\dfrac14(x-1)e^x$，通解 $y=(C_1+C_2x)e^{-x}+\dfrac14(x-1)e^x$。</p></div>

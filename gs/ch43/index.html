@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 43</div>
 <h1 class="title">考点 43　已知解,反求微分方程问题</h1>
-<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/4　</div>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 4/4　</div>
 
   <div class="card q" id="k43_T1">
     <div class="qhead"><span class="qno">k43_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.43.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k43_T1_0.png" alt="k43_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A\ \left(q(x)=3x(1+x^2)\right)$</div>
         <div class="steps"><p>两解之差 $y_2-y_1=2\sqrt{1+x^2}$ 是对应齐次方程 $y&#x27;+p(x)y=0$ 的解。记 $w=\sqrt{1+x^2}$：$w&#x27;+pw=0\Rightarrow p=-\dfrac{w&#x27;}{w}=-\dfrac{x}{1+x^2}$。<br>两解的平均 $y_p=\dfrac{y_1+y_2}2=(1+x^2)^2$ 是非齐次特解：<br>$$q=y_p&#x27;+py_p=4x(1+x^2)-\frac{x}{1+x^2}\cdot(1+x^2)^2=4x(1+x^2)-x(1+x^2)=3x(1+x^2)$$<br>选 A。</p></div>
@@ -44,7 +44,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.43.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k43_T2_0.png" alt="k43_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k43_T2_1.png" alt="k43_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y'' - 2y' + 2y = 0$</div>
         <div class="steps"><p>通解含 $e^x\sin x,\ e^x\cos x\Rightarrow$ 特征根为共轭复根 $r=1\pm i$，特征方程 $(r-1)^2+1=r^2-2r+2=0$，故方程为<br>$$y&#x27;&#x27;-2y&#x27;+2y=0$$</p></div>
@@ -63,7 +63,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k43_T3_0.png" alt="k43_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B$</div>
         <div class="steps"><p>$e^{-x}$ 与 $xe^{-x}$ 都是解 $\Rightarrow r=-1$ 为（至少）二重根；$e^x$ 是解 $\Rightarrow r=1$。三阶方程特征根恰为 $-1,-1,1$：<br>$$(r+1)^2(r-1)=(r^2+2r+1)(r-1)=r^3+r^2-r-1=0$$<br>对应 $y&#x27;&#x27;&#x27;+y&#x27;&#x27;-y&#x27;-y=0$，选 B。</p></div>
@@ -78,14 +78,15 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k43_T4_0.png" alt="k43_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \alpha=-3,\ \beta=2,\ \gamma=-1;\qquad y = C_1e^x + C_2e^{2x} + xe^x$</div>
         <div class="steps"><p>把 $y^*=e^{2x}+(1+x)e^x$ 代入方程：<br>$$y^{*\prime}=2e^{2x}+(2+x)e^x,\qquad y^{*\prime\prime}=4e^{2x}+(3+x)e^x$$<br>$$\left[4+2\alpha+\beta\right]e^{2x}+\left[3+2\alpha+\beta+(1+\alpha+\beta)x\right]e^x=\gamma e^x$$<br>比较系数：<br>$$4+2\alpha+\beta=0,\qquad 1+\alpha+\beta=0\Rightarrow\alpha=-3,\ \beta=2$$<br>$$\gamma=3+2\alpha+\beta=3-6+2=-1$$<br>方程为 $y&#x27;&#x27;-3y&#x27;+2y=-e^x$，特征根 $r=1,2$，通解<br>$$y=C_1e^x+C_2e^{2x}+e^{2x}+(1+x)e^x=C_1e^x+C_2e^{2x}+xe^x$$<br>（$e^{2x}$ 与 $e^x$ 两项并入齐次部分。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y'' - y' - 2y = (1-2x)e^x$</div>
-        <div class="steps"><p>解之差为齐次解：$y_1-y_3=e^{-x}$；$y_1-y_2=e^{2x}-e^{-x}$，故 $(e^{2x}-e^{-x})+e^{-x}=e^{2x}$ 也是齐次解。于是特征根为 $r=-1,\ 2$，特征方程 $(r+1)(r-2)=r^2-r-2=0$，方程形如<br>$$y&#x27;&#x27;-y&#x27;-2y=f(x)$$<br>$y_1-e^{2x}=xe^x$ 是非齐次的特解：<br>$$f=(xe^x)&#x27;&#x27;-(xe^x)&#x27;-2xe^x=(2+x)e^x-(1+x)e^x-2xe^x=(1-2x)e^x$$<br>$$y&#x27;&#x27;-y&#x27;-2y=(1-2x)e^x$$</p></div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y''-y'-2y=(1-2x)e^x$</div>
+        <div class="steps"><p>解之差为齐次解：$y_1-y_3=e^{-x}$；$y_1-y_2=e^{2x}-e^{-x}$，故 $(e^{2x}-e^{-x})+e^{-x}=e^{2x}$ 也是齐次解。于是特征根为 $r=-1,\ 2$，特征方程 $(r+1)(r-2)=r^2-r-2=0$，方程形如<br>$$y&#x27;&#x27;-y&#x27;-2y=f(x)$$<br>$y_1-e^{2x}=xe^x$ 是非齐次的特解：<br>$$f=(xe^x)&#x27;&#x27;-(xe^x)&#x27;-2xe^x=(2+x)e^x-(1+x)e^x-2xe^x=(1-2x)e^x$$<br>$$y&#x27;&#x27;-y&#x27;-2y=(1-2x)e^x$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：由解之差得齐次特征根 -1、2，特解 y*=xe^x，代入得 (x+2-x-1-2x)e^x=(1-2x)e^x（1997 数二原题答案）；A 的 -xe^x 计算有误</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>

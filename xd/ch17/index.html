@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 17</div>
 <h1 class="title">考点 17　特征值与特征向量</h1>
-<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/5　</div>
+<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 5/5　</div>
 
   <div class="card q" id="k17_T1">
     <div class="qhead"><span class="qno">k17_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T1_0.png" alt="k17_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle x_1+x_2 不是 A 的特征向量$</div>
         <div class="steps"><p>反证法。设 $x_1+x_2$ 是 $A$ 的属于 $\lambda$ 的特征向量，则<br>$$A(x_1+x_2)=\lambda(x_1+x_2).$$<br>又 $Ax_1=\lambda_1 x_1,\ Ax_2=\lambda_2 x_2$，故<br>$$\lambda_1 x_1+\lambda_2 x_2=\lambda x_1+\lambda x_2,$$<br>即 $(\lambda_1-\lambda)x_1+(\lambda_2-\lambda)x_2=0$。</p>
@@ -75,7 +75,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T2_0.png" alt="k17_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{1}{\lambda}\ \text{是}\ A^{-1}\ \text{的特征值}；\frac{|A|}{\lambda}\ \text{是}\ A^{*}\ \text{的特征值}$</div>
         <div class="steps"><p>设 $Ax=\lambda x,\ x\neq0$。</p>
@@ -107,7 +107,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T3_0.png" alt="k17_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k17_T3_1.png" alt="k17_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{实特征值仅 }\lambda=1,\ \text{对应特征向量}\ k(0,2,1)^T\ (k\neq0)$</div>
         <div class="steps"><p>$$|\lambda E-A|=\begin{vmatrix}\lambda+3&amp;1&amp;-2\\0&amp;\lambda+1&amp;-4\\1&amp;0&amp;\lambda-1\end{vmatrix}<br>=\lambda^{3}+3\lambda^{2}+\lambda-5=(\lambda-1)(\lambda^{2}+4\lambda+5).$$<br>由 $\lambda^2+4\lambda+5=0$ 得 $\lambda=-2\pm\mathrm{i}$（复根），故实特征值仅 $\lambda=1$。</p>
@@ -121,17 +121,19 @@
 <p>**(2)** $A$ 无零特征值，故可逆。若 $Ax=\lambda x$，则<br>$$(E+A^{-1})x=\Big(1+\frac{1}{\lambda}\Big)x .$$<br>于是 $E+A^{-1}$ 的特征值为 $1+1=2$（二重）与 $1-\dfrac15=\dfrac45$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 2\,(\text{二重})$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 4\ (\text{特征值为 }0,0,4\text{，特征多项式 }\lambda^2(\lambda-4))$</div>
         <div class="steps"><p>记该矩阵为 $M=2N$，$N=\begin{pmatrix}0&amp;-1&amp;-1\\1&amp;1&amp;-1\\-1&amp;-1&amp;1\end{pmatrix}$。</p>
 <p>$$|\lambda E-N|=-\lambda(\lambda-1)^{2}\quad(\text{按第一行展开计算可得})，$$<br>即 $N$ 的特征值为 $0,1,1$（检验迹：$0+1+1=2=\mathrm{tr}(N)$）。</p>
-<p>故 $M=2N$ 的特征值为 $0,2,2$，非零特征值为 $2$（二重）。</p></div>
+<p>故 $M=2N$ 的特征值为 $0,2,2$，非零特征值为 $2$（二重）。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：特征多项式为 λ²(λ−4)，非零特征值是 4；A、B 一致正确，solver 误答 2（二重）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \lambda=6\ (k_1(1,2,1)^T,\,k_1\neq0)；\lambda=12\ (\text{二重},\ k_2(1,-1,0)^T+k_3(0,0,1)^T,\ \text{不全为}\,0)$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \text{特征值 }3(\text{单}),\ 9(\text{二重})\text{；}\lambda=3\text{ 对应 }k(0,1,1)^T(k\neq0)\text{，}\lambda=9\text{ 对应 }k_1(-1,1,0)^T+k_2(1,1,-1)^T(k_1,k_2\text{ 不全为 }0)$</div>
         <div class="steps"><p>$A$ 的对角元为 3、非对角元为 2，即 $A=J+2E$（$J$ 为全 1 阵，$J$ 的特征值为 $3,0,0$），故<br>$$\lambda(A)=5,\ 2,\ 2,\qquad |A|=5\cdot2\cdot2=20 .$$<br>$A^{*}=|A|A^{-1}$ 的特征值为 $\dfrac{20}{5}=4,\ \dfrac{20}{2}=10,\ 10$。$B=P^{-1}A^{*}P\sim A^{*}$，故 $B$ 的特征值也是 $4,10,10$，从而<br>$$B+2E\ \text{的特征值为}\ 6,\ 12,\ 12 .$$</p>
 <p>**特征向量**：先求 $A$ 的特征向量——$\lambda=5$：$\eta_1=(1,1,1)^T$；$\lambda=2$：$x_1+x_2+x_3=0$，取 $\eta_2=(-1,1,0)^T,\ \eta_3=(-1,0,1)^T$（$A^{*}$ 与 $A$ 特征向量相同）。</p>
 <p>由 $B=P^{-1}A^{*}P$：若 $A^{*}y=\mu y$，则 $B(Py)=\mu(Py)$。计算<br>$$P\eta_1=\begin{pmatrix}1\\2\\1\end{pmatrix},\qquad<br>P\eta_2=\begin{pmatrix}1\\-1\\0\end{pmatrix},\qquad<br>P\eta_3=\begin{pmatrix}0\\0\\1\end{pmatrix}.$$</p>
-<p>故 $B+2E$：$\lambda=6$ 对应 $k_1(1,2,1)^T\,(k_1\neq0)$；$\lambda=12$ 对应<br>$$k_2\begin{pmatrix}1\\-1\\0\end{pmatrix}+k_3\begin{pmatrix}0\\0\\1\end{pmatrix}\quad(k_2,k_3\ \text{不全为}\ 0).$$</p></div>
+<p>故 $B+2E$：$\lambda=6$ 对应 $k_1(1,2,1)^T\,(k_1\neq0)$；$\lambda=12$ 对应<br>$$k_2\begin{pmatrix}1\\-1\\0\end{pmatrix}+k_3\begin{pmatrix}0\\0\\1\end{pmatrix}\quad(k_2,k_3\ \text{不全为}\ 0).$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 的特征值 7,1,1，|A|=7，A* 为 1,7,7，故 B+2E 为 3,9,9：solver 的 6,12,12 错；A 又把两特征值与特征向量的配对互换（(0,1,1)ᵀ 经 P⁻¹ 对应 A* 的特征值 1，故属 λ=3），B 完全正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=-1$</div>
@@ -156,7 +158,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T4_0.png" alt="k17_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
         <div class="steps"><p>$$(P^{-1}AP)^{T}=P^{T}A\,(P^{-1})^{T}=P^{T}A\,(P^{T})^{-1}.$$<br>取 $y=P^{T}\alpha\neq0$（$P^{T}$ 可逆），则<br>$$P^{T}A(P^{T})^{-1}\,y=P^{T}A\alpha=P^{T}(\lambda\alpha)=\lambda\,P^{T}\alpha=\lambda y .$$<br>故 $(P^{-1}AP)^{T}$ 属于 $\lambda$ 的特征向量是 $P^{T}\alpha$，选 **B**。</p></div>
@@ -171,7 +173,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T5_0.png" alt="k17_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ B=\begin{pmatrix}0&0&0\\1&0&3\\0&1&-2\end{pmatrix}；(II)\ |A+E|=-4$</div>
         <div class="steps"><p>**(I)** 由 $A=PBP^{-1}$ 得 $AP=PB$，而<br>$$AP=(Ax,\ A^{2}x,\ A^{3}x)=(Ax,\ A^{2}x,\ 3Ax-2A^{2}x).$$<br>把每一列用 $P$ 的列 $x,\ Ax,\ A^{2}x$ 表示：<br>$$Ax=0\cdot x+1\cdot Ax+0\cdot A^{2}x,\quad<br>A^{2}x=(0,0,1)^{T}\text{ 系数},\quad<br>A^{3}x=0\cdot x+3Ax-2A^{2}x .$$<br>故<br>$$B=\begin{pmatrix}0&amp;0&amp;0\\1&amp;0&amp;3\\0&amp;1&amp;-2\end{pmatrix}.$$</p>

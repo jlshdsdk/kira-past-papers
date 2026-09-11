@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 19</div>
 <h1 class="title">考点 19　求相似变换矩阵P</h1>
-<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/4　</div>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 4/4　</div>
 
   <div class="card q" id="k19_T1">
     <div class="qhead"><span class="qno">k19_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.19.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T1_0.png" alt="k19_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k19_T1_1.png" alt="k19_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=0；P=(\ (1,2,0)^T,\ (0,0,1)^T,\ (1,-2,0)^T\ )，\ P^{-1}AP=\mathrm{diag}(6,6,-2)$</div>
         <div class="steps"><p>$A$ 的特征多项式按分块：$\begin{pmatrix}2&amp;2\\8&amp;2\end{pmatrix}$ 的特征值为 $6,-2$，另有特征值 $6$，故<br>$$\lambda=6\,(\text{二重}),\ -2 .$$<br>$A$ 可对角化 $\iff\lambda=6$ 的几何重数为 $2\iff r(A-6E)=1$。<br>$$A-6E=\begin{pmatrix}-4&amp;2&amp;0\\8&amp;-4&amp;a\\0&amp;0&amp;0\end{pmatrix},$$<br>第 2 行须为第 1 行的 $-2$ 倍：$(8,-4,a)=-2(-4,2,0)=(8,-4,0)$，得 $a=0$。</p>
@@ -39,12 +39,13 @@
 <p>**(II)** 取<br>$$P=(e,\ \xi_1,\ \xi_2,\ \dots,\ \xi_{n-1}),$$<br>则 $P$ 可逆（列线性无关）且<br>$$P^{-1}AP=\mathrm{diag}\big(1+(n-1)b,\ \underbrace{1-b,\ \dots,\ 1-b}_{n-1\ \text{个}}\big).$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a=1,\ b=1\ \text{或}\ a=-1,\ b=3（各附对应}\ P）$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (a,b)=(1,1)\text{，}P=((1,-1,0)^T,(0,0,1)^T,(1,1,1)^T)\text{，}P^{-1}AP=\mathrm{diag}(1,1,3)\text{；或 }(a,b)=(-1,3)\text{，}P=((1,-1,-1)^T,(1,1,0)^T,(0,0,1)^T)\text{，}P^{-1}AP=\mathrm{diag}(1,3,3)$</div>
         <div class="steps"><p>$$|\lambda E-A|=(b-\lambda)\big[(2-\lambda)^{2}-1\big]=(b-\lambda)(1-\lambda)(3-\lambda),$$<br>特征值为 $\{b,\,1,\,3\}$。仅有两个不同特征值 $\iff b=1$ 或 $b=3$。</p>
 <p>**情形 $b=1$**：特征值 $1,1,3$。可对角化 $\iff r(A-E)=1$。<br>$$A-E=\begin{pmatrix}1&amp;1&amp;0\\1&amp;1&amp;0\\1&amp;a&amp;0\end{pmatrix}\Rightarrow\text{第 3 行}=\text{第 1 行}\Rightarrow a=1 .$$<br>- $\lambda=1$：$x_1+x_2=0$，$\xi_1=(1,-1,0)^T,\ \xi_2=(0,0,1)^T$；<br>- $\lambda=3$：$\xi_3=(1,1,1)^T$（验证 $A\xi_3=(3,3,3)^T$）。</p>
 <p>$$P=\begin{pmatrix}1&amp;0&amp;1\\-1&amp;0&amp;1\\0&amp;1&amp;1\end{pmatrix},\qquad P^{-1}AP=\mathrm{diag}(1,1,3).$$</p>
 <p>**情形 $b=3$**：特征值 $1,3,3$。可对角化 $\iff r(A-3E)=1$。<br>$$A-3E=\begin{pmatrix}-1&amp;1&amp;0\\1&amp;-1&amp;0\\1&amp;a&amp;0\end{pmatrix}\Rightarrow\text{第 3 行}=-\text{第 1 行}\Rightarrow a=-1 .$$<br>- $\lambda=3$：$x_2=x_1$，$\xi_1=(1,1,0)^T,\ \xi_2=(0,0,1)^T$；<br>- $\lambda=1$：$A-E=\begin{pmatrix}1&amp;1&amp;0\\1&amp;1&amp;0\\1&amp;-1&amp;2\end{pmatrix}\Rightarrow\xi_3=(1,-1,-1)^T$。</p>
-<p>$$P=\begin{pmatrix}1&amp;0&amp;1\\1&amp;0&amp;-1\\0&amp;1&amp;-1\end{pmatrix},\qquad P^{-1}AP=\mathrm{diag}(3,3,1).$$</p></div>
+<p>$$P=\begin{pmatrix}1&amp;0&amp;1\\1&amp;0&amp;-1\\0&amp;1&amp;-1\end{pmatrix},\qquad P^{-1}AP=\mathrm{diag}(3,3,1).$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：特征多项式 (λ−1)(λ−3)(λ−b)，仅两个不同特征值 ⟹ b∈{1,3}；b=1 需 r(A−E)=1 ⟹ a=1，b=3 需 r(A−3E)=1 ⟹ a=−1，两组均满足可对角化，B 漏掉 (a,b)=(−1,3) 情形，solver 与 A 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I)\ A=\begin{pmatrix}1&1&1\\2&-1&1\\0&1&-1\end{pmatrix}；(II)\ P=(\,(1,0,-2)^T,(4,3,1)^T,(0,1,-1)^T\,)，\ \Lambda=\mathrm{diag}(-1,2,-2)$</div>
@@ -63,7 +64,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T2_0.png" alt="k19_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
         <div class="steps"><p>由 $P^{-1}AP=\mathrm{diag}(1,1,2)$：$A\alpha_1=\alpha_1,\ A\alpha_2=\alpha_2,\ A\alpha_3=2\alpha_3$。</p>
@@ -84,7 +85,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T3_0.png" alt="k19_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)\ \dfrac{5}{2},\ \dfrac{1}{2}$</div>
         <div class="steps"><p>$\beta_1=(1,0,1)^{T}$，$(\beta_1,\beta_1)=2$。</p>
@@ -103,7 +104,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.19.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T4_0.png" alt="k19_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1)\ y=2；(2)\ P\ \text{的列为}\ (1,0,0,0)^T,(0,1,0,0)^T,\frac{1}{\sqrt2}(0,0,1,1)^T,\frac{1}{\sqrt2}(0,0,1,-1)^T,\ \text{此时}\ (AP)^T(AP)=\mathrm{diag}(1,1,9,1)$</div>
         <div class="steps"><p>**(1)** $A$ 分块对角：$\mathrm{diag}\big(A_1,A_2\big)$，$A_1=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$（特征值 $\pm1$），$A_2=\begin{pmatrix}y&amp;1\\1&amp;2\end{pmatrix}$。特征值 3 只能来自 $A_2$：<br>$$|A_2-3E|=(y-3)(-1)-1=2-y=0\ \Longrightarrow\ y=2 .$$</p>
