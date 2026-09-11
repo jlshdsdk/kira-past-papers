@@ -21,23 +21,90 @@
 
   <div class="card q" id="k18_T1">
     <div class="qhead"><span class="qno">k18_T1</span>
-      
+      <span class="badge">共 7 小题</span><span class="badge year">1994</span> <span class="badge year">1997</span> <span class="badge year">2004</span> <span class="badge year">2013</span> <span class="badge year">2017</span> <span class="badge year">2022</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.18.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k18_T1_0.png" alt="k18_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k18_T1_1.png" alt="k18_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle x+y=0$</div>
+        <div class="steps"><p>$$|\lambda E-A|=(1-\lambda)(\lambda^{2}-1)=-(\lambda-1)^{2}(\lambda+1),$$<br>特征值 $\lambda=1$（二重）与 $\lambda=-1$（单根必有特征向量）。</p>
+<p>有 3 个线性无关特征向量 $\iff$ $\lambda=1$ 的几何重数为 $2$ $\iff$ $r(A-E)=1$。<br>$$A-E=\begin{pmatrix}-1&amp;0&amp;1\\x&amp;0&amp;y\\1&amp;0&amp;-1\end{pmatrix},$$<br>第 3 行 $=-$第 1 行，故需第 2 行与第 1 行成比例：$(x,0,y)=c(-1,0,1)$，即<br>$$x+y=0 .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ a=-3,\ b=0,\ \lambda=-1；(II)\ \text{不能相似于对角阵}$</div>
+        <div class="steps"><p>**(I)** $A\xi=\lambda\xi$：<br>- 第 1 行：$2-1-2=-1=\lambda$；<br>- 第 2 行：$5+a-3=2+a=\lambda=-1\Rightarrow a=-3$；<br>- 第 3 行：$-1+b+2=1+b=-\lambda=1\Rightarrow b=0$。</p>
+<p>故 $a=-3,\ b=0$，$\lambda=-1$。</p>
+<p>**(II)** <br>$$|\lambda E-A|=-(\lambda+1)^{3},$$<br>即 $\lambda=-1$ 为三重特征值。<br>$$A+E=\begin{pmatrix}3&amp;-1&amp;2\\5&amp;-2&amp;3\\-1&amp;0&amp;-1\end{pmatrix},\qquad r(A+E)=2\ (\text{第1、2行不成比例且行列式为}0),$$<br>故 $\lambda=-1$ 的线性无关特征向量个数为 $3-2=1&lt;3$，$A$ **不能**相似于对角阵。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a=-2\ (\text{可对角化})\ \text{或}\ a=-\dfrac{2}{3}\ (\text{不可对角化})$</div>
+        <div class="steps"><p>$$f(\lambda)=|\lambda E-A|=\lambda^{3}-10\lambda^{2}+(34+3a)\lambda-(36+6a)=(\lambda-2)\big(\lambda^{2}-8\lambda+18+3a\big),$$<br>即 $\lambda=2$ 恒为根。要有二重根，有两种情形：</p>
+<p>**情形 1**：$\lambda=2$ 也是二次因式的根：$4-16+18+3a=6+3a=0\Rightarrow a=-2$。<br>此时 $f(\lambda)=(\lambda-2)^{2}(\lambda-6)$。<br>$$A-2E=\begin{pmatrix}-1&amp;2&amp;-3\\-1&amp;2&amp;-3\\1&amp;-2&amp;3\end{pmatrix},\qquad r(A-2E)=1,$$<br>$\lambda=2$ 的几何重数 $=3-1=2$，故 $A$ **可相似对角化**。</p>
+<p>**情形 2**：二次因式判别式为零：$64-4(18+3a)=-8-12a=0\Rightarrow a=-\dfrac23$。<br>此时 $f(\lambda)=(\lambda-2)(\lambda-4)^{2}$，二重根 $\lambda=4$。<br>$$A-4E=\begin{pmatrix}-3&amp;2&amp;-3\\-1&amp;0&amp;-3\\1&amp;-\frac23&amp;1\end{pmatrix},$$<br>第 1 行 $=-3\times$ 第 3 行，但第 2 行 $(-1,0,-3)$ 与第 3 行不成比例，$r(A-4E)=2$，$\lambda=4$ 的几何重数为 $1&lt;2$，故 $A$ **不可相似对角化**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>记 $S=\begin{pmatrix}1&amp;a&amp;1\\a&amp;b&amp;a\\1&amp;a&amp;1\end{pmatrix}$（实对称，必可对角化）。$S(1,0,-1)^T=0$，即 $\lambda=0$ 是特征值。在与 $(1,0,-1)^T$ 正交的二维不变子空间（基 $v_1=(1,0,1)^T,\ v_2=(0,1,0)^T$）上：<br>$$S v_1=2v_1+2a\,v_2,\qquad S v_2=a\,v_1+b\,v_2,$$<br>即限制矩阵为 $M=\begin{pmatrix}2&amp;a\\2a&amp;b\end{pmatrix}$，$S$ 的特征值 $=\{0\}\cup\{$$M$ 的特征值$\}$。</p>
+<p>$S\sim\mathrm{diag}(2,b,0)\iff M$ 的特征值为 $\{2,b\}$。由 $\mathrm{tr}(M)=2+b$ 自动吻合，只需<br>$$\det M=2b-2a^{2}=2b\ \Longrightarrow\ a=0 .$$<br>$a=0$ 时 $M=\mathrm{diag}(2,b)$，确有 $S\sim\mathrm{diag}(2,b,0)$，对任意 $b$ 成立。</p>
+<p>故充要条件为 $a=0$（$b$ 任意），选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>三个矩阵的特征值均为 $\{1,2,2\}$，$C$ 为对角阵。</p>
+<p>**A**：$A-2E=\begin{pmatrix}0&amp;0&amp;0\\0&amp;0&amp;1\\0&amp;0&amp;-1\end{pmatrix}$，$r(A-2E)=1$，故 $\lambda=2$ 的几何重数为 $2$，$A$ 可对角化，$A\sim C$。</p>
+<p>**B**：$B-2E=\begin{pmatrix}0&amp;1&amp;0\\0&amp;0&amp;0\\0&amp;0&amp;-1\end{pmatrix}$，$r(B-2E)=2$，$\lambda=2$ 的几何重数为 $1$，$B$ 不可对角化，$B\not\sim C$。</p>
+<p>故 $A$ 与 $C$ 相似、$B$ 与 $C$ 不相似，选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>**(B)**：$A=P\Lambda P^{-1}$ 即 $A\sim\Lambda$，特征值必为 $1,-1,0$；反之，特征值为三个互异数 $1,-1,0$ 的矩阵必可对角化，故必存在这样的 $P$。充要，正确。</p>
+<p>**(A)**：$P\Lambda Q$ 与 $\Lambda$ 等价，$\iff r(A)=r(\Lambda)=2$，与特征值无关（如 $2E$ 的秩为 3 不行，而 $\mathrm{diag}(3,5,0)$ 秩 2 但特征值不对），不正确。</p>
+<p>**(C)**：$A=Q\Lambda Q^{T}$ 推出 $A$ 实对称，比&quot;特征值为 $1,-1,0$&quot;强（不对称的反例不满足），非必要。</p>
+<p>**(D)**：合同 $A=P\Lambda P^{T}$ 只保惯性不保特征值（如 $P=2I$ 时特征值变为 $4,-4,0$），既不充分也非必要。</p>
+<p>选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>**充分性**：设 $A$ 有两个不同特征值 $\lambda_1\neq\lambda_2$，特征向量 $\xi_1,\xi_2$（线性无关）。由 $AB=BA$：<br>$$A(B\xi_i)=B(A\xi_i)=\lambda_i B\xi_i,$$<br>故 $B\xi_i$ 仍属于 $\lambda_i$ 的特征子空间；2 阶矩阵不同特征值的特征子空间都是 1 维的，故<br>$$B\xi_i=\mu_i\xi_i\ (i=1,2).$$<br>$\xi_1,\xi_2$ 是 $B$ 的两个线性无关特征向量，$B$ 可对角化。</p>
+<p>**必要性不成立**：反例 $A=E$（特征值 $1,1$），任取可对角化的 $B$（如 $B=\mathrm{diag}(1,2)$），$AB=BA$ 成立，但 $A$ 没有两个不等的特征值。</p>
+<p>故为充分而不必要条件，选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k18_T2">
     <div class="qhead"><span class="qno">k18_T2</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1993</span> <span class="badge year">2010</span> <span class="badge year">2017</span> <span class="badge year">2020</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.18.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k18_T2_0.png" alt="k18_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k18_T2_1.png" alt="k18_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>**充分**：$n$ 个互异特征值给出 $n$ 个线性无关的特征向量，$A$ 可对角化。</p>
+<p>**不必要**：如 $A=E$ 与对角阵相似，但特征值全相等（不互异）。</p>
+<p>故为充分而非必要条件，选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)$</div>
+        <div class="steps"><p>设 $\lambda$ 为 $A$ 的特征值，由 $A^{2}+A=0$ 得 $\lambda^{2}+\lambda=0$，即 $\lambda\in\{0,-1\}$。</p>
+<p>$A$ 实对称必可对角化，且 $r(A)=$ 非零特征值个数 $=3$，故特征值为 $-1,-1,-1,0$。</p>
+<p>$$A\sim\begin{pmatrix}-1&amp;&amp;&amp;\\&amp;-1&amp;&amp;\\&amp;&amp;-1&amp;\\&amp;&amp;&amp;0\end{pmatrix},$$<br>选 **D**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (1)\ r(A)=2；(2)\ x=(1,1,1)^{T}+t(1,2,-1)^{T}\ (t\in\mathbb{R})$</div>
+        <div class="steps"><p>**(1)** 由 $\alpha_3=\alpha_1+2\alpha_2$ 得列向量组线性相关，$r(A)\le2$；且<br>$$A\begin{pmatrix}1\\2\\-1\end{pmatrix}=\alpha_1+2\alpha_2-\alpha_3=0,$$<br>即 $\lambda=0$ 是 $A$ 的特征值。若 $r(A)\le1$，则 $\lambda=0$ 的几何重数 $\ge2$，其代数重数 $\ge2$，与 $A$ 有 3 个不同特征值（每个代数重数为 1）矛盾。故 $r(A)=2$。</p>
+<p>**(2)** $r(A)=2&lt;3$，且特解显然：<br>$$A\begin{pmatrix}1\\1\\1\end{pmatrix}=\alpha_1+\alpha_2+\alpha_3=\beta ;$$<br>导出组 $Ax=0$ 的基础解系为 $\xi=(1,2,-1)^{T}$（$3-r(A)=1$ 个）。</p>
+<p>故通解为<br>$$x=\begin{pmatrix}1\\1\\1\end{pmatrix}+t\begin{pmatrix}1\\2\\-1\end{pmatrix}\quad(t\in\mathbb{R}).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (1)\ P\ \text{可逆}；(2)\ P^{-1}AP=\begin{pmatrix}0&6\\1&-1\end{pmatrix}，\ A\ \text{相似于对角阵（特征值}\ 2,-3）$</div>
+        <div class="steps"><p>**(1)** 设 $k_1\alpha+k_2A\alpha=0$。若 $k_2\neq0$，则 $A\alpha=-\dfrac{k_1}{k_2}\alpha$，即 $\alpha$ 是 $A$ 的特征向量，矛盾；故 $k_2=0$，进而 $k_1\alpha=0$ 得 $k_1=0$。$\alpha$ 与 $A\alpha$ 线性无关，$P=(\alpha,A\alpha)$ 可逆。</p>
+<p>**(2)** 由 $A^{2}\alpha=6\alpha-A\alpha$：<br>$$AP=A(\alpha,\ A\alpha)=(A\alpha,\ A^{2}\alpha)=(A\alpha,\ 6\alpha-A\alpha)<br>=(\alpha,\ A\alpha)\begin{pmatrix}0&amp;6\\1&amp;-1\end{pmatrix},$$<br>故<br>$$P^{-1}AP=\begin{pmatrix}0&amp;6\\1&amp;-1\end{pmatrix}.$$<br>其特征多项式 $\lambda^{2}+\lambda-6=(\lambda-2)(\lambda+3)$，特征值 $2,-3$ 互异，该矩阵可对角化；又 $A$ 与它相似，故 $A$ 相似于对角阵 $\mathrm{diag}(2,-3)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

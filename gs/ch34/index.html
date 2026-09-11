@@ -21,34 +21,95 @@
 
   <div class="card q" id="k34_T1">
     <div class="qhead"><span class="qno">k34_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1996</span> <span class="badge year">2010</span> <span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.34.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k34_T1_0.png" alt="k34_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=3$</div>
+        <div class="steps"><p>由复合求导（$u_y=-2,\ v_y=a$）：<br>$$z_x=z_u+z_v,\qquad z_y=-2z_u+az_v$$<br>$$z_{xx}=z_{uu}+2z_{uv}+z_{vv},\qquad z_{xy}=-2z_{uu}+(a-2)z_{uv}+az_{vv},\qquad z_{yy}=4z_{uu}-4az_{uv}+a^2z_{vv}$$<br>代入原方程：<br>$$6z_{xx}+z_{xy}-z_{yy}=(6-2-4)z_{uu}+(12+a-2+4a)z_{uv}+(6+a-a^2)z_{vv}=(10+5a)z_{uv}+(6+a-a^2)z_{vv}$$<br>要化为 $z_{uv}=0$ 型，须 $6+a-a^2=0$，解得 $a=3$ 或 $a=-2$。</p>
+<p>又变换必须可逆：$\dfrac{\partial(u,v)}{\partial(x,y)}=1\cdot a-1\cdot(-2)=a+2\neq0$，故 $a\neq-2$，只能 $a=3$。</p>
+<p>检验：$a=3$ 时 $z_{uv}$ 系数 $10+5a=25\neq0$，方程确化为 $25z_{uv}=0$，即 $z_{uv}=0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle a=-2,\ b=-\frac{2}{5}\ \left(\text{或 } a=-\frac{2}{5},\ b=-2\right)$</div>
+        <div class="steps"><p>由 $\xi=x+ay,\ \eta=x+by$（$u_x=u_\xi+u_\eta,\ u_y=au_\xi+bu_\eta$）：<br>$$u_{xx}=u_{\xi\xi}+2u_{\xi\eta}+u_{\eta\eta},\qquad u_{xy}=au_{\xi\xi}+(a+b)u_{\xi\eta}+bu_{\eta\eta},\qquad u_{yy}=a^2u_{\xi\xi}+2ab\,u_{\xi\eta}+b^2u_{\eta\eta}$$<br>代入：<br>$$4u_{xx}+12u_{xy}+5u_{yy}=(4+12a+5a^2)u_{\xi\xi}+(8+12a+12b+10ab)u_{\xi\eta}+(4+12b+5b^2)u_{\eta\eta}$$<br>令 $5t^2+12t+4=0$，得 $t=\dfrac{-12\pm8}{10}$，即 $t=-2$ 或 $t=-\dfrac25$。</p>
+<p>故 $a,b$ 只能取 $-2$ 与 $-\dfrac25$ 且 $a\neq b$（否则变换退化）。取 $a=-2,\ b=-\dfrac25$，检验交叉项系数：<br>$$8+12\left(-2-\frac25\right)+10\cdot\frac45=8-\frac{144}{5}+8=-\frac{64}{5}\neq0$$<br>方程确化为 $-\dfrac{64}{5}u_{\xi\eta}=0$，即 $u_{\xi\eta}=0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a=-\frac{3}{4},\quad b=\frac{3}{4}\ (\text{方程化为 } 2v_{xx}-2v_{yy}=0)$</div>
+        <div class="steps"><p>设 $u=ve^{ax+by}$，则<br>$$u_x=e^{ax+by}(v_x+av),\qquad u_y=e^{ax+by}(v_y+bv)$$<br>$$u_{xx}=e^{ax+by}(v_{xx}+2av_x+a^2v),\qquad u_{yy}=e^{ax+by}(v_{yy}+2bv_y+b^2v)$$<br>代入原方程并除以 $e^{ax+by}$：<br>$$2v_{xx}-2v_{yy}+(4a+3)v_x+(3-4b)v_y+(2a^2-2b^2+3a+3b)v=0$$<br>不含一阶偏导数要求：<br>$$4a+3=0\Rightarrow a=-\frac34,\qquad 3-4b=0\Rightarrow b=\frac34$$<br>此时常数项 $2a^2-2b^2+3a+3b=\dfrac{9}{8}-\dfrac{9}{8}-\dfrac94+\dfrac94=0$，方程化为 $2v_{xx}-2v_{yy}=0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k34_T2">
     <div class="qhead"><span class="qno">k34_T2</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 5 小题</span><span class="badge year">1997</span> <span class="badge year">2006</span> <span class="badge year">2014</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.34.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k34_T2_0.png" alt="k34_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(u)=C_1e^{u}+C_2e^{-u}\ (C_1,C_2 \text{ 为任意常数})$</div>
+        <div class="steps"><p>记 $u=e^x\sin y$：$u_x=e^x\sin y,\ u_y=e^x\cos y$。<br>$$z_x=f&#x27;(u)e^x\sin y,\qquad z_y=f&#x27;(u)e^x\cos y$$<br>$$z_{xx}=f&#x27;&#x27;(u)e^{2x}\sin^2y+f&#x27;(u)e^x\sin y,\qquad z_{yy}=f&#x27;&#x27;(u)e^{2x}\cos^2y-f&#x27;(u)e^x\sin y$$<br>相加（$f&#x27;$ 项抵消）：<br>$$z_{xx}+z_{yy}=e^{2x}f&#x27;&#x27;(u)$$<br>方程化为 $e^{2x}f&#x27;&#x27;(u)=e^{2x}f(u)$，即 $f&#x27;&#x27;(u)-f(u)=0$，通解<br>$$f(u)=C_1e^{u}+C_2e^{-u}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (Ⅰ) \text{见步骤；}\quad (Ⅱ)\ f(u)=\ln u$</div>
+        <div class="steps"><p>记 $u=\sqrt{x^2+y^2}$，则 $u_x=\dfrac{x}{u},\ u_y=\dfrac{y}{u}$。<br>$$z_x=f&#x27;(u)\frac{x}{u},\qquad z_{xx}=f&#x27;&#x27;(u)\frac{x^2}{u^2}+f&#x27;(u)\left(\frac1u-\frac{x^2}{u^3}\right)$$<br>由对称性 $z_{yy}=f&#x27;&#x27;(u)\dfrac{y^2}{u^2}+f&#x27;(u)\left(\dfrac1u-\dfrac{y^2}{u^3}\right)$，相加（$x^2+y^2=u^2$）：<br>$$z_{xx}+z_{yy}=f&#x27;&#x27;(u)\cdot1+f&#x27;\left(\frac2u-\frac{u^2}{u^3}\right)=f&#x27;&#x27;(u)+\frac{f&#x27;(u)}{u}$$<br>(Ⅰ) 由方程 $z_{xx}+z_{yy}=0$ 即得 $f&#x27;&#x27;(u)+\dfrac{f&#x27;(u)}{u}=0$，得证。</p>
+<p>(Ⅱ) 令 $g=f&#x27;$，则 $g&#x27;+\dfrac{g}{u}=0\Rightarrow(ug)&#x27;=0\Rightarrow g=\dfrac{C_1}{u}$，即 $f&#x27;=\dfrac{C_1}{u}$。</p>
+<p>积分：$f=C_1\ln u+C_2$。由 $f&#x27;(1)=\dfrac{C_1}{1}=1\Rightarrow C_1=1$；由 $f(1)=C_2=0$。</p>
+<p>$$f(u)=\ln u$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(u)=\frac{1}{16}\left(e^{2u}-e^{-2u}\right)-\frac{u}{4}=\frac{1}{8}\sinh 2u-\frac{u}{4}$</div>
+        <div class="steps"><p>记 $u=e^x\cos y$：$u_x=u,\ u_{xx}=u;\ u_y=-e^x\sin y,\ u_{yy}=-e^x\cos y=-u$，故 $\Delta u=u_{xx}+u_{yy}=0$；又 $u_x^2+u_y^2=e^{2x}(\cos^2y+\sin^2y)=e^{2x}$。<br>$$z_{xx}+z_{yy}=f&#x27;&#x27;(u)(u_x^2+u_y^2)+f&#x27;(u)\Delta u=e^{2x}f&#x27;&#x27;(u)$$<br>方程化为 $e^{2x}f&#x27;&#x27;(u)=(4f(u)+u)e^{2x}$，即<br>$$f&#x27;&#x27;(u)-4f(u)=u$$<br>齐次通解 $C_1e^{2u}+C_2e^{-2u}$；特解试 $Au$：$-4Au=u\Rightarrow A=-\frac14$。故 $f=C_1e^{2u}+C_2e^{-2u}-\dfrac u4$。</p>
+<p>由 $f(0)=0$：$C_1+C_2=0$；由 $f&#x27;(u)=2C_1e^{2u}-2C_2e^{-2u}-\frac14$ 及 $f&#x27;(0)=0$：$2C_1-2C_2-\frac14=0\Rightarrow C_1-C_2=\frac18$。解得 $C_1=\frac1{16},\ C_2=-\frac1{16}$。</p>
+<p>$$f(u)=\frac{e^{2u}-e^{-2u}}{16}-\frac{u}{4}$$<br>（检验：$f&#x27;&#x27;-4f=u$，$f(0)=f&#x27;(0)=0$，均满足。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f(u)=\frac{1}{16}\left(e^{4u}-1-4u\right)$</div>
+        <div class="steps"><p>记 $u=e^x\cos y$：$z_x=f&#x27;(u)e^x\cos y,\ z_y=-f&#x27;(u)e^x\sin y$。<br>$$\cos y\,z_x-\sin y\,z_y=f&#x27;(u)e^x(\cos^2y+\sin^2y)=e^xf&#x27;(u)$$<br>方程化为 $e^xf&#x27;(u)=(4f(u)+u)e^x$，即一阶线性方程<br>$$f&#x27;(u)-4f(u)=u$$<br>齐次解 $Ce^{4u}$；特解 $Au+B$：$A-4(Au+B)=u\Rightarrow A=-\frac14,\ B=-\frac1{16}$。</p>
+<p>故 $f=Ce^{4u}-\frac u4-\frac1{16}$，由 $f(0)=0$：$C=\frac1{16}$。<br>$$f(u)=\frac{e^{4u}}{16}-\frac{u}{4}-\frac{1}{16}=\frac{e^{4u}-1-4u}{16}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (1)\ \frac{f''(u)-f(u)}{u}\equiv C\ (\text{常数})；\quad (2)\ f(u)=u+e^{1-u}-e^{u-1}$</div>
+        <div class="steps"><p>(1) 记 $P=\dfrac{f(u)}{x^2y},\ Q=\dfrac{f&#x27;&#x27;(u)}{xy^2},\ u=xy$。由 $dF=P\,dx+Q\,dy$ 且 $f$ 三阶连续可导，有 $\dfrac{\partial P}{\partial y}=\dfrac{\partial Q}{\partial x}$：<br>$$\frac{\partial P}{\partial y}=\frac{f&#x27;(u)}{xy}-\frac{f(u)}{x^2y^2},\qquad \frac{\partial Q}{\partial x}=\frac{f&#x27;&#x27;&#x27;(u)}{xy}-\frac{f&#x27;&#x27;(u)}{x^2y^2}$$<br>（用了 $u_x=y,\ u_y=x$。）两项分别通乘 $x^2y^2=u^2$：<br>$$u f&#x27;(u)-f(u)=u f&#x27;&#x27;&#x27;(u)-f&#x27;&#x27;(u)\ \Longrightarrow\ f&#x27;&#x27;(u)-f(u)=u\left[f&#x27;&#x27;&#x27;(u)-f&#x27;(u)\right]$$<br>令 $\varphi(u)=\dfrac{f&#x27;&#x27;(u)-f(u)}{u}$，则<br>$$\varphi&#x27;(u)=\frac{u\left[f&#x27;&#x27;&#x27;(u)-f&#x27;(u)\right]-\left[f&#x27;&#x27;(u)-f(u)\right]}{u^2}=0$$<br>故 $\varphi(u)\equiv C$，即 $\dfrac{f&#x27;&#x27;(u)-f(u)}{u}=C$。</p>
+<p>(2) 代入初值：$C=\dfrac{f&#x27;&#x27;(1)-f(1)}{1}=0-1=-1$，于是 $f&#x27;&#x27;-f=-u$。<br>齐次通解 $C_1e^u+C_2e^{-u}$，特解 $u$（代入 $0-u=-u$ 成立），故 $f=C_1e^u+C_2e^{-u}+u$。</p>
+<p>由 $f(1)=1$：$C_1e+C_2e^{-1}+1=1\Rightarrow C_1e+C_2e^{-1}=0$；<br>由 $f&#x27;(u)=C_1e^u-C_2e^{-u}+1$ 及 $f&#x27;(1)=-1$：$C_1e-C_2e^{-1}=-2$。<br>解得 $C_1e=-1,\ C_2e^{-1}=1$，即 $C_1=-e^{-1},\ C_2=e$。<br>$$f(u)=u+e^{1-u}-e^{u-1}$$<br>（检验：$f(1)=1,\ f&#x27;(1)=1-2=-1,\ f&#x27;&#x27;(1)=0$，且 $(f&#x27;&#x27;-f)/u=-1$ 恒成立。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k34_T3">
     <div class="qhead"><span class="qno">k34_T3</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">2017</span> <span class="badge year">2023</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.34.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k34_T3_0.png" alt="k34_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=xye^{y}$</div>
+        <div class="steps"><p>记 $P=ye^y,\ Q=x(1+y)e^y$。可积性：$\dfrac{\partial P}{\partial y}=(1+y)e^y=\dfrac{\partial Q}{\partial x}$。</p>
+<p>由 $f_x=ye^y$ 对 $x$ 积分：$f=xye^y+\varphi(y)$。<br>再求 $f_y=x(1+y)e^y+\varphi&#x27;(y)$，与 $Q=x(1+y)e^y$ 比较得 $\varphi&#x27;(y)=0$，$\varphi=C$。</p>
+<p>由 $f(0,0)=0$ 得 $C=0$，故 $f(x,y)=xye^y$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{3}$</div>
+        <div class="steps"><p>熟知 $d\left(\arctan\dfrac{y}{x}\right)=\dfrac{x\,dy-y\,dx}{x^2+y^2}$（$x&gt;0$ 区域），故<br>$$f(x,y)=\arctan\frac{y}{x}+C$$<br>由 $f(1,1)=\arctan1+C=\dfrac\pi4+C=\dfrac\pi4$ 得 $C=0$。</p>
+<p>$$f(\sqrt3,3)=\arctan\frac{3}{\sqrt3}=\arctan\sqrt3=\frac{\pi}{3}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (1)\ \frac{\partial^2 f}{\partial u\partial v}=\frac{1}{25}；\qquad (2)\ f(u,v)=\frac{uv}{25}-(u+1)e^{-u}+\frac{v^2}{50}$</div>
+        <div class="steps"><p>记 $u=2x+y,\ v=3x-y$，则 $g_x=2f_u+3f_v,\ g_y=f_u-f_v$。<br>$$g_{xx}=2(2f_{uu}+3f_{uv})+3(2f_{uv}+3f_{vv})=4f_{uu}+12f_{uv}+9f_{vv}$$<br>$$g_{xy}=2(f_{uu}-f_{uv})+3(f_{uv}-f_{vv})=2f_{uu}+f_{uv}-3f_{vv}$$<br>$$g_{yy}=f_{uu}-2f_{uv}+f_{vv}$$<br>(1) 相加：<br>$$g_{xx}+g_{xy}-6g_{yy}=(4+2-6)f_{uu}+(12+1+12)f_{uv}+(9-3-6)f_{vv}=25f_{uv}$$<br>故 $25f_{uv}=1$，即 $\dfrac{\partial^2 f}{\partial u\partial v}=\dfrac1{25}$。</p>
+<p>(2) 对 $v$ 积分：$f_u=\dfrac{v}{25}+h(u)$。令 $v=0$：$f_u(u,0)=h(u)=ue^{-u}$，故 $f_u=\dfrac{v}{25}+ue^{-u}$。</p>
+<p>再对 $u$ 积分（$\int ue^{-u}du=-(u+1)e^{-u}$）：<br>$$f(u,v)=\frac{uv}{25}-(u+1)e^{-u}+\psi(v)$$<br>由 $f(0,v)=-1+\psi(v)=\dfrac{v^2}{50}-1$ 得 $\psi(v)=\dfrac{v^2}{50}$。</p>
+<p>$$f(u,v)=\frac{uv}{25}-(u+1)e^{-u}+\frac{v^2}{50}$$<br>（检验：$f_u=\frac{v}{25}+ue^{-u}$，$f(0,v)=\frac{v^2}{50}-1$，均满足。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

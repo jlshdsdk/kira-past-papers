@@ -17,27 +17,55 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 12</div>
 <h1 class="title">考点 12　向量组的极大无关组与秩</h1>
-<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 0/2　</div>
+<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 2/2　</div>
 
   <div class="card q" id="k12_T1">
     <div class="qhead"><span class="qno">k12_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1987</span> <span class="badge year">1995</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.12.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k12_T1_0.png" alt="k12_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>矩阵的秩等于行秩，$r(A)=r$ 说明 $A$ 的行向量组的极大无关组恰含 $r$ 个向量，故必存在（必有）$r$ 个行向量线性无关，选 (A)。</p>
+<p>(B)(C) 错：「任意 $r$ 个」可能含线性相关的部分组，如行向量 $(1,0),(2,0),(0,0)$ 中任取含前两行的两组即相关；</p>
+<p>(D) 错：极大无关组之外的行才必可由极大无关组表示，且「其他 $r$ 个」未必无关。如行向量 $(1,0,0),(0,0,0),(0,0,0)$，$r=1$，第一行不能由其余 $r=1$ 个（零向量）线性表示。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle r(α1,α2,α3,α5-α4)=4$</div>
+        <div class="steps"><p>由 $r(\mathrm{I})=3$ 知 $\alpha_1,\alpha_2,\alpha_3$ 线性无关；由 $r(\mathrm{II})=3$ 知 $\alpha_4$ 可由 $\alpha_1,\alpha_2,\alpha_3$ 唯一线性表示：</p>
+<p>$$\alpha_4=\lambda_1\alpha_1+\lambda_2\alpha_2+\lambda_3\alpha_3$$</p>
+<p>由 $r(\mathrm{III})=4$ 知 $\alpha_1,\alpha_2,\alpha_3,\alpha_5$ 线性无关。</p>
+<p>设有 $k_1,k_2,k_3,k_4$ 使 $k_1\alpha_1+k_2\alpha_2+k_3\alpha_3+k_4(\alpha_5-\alpha_4)=0$，代入 $\alpha_4$ 的表达式：</p>
+<p>$$(k_1-k_4\lambda_1)\alpha_1+(k_2-k_4\lambda_2)\alpha_2+(k_3-k_4\lambda_3)\alpha_3+k_4\alpha_5=0$$</p>
+<p>由 $\alpha_1,\alpha_2,\alpha_3,\alpha_5$ 线性无关得 $k_4=0$，进而 $k_1=k_2=k_3=0$。</p>
+<p>故 $\alpha_1,\alpha_2,\alpha_3,\alpha_5-\alpha_4$ 线性无关，其秩为 4。证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k12_T2">
     <div class="qhead"><span class="qno">k12_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1999</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k12_T2_0.png" alt="k12_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) p≠2 时线性无关，α=2α1+\frac{3p-4}{p-2}α2+α3+\frac{1-p}{p-2}α4；(II) p=2 时线性相关，秩为 3，一个极大无关组为 α1,α2,α3（此时 α4=2α2）$</div>
+        <div class="steps"><p>对以 $\alpha_1,\alpha_2,\alpha_3,\alpha_4$ 为列的矩阵作初等行变换：</p>
+<p>$$\begin{pmatrix}1&amp;-1&amp;3&amp;-2\\ 1&amp;-3&amp;2&amp;-6\\ 1&amp;5&amp;-1&amp;10\\ 3&amp;1&amp;p+2&amp;p\end{pmatrix}\xrightarrow{\substack{r_2-r_1\\ r_3-r_1\\ r_4-3r_1}}\begin{pmatrix}1&amp;-1&amp;3&amp;-2\\ 0&amp;-2&amp;-1&amp;-4\\ 0&amp;6&amp;-4&amp;12\\ 0&amp;4&amp;p-7&amp;p+6\end{pmatrix}\xrightarrow{\substack{r_3+3r_2\\ r_4+2r_2}}\begin{pmatrix}1&amp;-1&amp;3&amp;-2\\ 0&amp;-2&amp;-1&amp;-4\\ 0&amp;0&amp;-7&amp;0\\ 0&amp;0&amp;p-9&amp;p-2\end{pmatrix}$$</p>
+<p>故向量组的行列式 $\det=1\cdot(-2)\begin{vmatrix}-7&amp;0\\ p-9&amp;p-2\end{vmatrix}\cdot(\pm1)=14(p-2)$。</p>
+<p>(I) $p\neq2$ 时 $\det\neq0$，线性无关。此时解 $x_1\alpha_1+x_2\alpha_2+x_3\alpha_3+x_4\alpha_4=\alpha=(4,1,6,10)^{T}$，对增广矩阵施行同样行变换可得：</p>
+<p>$$x_3=1,\qquad x_2+2x_4=1,\qquad (p-2)x_4=1-p$$</p>
+<p>解出 $x_4=\dfrac{1-p}{p-2},\ x_2=\dfrac{3p-4}{p-2},\ x_3=1,\ x_1=2$，即</p>
+<p>$$\alpha=2\alpha_1+\frac{3p-4}{p-2}\alpha_2+\alpha_3+\frac{1-p}{p-2}\alpha_4$$</p>
+<p>(II) $p=2$ 时第 3、4 行相同，秩 $r=3&lt;4$，向量组线性相关；行阶梯形主元位于第 1、2、3 列，故一个极大线性无关组为 $\alpha_1,\alpha_2,\alpha_3$。</p>
+<p>此时解 $\alpha_4=x_1\alpha_1+x_2\alpha_2+x_3\alpha_3$ 得 $(x_1,x_2,x_3)=(0,2,0)$，即 $\alpha_4=2\alpha_2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

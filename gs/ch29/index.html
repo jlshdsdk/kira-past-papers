@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 29</div>
 <h1 class="title">考点 29　定积分的几何应用</h1>
-<div class="sub">题组 8 · 覆盖年份 — · 题型：题型一、题型二、题型三 · 解析完成 0/8　</div>
+<div class="sub">题组 8 · 覆盖年份 — · 题型：题型一、题型二、题型三 · 解析完成 8/8　</div>
 
   <div class="card q" id="k29_T1">
     <div class="qhead"><span class="qno">k29_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.29.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T1_0.png" alt="k29_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T1_1.png" alt="k29_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T1_2.png" alt="k29_T1 题目图 3"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T1_3.png" alt="k29_T1 题目图 4">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{3}{2}$</div>
         <div class="steps"><p>交点：ln x 与 y=0 交于 x=1；直线与 y=0 交于 x=e+1；ln x=(e+1)-x 解得 x=e。<br>$$S=\int_1^e \ln x\,dx+\int_e^{e+1}\big[(e+1)-x\big]dx=[x\ln x-x]_1^e+\left[(e+1)x-\frac{x^2}{2}\right]_e^{e+1}=1+\frac{1}{2}=\frac{3}{2}$$</p></div>
@@ -36,7 +36,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{9}{2}$</div>
-        <div class="steps"><p>交点 $x^2=x+2 \Rightarrow x=-1,2$。<br>$$S=\int_{-1}^{2}(x+2-x^2)dx=\left[\frac{x^2}{2}+2x-\frac{x^3}{3}\right]_{-1}^{2}=\frac{9}{2}$$</p></div>
+        <div class="steps"><p>交点 $x^2=x+2 \Rightarrow x=-1,2$。<br>$$S=\int_{-1}^{2}(x+2-x^2)dx=\left[\frac{x^2}{2}+2x-\frac{x^3}{3}\right]_{-1}^{2}=\frac{9}{2}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：交点 x=-1,2，S=∫_{-1}^{2}(x+2-x^2)dx=9/2，solver 与 B 正确，A 的 25/6 计算错误。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a=3$</div>
@@ -64,7 +65,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle (1)\ p=-\frac{4}{5},\ q=3;\qquad (2)\ S_{\max}=\frac{225}{32}$</div>
-        <div class="steps"><p>根为 $x=0$ 与 $x=-\frac qp$：<br>$$S=\int_0^{-q/p}(px^2+qx)dx=\frac{q^3}{6p^2}$$<br>相切条件：$px^2+(q+1)x-5=0$ 有重根，$\Delta=(q+1)^2+20p=0$，即 $p=-\dfrac{(q+1)^2}{20}$。<br>$$S(q)=\frac{200}{3}\cdot\frac{q^3}{(q+1)^4},\qquad \frac{d}{dq}\left[\frac{q^3}{(q+1)^4}\right]=\frac{q^2(3-q)}{(q+1)^5}$$<br>$q=3$ 时最大，此时 $p=-\frac{16}{20}=-\frac45$（切点 $(2.5,2.5)$ 在第一象限 ✓）。<br>$$S_{\max}=\frac{200}{3}\cdot\frac{27}{256}=\frac{225}{32}$$</p></div>
+        <div class="steps"><p>根为 $x=0$ 与 $x=-\frac qp$：<br>$$S=\int_0^{-q/p}(px^2+qx)dx=\frac{q^3}{6p^2}$$<br>相切条件：$px^2+(q+1)x-5=0$ 有重根，$\Delta=(q+1)^2+20p=0$，即 $p=-\dfrac{(q+1)^2}{20}$。<br>$$S(q)=\frac{200}{3}\cdot\frac{q^3}{(q+1)^4},\qquad \frac{d}{dq}\left[\frac{q^3}{(q+1)^4}\right]=\frac{q^2(3-q)}{(q+1)^5}$$<br>$q=3$ 时最大，此时 $p=-\frac{16}{20}=-\frac45$（切点 $(2.5,2.5)$ 在第一象限 ✓）。<br>$$S_{\max}=\frac{200}{3}\cdot\frac{27}{256}=\frac{225}{32}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：相切要求 (q+1)^2+20p=0 即 p=-(q+1)^2/20，代入 S=q^3/(6p^2)=200q^3/(3(q+1)^4) 在 q=3、p=-4/5 取最大 225/32；A 的 (p,q)=(-1/8,3) 与 B 的 (-1/5,15/4) 均不满足相切条件。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle 1$</div>
@@ -87,8 +89,9 @@
         <div class="steps"><p>$\int e^{-x}\sin x\,dx=-\frac{e^{-x}}{2}(\sin x+\cos x)$，故<br>$$\int_0^{\pi}e^{-x}\sin x\,dx=\frac{1+e^{-\pi}}{2},\qquad \int_{k\pi}^{(k+1)\pi}e^{-x}|\sin x|\,dx=e^{-k\pi}\cdot\frac{1+e^{-\pi}}{2}$$<br>$$S=\frac{1+e^{-\pi}}{2}\sum_{k=0}^{\infty}e^{-k\pi}=\frac{1+e^{-\pi}}{2(1-e^{-\pi})}=\frac{e^{\pi}+1}{2(e^{\pi}-1)}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle S_n=\frac{(e^{\pi}+1)(1-e^{-n\pi})}{2(e^{\pi}-1)},\qquad \lim_{n\to\infty}S_n=\frac{e^{\pi}+1}{2(e^{\pi}-1)}$</div>
-        <div class="steps"><p>同上分割：$\int_{k\pi}^{(k+1)\pi}e^{-x}|\sin x|dx=e^{-k\pi}\cdot\dfrac{1+e^{-\pi}}{2}$。<br>$$S_n=\frac{1+e^{-\pi}}{2}\cdot\frac{1-e^{-n\pi}}{1-e^{-\pi}}=\frac{(e^{\pi}+1)(1-e^{-n\pi})}{2(e^{\pi}-1)}$$<br>$$\lim_{n\to\infty}S_n=\frac{e^{\pi}+1}{2(e^{\pi}-1)}$$</p></div>
+      <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle S_n=\frac{(e^{\pi}+1)(1-e^{-n\pi})}{2(e^{\pi}-1)},\quad \lim_{n\to\infty}S_n=\frac{e^{\pi}+1}{2(e^{\pi}-1)}$</div>
+        <div class="steps"><p>同上分割：$\int_{k\pi}^{(k+1)\pi}e^{-x}|\sin x|dx=e^{-k\pi}\cdot\dfrac{1+e^{-\pi}}{2}$。<br>$$S_n=\frac{1+e^{-\pi}}{2}\cdot\frac{1-e^{-n\pi}}{1-e^{-\pi}}=\frac{(e^{\pi}+1)(1-e^{-n\pi})}{2(e^{\pi}-1)}$$<br>$$\lim_{n\to\infty}S_n=\frac{e^{\pi}+1}{2(e^{\pi}-1)}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：每瓣面积为 e^{-k\pi}(1+e^{-\pi})/2，求和需乘首瓣因子 (1+e^{-\pi})/2，A 漏掉该因子得 e^{\pi}/(2(e^{\pi}-1))，错误。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（17）</span><div class="ansline">$\displaystyle S(t) 在 t=\ln 2 处取最大值 S_{\max}=\frac{3+4\ln 2}{64}$</div>
@@ -104,7 +107,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.29.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T2_0.png" alt="k29_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T2_1.png" alt="k29_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
         <div class="steps"><p>极坐标下 $r^2=\cos2\theta$，$\theta\in[-\frac{\pi}{4},\frac{\pi}{4}]$ 等四支，由对称性<br>$$S=4\cdot\frac12\int_0^{\pi/4}\cos2\theta\,d\theta=2\int_0^{\pi/4}\cos2\theta\,d\theta$$<br>故选 A。</p></div>
@@ -131,7 +134,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T3_0.png" alt="k29_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle L（对应 t>0，即 x>1 的部分）是凸的（向上凸）$</div>
         <div class="steps"><p>$$\frac{dy}{dx}=\frac{4-2t}{2t}=\frac{2}{t}-1,\qquad \frac{d^2y}{dx^2}=\frac{d(2/t-1)/dt}{dx/dt}=\frac{-2/t^2}{2t}=-\frac{1}{t^3}&lt;0\ (t&gt;0)$$<br>故 $L$ 在整个定义段（$t&gt;0$，即 $x&gt;1$）上是凸的（向上凸）。</p></div>
@@ -154,7 +157,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.29.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T4_0.png" alt="k29_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T4_1.png" alt="k29_T4 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T4_2.png" alt="k29_T4 题目图 3"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T4_3.png" alt="k29_T4 题目图 4"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T4_4.png" alt="k29_T4 题目图 5">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 4\pi+\frac{3\pi^2}{2}$</div>
         <div class="steps"><p>$$V=\pi\int_0^{\pi}(1+\sin x)^2dx=\pi\left[\int_0^{\pi}1\,dx+2\int_0^{\pi}\sin x\,dx+\int_0^{\pi}\sin^2x\,dx\right]=\pi\left(\pi+4+\frac{\pi}{2}\right)=4\pi+\frac{3\pi^2}{2}$$</p></div>
@@ -184,8 +187,9 @@
         <div class="steps"><p>(1) $$V(\xi)=\pi\int_0^{\xi}e^{-2x}dx=\frac{\pi}{2}(1-e^{-2\xi}),\qquad \lim_{\xi\to+\infty}V(\xi)=\frac{\pi}{2}$$<br>令 $\frac{\pi}{2}(1-e^{-2a})=\frac{\pi}{4}$ 得 $e^{-2a}=\frac12$，$a=\frac{\ln2}{2}$。<br>(2) 切点 $(t,e^{-t})$，斜率 $-e^{-t}$，切线 $y=e^{-t}(t+1-x)$，两截距为 $t+1$ 与 $e^{-t}(t+1)$。<br>$$A(t)=\frac{(t+1)^2e^{-t}}{2},\qquad A&#x27;(t)=\frac{(t+1)e^{-t}(1-t)}{2}$$<br>$t=1$ 时最大，$A_{\max}=\frac{4e^{-1}}{2}=\frac2e$，切点为 $(1,\frac1e)$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (1)\ a=\frac{1}{e},\ (x_0,y_0)=(e^2,\,1);\qquad (2)\ V_x=\frac{\pi}{2}\left(e^3-e^2+1\right)$</div>
-        <div class="steps"><p>(1) 公切线条件：$\dfrac{a}{2\sqrt{x_0}}=\dfrac{1}{2x_0}$ 且 $a\sqrt{x_0}=\ln\sqrt{x_0}$。前者给 $a\sqrt{x_0}=1$，代入后者 $\ln\sqrt{x_0}=1\Rightarrow x_0=e^2$，$a=\dfrac1e$，$y_0=1$。<br>(2) $y=a\sqrt{x}=\frac{\sqrt x}{e}$ 过原点；$y=\ln\sqrt{x}=\frac12\ln x$ 交 $x$ 轴于 $(1,0)$；两曲线交于 $(e^2,1)$，且 $[0,e^2]$ 上曲线 1 在上。<br>$$V_x=\pi\int_0^{e^2}\frac{x}{e}dx-\pi\int_1^{e^2}\frac{\ln^2x}{4}dx=\frac{\pi e^3}{2}-\frac{\pi}{4}\big[x(\ln^2x-2\ln x+2)\big]_1^{e^2}=\frac{\pi e^3}{2}-\frac{\pi}{2}(e^2-1)=\frac{\pi}{2}(e^3-e^2+1)$$</p></div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (1)\ a=\frac{1}{e},\ (x_0,y_0)=(e^2,1);\qquad (2)\ V_x=\frac{\pi}{2}$</div>
+        <div class="steps"><p>(1) 公切线条件：$\dfrac{a}{2\sqrt{x_0}}=\dfrac{1}{2x_0}$ 且 $a\sqrt{x_0}=\ln\sqrt{x_0}$。前者给 $a\sqrt{x_0}=1$，代入后者 $\ln\sqrt{x_0}=1\Rightarrow x_0=e^2$，$a=\dfrac1e$，$y_0=1$。<br>(2) $y=a\sqrt{x}=\frac{\sqrt x}{e}$ 过原点；$y=\ln\sqrt{x}=\frac12\ln x$ 交 $x$ 轴于 $(1,0)$；两曲线交于 $(e^2,1)$，且 $[0,e^2]$ 上曲线 1 在上。<br>$$V_x=\pi\int_0^{e^2}\frac{x}{e}dx-\pi\int_1^{e^2}\frac{\ln^2x}{4}dx=\frac{\pi e^3}{2}-\frac{\pi}{4}\big[x(\ln^2x-2\ln x+2)\big]_1^{e^2}=\frac{\pi e^3}{2}-\frac{\pi}{2}(e^2-1)=\frac{\pi}{2}(e^3-e^2+1)$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：V=\pi\int_0^{e^2}\frac{x}{e^2}dx-\frac{\pi}{4}\int_1^{e^2}\ln^2x\,dx=\frac{\pi e^2}{2}-\frac{\pi}{4}(2e^2-2)=\frac{\pi}{2}，A、B 正确，solver 多出 (e^3-e^2+1) 因子。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle B$</div>
@@ -196,9 +200,10 @@
         <div class="steps"><p>交点 $A\left(\frac{1}{\sqrt{1+a}},\frac{a}{1+a}\right)$，直线 $OA$：$y=\frac{a}{\sqrt{1+a}}x$（在 $[0,x_A]$ 上位于抛物线上方）。<br>$$V=\pi\int_0^{1/\sqrt{1+a}}\left[\frac{a^2}{1+a}x^2-a^2x^4\right]dx=\frac{2\pi}{15}\cdot\frac{a^2}{(1+a)^{5/2}}$$<br>$\dfrac{d}{da}=\pi a(1+a)^{-7/2}\left(2-\dfrac a2\right)=0\Rightarrow a=4$。<br>$$V_{\max}=\frac{2\pi}{15}\cdot\frac{16}{25\sqrt5}=\frac{32\sqrt5\,\pi}{1875}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle V(a)=\pi a^2；a=1 时 V 最小，V_{min}=\pi$</div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle (1)\ V(a)=\frac{\pi a^2}{(\ln a)^2};\qquad (2)\ a=e,\ V_{\min}=\pi e^2$</div>
         <div class="steps"><p>(1) $y^2=xe^{-x/a}$，令 $u=x/a$：<br>$$V(a)=\pi\int_0^{+\infty}xe^{-x/a}dx=\pi a^2\int_0^{+\infty}ue^{-u}du=\pi a^2$$<br>(2) $V&#x27;(a)=2\pi a&gt;0$，$V(a)$ 在 $a&gt;1$ 内单调增，故在边界 $a=1$ 处取得最小，$V_{\min}=\pi$。</p>
-<p>（注：若严格限定开区间 a&gt;1，则最小值取不到、下确界为 π；按教材标准答案取 a=1，V=π。）</p></div>
+<p>（注：若严格限定开区间 a&gt;1，则最小值取不到、下确界为 π；按教材标准答案取 a=1，V=π。）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：已核对原书（[2007,二]），曲线为 y=\sqrt{x}\,a^{-x/(2a)} 而非 e^{-x/(2a)}，故 V(a)=\pi\int_0^{\infty}x\,a^{-x/a}dx=\pi a^2/(\ln a)^2，a=e 时最小 \pi e^2；solver 题干抄错导致答案错误，A、B 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle \frac{4\pi}{3}$</div>
@@ -238,7 +243,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.29.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T5_0.png" alt="k29_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T5_1.png" alt="k29_T5 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k29_T5_2.png" alt="k29_T5 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{\pi}{2}$</div>
         <div class="steps"><p>柱壳法：<br>$$V=2\pi\int_1^2x|y|dx=-2\pi\int_1^2(x^3-3x^2+2x)dx=-2\pi\left[\frac{x^4}{4}-x^3+x^2\right]_1^2=-2\pi\left(-\frac14\right)=\frac{\pi}{2}$$</p></div>
@@ -252,8 +257,9 @@
         <div class="steps"><p>(1) $$V_1=\pi\int_a^2 4x^4dx=\frac{4\pi}{5}(32-a^5),\qquad V_2=2\pi\int_0^a x\cdot2x^2dx=2\pi\cdot\frac{a^4}{2}\cdot\;?\;=2\pi\int_0^a2x^3dx=\pi a^4$$<br>(2) 令 $g(a)=V_1+V_2=\frac{4\pi}{5}(32-a^5)+\pi a^4$，$g&#x27;(a)=-4\pi a^4+4\pi a^3=4\pi a^3(1-a)$，$a=1$ 为唯一驻点且先增后减。<br>$$g(1)=\frac{124\pi}{5}+\pi=\frac{129\pi}{5}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{\pi(\pi-2)}{2}$</div>
-        <div class="steps"><p>$$V=\pi\int_e^{+\infty}\frac{dx}{x(1+\ln^2x)}=\pi\big[\arctan(\ln x)\big]_e^{+\infty}=\pi\left(\frac{\pi}{2}-1\right)=\frac{\pi(\pi-2)}{2}$$</p></div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{\pi^2}{4}$</div>
+        <div class="steps"><p>$$V=\pi\int_e^{+\infty}\frac{dx}{x(1+\ln^2x)}=\pi\big[\arctan(\ln x)\big]_e^{+\infty}=\pi\left(\frac{\pi}{2}-1\right)=\frac{\pi(\pi-2)}{2}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：V=\pi\int_e^{\infty}\frac{dx}{x(1+\ln^2x)}=\pi\big[\arctan(\ln x)\big]_e^{\infty}=\pi(\frac{\pi}{2}-\frac{\pi}{4})=\frac{\pi^2}{4}，A 正确，solver 与 B 的 \pi(\pi-2)/2 错误。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=7\sqrt7$</div>
@@ -277,7 +283,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.29.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T6_0.png" alt="k29_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (Ⅰ)\ A=\frac{e}{2}-1;\qquad (Ⅱ)\ V=\frac{\pi}{6}\left(5e^2-12e+3\right)$</div>
         <div class="steps"><p>设切点 $(x_0,\ln x_0)$，切线 $y=\frac{x}{x_0}$ 过原点要求 $\ln x_0=1$，故 $x_0=e$，切线 $y=\dfrac xe$，切点 $(e,1)$；曲线交 $x$ 轴于 $(1,0)$。<br>(Ⅰ) $$A=\int_0^1\frac{x}{e}dx+\int_1^e\left(\frac{x}{e}-\ln x\right)dx=\frac{1}{2e}+\left(\frac{e}{2}-\frac{1}{2e}\right)-1=\frac{e}{2}-1$$<br>(Ⅱ) 横截 $y\in[0,1]$：区域介于 $x=ey$（切线）与 $x=e^y$（曲线）之间，绕 $x=e$ 旋转，外半径 $e(1-y)$，内半径 $e-e^y$：<br>$$V=\pi\int_0^1\left[e^2(1-y)^2-(e-e^y)^2\right]dy=\pi\left(\frac{e^2}{3}+\frac{e^2}{2}-2e+\frac12\right)=\frac{\pi}{6}(5e^2-12e+3)$$</p></div>
@@ -296,7 +302,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T7_0.png" alt="k29_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{448\pi}{15}$</div>
         <div class="steps"><p>$|x|\le1$ 时 $y=2+x^2$；$1\le|x|\le2$ 时 $y=4-x^2$（交 $x$ 轴于 $x=\pm2$）。图形位于 $y=3$ 下方，绕 $y=3$ 旋转用垫圈法，内半径 $3-y=|x^2-1|$，外半径 3：<br>$$V=\pi\int_{-2}^{2}\left[9-(x^2-1)^2\right]dx=\pi\int_{-2}^{2}(8+2x^2-x^4)dx=2\pi\left[8x+\frac{2x^3}{3}-\frac{x^5}{5}\right]_0^2=2\pi\left(16+\frac{16}{3}-\frac{32}{5}\right)=\frac{448\pi}{15}$$</p></div>
@@ -311,7 +317,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T8_0.png" alt="k29_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{\pi(\sqrt3+1)}{12}$</div>
         <div class="steps"><p>$$\bar y=\frac{1}{\frac{\sqrt3}{2}-\frac12}\int_{1/2}^{\sqrt3/2}\frac{x^2}{\sqrt{1-x^2}}dx\;\xrightarrow{x=\sin u}\;\frac{2}{\sqrt3-1}\int_{\pi/6}^{\pi/3}\sin^2u\,du=\frac{2}{\sqrt3-1}\cdot\frac{\pi}{12}=\frac{\pi}{6(\sqrt3-1)}=\frac{\pi(\sqrt3+1)}{12}$$</p></div>

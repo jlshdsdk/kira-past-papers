@@ -21,45 +21,96 @@
 
   <div class="card q" id="k19_T1">
     <div class="qhead"><span class="qno">k19_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">2003</span> <span class="badge year">2004</span> <span class="badge year">2021</span> <span class="badge year">2023</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.19.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T1_0.png" alt="k19_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k19_T1_1.png" alt="k19_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=0；P=(\ (1,2,0)^T,\ (0,0,1)^T,\ (1,-2,0)^T\ )，\ P^{-1}AP=\mathrm{diag}(6,6,-2)$</div>
+        <div class="steps"><p>$A$ 的特征多项式按分块：$\begin{pmatrix}2&amp;2\\8&amp;2\end{pmatrix}$ 的特征值为 $6,-2$，另有特征值 $6$，故<br>$$\lambda=6\,(\text{二重}),\ -2 .$$<br>$A$ 可对角化 $\iff\lambda=6$ 的几何重数为 $2\iff r(A-6E)=1$。<br>$$A-6E=\begin{pmatrix}-4&amp;2&amp;0\\8&amp;-4&amp;a\\0&amp;0&amp;0\end{pmatrix},$$<br>第 2 行须为第 1 行的 $-2$ 倍：$(8,-4,a)=-2(-4,2,0)=(8,-4,0)$，得 $a=0$。</p>
+<p>**特征向量**：<br>- $\lambda=6$：$(A-6E)x=0\Rightarrow -4x_1+2x_2=0$，得 $\xi_1=(1,2,0)^T,\ \xi_2=(0,0,1)^T$；<br>- $\lambda=-2$：$(A+2E)x=0\Rightarrow 4x_1+2x_2=0,\ x_3=0$，得 $\xi_3=(1,-2,0)^T$。</p>
+<p>$$P=\begin{pmatrix}1&amp;0&amp;1\\2&amp;0&amp;-2\\0&amp;1&amp;0\end{pmatrix},\qquad P^{-1}AP=\Lambda=\begin{pmatrix}6&amp;&amp;\\&amp;6&amp;\\&amp;&amp;-2\end{pmatrix}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ \lambda_1=1+(n-1)b\ (\text{特征向量}\ k(1,\dots,1)^T)；\lambda_2=1-b\ (n-1\ \text{重}，\text{特征向量为}\ \sum x_i=0\ \text{的非零解})；(II)\ P=((1,\dots,1)^T,\xi_1,\dots,\xi_{n-1})$</div>
+        <div class="steps"><p>$A=(1-b)E+bJ$，其中 $J$ 为全 1 阵。$J$ 的特征值为 $n$（特征向量 $e=(1,\dots,1)^T$）与 $0$（$n-1$ 重）。</p>
+<p>**(I)** 故 $A$ 的特征值：<br>$$\lambda_1=(1-b)+bn=1+(n-1)b,\qquad \lambda_2=(1-b)+0=1-b\ (n-1\ \text{重}).$$<br>- $\lambda_1$：$Ae=\lambda_1 e$，特征向量 $k(1,1,\dots,1)^T\ (k\neq0)$；<br>- $\lambda_2$：$Ax=\lambda_2 x\iff Jx=0\iff x_1+\cdots+x_n=0$，基础解系<br>$$\xi_1=(-1,1,0,\dots,0)^{T},\ \xi_2=(-1,0,1,\dots,0)^{T},\ \dots,\ \xi_{n-1}=(-1,0,\dots,0,1)^{T},$$<br>特征向量为 $k_1\xi_1+\cdots+k_{n-1}\xi_{n-1}$（不全为 0）。</p>
+<p>**(II)** 取<br>$$P=(e,\ \xi_1,\ \xi_2,\ \dots,\ \xi_{n-1}),$$<br>则 $P$ 可逆（列线性无关）且<br>$$P^{-1}AP=\mathrm{diag}\big(1+(n-1)b,\ \underbrace{1-b,\ \dots,\ 1-b}_{n-1\ \text{个}}\big).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a=1,\ b=1\ \text{或}\ a=-1,\ b=3（各附对应}\ P）$</div>
+        <div class="steps"><p>$$|\lambda E-A|=(b-\lambda)\big[(2-\lambda)^{2}-1\big]=(b-\lambda)(1-\lambda)(3-\lambda),$$<br>特征值为 $\{b,\,1,\,3\}$。仅有两个不同特征值 $\iff b=1$ 或 $b=3$。</p>
+<p>**情形 $b=1$**：特征值 $1,1,3$。可对角化 $\iff r(A-E)=1$。<br>$$A-E=\begin{pmatrix}1&amp;1&amp;0\\1&amp;1&amp;0\\1&amp;a&amp;0\end{pmatrix}\Rightarrow\text{第 3 行}=\text{第 1 行}\Rightarrow a=1 .$$<br>- $\lambda=1$：$x_1+x_2=0$，$\xi_1=(1,-1,0)^T,\ \xi_2=(0,0,1)^T$；<br>- $\lambda=3$：$\xi_3=(1,1,1)^T$（验证 $A\xi_3=(3,3,3)^T$）。</p>
+<p>$$P=\begin{pmatrix}1&amp;0&amp;1\\-1&amp;0&amp;1\\0&amp;1&amp;1\end{pmatrix},\qquad P^{-1}AP=\mathrm{diag}(1,1,3).$$</p>
+<p>**情形 $b=3$**：特征值 $1,3,3$。可对角化 $\iff r(A-3E)=1$。<br>$$A-3E=\begin{pmatrix}-1&amp;1&amp;0\\1&amp;-1&amp;0\\1&amp;a&amp;0\end{pmatrix}\Rightarrow\text{第 3 行}=-\text{第 1 行}\Rightarrow a=-1 .$$<br>- $\lambda=3$：$x_2=x_1$，$\xi_1=(1,1,0)^T,\ \xi_2=(0,0,1)^T$；<br>- $\lambda=1$：$A-E=\begin{pmatrix}1&amp;1&amp;0\\1&amp;1&amp;0\\1&amp;-1&amp;2\end{pmatrix}\Rightarrow\xi_3=(1,-1,-1)^T$。</p>
+<p>$$P=\begin{pmatrix}1&amp;0&amp;1\\1&amp;0&amp;-1\\0&amp;1&amp;-1\end{pmatrix},\qquad P^{-1}AP=\mathrm{diag}(3,3,1).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I)\ A=\begin{pmatrix}1&1&1\\2&-1&1\\0&1&-1\end{pmatrix}；(II)\ P=(\,(1,0,-2)^T,(4,3,1)^T,(0,1,-1)^T\,)，\ \Lambda=\mathrm{diag}(-1,2,-2)$</div>
+        <div class="steps"><p>**(I)** 取 $x=e_1,e_2,e_3$ 得 $A$ 的各列：<br>$$A=\begin{pmatrix}1&amp;1&amp;1\\2&amp;-1&amp;1\\0&amp;1&amp;-1\end{pmatrix}.$$</p>
+<p>**(II)** <br>$$|\lambda E-A|=\lambda^{3}-\lambda^{2}-4\lambda+4=(\lambda+1)(\lambda-2)(\lambda+2),$$<br>特征值 $\lambda=-1,\ 2,\ -2$。（检验迹：$-1+2-2=-1=\mathrm{tr}(A)$。）</p>
+<p>分别解 $(A-\lambda E)x=0$：<br>- $\lambda=-1$：$\xi_1=(1,0,-2)^T$（$A\xi_1=(-1,0,2)^T$）；<br>- $\lambda=2$：$\xi_2=(4,3,1)^T$（$A\xi_2=(8,6,2)^T$）；<br>- $\lambda=-2$：$\xi_3=(0,1,-1)^T$（$A\xi_3=(0,-2,2)^T$）。</p>
+<p>$$P=\begin{pmatrix}1&amp;4&amp;0\\0&amp;3&amp;1\\-2&amp;1&amp;-1\end{pmatrix},\qquad<br>\Lambda=\begin{pmatrix}-1&amp;&amp;\\&amp;2&amp;\\&amp;&amp;-2\end{pmatrix},\qquad P^{-1}AP=\Lambda.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k19_T2">
     <div class="qhead"><span class="qno">k19_T2</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2012</span> <span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T2_0.png" alt="k19_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>由 $P^{-1}AP=\mathrm{diag}(1,1,2)$：$A\alpha_1=\alpha_1,\ A\alpha_2=\alpha_2,\ A\alpha_3=2\alpha_3$。</p>
+<p>$Q$ 的列依次为 $\beta_1=\alpha_1+\alpha_2,\ \beta_2=\alpha_2,\ \beta_3=\alpha_3$：<br>$$A\beta_1=\alpha_1+\alpha_2=\beta_1,\qquad A\beta_2=\beta_2,\qquad A\beta_3=2\beta_3,$$<br>故<br>$$Q^{-1}AQ=\begin{pmatrix}1&amp;&amp;\\&amp;1&amp;\\&amp;&amp;2\end{pmatrix},$$<br>选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>由 $P^{-1}AP=\mathrm{diag}(0,1,2)$：$A\alpha_1=0,\ A\alpha_2=\alpha_2,\ A\alpha_3=2\alpha_3$。</p>
+<p>$$A(\alpha_1+\alpha_2+\alpha_3)=0+\alpha_2+2\alpha_3=\alpha_2+2\alpha_3,$$<br>选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k19_T3">
     <div class="qhead"><span class="qno">k19_T3</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T3_0.png" alt="k19_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)\ \dfrac{5}{2},\ \dfrac{1}{2}$</div>
+        <div class="steps"><p>$\beta_1=(1,0,1)^{T}$，$(\beta_1,\beta_1)=2$。</p>
+<p>$\beta_2=\alpha_2-k\beta_1$ 与 $\beta_1$ 正交：$(\alpha_2,\beta_1)-k(\beta_1,\beta_1)=2-2k=0\Rightarrow k=1$，得 $\beta_2=(0,2,0)^{T}$，$(\beta_2,\beta_2)=4$，$(\beta_2,\beta_1)=0$。</p>
+<p>$(\beta_3,\beta_1)=0$：<br>$$(\alpha_3,\beta_1)-l_1(\beta_1,\beta_1)-l_2(\beta_2,\beta_1)=5-2l_1=0\ \Longrightarrow\ l_1=\frac52\quad((\alpha_3,\beta_1)=3+0+2=5).$$</p>
+<p>$(\beta_3,\beta_2)=0$：<br>$$(\alpha_3,\beta_2)-l_1(\beta_1,\beta_2)-l_2(\beta_2,\beta_2)=2-4l_2=0\ \Longrightarrow\ l_2=\frac12\quad((\alpha_3,\beta_2)=2).$$</p>
+<p>故 $l_1=\dfrac52,\ l_2=\dfrac12$，选 **A**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k19_T4">
     <div class="qhead"><span class="qno">k19_T4</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1996</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.19.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k19_T4_0.png" alt="k19_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1)\ y=2；(2)\ P\ \text{的列为}\ (1,0,0,0)^T,(0,1,0,0)^T,\frac{1}{\sqrt2}(0,0,1,1)^T,\frac{1}{\sqrt2}(0,0,1,-1)^T,\ \text{此时}\ (AP)^T(AP)=\mathrm{diag}(1,1,9,1)$</div>
+        <div class="steps"><p>**(1)** $A$ 分块对角：$\mathrm{diag}\big(A_1,A_2\big)$，$A_1=\begin{pmatrix}0&amp;1\\1&amp;0\end{pmatrix}$（特征值 $\pm1$），$A_2=\begin{pmatrix}y&amp;1\\1&amp;2\end{pmatrix}$。特征值 3 只能来自 $A_2$：<br>$$|A_2-3E|=(y-3)(-1)-1=2-y=0\ \Longrightarrow\ y=2 .$$</p>
+<p>**(2)** $y=2$ 时 $A$ 实对称，$A^{T}A=A^{2}$ 为分块对角：<br>$$A^{2}=\begin{pmatrix}I_2&amp;\\&amp;\begin{pmatrix}2&amp;1\\1&amp;2\end{pmatrix}^{2}\end{pmatrix}<br>=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;5&amp;4\\0&amp;0&amp;4&amp;5\end{pmatrix}.$$<br>$$(AP)^{T}(AP)=P^{T}A^{2}P .$$<br>取 $P$ 为正交矩阵，其列为 $A^{2}$ 的特征向量：<br>- $\lambda=1$：$e_1=(1,0,0,0)^{T},\ e_2=(0,1,0,0)^{T}$；<br>- 二阶块 $\begin{pmatrix}5&amp;4\\4&amp;5\end{pmatrix}$：$\lambda=9$ 对应 $\dfrac{1}{\sqrt2}(0,0,1,1)^{T}$，$\lambda=1$ 对应 $\dfrac{1}{\sqrt2}(0,0,1,-1)^{T}$。</p>
+<p>则<br>$$(AP)^{T}(AP)=\mathrm{diag}(1,\,1,\,9,\,1).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

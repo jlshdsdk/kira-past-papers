@@ -21,56 +21,172 @@
 
   <div class="card q" id="k17_T1">
     <div class="qhead"><span class="qno">k17_T1</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1990</span> <span class="badge year">1998</span> <span class="badge year">1999</span> <span class="badge year">2009</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T1_0.png" alt="k17_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle x_1+x_2 不是 A 的特征向量$</div>
+        <div class="steps"><p>反证法。设 $x_1+x_2$ 是 $A$ 的属于 $\lambda$ 的特征向量，则<br>$$A(x_1+x_2)=\lambda(x_1+x_2).$$<br>又 $Ax_1=\lambda_1 x_1,\ Ax_2=\lambda_2 x_2$，故<br>$$\lambda_1 x_1+\lambda_2 x_2=\lambda x_1+\lambda x_2,$$<br>即 $(\lambda_1-\lambda)x_1+(\lambda_2-\lambda)x_2=0$。</p>
+<p>属于不同特征值的特征向量线性无关，故 $x_1,x_2$ 线性无关，于是<br>$$\lambda_1-\lambda=0,\qquad \lambda_2-\lambda=0,$$<br>得 $\lambda_1=\lambda_2$，与 $\lambda_1\neq\lambda_2$ 矛盾。故 $x_1+x_2$ 不是 $A$ 的特征向量。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ A^2=O；(II)\ 特征值全为 0（n 重），特征向量为 \beta^Tx=0 的一切非零解 k_1\xi_1+\cdots+k_{n-1}\xi_{n-1}$</div>
+        <div class="steps"><p>**(I)**<br>$$A^2=\alpha\beta^T\alpha\beta^T=\alpha(\beta^T\alpha)\beta^T=(\alpha^T\beta)\,\alpha\beta^T=O\cdot A=O.$$</p>
+<p>**(II)** 由 $A^2=O$，$A$ 的任一特征值 $\lambda$ 满足 $\lambda^2=0$，故 $\lambda=0$（$n$ 重）。（又 $\mathrm{tr}(A)=\beta^T\alpha=\alpha^T\beta=0$ 相符。）</p>
+<p>因 $\alpha\neq 0$，<br>$$Ax=\alpha(\beta^Tx)=0\iff \beta^Tx=0 .$$<br>故属于 $\lambda=0$ 的全部特征向量为 $\beta^Tx=0$ 的全部非零解：取其基础解系 $\xi_1,\dots,\xi_{n-1}$（共 $n-1$ 个，因 $\beta\neq0$），则<br>$$x=k_1\xi_1+\cdots+k_{n-1}\xi_{n-1}\quad(k_1,\dots,k_{n-1}\ \text{不全为}\ 0).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle n,\ 0,\ \cdots,\ 0\ (0\ \text{为}\ n-1\ \text{重})$</div>
+        <div class="steps"><p>记 $e=(1,1,\dots,1)^T$，则 $A=ee^T$。</p>
+<p>$Ae=(e^Te)e=ne$，故 $n$ 是 $A$ 的特征值；又 $r(A)=1$，故 $0$ 至少是 $n-1$ 重特征值，且 $n$ 个特征值之和 $=\mathrm{tr}(A)=n$，恰好 $n+0+\cdots+0=n$。</p>
+<p>所以 $A$ 的 $n$ 个特征值为 $n,0,\dots,0$（$0$ 共 $n-1$ 个）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>$$(\beta\alpha^T)\beta=\beta(\alpha^T\beta)=2\beta,$$<br>且 $\beta\neq 0$（否则 $\alpha^T\beta=0\neq2$），故 $2$ 是 $\beta\alpha^T$ 的特征值。</p>
+<p>又 $r(\beta\alpha^T)\le 1$，故 $0$ 至少是二重特征值，非零特征值只有一个，即为 $2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a\in(-\infty,\ 0)$</div>
+        <div class="steps"><p>**A 的特征值**：$|A-\lambda E|=(1-\lambda)\big[(a-\lambda)^2-4\big]$，得<br>$$\lambda_1=1,\quad \lambda_2=a-2,\quad \lambda_3=a+2,$$<br>故 $m(A)=\max\{1,a+2\}=\begin{cases}a+2,&amp;a\ge-1,\\ 1,&amp;a&lt;-1.\end{cases}$</p>
+<p>**B 的特征值**：$B(1,0,1)^T=(a-1)(1,0,1)^T$，得 $\lambda=a-1$；由 $\mathrm{tr}(B)=2a+2$ 与 $\det B=2a^2-2$，其余两特征值之和为 $a+3$、积为 $2(a+1)$，解 $\mu^2-(a+3)\mu+2(a+1)=0$，判别式 $(a-1)^2$，得<br>$$\mu_1=a+1,\qquad \mu_2=2 .$$<br>即 $B$ 的特征值为 $a-1,\ a+1,\ 2$，故<br>$$m(B)=\begin{cases}a+1,&amp;a\ge 1,\\ 2,&amp;a&lt;1.\end{cases}$$</p>
+<p>**分域比较 $m(A)&lt;m(B)$**：<br>- $a&lt;-1$：$m(A)=1&lt;2=m(B)$，成立；<br>- $-1\le a&lt;1$：需 $a+2&lt;2$，即 $a&lt;0$，得 $-1\le a&lt;0$；<br>- $a\ge1$：需 $a+2&lt;a+1$，不成立。</p>
+<p>综上 $a&lt;0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (D)$</div>
+        <div class="steps"><p>条件即 $A^2-AB-BA+B^2=O$，亦即<br>$$(A-B)^2=O .$$<br>记 $N=A-B\neq O$（因 $A\neq B$），则 $N^2=O$。</p>
+<p>**A 正确**：$N^3=N^2\cdot N=O$。</p>
+<p>**B 正确**：$N^2=O\Rightarrow$ 任一特征值满足 $\lambda^2=0\Rightarrow$ 特征值全为 $0$。</p>
+<p>**C 正确**：若 $A,B$ 均为对角阵，则 $AB=BA$，条件化为 $2AB=A^2+B^2$，即 $(A-B)^2=O$；对角阵之差仍是对角阵，其平方为零必为零矩阵，得 $A=B$，矛盾。故 $A,B$ 不能都是对角阵。</p>
+<p>（满足条件的例子确实存在：取 $A=N$（任一 $N^2=O,\ N\neq O$ 的 3 阶幂零阵），$B=O$。）</p>
+<p>**D 错误**：3 阶幂零阵若含 3 阶若尔当块则 $N^2\neq O$，故 $N$ 的若尔当型只能是 $J_2\oplus J_1$，恰有 $2$ 个线性无关特征向量，而非 $1$ 个。</p>
+<p>故选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k17_T2">
     <div class="qhead"><span class="qno">k17_T2</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1989</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1998</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T2_0.png" alt="k17_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{1}{\lambda}\ \text{是}\ A^{-1}\ \text{的特征值}；\frac{|A|}{\lambda}\ \text{是}\ A^{*}\ \text{的特征值}$</div>
+        <div class="steps"><p>设 $Ax=\lambda x,\ x\neq0$。</p>
+<p>因 $A$ 可逆，$|A|=\prod\lambda_i\neq0$，故 $\lambda\neq0$。由 $Ax=\lambda x$ 得<br>$$x=\lambda A^{-1}x\ \Longrightarrow\ A^{-1}x=\frac{1}{\lambda}x,$$<br>即 $\dfrac{1}{\lambda}$ 是 $A^{-1}$ 的特征值（特征向量仍为 $x$）。</p>
+<p>又 $A^{*}=|A|A^{-1}$，故<br>$$A^{*}x=|A|A^{-1}x=\frac{|A|}{\lambda}x,$$<br>即 $\dfrac{|A|}{\lambda}$ 是 $A^{*}$ 的特征值。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>由上题，$A^{*}x=\dfrac{|A|}{\lambda}x=\lambda^{-1}|A|\,x$，故 $A^{*}$ 的特征值为 $\lambda^{-1}|A|$。</p>
+<p>选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (1)\ \beta=2\xi_1-2\xi_2+\xi_3；(2)\ A^n\beta=2\xi_1-2^{n+1}\xi_2+3^n\xi_3$</div>
+        <div class="steps"><p>**(1)** 设 $x_1\xi_1+x_2\xi_2+x_3\xi_3=\beta$：<br>$$\begin{cases}x_1+x_2+x_3=1,\\ x_1+2x_2+3x_3=1,\\ x_1+4x_2+9x_3=3.\end{cases}$$<br>第2式−第1式：$x_2+2x_3=0$；第3式−第2式：$2x_2+6x_3=2$，即 $x_2+3x_3=1$。<br>两式相减得 $x_3=1$，回代得 $x_2=-2,\ x_1=2$。故<br>$$\beta=2\xi_1-2\xi_2+\xi_3 .$$</p>
+<p>**(2)** 由 $A\xi_i=\lambda_i\xi_i$ 得 $A^n\xi_i=\lambda_i^n\xi_i$：<br>$$A^n\beta=2\cdot1^n\xi_1-2\cdot2^n\xi_2+3^n\xi_3=2\xi_1-2^{n+1}\xi_2+3^n\xi_3,$$<br>即<br>$$A^n\beta=\begin{pmatrix}2-2^{n+1}+3^n\\ 2-2^{n+2}+3^{n+1}\\ 2-2^{n+3}+3^{n+2}\end{pmatrix}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac{|A|^{2}}{\lambda^{2}}+1$</div>
+        <div class="steps"><p>由 $|A|\neq0$ 知 $\lambda\neq0$。</p>
+<p>$A^{*}$ 有特征值 $\dfrac{|A|}{\lambda}$（见例 5.17.2(1)），故 $(A^{*})^{2}$ 有特征值 $\left(\dfrac{|A|}{\lambda}\right)^{2}$，从而<br>$$(A^{*})^{2}+E\ \text{有特征值}\ \frac{|A|^{2}}{\lambda^{2}}+1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k17_T3">
     <div class="qhead"><span class="qno">k17_T3</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1987</span> <span class="badge year">1989</span> <span class="badge year">2002</span> <span class="badge year">2003</span> <span class="badge year">2017</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T3_0.png" alt="k17_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k17_T3_1.png" alt="k17_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{实特征值仅 }\lambda=1,\ \text{对应特征向量}\ k(0,2,1)^T\ (k\neq0)$</div>
+        <div class="steps"><p>$$|\lambda E-A|=\begin{vmatrix}\lambda+3&amp;1&amp;-2\\0&amp;\lambda+1&amp;-4\\1&amp;0&amp;\lambda-1\end{vmatrix}<br>=\lambda^{3}+3\lambda^{2}+\lambda-5=(\lambda-1)(\lambda^{2}+4\lambda+5).$$<br>由 $\lambda^2+4\lambda+5=0$ 得 $\lambda=-2\pm\mathrm{i}$（复根），故实特征值仅 $\lambda=1$。</p>
+<p>解 $(A-E)x=0$：<br>$$\begin{pmatrix}-4&amp;-1&amp;2\\0&amp;-2&amp;4\\-1&amp;0&amp;0\end{pmatrix}x=0<br>\ \Longrightarrow\ x_1=0,\ x_2=2x_3 .$$<br>取 $x_3=1$ 得特征向量 $\xi=(0,2,1)^T$（验证：$A\xi=(0,2,1)^T=\xi$）。</p>
+<p>故实特征值 $\lambda=1$，对应特征向量 $k(0,2,1)^T\ (k\neq0)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1)\ \lambda=1\,(\text{二重}),\ -5；(2)\ 2\,(\text{二重}),\ \dfrac{4}{5}$</div>
+        <div class="steps"><p>**(1)**<br>$$|\lambda E-A|=\begin{vmatrix}\lambda+1&amp;-2&amp;-2\\-2&amp;\lambda+1&amp;2\\-2&amp;2&amp;\lambda+1\end{vmatrix}<br>=\lambda^{3}+3\lambda^{2}-9\lambda+5=(\lambda-1)^{2}(\lambda+5).$$<br>（检验：迹 $=1+1-5=-3=\mathrm{tr}(A)$。）</p>
+<p>故 $A$ 的特征值为 $\lambda=1$（二重）与 $\lambda=-5$。</p>
+<p>**(2)** $A$ 无零特征值，故可逆。若 $Ax=\lambda x$，则<br>$$(E+A^{-1})x=\Big(1+\frac{1}{\lambda}\Big)x .$$<br>于是 $E+A^{-1}$ 的特征值为 $1+1=2$（二重）与 $1-\dfrac15=\dfrac45$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 2\,(\text{二重})$</div>
+        <div class="steps"><p>记该矩阵为 $M=2N$，$N=\begin{pmatrix}0&amp;-1&amp;-1\\1&amp;1&amp;-1\\-1&amp;-1&amp;1\end{pmatrix}$。</p>
+<p>$$|\lambda E-N|=-\lambda(\lambda-1)^{2}\quad(\text{按第一行展开计算可得})，$$<br>即 $N$ 的特征值为 $0,1,1$（检验迹：$0+1+1=2=\mathrm{tr}(N)$）。</p>
+<p>故 $M=2N$ 的特征值为 $0,2,2$，非零特征值为 $2$（二重）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \lambda=6\ (k_1(1,2,1)^T,\,k_1\neq0)；\lambda=12\ (\text{二重},\ k_2(1,-1,0)^T+k_3(0,0,1)^T,\ \text{不全为}\,0)$</div>
+        <div class="steps"><p>$A$ 的对角元为 3、非对角元为 2，即 $A=J+2E$（$J$ 为全 1 阵，$J$ 的特征值为 $3,0,0$），故<br>$$\lambda(A)=5,\ 2,\ 2,\qquad |A|=5\cdot2\cdot2=20 .$$<br>$A^{*}=|A|A^{-1}$ 的特征值为 $\dfrac{20}{5}=4,\ \dfrac{20}{2}=10,\ 10$。$B=P^{-1}A^{*}P\sim A^{*}$，故 $B$ 的特征值也是 $4,10,10$，从而<br>$$B+2E\ \text{的特征值为}\ 6,\ 12,\ 12 .$$</p>
+<p>**特征向量**：先求 $A$ 的特征向量——$\lambda=5$：$\eta_1=(1,1,1)^T$；$\lambda=2$：$x_1+x_2+x_3=0$，取 $\eta_2=(-1,1,0)^T,\ \eta_3=(-1,0,1)^T$（$A^{*}$ 与 $A$ 特征向量相同）。</p>
+<p>由 $B=P^{-1}A^{*}P$：若 $A^{*}y=\mu y$，则 $B(Py)=\mu(Py)$。计算<br>$$P\eta_1=\begin{pmatrix}1\\2\\1\end{pmatrix},\qquad<br>P\eta_2=\begin{pmatrix}1\\-1\\0\end{pmatrix},\qquad<br>P\eta_3=\begin{pmatrix}0\\0\\1\end{pmatrix}.$$</p>
+<p>故 $B+2E$：$\lambda=6$ 对应 $k_1(1,2,1)^T\,(k_1\neq0)$；$\lambda=12$ 对应<br>$$k_2\begin{pmatrix}1\\-1\\0\end{pmatrix}+k_3\begin{pmatrix}0\\0\\1\end{pmatrix}\quad(k_2,k_3\ \text{不全为}\ 0).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=-1$</div>
+        <div class="steps"><p>设 $A\xi=\lambda\xi,\ \xi=(1,1,2)^T$：</p>
+<p>- 第 1 行：$4+1-4=1=\lambda$；<br>- 第 2 行：$1+2+2a=3+2a=\lambda=1\Rightarrow a=-1$；<br>- 第 3 行：$3+1-2=2=2\lambda=2$，吻合。</p>
+<p>故 $a=-1$（此时 $\lambda=1$）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (1)\ a=3；(2)\ \alpha=t(1,0,0)^T+k_1(1,-1,0)^T+k_2(2,0,1)^T\ (t\neq0,\ k_1,k_2\ \text{任意})，\ \beta=-t(1,1,1)^T$</div>
+        <div class="steps"><p>**(1)** <br>$$f(\lambda)=|\lambda E-A|=\lambda^{3}-a\lambda^{2}+3\lambda+(a-4)=(\lambda-1)\big[\lambda^{2}+(1-a)\lambda+(4-a)\big],$$<br>即 $\lambda=1$ 恒为根。$1$ 为重根 $\iff$ 二次因式在 $\lambda=1$ 处为零：<br>$$1+(1-a)+(4-a)=6-2a=0\ \Longrightarrow\ a=3,$$<br>此时 $f(\lambda)=(\lambda-1)^{3}$。</p>
+<p>**(2)** $a=3$ 时记 $N=A-E=\begin{pmatrix}-1&amp;-1&amp;2\\-1&amp;-1&amp;2\\-1&amp;-1&amp;2\end{pmatrix}=uv^T$，其中 $u=(1,1,1)^T,\ v=(-1,-1,2)^T$。因 $v^Tu=0$，有 $N^2=u(v^Tu)v^T=O$。</p>
+<p>第一式给出 $\beta=A\alpha-\alpha=N\alpha$；第二式减第一式：<br>$$A^2\alpha-A\alpha=\beta\ \Longrightarrow\ A(\alpha+\beta)-(\alpha+\beta)=\beta\ \Longrightarrow\ A\beta=\beta,$$<br>而当 $\beta=N\alpha$ 时 $N\beta=N^2\alpha=0$，$A\beta=(E+N)\beta=\beta$ 自动成立。</p>
+<p>于是所求解为：$\beta=N\alpha$ 且 $\beta\neq0$，即<br>$$v^T\alpha=-\alpha_1-\alpha_2+2\alpha_3\neq0,\qquad \beta=(-\alpha_1-\alpha_2+2\alpha_3)\,(1,1,1)^T .$$<br>用通解表示：$\ker N:\ x_1+x_2=2x_3$，基础解系 $(1,-1,0)^T,(2,0,1)^T$，再取 $N(1,0,0)^T=(-1,-1,-1)^T$，故<br>$$\alpha=t\begin{pmatrix}1\\0\\0\end{pmatrix}+k_1\begin{pmatrix}1\\-1\\0\end{pmatrix}+k_2\begin{pmatrix}2\\0\\1\end{pmatrix}\ (t\neq0,\ k_1,k_2\ \text{任意})，<br>\qquad \beta=-t\begin{pmatrix}1\\1\\1\end{pmatrix}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k17_T4">
     <div class="qhead"><span class="qno">k17_T4</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2002</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T4_0.png" alt="k17_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>$$(P^{-1}AP)^{T}=P^{T}A\,(P^{-1})^{T}=P^{T}A\,(P^{T})^{-1}.$$<br>取 $y=P^{T}\alpha\neq0$（$P^{T}$ 可逆），则<br>$$P^{T}A(P^{T})^{-1}\,y=P^{T}A\alpha=P^{T}(\lambda\alpha)=\lambda\,P^{T}\alpha=\lambda y .$$<br>故 $(P^{-1}AP)^{T}$ 属于 $\lambda$ 的特征向量是 $P^{T}\alpha$，选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k17_T5">
     <div class="qhead"><span class="qno">k17_T5</span>
-      
+      <span class="badge">共 3 小题</span><span class="badge year">2001</span> <span class="badge year">2008</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.17.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k17_T5_0.png" alt="k17_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ B=\begin{pmatrix}0&0&0\\1&0&3\\0&1&-2\end{pmatrix}；(II)\ |A+E|=-4$</div>
+        <div class="steps"><p>**(I)** 由 $A=PBP^{-1}$ 得 $AP=PB$，而<br>$$AP=(Ax,\ A^{2}x,\ A^{3}x)=(Ax,\ A^{2}x,\ 3Ax-2A^{2}x).$$<br>把每一列用 $P$ 的列 $x,\ Ax,\ A^{2}x$ 表示：<br>$$Ax=0\cdot x+1\cdot Ax+0\cdot A^{2}x,\quad<br>A^{2}x=(0,0,1)^{T}\text{ 系数},\quad<br>A^{3}x=0\cdot x+3Ax-2A^{2}x .$$<br>故<br>$$B=\begin{pmatrix}0&amp;0&amp;0\\1&amp;0&amp;3\\0&amp;1&amp;-2\end{pmatrix}.$$</p>
+<p>**(II)** $A=PBP^{-1}\Rightarrow A\sim B$，故<br>$$|A+E|=|P|\,|B+E|\,|P^{-1}|=|B+E|<br>=\begin{vmatrix}1&amp;0&amp;0\\1&amp;1&amp;3\\0&amp;1&amp;-1\end{vmatrix}=1\times(-1-3)=-4.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$$A(\alpha_1,\alpha_2)=(A\alpha_1,\ A\alpha_2)=(0,\ 2\alpha_1+\alpha_2)<br>=(\alpha_1,\alpha_2)\begin{pmatrix}0&amp;2\\0&amp;1\end{pmatrix}.$$<br>因 $\alpha_1,\alpha_2$ 线性无关，$P=(\alpha_1,\alpha_2)$ 可逆，故 $A\sim\begin{pmatrix}0&amp;2\\0&amp;1\end{pmatrix}$，其特征值为 $0,\ 1$。</p>
+<p>故 $A$ 的非零特征值为 $1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>$$A(\alpha_1,\alpha_2,\alpha_3)=(\alpha_1,\alpha_2,\alpha_3)<br>\underbrace{\begin{pmatrix}2&amp;0&amp;0\\1&amp;1&amp;-1\\1&amp;2&amp;1\end{pmatrix}}_{M}<br>\quad(\alpha_1,\alpha_2,\alpha_3\ \text{无关，坐标唯一}).$$<br>$$|\lambda E-M|=(2-\lambda)\big[(1-\lambda)^{2}+2\big].$$<br>由 $(1-\lambda)^2+2=0$ 得 $\lambda=1\pm\sqrt2\,\mathrm{i}$（复根），故 $M$（从而相似的 $A$）的实特征值仅<br>$$\lambda=2 .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
