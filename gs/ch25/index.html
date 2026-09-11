@@ -17,71 +17,264 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 25</div>
 <h1 class="title">考点 25　不定积分的计算</h1>
-<div class="sub">题组 6 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 0/6　</div>
+<div class="sub">题组 6 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 6/6　</div>
 
   <div class="card q" id="k25_T1">
     <div class="qhead"><span class="qno">k25_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1995</span> <span class="badge year">1997</span> <span class="badge year">2014</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.25.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T1_0.png" alt="k25_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle x+2\ln|x-1|+C$</div>
+        <div class="steps"><p>令 $u=x^2-1$，则 $x^2=u+1$，$x^2-2=u-1$，故</p>
+<p>$$f(u)=\ln\frac{u+1}{u-1}.$$</p>
+<p>令 $u=\varphi(x)$，由 $f[\varphi(x)]=\ln x$ 得</p>
+<p>$$\frac{\varphi(x)+1}{\varphi(x)-1}=x\ \Rightarrow\ \varphi(x)+1=x\varphi(x)-x\ \Rightarrow\ \varphi(x)(x-1)=x+1\ \Rightarrow\ \varphi(x)=\frac{x+1}{x-1}.$$</p>
+<p>验证：$\dfrac{\varphi+1}{\varphi-1}=\dfrac{\frac{2x}{x-1}}{\frac{2}{x-1}}=x$，正确。</p>
+<p>于是</p>
+<p>$$\int\varphi(x)\,dx=\int\frac{x+1}{x-1}\,dx=\int\left(1+\frac{2}{x-1}\right)dx=x+2\ln|x-1|+C.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \arcsin\frac{x-2}{2}+C$</div>
+        <div class="steps"><p>配方：$x(4-x)=4-(x-2)^2$，故</p>
+<p>$$\int\frac{dx}{\sqrt{x(4-x)}}=\int\frac{d(x-2)}{\sqrt{2^2-(x-2)^2}}=\arcsin\frac{x-2}{2}+C.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$f$ 为奇函数且可导 $\Rightarrow f(0)=0$；奇函数的导数为偶函数，故 $f&#x27;(x)=2(|x|-1)$ 于 $[-2,2]$。</p>
+<p>在 $[0,2]$ 上积分：</p>
+<p>$$f(x)=\int 2(x-1)\,dx=x^2-2x+C,$$</p>
+<p>由 $f(0)=0$ 得 $C=0$，即 $f(x)=x^2-2x\ (0\le x\le 2)$，于是 $f(1)=-1$。</p>
+<p>利用周期 4：</p>
+<p>$$f(7)=f(7-8)=f(-1)=-f(1)=-(-1)=1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k25_T2">
     <div class="qhead"><span class="qno">k25_T2</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1987</span> <span class="badge year">1989</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.25.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T2_0.png" alt="k25_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a,b>0 时 \frac{1}{ab}\arctan\left(\frac{a}{b}\tan x\right)+C；a=0(b>0) 时 \frac{\tan x}{b^2}+C；b=0(a>0) 时 -\frac{\cot x}{a^2}+C$</div>
+        <div class="steps"><p>**情形一：$a&gt;0,\ b&gt;0$。** 分子分母同除 $\cos^2x$：</p>
+<p>$$\int\frac{dx}{a^2\sin^2x+b^2\cos^2x}=\int\frac{\sec^2x\,dx}{b^2+a^2\tan^2x}=\frac{1}{b}\int\frac{d\left(\frac{a}{b}\tan x\right)}{1+\left(\frac{a}{b}\tan x\right)^2}=\frac{1}{ab}\arctan\left(\frac{a}{b}\tan x\right)+C.$$</p>
+<p>**情形二：$a=0\ (b&gt;0)$。**</p>
+<p>$$\int\frac{dx}{b^2\cos^2x}=\frac{1}{b^2}\int d(\tan x)=\frac{\tan x}{b^2}+C.$$</p>
+<p>**情形三：$b=0\ (a&gt;0)$。**</p>
+<p>$$\int\frac{dx}{a^2\sin^2x}=\frac{1}{a^2}\int d(-\cot x)=-\frac{\cot x}{a^2}+C.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\frac{1}{\ln x}+C$</div>
+        <div class="steps"><p>$$\int\frac{dx}{x\ln^2x}=\int\frac{d(\ln x)}{\ln^2x}=\int(\ln x)^{-2}\,d(\ln x)=-\frac{1}{\ln x}+C.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k25_T3">
     <div class="qhead"><span class="qno">k25_T3</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 9 小题</span><span class="badge year">1990</span> <span class="badge year">1991</span> <span class="badge year">1993</span> <span class="badge year">1994</span> <span class="badge year">1997</span> <span class="badge year">1998</span> <span class="badge year">2002</span> <span class="badge year">2016</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.25.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T3_0.png" alt="k25_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k25_T3_1.png" alt="k25_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{\ln x}{1-x}-\ln x+\ln|1-x|+C$</div>
+        <div class="steps"><p>由 $d\left(\frac{1}{1-x}\right)=\frac{dx}{(1-x)^2}$，分部积分：</p>
+<p>$$\int\frac{\ln x}{(1-x)^2}\,dx=\int\ln x\,d\left(\frac{1}{1-x}\right)=\frac{\ln x}{1-x}-\int\frac{1}{1-x}\cdot\frac{1}{x}\,dx.$$</p>
+<p>而</p>
+<p>$$\int\frac{dx}{x(1-x)}=\int\left(\frac{1}{x}+\frac{1}{1-x}\right)dx=\ln x-\ln|1-x|.$$</p>
+<p>故</p>
+<p>$$\int\frac{\ln x}{(1-x)^2}\,dx=\frac{\ln x}{1-x}-\ln x+\ln|1-x|+C.$$</p>
+<p>求导验证：$\left(\frac{\ln x}{1-x}\right)&#x27;=\frac{1}{x(1-x)}+\frac{\ln x}{(1-x)^2}$，$(-\ln x+\ln|1-x|)&#x27;=-\frac{1}{x}-\frac{1}{1-x}$，两项相加后分式部分恰好相消，剩 $\dfrac{\ln x}{(1-x)^2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{x^2}{4}-\frac{x\sin 2x}{4}-\frac{\cos 2x}{8}+C$</div>
+        <div class="steps"><p>$$\int x\sin^2x\,dx=\int x\cdot\frac{1-\cos 2x}{2}\,dx=\frac{x^2}{4}-\frac{1}{2}\int x\cos 2x\,dx.$$</p>
+<p>对后者分部积分（$u=x,\ dv=\cos 2x\,dx$）：</p>
+<p>$$\int x\cos 2x\,dx=\frac{x\sin 2x}{2}+\frac{\cos 2x}{4}.$$</p>
+<p>故</p>
+<p>$$\int x\sin^2x\,dx=\frac{x^2}{4}-\frac{x\sin 2x}{4}-\frac{\cos 2x}{8}+C.$$</p>
+<p>求导验证：$\frac{x}{2}-\frac{\sin 2x+2x\cos 2x}{4}+\frac{\sin 2x}{4}=\frac{x(1-\cos 2x)}{2}=x\sin^2x$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(x)=\frac{(1+x^2)\ln(1+x^2)}{2}-\frac{x^2}{2}-\frac{1}{2}$</div>
+        <div class="steps"><p>$$f(x)=\int x\ln(1+x^2)\,dx=\frac{1}{2}\int\ln(1+x^2)\,d(1+x^2).$$</p>
+<p>对 $\int\ln u\,du=u\ln u-u$ 用 $u=1+x^2$：</p>
+<p>$$f(x)=\frac{1}{2}\left[(1+x^2)\ln(1+x^2)-(1+x^2)\right]+C.$$</p>
+<p>代入 $f(0)=-\dfrac{1}{2}$：$\dfrac{1}{2}[0-1]+C=-\dfrac{1}{2}$，得 $C=0$。</p>
+<p>故</p>
+<p>$$f(x)=\frac{(1+x^2)\ln(1+x^2)}{2}-\frac{x^2}{2}-\frac{1}{2}.$$</p>
+<p>验证：$f&#x27;(x)=x\ln(1+x^2)+x-x=x\ln(1+x^2)$，且 $f(0)=-\frac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{(x^2-1)e^{x^2}}{2}+C$</div>
+        <div class="steps"><p>令 $u=x^2$，$x^3dx=\dfrac{x^2\,d(x^2)}{2}=\dfrac{u\,du}{2}$：</p>
+<p>$$\int x^3e^{x^2}dx=\frac{1}{2}\int ue^u\,du=\frac{1}{2}(u-1)e^u+C=\frac{(x^2-1)e^{x^2}}{2}+C.$$</p>
+<p>求导验证：$xe^{x^2}+(x^2-1)xe^{x^2}=x^3e^{x^2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle e^{2x}\tan x+C$</div>
+        <div class="steps"><p>$$\int e^{2x}(\tan x+1)^2dx=\int e^{2x}(\tan^2x+2\tan x+1)dx=\int e^{2x}(\sec^2x+2\tan x)dx.$$</p>
+<p>注意到恰好</p>
+<p>$$d\left(e^{2x}\tan x\right)=2e^{2x}\tan x\,dx+e^{2x}\sec^2x\,dx=e^{2x}(\sec^2x+2\tan x)dx,$$</p>
+<p>故原式 $=e^{2x}\tan x+C$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -\cot x\ln(\sin x)-\cot x-x+C$</div>
+        <div class="steps"><p>$$\int\frac{\ln(\sin x)}{\sin^2x}dx=-\int\ln(\sin x)\,d(\cot x)=-\cot x\ln(\sin x)+\int\cot x\cdot\frac{\cos x}{\sin x}dx.$$</p>
+<p>而 $\cot x\cdot\dfrac{\cos x}{\sin x}=\cot^2x=\csc^2x-1$，故</p>
+<p>$$\text{原式}=-\cot x\ln(\sin x)+\int(\csc^2x-1)dx=-\cot x\ln(\sin x)-\cot x-x+C.$$</p>
+<p>求导验证：$\csc^2x\ln(\sin x)-\cot^2x+\csc^2x-1=\dfrac{\ln(\sin x)}{\sin^2x}+(\csc^2x-\cot^2x-1)=\dfrac{\ln(\sin x)}{\sin^2x}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle -\frac{\ln x}{x}+C$</div>
+        <div class="steps"><p>由于</p>
+<p>$$d\left(\frac{\ln x}{x}\right)=\frac{\frac{1}{x}\cdot x-\ln x}{x^2}dx=\frac{1-\ln x}{x^2}dx=-\frac{\ln x-1}{x^2}dx,$$</p>
+<p>故</p>
+<p>$$\int\frac{\ln x-1}{x^2}\,dx=-\frac{\ln x}{x}+C.$$</p>
+<p>（也可分部积分：$\int\ln x\,d\left(-\frac1x\right)=-\frac{\ln x}{x}+\int\frac{1}{x^2}dx=-\frac{\ln x}{x}-\frac1x$，再减去 $\int\frac{dx}{x^2}=-\frac1x$ 即得。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle 2\sqrt{x}-2\sqrt{1-x}\arcsin\sqrt{x}+C$</div>
+        <div class="steps"><p>先求 $f$：令 $t=\sin^2x$（$x\in[0,\frac{\pi}{2}]$），则 $\sqrt t=\sin x$，$x=\arcsin\sqrt t$，故</p>
+<p>$$f(t)=\frac{\arcsin\sqrt t}{\sqrt t},\qquad f(x)=\frac{\arcsin\sqrt x}{\sqrt x}.$$</p>
+<p>代入：</p>
+<p>$$\int\frac{\sqrt x}{\sqrt{1-x}}f(x)dx=\int\frac{\arcsin\sqrt x}{\sqrt{1-x}}dx.$$</p>
+<p>令 $u=\sqrt x$，$dx=2u\,du$：</p>
+<p>$$\int\frac{\arcsin u}{\sqrt{1-u^2}}\cdot 2u\,du=-2\int\arcsin u\,d\left(\sqrt{1-u^2}\right).$$</p>
+<p>分部积分：</p>
+<p>$$=-2\left[\sqrt{1-u^2}\arcsin u-\int\sqrt{1-u^2}\cdot\frac{du}{\sqrt{1-u^2}}\right]=-2\sqrt{1-u^2}\arcsin u+2u+C.$$</p>
+<p>回代 $u=\sqrt x$：</p>
+<p>$$\int\frac{\sqrt x}{\sqrt{1-x}}f(x)dx=2\sqrt x-2\sqrt{1-x}\arcsin\sqrt x+C.$$</p>
+<p>求导验证：$\dfrac{1}{\sqrt x}+\dfrac{\arcsin\sqrt x}{\sqrt{1-x}}-\dfrac{1}{\sqrt x}=\dfrac{\arcsin\sqrt x}{\sqrt{1-x}}$，恰为被积函数。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle A（F(x)=\begin{cases}x^2-2x, & x<1\\ x\ln x-x, & x\ge 1\end{cases}）$</div>
+        <div class="steps"><p>分段求原函数：$x&lt;1$ 时 $F(x)=\int 2(x-1)dx=x^2-2x+C_1$；$x\ge1$ 时 $F(x)=\int\ln x\,dx=x\ln x-x+C_2$。</p>
+<p>原函数必须处处可导，从而连续：$F(1^-)=1-2+C_1=C_1-1$，$F(1)=0-1+C_2=C_2-1$，故 $C_1=C_2$。取 $C_1=C_2=0$：</p>
+<p>$$F(x)=\begin{cases}x^2-2x, &amp; x&lt;1\\ x\ln x-x, &amp; x\ge 1\end{cases}$$</p>
+<p>再验证 $x=1$ 处左导数 $\lim_{x\to1^-}(2x-2)=0$，右导数 $\lim_{x\to1^+}\ln x=0$，故 $F&#x27;(1)=0=f(1)$，确为原函数。对照选项，此即选项 (A)（本题图片中选项被裁切，选项字母按 2016 年真题标准答案 (A) 抄录；选项 (B)(C)(D) 均在连续性或导数值上不满足）。卡点：图片未含四个选项的具体表达式，字母以真题标准答案为准。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k25_T4">
     <div class="qhead"><span class="qno">k25_T4</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1987</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.25.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T4_0.png" alt="k25_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (\sqrt{2x-1}-1)e^{\sqrt{2x-1}}+C$</div>
+        <div class="steps"><p>令 $t=\sqrt{2x-1}$，则 $x=\dfrac{t^2+1}{2}$，$dx=t\,dt$：</p>
+<p>$$\int e^{\sqrt{2x-1}}dx=\int e^t\cdot t\,dt=\int t\,d(e^t)=te^t-\int e^t\,dt=(t-1)e^t+C.$$</p>
+<p>回代 $t=\sqrt{2x-1}$：</p>
+<p>$$\int e^{\sqrt{2x-1}}dx=\left(\sqrt{2x-1}-1\right)e^{\sqrt{2x-1}}+C.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k25_T5">
     <div class="qhead"><span class="qno">k25_T5</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2019</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T5_0.png" alt="k25_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \ln\frac{x^2+x+1}{(x-1)^2}-\frac{3}{x-1}+C$</div>
+        <div class="steps"><p>待定系数：设 $\dfrac{3x+6}{(x-1)^2(x^2+x+1)}=\dfrac{A}{x-1}+\dfrac{B}{(x-1)^2}+\dfrac{Cx+D}{x^2+x+1}$，通分比较：</p>
+<p>$$3x+6=A(x-1)(x^2+x+1)+B(x^2+x+1)+(Cx+D)(x-1)^2.$$</p>
+<p>令 $x=1$：$9=3B$，$B=3$。比较 $x^3,x^2,x$ 及常数项系数：</p>
+<p>$x^3:\ A+C=0$；$x^2:\ B-2C+D=0$；$x:\ B+C-2D=3$；常数：$-A+B+D=6$。</p>
+<p>解得 $A=-2,\ B=3,\ C=2,\ D=1$（常数项验证 $2+3+1=6$ ✓）。故</p>
+<p>$$\text{原式}=\int\left[-\frac{2}{x-1}+\frac{3}{(x-1)^2}+\frac{2x+1}{x^2+x+1}\right]dx$$</p>
+<p>$$=-2\ln|x-1|-\frac{3}{x-1}+\ln(x^2+x+1)+C=\ln\frac{x^2+x+1}{(x-1)^2}-\frac{3}{x-1}+C.$$</p>
+<p>（$x^2+x+1$ 恒正，可不加绝对值。求导验证：通分后分子 $=(2x+1)(x-1)^2-2(x^3-1)+3(x^2+x+1)=3x+6$ ✓。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{3\ln 2+\pi}{10}$</div>
+        <div class="steps"><p>待定系数：$\dfrac{1}{(x+1)(x^2-2x+2)}=\dfrac{A}{x+1}+\dfrac{Bx+C}{x^2-2x+2}$，即</p>
+<p>$$1=A(x^2-2x+2)+(Bx+C)(x+1).$$</p>
+<p>令 $x=-1$：$1=5A$，$A=\dfrac15$；比较 $x^2$：$A+B=0$，$B=-\dfrac15$；常数：$2A+C=1$，$C=\dfrac35$（$x$ 项：$-2A+B+C=0$ ✓）。</p>
+<p>把第二项凑微分：$\dfrac{-\frac15x+\frac35}{x^2-2x+2}=-\dfrac{1}{10}\cdot\frac{2x-2}{x^2-2x+2}+\frac{2}{5}\cdot\frac{1}{(x-1)^2+1}$。</p>
+<p>故</p>
+<p>$$\int_0^1=\left[\frac{1}{5}\ln(x+1)-\frac{1}{10}\ln(x^2-2x+2)+\frac{2}{5}\arctan(x-1)\right]_0^1.$$</p>
+<p>逐项代入：$\dfrac15\ln2-0=\dfrac{\ln2}{5}$；$-\dfrac{1}{10}(\ln1-\ln2)=\dfrac{\ln2}{10}$；$\dfrac25[\arctan 0-\arctan(-1)]=\dfrac25\cdot\dfrac{\pi}{4}=\dfrac{\pi}{10}$。</p>
+<p>$$\int_0^1\frac{dx}{(x+1)(x^2-2x+2)}=\frac{3\ln 2}{10}+\frac{\pi}{10}=\frac{3\ln 2+\pi}{10}\approx 0.522.$$</p>
+<p>（数值校验：Simpson 法约 0.5222，吻合。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k25_T6">
     <div class="qhead"><span class="qno">k25_T6</span>
-      
+      <span class="badge">共 5 小题</span><span class="badge year">1992</span> <span class="badge year">1996</span> <span class="badge year">2000</span> <span class="badge year">2001</span> <span class="badge year">2003</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T6_0.png" alt="k25_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -\frac{\arccot\,e^x}{e^x}-x+\frac{1}{2}\ln(1+e^{2x})+C$</div>
+        <div class="steps"><p>写成 $I=\int e^{-x}\arccot(e^x)\,dx$，分部积分（$u=\arccot e^x,\ dv=e^{-x}dx,\ v=-e^{-x}$）：</p>
+<p>$$I=-e^{-x}\arccot(e^x)-\int(-e^{-x})\cdot\left(-\frac{e^x}{1+e^{2x}}\right)dx=-\frac{\arccot\,e^x}{e^x}-\int\frac{dx}{1+e^{2x}}.$$</p>
+<p>对后者：分子分母同变形</p>
+<p>$$\int\frac{dx}{1+e^{2x}}=\int\left(1-\frac{e^{2x}}{1+e^{2x}}\right)dx=x-\frac{1}{2}\ln(1+e^{2x}).$$</p>
+<p>故</p>
+<p>$$I=-\frac{\arccot\,e^x}{e^x}-x+\frac{1}{2}\ln(1+e^{2x})+C.$$</p>
+<p>求导验证：$e^{-x}\arccot(e^x)+\dfrac{1}{1+e^{2x}}+\left(-1+\dfrac{e^{2x}}{1+e^{2x}}\right)=\dfrac{\arccot\,e^x}{e^x}$ ✓。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\frac{\arctan x}{x}+\ln x-\frac{1}{2}\ln(1+x^2)-\frac{1}{2}\arctan^2 x+C$</div>
+        <div class="steps"><p>拆项：$\dfrac{1}{x^2(1+x^2)}=\dfrac{1}{x^2}-\dfrac{1}{1+x^2}$，故</p>
+<p>$$\int\frac{\arctan x}{x^2(1+x^2)}dx=\int\frac{\arctan x}{x^2}dx-\int\frac{\arctan x}{1+x^2}dx.$$</p>
+<p>第一项分部积分（$u=\arctan x,\ dv=\dfrac{dx}{x^2}$）：</p>
+<p>$$\int\frac{\arctan x}{x^2}dx=-\frac{\arctan x}{x}+\int\frac{dx}{x(1+x^2)}=-\frac{\arctan x}{x}+\int\left(\frac{1}{x}-\frac{x}{1+x^2}\right)dx=-\frac{\arctan x}{x}+\ln x-\frac{1}{2}\ln(1+x^2).$$</p>
+<p>第二项：$\int\arctan x\,d(\arctan x)=\dfrac{\arctan^2x}{2}$。</p>
+<p>故</p>
+<p>$$\int\frac{\arctan x}{x^2(1+x^2)}dx=-\frac{\arctan x}{x}+\ln x-\frac{1}{2}\ln(1+x^2)-\frac{1}{2}\arctan^2x+C.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle -\frac{\ln(1+e^x)}{e^x}+x-\ln(1+e^x)+C$</div>
+        <div class="steps"><p>令 $t=\ln x$，$x=e^t$，得 $f(t)=\dfrac{\ln(1+e^t)}{e^t}$，故</p>
+<p>$$\int f(x)dx=\int e^{-x}\ln(1+e^x)\,dx.$$</p>
+<p>分部积分（$u=\ln(1+e^x),\ dv=e^{-x}dx$）：</p>
+<p>$$=-e^{-x}\ln(1+e^x)+\int e^{-x}\cdot\frac{e^x}{1+e^x}dx=-\frac{\ln(1+e^x)}{e^x}+\int\frac{dx}{1+e^x}.$$</p>
+<p>而 $\displaystyle\int\frac{dx}{1+e^x}=\int\left(1-\frac{e^x}{1+e^x}\right)dx=x-\ln(1+e^x)$，故</p>
+<p>$$\int f(x)dx=-\frac{\ln(1+e^x)}{e^x}+x-\ln(1+e^x)+C.$$</p>
+<p>求导验证：$e^{-x}\ln(1+e^x)-\dfrac{1}{1+e^x}+1-\dfrac{e^x}{1+e^x}=\dfrac{\ln(1+e^x)}{e^x}=f(x)$ ✓。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \arctan\frac{x}{\sqrt{1+x^2}}+C$</div>
+        <div class="steps"><p>令 $x=\tan t$（$t\in(-\frac{\pi}{2},\frac{\pi}{2})$），则 $dx=\sec^2t\,dt$，$\sqrt{x^2+1}=\sec t$：</p>
+<p>$$\int\frac{dx}{(2x^2+1)\sqrt{x^2+1}}=\int\frac{\sec^2t\,dt}{(2\tan^2t+1)\sec t}=\int\frac{\cos t\,dt}{2\sin^2t+\cos^2t}=\int\frac{d(\sin t)}{1+\sin^2t}=\arctan(\sin t)+C.$$</p>
+<p>回代：$\sin t=\dfrac{\tan t}{\sqrt{1+\tan^2t}}=\dfrac{x}{\sqrt{1+x^2}}$，故</p>
+<p>$$\int\frac{dx}{(2x^2+1)\sqrt{x^2+1}}=\arctan\frac{x}{\sqrt{1+x^2}}+C.$$</p>
+<p>求导验证：记 $g=\dfrac{x}{\sqrt{1+x^2}}$，则 $g&#x27;=\dfrac{1}{(1+x^2)^{3/2}}$，$1+g^2=\dfrac{1+2x^2}{1+x^2}$，$\dfrac{g&#x27;}{1+g^2}=\dfrac{1}{(1+2x^2)\sqrt{1+x^2}}$ ✓。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac{(x-1)e^{\arctan x}}{2\sqrt{1+x^2}}+C$</div>
+        <div class="steps"><p>令 $x=\tan t$，则 $dx=\sec^2t\,dt$，$(1+x^2)^{3/2}=\sec^3t$，$\arctan x=t$：</p>
+<p>$$\int\frac{xe^{\arctan x}}{(1+x^2)^{3/2}}dx=\int\frac{\tan t\cdot e^t}{\sec^3t}\cdot\sec^2t\,dt=\int e^t\sin t\,dt.$$</p>
+<p>经典积分（分部两次）：</p>
+<p>$$\int e^t\sin t\,dt=\frac{e^t(\sin t-\cos t)}{2}+C.$$</p>
+<p>回代：$\sin t=\dfrac{x}{\sqrt{1+x^2}}$，$\cos t=\dfrac{1}{\sqrt{1+x^2}}$，故</p>
+<p>$$\int\frac{xe^{\arctan x}}{(1+x^2)^{3/2}}dx=\frac{(x-1)e^{\arctan x}}{2\sqrt{1+x^2}}+C.$$</p>
+<p>求导验证：$\dfrac12 e^{\arctan x}\left[\dfrac{x-1}{(1+x^2)^{3/2}}+\dfrac{1+x}{(1+x^2)^{3/2}}\right]=\dfrac{xe^{\arctan x}}{(1+x^2)^{3/2}}$ ✓。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

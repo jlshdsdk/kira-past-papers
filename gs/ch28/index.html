@@ -21,122 +21,379 @@
 
   <div class="card q" id="k28_T1">
     <div class="qhead"><span class="qno">k28_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1989</span> <span class="badge year">1997</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T1_0.png" alt="k28_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=x-1$</div>
+        <div class="steps"><p>记 $A=\int_0^1 f(t)dt$（为常数），则 $f(x)=x+2A$。</p>
+<p>两边在 $[0,1]$ 上积分：<br>$$A=\int_0^1 x\,dx+2A\int_0^1 dx=\frac{1}{2}+2A,$$<br>解得 $A=-\frac{1}{2}$。</p>
+<p>故 $f(x)=x-1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{4-\pi}$</div>
+        <div class="steps"><p>记 $A=\int_0^1 f(x)dx$，则 $f(x)=\frac{1}{1+x^2}+A\sqrt{1-x^2}$。</p>
+<p>在 $[0,1]$ 上积分，并注意 $\int_0^1\frac{dx}{1+x^2}=\frac{\pi}{4}$，$\int_0^1\sqrt{1-x^2}dx=\frac{\pi}{4}$（四分之一单位圆面积）：<br>$$A=\frac{\pi}{4}+A\cdot\frac{\pi}{4}.$$</p>
+<p>解 $A\left(1-\frac{\pi}{4}\right)=\frac{\pi}{4}$，得 $A=\frac{\pi}{4-\pi}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>令 $u=x-\frac{1}{2}$，则 $x(x-1)=\left(u+\frac{1}{2}\right)\left(u-\frac{1}{2}\right)=u^2-\frac{1}{4}$，被积函数化为<br>$$\left(u^2-\frac{1}{4}\right)u=u^3-\frac{u}{4},$$<br>是 $u$ 的奇函数，而积分区间 $\left[-\frac{1}{2},\frac{1}{2}\right]$ 对称，故<br>$$\int_0^1 x(x-1)\left(x-\frac{1}{2}\right)dx=0.$$</p>
+<p>（直接展开验证：$x^3-\frac{3}{2}x^2+\frac{1}{2}x$ 积分得 $\frac{1}{4}-\frac{1}{2}+\frac{1}{4}=0$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T2">
     <div class="qhead"><span class="qno">k28_T2</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1987</span> <span class="badge year">2003</span> <span class="badge year">2008</span> <span class="badge year">2020</span> <span class="badge year">2022</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T2_0.png" alt="k28_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k28_T2_1.png" alt="k28_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{1}{2}\left[f(2b)-f(2a)\right]$</div>
+        <div class="steps"><p>令 $u=2x$，$du=2dx$：<br>$$\int_a^b f&#x27;(2x)dx=\frac{1}{2}\int_{2a}^{2b}f&#x27;(u)du=\frac{1}{2}\left[f(2b)-f(2a)\right].$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B：\left(1+e^{-1}\right)^{3/2}-1$</div>
+        <div class="steps"><p>令 $u=1+x^n$，$du=nx^{n-1}dx$：<br>$$a_n=\frac{3}{2n}\int_1^{1+\left(\frac{n}{n+1}\right)^n}\sqrt{u}\,du=\frac{1}{n}\left[\left(1+\left(\frac{n}{n+1}\right)^n\right)^{3/2}-1\right].$$</p>
+<p>由 $\left(\frac{n}{n+1}\right)^n=\left(1+\frac{1}{n}\right)^{-n}\to e^{-1}$，得<br>$$\lim_{n\to\infty}na_n=\left(1+e^{-1}\right)^{3/2}-1.$$</p>
+<p>对照选项选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{1}{2}\ln 3$</div>
+        <div class="steps"><p>分子分母同除 $x^2$（$x&gt;0$）：<br>$$f\left(x+\frac{1}{x}\right)=\frac{x+\frac{1}{x}}{x^2+\frac{1}{x^2}}=\frac{x+\frac{1}{x}}{\left(x+\frac{1}{x}\right)^2-2},$$<br>故 $f(t)=\frac{t}{t^2-2}$。</p>
+<p>$$\int_2^{2\sqrt{2}}f(x)dx=\int_2^{2\sqrt{2}}\frac{x}{x^2-2}dx=\frac{1}{2}\ln\left(x^2-2\right)\Big|_2^{2\sqrt{2}}=\frac{1}{2}(\ln 6-\ln 2)=\frac{1}{2}\ln 3.$$</p>
+<p>（当 $x\in[2,2\sqrt2]$ 时 $x^2-2&gt;0$，无奇点。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle A：\frac{\pi^2}{4}$</div>
+        <div class="steps"><p>令 $t=\arcsin\sqrt{x}$，则 $x=\sin^2 t$，$dx=2\sin t\cos t\,dt$，$\sqrt{x(1-x)}=\sin t\cos t$，$t:0\to\frac{\pi}{2}$。</p>
+<p>$$\int_0^1\frac{\arcsin\sqrt{x}}{\sqrt{x(1-x)}}dx=\int_0^{\pi/2}t\cdot 2\,dt=\left.t^2\right|_0^{\pi/2}=\frac{\pi^2}{4}.$$</p>
+<p>选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac{8\sqrt{3}\pi}{9}$</div>
+        <div class="steps"><p>分子拆为 $2x+3=(2x-1)+4$：<br>$$\int_0^1\frac{2x-1}{x^2-x+1}dx=\ln\left(x^2-x+1\right)\Big|_0^1=\ln 1-\ln 1=0,$$<br>$$\int_0^1\frac{4}{x^2-x+1}dx=4\int_0^1\frac{dx}{\left(x-\frac{1}{2}\right)^2+\frac{3}{4}}=\frac{8}{\sqrt{3}}\left[\arctan\frac{2x-1}{\sqrt{3}}\right]_0^1=\frac{8}{\sqrt{3}}\left(\frac{\pi}{6}+\frac{\pi}{6}\right)=\frac{8\pi}{3\sqrt{3}}=\frac{8\sqrt{3}\pi}{9}.$$</p>
+<p>故原式 $=\frac{8\sqrt{3}\pi}{9}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \ln 3-\frac{\sqrt{3}}{3}\pi$</div>
+        <div class="steps"><p>分子拆为 $2x-4=(2x+2)-6$：<br>$$\int_0^2\frac{2x+2}{x^2+2x+4}dx=\ln\left(x^2+2x+4\right)\Big|_0^2=\ln 12-\ln 4=\ln 3,$$<br>$$\int_0^2\frac{6}{x^2+2x+4}dx=6\int_0^2\frac{dx}{(x+1)^2+3}=\frac{6}{\sqrt{3}}\left[\arctan\frac{x+1}{\sqrt{3}}\right]_0^2=2\sqrt{3}\left(\frac{\pi}{3}-\frac{\pi}{6}\right)=\frac{\sqrt{3}\pi}{3}.$$</p>
+<p>故原式 $=\ln 3-\frac{\sqrt{3}}{3}\pi$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T3">
     <div class="qhead"><span class="qno">k28_T3</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1988</span> <span class="badge year">1990</span> <span class="badge year">1991</span> <span class="badge year">2012</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T3_0.png" alt="k28_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k28_T3_1.png" alt="k28_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 不成立（错误，应打 ×）$</div>
+        <div class="steps"><p>对左边作换元 $x=a-t$：<br>$$\int_0^a f(x)dx=\int_0^a f(a-t)dt=\int_0^a f(a-x)dx,$$<br>正确的恒等式不带负号（对任何实数 $a$ 成立）。</p>
+<p>反例：取 $f\equiv 1$，左边 $=a$，而带负号的右边 $=-a$，$a\ne 0$ 时不相等。</p>
+<p>故该等式不成立，判 $(\times)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{2\pi}{3}$</div>
+        <div class="steps"><p>令 $t=\sqrt{x}$，$x=t^2$，$dx=2t\,dt$，$t:0\to\sqrt{3}$：<br>$$\int_0^3\frac{dx}{\sqrt{x}(1+x)}=\int_0^{\sqrt{3}}\frac{2t\,dt}{t(1+t^2)}=2\int_0^{\sqrt{3}}\frac{dt}{1+t^2}=2\arctan\sqrt{3}=\frac{2\pi}{3}.$$</p>
+<p>（另法：$\int\frac{dx}{\sqrt{x}(1+x)}=2\arctan\sqrt{x}$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{4}{15}$</div>
+        <div class="steps"><p>令 $u=1-x$：<br>$$\int_0^1 x\sqrt{1-x}\,dx=\int_0^1(1-u)u^{1/2}du=\int_0^1\left(u^{1/2}-u^{3/2}\right)du=\frac{2}{3}-\frac{2}{5}=\frac{4}{15}.$$</p>
+<p>（另法：令 $x=\sin^2 t$ 化为 $2\int_0^{\pi/2}\sin^2 t\cos^2 t\,dt$，结果相同。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{1}{2}\ln^2 x$</div>
+        <div class="steps"><p>对 $f\left(\frac{1}{x}\right)=\int_1^{1/x}\frac{\ln t}{1+t}dt$ 作换元 $t=\frac{1}{u}$（$dt=-\frac{du}{u^2}$）：<br>$$f\left(\frac{1}{x}\right)=\int_1^x\frac{-\ln u}{\frac{1+u}{u}}\cdot\left(-\frac{du}{u^2}\right)=\int_1^x\frac{\ln u}{u(1+u)}du.$$</p>
+<p>相加：<br>$$f(x)+f\left(\frac{1}{x}\right)=\int_1^x\left[\frac{1}{1+t}+\frac{1}{t(1+t)}\right]\ln t\,dt=\int_1^x\frac{\ln t}{t}dt=\frac{1}{2}\ln^2 x.$$</p>
+<p>（当 $x&gt;0$ 时 $\frac{1}{x}&gt;0$，换元合法；$x=1$ 时两边均为 0。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \ln\frac{16}{9}$</div>
+        <div class="steps"><p>令 $t=\sqrt{x}$，$x=t^2$，$dx=2t\,dt$，$t:1\to 2$：<br>$$\int_1^4\frac{dx}{x(1+\sqrt{x})}=\int_1^2\frac{2t\,dt}{t^2(1+t)}=2\int_1^2\frac{dt}{t(1+t)}.$$</p>
+<p>由 $\frac{1}{t(1+t)}=\frac{1}{t}-\frac{1}{1+t}$：<br>$$2\int_1^2\left(\frac{1}{t}-\frac{1}{1+t}\right)dt=2\left[\ln t-\ln(1+t)\right]_1^2=2\left[\left(\ln 2-\ln 3\right)-\left(0-\ln 2\right)\right]=2\ln\frac{4}{3}=\ln\frac{16}{9}.$$</p>
+<p>故原式 $=\ln\frac{16}{9}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \frac{\pi}{2}$</div>
+        <div class="steps"><p>$2x-x^2=1-(x-1)^2$。令 $u=x-1$：<br>$$\int_0^2 x\sqrt{2x-x^2}\,dx=\int_{-1}^{1}(u+1)\sqrt{1-u^2}\,du.$$</p>
+<p>$u\sqrt{1-u^2}$ 为奇函数，积分为 0；$\int_{-1}^{1}\sqrt{1-u^2}\,du$ 为上半单位圆面积 $=\frac{\pi}{2}$。</p>
+<p>故原式 $=\frac{\pi}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T4">
     <div class="qhead"><span class="qno">k28_T4</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1987</span> <span class="badge year">1989</span> <span class="badge year">1993</span> <span class="badge year">2009</span> <span class="badge year">2014</span> <span class="badge year">2022</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T4_0.png" alt="k28_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2-\frac{6}{e^2}$</div>
+        <div class="steps"><p>$x\in[-2,0]$ 时 $|x|+x=0$；$x\in[0,2]$ 时 $|x|+x=2x$，且 $e^{-|x|}=e^{-x}$。故<br>$$\int_{-2}^{2}\left(|x|+x\right)e^{-|x|}dx=\int_0^2 2xe^{-x}dx.$$</p>
+<p>分部积分：<br>$$\int_0^2 2xe^{-x}dx=2\left[-(x+1)e^{-x}\right]_0^2=2\left(-3e^{-2}+1\right)=2-\frac{6}{e^2}.$$</p>
+<p>（$\int xe^{-x}dx=-(x+1)e^{-x}+C$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \pi$</div>
+        <div class="steps"><p>分部积分：<br>$$\int_0^{\pi}t\sin t\,dt=\left[-t\cos t\right]_0^{\pi}+\int_0^{\pi}\cos t\,dt=\pi+\left[\sin t\right]_0^{\pi}=\pi.$$</p>
+<p>（几何解释：$\sin t$ 与 $t$ 的乘积积分，对称性给出 $\frac{\pi}{2}\cdot 2$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{\pi}{8}-\frac{1}{4}\ln 2$</div>
+        <div class="steps"><p>由 $1+\cos 2x=2\cos^2 x$：<br>$$\int_0^{\pi/4}\frac{x}{1+\cos 2x}dx=\frac{1}{2}\int_0^{\pi/4}x\sec^2 x\,dx=\frac{1}{2}\left(\left[x\tan x\right]_0^{\pi/4}-\int_0^{\pi/4}\tan x\,dx\right).$$</p>
+<p>$\int\tan x\,dx=-\ln|\cos x|$，故<br>$$=\frac{1}{2}\cdot\frac{\pi}{4}+\frac{1}{2}\left[\ln\cos x\right]_0^{\pi/4}=\frac{\pi}{8}+\frac{1}{2}\ln\frac{\sqrt{2}}{2}=\frac{\pi}{8}-\frac{1}{4}\ln 2.$$</p>
+<p>故原式 $=\frac{\pi}{8}-\frac{1}{4}\ln 2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>分部积分两次可解出（$I=\int e^{-x}\sin nx\,dx$，设 $I_1=\int e^{-x}\cos nx\,dx$，消元得）<br>$$\int e^{-x}\sin nx\,dx=-\frac{e^{-x}\left(\sin nx+n\cos nx\right)}{1+n^2}+C,$$<br>（求导验证：$\frac{d}{dx}$ 后分子 $=e^{-x}(\sin nx+n\cos nx)-e^{-x}(n\cos nx-n^2\sin nx)=e^{-x}(1+n^2)\sin nx$。）</p>
+<p>于是<br>$$\int_0^1 e^{-x}\sin nx\,dx=\frac{n-e^{-1}\left(\sin n+n\cos n\right)}{1+n^2},$$<br>分子为 $n$ 的一次式而分母为 $n^2$，故 $n\to\infty$ 时极限为 $0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=\frac{1}{2}$</div>
+        <div class="steps"><p>$$\int_0^a xe^{2x}dx=\left[\frac{x}{2}e^{2x}-\frac{1}{4}e^{2x}\right]_0^a=\frac{a}{2}e^{2a}-\frac{1}{4}e^{2a}+\frac{1}{4}=\frac{e^{2a}}{4}(2a-1)+\frac{1}{4}.$$</p>
+<p>令其等于 $\frac{1}{4}$：$\frac{e^{2a}}{4}(2a-1)=0$，而 $e^{2a}&gt;0$，故 $2a-1=0$，即 $a=\frac{1}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 4$</div>
+        <div class="steps"><p>令 $x=t^2$（$t:\,1\to e$），$dx=2t\,dt$，$\ln x=2\ln t$：<br>$$\int_1^{e^2}\frac{\ln x}{\sqrt{x}}dx=\int_1^e\frac{2\ln t}{t}\cdot 2t\,dt=4\int_1^e\ln t\,dt=4\left[t\ln t-t\right]_1^e=4\left[(e-e)-(0-1)\right]=4.$$</p>
+<p>（另法：分部积分原式 $=\left[2\sqrt{x}\ln x-4\sqrt{x}\right]_1^{e^2}=0-(-4)=4$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T5">
     <div class="qhead"><span class="qno">k28_T5</span>
-      
+      <span class="badge">共 4 小题</span><span class="badge year">1989</span> <span class="badge year">1999</span> <span class="badge year">2005</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T5_0.png" alt="k28_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>令 $u=2x$，$dx=\frac{du}{2}$，$u:0\to 2$：<br>$$\int_0^1 x^2 f&#x27;&#x27;(2x)dx=\frac{1}{2}\int_0^2\frac{u^2}{4}f&#x27;&#x27;(u)du=\frac{1}{8}\int_0^2 u^2 f&#x27;&#x27;(u)du.$$</p>
+<p>分部积分：<br>$$\int_0^2 u^2 f&#x27;&#x27;(u)du=\left[u^2 f&#x27;(u)\right]_0^2-2\int_0^2 u f&#x27;(u)du=4f&#x27;(2)-2\left(\left[u f(u)\right]_0^2-\int_0^2 f(u)du\right).$$</p>
+<p>代入 $f&#x27;(2)=0$，$2f(2)=1$，$\int_0^2 f=1$：<br>$$=0-2(1-1)=0.$$</p>
+<p>故原积分 $=\frac{1}{8}\cdot 0=0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{4}{\pi}-1$</div>
+        <div class="steps"><p>由题意 $f(x)=\left(\frac{\sin x}{x}\right)&#x27;=\frac{x\cos x-\sin x}{x^2}$，且 $\int f(x)dx=\frac{\sin x}{x}+C$。</p>
+<p>分部积分：<br>$$\int_{\pi/2}^{\pi}xf&#x27;(x)dx=\left[xf(x)\right]_{\pi/2}^{\pi}-\int_{\pi/2}^{\pi}f(x)dx=\left[\cos x-\frac{\sin x}{x}\right]_{\pi/2}^{\pi}-\left[\frac{\sin x}{x}\right]_{\pi/2}^{\pi}.$$</p>
+<p>第一段：$\left(-1-0\right)-\left(0-\frac{2}{\pi}\right)=-1+\frac{2}{\pi}$；第二段：$0-\frac{2}{\pi}=-\frac{2}{\pi}$。</p>
+<p>$$\text{原式}=\left(-1+\frac{2}{\pi}\right)-\left(-\frac{2}{\pi}\right)=\frac{4}{\pi}-1.$$</p>
+<p>（避开 $x=0$，区间 $[\frac{\pi}{2},\pi]$ 上一切运算合法。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 20$</div>
+        <div class="steps"><p>由图与条件读出：$f(0)=0$，$f(3)=2$，拐点处 $f&#x27;&#x27;(3)=0$；<br>$l_1$ 过 $(0,0)$ 与 $(2,4)$：$f&#x27;(0)=\frac{4-0}{2-0}=2$；<br>$l_2$ 过 $(3,2)$ 与 $(2,4)$：$f&#x27;(3)=\frac{4-2}{2-3}=-2$。</p>
+<p>分部积分：<br>$$\int_0^3(x^2+x)f&#x27;&#x27;&#x27;(x)dx=\left[(x^2+x)f&#x27;&#x27;(x)\right]_0^3-\int_0^3(2x+1)f&#x27;&#x27;(x)dx=12f&#x27;&#x27;(3)-\left(\left[(2x+1)f&#x27;(x)\right]_0^3-2\int_0^3 f&#x27;(x)dx\right).$$</p>
+<p>代入各值：<br>$$=0-\left(7f&#x27;(3)-f&#x27;(0)\right)+2\left(f(3)-f(0)\right)=-\left(7\times(-2)-2\right)+2\times 2=16+4=20.$$</p>
+<p>故原积分 $=20$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 2\ln 2-2$</div>
+        <div class="steps"><p>由条件：$f(0)=0$，$f(1)=2$（过同一点），$f&#x27;(1)=\left.2^x\ln 2\right|_{x=1}=2\ln 2$（相切）。</p>
+<p>分部积分：<br>$$\int_0^1 xf&#x27;&#x27;(x)dx=\left[xf&#x27;(x)\right]_0^1-\int_0^1 f&#x27;(x)dx=f&#x27;(1)-\left(f(1)-f(0)\right)=2\ln 2-2.$$</p>
+<p>故原积分 $=2\ln 2-2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T6">
     <div class="qhead"><span class="qno">k28_T6</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1995</span> <span class="badge year">2013</span> <span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T6_0.png" alt="k28_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>分部积分：<br>$$\int_0^{\pi}f(x)dx=\left[xf(x)\right]_0^{\pi}-\int_0^{\pi}xf&#x27;(x)dx=\pi f(\pi)-\int_0^{\pi}\frac{x\sin x}{\pi-x}dx.$$</p>
+<p>其中 $f(\pi)=\int_0^{\pi}\frac{\sin t}{\pi-t}dt$，令 $u=\pi-t$ 得 $f(\pi)=\int_0^{\pi}\frac{\sin u}{u}du$；<br>第二个积分令 $u=\pi-x$ 得 $\int_0^{\pi}\frac{(\pi-u)\sin u}{u}du$。</p>
+<p>$$\text{原式}=\pi\int_0^{\pi}\frac{\sin u}{u}du-\int_0^{\pi}\frac{(\pi-u)\sin u}{u}du=\int_0^{\pi}\sin u\,du=2.$$</p>
+<p>故 $\int_0^{\pi}f(x)dx=2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 8-2\pi-4\ln 2$</div>
+        <div class="steps"><p>分部积分（$u=f(x)$，$dv=\frac{dx}{\sqrt{x}}$，$v=2\sqrt{x}$；$f(1)=0$，$x=0$ 处 $\sqrt{x}f(x)\to 0$）：<br>$$\int_0^1\frac{f(x)}{\sqrt{x}}dx=\left[2\sqrt{x}f(x)\right]_0^1-\int_0^1 2\sqrt{x}\cdot\frac{\ln(1+x)}{x}dx=-2\int_0^1\frac{\ln(1+x)}{\sqrt{x}}dx.$$</p>
+<p>令 $x=t^2$：$\int_0^1\frac{\ln(1+x)}{\sqrt{x}}dx=2\int_0^1\ln(1+t^2)dt$。</p>
+<p>由 $\int\ln(1+t^2)dt=t\ln(1+t^2)-2t+2\arctan t$：<br>$$2\int_0^1\ln(1+t^2)dt=2\left(\ln 2-2+\frac{\pi}{2}\right)=2\ln 2-4+\pi.$$</p>
+<p>故原式 $=-2\left(2\ln 2-4+\pi\right)=8-2\pi-4\ln 2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{1-2\sqrt{2}}{18}$</div>
+        <div class="steps"><p>分部积分（$f(0)=f(1)=0$）：<br>$$\int_0^1 x^2 f(x)dx=\left[\frac{x^3}{3}f(x)\right]_0^1-\frac{1}{3}\int_0^1 x^3\sqrt{1+x^4}\,dx=-\frac{1}{3}\int_0^1 x^3\sqrt{1+x^4}\,dx.$$</p>
+<p>令 $u=1+x^4$，$du=4x^3dx$：<br>$$\int_0^1 x^3\sqrt{1+x^4}\,dx=\frac{1}{4}\int_1^2 u^{1/2}du=\frac{1}{4}\cdot\frac{2}{3}\left(2^{3/2}-1\right)=\frac{2\sqrt{2}-1}{6}.$$</p>
+<p>故原式 $=-\frac{1}{3}\cdot\frac{2\sqrt{2}-1}{6}=\frac{1-2\sqrt{2}}{18}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{\cos 1-1}{4}$</div>
+        <div class="steps"><p>记 $F(x)=\int_1^x\frac{\sin t^2}{t}dt$，则 $f(x)=xF(x)$，$F(1)=0$，$F&#x27;(x)=\frac{\sin x^2}{x}$。</p>
+<p>分部积分：<br>$$\int_0^1 f(x)dx=\left[\frac{x^2}{2}F(x)\right]_0^1-\frac{1}{2}\int_0^1 x^2 F&#x27;(x)dx=0-\frac{1}{2}\int_0^1 x\sin x^2\,dx.$$</p>
+<p>$$\int_0^1 x\sin x^2\,dx=\left[-\frac{\cos x^2}{2}\right]_0^1=\frac{1-\cos 1}{2}.$$</p>
+<p>故原式 $=-\frac{1}{2}\cdot\frac{1-\cos 1}{2}=\frac{\cos 1-1}{4}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T7">
     <div class="qhead"><span class="qno">k28_T7</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1987</span> <span class="badge year">1988</span> <span class="badge year">1990</span> <span class="badge year">1996</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T7_0.png" alt="k28_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{\pi}{8}$</div>
+        <div class="steps"><p>分部积分（取 $u=\arcsin x$，$dv=x\,dx$）：<br>$$\int_0^1 x\arcsin x\,dx=\left[\frac{x^2}{2}\arcsin x\right]_0^1-\frac{1}{2}\int_0^1\frac{x^2}{\sqrt{1-x^2}}dx=\frac{\pi}{4}-\frac{1}{2}J.$$</p>
+<p>对 $J=\int_0^1\frac{x^2}{\sqrt{1-x^2}}dx$ 令 $x=\sin\theta$：$J=\int_0^{\pi/2}\sin^2\theta\,d\theta=\frac{\pi}{4}$。</p>
+<p>故原式 $=\frac{\pi}{4}-\frac{\pi}{8}=\frac{\pi}{8}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 2\left(e^2+1\right)$</div>
+        <div class="steps"><p>令 $t=\sqrt{x}$，$x=t^2$，$dx=2t\,dt$，$t:0\to 2$：<br>$$\int_0^4 e^{\sqrt{x}}dx=2\int_0^2 te^t dt=2\left[te^t-e^t\right]_0^2=2\left[(2e^2-e^2)-(0-1)\right]=2\left(e^2+1\right).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{1}{3}\ln 2$</div>
+        <div class="steps"><p>注意 $\frac{1}{(2-x)^2}=\left(\frac{1}{2-x}\right)&#x27;$。分部积分：<br>$$\int_0^1\frac{\ln(1+x)}{(2-x)^2}dx=\left[\frac{\ln(1+x)}{2-x}\right]_0^1-\int_0^1\frac{1}{2-x}\cdot\frac{1}{1+x}dx=\ln 2-\int_0^1\frac{dx}{(2-x)(1+x)}.$$</p>
+<p>部分分式：$\frac{1}{(2-x)(1+x)}=\frac{1}{3}\left(\frac{1}{2-x}+\frac{1}{1+x}\right)$，故<br>$$\int_0^1\frac{dx}{(2-x)(1+x)}=\frac{1}{3}\left[-\ln(2-x)+\ln(1+x)\right]_0^1=\frac{1}{3}(0+\ln 2+\ln 2-0)=\frac{2}{3}\ln 2.$$</p>
+<p>故原式 $=\ln 2-\frac{2}{3}\ln 2=\frac{1}{3}\ln 2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \ln(2+\sqrt{3})-\frac{\sqrt{3}}{2}$</div>
+        <div class="steps"><p>令 $t=\sqrt{1-e^{-2x}}$，则 $e^{-2x}=1-t^2$，$x=-\frac{1}{2}\ln(1-t^2)$，$dx=\frac{t}{1-t^2}dt$；$x:0\to\ln 2$ 对应 $t:0\to\frac{\sqrt{3}}{2}$。</p>
+<p>$$\int_0^{\ln 2}\sqrt{1-e^{-2x}}\,dx=\int_0^{\sqrt{3}/2}\frac{t^2}{1-t^2}dt=\int_0^{\sqrt{3}/2}\left(-1+\frac{1}{1-t^2}\right)dt=\left[-t+\frac{1}{2}\ln\frac{1+t}{1-t}\right]_0^{\sqrt{3}/2}.$$</p>
+<p>$t=\frac{\sqrt{3}}{2}$ 时 $\frac{1+t}{1-t}=\frac{2+\sqrt{3}}{2-\sqrt{3}}=(2+\sqrt{3})^2$，故<br>$$\text{原式}=-\frac{\sqrt{3}}{2}+\ln(2+\sqrt{3}).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T8">
     <div class="qhead"><span class="qno">k28_T8</span>
-      
+      <span class="badge">共 5 小题</span><span class="badge year">1989</span> <span class="badge year">1991</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.28.8）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T8_0.png" alt="k28_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle S_0=1-\frac{2}{e}+\frac{1}{e^2}$</div>
+        <div class="steps"><p>分段积分：<br>$$S_0=\int_0^1 xe^{-x}dx+\int_1^2(2-x)e^{-x}dx.$$</p>
+<p>第一段：$\int_0^1 xe^{-x}dx=\left[-(x+1)e^{-x}\right]_0^1=1-\frac{2}{e}$。</p>
+<p>第二段：注意 $\frac{d}{dx}\left[(x-1)e^{-x}\right]=(2-x)e^{-x}$，故<br>$$\int_1^2(2-x)e^{-x}dx=\left[(x-1)e^{-x}\right]_1^2=e^{-2}-0=\frac{1}{e^2}.$$</p>
+<p>$$S_0=1-\frac{2}{e}+\frac{1}{e^2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle S_1=\frac{1}{e^2}-\frac{2}{e^3}+\frac{1}{e^4}$</div>
+        <div class="steps"><p>令 $u=x-2$，$dx=du$，$u:0\to 2$：<br>$$S_1=\int_0^2 f(u)e^{-(u+2)}du=e^{-2}\int_0^2 f(u)e^{-u}du=e^{-2}S_0=\frac{1}{e^2}-\frac{2}{e^3}+\frac{1}{e^4}.$$</p>
+<p>（$f$ 只在 $[0,2]$ 上非零，平移后配 $e^{-x}$ 的衰减因子。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle S_n=e^{-2n}S_0=e^{-2n}\left(1-\frac{2}{e}+\frac{1}{e^2}\right)$</div>
+        <div class="steps"><p>令 $u=x-2n$，$u:0\to 2$：<br>$$S_n=\int_0^2 f(u)e^{-(u+2n)}du=e^{-2n}\int_0^2 f(u)e^{-u}du=e^{-2n}S_0.$$</p>
+<p>与 $n$ 无关的结构：每个周期块都是 $S_0$ 乘上衰减因子 $e^{-2n}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle S=\frac{e-1}{e+1}$</div>
+        <div class="steps"><p>由 (3)：$S=\sum_{n=0}^{\infty}e^{-2n}S_0=S_0\sum_{n=0}^{\infty}e^{-2n}=\frac{S_0}{1-e^{-2}}$（公比 $e^{-2}&lt;1$）。</p>
+<p>$$S=\frac{1-\frac{2}{e}+\frac{1}{e^2}}{1-\frac{1}{e^2}}=\frac{\left(1-\frac{1}{e}\right)^2}{\left(1-\frac{1}{e}\right)\left(1+\frac{1}{e}\right)}=\frac{1-\frac{1}{e}}{1+\frac{1}{e}}=\frac{e-1}{e+1}.$$</p>
+<p>故 $S=\frac{e-1}{e+1}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \pi^2-2$</div>
+        <div class="steps"><p>在 $[\pi,2\pi)$：$x-\pi\in[0,\pi)$，$f(x-\pi)=x-\pi$，故 $f(x)=x-\pi+\sin x$。</p>
+<p>在 $[2\pi,3\pi)$：$x-\pi\in[\pi,2\pi)$，$f(x-\pi)=(x-\pi)-\pi+\sin(x-\pi)=x-2\pi-\sin x$，故 $f(x)=x-2\pi-\sin x+\sin x=x-2\pi$。</p>
+<p>$$\int_{\pi}^{2\pi}\left(x-\pi+\sin x\right)dx=\left[\frac{(x-\pi)^2}{2}-\cos x\right]_{\pi}^{2\pi}=\frac{\pi^2}{2}+\left(-\cos 2\pi+\cos\pi\right)=\frac{\pi^2}{2}-2,$$<br>$$\int_{2\pi}^{3\pi}(x-2\pi)dx=\left[\frac{(x-2\pi)^2}{2}\right]_{2\pi}^{3\pi}=\frac{\pi^2}{2}.$$</p>
+<p>合计：$\int_{\pi}^{3\pi}f(x)dx=\pi^2-2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T9">
     <div class="qhead"><span class="qno">k28_T9</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1994</span> <span class="badge year">2001</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T9_0.png" alt="k28_T9 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k28_T9_1.png" alt="k28_T9 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{3\pi}{32}$</div>
+        <div class="steps"><p>令 $u=x^2$，$du=2x\,dx$：<br>$$\int_0^1 x\left(1-x^4\right)^{3/2}dx=\frac{1}{2}\int_0^1\left(1-u^2\right)^{3/2}du.$$</p>
+<p>再令 $u=\sin\theta$，$\theta:0\to\frac{\pi}{2}$：<br>$$=\frac{1}{2}\int_0^{\pi/2}\cos^4\theta\,d\theta=\frac{1}{2}\cdot\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2}=\frac{3\pi}{32}.$$</p>
+<p>（用了华里士公式 $\int_0^{\pi/2}\cos^4\theta\,d\theta=\frac{3}{4}\cdot\frac{1}{2}\cdot\frac{\pi}{2}$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{8}$</div>
+        <div class="steps"><p>对称区间：$x^3\cos^2 x$ 为奇函数，积分为 0；$\sin^2 x\cos^2 x$ 为偶函数。</p>
+<p>$$\int_{-\pi/2}^{\pi/2}\sin^2 x\cos^2 x\,dx=2\int_0^{\pi/2}\frac{\sin^2 2x}{4}dx=\frac{1}{4}\int_0^{\pi}\sin^2 u\,du=\frac{1}{4}\cdot 2\int_0^{\pi/2}\sin^2 u\,du.$$</p>
+<p>其中 $\int_0^{\pi/2}\sin^2 u\,du=\frac{\pi}{4}$，故该项 $=\frac{1}{4}\cdot 2\cdot\frac{\pi}{4}=\frac{\pi}{8}$。</p>
+<p>$$\text{原式}=0+\frac{\pi}{8}=\frac{\pi}{8}.$$</p>
+<p>（换算：$\sin^2 x\cos^2 x=\frac{1}{4}\sin^2 2x=\frac{1-\cos 4x}{8}$，直接积分亦得 $\frac{\pi}{8}$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T10">
     <div class="qhead"><span class="qno">k28_T10</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1995</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T10_0.png" alt="k28_T10 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 得证：\int_{-a}^{a}f(x)g(x)dx=A\int_0^a g(x)dx$</div>
+        <div class="steps"><p>拆分区间并对负半段换元 $x=-t$：<br>$$\int_{-a}^{a}f(x)g(x)dx=\int_{-a}^{0}f(x)g(x)dx+\int_0^a f(x)g(x)dx,$$<br>$$\int_{-a}^{0}f(x)g(x)dx=\int_a^0 f(-t)g(-t)(-dt)=\int_0^a f(-t)g(t)dt,$$<br>最后一步用了 $g(-t)=g(t)$（$g$ 偶）。</p>
+<p>两式合并：<br>$$\int_{-a}^{a}f(x)g(x)dx=\int_0^a\left[f(x)+f(-x)\right]g(x)dx=\int_0^a A\,g(x)dx=A\int_0^a g(x)dx.$$</p>
+<p>证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{2}$</div>
+        <div class="steps"><p>取 $f(x)=\arctan e^x$，$g(x)=|\sin x|$（偶函数），$a=\frac{\pi}{2}$。</p>
+<p>对 $x\in[-\frac{\pi}{2},\frac{\pi}{2}]$，$e^x&gt;0$，由 $\arctan u+\arctan\frac{1}{u}=\frac{\pi}{2}\ (u&gt;0)$：<br>$$f(x)+f(-x)=\arctan e^x+\arctan e^{-x}=\frac{\pi}{2}=A.$$</p>
+<p>又 $\int_0^{\pi/2}|\sin x|\,dx=\left[-\cos x\right]_0^{\pi/2}=1$。</p>
+<p>由 (1) 的结论：<br>$$\int_{-\pi/2}^{\pi/2}|\sin x|\arctan e^x\,dx=\frac{\pi}{2}\cdot 1=\frac{\pi}{2}.$$</p>
+<p>故原积分 $=\frac{\pi}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k28_T11">
     <div class="qhead"><span class="qno">k28_T11</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k28_T11_0.png" alt="k28_T11 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \{a_n\} 单调减少；a_n=\frac{n-1}{n+2}a_{n-2}\ (n\ge 2)$</div>
+        <div class="steps"><p>**单调性**：当 $0\le x\le 1$ 时 $x^{n+1}\le x^n$，且在 $(0,1)$ 内严格小，故<br>$$a_{n+1}=\int_0^1 x^{n+1}\sqrt{1-x^2}\,dx&lt;\int_0^1 x^n\sqrt{1-x^2}\,dx=a_n,$$<br>即 $\{a_n\}$ 单调减少。</p>
+<p>**递推关系**：把 $a_n$ 写成 $a_n=\int_0^1 x^{n-1}\cdot x\sqrt{1-x^2}\,dx$，取 $dv=x\sqrt{1-x^2}\,dx$，$v=-\frac{1}{3}(1-x^2)^{3/2}$。当 $n\ge 2$ 时 $\left[-\frac{x^{n-1}}{3}(1-x^2)^{3/2}\right]_0^1=0$（$x=1$ 处因子为零，$x=0$ 处 $x^{n-1}=0$），于是<br>$$a_n=\frac{n-1}{3}\int_0^1 x^{n-2}(1-x^2)^{3/2}dx=\frac{n-1}{3}\int_0^1\left(x^{n-2}-x^n\right)\sqrt{1-x^2}\,dx=\frac{n-1}{3}\left(a_{n-2}-a_n\right).$$</p>
+<p>移项：$3a_n+(n-1)a_n=(n-1)a_{n-2}$，即 $(n+2)a_n=(n-1)a_{n-2}$，故<br>$$a_n=\frac{n-1}{n+2}a_{n-2},\qquad n=2,3,\dots.$$</p>
+<p>证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

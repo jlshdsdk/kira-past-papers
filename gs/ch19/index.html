@@ -21,34 +21,109 @@
 
   <div class="card q" id="k19_T1">
     <div class="qhead"><span class="qno">k19_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1987</span> <span class="badge year">2002</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.19.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k19_T1_0.png" alt="k19_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>$f$ 在 $(a,b)$ 内可导 $\Rightarrow$ $f$ 在 $(a,b)$ 内连续。对 $a&lt;x_1&lt;x_2&lt;b$，$f$ 在闭子区间 $[x_1,x_2]$ 上连续、$(x_1,x_2)$ 内可导，满足拉格朗日中值定理的全部条件，故存在 $\xi\in(x_1,x_2)$ 使</p>
+<p>$$f(x_2)-f(x_1)=f&#x27;(\xi)(x_2-x_1),$$</p>
+<p>即 **C 成立**。</p>
+<p>A、B、D 都用到端点 $a$ 或 $b$ 处的值 $f(a)$、$f(b)$：$f$ 仅在开区间内有定义、在端点处未必有定义或连续，中值定理不能用于含端点的区间。反例：$f(x)=\dfrac{1}{x}$ 在 $(0,1)$ 内可导，取 $a=0,\ b=1$，则 $f(a),f(b)$ 均无定义，A、B、D 的等式失去意义。</p>
+<p>故选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>**B 正确**：$f$ 在任意 $\xi\in(a,b)$ 处可导 $\Rightarrow$ $f$ 在 $\xi$ 处连续 $\Rightarrow$ $\lim\limits_{x\to\xi}f(x)=f(\xi)$，即 $\lim\limits_{x\to\xi}\left[f(x)-f(\xi)\right]=0$。</p>
+<p>**A 错**：$f$ 在端点可以不连续。反例：$f(0)=-1,\ f(1)=1,\ f(x)=-1\ (0&lt;x&lt;1)$，则 $f(0)f(1)&lt;0$，但 $f$ 在 $(0,1)$ 内无零点（零点定理需在闭区间上连续）。</p>
+<p>**C、D 错**：反例：$f(0)=f(1)=0,\ f(x)=1\ (0&lt;x&lt;1)$。$f$ 在 $(0,1)$ 内可导且 $f&#x27;(x)\equiv1$：不存在 $f&#x27;(\xi)=0$ 的点，C 错；$f(1)-f(0)=0\ne1=f&#x27;(\xi)(1-0)$，D 错。（原因：$f$ 在端点不连续，罗尔定理与拉格朗日中值定理「闭区间连续」的前提不满足。）</p>
+<p>故选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k19_T2">
     <div class="qhead"><span class="qno">k19_T2</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 5 小题</span><span class="badge year">1987</span> <span class="badge year">1992</span> <span class="badge year">2007</span> <span class="badge year">2009</span> <span class="badge year">2015</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.19.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k19_T2_0.png" alt="k19_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x) 在 (a,b) 内（严格）单调增加$</div>
+        <div class="steps"><p>任取 $x_1,x_2\in(a,b)$，$x_1&lt;x_2$。$f$ 在 $[x_1,x_2]\subset(a,b)$ 上连续、$(x_1,x_2)$ 内可导，由拉格朗日中值定理，存在 $\xi\in(x_1,x_2)$ 使</p>
+<p>$$f(x_2)-f(x_1)=f&#x27;(\xi)(x_2-x_1).$$</p>
+<p>由条件 $f&#x27;(\xi)&gt;0$ 且 $x_2-x_1&gt;0$，故 $f(x_2)-f(x_1)&gt;0$，即 $f(x_2)&gt;f(x_1)$。由 $x_1,x_2$ 的任意性，$f$ 在 $(a,b)$ 内单调增加。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle x\ge 1 时恒有 \arctan x-\dfrac{1}{2}\arccos\dfrac{2x}{1+x^2}=\dfrac{\pi}{4}$</div>
+        <div class="steps"><p>设 $f(x)=\arctan x-\dfrac12\arccos\dfrac{2x}{1+x^2}\ (x\ge1)$，则 $f$ 在 $[1,+\infty)$ 上连续。当 $x=1$ 时：</p>
+<p>$$f(1)=\arctan 1-\frac12\arccos 1=\frac{\pi}{4}-0=\frac{\pi}{4}.$$</p>
+<p>当 $x&gt;1$ 时，记 $u=\dfrac{2x}{1+x^2}$，则 $u&#x27;=\dfrac{2(1-x^2)}{(1+x^2)^2}$，且</p>
+<p>$$1-u^2=\frac{(1+x^2)^2-4x^2}{(1+x^2)^2}=\frac{(x^2-1)^2}{(1+x^2)^2},\qquad \sqrt{1-u^2}=\frac{x^2-1}{1+x^2}\ \ (x&gt;1),$$</p>
+<p>$$\left(\arccos u\right)&#x27;=-\frac{u&#x27;}{\sqrt{1-u^2}}=-\frac{2(1-x^2)}{(1+x^2)^2}\cdot\frac{1+x^2}{x^2-1}=\frac{2}{1+x^2}.$$</p>
+<p>于是</p>
+<p>$$f&#x27;(x)=\frac{1}{1+x^2}-\frac12\cdot\frac{2}{1+x^2}=0\qquad(x&gt;1).$$</p>
+<p>故 $f$ 在 $[1,+\infty)$ 上恒为常数：$f(x)\equiv f(1)=\dfrac{\pi}{4}$，即对一切 $x\ge1$，</p>
+<p>$$\arctan x-\frac12\arccos\frac{2x}{1+x^2}=\frac{\pi}{4}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>记 $d_n=u_{n+1}-u_n=f(n+1)-f(n)=f&#x27;(\xi_n)$，$\xi_n\in(n,n+1)$（拉格朗日中值定理）。因 $f&#x27;&#x27;(x)&gt;0$，$f&#x27;$ 严格递增，而 $\xi_{n+1}&gt;n+1&gt;\xi_n$，故</p>
+<p>$$d_{n+1}=f&#x27;(\xi_{n+1})&gt;f&#x27;(\xi_n)=d_n,$$</p>
+<p>即 $\{d_n\}$ 严格递增。若 $u_1&lt;u_2$，则 $d_1=u_2-u_1&gt;0$，从而 $d_n\ge d_1&gt;0$，于是</p>
+<p>$$u_n=u_1+\sum_{k=1}^{n-1}d_k\ \ge\ u_1+(n-1)\,d_1\ \xrightarrow[n\to\infty]{}\ +\infty,$$</p>
+<p>故 $\{u_n\}$ 必发散，**D 正确**。</p>
+<p>反例排除其余选项（均满足 $f&#x27;&#x27;&gt;0$）：</p>
+<p>- $f(x)=(x-3)^2$：$u_1=4&gt;u_2=1$，但 $u_n=(n-3)^2\to\infty$ 发散，A 错；<br>- $f(x)=e^{-x}$：$u_1=e^{-1}&gt;u_2=e^{-2}$，但 $u_n\to0$ 收敛，B 错；<br>- $f(x)=x^2$：$u_1=1&lt;u_2=4$，$u_n=n^2\to\infty$ 发散，C 错。</p>
+<p>故选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f'_+(0) 存在，且 f'_+(0)=A$</div>
+        <div class="steps"><p>任取 $x\in(0,\delta)$。$f$ 在 $[0,x]$ 上连续（在 $x=0$ 处连续，在 $(0,x]$ 上连续）、在 $(0,x)$ 内可导，由拉格朗日中值定理，存在 $\xi_x\in(0,x)$ 使</p>
+<p>$$\frac{f(x)-f(0)}{x-0}=f&#x27;(\xi_x).$$</p>
+<p>当 $x\to0^+$ 时，$0&lt;\xi_x&lt;x\to0^+$。对任意 $\varepsilon&gt;0$，由 $\lim\limits_{t\to0^+}f&#x27;(t)=A$，存在 $\delta&#x27;\in(0,\delta)$，当 $0&lt;t&lt;\delta&#x27;$ 时 $\left|f&#x27;(t)-A\right|&lt;\varepsilon$。于是当 $0&lt;x&lt;\delta&#x27;$ 时，$0&lt;\xi_x&lt;x&lt;\delta&#x27;$，从而</p>
+<p>$$\left|\frac{f(x)-f(0)}{x}-A\right|=\left|f&#x27;(\xi_x)-A\right|&lt;\varepsilon.$$</p>
+<p>按右导数定义，</p>
+<p>$$f&#x27;_+(0)=\lim_{x\to0^+}\frac{f(x)-f(0)}{x}=A$$</p>
+<p>存在且等于 $A$。（注意不能用洛必达法则，否则要用到 $f&#x27;(0)$ 存在这一待证结论。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a<x_0=b-\dfrac{f(b)}{f'(b)}<b$</div>
+        <div class="steps"><p>曲线在点 $\left(b,f(b)\right)$ 处的切线为 $y=f(b)+f&#x27;(b)(x-b)$，令 $y=0$ 得交点横坐标</p>
+<p>$$x_0=b-\frac{f(b)}{f&#x27;(b)}.$$</p>
+<p>**证 $x_0&lt;b$：** 由拉格朗日中值定理，存在 $\xi\in(a,b)$ 使</p>
+<p>$$f(b)=f(b)-f(a)=f&#x27;(\xi)(b-a).$$</p>
+<p>因 $f&#x27;(\xi)&gt;0,\ b-a&gt;0$，故 $f(b)&gt;0$；又 $f&#x27;(b)&gt;0$，于是 $\dfrac{f(b)}{f&#x27;(b)}&gt;0$，得 $x_0&lt;b$。</p>
+<p>**证 $x_0&gt;a$：** 因 $f&#x27;&#x27;(x)&gt;0$，$f&#x27;$ 严格递增，而 $\xi&lt;b$，故 $f&#x27;(\xi)&lt;f&#x27;(b)$，从而</p>
+<p>$$f(b)=f&#x27;(\xi)(b-a)&lt;f&#x27;(b)(b-a)\ \Longrightarrow\ \frac{f(b)}{f&#x27;(b)}&lt;b-a\ \Longrightarrow\ x_0=b-\frac{f(b)}{f&#x27;(b)}&gt;b-(b-a)=a.$$</p>
+<p>综上，$a&lt;x_0&lt;b$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k19_T3">
     <div class="qhead"><span class="qno">k19_T3</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2013</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k19_T3_0.png" alt="k19_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 a>0，使 f(a)=1$</div>
+        <div class="steps"><p>由 $\lim\limits_{x\to+\infty}f(x)=2&gt;1$，取 $\varepsilon=\dfrac12$，存在 $X&gt;0$，当 $x&gt;X$ 时 $|f(x)-2|&lt;\dfrac12$，即 $f(x)&gt;\dfrac32&gt;1$。取定 $b&gt;X$，则 $f(b)&gt;1$。</p>
+<p>$f$ 在 $[0,b]$ 上连续（可导 $\Rightarrow$ 连续），$f(0)=0&lt;1&lt;f(b)$，由零点定理，存在 $a\in(0,b)$ 使 $f(a)=1$，显然 $a&gt;0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,a)，使 f'(\xi)=\dfrac{1}{a}$</div>
+        <div class="steps"><p>由 (1)，$f(a)=1,\ f(0)=0$。$f$ 在 $[0,a]$ 上连续、$(0,a)$ 内可导，由拉格朗日中值定理，存在 $\xi\in(0,a)$ 使</p>
+<p>$$f&#x27;(\xi)=\frac{f(a)-f(0)}{a-0}=\frac{1-0}{a}=\frac1a.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

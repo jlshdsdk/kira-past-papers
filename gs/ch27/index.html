@@ -21,78 +21,233 @@
 
   <div class="card q" id="k27_T1">
     <div class="qhead"><span class="qno">k27_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1997</span> <span class="badge year">2000</span> <span class="badge year">2008</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.27.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T1_0.png" alt="k27_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（S_2<S_1<S_3）$</div>
+        <div class="steps"><p>**单调性**：f&#x27;(x)&lt;0，f 在 [a,b] 上严格递减，故 f(b)&lt;f(x)&lt;f(a)（端点外严格），于是</p>
+<p>$$S_2=\int_a^b f(b)\,dx &lt; S_1=\int_a^b f(x)\,dx.$$</p>
+<p>**凸性**：f&#x27;&#x27;(x)&gt;0，曲线下凸（凹向向上），连接两端点 (a,f(a))、(b,f(b)) 的弦位于曲线上方，即曲线在弦之下，故</p>
+<p>$$S_1=\int_a^b f(x)\,dx &lt; \frac{f(a)+f(b)}{2}(b-a)=S_3.$$</p>
+<p>综上 $S_2&lt;S_1&lt;S_3$，选 **B**。</p>
+<p>数值验证：取 f(x)=1/x，[a,b]=[1,2]（满足 f&gt;0, f&#x27;&lt;0, f&#x27;&#x27;&gt;0）：S₂=1/2≈0.5，S₁=ln2≈0.693，S₃=¾=0.75，确有 S₂&lt;S₁&lt;S₃。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{4}$</div>
+        <div class="steps"><p>配方：</p>
+<p>$$\int_0^1\sqrt{2x-x^2}\,dx=\int_0^1\sqrt{1-(x-1)^2}\,dx.$$</p>
+<p>被积函数是圆 $(x-1)^2+y^2=1$（圆心 (1,0)，半径 1）的上半圆在 $x\in[0,1]$ 上的这段，即半径为 1 的圆面积的四分之一（几何意义直接读出，不必真的换元积分）：</p>
+<p>$$\int_0^1\sqrt{2x-x^2}\,dx=\frac{1}{4}\cdot\pi\cdot 1^2=\frac{\pi}{4}.$$</p>
+<p>若用换元验证：令 x−1=sin t，积分化为 $\int_{-\pi/2}^{0}\cos^2 t\,dt=\frac{\pi}{4}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle C（曲边三角形 ACD 的面积）$</div>
+        <div class="steps"><p>分部积分：</p>
+<p>$$\int_0^a x f&#x27;(x)\,dx=\Big[x f(x)\Big]_0^a-\int_0^a f(x)\,dx=a f(a)-\int_0^a f(x)\,dx.$$</p>
+<p>$a f(a)$ 是矩形 OBAC（O(0,0)、B(a,0)、A(a,f(a))、C(0,f(a))）的面积；$\int_0^a f(x)dx$ 是曲线 $y=f(x)$ 下方、以线段 OD、OB 为边的曲边梯形面积。二者之差正是：上方以线段 CA（即 y=f(a)）为界、左侧以 y 轴上线段 DC 为界、下方以曲线弧 DA 为界的区域面积，即曲边三角形 ACD：</p>
+<p>$$\int_0^a\big[f(a)-f(x)\big]dx=a f(a)-\int_0^a f(x)dx.$$</p>
+<p>故选 **C**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k27_T2">
     <div class="qhead"><span class="qno">k27_T2</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1987</span> <span class="badge year">2015</span> <span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.27.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T2_0.png" alt="k27_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 正确（积分确为 0）$</div>
+        <div class="steps"><p>$x^4$ 是偶函数，$\sin x$ 是奇函数，故 $g(x)=x^4\sin x$ 是奇函数；积分区间 $[-\pi,\pi]$ 关于原点对称，且 $g$ 连续，故</p>
+<p>$$\int_{-\pi}^{\pi}x^4\sin x\,dx=0.$$</p>
+<p>命题正确，括号内应打 √。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi^2}{4}$</div>
+        <div class="steps"><p>区间 $[-\frac{\pi}{2},\frac{\pi}{2}]$ 对称。$\frac{\sin x}{1+\cos x}$：分子奇、分母偶，故为奇函数，</p>
+<p>$$\int_{-\pi/2}^{\pi/2}\frac{\sin x}{1+\cos x}dx=0.$$</p>
+<p>$|x|$ 为偶函数：</p>
+<p>$$\int_{-\pi/2}^{\pi/2}|x|\,dx=2\int_0^{\pi/2}x\,dx=2\cdot\frac{1}{2}\left(\frac{\pi}{2}\right)^2=\frac{\pi^2}{4}.$$</p>
+<p>故原式 $=0+\frac{\pi^2}{4}=\frac{\pi^2}{4}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{\pi^3}{2}$</div>
+        <div class="steps"><p>$\sin^3 x$ 为奇函数，对称区间 $[-\pi,\pi]$ 上积分为 0；$\sqrt{\pi^2-x^2}$ 为偶函数，其积分是半径为 $\pi$ 的上半圆面积：</p>
+<p>$$\int_{-\pi}^{\pi}\sqrt{\pi^2-x^2}\,dx=\frac{1}{2}\cdot\pi\cdot\pi^2=\frac{\pi^3}{2}.$$</p>
+<p>故原式 $=0+\frac{\pi^3}{2}=\frac{\pi^3}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k27_T3">
     <div class="qhead"><span class="qno">k27_T3</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1988</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T3_0.png" alt="k27_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>逐项检验：</p>
+<p>**A**：$-x\in(-\infty,+\infty)$，由条件仍得 $f(-x)&lt;g(-x)$，与 A 矛盾，A 错。</p>
+<p>**B**：函数值不等式推不出导数不等式。反例：$f(x)=\frac{x^2}{2}-1$，$g(x)=x^2$，处处 $f&lt;g$，但在 $x=-1$ 处 $f&#x27;(-1)=-1&gt;-2=g&#x27;(-1)$。B 错。</p>
+<p>**C**：可导必连续，故<br>$$\lim_{x\to x_0}f(x)=f(x_0)&lt;g(x_0)=\lim_{x\to x_0}g(x),$$<br>对一切 $x_0$ 严格成立。C 对。</p>
+<p>**D**：$x&lt;0$ 时积分上下限反号，不等式方向不定。反例：$f(x)\equiv-2$，$g(x)\equiv-1$，处处 $f&lt;g$，但 $\int_0^{-1}f\,dt=2&gt;1=\int_0^{-1}g\,dt$。D 错。</p>
+<p>故选 **C**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k27_T4">
     <div class="qhead"><span class="qno">k27_T4</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1990</span> <span class="badge year">1994</span> <span class="badge year">2003</span> <span class="badge year">2011</span> <span class="badge year">2018</span> <span class="badge year">2022</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.27.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T4_0.png" alt="k27_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k27_T4_1.png" alt="k27_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \int_{-2}^{-1}e^{-x^3}dx\ >\ \int_{-2}^{-1}e^{x^3}dx$</div>
+        <div class="steps"><p>当 $x\in[-2,-1]$ 时 $x^3\in[-8,-1]&lt;0$，于是 $-x^3&gt;0&gt;x^3$；由 $e^t$ 严格递增：</p>
+<p>$$e^{-x^3}&gt;e^{x^3}&gt;0,\qquad x\in[-2,-1].$$</p>
+<p>由定积分的保序性：</p>
+<p>$$\int_{-2}^{-1}e^{-x^3}dx&gt;\int_{-2}^{-1}e^{x^3}dx.$$</p>
+<p>填 **&gt;**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D（P<M<N）$</div>
+        <div class="steps"><p>利用区间 $[-\frac{\pi}{2},\frac{\pi}{2}]$ 的对称性与奇偶性：</p>
+<p>**M**：$\dfrac{\sin x}{1+x^2}\cos^4 x$ 中 $\sin x$ 为奇因子，其余为偶因子，整个被积函数为奇函数，故 $M=0$。</p>
+<p>**N**：$\sin^3 x$ 为奇函数积分为 0；$\cos^4 x$ 为偶函数且 $\cos^4x\ge 0$ 不恒为 0，故 $N=\int_{-\pi/2}^{\pi/2}\cos^4x\,dx&gt;0$。</p>
+<p>**P**：$x^2\sin^3 x$ 为奇函数积分为 0，故 $P=-\int_{-\pi/2}^{\pi/2}\cos^4x\,dx&lt;0$。</p>
+<p>所以 $P&lt;0=M&lt;N$，即 $P&lt;M&lt;N$，选 **D**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle B（1>I_1>I_2）$</div>
+        <div class="steps"><p>在 $(0,\frac{\pi}{4})$ 内 $\tan x&gt;x&gt;0$，故</p>
+<p>$$\frac{\tan x}{x}&gt;1&gt;\frac{x}{\tan x}\quad\Rightarrow\quad I_1&gt;\int_0^{\pi/4}1\,dx=\frac{\pi}{4}&gt;I_2,\;\; I_1&gt;I_2.$$</p>
+<p>关键还需确定 $I_1$ 与 1 的大小。令 $\varphi(x)=\frac{\tan x}{x}$，</p>
+<p>$$\varphi&#x27;(x)=\frac{x\sec^2x-\tan x}{x^2}=\frac{x-\sin x\cos x}{x^2\cos^2x}&gt;0\quad\Big(\because \tfrac12\sin 2x&lt;x\Big),$$</p>
+<p>故 $\varphi$ 在 $(0,\frac{\pi}{2})$ 严格增，于是 $x\in(0,\frac{\pi}{4})$ 时</p>
+<p>$$\frac{\tan x}{x}&lt;\frac{\tan\frac{\pi}{4}}{\frac{\pi}{4}}=\frac{4}{\pi},\qquad<br>I_1&lt;\int_0^{\pi/4}\frac{4}{\pi}dx=1.$$</p>
+<p>综上 $1&gt;I_1&gt;I_2$，选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle B（I<K<J）$</div>
+        <div class="steps"><p>当 $x\in(0,\frac{\pi}{4})$ 时：$0&lt;\sin x&lt;\cos x&lt;1$，且 $\cot x=\frac{\cos x}{\sin x}&gt;1$，故</p>
+<p>$$\sin x&lt;\cos x&lt;\cot x.$$</p>
+<p>$\ln t$ 严格递增：</p>
+<p>$$\ln\sin x&lt;\ln\cos x&lt;\ln\cot x,\qquad x\in\left(0,\tfrac{\pi}{4}\right).$$</p>
+<p>在 $(0,\frac{\pi}{4}]$ 上积分（被积函数在 $[0,\frac{\pi}{4}]$ 上可积，瑕点处收敛）：</p>
+<p>$$I&lt;K&lt;J.$$</p>
+<p>选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle C（K>M>N）$</div>
+        <div class="steps"><p>**M**：$\dfrac{(1+x)^2}{1+x^2}=\dfrac{1+2x+x^2}{1+x^2}=1+\dfrac{2x}{1+x^2}$，其中 $\dfrac{2x}{1+x^2}$ 为奇函数，对称区间上积分为 0，故</p>
+<p>$$M=\int_{-\pi/2}^{\pi/2}1\,dx=\pi.$$</p>
+<p>**K**：$\sqrt{\cos x}\ge0$ 且在 $(-\frac{\pi}{2},\frac{\pi}{2})$ 内恒正，故 $K=\pi+\int_{-\pi/2}^{\pi/2}\sqrt{\cos x}\,dx&gt;\pi$。</p>
+<p>**N**：记 $g(x)=(1+x)e^{-x}$，对称化：</p>
+<p>$$N=\int_0^{\pi/2}\big[g(x)+g(-x)\big]dx=\int_0^{\pi/2}\Big[(1+x)e^{-x}+(1-x)e^{x}\Big]dx.$$</p>
+<p>由 $e^t\ge 1+t$（等号仅在 $t=0$）：$x\ge0$ 时 $(1+x)e^{-x}\le1$ 且 $(1-x)e^x\le1$，且 $x\in(0,\frac{\pi}{2}]$ 内严格，故被积函数 $&lt;2$，</p>
+<p>$$N&lt;\int_0^{\pi/2}2\,dx=\pi.$$</p>
+<p>（直接计算验证：$N=\Big[-(2+x)e^{-x}\Big]_{-\pi/2}^{\pi/2}=(2-\frac{\pi}{2})e^{\pi/2}-(2+\frac{\pi}{2})e^{-\pi/2}\approx 2.065-0.742=1.32&lt;\pi\approx3.14$。）</p>
+<p>综上 $N&lt;M&lt;K$，即 $K&gt;M&gt;N$，选 **C**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle A（I_1<I_2<I_3）$</div>
+        <div class="steps"><p>在 $[0,1]$ 上比较被积函数（$x&gt;0$ 时各分母均为正）：</p>
+<p>**① I₁ 与 I₂**：令 $h(x)=\ln(1+x)-\frac{x}{2}$，$h(0)=0$，$h&#x27;(x)=\frac{1}{1+x}-\frac{1}{2}&gt;0$（$0\le x\le1$），故 $\ln(1+x)&gt;\frac{x}{2}$，从而</p>
+<p>$$\frac{x}{2(1+\cos x)}&lt;\frac{\ln(1+x)}{1+\cos x}\quad(0&lt;x\le1)\ \Rightarrow\ I_1&lt;I_2.$$</p>
+<p>**② I₂ 与 I₃**：由 $\ln(1+x)&lt;x$，</p>
+<p>$$\frac{\ln(1+x)}{1+\cos x}&lt;\frac{x}{1+\cos x}.$$</p>
+<p>又在 $[0,1]$ 上 $1+\sin x&lt;2(1+\cos x)$（等价于 $\sin x-2\cos x&lt;1$；$\sin x-2\cos x$ 在 $[0,1]$ 上单调增，最大值 $\sin1-2\cos1\approx-0.24&lt;1$），故</p>
+<p>$$\frac{x}{1+\cos x}&lt;\frac{2x}{1+\sin x}\quad(0&lt;x\le1)\ \Rightarrow\ I_2&lt;I_3.$$</p>
+<p>综上 $I_1&lt;I_2&lt;I_3$，选 **A**。</p>
+<p>数值验证：$I_1\approx0.143$，$I_2\approx0.219$，$I_3\approx0.632$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k27_T5">
     <div class="qhead"><span class="qno">k27_T5</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2012</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T5_0.png" alt="k27_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（I_2<I_1<I_3）$</div>
+        <div class="steps"><p>**相邻比较**：$I_{k+1}-I_k=\int_{k\pi}^{(k+1)\pi}e^{x^2}\sin x\,dx$，其符号由该区间上 $\sin x$ 的符号决定：</p>
+<p>- $(\pi,2\pi)$ 上 $\sin x&lt;0$，且 $e^{x^2}&gt;0$，故 $I_2-I_1&lt;0$，即 $I_2&lt;I_1$；<br>- $(2\pi,3\pi)$ 上 $\sin x&gt;0$，故 $I_3-I_2&gt;0$，即 $I_2&lt;I_3$。</p>
+<p>**比较 I₁ 与 I₃**：把后两段都平移到 $[0,\pi]$：</p>
+<p>$$\int_{\pi}^{2\pi}e^{x^2}\sin x\,dx\xlongequal{x=t+\pi}-\int_0^{\pi}e^{(t+\pi)^2}\sin t\,dt,\qquad<br>\int_{2\pi}^{3\pi}e^{x^2}\sin x\,dx\xlongequal{x=t+2\pi}\int_0^{\pi}e^{(t+2\pi)^2}\sin t\,dt.$$</p>
+<p>故</p>
+<p>$$I_3-I_1=\int_0^{\pi}\Big[e^{(t+2\pi)^2}-e^{(t+\pi)^2}\Big]\sin t\,dt&gt;0,$$</p>
+<p>（因 $t\ge0$ 时 $(t+2\pi)^2&gt;(t+\pi)^2$，$e^{x^2}$ 在 $x&gt;0$ 严格增，且 $\sin t\ge0$ 不恒为 0）即 $I_3&gt;I_1$。</p>
+<p>综上 $I_2&lt;I_1&lt;I_3$，选 **D**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k27_T6">
     <div class="qhead"><span class="qno">k27_T6</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1988</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T6_0.png" alt="k27_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f'(0)$</div>
+        <div class="steps"><p>题面把极限写成 $x\to a^+$，但表达式中不含 $x$，系排版笔误；本题 1988 年原题极限过程为 $a\to0^+$，按此求解。</p>
+<p>**换元**：</p>
+<p>$$\int_{-a}^{a}f(t+a)\,dt=\int_0^{2a}f(u)\,du,\qquad \int_{-a}^{a}f(t-a)\,dt=\int_{-2a}^{0}f(u)\,du.$$</p>
+<p>记 $\Phi(a)=\int_0^{2a}f(u)du-\int_{-2a}^{0}f(u)du$，则 $\Phi(0)=0$，且</p>
+<p>$$\Phi&#x27;(a)=2f(2a)-2f(-2a).$$</p>
+<p>由洛必达法则（$\frac{0}{0}$ 型）：</p>
+<p>$$L=\lim_{a\to0^+}\frac{\Phi(a)}{4a^2}=\lim_{a\to0^+}\frac{2f(2a)-2f(-2a)}{8a}=\lim_{a\to0^+}\frac{f(2a)-f(-2a)}{4a}.$$</p>
+<p>仍为 $\frac{0}{0}$ 型，拆项用导数定义：</p>
+<p>$$L=\frac{1}{2}\lim_{a\to0^+}\frac{f(2a)-f(0)}{2a}+\frac{1}{2}\lim_{a\to0^+}\frac{f(0)-f(-2a)}{2a}=\frac{1}{2}f&#x27;(0)+\frac{1}{2}f&#x27;(0)=f&#x27;(0).$$</p>
+<p>（第二步也可再用一次洛必达：$=\lim\frac{2f&#x27;(2a)+2f&#x27;(-2a)}{4}=f&#x27;(0)$，用到 $f&#x27;$ 连续。）</p>
+<p>故所求极限为 $f&#x27;(0)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 不等式成立，证毕（|·|≤M−m）$</div>
+        <div class="steps"><p>对任意 $x\in(-\infty,+\infty)$ 与 $a&gt;0$：</p>
+<p>$$\left|\frac{1}{2a}\int_{-a}^{a}f(t)\,dt-f(x)\right|=\left|\frac{1}{2a}\int_{-a}^{a}\big[f(t)-f(x)\big]dt\right|\le\frac{1}{2a}\int_{-a}^{a}\big|f(t)-f(x)\big|\,dt.$$</p>
+<p>由 $m\le f(x)\le M$，对一切 $t,x$ 有 $-(M-m)\le f(t)-f(x)\le M-m$，即 $|f(t)-f(x)|\le M-m$，故</p>
+<p>$$\le\frac{1}{2a}\int_{-a}^{a}(M-m)\,dt=\frac{1}{2a}\cdot 2a\,(M-m)=M-m.$$</p>
+<p>$$\boxed{\left|\frac{1}{2a}\int_{-a}^{a}f(t)dt-f(x)\right|\le M-m}\qquad\blacksquare$$</p>
+<p>（几何解释：$\frac{1}{2a}\int_{-a}^a f\,dt$ 是 f 在 $[-a,a]$ 上的平均值，必落在 $[m,M]$ 内，且与任一点函数值之差不超过值域宽度。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k27_T7">
     <div class="qhead"><span class="qno">k27_T7</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k27_T7_0.png" alt="k27_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（只与 k 有关；事实上 I=2k）$</div>
+        <div class="steps"><p>$|\sin x|$ 是周期为 $\pi$ 的连续周期函数，且 $\int_0^{\pi}|\sin x|dx=\int_0^{\pi}\sin x\,dx=2$。</p>
+<p>区间 $[a,\,a+k\pi]$ 的长度为 $k\pi$，恰为周期的整数倍，故积分值与起点 $a$ 无关：</p>
+<p>- $k&gt;0$：$I=k\int_0^{\pi}|\sin x|dx=2k$；<br>- $k=0$：$I=0=2k$；<br>- $k&lt;0$：$I=-\int_{a+k\pi}^{a}|\sin x|dx=-2|k|=2k$。</p>
+<p>即对任意整数 $k$，恒有 $I=2k$，只依赖 $k$，与 $a$ 无关。选 **B**（只与 $k$ 有关）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

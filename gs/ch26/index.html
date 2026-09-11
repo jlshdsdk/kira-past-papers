@@ -17,27 +17,84 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 26</div>
 <h1 class="title">考点 26　定积分的定义</h1>
-<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 0/2　</div>
+<div class="sub">题组 2 · 覆盖年份 — · 题型：— · 解析完成 2/2　</div>
 
   <div class="card q" id="k26_T1">
     <div class="qhead"><span class="qno">k26_T1</span>
-      
+      <span class="badge">共 6 小题</span><span class="badge year">1998</span> <span class="badge year">2002</span> <span class="badge year">2004</span> <span class="badge year">2016</span> <span class="badge year">2017</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k26_T1_0.png" alt="k26_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{2}{\pi}$</div>
+        <div class="steps"><p>通项为 $\dfrac{\sin\frac{k\pi}{n}}{n+\frac1k}$（$k=1,\dots,n$）。由于 $n+1\le n+\frac1k\le n+\frac1n$，有</p>
+<p>$$\frac{1}{n+1}\sum_{k=1}^{n}\sin\frac{k\pi}{n}\le S_n\le\frac{1}{n}\sum_{k=1}^{n}\sin\frac{k\pi}{n}.$$</p>
+<p>而 $\dfrac{1}{n}\displaystyle\sum_{k=1}^{n}\sin\frac{k\pi}{n}\to\int_0^1\sin(\pi x)\,dx=\dfrac{2}{\pi}$（$\dfrac{1}{n+1}$ 与 $\dfrac1n$ 之比趋于 1，两侧极限同为 $\dfrac2\pi$）。</p>
+<p>由夹逼准则，$\lim\limits_{n\to\infty}S_n=\dfrac{2}{\pi}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{2\sqrt{2}}{\pi}$</div>
+        <div class="steps"><p>它是 $f(x)=\sqrt{1+\cos\pi x}$ 在 $[0,1]$ 上的右端点黎曼和：</p>
+<p>$$\lim_{n\to\infty}\frac1n\sum_{k=1}^{n}\sqrt{1+\cos\frac{k\pi}{n}}=\int_0^1\sqrt{1+\cos\pi x}\,dx.$$</p>
+<p>由 $1+\cos\pi x=2\cos^2\dfrac{\pi x}{2}$，且 $x\in[0,1]$ 时 $\cos\dfrac{\pi x}{2}\ge0$：</p>
+<p>$$\int_0^1\sqrt2\cos\frac{\pi x}{2}\,dx=\sqrt2\cdot\frac{2}{\pi}\left[\sin\frac{\pi x}{2}\right]_0^1=\frac{2\sqrt2}{\pi}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>取对数化为和式：</p>
+<p>$$\lim_{n\to\infty}\frac{2}{n}\sum_{k=1}^{n}\ln\left(1+\frac{k}{n}\right)=2\int_0^1\ln(1+x)\,dx.$$</p>
+<p>换元 $u=1+x$（$x\in[0,1]\Rightarrow u\in[1,2]$）：</p>
+<p>$$2\int_0^1\ln(1+x)dx=2\int_1^2\ln u\,du=2\int_1^2\ln x\,dx.$$</p>
+<p>故选 B。（数值验证：$2\int_1^2\ln x\,dx=2[x\ln x-x]_1^2=4\ln2-2\approx0.773$，与 $2\int_0^1\ln(1+x)dx$ 一致；注意 C 项为 $2\int_1^2\ln(1+x)dx=2\int_2^3\ln u\,du$，不等价。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \sin 1-\cos 1$</div>
+        <div class="steps"><p>$$\frac{1}{n^2}\sum_{k=1}^{n}k\sin\frac{k}{n}=\sum_{k=1}^{n}\frac{k}{n}\sin\frac{k}{n}\cdot\frac{1}{n}\to\int_0^1 x\sin x\,dx.$$</p>
+<p>分部积分：</p>
+<p>$$\int_0^1 x\sin x\,dx=\left[-x\cos x\right]_0^1+\int_0^1\cos x\,dx=-\cos1+\sin1.$$</p>
+<p>故极限为 $\sin 1-\cos 1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac{1}{4}$</div>
+        <div class="steps"><p>$$\sum_{k=1}^{n}\frac{k}{n^2}\ln\left(1+\frac{k}{n}\right)=\frac1n\sum_{k=1}^{n}\frac{k}{n}\ln\left(1+\frac{k}{n}\right)\to\int_0^1 x\ln(1+x)\,dx.$$</p>
+<p>分部积分（$u=\ln(1+x),\ dv=x\,dx$）：</p>
+<p>$$\int_0^1 x\ln(1+x)dx=\left[\frac{x^2}{2}\ln(1+x)\right]_0^1-\frac{1}{2}\int_0^1\frac{x^2}{1+x}dx.$$</p>
+<p>而 $\dfrac{x^2}{1+x}=\dfrac{x^2-1+1}{1+x}=x-1+\dfrac{1}{1+x}$，故</p>
+<p>$$\int_0^1\frac{x^2}{1+x}dx=\left[\frac{x^2}{2}-x+\ln(1+x)\right]_0^1=-\frac12+\ln2.$$</p>
+<p>于是</p>
+<p>$$\int_0^1 x\ln(1+x)dx=\frac12\ln2-\frac12\left(-\frac12+\ln2\right)=\frac{1}{4}.$$</p>
+<p>故所求极限为 $\dfrac14$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -\frac{1}{4}$</div>
+        <div class="steps"><p>$$\frac{1}{n^2}\sum_{k=1}^{n-1}k\ln\frac{k}{n}=\frac1n\sum_{k=1}^{n-1}\frac{k}{n}\ln\frac{k}{n}\to\int_0^1 x\ln x\,dx.$$</p>
+<p>（$x\ln x$ 在 $x\to0^+$ 时趋于 0，可积；缺第 $k=n$ 项不影响极限，该项和趋于 $\int_1^1=0$ 贡献。）</p>
+<p>分部积分：</p>
+<p>$$\int_0^1 x\ln x\,dx=\left[\frac{x^2}{2}\ln x\right]_0^1-\int_0^1\frac{x}{2}dx=0-\frac{1}{4}=-\frac{1}{4}.$$</p>
+<p>故所求极限为 $-\dfrac14$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k26_T2">
     <div class="qhead"><span class="qno">k26_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k26_T2_0.png" alt="k26_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>B 项：$\displaystyle\lim_{n\to\infty}\sum_{k=1}^{n}f\left(\frac{2k-1}{2n}\right)\frac{1}{n}$ 是把 $[0,1]$ 等分为 $n$ 份、取中点 $\dfrac{2k-1}{2n}$ 的黎曼和（宽度 $\dfrac1n$），由 $f$ 连续知其收敛于 $\displaystyle\int_0^1 f(x)dx$，故 B 正确。</p>
+<p>其余各项系数不对：</p>
+<p>A：$\dfrac{1}{2n}\displaystyle\sum_{k=1}^{n}f\left(\frac{2k-1}{2n}\right)=\frac12\cdot\frac1n\sum\to\frac12\int_0^1f(x)dx$；</p>
+<p>C：$\dfrac{1}{n}\displaystyle\sum_{k=1}^{2n}f\left(\frac{k-1}{2n}\right)=2\cdot\frac{1}{2n}\sum\to 2\int_0^1f(x)dx$；</p>
+<p>D：$\dfrac{2}{n}\displaystyle\sum_{k=1}^{2n}f\left(\frac{k}{2n}\right)=4\cdot\frac{1}{2n}\sum\to 4\int_0^1f(x)dx$。</p>
+<p>故选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

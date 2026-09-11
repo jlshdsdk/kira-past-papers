@@ -21,23 +21,50 @@
 
   <div class="card q" id="k02_T1">
     <div class="qhead"><span class="qno">k02_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2019</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k02_T1_0.png" alt="k02_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -4$</div>
+        <div class="steps"><p>因 A 的第一行恰为 (1,-1,0,0)，按第一行展开</p>
+<p>$$|A|=1\cdot A_{11}+(-1)\cdot A_{12}+0\cdot A_{13}+0\cdot A_{14}=A_{11}-A_{12},$$</p>
+<p>故所求即为 |A|。用行变换计算：</p>
+<p>$$|A|=\begin{vmatrix}1&amp;-1&amp;0&amp;0\\-2&amp;1&amp;-1&amp;1\\3&amp;-2&amp;2&amp;-1\\0&amp;0&amp;3&amp;4\end{vmatrix}\xrightarrow{\ r_2+2r_1,\ r_3-3r_1\ }\begin{vmatrix}1&amp;-1&amp;0&amp;0\\0&amp;-1&amp;-1&amp;1\\0&amp;1&amp;2&amp;-1\\0&amp;0&amp;3&amp;4\end{vmatrix}=\begin{vmatrix}-1&amp;-1&amp;1\\1&amp;2&amp;-1\\0&amp;3&amp;4\end{vmatrix}$$</p>
+<p>$$=-1\cdot[2\cdot4-(-1)\cdot3]+1\cdot(1\cdot4-0)+1\cdot(1\cdot3-2\cdot0)=-11+4+3=-4.$$</p>
+<p>所以 A_{11}-A_{12}=-4。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（a=0 或 a=3/2）$</div>
+        <div class="steps"><p>由 A_{2j}=(-1)^{2+j}M_{2j}，得 -M_{21}+M_{22}-M_{23}=A_{21}+A_{22}+A_{23}，它等于把 A 的第二行换成 (1,1,1) 后的行列式：</p>
+<p>$$D_1=\begin{vmatrix}a+1&amp;b&amp;3\\1&amp;1&amp;1\\1&amp;1&amp;2\end{vmatrix}=-(2b-3)+(2a-1)-(a+1-b)=a+1-b,$$</p>
+<p>由 D_1=0 得 b=a+1。再按第一行展开计算 |A|：</p>
+<p>$$|A|=\begin{vmatrix}a+1&amp;b&amp;3\\a&amp;\tfrac{b}{2}&amp;1\\1&amp;1&amp;2\end{vmatrix}=(a+1)\Big(\tfrac{b}{2}\cdot2-1\Big)-b(2a-1)+3\Big(a-\tfrac{b}{2}\Big)=-ab+2a+\tfrac{b}{2}-1.$$</p>
+<p>由 |A|=-\tfrac12 得 -2ab+4a+b=1；代入 b=a+1：</p>
+<p>$$-2a(a+1)+4a+(a+1)=1\ \Rightarrow\ -2a^2+3a=0\ \Rightarrow\ a=0\ \text{或}\ a=\tfrac32,$$</p>
+<p>此时 b=a+1 随之确定。故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k02_T2">
     <div class="qhead"><span class="qno">k02_T2</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k02_T2_0.png" alt="k02_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{3}{2}$</div>
+        <div class="steps"><p>每行元素之和均为 2，即</p>
+<p>$$A\begin{pmatrix}1\\1\\1\end{pmatrix}=2\begin{pmatrix}1\\1\\1\end{pmatrix}.$$</p>
+<p>两边左乘 A^{*}：A^{*}A(1,1,1)^{T}=|A|E(1,1,1)^{T}=3(1,1,1)^{T}=2A^{*}(1,1,1)^{T}，故</p>
+<p>$$A^{*}\begin{pmatrix}1\\1\\1\end{pmatrix}=\tfrac{3}{2}\begin{pmatrix}1\\1\\1\end{pmatrix}.$$</p>
+<p>而 A^{*} 的第一列为 (A_{11},A_{21},A_{31})^{T}，其第一个分量即 A_{11}+A_{21}+A_{31}=\tfrac32。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

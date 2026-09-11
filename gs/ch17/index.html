@@ -21,34 +21,97 @@
 
   <div class="card q" id="k17_T1">
     <div class="qhead"><span class="qno">k17_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 1 小题</span><span class="badge year">1996</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k17_T1_0.png" alt="k17_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b)，使 f(\xi)=0$</div>
+        <div class="steps"><p>因 $f&#x27;(a)f&#x27;(b)&gt;0$，不妨设 $f&#x27;(a)&gt;0,\ f&#x27;(b)&gt;0$（若同为负，对 $-f$ 作同样论证即可）。</p>
+<p>由右导数定义<br>$$\lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}=f&#x27;(a)&gt;0,$$<br>故存在 $\delta_1&gt;0$，当 $x\in(a,a+\delta_1)$ 时 $\dfrac{f(x)-f(a)}{x-a}&gt;0$，即 $f(x)&gt;f(a)=0$；取 $x_1\in(a,a+\delta_1)$ 使 $f(x_1)&gt;0$。</p>
+<p>同理由<br>$$\lim_{x\to b^-}\frac{f(x)-f(b)}{x-b}=f&#x27;(b)&gt;0,$$<br>当 $x&lt;b$ 且充分接近 $b$ 时 $x-b&lt;0$，故 $f(x)-f(b)&lt;0$，即 $f(x)&lt;0$；取 $x_2\in(b-\delta_2,b)$ 使 $f(x_2)&lt;0$，且可使 $x_1&lt;x_2$。</p>
+<p>$f$ 在 $[x_1,x_2]$ 上连续，且 $f(x_1)&gt;0&gt;f(x_2)$，由零点定理，存在 $\xi\in(x_1,x_2)\subset(a,b)$ 使 $f(\xi)=0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k17_T2">
     <div class="qhead"><span class="qno">k17_T2</span>
-      
+      <span class="badge">共 4 小题</span><span class="badge year">1999</span> <span class="badge year">2005</span> <span class="badge year">2007</span> <span class="badge year">2020</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k17_T2_0.png" alt="k17_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \eta\in(1/2,1)，使 f(\eta)=\eta$</div>
+        <div class="steps"><p>令 $g(x)=f(x)-x$，则 $g$ 在 $\left[\dfrac12,1\right]$ 上连续，且</p>
+<p>$$g\!\left(\frac12\right)=f\!\left(\frac12\right)-\frac12=1-\frac12=\frac12&gt;0,\qquad g(1)=f(1)-1=0-1=-1&lt;0.$$</p>
+<p>由零点定理，存在 $\eta\in\left(\dfrac12,1\right)$ 使 $g(\eta)=0$，即 $f(\eta)=\eta$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f(\xi)=1-\xi$</div>
+        <div class="steps"><p>令 $g(x)=f(x)+x-1$，则 $g$ 在 $[0,1]$ 上连续，且</p>
+<p>$$g(0)=f(0)+0-1=-1&lt;0,\qquad g(1)=f(1)+1-1=1&gt;0.$$</p>
+<p>由零点定理，存在 $\xi\in(0,1)$ 使 $g(\xi)=0$，即 $f(\xi)=1-\xi$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 存在 \eta\in(a,b)，使 f(\eta)=g(\eta)$</div>
+        <div class="steps"><p>设 $f,g$ 的公共最大值为 $M$，它在开区间内被取得：存在 $x_1,x_2\in(a,b)$ 使 $f(x_1)=M,\ g(x_2)=M$。</p>
+<p>令 $h(x)=f(x)-g(x)$，则 $h$ 在 $[a,b]$ 上连续，且</p>
+<p>$$h(x_1)=M-g(x_1)\ge 0\quad(\text{因 } g(x_1)\le M),\qquad h(x_2)=f(x_2)-M\le 0\quad(\text{因 } f(x_2)\le M).$$</p>
+<p>若 $h(x_1)=0$，取 $\eta=x_1$；若 $h(x_2)=0$，取 $\eta=x_2$；否则 $h(x_1)&gt;0&gt;h(x_2)$，由零点定理存在介于 $x_1$ 与 $x_2$ 之间的 $\eta\in(a,b)$ 使 $h(\eta)=0$。</p>
+<p>综上，存在 $\eta\in(a,b)$ 使 $f(\eta)=g(\eta)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle 存在 \xi\in(1,2)，使 f(\xi)=(2-\xi)e^{\xi^2}$</div>
+        <div class="steps"><p>令 $g(x)=f(x)-(2-x)e^{x^2}$，则 $g$ 在 $[1,2]$ 上连续。由 $f(1)=\displaystyle\int_1^1 e^{t^2}dt=0$，</p>
+<p>$$g(1)=0-(2-1)e^{1}=-e&lt;0,\qquad g(2)=f(2)-0=\int_1^2 e^{t^2}\,dt&gt;0.$$</p>
+<p>由零点定理，存在 $\xi\in(1,2)$ 使 $g(\xi)=0$，即 $f(\xi)=(2-\xi)e^{\xi^2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k17_T3">
     <div class="qhead"><span class="qno">k17_T3</span>
-      
+      <span class="badge">共 3 小题</span><span class="badge year">2001</span> <span class="badge year">2002</span> <span class="badge year">2008</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k17_T3_0.png" alt="k17_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (Ⅰ) f(x)=f'(0)x+\dfrac{x^2}{2}f''(\theta x)，0<\theta<1；(Ⅱ) 存在 \eta\in[-a,a]，使 a^3f''(\eta)=3\int_{-a}^{a}f(x)\,dx$</div>
+        <div class="steps"><p>**(Ⅰ)** 对任意 $x\in[-a,a]$，带拉格朗日余项的一阶麦克劳林公式为</p>
+<p>$$f(x)=f(0)+f&#x27;(0)\,x+\frac{f&#x27;&#x27;(\xi)}{2!}\,x^2,$$</p>
+<p>其中 $\xi$ 介于 $0$ 与 $x$ 之间（可写为 $\xi=\theta x,\ 0&lt;\theta&lt;1$）。由 $f(0)=0$ 得</p>
+<p>$$f(x)=f&#x27;(0)x+\frac{x^2}{2}f&#x27;&#x27;(\xi).$$</p>
+<p>**(Ⅱ)** 将上式在 $[-a,a]$ 上积分。$f&#x27;(0)x$ 为奇函数，在对称区间上积分为零，故</p>
+<p>$$\int_{-a}^{a}f(x)\,dx=\frac12\int_{-a}^{a}x^2 f&#x27;&#x27;(\xi_x)\,dx,$$</p>
+<p>其中 $\xi_x$ 介于 $0$ 与 $x$ 之间。记 $m=\min\limits_{[-a,a]}f&#x27;&#x27;,\ M=\max\limits_{[-a,a]}f&#x27;&#x27;$，由 $x^2\ge0$ 得</p>
+<p>$$\frac{m}{2}\int_{-a}^{a}x^2dx\le\int_{-a}^{a}f(x)dx\le\frac{M}{2}\int_{-a}^{a}x^2dx,\qquad \int_{-a}^{a}x^2dx=\frac{2a^3}{3},$$</p>
+<p>即 $\dfrac{a^3}{3}\,m\le\displaystyle\int_{-a}^{a}f(x)\,dx\le\dfrac{a^3}{3}\,M$，于是 $\dfrac{3}{a^3}\displaystyle\int_{-a}^{a}f(x)\,dx\in[m,M]$。由 $f&#x27;&#x27;$ 在 $[-a,a]$ 上连续及介值定理，存在 $\eta\in[-a,a]$ 使</p>
+<p>$$f&#x27;&#x27;(\eta)=\frac{3}{a^3}\int_{-a}^{a}f(x)\,dx,\qquad\text{即}\quad a^3f&#x27;&#x27;(\eta)=3\int_{-a}^{a}f(x)\,dx.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in[a,b]，使 \int_a^b f(x)g(x)\,dx=f(\xi)\int_a^b g(x)\,dx$</div>
+        <div class="steps"><p>$f$ 在 $[a,b]$ 上连续，故取得最小值 $m$ 与最大值 $M$：$m\le f(x)\le M$。由 $g(x)&gt;0$ 知 $\displaystyle\int_a^b g(x)\,dx&gt;0$，且</p>
+<p>$$m\int_a^b g(x)\,dx\le\int_a^b f(x)g(x)\,dx\le M\int_a^b g(x)\,dx,$$</p>
+<p>两边除以 $\displaystyle\int_a^b g(x)\,dx$：</p>
+<p>$$m\le\frac{\displaystyle\int_a^b f(x)g(x)\,dx}{\displaystyle\int_a^b g(x)\,dx}\le M.$$</p>
+<p>该比值介于 $f$ 在 $[a,b]$ 上的最小值与最大值之间，由闭区间上连续函数的介值定理，存在 $\xi\in[a,b]$ 使</p>
+<p>$$f(\xi)=\frac{\displaystyle\int_a^b f(x)g(x)\,dx}{\displaystyle\int_a^b g(x)\,dx},\qquad\text{即}\quad\int_a^b f(x)g(x)\,dx=f(\xi)\int_a^b g(x)\,dx.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 存在 \eta\in[a,b]，使 \int_a^b f(x)\,dx=f(\eta)(b-a)$</div>
+        <div class="steps"><p>设 $m,\ M$ 分别为 $f$ 在 $[a,b]$ 上的最小值与最大值（最值定理），则 $m\le f(x)\le M$，从而</p>
+<p>$$m(b-a)\le\int_a^b f(x)\,dx\le M(b-a),\qquad\text{即}\quad m\le\frac{1}{b-a}\int_a^b f(x)\,dx\le M.$$</p>
+<p>记 $\mu=\dfrac{1}{b-a}\displaystyle\int_a^b f(x)\,dx\in[m,M]$。由闭区间上连续函数的介值定理，存在 $\eta\in[a,b]$ 使 $f(\eta)=\mu$，即</p>
+<p>$$\int_a^b f(x)\,dx=f(\eta)(b-a).$$</p>
+<p>（此即上一题取 $g(x)\equiv1$ 的特例；用推广的积分中值定理亦可直接得到。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

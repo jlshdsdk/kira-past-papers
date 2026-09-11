@@ -21,23 +21,62 @@
 
   <div class="card q" id="k20_T1">
     <div class="qhead"><span class="qno">k20_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2003</span> <span class="badge year">2020</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k20_T1_0.png" alt="k20_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) 对任意 x\in(a,b) 有 f(x)>0；(II) 存在 \xi\in(a,b) 使 \dfrac{b^2-a^2}{\int_a^b f(x)\,dx}=\dfrac{2\xi}{f(\xi)}$</div>
+        <div class="steps"><p>**（I）** 因 f 在 [a,b] 上连续，x→a⁺ 时 2x-a→a⁺，故 \lim_{x\to a^+}f(2x-a)=f(a)。若 f(a)\ne0，则分母 x-a→0⁺ 而分子趋于 f(a)\ne0，比值趋于 ∞，与极限存在（为有限值）矛盾，故 f(a)=0。</p>
+<p>对任意 x\in(a,b)，在 [a,x] 上用拉格朗日中值定理：存在 \zeta\in(a,x) 使</p>
+<p>$$f(x)-f(a)=f&#x27;(\zeta)(x-a)&gt;0,$$</p>
+<p>故 f(x)&gt;f(a)=0，即 (a,b) 内 f(x)&gt;0。</p>
+<p>**（II）** 令 F(x)=\int_a^x f(t)\,dt，则 F 在 [a,b] 连续、(a,b) 内可导，F(a)=0，F&#x27;(x)=f(x)。对 F(x) 与 u(x)=x^2 在 [a,b] 上用柯西中值定理（对称形式 [F(b)-F(a)]u&#x27;(\xi)=[u(b)-u(a)]F&#x27;(\xi)）：存在 \xi\in(a,b) 使</p>
+<p>$$\left(\int_a^b f(t)\,dt\right)\cdot 2\xi=(b^2-a^2)f(\xi).$$</p>
+<p>由（I）知 f(\xi)&gt;0，又 f&gt;0 于 (a,b) 故 \int_a^b f(x)\,dx&gt;0，两边同除以 f(\xi)\int_a^b f(x)\,dx 即得</p>
+<p>$$\frac{b^2-a^2}{\int_a^b f(x)\,dx}=\frac{2\xi}{f(\xi)}.\qquad\blacksquare$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \eta\in(1,2) 使 f(2)=\ln 2\cdot\eta\cdot e^{\eta^2}（柯西中值定理证得）$</div>
+        <div class="steps"><p>f(1)=\int_1^1 e^{t^2}\,dt=0，f&#x27;(x)=e^{x^2}。对 f(x) 与 g(x)=\ln x 在 [1,2] 上用柯西中值定理（g&#x27;(x)=1/x\ne0 于 (1,2)）：存在 \eta\in(1,2) 使</p>
+<p>$$\frac{f(2)-f(1)}{\ln 2-\ln 1}=\frac{f&#x27;(\eta)}{g&#x27;(\eta)}=\frac{e^{\eta^2}}{1/\eta}=\eta e^{\eta^2},$$</p>
+<p>即</p>
+<p>$$f(2)=\int_1^2 e^{t^2}\,dt=\ln 2\cdot\eta\cdot e^{\eta^2}.\qquad\blacksquare$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k20_T2">
     <div class="qhead"><span class="qno">k20_T2</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1998</span> <span class="badge year">2003</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k20_T2_0.png" alt="k20_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi,\eta\in(a,b) 使 \dfrac{f'(\xi)}{f'(\eta)}=\dfrac{e^b-e^a}{b-a}e^{-\eta}$</div>
+        <div class="steps"><p>对 f 在 [a,b] 上用拉格朗日中值定理：存在 \xi\in(a,b) 使</p>
+<p>$$f&#x27;(\xi)=\frac{f(b)-f(a)}{b-a}.$$</p>
+<p>对 f(x) 与 u(x)=e^x 在 [a,b] 上用柯西中值定理：存在 \eta\in(a,b) 使</p>
+<p>$$\frac{f(b)-f(a)}{e^b-e^a}=\frac{f&#x27;(\eta)}{e^{\eta}},\qquad\text{即}\qquad f(b)-f(a)=(e^b-e^a)e^{-\eta}f&#x27;(\eta).$$</p>
+<p>代入第一式得 f&#x27;(\xi)=\dfrac{e^b-e^a}{b-a}\,e^{-\eta}f&#x27;(\eta)。由条件 f&#x27;(x)\ne0，特别 f&#x27;(\eta)\ne0，两边除以 f&#x27;(\eta) 得</p>
+<p>$$\frac{f&#x27;(\xi)}{f&#x27;(\eta)}=\frac{e^b-e^a}{b-a}\,e^{-\eta}.\qquad\blacksquare$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) f(x)>0 于 (a,b)；(II) 存在 \xi\in(a,b)：\dfrac{b^2-a^2}{\int_a^b f\,dx}=\dfrac{2\xi}{f(\xi)}；(III) 存在 \eta\in(a,\xi)：f'(\eta)(b^2-a^2)=\dfrac{2\xi}{\xi-a}\int_a^b f(x)\,dx$</div>
+        <div class="steps"><p>**（I）** 由连续性 \lim_{x\to a^+}f(2x-a)=f(a)；若 f(a)\ne0，则 \dfrac{f(2x-a)}{x-a}\to\infty（分母 →0⁺），与极限存在矛盾，故 f(a)=0。对任意 x\in(a,b)，由拉格朗日中值定理存在 \zeta\in(a,x)：f(x)-f(a)=f&#x27;(\zeta)(x-a)&gt;0，故 f(x)&gt;0。</p>
+<p>**（II）** 令 F(x)=\int_a^x f(t)\,dt（F(a)=0，F&#x27;=f），对 F(x) 与 u(x)=x^2 用柯西中值定理：存在 \xi\in(a,b) 使</p>
+<p>$$\left(\int_a^b f(t)\,dt\right)2\xi=(b^2-a^2)f(\xi),$$</p>
+<p>由（I）两边除以 f(\xi)\int_a^b f(x)\,dx 即得 \dfrac{b^2-a^2}{\int_a^b f(x)\,dx}=\dfrac{2\xi}{f(\xi)}。</p>
+<p>**（III）** 由（I）f(a)=0；由（II）f(\xi)=\dfrac{2\xi}{b^2-a^2}\int_a^b f(x)\,dx。对 f 在 [a,\xi] 上用拉格朗日中值定理：存在 \eta\in(a,\xi)\subset(a,b)（显然 \eta\ne\xi）使</p>
+<p>$$f(\xi)-f(a)=f&#x27;(\eta)(\xi-a).$$</p>
+<p>代入 f(a)=0 与（II）的 f(\xi)：</p>
+<p>$$f&#x27;(\eta)(\xi-a)=\frac{2\xi}{b^2-a^2}\int_a^b f(x)\,dx,$$</p>
+<p>整理即得 f&#x27;(\eta)(b^2-a^2)=\dfrac{2\xi}{\xi-a}\int_a^b f(x)\,dx。\qquad\blacksquare</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
