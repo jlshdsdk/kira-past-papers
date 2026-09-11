@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 33</div>
 <h1 class="title">考点 33　求偏导数或全微分</h1>
-<div class="sub">题组 7 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/7　</div>
+<div class="sub">题组 7 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 7/7　</div>
 
   <div class="card q" id="k33_T1">
     <div class="qhead"><span class="qno">k33_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.33.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T1_0.png" alt="k33_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T1_1.png" alt="k33_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \pi^2 e^{-2}$</div>
         <div class="steps"><p>先对 x 求偏导：<br>$$\frac{\partial u}{\partial x}=e^{-x}\left[-\sin\frac{x}{y}+\frac{1}{y}\cos\frac{x}{y}\right]$$<br>再对 y 求导：<br>$$\frac{\partial^2 u}{\partial x\partial y}=e^{-x}\left[\frac{x}{y^{2}}\cos\frac{x}{y}-\frac{1}{y^{2}}\cos\frac{x}{y}+\frac{x}{y^{3}}\sin\frac{x}{y}\right]=e^{-x}\left[\frac{x-1}{y^{2}}\cos\frac{x}{y}+\frac{x}{y^{3}}\sin\frac{x}{y}\right]$$<br>代入 $(2,\tfrac1\pi)$：$x/y=2\pi$，$\sin 2\pi=0$，$\cos 2\pi=1$，$1/y^2=\pi^2$，故<br>$$\left.\frac{\partial^2 u}{\partial x\partial y}\right|_{(2,1/\pi)}=e^{-2}\cdot\pi^2=\pi^{2}e^{-2}$$</p></div>
@@ -68,7 +68,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.33.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T2_0.png" alt="k33_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T2_1.png" alt="k33_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle dz=\dfrac{-y\,dx+x\,dy}{x^{2}+y^{2}}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=\frac{1}{1+\left(\frac{x+y}{x-y}\right)^{2}}\cdot\frac{(x-y)-(x+y)}{(x-y)^{2}}=\frac{(x-y)^{2}}{2(x^{2}+y^{2})}\cdot\frac{-2y}{(x-y)^{2}}=-\frac{y}{x^{2}+y^{2}}$$<br>$$\frac{\partial z}{\partial y}=\frac{(x-y)^{2}}{2(x^{2}+y^{2})}\cdot\frac{(x-y)+(x+y)}{(x-y)^{2}}=\frac{x}{x^{2}+y^{2}}$$<br>故 $dz=\dfrac{-y\,dx+x\,dy}{x^{2}+y^{2}}$。</p></div>
@@ -107,14 +107,15 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.33.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_0.png" alt="k33_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_1.png" alt="k33_T3 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_2.png" alt="k33_T3 题目图 3"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_3.png" alt="k33_T3 题目图 4"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_4.png" alt="k33_T3 题目图 5"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_5.png" alt="k33_T3 题目图 6"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_6.png" alt="k33_T3 题目图 7">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1+y)\,g'(x+xy)\left[f'_1(x,xy)+y f'_2(x,xy)\right]$</div>
         <div class="steps"><p>$$\frac{\partial u}{\partial x}=f&#x27;_1(x,xy)+f&#x27;_2(x,xy)\cdot y$$<br>$$\frac{\partial v}{\partial x}=g&#x27;(x+xy)\cdot(1+y)$$<br>$$\frac{\partial u}{\partial x}\cdot\frac{\partial v}{\partial x}=(1+y)\,g&#x27;(x+xy)\left[f&#x27;_1(x,xy)+y f&#x27;_2(x,xy)\right]$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e^{y}f'_1+xe^{2y}f''_{11}+e^{y}f''_{13}+xe^{y}f''_{12}+f''_{23}$</div>
-        <div class="steps"><p>$$\frac{\partial z}{\partial x}=e^{y}f&#x27;_1+f&#x27;_2$$<br>再对 y 求导（注意第一中间变量对 y 的导数为 $xe^y$，第二变量 x 与 y 无关，第三变量即 y）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{y}f&#x27;_1+e^{y}\left(xe^{y}f&#x27;&#x27;_{11}+f&#x27;&#x27;_{13}\right)+\left(xe^{y}f&#x27;&#x27;_{21}+f&#x27;&#x27;_{23}\right)$$<br>利用 $f&#x27;&#x27;_{12}=f&#x27;&#x27;_{21}$ 得<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{y}f&#x27;_1+xe^{2y}f&#x27;&#x27;_{11}+e^{y}f&#x27;&#x27;_{13}+xe^{y}f&#x27;&#x27;_{12}+f&#x27;&#x27;_{23}$$</p></div>
+        <div class="steps"><p>$$\frac{\partial z}{\partial x}=e^{y}f&#x27;_1+f&#x27;_2$$<br>再对 y 求导（注意第一中间变量对 y 的导数为 $xe^y$，第二变量 x 与 y 无关，第三变量即 y）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{y}f&#x27;_1+e^{y}\left(xe^{y}f&#x27;&#x27;_{11}+f&#x27;&#x27;_{13}\right)+\left(xe^{y}f&#x27;&#x27;_{21}+f&#x27;&#x27;_{23}\right)$$<br>利用 $f&#x27;&#x27;_{12}=f&#x27;&#x27;_{21}$ 得<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{y}f&#x27;_1+xe^{2y}f&#x27;&#x27;_{11}+e^{y}f&#x27;&#x27;_{13}+xe^{y}f&#x27;&#x27;_{12}+f&#x27;&#x27;_{23}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 把对第三个中间变量 y 求导的下标写错：应为 f₁₃&#x27;&#x27;、f₂₃&#x27;&#x27;，A 写成 f₁₂&#x27;&#x27;、f₂₂&#x27;&#x27;；solver 与 B 正确（f&#x27;&#x27;_{12}=f&#x27;&#x27;_{21}）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 0$</div>
@@ -137,8 +138,9 @@
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=e^{x}\sin y\, f&#x27;_1+2x f&#x27;_2$$<br>再对 y 求导（中间变量对 y 的导数：$e^x\cos y$ 与 $2y$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{x}\cos y\, f&#x27;_1+e^{x}\sin y\left(e^{x}\cos y\, f&#x27;&#x27;_{11}+2y f&#x27;&#x27;_{12}\right)+2x\left(e^{x}\cos y\, f&#x27;&#x27;_{21}+2y f&#x27;&#x27;_{22}\right)$$<br>$$=e^{x}\cos y\, f&#x27;_1+e^{2x}\sin y\cos y\, f&#x27;&#x27;_{11}+2e^{x}(y\sin y+x\cos y)f&#x27;&#x27;_{12}+4xy f&#x27;&#x27;_{22}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \cos(xy)-xy\sin(xy)-\dfrac{1}{y^{2}}\varphi'_2-\dfrac{2x}{y^{3}}\varphi''_{12}-\dfrac{x}{y^{3}}\varphi''_{22}$</div>
-        <div class="steps"><p>$$\frac{\partial z}{\partial x}=y\cos(xy)+\varphi&#x27;_1+\frac{1}{y}\varphi&#x27;_2$$<br>再对 y 求导（$\varphi$ 的第二个中间变量 $x/y$ 对 y 的导数为 $-x/y^{2}$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\cos(xy)-xy\sin(xy)-\frac{x}{y^{2}}\varphi&#x27;&#x27;_{12}-\frac{1}{y^{2}}\varphi&#x27;_2+\frac{1}{y}\left(-\frac{x}{y^{2}}\right)\left(\varphi&#x27;&#x27;_{21}+\varphi&#x27;&#x27;_{22}\right)$$<br>利用 $\varphi&#x27;&#x27;_{12}=\varphi&#x27;&#x27;_{21}$：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\cos(xy)-xy\sin(xy)-\frac{1}{y^{2}}\varphi&#x27;_2-\frac{2x}{y^{3}}\varphi&#x27;&#x27;_{12}-\frac{x}{y^{3}}\varphi&#x27;&#x27;_{22}$$</p></div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \cos(xy)-xy\sin(xy)-\frac{1}{y^{2}}\varphi'_2-\frac{x}{y^{2}}\varphi''_{12}-\frac{x}{y^{3}}\varphi''_{22}$</div>
+        <div class="steps"><p>$$\frac{\partial z}{\partial x}=y\cos(xy)+\varphi&#x27;_1+\frac{1}{y}\varphi&#x27;_2$$<br>再对 y 求导（$\varphi$ 的第二个中间变量 $x/y$ 对 y 的导数为 $-x/y^{2}$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\cos(xy)-xy\sin(xy)-\frac{x}{y^{2}}\varphi&#x27;&#x27;_{12}-\frac{1}{y^{2}}\varphi&#x27;_2+\frac{1}{y}\left(-\frac{x}{y^{2}}\right)\left(\varphi&#x27;&#x27;_{21}+\varphi&#x27;&#x27;_{22}\right)$$<br>利用 $\varphi&#x27;&#x27;_{12}=\varphi&#x27;&#x27;_{21}$：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\cos(xy)-xy\sin(xy)-\frac{1}{y^{2}}\varphi&#x27;_2-\frac{2x}{y^{3}}\varphi&#x27;&#x27;_{12}-\frac{x}{y^{3}}\varphi&#x27;&#x27;_{22}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 把 φ&#x27;&#x27;₁₂ 项系数写成 2x/y³，重解（并用具体 φ 验证）应为 x/y²；A、B 一致正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle \dfrac{\partial z}{\partial y}=x^{4}f'_1+x^{2}f'_2；\ \dfrac{\partial^{2}z}{\partial y^{2}}=x^{5}f''_{11}+2x^{3}f''_{12}+xf''_{22}；\ \dfrac{\partial^{2}z}{\partial x\partial y}=4x^{3}f'_1+x^{4}y f''_{11}+2x f'_2-y f''_{22}$</div>
@@ -157,8 +159,9 @@
         <div class="steps"><p>$$\frac{\partial z}{\partial y}=\frac{1}{x}\cdot x f&#x27;(xy)+\varphi(x+y)=f&#x27;(xy)+\varphi(x+y)$$<br>$$\frac{\partial^{2}z}{\partial x\partial y}=y f&#x27;&#x27;(xy)+\varphi&#x27;(x+y)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle f'_1-\dfrac{1}{y^{2}}f'_2+xy f''_{11}-\dfrac{x}{y^{3}}f''_{22}-\dfrac{1}{x^{2}}g'$</div>
-        <div class="steps"><p>$$\frac{\partial z}{\partial x}=y f&#x27;_1+\frac{1}{y}f&#x27;_2-\frac{y}{x^{2}}g&#x27;$$<br>再对 y 求导：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;_1+y\left(xf&#x27;&#x27;_{11}-\frac{x}{y^{2}}f&#x27;&#x27;_{12}\right)-\frac{1}{y^{2}}f&#x27;_2+\frac{1}{y}\left(xf&#x27;&#x27;_{21}-\frac{x}{y^{2}}f&#x27;&#x27;_{22}\right)-\frac{1}{x^{2}}g&#x27;$$<br>交叉项 $-\frac{x}{y}f&#x27;&#x27;_{12}+\frac{x}{y}f&#x27;&#x27;_{21}=0$，故<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;_1-\frac{1}{y^{2}}f&#x27;_2+xy f&#x27;&#x27;_{11}-\frac{x}{y^{3}}f&#x27;&#x27;_{22}-\frac{1}{x^{2}}g&#x27;$$</p></div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle f'_1-\frac{1}{y^{2}}f'_2+xy f''_{11}-\frac{x}{y^{3}}f''_{22}-\frac{1}{x^{2}}g'-\frac{y}{x^{3}}g''$</div>
+        <div class="steps"><p>$$\frac{\partial z}{\partial x}=y f&#x27;_1+\frac{1}{y}f&#x27;_2-\frac{y}{x^{2}}g&#x27;$$<br>再对 y 求导：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;_1+y\left(xf&#x27;&#x27;_{11}-\frac{x}{y^{2}}f&#x27;&#x27;_{12}\right)-\frac{1}{y^{2}}f&#x27;_2+\frac{1}{y}\left(xf&#x27;&#x27;_{21}-\frac{x}{y^{2}}f&#x27;&#x27;_{22}\right)-\frac{1}{x^{2}}g&#x27;$$<br>交叉项 $-\frac{x}{y}f&#x27;&#x27;_{12}+\frac{x}{y}f&#x27;&#x27;_{21}=0$，故<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;_1-\frac{1}{y^{2}}f&#x27;_2+xy f&#x27;&#x27;_{11}-\frac{x}{y^{3}}f&#x27;&#x27;_{22}-\frac{1}{x^{2}}g&#x27;$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 漏掉 −(y/x³)g&#x27;&#x27; 项（g&#x27;(y/x) 对 y 再求导产生）；A、B 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle y f'_1+\dfrac{1}{y}f'_2-\dfrac{y}{x^{2}}g'$</div>
@@ -166,7 +169,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle 51$</div>
-        <div class="steps"><p>$\varphi(1)=f(1,1)=1$。由复合求导：<br>$$\varphi&#x27;(x)=f&#x27;_1(x,f(x,x))+f&#x27;_2(x,f(x,x))\left[f&#x27;_1(x,x)+f&#x27;_2(x,x)\right]$$<br>代入 $x=1$：<br>$$\varphi&#x27;(1)=2+3\times(2+3)=17$$<br>$$\left.\frac{d}{dx}\varphi^{3}(x)\right|_{x=1}=3\varphi^{2}(1)\varphi&#x27;(1)=3\times1\times17=51$$</p></div>
+        <div class="steps"><p>$\varphi(1)=f(1,1)=1$。由复合求导：<br>$$\varphi&#x27;(x)=f&#x27;_1(x,f(x,x))+f&#x27;_2(x,f(x,x))\left[f&#x27;_1(x,x)+f&#x27;_2(x,x)\right]$$<br>代入 $x=1$：<br>$$\varphi&#x27;(1)=2+3\times(2+3)=17$$<br>$$\left.\frac{d}{dx}\varphi^{3}(x)\right|_{x=1}=3\varphi^{2}(1)\varphi&#x27;(1)=3\times1\times17=51$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 把题干误读为三层嵌套 f(x,f(x,f(x,x))) 得 159；已核对原书（PDF 页178/书页174），原题为 φ(x)=f(x,f(x,x))，φ&#x27;(1)=2+3×5=17，3φ²(1)φ&#x27;(1)=51，solver 与 B 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle x^{2}+y^{2}$</div>
@@ -258,7 +262,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.33.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T4_0.png" alt="k33_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle dz|_{(1,2)}=4dx-2dy$</div>
         <div class="steps"><p>令 $u=4x^{2}-y^{2}$，在 $(1,2)$ 处 $u=0$。<br>$$\frac{\partial z}{\partial x}=8x f&#x27;(u),\qquad \frac{\partial z}{\partial y}=-2y f&#x27;(u)$$<br>代入 $(1,2)$ 与 $f&#x27;(0)=\dfrac12$：<br>$$z_x=8\cdot\frac12=4,\qquad z_y=-4\cdot\frac12=-2,\qquad dz|_{(1,2)}=4dx-2dy$$</p></div>
@@ -277,7 +281,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.33.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T5_0.png" alt="k33_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T5_1.png" alt="k33_T5 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T5_2.png" alt="k33_T5 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac{(1+e^{u})^{2}-xy\,e^{u}}{(1+e^{u})^{3}}$</div>
         <div class="steps"><p>$$u_x(1+e^{u})=y\ \Rightarrow\ u_x=\frac{y}{1+e^{u}},\qquad u_y=\frac{x}{1+e^{u}}$$<br>$$\frac{\partial^{2}u}{\partial x\partial y}=\frac{\partial}{\partial y}\left(\frac{y}{1+e^{u}}\right)=\frac{(1+e^{u})-y\,e^{u}u_y}{(1+e^{u})^{2}}=\frac{(1+e^{u})^{2}-xy\,e^{u}}{(1+e^{u})^{3}}$$</p></div>
@@ -304,7 +308,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle 2(1-\ln 2)$</div>
-        <div class="steps"><p>$x=1,y=2$ 代入：$(z+2)^{1}=2$，得 $z=0$。方程取对数：$x\ln(z+y)=\ln x+\ln y$，对 x 求导：<br>$$\ln(z+y)+\frac{x\,z_x}{z+y}=\frac{1}{x}$$<br>代入 $(1,2,0)$：$\ln 2+\dfrac{z_x}{2}=1$，故<br>$$z_x=2(1-\ln 2)$$</p></div>
+        <div class="steps"><p>$x=1,y=2$ 代入：$(z+2)^{1}=2$，得 $z=0$。方程取对数：$x\ln(z+y)=\ln x+\ln y$，对 x 求导：<br>$$\ln(z+y)+\frac{x\,z_x}{z+y}=\frac{1}{x}$$<br>代入 $(1,2,0)$：$\ln 2+\dfrac{z_x}{2}=1$，故<br>$$z_x=2(1-\ln 2)$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：由 x ln(z+y)=ln(xy) 在(1,2)（z=0）得 ln2+z_x/2=1，z_x=2−2ln2；B 的 2−ln2 错，solver 与 A 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \dfrac{1}{4}$</div>
@@ -315,12 +320,14 @@
         <div class="steps"><p>$(0,2)$ 代入：$z+2\ln z=1$，显然 $z=1$。方程两边对 x 求导：<br>$$z+(x+1)z_x+\frac{y}{z}z_x-\frac{2y}{1+4x^{2}y^{2}}=0$$<br>代入 $(0,2,1)$：$1+z_x+2z_x-4=0$，故 $z_x=1$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle -4$</div>
-        <div class="steps"><p>$(1,1)$ 代入：$e^{z}+z=1$，得 $z=0$。方程两边对 x 求导：<br>$$z_x(e^{z}+x)=2-z\ \Rightarrow\ z_x\big|_{(1,1,0)}=\frac{2}{1}=2$$<br>再对 x 求导：<br>$$z_{xx}(e^{z}+x)+z_x\left(e^{z}z_x+1\right)=-z_x\ \Rightarrow\ z_{xx}=-\frac{z_x\left(e^{z}z_x+2\right)}{e^{z}+x}$$<br>代入 $(1,1,0)$：$z_{xx}=-\dfrac{2\times2}{1}=-4$。</p></div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle -\frac{3}{2}$</div>
+        <div class="steps"><p>$(1,1)$ 代入：$e^{z}+z=1$，得 $z=0$。方程两边对 x 求导：<br>$$z_x(e^{z}+x)=2-z\ \Rightarrow\ z_x\big|_{(1,1,0)}=\frac{2}{1}=2$$<br>再对 x 求导：<br>$$z_{xx}(e^{z}+x)+z_x\left(e^{z}z_x+1\right)=-z_x\ \Rightarrow\ z_{xx}=-\frac{z_x\left(e^{z}z_x+2\right)}{e^{z}+x}$$<br>代入 $(1,1,0)$：$z_{xx}=-\dfrac{2\times2}{1}=-4$。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：z(1,1)=0、z_x=1，z_xx|(1,1)=−3/2；solver 的 −4 错，A、B 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle -1-2\ln 2$</div>
-        <div class="steps"><p>$(0,0)$ 代入：$z+1=0$，得 $z=-1$。<br>一阶：方程分别对 x、y 求导：<br>$$z_x+e^{x}-\frac{2yz}{1+z^{2}}z_x=0\ \Rightarrow\ z_x\big|_{(0,0,-1)}=-1$$<br>$$z_y-\ln(1+z^{2})-\frac{2yz}{1+z^{2}}z_y=0\ \Rightarrow\ z_y\big|_{(0,0,-1)}=\ln 2$$<br>二阶：对 $z_x$ 的关系式再对 x 求导，含因子 y 的项在 $y=0$ 处消失：<br>$$z_{xx}+e^{x}=0\ \Rightarrow\ z_{xx}\big|_{(0,0)}=-1$$<br>对 $z_y$ 的关系式再对 y 求导（因子 y 的项同样消失）：<br>$$z_{yy}-\frac{2zz_y}{1+z^{2}}-\frac{2zz_y}{1+z^{2}}=0\ \Rightarrow\ z_{yy}=\frac{4zz_y}{1+z^{2}}\Big|_{(0,0,-1)}=\frac{4\times(-1)\times\ln 2}{2}=-2\ln 2$$<br>$$\left.\left(\frac{\partial^{2}z}{\partial x^{2}}+\frac{\partial^{2}z}{\partial y^{2}}\right)\right|_{(0,0)}=-1-2\ln 2$$</p></div>
+        <div class="steps"><p>$(0,0)$ 代入：$z+1=0$，得 $z=-1$。<br>一阶：方程分别对 x、y 求导：<br>$$z_x+e^{x}-\frac{2yz}{1+z^{2}}z_x=0\ \Rightarrow\ z_x\big|_{(0,0,-1)}=-1$$<br>$$z_y-\ln(1+z^{2})-\frac{2yz}{1+z^{2}}z_y=0\ \Rightarrow\ z_y\big|_{(0,0,-1)}=\ln 2$$<br>二阶：对 $z_x$ 的关系式再对 x 求导，含因子 y 的项在 $y=0$ 处消失：<br>$$z_{xx}+e^{x}=0\ \Rightarrow\ z_{xx}\big|_{(0,0)}=-1$$<br>对 $z_y$ 的关系式再对 y 求导（因子 y 的项同样消失）：<br>$$z_{yy}-\frac{2zz_y}{1+z^{2}}-\frac{2zz_y}{1+z^{2}}=0\ \Rightarrow\ z_{yy}=\frac{4zz_y}{1+z^{2}}\Big|_{(0,0,-1)}=\frac{4\times(-1)\times\ln 2}{2}=-2\ln 2$$<br>$$\left.\left(\frac{\partial^{2}z}{\partial x^{2}}+\frac{\partial^{2}z}{\partial y^{2}}\right)\right|_{(0,0)}=-1-2\ln 2$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：z_xx|(0,0)=−1、z_yy|(0,0)=−2ln2，和为 −1−2ln2；B 的 −1−3ln2 错，solver 与 A 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle A$</div>
@@ -331,8 +338,9 @@
         <div class="steps"><p>$(1,1)$ 代入：$z+\ln z=1$，得 $z=1$。把积分写成 $x\int_y^x e^{-t^{2}}\mathrm{d}t$，方程对 x 求导：<br>$$z_x\left(1+\frac{1}{z}\right)=\int_y^x e^{-t^{2}}\mathrm{d}t+xe^{-x^{2}}$$<br>代入 $(1,1,1)$：$2z_x=e^{-1}$，得 $z_x=\dfrac{e^{-1}}{2}$。<br>再对 x 求导：<br>$$z_{xx}\left(1+\frac{1}{z}\right)-\frac{z_x^{2}}{z^{2}}=e^{-x^{2}}+\left(e^{-x^{2}}-2x^{2}e^{-x^{2}}\right)$$<br>代入 $(1,1,1)$：$2z_{xx}-\dfrac{e^{-2}}{4}=2e^{-1}-2e^{-1}=0$，故<br>$$z_{xx}=\frac{e^{-2}}{8}=\frac{1}{8e^{2}}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle A$</div>
-        <div class="steps"><p>方程两边分别对 x、y 求导（记 $E=e^{y+az}$）：<br>$$1-az_x=E\cdot a z_x\ \Rightarrow\ z_x=\frac{1}{a(1+E)}$$<br>$$-az_y=E(1+az_y)\ \Rightarrow\ z_y=-\frac{E}{a(1+E)}$$<br>$$z_x-z_y=\frac{1+E}{a(1+E)}=\frac{1}{a}$$<br>选 A。</p></div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle A（\frac{\partial z}{\partial x}-\frac{\partial z}{\partial y}=\frac{1}{a}）$</div>
+        <div class="steps"><p>方程两边分别对 x、y 求导（记 $E=e^{y+az}$）：<br>$$1-az_x=E\cdot a z_x\ \Rightarrow\ z_x=\frac{1}{a(1+E)}$$<br>$$-az_y=E(1+az_y)\ \Rightarrow\ z_y=-\frac{E}{a(1+E)}$$<br>$$z_x-z_y=\frac{1+E}{a(1+E)}=\frac{1}{a}$$<br>选 A。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：求导得 z_x=1/[a(1+e^{y+az})]、z_y=−e^{y+az}/[a(1+e^{y+az})]，z_x−z_y=1/a，应选 A（已核对原书选项）；B 选 B 错。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -344,7 +352,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.33.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T6_0.png" alt="k33_T6 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T6_1.png" alt="k33_T6 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle dx-\sqrt{2}\,dy$</div>
         <div class="steps"><p>记 $F=xyz+\sqrt{x^{2}+y^{2}+z^{2}}-\sqrt{2}$，验证 $F(1,0,-1)=0$。在 $(1,0,-1)$（根号值为 $\sqrt2$）：<br>$$F_x=yz+\frac{x}{\sqrt{2}}=\frac{1}{\sqrt{2}},\qquad F_y=xz+\frac{y}{\sqrt{2}}=-1,\qquad F_z=xy+\frac{z}{\sqrt{2}}=-\frac{1}{\sqrt{2}}$$<br>$$z_x=-\frac{F_x}{F_z}=1,\qquad z_y=-\frac{F_y}{F_z}=-\sqrt{2}$$<br>$$dz\big|_{(1,0,-1)}=dx-\sqrt{2}\,dy$$</p></div>
@@ -366,8 +374,9 @@
         <div class="steps"><p>(I) 方程两边分别对 x、y 求导：<br>$$2x-z_x=\varphi&#x27;(1+z_x)\ \Rightarrow\ z_x=\frac{2x-\varphi&#x27;}{1+\varphi&#x27;},\qquad z_y=\frac{2y-\varphi&#x27;}{1+\varphi&#x27;}$$<br>$$dz=\frac{(2x-\varphi&#x27;)\,dx+(2y-\varphi&#x27;)\,dy}{1+\varphi&#x27;}$$<br>(II) <br>$$z_x-z_y=\frac{2(x-y)}{1+\varphi&#x27;}\ \Rightarrow\ u(x,y)=\frac{1}{x-y}\cdot\frac{2(x-y)}{1+\varphi&#x27;}=\frac{2}{1+\varphi&#x27;}$$<br>$$\frac{\partial u}{\partial x}=-\frac{2\varphi&#x27;&#x27;\,(1+z_x)}{(1+\varphi&#x27;)^{2}}=-\frac{2\varphi&#x27;&#x27;}{(1+\varphi&#x27;)^{2}}\cdot\frac{1+\varphi&#x27;+2x-\varphi&#x27;}{1+\varphi&#x27;}=-\frac{2(1+2x)\varphi&#x27;&#x27;}{(1+\varphi&#x27;)^{3}}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -\dfrac{1}{2}(dx+dy)$</div>
-        <div class="steps"><p>$(\tfrac12,\tfrac12)$ 代入：$e^{z}+\dfrac12+\dfrac14+z=\dfrac74$，即 $e^{z}+z=1$，得 $z=0$。<br>方程两边对 x、y 求导：<br>$$2ye^{2yz}z_x+1+z_x=0\ \Rightarrow\ z_x=-\frac{1}{1+2ye^{2yz}}$$<br>$$2(z+yz_y)e^{2yz}+2y+z_y=0\ \Rightarrow\ z_y=-\frac{2(ze^{2yz}+y)}{1+2ye^{2yz}}$$<br>代入 $(\tfrac12,\tfrac12,0)$（$e^{0}=1$）：$z_x=-\dfrac12$，$z_y=-\dfrac12$，故<br>$$dz\big|_{(\frac12,\frac12)}=-\frac12(dx+dy)$$</p></div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -\frac{1}{2}(dx+dy)$</div>
+        <div class="steps"><p>$(\tfrac12,\tfrac12)$ 代入：$e^{z}+\dfrac12+\dfrac14+z=\dfrac74$，即 $e^{z}+z=1$，得 $z=0$。<br>方程两边对 x、y 求导：<br>$$2ye^{2yz}z_x+1+z_x=0\ \Rightarrow\ z_x=-\frac{1}{1+2ye^{2yz}}$$<br>$$2(z+yz_y)e^{2yz}+2y+z_y=0\ \Rightarrow\ z_y=-\frac{2(ze^{2yz}+y)}{1+2ye^{2yz}}$$<br>代入 $(\tfrac12,\tfrac12,0)$（$e^{0}=1$）：$z_x=-\dfrac12$，$z_y=-\dfrac12$，故<br>$$dz\big|_{(\frac12,\frac12)}=-\frac12(dx+dy)$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：该点 z=0，F_x=1、F_y=1、F_z=2，z_x=z_y=−1/2，dz=−½(dx+dy)；A 的 −dx 与 B 的 −dx−dy 均错，solver 正确（已核对原书方程）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle -dx$</div>
@@ -403,7 +412,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T7_0.png" alt="k33_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac{dz}{dx}=\dfrac{(f+xf')F_y-xf'F_x}{F_y+xf'F_z}$</div>
         <div class="steps"><p>对 $z=xf(x+y)$ 两边关于 x 求导：<br>$$\frac{dz}{dx}=f(x+y)+xf&#x27;(x+y)(1+y&#x27;)$$<br>对 $F(x,y,z)=0$ 两边关于 x 求导：<br>$$F_x+F_y\,y&#x27;+F_z\,z&#x27;=0\ \Rightarrow\ y&#x27;=-\frac{F_x+F_z z&#x27;}{F_y}\quad(F_y\neq0)$$<br>代入第一式：<br>$$z&#x27;=f+xf&#x27;+xf&#x27;\left(-\frac{F_x+F_z z&#x27;}{F_y}\right)$$<br>$$z&#x27;\left(F_y+xf&#x27;F_z\right)=(f+xf&#x27;)F_y-xf&#x27;F_x$$<br>$$\frac{dz}{dx}=\frac{(f+xf&#x27;)F_y-xf&#x27;F_x}{F_y+xf&#x27;F_z}$$<br>其中 $f&#x27;=f&#x27;(x+y)$，$F$ 的偏导数在 $(x,\,y(x),\,z(x))$ 处取值（设 $F_y+xf&#x27;F_z\neq0$）。</p></div>

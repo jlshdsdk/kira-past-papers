@@ -21,56 +21,200 @@
 
   <div class="card q" id="k41_T1">
     <div class="qhead"><span class="qno">k41_T1</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 7 小题</span><span class="badge year">2000</span> <span class="badge year">2007</span> <span class="badge year">2009</span> <span class="badge year">2010</span> <span class="badge year">2016</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T1_0.png" alt="k41_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T1_1.png" alt="k41_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = C_1 + \dfrac{C_2}{x^2}$</div>
+        <div class="steps"><p>由 $(x^3y&#x27;)&#x27;=x^3y&#x27;&#x27;+3x^2y&#x27;=x^2(xy&#x27;&#x27;+3y&#x27;)$，方程（$x\ne0$）等价于 $(x^3y&#x27;)&#x27;=0$。<br>$$x^3y&#x27;=C \Rightarrow y&#x27;=\frac{C}{x^3} \Rightarrow y=-\frac{C}{2x^2}+C_2$$<br>记 $C_1=-C/2$，得通解 $y=\dfrac{C_1}{x^2}+C_2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ f'(x) = -\dfrac{e^{-x}}{x+1};\qquad (II)\ e^{-x}\le f(x)\le 1\ (x\ge0)$</div>
+        <div class="steps"><p>(I) 原式两边乘 $(x+1)$：<br>$$(x+1)f&#x27;(x)+(x+1)f(x)=\int_0^x f(t)\,dt$$<br>两边对 $x$ 求导：<br>$$f&#x27;+(x+1)f&#x27;&#x27;+f+(x+1)f&#x27;-f=0\Rightarrow (x+1)f&#x27;&#x27;+(x+2)f&#x27;=0$$<br>令 $p=f&#x27;$：(x+1)p&#x27;+(x+2)p=0，分离变量 $\dfrac{dp}{p}=-\left(1+\dfrac{1}{x+1}\right)dx$，积分得 $p=\dfrac{C_1e^{-x}}{x+1}$。<br>在原式中令 $x=0$：$f&#x27;(0)+f(0)=0$，而 $f(0)=1$，故 $f&#x27;(0)=-1\Rightarrow C_1=-1$，<br>$$f&#x27;(x)=-\frac{e^{-x}}{x+1}$$<br>(II) $f(x)=f(0)+\int_0^x f&#x27;(t)dt=1-\int_0^x\dfrac{e^{-t}}{t+1}dt$。当 $x\ge0$ 时 $0&lt;\dfrac{e^{-t}}{t+1}\le e^{-t}$，故<br>$$0\le\int_0^x\frac{e^{-t}}{t+1}dt\le\int_0^xe^{-t}dt=1-e^{-x}$$<br>从而 $e^{-x}\le f(x)\le1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y = \dfrac{2}{3}x^{3/2} + \dfrac{1}{3}$</div>
+        <div class="steps"><p>方程不含 $y$，令 $p=y&#x27;$，$y&#x27;&#x27;=\dfrac{dp}{dx}$，方程化为 $(x+p^2)\dfrac{dp}{dx}=p$。视 $x$ 为 $p$ 的函数：<br>$$\frac{dx}{dp}-\frac{x}{p}=p$$<br>线性方程，乘积分因子 $\dfrac1p$：$\left(\dfrac{x}{p}\right)&#x27;=1\Rightarrow\dfrac{x}{p}=p+C_1\Rightarrow x=p^2+C_1p$。<br>由 $x=1$ 时 $p=y&#x27;=1$：$1=1+C_1\Rightarrow C_1=0$，故 $x=p^2$；又 $p(1)=1&gt;0$，取 $p=\sqrt x$。<br>$$y&#x27;=\sqrt x\Rightarrow y=\frac23x^{3/2}+C_2,\quad y(1)=1\Rightarrow C_2=\frac13$$<br>故 $y=\dfrac23x^{3/2}+\dfrac13$。验证：$y&#x27;=\sqrt x$，$y&#x27;&#x27;=\frac{1}{2\sqrt x}$，$y&#x27;&#x27;[x+(y&#x27;)^2]=\frac{1}{2\sqrt x}\cdot 2x=\sqrt x=y&#x27;$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle y = 3x^2+2x,\qquad V = \dfrac{17\pi}{6}$</div>
+        <div class="steps"><p>令 $p=y&#x27;$：$x\dfrac{dp}{dx}=p-2$，分离变量 $\dfrac{dp}{p-2}=\dfrac{dx}{x}$：<br>$$p-2=C_1x\Rightarrow y=\frac{C_1}{2}x^2+2x+C_2$$<br>曲线过原点：$y(0)=0\Rightarrow C_2=0$，$y=\dfrac{C_1}{2}x^2+2x\ (\ge0$ 于 $[0,1]$$)$。<br>面积条件：$\displaystyle\int_0^1\left(\frac{C_1}{2}x^2+2x\right)dx=\frac{C_1}{6}+1=2\Rightarrow C_1=6$，故 $y=3x^2+2x$。<br>绕 $y$ 轴旋转（柱壳法）：<br>$$V=2\pi\int_0^1x\,y(x)\,dx=2\pi\int_0^1(3x^3+2x^2)dx=2\pi\left(\frac34+\frac23\right)=\frac{17\pi}6$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \psi(t) = t^3 + \dfrac{3}{2}t^2$</div>
+        <div class="steps"><p>$x&#x27;=2+2t=2(1+t)$，<br>$$\frac{dy}{dx}=\frac{\psi&#x27;(t)}{2(1+t)},\qquad \frac{d^2y}{dx^2}=\frac{\dfrac{d}{dt}\left[\dfrac{\psi&#x27;}{2(1+t)}\right]}{2(1+t)}=\frac{(1+t)\psi&#x27;&#x27;-\psi&#x27;}{4(1+t)^3}$$<br>由题设 $\dfrac{(1+t)\psi&#x27;&#x27;-\psi&#x27;}{4(1+t)^3}=\dfrac{3}{4(1+t)}$，即<br>$$(1+t)\psi&#x27;&#x27;-\psi&#x27;=3(1+t)^2$$<br>令 $q=\psi&#x27;$：$q&#x27;-\dfrac{q}{1+t}=3(1+t)$，积分因子 $\dfrac1{1+t}$：$\left(\dfrac{q}{1+t}\right)&#x27;=3\Rightarrow\dfrac{q}{1+t}=3t+C_1$。<br>由 $\psi&#x27;(1)=6$：$\dfrac62=3+C_1\Rightarrow C_1=0$，故 $q=3t(1+t)$，<br>$$\psi=t^3+\frac32t^2+C_2,\qquad \psi(1)=1+\frac32+C_2=\frac52\Rightarrow C_2=0$$<br>所以 $\psi(t)=t^3+\dfrac32t^2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle u(x) = -(2x+1)e^{-x},\qquad y = C_1e^x + C_2(2x+1)$</div>
+        <div class="steps"><p>$y_1=e^x$ 直接验证是解。把 $y_2=u(x)e^x$ 代入方程：<br>$$y_2&#x27;=(u&#x27;+u)e^x,\quad y_2&#x27;&#x27;=(u&#x27;&#x27;+2u&#x27;+u)e^x$$<br>$$(2x-1)(u&#x27;&#x27;+2u&#x27;+u)-(2x+1)(u&#x27;+u)+2u=0$$<br>化简（$u$ 的系数相消）得<br>$$(2x-1)u&#x27;&#x27;+(2x-3)u&#x27;=0$$<br>令 $p=u&#x27;$：$\dfrac{dp}{p}=-\dfrac{2x-3}{2x-1}dx=\left(-1+\dfrac{2}{2x-1}\right)dx$，得 $p=C(2x-1)e^{-x}$，<br>$$u=C\int(2x-1)e^{-x}dx=-C(2x+1)e^{-x}+C_2$$<br>由 $u(0)=-1$：$-C+C_2=-1$；由 $u(-1)=e$：$Ce+C_2=e$。解得 $C=-1,\ C_2=0$，故<br>$$u(x)=-(2x+1)e^{-x},\qquad y_2=-(2x+1)$$<br>$y_1=e^x$ 与 $y_2=-(2x+1)$ 线性无关，通解为<br>$$y=C_1e^x+C_2(2x+1)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle f(u) = \dfrac{1}{2}\ln^2 u + 2\ln u + 1$</div>
+        <div class="steps"><p>记 $u=x/y$，则 $g_x=\dfrac{f&#x27;(u)}{y}$，<br>$$g_{xx}=\frac{f&#x27;&#x27;}{y^2},\quad g_{xy}=-\frac{xf&#x27;&#x27;}{y^3}-\frac{f&#x27;}{y^2},\quad g_{yy}=\frac{x^2f&#x27;&#x27;}{y^4}+\frac{2xf&#x27;}{y^3}$$<br>$$x^2g_{xx}+xy\,g_{xy}+y^2g_{yy}=\frac{x^2f&#x27;&#x27;}{y^2}+\frac{xf&#x27;}{y}=u^2f&#x27;&#x27;+uf&#x27;=1$$<br>即 $(uf&#x27;)&#x27;=\dfrac1u$，积分：$uf&#x27;=\ln u+C_1$，$f&#x27;=\dfrac{\ln u+C_1}{u}$，$f=\dfrac12\ln^2u+C_1\ln u+C_2$。<br>条件：$g(1,1)=1\Rightarrow f(1)=1$；又 $g_x|_{(x,x)}=\dfrac{f&#x27;(1)}{x}=\dfrac2x\Rightarrow f&#x27;(1)=2\Rightarrow C_1=2$；$f(1)=C_2=1$。<br>$$f(u)=\frac12\ln^2u+2\ln u+1\quad(u&gt;0)$$<br>（注：图片中条件 $g(x,y)=1$ 按 $g(1,1)=1$ 理解，即 $f(1)=1$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k41_T2">
     <div class="qhead"><span class="qno">k41_T2</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2002</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T2_0.png" alt="k41_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = \sqrt{x+1}$</div>
+        <div class="steps"><p>注意到 $(yy&#x27;)&#x27;=yy&#x27;&#x27;+(y&#x27;)^2=0\Rightarrow yy&#x27;=C_1$。由 $y(0)y&#x27;(0)=\dfrac12$ 得 $C_1=\dfrac12$，即 $y\dfrac{dy}{dx}=\dfrac12$：<br>$$\frac12y^2=\frac12x+C_2\Rightarrow y^2=x+C_2&#x27;$$<br>$y(0)=1\Rightarrow C_2&#x27;=1$，又 $y(0)=1&gt;0$ 取正根：$y=\sqrt{x+1}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y = 11 - 2x - \dfrac{x^2}{2} - 4\ln(x-2)$</div>
+        <div class="steps"><p>方程不含 $y$，令 $p=y&#x27;$：$x^2p&#x27;-2xp=p^2$，即 $p&#x27;-\dfrac2xp=\dfrac{p^2}{x^2}$（伯努利方程，$n=2$）。令 $v=\dfrac1p$：<br>$$v&#x27;+\frac2xv=-\frac1{x^2},\qquad (x^2v)&#x27;=-1\Rightarrow x^2v=-x+C\Rightarrow p=\frac{x^2}{C-x}$$<br>由 $y&#x27;(3)=-9$：$\dfrac9{C-3}=-9\Rightarrow C=2$，故 $y&#x27;=\dfrac{x^2}{2-x}=-x-2-\dfrac4{x-2}$。<br>$$y=-\frac{x^2}2-2x-4\ln(x-2)+C_2,\qquad y(3)=\frac12:\ -\frac92-6+C_2=\frac12\Rightarrow C_2=11$$<br>故 $y=11-2x-\dfrac{x^2}2-4\ln(x-2)\ (x&gt;2)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k41_T3">
     <div class="qhead"><span class="qno">k41_T3</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1996</span> <span class="badge year">2013</span> <span class="badge year">2015</span> <span class="badge year">2017</span> <span class="badge year">2023</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.41.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T3_0.png" alt="k41_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T3_1.png" alt="k41_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = e^{-x}\left(C_1\cos 2x + C_2\sin 2x\right)$</div>
+        <div class="steps"><p>特征方程 $r^2+2r+5=0$，$r=-1\pm2i$，故 $y=e^{-x}(C_1\cos2x+C_2\sin2x)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y = (C_1 + C_2 x)e^{x/2}$</div>
+        <div class="steps"><p>$r^2-r+\dfrac14=0$，$\left(r-\dfrac12\right)^2=0$，$r=\dfrac12$ 为二重根，$y=(C_1+C_2x)e^{x/2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y = 2e^x + e^{-2x}$</div>
+        <div class="steps"><p>$r^2+r-2=0$，$r=1,-2$，$y=C_1e^x+C_2e^{-2x}$。极值条件：$y(0)=3,\ y&#x27;(0)=0$：<br>$$C_1+C_2=3,\quad C_1-2C_2=0\Rightarrow C_1=2,\ C_2=1$$<br>$y=2e^x+e^{-2x}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle y = e^{-x}\left(C_1\cos\sqrt{2}\,x + C_2\sin\sqrt{2}\,x\right)$</div>
+        <div class="steps"><p>$r^2+2r+3=0$，$r=-1\pm\sqrt2\,i$，$y=e^{-x}(C_1\cos\sqrt2\,x+C_2\sin\sqrt2\,x)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>任一解都有界 $\iff$ 特征根为互异纯虚根 $\pm i\omega$：<br>- $a\ne0$ 时根有非零实部（或实根），$e^{\alpha x}$ 型解总在一端无界；<br>- $a=0,\ b=0$：$y=C_1+C_2x$ 无界；$a=0,\ b&lt;0$：正实根无界；重虚根给出 $x\sin\omega x$ 型无界解；<br>- $a=0,\ b&gt;0$：$y=C_1\cos\sqrt b\,x+C_2\sin\sqrt b\,x$ 全体有界。<br>选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle C\ (a\in(-2,0))$</div>
+        <div class="steps"><p>特征方程 $r^2-2ar+(a+2)=0$，$r=a\pm\sqrt{a^2-a-2}$。基解组每个函数必须在 $[0,+\infty)$ 可积。<br>① 复根（$-1&lt;a&lt;2$）：解为 $e^{ax}(C_1\cos\omega x+C_2\sin\omega x)$ 型，$\int_0^{+\infty}$ 收敛 $\iff a&lt;0$，得 $-1&lt;a&lt;0$；<br>② 重根：$a=-1$ 时 $r=-1$ 二重，$e^{-x},\ xe^{-x}$ 可积，纳入；$a=2$ 时 $r=2$，$\int e^{2x}dx$ 发散，排除；<br>③ 单实根（$a&lt;-1$ 或 $a&gt;2$）：需大根 $r_+=a+\sqrt{(a-2)(a+1)}&lt;0\iff\sqrt{(a-2)(a+1)}&lt;-a\iff a^2-a-2&lt;a^2\iff a&gt;-2$，得 $-2&lt;a&lt;-1$；$a=-2$ 时出现根 $r=0$，$\int 1\,dx$ 发散，排除；<br>④ $a\ge0$ 时（复根指数增长或实正根）均发散。<br>综上 $a\in(-2,0)$，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k41_T4">
     <div class="qhead"><span class="qno">k41_T4</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1989</span> <span class="badge year">2004</span> <span class="badge year">2011</span> <span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.41.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T4_0.png" alt="k41_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T4_1.png" alt="k41_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>$r^2-1=0,\ r=\pm1$。右端 $e^x$：$\lambda=1$ 为单根 $\to$ 设 $axe^x$；右端 $1$：$\lambda=0$ 非根 $\to$ 设 $bx$。由叠加原理 $y^*=axe^x+bx$，选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>$r^2+1=0,\ r=\pm i$。$x^2+1$：$\lambda=0$ 非根 $\to ax^2+bx+c$；$\sin x$：$\lambda=i$ 为单根 $\to x(A\sin x+B\cos x)$。由叠加原理<br>$$y^*=ax^2+bx+c+x(A\sin x+B\cos x)$$<br>选 A（图中选项 A 的 $y&#x27;$ 为 $y^*$ 的排印误）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>$r^2-\lambda^2=0,\ r=\pm\lambda$。$e^{\lambda x}$ 与 $e^{-\lambda x}$ 对应的 $\pm\lambda$ 均为单根，各需乘 $x$：$y^*=x(ae^{\lambda x}+be^{-\lambda x})$，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>$r^2-4r+8=0,\ r=2\pm2i$。$e^{2x}$：$\lambda=2$ 非根 $\to Ae^{2x}$；$e^{2x}\cos2x$：$\lambda=2+2i$ 为单根 $\to xe^{2x}(B\cos2x+C\sin2x)$。故<br>$$y^*=Ae^{2x}+xe^{2x}(B\cos2x+C\sin2x)$$<br>选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k41_T5">
     <div class="qhead"><span class="qno">k41_T5</span>
-      <span class="badge">共 6 小题</span>
+      <span class="badge">共 17 小题</span><span class="badge year">1987</span> <span class="badge year">1988</span> <span class="badge year">1989</span> <span class="badge year">1990</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1994</span> <span class="badge year">1995</span> <span class="badge year">1996</span> <span class="badge year">1999</span> <span class="badge year">2000</span> <span class="badge year">2003</span> <span class="badge year">2007</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.41.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k41_T5_0.png" alt="k41_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T5_1.png" alt="k41_T5 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k41_T5_2.png" alt="k41_T5 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y = (C_1+C_2x)e^{-x} + \dfrac{1}{4}(x-1)e^x$</div>
+        <div class="steps"><p>$r^2+2r+1=0,\ r=-1$ 二重：$Y=(C_1+C_2x)e^{-x}$。$\lambda=1$ 非根，设 $y^*=e^x(ax+b)$。令 $y=e^xu$，左端为 $e^x(u&#x27;&#x27;+4u&#x27;+4u)$，取 $u=ax+b$：<br>$$e^x[4ax+4(a+b)]=xe^x\Rightarrow a=\frac14,\ b=-\frac14$$<br>故 $y^*=\dfrac14(x-1)e^x$，通解 $y=(C_1+C_2x)e^{-x}+\dfrac14(x-1)e^x$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y = (1-2x)e^x$</div>
+        <div class="steps"><p>$r^2-3r+2=0,\ r=1,2$。$\lambda=1$ 单根，$y^*=Axe^x$：代入左端得 $-Ae^x=2e^x\Rightarrow A=-2$，$y=C_1e^x+C_2e^{2x}-2xe^x$。<br>切线条件：$y=x^2-x+1$ 在 $x=0$ 处 $y=1,\ y&#x27;=-1$，故 $y(0)=1,\ y&#x27;(0)=-1$：<br>$$C_1+C_2=1,\quad C_1+2C_2-2=-1\Rightarrow C_2=0,\ C_1=1$$<br>所以 $y=(1-2x)e^x$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y = C_1e^{-2x} + C_2e^{-3x} + e^{-x}$</div>
+        <div class="steps"><p>$r^2+5r+6=0,\ r=-2,-3$；$\lambda=-1$ 非根，$y^*=Ae^{-x}$：$A(1-5+6)=2A=2\Rightarrow A=1$。<br>$$y=C_1e^{-2x}+C_2e^{-3x}+e^{-x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle y = (C_1 + C_2 x)e^{-2x} + \dfrac{x^2}{2}e^{-2x}$</div>
+        <div class="steps"><p>$r^2+4r+4=0,\ r=-2$ 二重；$\lambda=-2$ 为重根，$y^*=Ax^2e^{-2x}$。令 $y=e^{-2x}u$，左端 $=e^{-2x}u&#x27;&#x27;$；$u=Ax^2$，$u&#x27;&#x27;=2A$，故 $2Ae^{-2x}=e^{-2x}\Rightarrow A=\dfrac12$。<br>$$y=(C_1+C_2x)e^{-2x}+\frac{x^2}{2}e^{-2x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a\ne-2:\ y=(C_1+C_2x)e^{-2x}+\dfrac{e^{ax}}{(a+2)^2};\quad a=-2:\ y=\left(C_1+C_2x+\dfrac{x^2}{2}\right)e^{-2x}$</div>
+        <div class="steps"><p>$r=-2$ 二重。<br>- $a\ne-2$：设 $y^*=Ae^{ax}$，代入左端得 $(a^2+4a+4)Ae^{ax}=(a+2)^2Ae^{ax}=e^{ax}\Rightarrow A=\dfrac1{(a+2)^2}$，$y=(C_1+C_2x)e^{-2x}+\dfrac{e^{ax}}{(a+2)^2}$；<br>- $a=-2$：即重根情形，$y=(C_1+C_2x)e^{-2x}+\dfrac{x^2}{2}e^{-2x}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle y = C_1\cos x + C_2\sin x + x + \dfrac{x}{2}\sin x$</div>
+        <div class="steps"><p>$r=\pm i$。对 $x$：设 $y_1^*=ax+b$，$y_1^{*\prime\prime}+y_1^*=ax+b=x\Rightarrow a=1,b=0$，$y_1^*=x$。<br>对 $\cos x$：$\lambda=i$ 为单根，$y_2^*=x(A\cos x+B\sin x)$，代入左端得 $2(-A\sin x+B\cos x)=\cos x\Rightarrow A=0,\ B=\dfrac12$，$y_2^*=\dfrac x2\sin x$。<br>$$y=C_1\cos x+C_2\sin x+x+\frac x2\sin x$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle y = C_1e^x + C_2e^{-3x} - \dfrac{x}{4}e^{-3x}$</div>
+        <div class="steps"><p>$r^2+2r-3=0,\ r=1,-3$；$\lambda=-3$ 单根，$y^*=Axe^{-3x}$：$y^{*\prime\prime}+2y^{*\prime}-3y^*=-4Ae^{-3x}=e^{-3x}\Rightarrow A=-\dfrac14$。<br>$$y=C_1e^x+C_2e^{-3x}-\frac x4e^{-3x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle y = C_1e^x + C_2e^{2x} - \left(\dfrac{x^2}{2}+x\right)e^x$</div>
+        <div class="steps"><p>$r=1,2$。令 $y=e^xu$：左端 $=e^x(u&#x27;&#x27;-u&#x27;)=xe^x\Rightarrow u&#x27;&#x27;-u&#x27;=x$。令 $w=u&#x27;$：$w&#x27;-w=x$，特解 $w=-x-1$（验证：$-1-(-x-1)=x$），$u=-\dfrac{x^2}2-x$。<br>$$y=C_1e^x+C_2e^{2x}-\left(\frac{x^2}2+x\right)e^x$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle a\ne1:\ y=C_1\cos ax+C_2\sin ax+\dfrac{\sin x}{a^2-1};\quad a=1:\ y=C_1\cos x+C_2\sin x-\dfrac{x}{2}\cos x$</div>
+        <div class="steps"><p>$r=\pm ai$。<br>- $a\ne1$：设 $y^*=A\sin x$，$A(a^2-1)\sin x=\sin x\Rightarrow A=\dfrac1{a^2-1}$，$y=C_1\cos ax+C_2\sin ax+\dfrac{\sin x}{a^2-1}$；<br>- $a=1$：$\lambda=i$ 单根，$y^*=x(A\cos x+B\sin x)$，左端 $=2(-A\sin x+B\cos x)=\sin x\Rightarrow A=-\dfrac12,\ B=0$，$y=C_1\cos x+C_2\sin x-\dfrac x2\cos x$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle y = C_1\cos x + C_2\sin x - 2x$</div>
+        <div class="steps"><p>$r=\pm i$；设 $y^*=ax+b$，$y^{*\prime\prime}+y^*=ax+b=-2x\Rightarrow a=-2,b=0$，$y^*=-2x$。<br>$$y=C_1\cos x+C_2\sin x-2x$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle y = e^x(C_1\cos x + C_2\sin x + 1)$</div>
+        <div class="steps"><p>$r^2-2r+2=0,\ r=1\pm i$：$Y=e^x(C_1\cos x+C_2\sin x)$。$\lambda=1$ 非根，$y^*=Ae^x$：$A(1-2+2)=A=1\Rightarrow A=1$。<br>$$y=e^x(C_1\cos x+C_2\sin x)+e^x$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle y = C_1 + C_2e^{-x} + \dfrac{x^3}{3} - x^2 + 2x$</div>
+        <div class="steps"><p>$r^2+r=0,\ r=0,-1$。$\lambda=0$ 单根，设 $y^*=x(ax^2+bx+c)$：$y^{*\prime}=3ax^2+2bx+c$，$y^{*\prime\prime}=6ax+2b$，<br>$$y^{*\prime\prime}+y^{*\prime}=3ax^2+(6a+2b)x+(2b+c)=x^2\Rightarrow a=\frac13,\ b=-1,\ c=2$$<br>$$y=C_1+C_2e^{-x}+\frac{x^3}3-x^2+2x$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle y = C_1e^{2x} + C_2e^{-2x} + \dfrac{x}{4}e^{2x}$</div>
+        <div class="steps"><p>$r=\pm2$；$\lambda=2$ 单根，$y^*=Axe^{2x}$：$y^{*\prime\prime}-4y^*=4Ae^{2x}=e^{2x}\Rightarrow A=\dfrac14$。<br>$$y=C_1e^{2x}+C_2e^{-2x}+\frac x4e^{2x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle y = C_1e^{2x} + C_2e^{-2x} + \dfrac{x}{4}e^{2x}$</div>
+        <div class="steps"><p>与数一同题：$r=\pm2$；$\lambda=2$ 单根，$y^*=Axe^{2x}$，代入得 $4A=1\Rightarrow A=\dfrac14$。<br>$$y=C_1e^{2x}+C_2e^{-2x}+\frac x4e^{2x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle y = \dfrac{3}{4} + \left(\dfrac{1}{4}+\dfrac{x}{2}\right)e^{2x}$</div>
+        <div class="steps"><p>方程即 $y&#x27;&#x27;-2y&#x27;=e^{2x}$，$r=0,2$；$\lambda=2$ 单根，$y^*=Axe^{2x}$：$y^{*\prime\prime}-2y^{*\prime}=2Ae^{2x}=e^{2x}\Rightarrow A=\dfrac12$。<br>$$y=C_1+C_2e^{2x}+\frac x2e^{2x},\qquad y(0)=1:\ C_1+C_2=1$$<br>$y&#x27;=2C_2e^{2x}+\dfrac12e^{2x}+xe^{2x}$，$y&#x27;(0)=1:\ 2C_2+\dfrac12=1\Rightarrow C_2=\dfrac14,\ C_1=\dfrac34$。<br>$$y=\frac34+\left(\frac14+\frac x2\right)e^{2x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle (I)\ y''-y=\sin x;\qquad (II)\ y = e^x - e^{-x} - \dfrac{1}{2}\sin x$</div>
+        <div class="steps"><p>由反函数求导法则（$y&#x27;\ne0$）：<br>$$\frac{dy}{dx}=\frac{1}{dx/dy},\qquad \frac{d^2x}{dy^2}=\frac{d}{dx}\left(\frac1{y&#x27;}\right)\cdot\frac{dx}{dy}=-\frac{y&#x27;&#x27;}{(y&#x27;)^3}$$<br>代入原方程：$-\dfrac{y&#x27;&#x27;}{(y&#x27;)^3}+(y+\sin x)\dfrac1{(y&#x27;)^3}=0$，乘 $(y&#x27;)^3$：<br>$$(I)\qquad y&#x27;&#x27;-y=\sin x$$<br>$r=\pm1$；设 $y^*=A\sin x+B\cos x$：$y^{*\prime\prime}-y^*=-2(A\sin x+B\cos x)=\sin x\Rightarrow A=-\dfrac12,\ B=0$。<br>$y=C_1e^x+C_2e^{-x}-\dfrac12\sin x$；$y(0)=0:\ C_1+C_2=0$；$y&#x27;(0)=\dfrac32:\ C_1-C_2-\dfrac12=\dfrac32\Rightarrow C_1=1,\ C_2=-1$。<br>$$(II)\qquad y=e^x-e^{-x}-\frac12\sin x$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（17）</span><div class="ansline">$\displaystyle y = C_1e^x + C_2e^{3x} - 2e^{2x}$</div>
+        <div class="steps"><p>$r^2-4r+3=0,\ r=1,3$；$\lambda=2$ 非根，$y^*=Ae^{2x}$：$A(4-8+3)=-A=2\Rightarrow A=-2$。<br>$$y=C_1e^x+C_2e^{3x}-2e^{2x}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
