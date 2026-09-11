@@ -21,67 +21,193 @@
 
   <div class="card q" id="k31_T1">
     <div class="qhead"><span class="qno">k31_T1</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1987</span> <span class="badge year">1991</span> <span class="badge year">1996</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T1_0.png" alt="k31_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k31_T1_1.png" alt="k31_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, & x<1,\\ 0.2, & 1\le x<2,\\ 0.5, & 2\le x<3,\\ 1, & x\ge 3.\end{cases}$</div>
+        <div class="steps"><p>离散型分布函数 $F(x)=P\{X\le x\}$ 是阶梯函数，在每个取值点 $x_i$ 处跳跃，跳跃度等于 $P\{X=x_i\}$：</p>
+<p>$$F(x)=\begin{cases}0, &amp; x&lt;1,\\ 0.2, &amp; 1\le x&lt;2,\\ 0.2+0.3=0.5, &amp; 2\le x&lt;3,\\ 1, &amp; x\ge 3.\end{cases}$$</p>
+<p>即 $F(x)$ 在 $x=1,2,3$ 处分别跳跃 $0.2, 0.3, 0.5$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P\{X=-1\}=0.4,\quad P\{X=1\}=0.4,\quad P\{X=3\}=0.2$</div>
+        <div class="steps"><p>离散型随机变量的分布函数在取值点处跳跃，跳跃值即该点的概率：</p>
+<p>$$P\{X=-1\}=F(-1)-F(-1^-)=0.4-0=0.4,$$</p>
+<p>$$P\{X=1\}=F(1)-F(1^-)=0.8-0.4=0.4,$$</p>
+<p>$$P\{X=3\}=F(3)-F(3^-)=1-0.8=0.2.$$</p>
+<p>验证：$0.4+0.4+0.2=1$，构成合法分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle p=\frac{19}{36},\quad q=\frac{1}{18}$</div>
+        <div class="steps"><p>基本事件总数 $6\times 6=36$。</p>
+<p>有实根 $\Leftrightarrow \Delta=B^2-4C\ge 0\Leftrightarrow C\le B^2/4$。逐个统计 $B=1,\dots,6$ 时满足条件的 $C$ 的个数：</p>
+<p>- $B=1$：$C\le 0.25$，0 个；<br>- $B=2$：$C\le 1$，1 个；<br>- $B=3$：$C\le 2.25$，2 个；<br>- $B=4$：$C\le 4$，4 个；<br>- $B=5$：$C\le 6.25$，6 个；<br>- $B=6$：$C\le 9$，6 个。</p>
+<p>合计 $0+1+2+4+6+6=19$，故 $p=\dfrac{19}{36}$。</p>
+<p>有重根 $\Leftrightarrow B^2=4C$，即 $C=B^2/4$：$B=2\Rightarrow C=1$ ✓；$B=4\Rightarrow C=4$ ✓；$B=6\Rightarrow C=9&gt;6$ 舍去。共 2 组，故 $q=\dfrac{2}{36}=\dfrac{1}{18}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>先求生存函数：</p>
+<p>$$P(X&gt;k)=\sum_{j=k+1}^{\infty}\left(2^{-(j+1)}+3^{-j}\right)=2^{-(k+1)}+\frac{1}{2}\cdot 3^{-k}.$$</p>
+<p>于是</p>
+<p>$$P(X&gt;m+n\mid X&gt;m)=\frac{2^{-(m+n+1)}+\frac12 3^{-(m+n)}}{2^{-(m+1)}+\frac12 3^{-m}}.$$</p>
+<p>分子分母同乘 $2^{m+1}$，记 $c=\left(\frac23\right)^m\in(0,1)$，则条件概率 $=\dfrac{2^{-n}+c\cdot 3^{-n}}{1+c}$。与 $P(X&gt;n)=\frac12 2^{-n}+\frac12 3^{-n}$ 作差：</p>
+<p>$$P(X&gt;m+n\mid X&gt;m)-P(X&gt;n)=\frac{\left(2^{-n}-3^{-n}\right)(1-c)}{2(1+c)}&gt;0,$$</p>
+<p>因为 $n\ge 1$ 时 $2^{-n}&gt;3^{-n}$，且 $c&lt;1$。</p>
+<p>直观解释：$X$ 是「快衰减（几何 $p=1/2$）」与「慢衰减（几何 $p=1/3$）」各以 $1/2$ 权重的混合；存活到 $m$ 之后，快衰减分量被筛掉，条件存活概率大于按原混合算的 $P(X&gt;n)$（不具有无记忆性，但严格大于 $P(X&gt;n)$）。</p>
+<p>再排除其余选项：条件概率与 $P(X&gt;m)$ 的大小随 $n$ 变化不定（例如 $m=1, n=10$ 时条件概率 $\approx 0.00059 \ll P(X&gt;1)\approx 0.417$），故 A、C 不成立；上面已证严格不等，B 不成立。选 D。</p>
+<p>数值验证（$m=n=1$）：$P(X&gt;2|X&gt;1)=\frac{13/72}{5/12}=\frac{13}{30}\approx 0.433 &gt; \frac{5}{12}\approx 0.417=P(X&gt;1)$。✓</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k31_T2">
     <div class="qhead"><span class="qno">k31_T2</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1987</span> <span class="badge year">1988</span> <span class="badge year">1990</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T2_0.png" alt="k31_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 至少一次：1-(1-p)^n；至多一次：(1-p)^n+np(1-p)^{n-1}$</div>
+        <div class="steps"><p>设 $Y$ 为 $n$ 次独立试验中 $A$ 发生的次数，则 $Y\sim B(n,p)$。</p>
+<p>至少发生一次：</p>
+<p>$$P(Y\ge 1)=1-P(Y=0)=1-(1-p)^n.$$</p>
+<p>至多发生一次：</p>
+<p>$$P(Y\le 1)=P(Y=0)+P(Y=1)=(1-p)^n+\binom{n}{1}p(1-p)^{n-1}=(1-p)^n+np(1-p)^{n-1}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{1}{3}$</div>
+        <div class="steps"><p>设一次试验中 $A$ 出现的概率为 $p$，则三次独立试验中至少出现一次的概率</p>
+<p>$$1-(1-p)^3=\frac{19}{27},$$</p>
+<p>故 $(1-p)^3=\dfrac{8}{27}=\left(\dfrac23\right)^3$，即 $1-p=\dfrac23$，解得 $p=\dfrac{1}{3}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{2}{3}$</div>
+        <div class="steps"><p>设命中率为 $p$，四次独立射击至少命中一次的概率</p>
+<p>$$1-(1-p)^4=\frac{80}{81},$$</p>
+<p>故 $(1-p)^4=\dfrac{1}{81}=\left(\dfrac13\right)^4$，即 $1-p=\dfrac13$，$p=\dfrac23$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k31_T3">
     <div class="qhead"><span class="qno">k31_T3</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1989</span> <span class="badge year">1995</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T3_0.png" alt="k31_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k31_T3_1.png" alt="k31_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{20}{27}$</div>
+        <div class="steps"><p>一次观测值大于 3 的概率</p>
+<p>$$p=P(X&gt;3)=\frac{5-3}{5-2}=\frac{2}{3}.$$</p>
+<p>设三次独立观测中大于 3 的次数为 $Y$，则 $Y\sim B\left(3,\frac23\right)$，</p>
+<p>$$P(Y\ge 2)=\binom{3}{2}\left(\frac23\right)^2\cdot\frac13+\left(\frac23\right)^3=\frac{4}{9}+\frac{8}{27}=\frac{12+8}{27}=\frac{20}{27}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{9}{64}$</div>
+        <div class="steps"><p>单次观察中事件 $\left\{X\le \frac12\right\}$ 的概率</p>
+<p>$$p=\int_0^{1/2}2x\,dx=\left[x^2\right]_0^{1/2}=\frac14.$$</p>
+<p>三次独立重复观察中该事件出现的次数 $Y\sim B\left(3,\frac14\right)$，</p>
+<p>$$P\{Y=2\}=\binom{3}{2}\left(\frac14\right)^2\cdot\frac34=3\cdot\frac{1}{16}\cdot\frac{3}{4}=\frac{9}{64}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \alpha=0.94^n;\quad \beta=\binom{n}{2}\cdot 0.06^2\cdot 0.94^{n-2};\quad \theta=1-0.94^n-n\cdot 0.06\cdot 0.94^{n-1}$</div>
+        <div class="steps"><p>单台仪器能出厂的概率</p>
+<p>$$p_0=0.70+0.30\times 0.80=0.94,$$</p>
+<p>不能出厂的概率 $q_0=0.30\times 0.20=0.06$（验证 $p_0+q_0=1$）。各台仪器独立，设 $n$ 台中不能出厂的台数为 $Z$，则 $Z\sim B(n,0.06)$。</p>
+<p>(I) 全部能出厂：$$\alpha=p_0^n=0.94^n.$$</p>
+<p>(II) 恰好两台不能出厂：$$\beta=\binom{n}{2}\cdot 0.06^2\cdot 0.94^{n-2}.$$</p>
+<p>(III) 至少两台不能出厂：</p>
+<p>$$\theta=1-P(Z=0)-P(Z=1)=1-0.94^n-n\cdot 0.06\cdot 0.94^{n-1}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{2}{3}$</div>
+        <div class="steps"><p>由条件概率定义：</p>
+<p>$$P(\text{全成功}\mid \text{至少一次成功})=\frac{p^3}{1-(1-p)^3}=\frac{4}{13}.$$</p>
+<p>去分母：$13p^3=4\left[1-(1-p)^3\right]=4(3p-3p^2+p^3)$，整理得</p>
+<p>$$9p^3+12p^2-12p=0\ \Rightarrow\ 3p\left(3p^2+4p-4\right)=0.$$</p>
+<p>由 $0&lt;p&lt;1$，故 $3p^2+4p-4=0$，解得</p>
+<p>$$p=\frac{-4+\sqrt{16+48}}{6}=\frac{4}{6}=\frac{2}{3}.$$</p>
+<p>验证：$p^3=\frac{8}{27}$，$1-(1-p)^3=1-\frac{1}{27}=\frac{26}{27}$，比值 $=\frac{8}{26}=\frac{4}{13}$ ✓。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k31_T4">
     <div class="qhead"><span class="qno">k31_T4</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2007</span> <span class="badge year">2015</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T4_0.png" alt="k31_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k31_T4_1.png" alt="k31_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (C)，即 3p^2(1-p)^2$</div>
+        <div class="steps"><p>「第 4 次射击恰好第 2 次命中」$\Leftrightarrow$ 前 3 次射击中恰好命中 1 次，且第 4 次命中。由独立性：</p>
+<p>$$P=\binom{3}{1}p(1-p)^2\cdot p=3p^2(1-p)^2.$$</p>
+<p>对照选项：(A) 缺少一个 $p$ 因子且系数错；(B) 系数 6 错（前 3 次选 1 个命中位置是 $\binom{3}{1}=3$，不是 $\binom{4}{2}$）；(D) 系数 6 错。选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P\{Y=k\}=(k-1)\left(\frac{1}{8}\right)^2\left(\frac{7}{8}\right)^{k-2},\quad k=2,3,\ldots$</div>
+        <div class="steps"><p>单次观测值大于 3 的概率</p>
+<p>$$p=P(X&gt;3)=\int_3^{\infty}2^{-x}\ln 2\,dx=\left[-2^{-x}\right]_3^{\infty}=0+2^{-3}=\frac{1}{8}.$$</p>
+<p>$Y$ 为直到第 2 个「大于 3」的观测出现时所需的观测次数，服从帕斯卡（负二项）分布：事件 $\{Y=k\}$ 表示第 $k$ 次观测出现第 2 个成功，且前 $k-1$ 次中恰有 1 次成功：</p>
+<p>$$P\{Y=k\}=\binom{k-1}{1}\left(\frac18\right)^2\left(\frac78\right)^{k-2}=(k-1)\left(\frac18\right)^2\left(\frac78\right)^{k-2},\quad k=2,3,\ldots$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k31_T5">
     <div class="qhead"><span class="qno">k31_T5</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1992</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T5_0.png" alt="k31_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \alpha\approx 0.91$</div>
+        <div class="steps"><p>单次测量误差绝对值大于 19.6 的概率：</p>
+<p>$$p=P(|X|&gt;19.6)=2\left[1-\Phi\left(\frac{19.6}{10}\right)\right]=2\left[1-\Phi(1.96)\right]=2\times 0.025=0.05.$$</p>
+<p>设 100 次中 $|X|&gt;19.6$ 的次数为 $Z$，则 $Z\sim B(100,0.05)$。用泊松分布近似（$\lambda=np=100\times 0.05=5$）：</p>
+<p>$$\alpha=P(Z\ge 3)\approx 1-e^{-\lambda}\left(1+\lambda+\frac{\lambda^2}{2!}\right)=1-e^{-5}\times\left(1+5+\frac{25}{2}\right)=1-13.5\,e^{-5}.$$</p>
+<p>查附表 $e^{-5}=0.007$：</p>
+<p>$$\alpha\approx 1-13.5\times 0.007=1-0.0945\approx 0.91.$$</p>
+<p>即 $\alpha\approx 0.91$（小数点后取两位有效数字）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (C)，即 3/e²$</div>
+        <div class="steps"><p>$X_i\sim B(1,0.1)$ 独立同分布，故 $T=\sum_{i=1}^{20}X_i\sim B(20,0.1)$。泊松定理中 $\lambda=np=20\times 0.1=2$：</p>
+<p>$$P\{T\le 1\}=P\{T=0\}+P\{T=1\}\approx e^{-2}\frac{2^0}{0!}+e^{-2}\frac{2^1}{1!}=e^{-2}(1+2)=\frac{3}{e^2}.$$</p>
+<p>选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k31_T6">
     <div class="qhead"><span class="qno">k31_T6</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2003</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.6.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k31_T6_0.png" alt="k31_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle E(X)=\frac{3}{2}$</div>
+        <div class="steps"><p>从甲箱（3 正 + 3 次，共 6 件）任取 3 件，乙箱中次品数 $X$ 服从超几何分布：</p>
+<p>$$P\{X=k\}=\frac{\binom{3}{k}\binom{3}{3-k}}{\binom{6}{3}},\quad k=0,1,2,3.$$</p>
+<p>$\binom{6}{3}=20$，各概率为 $P\{X=0\}=\frac{1}{20}$，$P\{X=1\}=\frac{9}{20}$，$P\{X=2\}=\frac{9}{20}$，$P\{X=3\}=\frac{1}{20}$。</p>
+<p>$$E(X)=0\cdot\frac{1}{20}+1\cdot\frac{9}{20}+2\cdot\frac{9}{20}+3\cdot\frac{1}{20}=\frac{30}{20}=\frac{3}{2}.$$</p>
+<p>（或直接用超几何分布期望公式 $E(X)=n\cdot\dfrac{K}{N}=3\times\dfrac{3}{6}=\dfrac32$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

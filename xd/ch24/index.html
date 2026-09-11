@@ -21,67 +21,146 @@
 
   <div class="card q" id="k24_T1">
     <div class="qhead"><span class="qno">k24_T1</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2000</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T1_0.png" alt="k24_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 当且仅当 a_1a_2\cdots a_n\neq(-1)^n 时 f 为正定二次型$</div>
+        <div class="steps"><p>记 y_i=x_i+a_ix_{i+1}（约定 x_{n+1}=x_1），则 y=Cx，其中 C 为对角线全 1、(i,i+1) 元为 a_i(i=1,…,n−1)、(n,1) 元为 a_n、其余为 0 的 n 阶矩阵。于是<br>$$f=y^{T}y=(Cx)^{T}(Cx)=x^{T}C^{T}Cx .$$<br>f 正定 ⟺ 对任意 x≠0 有 ‖Cx‖²&gt;0 ⟺ Cx=0 只有零解 ⟺ C 可逆。</p>
+<p>按定义展开 det C，非零项只有两项：主对角线乘积 1，以及取 (1,2),(2,3),…,(n,1) 的循环排列，元素积为 a_1a_2\cdots a_n，列标排列 (2,3,…,n,1) 的逆序数为 n−1，符号为 (-1)^{n-1}=(-1)^{n+1}：<br>$$\det C=1+(-1)^{n+1}a_1a_2\cdots a_n .$$</p>
+<p>故 f 正定 ⟺ det C≠0，即<br>$$a_1a_2\cdots a_n\neq(-1)^{n} .$$<br>（验证 n=2：条件 a_1a_2≠1，与 Δ2=1−a_1a_2 一致。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k24_T2">
     <div class="qhead"><span class="qno">k24_T2</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 7 小题</span><span class="badge year">1991</span> <span class="badge year">1997</span> <span class="badge year">1998</span> <span class="badge year">2002</span> <span class="badge year">2005</span> <span class="badge year">2010</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.24.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T2_0.png" alt="k24_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k24_T2_1.png" alt="k24_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -1<\lambda<2$</div>
+        <div class="steps"><p>二次型矩阵<br>$$A=\begin{pmatrix}1&amp;\lambda&amp;-1\\ \lambda&amp;4&amp;2\\ -1&amp;2&amp;4\end{pmatrix}.$$<br>f 正定 ⟺ 各顺序主子式全大于零：<br>Δ1=1&gt;0；Δ2=4−λ²&gt;0 ⟺ |λ|&lt;2；<br>$$\Delta_3=\det A=1(16-4)-\lambda(4\lambda+2)+(-1)(2\lambda+4)=12-4\lambda^{2}-4\lambda=4(2-\lambda)(\lambda+1)&gt;0,$$<br>即 −1&lt;λ&lt;2。与 |λ|&lt;2 取交集得<br>$$-1&lt;\lambda&lt;2 .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\sqrt{2}<t<\sqrt{2}$</div>
+        <div class="steps"><p>矩阵<br>$$A=\begin{pmatrix}2&amp;1&amp;0\\1&amp;1&amp;t/2\\0&amp;t/2&amp;1\end{pmatrix}.$$<br>顺序主子式：Δ1=2&gt;0；Δ2=2×1−1²=1&gt;0；<br>$$\Delta_3=\det A=2\Big(1-\frac{t^{2}}{4}\Big)-1(1-0)+0=1-\frac{t^{2}}{2}&gt;0\iff t^{2}&lt;2 .$$<br>故正定 ⟺ −√2&lt;t&lt;√2。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \Lambda=diag(k^2,(k+2)^2,(k+2)^2)；k≠0 且 k≠−2 时 B 正定$</div>
+        <div class="steps"><p>A 实对称。特征方程<br>$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;0&amp;-1\\0&amp;\lambda-2&amp;0\\-1&amp;0&amp;\lambda-1\end{vmatrix}=(\lambda-2)\big[(\lambda-1)^{2}-1\big]=\lambda(\lambda-2)^{2},$$<br>故 A 的特征值为 0, 2, 2。kE+A 的特征值为 k, k+2, k+2，B=(kE+A)² 的特征值为<br>$$k^{2},\ (k+2)^{2},\ (k+2)^{2}.$$<br>B 实对称必可对角化，取<br>$$\Lambda=\mathrm{diag}\big(k^{2},(k+2)^{2},(k+2)^{2}\big).$$<br>B 正定 ⟺ 特征值全大于零 ⟺ k²&gt;0 且 (k+2)²&gt;0 ⟺ k≠0 且 k≠−2。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) λ1=λ2=−2, λ3=0；(II) k>2$</div>
+        <div class="steps"><p>(I) 设 Ax=λx，由 A²+2A=0 得 (λ²+2λ)x=0，特征向量非零，故 λ²+2λ=0，λ∈{0,−2}。<br>A 实对称必可对角化，非零特征值的个数等于 r(A)=2，故特征值为<br>$$\lambda_1=\lambda_2=-2,\quad \lambda_3=0 .$$<br>(II) A+kE 的特征值为 k−2, k−2, k，仍为对称矩阵。正定 ⟺ 特征值全正 ⟺ k−2&gt;0 且 k&gt;0，即<br>$$k&gt;2 .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) P^TDP=[[A,O],[O,B−C^TA^{-1}C]]（分块对角）；(II) B−C^TA^{-1}C 是正定矩阵$</div>
+        <div class="steps"><p>D 正定 ⟹ A 正定：对 x≠0，(x^{T},O)D(x;0)=x^{T}Ax&gt;0；故 A 可逆，P 有意义，且 P 可逆（对角块为单位阵）。</p>
+<p>(I) 由 A^{T}=A 得 (A^{-1})^{T}=A^{-1}，于是<br>$$P^{T}=\begin{bmatrix}E_m&amp;O\\ -C^{T}A^{-1}&amp;E_n\end{bmatrix}.$$<br>先算<br>$$P^{T}D=\begin{bmatrix}A&amp;C\\ O&amp;\,B-C^{T}A^{-1}C\end{bmatrix}$$<br>（左下块 −C^{T}A^{-1}A+C^{T}=O），再右乘 P：<br>$$P^{T}DP=\begin{bmatrix}A&amp;C\\ O&amp;B-C^{T}A^{-1}C\end{bmatrix}\begin{bmatrix}E_m&amp;-A^{-1}C\\ O&amp;E_n\end{bmatrix}=\begin{bmatrix}A&amp;O\\ O&amp;B-C^{T}A^{-1}C\end{bmatrix}.$$</p>
+<p>(II) 是正定矩阵。证明：D 正定且 P 可逆，合同的矩阵正定性相同，故 P^{T}DP 正定；由 (I) 它对称且分块对角，其右下块 B−C^{T}A^{-1}C 显然对称。对任意 y≠0，取 z=(0;y)^{T}≠0，则<br>$$0&lt;z^{T}(P^{T}DP)z=y^{T}\big(B-C^{T}A^{-1}C\big)y ,$$<br>故 B−C^{T}A^{-1}C 正定。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (I) A=[[1/2,0,−1/2],[0,1,0],[−1/2,0,1/2]]；(II) A+E 的特征值 2,2,1 全大于零，故正定$</div>
+        <div class="steps"><p>(I) 标准形为 y_1^{2}+y_2^{2}（无 y_3^{2} 项），故 A 的特征值为 1, 1, 0。Q 的第 3 列 η_3=(√2/2,0,√2/2)^{T} 为单位向量，且 Aη_3=0。<br>A 实对称，正交对角化得<br>$$A=Q\,\mathrm{diag}(1,1,0)\,Q^{T}=QQ^{T}-Q\,\mathrm{diag}(0,0,1)\,Q^{T}=E-\eta_3\eta_3^{T} .$$<br>而<br>$$\eta_3\eta_3^{T}=\begin{pmatrix}1/2&amp;0&amp;1/2\\0&amp;0&amp;0\\1/2&amp;0&amp;1/2\end{pmatrix},$$<br>所以<br>$$A=E-\eta_3\eta_3^{T}=\begin{pmatrix}1/2&amp;0&amp;-1/2\\0&amp;1&amp;0\\-1/2&amp;0&amp;1/2\end{pmatrix}.$$<br>(II) A+E 的特征值为 1+1=2, 2, 0+1=1，全大于零，且 A+E 实对称，故 A+E 为正定矩阵。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (B)，即 2−√3<a<2+√3$</div>
+        <div class="steps"><p>$$xA+yB=\begin{pmatrix}x+y&amp;2x\\ -2x+y&amp;a(y-x)\end{pmatrix},$$<br>$$f(x,y)=|xA+yB|=(x+y)\cdot a(y-x)-2x\,(y-2x)=(4-a)x^{2}-2xy+ay^{2} .$$<br>其矩阵为 [[4−a, −1],[−1, a]]，正定条件：<br>$$4-a&gt;0,\qquad (4-a)a-1&gt;0 .$$<br>第二式即 a²−4a+1&lt;0，解得 2−√3&lt;a&lt;2+√3（约 0.27&lt;a&lt;3.73）；该区间自动满足 a&lt;4。故选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k24_T3">
     <div class="qhead"><span class="qno">k24_T3</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1999</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.24.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T3_0.png" alt="k24_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle |A+E|=∏(1+λ_i)，每个 λ_i>0，故 |A+E|>1$</div>
+        <div class="steps"><p>A 正定 ⟹ A 实对称且特征值 λ_1,…,λ_n 全大于零。A+E 的特征值为 1+λ_i（i=1,…,n），故<br>$$|A+E|=\prod_{i=1}^{n}(1+\lambda_i) .$$<br>由 λ_i&gt;0 知每个因子 1+λ_i&gt;1，因此<br>$$|A+E|=\prod_{i=1}^{n}(1+\lambda_i)&gt;1 .$$<br>证毕。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C 是正定矩阵$</div>
+        <div class="steps"><p>C 显然对称。任取 z=(x;y)∈R^{m+n}，z≠0，则 x,y 不全为零，且<br>$$z^{T}Cz=x^{T}Ax+y^{T}By .$$<br>若 x≠0，由 A 正定得 x^{T}Ax&gt;0；由 B 正定（从而半正定）得 y^{T}By≥0，故和大于零；<br>若 x=0，则 y≠0，y^{T}By&gt;0。<br>综上对任意 z≠0 有 z^{T}Cz&gt;0，故 C 为正定矩阵。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 必要性：B^TAB 正定 ⟹ Bx=0 只有零解 ⟹ r(B)=n；充分性：r(B)=n ⟹ 对 x≠0 有 (Bx)^TA(Bx)>0$</div>
+        <div class="steps"><p>先看对称性：(B^{T}AB)^{T}=B^{T}AB，故 B^{T}AB 总是对称矩阵。</p>
+<p>必要性：设 B^{T}AB 正定。若 r(B)&lt;n，齐次方程 Bx=0 有非零解 x_0，则<br>$$x_0^{T}(B^{T}AB)x_0=(Bx_0)^{T}A(Bx_0)=0,$$<br>与正定性（应大于零）矛盾。故 r(B)=n。</p>
+<p>充分性：设 r(B)=n，则 Bx=0 只有零解，即 x≠0 ⟹ Bx≠0。于是对任意 x≠0：<br>$$x^{T}(B^{T}AB)x=(Bx)^{T}A(Bx)&gt;0$$<br>（A 正定，Bx≠0）。故 B^{T}AB 正定。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle B 对称，且 x^TBx=λ‖x‖²+‖Ax‖²>0（x≠0），故 B 正定$</div>
+        <div class="steps"><p>对称性：(A^{T}A)^{T}=A^{T}A，故 B^{T}=B。<br>对任意 n 维非零实向量 x：<br>$$x^{T}Bx=\lambda x^{T}x+x^{T}A^{T}Ax=\lambda\|x\|^{2}+\|Ax\|^{2}\ge\lambda\|x\|^{2}&gt;0,$$<br>其中 λ&gt;0 且 ‖x‖²&gt;0。故 B 为正定矩阵。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k24_T4">
     <div class="qhead"><span class="qno">k24_T4</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T4_0.png" alt="k24_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 特征值 a−1（二重）、a+2；P=(1/√2,1/√6,1/√3 列)=[[1/√2,1/√6,1/√3],[−1/√2,1/√6,1/√3],[0,2/√6,−1/√3]]，P^TAP=diag(a−1,a−1,a+2)$</div>
+        <div class="steps"><p>注：矩阵第一行按本切片图与例 6.24.3 图底部衔接处确认为 (a,1,−1)。<br>$$|\lambda E-A|=\det\begin{pmatrix}\lambda-a&amp;-1&amp;1\\ -1&amp;\lambda-a&amp;1\\ 1&amp;1&amp;\lambda-a\end{pmatrix}=(\lambda-a)^{3}-3(\lambda-a)-2 .$$<br>令 t=λ−a：t³−3t−2=(t+1)²(t−2)，故特征值<br>$$\lambda_1=\lambda_2=a-1,\qquad \lambda_3=a+2 .$$<br>λ=a−1：A−(a−1)E 的三行均成比例于 (1,1,−1)，方程为 x_1+x_2−x_3=0，取正交基础解系<br>$$\xi_1=(1,-1,0)^{T},\qquad \xi_2=(1,1,2)^{T}\ (\xi_1^{T}\xi_2=0).$$<br>λ=a+2：解 (A−(a+2)E)x=0 得 ξ_3=(1,1,−1)^{T}（与 ξ_1,ξ_2 自动正交）。<br>单位化得<br>$$P=\begin{pmatrix}1/\sqrt2&amp;1/\sqrt6&amp;1/\sqrt3\\ -1/\sqrt2&amp;1/\sqrt6&amp;1/\sqrt3\\ 0&amp;2/\sqrt6&amp;-1/\sqrt3\end{pmatrix},\qquad P^{T}AP=\mathrm{diag}(a-1,\,a-1,\,a+2) .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C=P·diag(2,2,1)·P^T=(1/3)[[5,−1,1],[−1,5,1],[1,1,5]]$</div>
+        <div class="steps"><p>记 B=(a+3)E−A=[[3,−1,1],[−1,3,1],[1,1,3]]。B 与 A 有相同特征向量，特征值为 (a+3)−(a−1)=4（二重）、(a+3)−(a+2)=1。<br>设 C 正定且 C²=B，则 C 与 B 共享特征向量系，C 的特征值为 √4=2（二重）、√1=1，且 C 为对称谱分解：<br>$$C=P\,\mathrm{diag}(2,2,1)\,P^{T}=2u_1u_1^{T}+2u_2u_2^{T}+u_3u_3^{T},$$<br>其中 u_i 为第 (1) 问的单位特征向量。展开：<br>2u_1u_1^{T}=[[1,−1,0],[−1,1,0],[0,0,0]]，2u_2u_2^{T}=(1/3)[[1,1,2],[1,1,2],[2,2,4]]，u_3u_3^{T}=(1/3)[[1,1,−1],[1,1,−1],[−1,−1,1]]，相加得<br>$$C=\frac13\begin{pmatrix}5&amp;-1&amp;1\\ -1&amp;5&amp;1\\ 1&amp;1&amp;5\end{pmatrix}\quad\Big(\text{即 }C=\tfrac13(B+2E)\Big).$$<br>验证：C²=(1/9)[[27,−9,9],[−9,27,9],[9,9,27]]=B ✓；C 的特征值为 2,2,1 全大于零，故 C 正定。该 C 与 a 无关。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k24_T5">
     <div class="qhead"><span class="qno">k24_T5</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T5_0.png" alt="k24_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a≥0$</div>
+        <div class="steps"><p>该不等式对全体 α,β 成立 ⟺ A 半正定或半负定：<br>· 若 A⪰0，令 ⟨u,v⟩=u^{T}Av，这是半内积，其 Cauchy–Schwarz 不等式 (α^TAβ)²≤(α^TAα)(β^TAβ) 恒成立；<br>· 若 A⪯0，对 −A 用同一论证；<br>· 反之，若 A 不定（特征值 λ1&gt;0&gt;λ2，规范特征向量 u1,u2），取 α=√(−λ2)u1+√(λ1)u2，则 α^TAα=λ1(−λ2)+λ2λ1=0 且 α≠0、Aα≠0；取 β=Aα，则左边 =(α^{T}Aβ)²=‖Aα‖⁴&gt;0，右边 =0·(β^{T}Aβ)=0，不等式失效。二阶对称阵不会出现「不定且奇异」。</p>
+<p>对 A=[[a+1,a],[a,a]]：det A=(a+1)a−a²=a。<br>半正定 ⟺ 全部主子式≥0：a+1≥0，a≥0，det A=a≥0 ⟺ a≥0；<br>半负定 ⟺ −A 半正定：−a≥0，−(a+1)≥0，det A=a≥0，无解。<br>故 a 的取值范围是<br>$$a\ge0 .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k24_T6">
     <div class="qhead"><span class="qno">k24_T6</span>
-      
+      <span class="badge">共 3 小题</span><span class="badge year">2004</span> <span class="badge year">2013</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T6_0.png" alt="k24_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>展开：f=2x_1^{2}+2x_2^{2}+2x_3^{2}+2x_1x_2-2x_2x_3+2x_1x_3，<br>$$A=\begin{pmatrix}2&amp;1&amp;1\\1&amp;2&amp;-1\\1&amp;-1&amp;2\end{pmatrix},\qquad \Delta_1=2&gt;0,\ \Delta_2=3&gt;0,$$<br>$$\det A=2(4-1)-1(2+1)+1(-1-2)=6-3-3=0 .$$<br>Δ2&gt;0 而 det A=0，故 r(A)=2，即 f 的秩为 2（特征值为 0,3,3）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) f=x^T(2αα^T+ββ^T)x，且该矩阵对称，即为二次型矩阵；(II) 特征值 2,1,0，标准形 2y1²+y2²$</div>
+        <div class="steps"><p>(I) 记 A=2αα^{T}+ββ^{T}，显然 A^{T}=A。由 (α^{T}x)^{2}=x^{T}αα^{T}x：<br>$$f=2x^{T}\alpha\alpha^{T}x+x^{T}\beta\beta^{T}x=x^{T}\big(2\alpha\alpha^{T}+\beta\beta^{T}\big)x=x^{T}Ax,$$<br>故 f 对应的矩阵为 2αα^{T}+ββ^{T}。<br>(II) 设 α,β 为正交单位向量，则 α^{T}α=β^{T}β=1，α^{T}β=0：<br>$$A\alpha=2\alpha(\alpha^{T}\alpha)+\beta(\beta^{T}\alpha)=2\alpha,\qquad A\beta=2\alpha(\alpha^{T}\beta)+\beta(\beta^{T}\beta)=\beta .$$<br>又对任意与 α,β 都正交的非零 γ，Aγ=0。故 A 的特征值为 2, 1, 0（A 实对称），f 在正交变换下的标准形为<br>$$2y_1^{2}+y_2^{2} .$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) a≠2 时只有零解；a=2 时 x=k(−2,−1,1)^T，k 为任意常数；(II) a≠2 时规范形 y1²+y2²+y3²；a=2 时规范形 y1²+y2²$</div>
+        <div class="steps"><p>(I) f 是平方和，f=0 ⟺ 三式同时为零：<br>$$x_1-x_2+x_3=0,\qquad x_2+x_3=0,\qquad x_1+ax_3=0 .$$<br>由后两式 x_2=−x_3，x_1=−2x_3；代入第一式恒成立，代入第三式得 (a−2)x_3=0。<br>故 a≠2 时只有零解 x=0；a=2 时解为 x=k(−2,−1,1)^{T}（k 任意）。<br>(II) f=‖Lx‖²，L 的行向量为 (1,−1,1),(0,1,1),(1,0,a)，f 的秩等于 r(L)：<br>$$\det L=\det\begin{pmatrix}1&amp;-1&amp;1\\0&amp;1&amp;1\\1&amp;0&amp;a\end{pmatrix}=a-2 .$$<br>f 为平方和，负惯性指数恒为 0。故：<br>a≠2：r=3，f 正定，规范形为 y_1^{2}+y_2^{2}+y_3^{2}；<br>a=2：r=2，规范形为 y_1^{2}+y_2^{2}。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
