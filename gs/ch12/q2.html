@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点12 求各类函数的导数或微分 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 12</div>
+<h1 class="title">考点 12　求各类函数的导数或微分</h1>
+<div class="sub">题组 15 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 0/15　</div>
+
+  <div class="card q" id="k12_T13">
+    <div class="qhead"><span class="qno">k12_T13</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1990</span> <span class="badge year">2016</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T13_0.png" alt="k12_T13 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A（n![f(x)]^{n+1}）$</div>
+        <div class="steps"><p>$$f&#x27;&#x27;=2ff&#x27;=2f^3,\qquad f&#x27;&#x27;&#x27;=2\cdot 3f^2 f&#x27;=3!\,f^4$$<br>数学归纳：设 $f^{(k)}=k!f^{k+1}$，则<br>$$f^{(k+1)}=k!(k+1)f^k f&#x27;=(k+1)!\,f^{k+2}$$<br>故对一切 $n$：$f^{(n)}=n![f(x)]^{n+1}$。选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f^{(n)}(0)=5\cdot 2^{n-1}$</div>
+        <div class="steps"><p>$f(0)=1$。由 f 连续，两边求导：<br>$$f&#x27;(x)=2(x+1)+2f(x),\qquad f&#x27;(0)=2+2=4$$<br>再求导：<br>$$f&#x27;&#x27;(x)=2+2f&#x27;(x),\qquad f&#x27;&#x27;(0)=2+8=10$$<br>$n\ge 3$ 时逐阶求导得 $f^{(n)}(x)=2f^{(n-1)}(x)$，故<br>$$f^{(n)}(0)=10\cdot 2^{n-2}=5\cdot 2^{n-1}\quad(n\ge 2).$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k12_T14">
+    <div class="qhead"><span class="qno">k12_T14</span>
+      <span class="badge">共 1 小题</span><span class="badge year">1987</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.12.14）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T14_0.png" alt="k12_T14 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{dy}{dx}=\frac{\sin t}{1-\cos t},\qquad \frac{d^2y}{dx^2}=-\frac{1}{5(1-\cos t)^3}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=5(1-\cos t),\qquad \frac{dy}{dt}=5\sin t$$<br>$$\frac{dy}{dx}=\frac{5\sin t}{5(1-\cos t)}=\frac{\sin t}{1-\cos t}$$<br>$$\frac{d^2y}{dx^2}=\frac{\frac{d}{dt}\left(\frac{\sin t}{1-\cos t}\right)}{\frac{dx}{dt}}=\frac{\cos t(1-\cos t)-\sin^2 t}{(1-\cos t)^2\cdot 5(1-\cos t)}=\frac{\cos t-1}{5(1-\cos t)^3}=-\frac{1}{5(1-\cos t)^3}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k12_T15">
+    <div class="qhead"><span class="qno">k12_T15</span>
+      <span class="badge">共 14 小题</span><span class="badge year">1989</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1994</span> <span class="badge year">1996</span> <span class="badge year">1997</span> <span class="badge year">2003</span> <span class="badge year">2010</span> <span class="badge year">2013</span> <span class="badge year">2015</span> <span class="badge year">2017</span> <span class="badge year">2020</span> <span class="badge year">2021</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T15_1.png" alt="k12_T15 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T15_2.png" alt="k12_T15 题目图 3">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{dy}{dx}=\frac{1}{2t},\qquad \frac{d^2y}{dx^2}=-\frac{1+t^2}{4t^3}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=\frac{2t}{1+t^2},\qquad \frac{dy}{dt}=\frac{1}{1+t^2}$$<br>$$\frac{dy}{dx}=\frac{1/(1+t^2)}{2t/(1+t^2)}=\frac{1}{2t}$$<br>$$\frac{d^2y}{dx^2}=\frac{-\frac{1}{2t^2}}{\frac{2t}{1+t^2}}=-\frac{1+t^2}{4t^3}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{t^2+2}{(\cos t-t\sin t)^3}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=\cos t-t\sin t,\qquad \frac{dy}{dt}=\sin t+t\cos t$$<br>$$\frac{dy}{dx}=\frac{\sin t+t\cos t}{\cos t-t\sin t}$$<br>对 t 求导（分子 $N&#x27;=2\cos t-t\sin t$，分母 $D&#x27;=-2\sin t-t\cos t$）：<br>$$\frac{d}{dt}\left(\frac{N}{D}\right)=\frac{(2\cos t-t\sin t)(\cos t-t\sin t)+(\sin t+t\cos t)(2\sin t+t\cos t)}{D^2}$$<br>展开分子 $=2\cos^2 t+2\sin^2 t+t^2(\sin^2 t+\cos^2 t)=t^2+2$，故<br>$$\frac{d^2y}{dx^2}=\frac{t^2+2}{(\cos t-t\sin t)^2}\cdot\frac{1}{\cos t-t\sin t}=\frac{t^2+2}{(\cos t-t\sin t)^3}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{\sin t-t\cos t}{4t^3}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=2t,\qquad \frac{dy}{dt}=-\sin t\ \Rightarrow\ \frac{dy}{dx}=-\frac{\sin t}{2t}$$<br>$$\frac{d^2y}{dx^2}=\frac{\frac{\sin t-t\cos t}{2t^2}}{2t}=\frac{\sin t-t\cos t}{4t^3}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle 3$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=f&#x27;(t),\qquad \frac{dy}{dt}=f&#x27;(e^{3t}-1)\cdot 3e^{3t}$$<br>$t=0$：$\frac{dx}{dt}=f&#x27;(0)\ne 0$，$\frac{dy}{dt}=3f&#x27;(0)$，<br>$$\frac{dy}{dx}\bigg|_{t=0}=\frac{3f&#x27;(0)}{f&#x27;(0)}=3.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{(6t+5)(1+t)}{t}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=1-\frac{1}{1+t}=\frac{t}{1+t},\qquad \frac{dy}{dt}=3t^2+2t$$<br>$$\frac{dy}{dx}=\frac{t(3t+2)}{t/(1+t)}=(3t+2)(1+t)=3t^2+5t+2$$<br>$$\frac{d^2y}{dx^2}=\frac{6t+5}{t/(1+t)}=\frac{(6t+5)(1+t)}{t}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{4f'(t^2)+8t^2 f''(t^2)}{f(t^2)}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=f(t^2),\qquad \frac{dy}{dt}=2f(t^2)\cdot f&#x27;(t^2)\cdot 2t=4t\,f(t^2)\,f&#x27;(t^2)$$<br>$$\frac{dy}{dx}=\frac{4t f(t^2)f&#x27;(t^2)}{f(t^2)}=4t f&#x27;(t^2)$$<br>$$\frac{d^2y}{dx^2}=\frac{4f&#x27;(t^2)+4t\cdot f&#x27;&#x27;(t^2)\cdot 2t}{f(t^2)}=\frac{4f&#x27;(t^2)+8t^2 f&#x27;&#x27;(t^2)}{f(t^2)}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \frac{dy}{dx}=\frac{(1+t^2)(y^2-e^t)}{2(1-ty)}$</div>
+        <div class="steps"><p>第二个方程对 t 求导（y 是 t 的函数）：<br>$$2y&#x27;-y^2-2tyy&#x27;+e^t=0\ \Rightarrow\ y&#x27;=\frac{y^2-e^t}{2(1-ty)}$$<br>又 $\frac{dx}{dt}=\frac{1}{1+t^2}$，故<br>$$\frac{dy}{dx}=(1+t^2)\cdot\frac{y^2-e^t}{2(1-ty)}=\frac{(1+t^2)(y^2-e^t)}{2(1-ty)}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle -\frac{e}{16(1+2\ln 2)^2}$</div>
+        <div class="steps"><p>x=9 时 $2t^2=8$，$t=2$（t&gt;1）。<br>$$\frac{dx}{dt}=4t,\qquad \frac{dy}{dt}=\frac{e^{1+2\ln t}}{1+2\ln t}\cdot\frac{2}{t}=\frac{e\,t^2}{1+2\ln t}\cdot\frac{2}{t}=\frac{2et}{1+2\ln t}$$<br>$$\frac{dy}{dx}=\frac{2et/(1+2\ln t)}{4t}=\frac{e}{2(1+2\ln t)}$$<br>$$\frac{d^2y}{dx^2}=\frac{-\frac{e}{t(1+2\ln t)^2}}{4t}=-\frac{e}{4t^2(1+2\ln t)^2}\bigg|_{t=2}=-\frac{e}{16(1+2\ln 2)^2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=-e^{-t},\qquad \frac{dy}{dt}=\ln(1+t^2)\ \Rightarrow\ \frac{dy}{dx}=-e^t\ln(1+t^2)$$<br>$$\frac{d^2y}{dx^2}=\frac{-e^t\ln(1+t^2)-e^t\cdot\frac{2t}{1+t^2}}{-e^{-t}}=e^{2t}\left[\ln(1+t^2)+\frac{2t}{1+t^2}\right]\bigg|_{t=0}=0.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle \sqrt{2}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=\cos t,\qquad \frac{dy}{dt}=\sin t+t\cos t-\sin t=t\cos t$$<br>$$\frac{dy}{dx}=t,\qquad \frac{d^2y}{dx^2}=\frac{1}{\cos t}\bigg|_{t=\pi/4}=\sqrt{2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle 48$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=\frac{1}{1+t^2},\qquad \frac{dy}{dt}=3+3t^2\ \Rightarrow\ \frac{dy}{dx}=3(1+t^2)^2$$<br>$$\frac{d^2y}{dx^2}=\frac{12t(1+t^2)}{\frac{1}{1+t^2}}=12t(1+t^2)^2\bigg|_{t=1}=12\cdot 4=48.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle -\frac{1}{8}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=1+e^t,\qquad \frac{dy}{dt}=\cos t\ \Rightarrow\ \frac{dy}{dx}=\frac{\cos t}{1+e^t}$$<br>$$\frac{d^2y}{dx^2}=\frac{-\sin t(1+e^t)-e^t\cos t}{(1+e^t)^3}\bigg|_{t=0}=\frac{0-1}{8}=-\frac{1}{8}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle -\sqrt{2}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=\frac{t}{\sqrt{t^2+1}},\qquad \frac{dy}{dt}=\frac{1+\frac{t}{\sqrt{t^2+1}}}{t+\sqrt{t^2+1}}=\frac{1}{\sqrt{t^2+1}}$$<br>$$\frac{dy}{dx}=\frac{1}{t},\qquad \frac{d^2y}{dx^2}=\frac{-\frac{1}{t^2}}{\frac{t}{\sqrt{t^2+1}}}=-\frac{\sqrt{t^2+1}}{t^3}\bigg|_{t=1}=-\sqrt{2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle \frac{2}{3}$</div>
+        <div class="steps"><p>$$\frac{dx}{dt}=2e^t+1,\qquad \frac{dy}{dt}=4\left[e^t+(t-1)e^t\right]+2t=4te^t+2t=2t(2e^t+1)$$<br>$$\frac{dy}{dx}=\frac{2t(2e^t+1)}{2e^t+1}=2t$$<br>$$\frac{d^2y}{dx^2}=\frac{2}{2e^t+1}\bigg|_{t=0}=\frac{2}{3}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><a href="index.html">上一页</a><span></span></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>

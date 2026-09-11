@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点6 函数的连续与间断 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 6</div>
+<h1 class="title">考点 6　函数的连续与间断</h1>
+<div class="sub">题组 5 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/5　</div>
+
+  <div class="card q" id="k06_T1">
+    <div class="qhead"><span class="qno">k06_T1</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1987</span> <span class="badge year">1992</span> <span class="badge year">2000</span> <span class="badge year">2003</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.1）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T1_0.png" alt="k06_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k06_T1_1.png" alt="k06_T1 题目图 2">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>逐项检查定义域内（尤其分段点与定义边缘）的连续性。</p>
+<p>A：定义域为 $(0,+\infty)$，$\ln x$ 与 $\sin x$ 在其上均连续，故和函数在其定义域内连续。</p>
+<p>B：$f(0)=\sin 0=0$，而 $\lim_{x\to 0^+}\cos x=1\neq 0$，且 $0$ 在定义域内，故 $x=0$ 为跳跃间断点。</p>
+<p>C：$\lim_{x\to 0^-}(x+1)=1$，$\lim_{x\to 0^+}(x-1)=-1$，$f(0)=0$，左右极限均存在但不等于 $f(0)$，$x=0$ 为跳跃间断点。</p>
+<p>D：$\lim_{x\to 0}\dfrac{1}{\sqrt{|x|}}=+\infty\neq f(0)=0$，$x=0$ 为无穷（第二类）间断点。</p>
+<p>只有 A 在其定义域内连续，选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle x=1 处不连续（可去间断点）；令 f(1)=-\frac{4}{\pi^2} 即连续$</div>
+        <div class="steps"><p>令 $u=x-1\to 0$，此为 $\dfrac{0}{0}$ 型。</p>
+<p>分子：由 $\cos u=1-\dfrac{u^2}{2}+o(u^2)$ 及 $\ln(1+t)\sim t$ 得<br>$$\ln\cos u\sim -\frac{u^2}{2}.$$</p>
+<p>分母：$\sin\dfrac{\pi x}{2}=\sin\Big(\dfrac{\pi}{2}+\dfrac{\pi u}{2}\Big)=\cos\dfrac{\pi u}{2}=1-\dfrac{1}{2}\Big(\dfrac{\pi u}{2}\Big)^2+o(u^2)$，故<br>$$1-\sin\frac{\pi x}{2}\sim \frac{\pi^2 u^2}{8}.$$</p>
+<p>于是<br>$$\lim_{x\to 1}f(x)=\lim_{u\to 0}\frac{-u^2/2}{\pi^2u^2/8}=-\frac{4}{\pi^2}\neq f(1)=1,$$</p>
+<p>所以 $f$ 在 $x=1$ 不连续，$x=1$ 为可去间断点。修改定义为 $f(1)=-\dfrac{4}{\pi^2}$，则 $f$ 在 $x=1$ 连续。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D（a\ge 0 且 b<0）$</div>
+        <div class="steps"><p>（1）连续性要求：$a+e^{bx}$ 对一切 $x$ 无零点。当 $b\neq 0$ 时 $e^{bx}$ 取遍 $(0,+\infty)$，若 $a&lt;0$ 则必有 $e^{bx}=-a$ 的根使分母为零，故须 $a\ge 0$。若 $b=0$，则 $f(x)=\dfrac{x}{a+1}$，$x\to-\infty$ 时极限不为 0（$a\neq-1$）或无意义（$a=-1$），故 $b\neq 0$。</p>
+<p>（2）极限条件 $\lim_{x\to-\infty}\dfrac{x}{a+e^{bx}}=0$：</p>
+<p>- 若 $b&gt;0$：$x\to-\infty$ 时 $e^{bx}\to 0$，则 $f(x)\sim\dfrac{x}{a}\to-\infty\neq 0$，舍去；<br>- 若 $b&lt;0$：$x\to-\infty$ 时 $bx\to+\infty$，$e^{bx}\to+\infty$，指数增长压倒线性增长，$\lim_{x\to-\infty}\dfrac{x}{a+e^{bx}}=0$，满足。</p>
+<p>综上 $a\ge 0$ 且 $b&lt;0$，选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f(1)=\frac{1}{\pi}$</div>
+        <div class="steps"><p>$x\to 1^-$ 时 $\sin\pi x=\sin\big(\pi-\pi x\big)=\sin\big(\pi(1-x)\big)\sim \pi(1-x)$，故 $\dfrac{1}{\sin\pi x}$ 与 $-\dfrac{1}{\pi(1-x)}$ 的奇异性相抵消。先合并前两项与后一项：</p>
+<p>$$f(x)=\frac{1}{\pi x}-\frac{1}{\pi(1-x)}+\frac{1}{\sin\pi x}=\frac{(1-x)-x}{\pi x(1-x)}+\frac{1}{\sin\pi x}=\frac{1-2x}{\pi x(1-x)}+\frac{1}{\sin\pi x}.$$</p>
+<p>代入 $\dfrac{1}{\sin\pi x}\sim\dfrac{1}{\pi(1-x)}$：</p>
+<p>$$\lim_{x\to 1^-}f(x)=\lim_{x\to 1^-}\left[\frac{1-2x}{\pi x(1-x)}+\frac{1}{\pi(1-x)}\right]=\lim_{x\to 1^-}\frac{1}{\pi(1-x)}\left[\frac{1-2x}{x}+1\right]=\lim_{x\to 1^-}\frac{1}{\pi(1-x)}\cdot\frac{1-x}{x}=\lim_{x\to 1^-}\frac{1}{\pi x}=\frac{1}{\pi}.$$</p>
+<p>故补充定义 $f(1)=\dfrac{1}{\pi}$ 后 $f$ 在 $\left[\dfrac12,1\right]$ 上连续。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k06_T2">
+    <div class="qhead"><span class="qno">k06_T2</span>
+      <span class="badge">共 10 小题</span><span class="badge year">1988</span> <span class="badge year">1989</span> <span class="badge year">1990</span> <span class="badge year">1994</span> <span class="badge year">1997</span> <span class="badge year">2002</span> <span class="badge year">2006</span> <span class="badge year">2008</span> <span class="badge year">2017</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.2）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T2_0.png" alt="k06_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k06_T2_1.png" alt="k06_T2 题目图 2">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=1$</div>
+        <div class="steps"><p>在 $x=0$ 处：左极限与函数值 $f(0)=2\cdot 0+a=a$；右极限 $\lim_{x\to 0^+}e^{x}(\sin x+\cos x)=e^{0}(0+1)=1$。</p>
+<p>连续要求 $f(0^-)=f(0^+)$，即 $a=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle a=b$</div>
+        <div class="steps"><p>$f(0)=a+0=a$；$\lim_{x\to 0^+}\dfrac{\sin bx}{x}=\dfrac{\sin bx}{bx}\cdot b=b$。</p>
+<p>在 $x=0$ 连续要求左右极限等于函数值，故 $a=b$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle A=a+b$</div>
+        <div class="steps"><p>$x=0$ 处连续要求 $A=\lim_{x\to 0}\dfrac{f(x)+a\sin x}{x}$。</p>
+<p>$$\lim_{x\to 0}\frac{f(x)+a\sin x}{x}=\lim_{x\to 0}\frac{f(x)-f(0)}{x}+a\lim_{x\to 0}\frac{\sin x}{x}=f&#x27;(0)+a=b+a.$$</p>
+<p>（其中 $\lim_{x\to0}\dfrac{f(x)-f(0)}{x}=f&#x27;(0)=b$ 用到 $f(0)=0$。）故 $A=a+b$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a=-2$</div>
+        <div class="steps"><p>$$\lim_{x\to 0}f(x)=\lim_{x\to 0}\left(\frac{\sin 2x}{x}+\frac{e^{2ax}-1}{x}\right)=2+\lim_{x\to 0}\frac{2ax}{x}=2+2a.$$</p>
+<p>在 $x=0$ 连续要求 $a=2+2a$，解得 $a=-2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=e^{-1/2}=\frac{1}{\sqrt{e}}$</div>
+        <div class="steps"><p>$$\lim_{x\to 0}(\cos x)^{1/x^2}=\exp\left(\lim_{x\to 0}\frac{\ln\cos x}{x^2}\right).$$</p>
+<p>由泰勒展开 $\ln\cos x=-\dfrac{x^2}{2}+o(x^2)$，得 $\dfrac{\ln\cos x}{x^2}\to -\dfrac12$（亦可用洛必达：$\dfrac{-\tan x}{2x}\to-\dfrac12$）。</p>
+<p>故极限为 $e^{-1/2}$，连续要求 $a=e^{-1/2}=\dfrac{1}{\sqrt e}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle a=-2$</div>
+        <div class="steps"><p>右极限：$x\to 0^+$ 时 $1-e^{\tan x}\sim -\tan x\sim -x$，$\arcsin\dfrac{x}{2}\sim \dfrac{x}{2}$，故</p>
+<p>$$\lim_{x\to 0^+}f(x)=\frac{-x}{x/2}=-2.$$</p>
+<p>左极限与函数值：$f(0)=ae^{0}=a$。</p>
+<p>连续要求 $a=-2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle a=\frac{1}{3}$</div>
+        <div class="steps"><p>洛必达法则（$\frac00$ 型）：</p>
+<p>$$\lim_{x\to 0}\frac{\int_0^x\sin t^2\,dt}{x^3}=\lim_{x\to 0}\frac{\sin x^2}{3x^2}=\lim_{x\to 0}\frac{x^2}{3x^2}=\frac13.$$</p>
+<p>（或用 $\sin t^2\sim t^2$ 得 $\int_0^x\sin t^2 dt\sim\int_0^x t^2dt=\dfrac{x^3}{3}$。）故 $a=\dfrac13$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle c=1$</div>
+        <div class="steps"><p>两段在各自区域内均连续，只须在分段点 $x=\pm c$（$c\ge 0$）连续。</p>
+<p>在 $x=c$ 处：$c^2+1=\dfrac{2}{c}$，即 $c^3+c-2=0$。因式分解 $c^3+c-2=(c-1)(c^2+c+2)=0$，其中 $c^2+c+2&gt;0$ 恒成立，故唯一实根 $c=1$。</p>
+<p>在 $x=-c$ 处条件相同（$|-c|=c$），自动满足。故 $c=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle f(0)=2$</div>
+        <div class="steps"><p>$f$ 在 $0$ 连续，故 $x\to 0$ 时 $xf(x)\to 0$，可用等价无穷小：$1-\cos[xf(x)]\sim\dfrac{x^2f^2(x)}{2}$；又 $e^{x^2}-1\sim x^2$。</p>
+<p>代入：</p>
+<p>$$\lim_{x\to 0}\frac{\frac{1}{2}x^2f^2(x)}{x^2f(x)}=\lim_{x\to 0}\frac{f(x)}{2}=\frac{f(0)}{2}=1,$$</p>
+<p>故 $f(0)=2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle A（ab=\frac{1}{2}）$</div>
+        <div class="steps"><p>$x\to 0^+$：$1-\cos\sqrt{x}\sim\dfrac{(\sqrt x)^2}{2}=\dfrac{x}{2}$，故右极限</p>
+<p>$$\lim_{x\to 0^+}\frac{1-\cos\sqrt x}{ax}=\frac{x/2}{ax}=\frac{1}{2a}.$$</p>
+<p>左极限与函数值 $f(0)=b$。</p>
+<p>连续要求 $b=\dfrac{1}{2a}$，即 $ab=\dfrac12$，选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k06_T3">
+    <div class="qhead"><span class="qno">k06_T3</span>
+      <span class="badge">共 10 小题</span><span class="badge year">1998</span> <span class="badge year">2001</span> <span class="badge year">2005</span> <span class="badge year">2007</span> <span class="badge year">2008</span> <span class="badge year">2009</span> <span class="badge year">2010</span> <span class="badge year">2013</span> <span class="badge year">2020</span> <span class="badge year">2024</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.3）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T3_0.png" alt="k06_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k06_T3_1.png" alt="k06_T3 题目图 2">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 可去间断点（第一类）：x=\frac{3\pi}{4},\ \frac{7\pi}{4}；无穷间断点（第二类）：x=\frac{\pi}{4},\ \frac{5\pi}{4}$</div>
+        <div class="steps"><p>$$f(x)=(1+x)^{\frac{x}{\tan(x-\pi/4)}}=\exp\left(\frac{x\ln(1+x)}{\tan(x-\pi/4)}\right),$$</p>
+<p>在 $(0,2\pi)$ 内 $1+x&gt;0$，可疑点为 $\tan(x-\pi/4)$ 为零或不存在的点：$x-\dfrac{\pi}{4}\in\Big\{0,\dfrac{\pi}{2},\pi,\dfrac{3\pi}{2}\Big\}$，即 $x=\dfrac{\pi}{4},\dfrac{3\pi}{4},\dfrac{5\pi}{4},\dfrac{7\pi}{4}$。</p>
+<p>（1）$x=\dfrac{\pi}{4}$ 与 $x=\dfrac{5\pi}{4}$：$\tan(x-\dfrac{\pi}{4})\to 0$，而分子 $x\ln(1+x)\to$ 非零常数（$x&gt;0$），故指数 $\to\pm\infty$：左侧 $\tan&lt;0$ 时 $f\to 0$，右侧 $f\to+\infty$。$f$ 无界，为第二类（无穷）间断点。</p>
+<p>（2）$x=\dfrac{3\pi}{4}$ 与 $x=\dfrac{7\pi}{4}$：$\tan(x-\dfrac{\pi}{4})\to\pm\infty$，分子趋于有限常数，故指数 $\to 0$，$\lim f(x)=e^{0}=1$ 存在（$f$ 在该点无定义）。为第一类（可去）间断点。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f(x)=e^{x/\sin x}；x=0 为可去间断点（第一类），x=kπ（k=±1,±2,…）为第二类（无穷）间断点$</div>
+        <div class="steps"><p>先求极限（$1^\infty$ 型，$t\to x$，$\sin x\neq 0$）：</p>
+<p>$$\ln f(x)=\lim_{t\to x}\frac{x\ln\dfrac{\sin t}{\sin x}}{\sin t-\sin x}.$$</p>
+<p>$t\to x$ 时 $\dfrac{\sin t}{\sin x}\to 1$，故 $\ln\dfrac{\sin t}{\sin x}\sim\dfrac{\sin t-\sin x}{\sin x}$，于是</p>
+<p>$$\ln f(x)=\lim_{t\to x}x\cdot\frac{\sin t-\sin x}{\sin x}\cdot\frac{1}{\sin t-\sin x}=\frac{x}{\sin x},$$</p>
+<p>即 $f(x)=e^{x/\sin x}$，定义域为 $\sin x\neq 0$，即 $x\neq k\pi$。</p>
+<p>（1）$x=0$：$\lim_{x\to 0}\dfrac{x}{\sin x}=1$，故 $\lim_{x\to0}f(x)=e$ 存在，$x=0$ 为可去间断点（第一类）。</p>
+<p>（2）$x=k\pi\ (k=\pm1,\pm2,\dots)$：$x\to k\pi$ 时 $\dfrac{x}{\sin x}\to\pm\infty$（单侧异号），$f$ 在一侧 $\to+\infty$，极限不存在且无界，为第二类（无穷）间断点。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D（x=0 为第二类无穷间断点，x=1 为第一类跳跃间断点）$</div>
+        <div class="steps"><p>可疑点：$x=0$（指数 $\to 0$ 使分母 $\to 0$）与 $x=1$（指数 $\to\infty$）。</p>
+<p>（1）$x=0$：$\dfrac{x}{x-1}\to 0$，故 $e^{x/(x-1)}-1\sim\dfrac{x}{x-1}\sim -x$。$x\to 0^+$ 时 $f\to\dfrac{1}{-x}\to-\infty$；$x\to 0^-$ 时 $f\to+\infty$。$\lim_{x\to0}f=\infty$，$x=0$ 为第二类（无穷）间断点。</p>
+<p>（2）$x=1$：$x\to 1^+$ 时 $\dfrac{x}{x-1}\to+\infty$，$e^{x/(x-1)}\to+\infty$，$f\to 0^+$；$x\to 1^-$ 时 $\dfrac{x}{x-1}\to-\infty$，$e^{x/(x-1)}\to 0$，$f\to\dfrac{1}{0-1}=-1$。左右极限都存在但不相等，$x=1$ 为第一类（跳跃）间断点。</p>
+<p>故选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle A（x=0）$</div>
+        <div class="steps"><p>可疑点：$x=0$（$e^{1/x}$）、$x=1$（$e^{1/x}=e$ 使分母为零）、$x=\pm\dfrac{\pi}{2}$（$\tan x$ 无定义）。</p>
+<p>（1）$x=0$：$x\to 0^-$ 时 $e^{1/x}\to 0$，$f\sim\dfrac{e\tan x}{x\cdot(0-e)}\to-\dfrac{\tan x}{x}\to-1$；$x\to 0^+$ 时 $e^{1/x}\to+\infty$，$f\sim\dfrac{\tan x}{x}\to 1$。左右极限存在但不相等，为跳跃间断点（第一类）。</p>
+<p>（2）$x=1$：分子 $(e+1)\tan 1\neq 0$，分母 $\to 0$，$f\to\infty$，第二类。</p>
+<p>（3）$x=\pm\dfrac{\pi}{2}$：$\tan x\to\pm\infty$，分母非零有限，$f\to\infty$，第二类。</p>
+<p>故第一类间断点只有 $x=0$，选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle A（x=0 可去间断点，x=1 跳跃间断点）$</div>
+        <div class="steps"><p>可疑点：$x=0$（$\ln|x|$）、$x=1$（分母为零）。</p>
+<p>（1）$x=0$：$f$ 无定义。$x\to 0$ 时 $|x-1|\to 1$，$\sin x\sim x$，故</p>
+<p>$$\lim_{x\to 0}f(x)=\lim_{x\to 0}x\ln|x|=0$$</p>
+<p>（$x\ln x\to 0$），极限存在，$x=0$ 为可去间断点。</p>
+<p>（2）$x=1$：$f$ 无定义。$\ln|x|=\ln\big(1+(x-1)\big)\sim x-1$，故 $\dfrac{\ln|x|}{|x-1|}=\dfrac{x-1}{|x-1|}\to 1$（右）、$-1$（左），从而 $f\to\sin 1$（右）、$-\sin 1$（左）。左右极限存在但不相等，$x=1$ 为跳跃间断点。</p>
+<p>即 1 个可去间断点与 1 个跳跃间断点，选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle C（3 个）$</div>
+        <div class="steps"><p>$\sin\pi x=0$ 于一切整数 $x=n$，且 $x-x^3=x(1-x)(1+x)$ 仅在 $x=-1,0,1$ 处为零。</p>
+<p>（1）整数 $n\notin\{-1,0,1\}$：$\lim\dfrac{x-x^3}{\sin\pi x}=\infty$（分子不为零），为无穷间断点，非可去。</p>
+<p>（2）$x\to 0$：$x-x^3\sim x$，$\sin\pi x\sim\pi x$，极限 $=\dfrac{1}{\pi}$，可去。</p>
+<p>（3）$x\to 1$：$x-x^3=x(1-x)(1+x)\sim 2(1-x)$；$\sin\pi x=\sin\big(\pi(1-x)\big)\sim\pi(1-x)$；极限 $=\dfrac{2}{\pi}$，可去。</p>
+<p>（4）$x\to -1$：$x-x^3\sim(-1)\cdot 2\cdot(1+x)=-2(1+x)$；$\sin\pi x=\sin\big(\pi(x+1)-\pi\big)=-\sin\big(\pi(x+1)\big)\sim-\pi(1+x)$；极限 $=\dfrac{-2}{-\pi}=\dfrac{2}{\pi}$，可去。</p>
+<p>共 3 个可去间断点，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle B（1 个）$</div>
+        <div class="steps"><p>$\dfrac{x^2-x}{x^2-1}=\dfrac{x(x-1)}{(x-1)(x+1)}=\dfrac{x}{x+1}\ (x\neq 1)$，且 $\sqrt{1+\dfrac{1}{x^2}}=\dfrac{\sqrt{x^2+1}}{|x|}$。可疑点 $x=0,\pm 1$。</p>
+<p>（1）$x=0$：$f=\dfrac{x}{|x|}\cdot\dfrac{\sqrt{x^2+1}}{x+1}$，右极限 $\to 1$，左极限 $\to -1$，为跳跃间断点（第一类），不是无穷间断点。</p>
+<p>（2）$x=1$：$\lim f=\dfrac{1}{2}\cdot\sqrt 2=\dfrac{\sqrt2}{2}$ 存在（$f$ 无定义），可去间断点。</p>
+<p>（3）$x=-1$：$\dfrac{x}{x+1}\to\pm\infty$，而 $\sqrt{1+\dfrac1{x^2}}\to\sqrt2$，故 $f\to\pm\infty$，为无穷间断点。</p>
+<p>无穷间断点仅 $x=-1$ 一个，选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle C（2 个）$</div>
+        <div class="steps"><p>$|x|^x=e^{x\ln|x|}$，$f(x)=\dfrac{e^{x\ln|x|}-1}{x(x+1)\ln|x|}$。可疑点：$x=0$（$\ln|x|$ 无定义）、$x=\pm1$（$\ln|x|=0$）。</p>
+<p>（1）$x=0$：$x\ln|x|\to 0$，故分子 $e^{x\ln|x|}-1\sim x\ln|x|$；分母 $x(x+1)\ln|x|\sim x\ln|x|$。极限 $=1$，可去。</p>
+<p>（2）$x=1$：$\ln|x|=\ln x\sim x-1$，$x\ln|x|\sim(x-1)$；分子 $\sim x-1$，分母 $\sim 1\cdot 2\cdot(x-1)$。极限 $=\dfrac12$，可去。</p>
+<p>（3）$x=-1$：令 $u=x+1\to 0$，$\ln|x|=\ln(1-u)\sim -u$，$x\ln|x|\sim(-1)(-u)=u$，分子 $\sim u$；分母 $=x(x+1)\ln|x|\sim(-1)\cdot u\cdot(-u)=u^2$。$f\sim\dfrac{u}{u^2}=\dfrac{1}{u}\to\infty$，为无穷间断点，非可去。</p>
+<p>可去间断点 2 个（$x=0,1$），选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle C（3 个）$</div>
+        <div class="steps"><p>可疑点：$x=0$（$e^x-1=0$）、$x=1$（$e^{1/(x-1)}$）、$x=-1$（$\ln(1+x)$）、$x=2$（因子 $x-2$）。</p>
+<p>（1）$x=0$：$e^{1/(x-1)}\to e^{-1}$，$\ln(1+x)\sim x$，分母 $(e^x-1)(x-2)\sim x\cdot(-2)$。极限 $=\dfrac{e^{-1}x}{-2x}=-\dfrac{1}{2e}$ 存在，为可去间断点（第一类）。</p>
+<p>（2）$x=1$：$x\to 1^-$ 时 $e^{1/(x-1)}\to 0$，$f\to 0$；$x\to 1^+$ 时 $e^{1/(x-1)}\to+\infty$，分子 $\to+\infty$（$\ln 2&gt;0$），分母 $\to(e-1)(-1)&lt;0$，$f\to-\infty$。第二类（无穷）。</p>
+<p>（3）$x=2$：分母 $\to 0$，分子 $e^{1}\ln 3\neq 0$，$f\to\pm\infty$。第二类。</p>
+<p>（4）$x=-1$：$\ln(1+x)\to-\infty$，其余因子趋于非零有限值（$e^{-1/2}\cdot(e^{-1}-1)\cdot(-3)\neq 0$），$f\to\infty$。第二类。</p>
+<p>第二类间断点共 3 个（$x=-1,1,2$），选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle B（2 个：x=0 可去，x=1 跳跃）$</div>
+        <div class="steps"><p>$f(x)=e^{\frac{\ln|x|}{|1-x|\,|x-2|}}$，无定义点为 $x=0$（底数取对数）与 $x=1,2$（指数分母为零）。</p>
+<p>（1）$x=0$：$\dfrac{\ln|x|}{|1-x||x-2|}\to\dfrac{-\infty}{1\cdot 2}=-\infty$，故 $\lim_{x\to 0}f(x)=0$ 存在，而 $f$ 在 $x=0$ 无定义，为可去间断点（第一类）。</p>
+<p>（2）$x=1$：令 $h=x-1\to 0$，$\ln|x|=\ln(1+h)\sim h$，$|1-x|=|h|$，$|x-2|\to 1$，故 $\ln f\sim\dfrac{h}{|h|}$：左极限 $\ln f\to-1$，$f\to e^{-1}$；右极限 $\ln f\to 1$，$f\to e$。左右极限存在不相等，为跳跃间断点（第一类）。</p>
+<p>（3）$x=2$：$\ln f=\dfrac{\ln|x|}{|1-x||x-2|}\sim\dfrac{\ln 2}{|x-2|}\to+\infty$，$f\to+\infty$，为第二类（无穷）间断点。</p>
+<p>第一类间断点共 2 个，选 B。</p>
+<p>注：幂指函数按 $|x|^u=e^{u\ln|x|}$ 理解时 $x=0$ 处无定义、为可去间断点；若另行规定 $f(0)=0$ 则 $x=0$ 连续、第一类仅 1 个。按真题标准口径取 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k06_T4">
+    <div class="qhead"><span class="qno">k06_T4</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1998</span> <span class="badge year">2004</span> <span class="badge year">2024</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T4_0.png" alt="k06_T4 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（存在间断点 x=1，跳跃间断点）$</div>
+        <div class="steps"><p>由 $|x|&lt;1$ 时 $x^{2n}\to 0$，$|x|=1$ 时 $x^{2n}=1$，$|x|&gt;1$ 时 $x^{2n}\to+\infty$，得</p>
+<p>$$f(x)=\begin{cases}1+x, &amp; |x|&lt;1\\ \dfrac{1+x}{2}, &amp; |x|=1\\ 0, &amp; |x|&gt;1\end{cases}$$</p>
+<p>（1）$x=1$：$f(1)=1$；左极限 $\lim_{x\to 1^-}(1+x)=2$，右极限 $0$。左右极限存在但不相等（也不等于 $f(1)$），$x=1$ 为跳跃间断点。</p>
+<p>（2）$x=-1$：$f(-1)=0$；左极限（$|x|&gt;1$ 侧）$=0$，右极限 $\lim_{x\to -1^+}(1+x)=0$，三值相等，$f$ 在 $x=-1$ 连续。</p>
+<p>（3）其余点均为初等函数拼接，连续。</p>
+<p>故存在间断点 $x=1$，选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle x=0$</div>
+        <div class="steps"><p>分子分母同除以 $n$：</p>
+<p>- $x\neq 0$ 时：$f(x)=\lim_{n\to\infty}\dfrac{(1-\frac1n)x}{x^2+\frac1n}=\dfrac{x}{x^2}=\dfrac1x$；<br>- $x=0$ 时：$f(0)=\lim_{n\to\infty}\dfrac{0}{1}=0$。</p>
+<p>故 $f(x)=\begin{cases}\dfrac1x, &amp; x\neq 0\\ 0, &amp; x=0\end{cases}$。$x\to 0$ 时 $f(x)\to\infty$，故间断点为 $x=0$（无穷间断点）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D（x=1 处不连续，x=−1 处连续）$</div>
+        <div class="steps"><p>$|x|&lt;1$ 时 $nx^{2n}\to 0$，$f(x)=1+x$；$|x|&gt;1$ 时 $nx^{2n}\to+\infty$，$f(x)=0$。</p>
+<p>（1）$x=1$：$f(1)=\lim_{n\to\infty}\dfrac{2}{1+n}=0$；左极限 $\lim_{x\to 1^-}(1+x)=2$，右极限 $0$。左极限 $\neq$ 右极限，$x=1$ 为跳跃间断点，不连续。</p>
+<p>（2）$x=-1$：$f(-1)=\lim_{n\to\infty}\dfrac{0}{1+n}=0$；左极限（$|x|&gt;1$ 侧）$=0$，右极限 $\lim_{x\to -1^+}(1+x)=0$，三值相等，$f$ 在 $x=-1$ 连续。</p>
+<p>故在 $x=1$ 处不连续、$x=-1$ 处连续，选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k06_T5">
+    <div class="qhead"><span class="qno">k06_T5</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1990</span> <span class="badge year">1995</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.6.5）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k06_T5_0.png" alt="k06_T5 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B（第一类间断点）$</div>
+        <div class="steps"><p>由 $f(0)=0$ 且 $f$ 在 $x=0$ 可导：</p>
+<p>$$\lim_{x\to 0}F(x)=\lim_{x\to 0}\frac{f(x)}{x}=\lim_{x\to 0}\frac{f(x)-f(0)}{x}=f&#x27;(0)\neq 0.$$</p>
+<p>而 $F(0)=f(0)=0$。极限存在（有限值 $f&#x27;(0)$）但不等于函数值 $F(0)$，故 $x=0$ 为可去间断点，属第一类间断点。选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D（\frac{\varphi(x)}{f(x)} 必有间断点）$</div>
+        <div class="steps"><p>（图片在选项处截断，按 1995 年数学二原题选项作答。）</p>
+<p>D 正确：反设 $g(x)=\dfrac{\varphi(x)}{f(x)}$ 在 $\mathbb{R}$ 上连续，则 $\varphi(x)=g(x)\cdot f(x)$ 为两个连续函数之积，必连续，与 $\varphi$ 有间断点矛盾。故 $\dfrac{\varphi(x)}{f(x)}$ 必有间断点。</p>
+<p>A 反例：取 $\varphi$ 为仅在 $0$ 处跳跃的符号型函数，$f(x)=x^2+1\ge 1$ 连续且不为零，则 $\varphi[f(x)]=\varphi(x^2+1)$ 恒等于同一常数，连续。</p>
+<p>B 反例：$\varphi(x)=\begin{cases}1, &amp; x\ge 0\\ -1, &amp; x&lt;0\end{cases}$ 在 $x=0$ 间断，但 $[\varphi(x)]^2\equiv 1$ 连续。</p>
+<p>C 反例：取 $f(x)\equiv 1$（连续且不为零），则 $f[\varphi(x)]\equiv 1$ 连续。</p>
+<p>故选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><span></span><span></span></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Kira 真题切片集自学站 */
+:root {
+  --bg: #f6f7fb; --card: #ffffff; --ink: #1f2430; --muted: #6b7280;
+  --accent: #2456d6; --accent-soft: #e8eefc; --line: #e5e8f0;
+  --ok: #12855f; --warn: #b45309; --bad: #b91c1c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161c; --card: #1d2027; --ink: #e7e9ee; --muted: #9aa2b1;
+    --accent: #7ea2ff; --accent-soft: #232c44; --line: #2c313d;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.75 "Source Han Serif SC", "Noto Serif SC", "SimSun", Georgia, serif;
+}
+.wrap { max-width: 1000px; margin: 0 auto; padding: 0 16px 64px; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.topbar {
+  position: sticky; top: 0; z-index: 9; background: var(--card);
+  border-bottom: 1px solid var(--line); padding: 10px 16px;
+  display: flex; gap: 16px; align-items: baseline; flex-wrap: wrap;
+}
+.topbar .brand { font-weight: 700; letter-spacing: .5px; }
+.topbar nav { display: flex; gap: 14px; font-size: 14px; }
+.crumbs { font-size: 13.5px; color: var(--muted); margin: 18px 0 -6px; }
+h1.title { font-size: 26px; margin: 18px 0 4px; }
+.sub { color: var(--muted); font-size: 14px; margin-bottom: 18px; }
+.badge {
+  display: inline-block; padding: 1px 9px; margin: 0 4px 4px 0; border-radius: 999px;
+  font-size: 12.5px; font-family: "Segoe UI", system-ui, sans-serif;
+  background: var(--accent-soft); color: var(--accent); border: 1px solid transparent;
+}
+.badge.year { background: transparent; border-color: var(--line); color: var(--muted); }
+.badge.src-official { background: #e5f6ef; color: var(--ok); }
+.badge.src-web { background: #fff4e0; color: var(--warn); }
+.badge.src-self { background: var(--accent-soft); color: var(--accent); }
+@media (prefers-color-scheme: dark) {
+  .badge.src-official { background: #123527; }
+  .badge.src-web { background: #3a2c12; }
+}
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 18px 20px; margin: 16px 0;
+}
+.q .qhead { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.q .qno {
+  font-family: "Segoe UI", system-ui, sans-serif; font-weight: 700; color: var(--accent);
+  white-space: nowrap;
+}
+.q img.qimg {
+  display: block; width: 100%; max-width: 720px; height: auto;
+  margin: 10px 0 4px; border: 1px solid var(--line); border-radius: 8px; background: #fff;
+}
+details.ans {
+  margin-top: 10px; border-top: 1px dashed var(--line); padding-top: 10px;
+}
+details.ans > summary {
+  cursor: pointer; font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 14.5px; color: var(--accent); user-select: none;
+}
+.sub-a { margin: 12px 0 4px; }
+.sub-a .sno { font-weight: 700; }
+.ansline {
+  font-size: 15.5px; margin: 6px 0; padding: 6px 12px;
+  background: var(--accent-soft); border-radius: 8px; display: inline-block;
+}
+.steps { font-size: 15px; }
+.steps p { margin: 8px 0; }
+.src { font-size: 12.5px; color: var(--muted); margin-top: 6px; font-family: "Segoe UI", system-ui, sans-serif; }
+.placeholder { color: var(--warn); font-size: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 14px; }
+.toc-card { padding: 14px 16px; }
+.toc-card h3 { margin: 0 0 6px; font-size: 16px; }
+.toc-card .meta { color: var(--muted); font-size: 13px; }
+.pager { display: flex; gap: 10px; justify-content: space-between; margin: 26px 0 0; font-family: "Segoe UI", system-ui, sans-serif; font-size: 14px; }
+.stat { font-family: "Segoe UI", system-ui, sans-serif; font-size: 14px; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+footer { color: var(--muted); font-size: 12.5px; margin-top: 40px; }

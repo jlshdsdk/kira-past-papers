@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点8 单调有界准则 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 8</div>
+<h1 class="title">考点 8　单调有界准则</h1>
+<div class="sub">题组 8 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/8　</div>
+
+  <div class="card q" id="k08_T1">
+    <div class="qhead"><span class="qno">k08_T1</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2008</span> <span class="badge year">2012</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T1_0.png" alt="k08_T1 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>**选 B。**</p>
+<p>- **B 正确**：{x_n} 单调，而外层 f 单调，故复合数列 {f(x_n)} 单调；又 f 在 R 上有界，故 {f(x_n)} 有界。由单调有界准则，{f(x_n)} 收敛。<br>- **A 错误**：取 f(x)=0（x&lt;0），f(x)=1（x≥0）（单调有界但在 x=0 间断），令 x_n=(-1)^n/n → 0，则 f(x_n)=0,1,0,1,… 不收敛。<br>- **C 错误**：取 f(x)=\arctan x，x_n=n，则 f(x_n)→π/2 收敛，但 x_n 发散。<br>- **D 错误**：同一反例，{\arctan n} 单调且收敛，但 {n} 发散。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（充分非必要条件）$</div>
+        <div class="steps"><p>**充分性**：由 a_n&gt;0 知 S_{n+1}-S_n=a_n&gt;0，故 {S_n} 单调递增；又 {S_n} 有界，由单调有界准则 S_n→S。于是</p>
+<p>$$a_n=S_n-S_{n-1}\to S-S=0,$$</p>
+<p>故 {a_n} 收敛（收敛于 0）。</p>
+<p>**非必要**：取 a_n≡1，则 {a_n} 收敛，但 S_n=n 无界。</p>
+<p>故 {S_n} 有界是 {a_n} 收敛的充分非必要条件，选 **B**。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T2">
+    <div class="qhead"><span class="qno">k08_T2</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1996</span> <span class="badge year">2002</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T2_0.png" alt="k08_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k08_T2_1.png" alt="k08_T2 题目图 2">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n=3$</div>
+        <div class="steps"><p>**（i）有下界**：归纳证 x_n&gt;3（n≥1）。x_1=10&gt;3；设 x_n&gt;3，则</p>
+<p>$$x_{n+1}=\sqrt{6+x_n}&gt;\sqrt{9}=3.$$</p>
+<p>**（ii）单调递减**：</p>
+<p>$$x_{n+1}-x_n=\sqrt{6+x_n}-x_n=\frac{6+x_n-x_n^2}{\sqrt{6+x_n}+x_n}=-\frac{(x_n-3)(x_n+2)}{\sqrt{6+x_n}+x_n}&lt;0$$</p>
+<p>（因 x_n&gt;3）。故 {x_n} 单调递减。</p>
+<p>由单调有界准则 {x_n} 收敛。设 \lim x_n=A≥3，对递推式两边取极限：</p>
+<p>$$A=\sqrt{6+A}\ \Rightarrow\ A^2-A-6=0\ \Rightarrow\ (A-3)(A+2)=0,$$</p>
+<p>A=3 或 A=-2，由 A≥3 舍去 A=-2，得</p>
+<p>$$\lim_{n\to\infty}x_n=3.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n=\dfrac{3}{2}$</div>
+        <div class="steps"><p>**（i）有界性**：归纳。0&lt;x_1&lt;3；设 0&lt;x_n&lt;3，则 x_{n+1}^2=x_n(3-x_n)&gt;0，故 x_{n+1}&gt;0；再由均值不等式</p>
+<p>$$x_{n+1}^2=x_n(3-x_n)\le\left(\frac{x_n+(3-x_n)}{2}\right)^2=\frac{9}{4},$$</p>
+<p>得 x_{n+1}≤3/2&lt;3。于是对一切 n≥2 有 0&lt;x_n≤3/2。</p>
+<p>**（ii）单调性（n≥2）**：因 3-x_n≥3/2≥x_n，</p>
+<p>$$x_{n+1}=\sqrt{x_n(3-x_n)}\ge\sqrt{x_n\cdot x_n}=x_n,$$</p>
+<p>故 {x_n}（n≥2）单调递增。</p>
+<p>递增且有上界 3/2，由单调有界准则收敛。设 \lim x_n=A，则 A∈(0,3/2]，取极限：</p>
+<p>$$A^2=A(3-A)\ \Rightarrow\ A=0\ \text{或}\ A=\frac{3}{2},$$</p>
+<p>因 A≥x_2&gt;0，舍 A=0，得</p>
+<p>$$\lim_{n\to\infty}x_n=\frac{3}{2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T3">
+    <div class="qhead"><span class="qno">k08_T3</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2006</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T3_0.png" alt="k08_T3 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n=0$</div>
+        <div class="steps"><p>**（i）** 归纳证 0&lt;x_n&lt;π。x_1∈(0,π)；若 0&lt;x_n&lt;π，则由 0&lt;t&lt;π 时 0&lt;\sin t&lt;t 得</p>
+<p>$$0&lt;x_{n+1}=\sin x_n&lt;x_n&lt;\pi.$$</p>
+<p>**（ii）** 故 {x_n} 单调递减且有下界 0，由单调有界准则收敛。设 \lim x_n=A≥0，对递推式取极限得 A=\sin A。因 A&gt;0 时 \sin A&lt;A，该方程在 [0,π) 上仅有解 A=0，故</p>
+<p>$$\lim_{n\to\infty}x_n=0.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e^{-1/6}$</div>
+        <div class="steps"><p>由 (I) 知 x_n→0^+，且 x_{n+1}=\sin x_n。记</p>
+<p>$$L=\lim_{n\to\infty}\left(\frac{\sin x_n}{x_n}\right)^{1/x_n^2},$$</p>
+<p>取对数并令 t=x_n（t→0^+）：</p>
+<p>$$\ln L=\lim_{t\to0^+}\frac{\ln\dfrac{\sin t}{t}}{t^2}.$$</p>
+<p>由泰勒公式 \dfrac{\sin t}{t}=1-\dfrac{t^2}{6}+o(t^2)，结合 \ln(1+u)=u+o(u)（u→0），得</p>
+<p>$$\ln\frac{\sin t}{t}=-\frac{t^2}{6}+o(t^2),$$</p>
+<p>于是</p>
+<p>$$\ln L=\lim_{t\to0^+}\frac{-\frac{t^2}{6}+o(t^2)}{t^2}=-\frac{1}{6},$$</p>
+<p>所以</p>
+<p>$$L=e^{-1/6}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T4">
+    <div class="qhead"><span class="qno">k08_T4</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2018</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T4_0.png" alt="k08_T4 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle {x_n} 收敛，且 \lim_{n\to\infty}x_n=0$</div>
+        <div class="steps"><p>**（i）证 x_n&gt;0 对一切 n 成立**：x_1&gt;0；设 x_n&gt;0，由递推式</p>
+<p>$$e^{x_{n+1}}=\frac{e^{x_n}-1}{x_n}&gt;0,$$</p>
+<p>故 x_{n+1} 有定义。又当 t&gt;0 时 e^t&gt;1+t，故 e^{x_n}-1&gt;x_n&gt;0，从而</p>
+<p>$$e^{x_{n+1}}=\frac{e^{x_n}-1}{x_n}&gt;1\ \Rightarrow\ x_{n+1}&gt;0.$$</p>
+<p>**（ii）证 {x_n} 单调递减**：需证 e^{x_{n+1}}&lt;e^{x_n}，即</p>
+<p>$$\frac{e^{x_n}-1}{x_n}&lt;e^{x_n}\ \Longleftrightarrow\ 1-e^{-x_n}&lt;x_n\ \Longleftrightarrow\ e^{-x_n}&gt;1-x_n,$$</p>
+<p>最后一式对一切实数成立（x_n&gt;0 时严格），故 x_{n+1}&lt;x_n。</p>
+<p>**（iii）求极限**：{x_n} 单调递减且有下界 0，由单调有界准则收敛。设 A=\lim x_n≥0（此时 x_{n+1}→A），对递推式取极限：</p>
+<p>$$Ae^A=e^A-1\ \Rightarrow\ e^A(A-1)=-1.$$</p>
+<p>令 g(t)=e^t(t-1)，则 g(0)=-1，g&#x27;(t)=te^t&gt;0（t&gt;0），故 g 在 [0,+\infty) 上严格递增，g(t)=-1 仅有唯一解 t=0。因此</p>
+<p>$$\lim_{n\to\infty}x_n=0.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T5">
+    <div class="qhead"><span class="qno">k08_T5</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1999</span> <span class="badge year">2011</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T5_0.png" alt="k08_T5 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle {a_n} 的极限存在（{a_n} 单调不增且 a_n≥0）$</div>
+        <div class="steps"><p>**（i）单调性**：</p>
+<p>$$a_{n+1}-a_n=f(n+1)-\int_n^{n+1}f(x)\,dx.$$</p>
+<p>因 f 单调减少，在 [n,n+1] 上 f(x)≥f(n+1)，故</p>
+<p>$$\int_n^{n+1}f(x)\,dx\ge\int_n^{n+1}f(n+1)\,dx=f(n+1)\ \Rightarrow\ a_{n+1}-a_n\le0,$$</p>
+<p>即 {a_n} 单调不增。</p>
+<p>**（ii）有下界**：在 [k,k+1] 上 f(x)≤f(k)，故</p>
+<p>$$\int_1^n f(x)\,dx=\sum_{k=1}^{n-1}\int_k^{k+1}f(x)\,dx\le\sum_{k=1}^{n-1}f(k),$$</p>
+<p>于是</p>
+<p>$$a_n=\sum_{k=1}^{n}f(k)-\int_1^n f(x)\,dx\ge f(n)\ge0.$$</p>
+<p>\{a_n\} 单调不增且有下界 0，由单调有界准则，\{a_n\} 收敛，即极限存在。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) \frac{1}{n+1}<\ln\left(1+\frac{1}{n}\right)<\frac{1}{n}；(II) {a_n} 收敛（单调递减且 0<a_n<1）$</div>
+        <div class="steps"><p>**(I)** 先证对 x&gt;0 有</p>
+<p>$$\frac{x}{1+x}&lt;\ln(1+x)&lt;x.$$</p>
+<p>右半：令 \varphi(x)=x-\ln(1+x)，\varphi(0)=0，\varphi&#x27;(x)=1-\dfrac{1}{1+x}=\dfrac{x}{1+x}&gt;0（x&gt;0），故 \varphi(x)&gt;0，即 \ln(1+x)&lt;x。</p>
+<p>左半：令 \psi(x)=\ln(1+x)-\dfrac{x}{1+x}，\psi(0)=0，\psi&#x27;(x)=\dfrac{1}{1+x}-\dfrac{1}{(1+x)^2}=\dfrac{x}{(1+x)^2}&gt;0，故 \psi(x)&gt;0，即 \ln(1+x)&gt;\dfrac{x}{1+x}。</p>
+<p>取 x=\dfrac{1}{n} 即得</p>
+<p>$$\frac{1}{n+1}&lt;\ln\!\left(1+\frac{1}{n}\right)&lt;\frac{1}{n}.$$</p>
+<p>**(II) 单调性**：</p>
+<p>$$a_{n+1}-a_n=\frac{1}{n+1}-\ln\!\left(1+\frac{1}{n}\right)&lt;0\quad(\text{由(I)}),$$</p>
+<p>故 {a_n} 单调递减。</p>
+<p>**有界**：将 (I) 右半对 k=1,…,n−1 求和：</p>
+<p>$$\ln n=\sum_{k=1}^{n-1}\ln\!\left(1+\frac{1}{k}\right)&lt;\sum_{k=1}^{n-1}\frac{1}{k}\ \Rightarrow\ a_n=\sum_{k=1}^{n}\frac{1}{k}-\ln n&gt;\frac{1}{n}&gt;0;$$</p>
+<p>将 (I) 左半对 k=1,…,n−1 求和：</p>
+<p>$$\ln n&gt;\sum_{k=1}^{n-1}\frac{1}{k+1}\ \Rightarrow\ a_n=1+\sum_{k=1}^{n-1}\frac{1}{k+1}-\ln n&lt;1.$$</p>
+<p>故 0&lt;a_n&lt;1。{a_n} 单调递减且有下界，由单调有界准则收敛。（其极限即 Euler 常数 γ。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T6">
+    <div class="qhead"><span class="qno">k08_T6</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2016</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T6_0.png" alt="k08_T6 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \sum_{n=1}^{\infty}(x_{n+1}-x_n) 绝对收敛$</div>
+        <div class="steps"><p>当 n≥2 时，由拉格朗日中值定理，存在介于 x_{n-1} 与 x_n 之间的 ξ_n，使</p>
+<p>$$|x_{n+1}-x_n|=|f(x_n)-f(x_{n-1})|=f&#x27;(\xi_n)\,|x_n-x_{n-1}|\le\frac{1}{2}\,|x_n-x_{n-1}|.$$</p>
+<p>记 d_n=|x_{n+1}-x_n|，递推得</p>
+<p>$$d_n\le\frac{1}{2}d_{n-1}\le\cdots\le\left(\frac{1}{2}\right)^{n-1}d_1.$$</p>
+<p>于是</p>
+<p>$$\sum_{n=1}^{\infty}|x_{n+1}-x_n|=\sum_{n=1}^{\infty}d_n\le d_1\sum_{n=1}^{\infty}\left(\frac{1}{2}\right)^{n-1}=2\,|x_2-x_1|&lt;+\infty,$$</p>
+<p>故级数 \sum(x_{n+1}-x_n) 绝对收敛。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n 存在，且 1<\lim x_n<2（从而 0<\lim x_n<2）$</div>
+        <div class="steps"><p>**存在性**：由 (1)，\sum_{k=1}^{\infty}(x_{k+1}-x_k) 收敛，而</p>
+<p>$$x_n=x_1+\sum_{k=1}^{n-1}(x_{k+1}-x_k),$$</p>
+<p>故 {x_n} 收敛。设 A=\lim x_n。</p>
+<p>**求范围**：f 可导故连续，对 x_{n+1}=f(x_n) 取极限得 A=f(A)。由拉格朗日中值定理（在以 0 与 A 为端点的区间上），存在 ξ 介于 0 与 A 之间，使</p>
+<p>$$f(A)-f(0)=f&#x27;(\xi)\,A\ \Rightarrow\ A-1=f&#x27;(\xi)\,A\ \Rightarrow\ A=\frac{1}{1-f&#x27;(\xi)}.$$</p>
+<p>由 0&lt;f&#x27;(\xi)&lt;1/2 得 1/2&lt;1-f&#x27;(\xi)&lt;1，故</p>
+<p>$$1&lt;A=\frac{1}{1-f&#x27;(\xi)}&lt;2,$$</p>
+<p>即 \lim x_n 存在且 0&lt;A&lt;2。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T7">
+    <div class="qhead"><span class="qno">k08_T7</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2013</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T7_0.png" alt="k08_T7 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 最小值 f(1)=1$</div>
+        <div class="steps"><p>$$f&#x27;(x)=\frac{1}{x}-\frac{1}{x^2}=\frac{x-1}{x^2}\quad(x&gt;0).$$</p>
+<p>当 0&lt;x&lt;1 时 f&#x27;(x)&lt;0，f 单调减少；当 x&gt;1 时 f&#x27;(x)&gt;0，f 单调增加。故 f 在 x=1 处取得（唯一）极小值，也是最小值：</p>
+<p>$$f(1)=\ln 1+1=1,$$</p>
+<p>即最小值为 1，在 x=1 处取得。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n=1$</div>
+        <div class="steps"><p>由 (I)，对一切 x&gt;0 有</p>
+<p>$$\ln x+\frac{1}{x}\ge 1\quad(\text{等号当且仅当 }x=1).$$</p>
+<p>**单调性**：将上式用于 x_n：\ln x_n+1/x_n≥1，结合条件 \ln x_n+1/x_{n+1}&lt;1，得</p>
+<p>$$\frac{1}{x_{n+1}}&lt;\frac{1}{x_n}\ \Rightarrow\ x_{n+1}&gt;x_n,$$</p>
+<p>故 {x_n} 单调递增。</p>
+<p>**有上界**：由 x_{n+1}&gt;0 知 1/x_{n+1}&gt;0，故 1-\ln x_n&gt;1/x_{n+1}&gt;0，即 \ln x_n&lt;1，从而</p>
+<p>$$x_n&lt;e\quad(n=1,2,\dots).$$</p>
+<p>由单调有界准则，{x_n} 收敛。设 A=\lim x_n（A&gt;0），对条件不等式取极限得 \ln A+1/A≤1；另一方面由最小值性质 \ln A+1/A≥1。故</p>
+<p>$$\ln A+\frac{1}{A}=1,$$</p>
+<p>由 (I) 等号仅在 x=1 处成立，故 A=1，即</p>
+<p>$$\lim_{n\to\infty}x_n=1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k08_T8">
+    <div class="qhead"><span class="qno">k08_T8</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2012</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k08_T8_0.png" alt="k08_T8 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 方程在 (1/2,1) 内有且仅有一个实根$</div>
+        <div class="steps"><p>设 f_n(x)=x^n+x^{n-1}+\cdots+x-1，其在 R 上连续。</p>
+<p>**存在性**：</p>
+<p>$$f_n\!\left(\frac{1}{2}\right)=\frac{1}{2}+\frac{1}{2^2}+\cdots+\frac{1}{2^n}-1=(1-2^{-n})-1=-\frac{1}{2^n}&lt;0,$$</p>
+<p>$$f_n(1)=\underbrace{1+\cdots+1}_{n}-1=n-1&gt;0\quad(n&gt;1).$$</p>
+<p>由零点定理，f_n 在 (1/2,1) 内至少有一个零点。</p>
+<p>**唯一性**：当 x&gt;0 时</p>
+<p>$$f_n&#x27;(x)=1+2x+3x^2+\cdots+nx^{n-1}&gt;0,$$</p>
+<p>故 f_n 在 (1/2,1) 上严格单调增加，至多一个零点。</p>
+<p>综上，方程在 (1/2,1) 内有且仅有一个实根。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle {x_n} 收敛，且 \lim_{n\to\infty}x_n=\dfrac{1}{2}$</div>
+        <div class="steps"><p>x_n∈(1/2,1) 满足 \sum_{k=1}^{n}x_n^k=1。</p>
+<p>**单调性**：把 x_n 代入 n+1 次方程左端：</p>
+<p>$$\sum_{k=1}^{n+1}x_n^k=1+x_n^{n+1}&gt;1=\sum_{k=1}^{n+1}x_{n+1}^k.$$</p>
+<p>因 g(x)=\sum_{k=1}^{n+1}x^k 在 (0,+\infty) 严格递增（g&#x27;(x)=1+2x+\cdots+(n+1)x^n&gt;0），由 g(x_n)&gt;g(x_{n+1}) 得 x_n&gt;x_{n+1}，即 {x_n} 单调递减。</p>
+<p>**收敛性**：{x_n} 单调递减且有下界 1/2，由单调有界准则收敛。设 A=\lim x_n，则 A∈[1/2,1)。</p>
+<p>**求极限**：由等比数列求和，</p>
+<p>$$\sum_{k=1}^{n}x_n^k=\frac{x_n(1-x_n^{n})}{1-x_n}=1\ \Rightarrow\ x_n-x_n^{n+1}=1-x_n\ \Rightarrow\ 2x_n-1=x_n^{n+1}.$$</p>
+<p>因 {x_n} 递减，对一切 n 有 1/2&lt;x_n≤x_2&lt;1，故</p>
+<p>$$0&lt;x_n^{n+1}\le x_2^{\,n+1}\to0,$$</p>
+<p>对 2x_n-1=x_n^{n+1} 两边取极限得 2A-1=0，即</p>
+<p>$$\lim_{n\to\infty}x_n=\frac{1}{2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><span></span><span></span></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>

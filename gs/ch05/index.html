@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点5 未定式计算 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 5</div>
+<h1 class="title">考点 5　未定式计算</h1>
+<div class="sub">题组 22 · 覆盖年份 — · 题型：题型一七、题型二、题型三、题型四、题型五、题型六 · 解析完成 0/22　</div>
+
+  <div class="card q" id="k05_T1">
+    <div class="qhead"><span class="qno">k05_T1</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1987</span> <span class="badge year">2001</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.5.1）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T1_0.png" alt="k05_T1 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$0/0$ 型。当 $x\to+\infty$ 时</p>
+<p>$$\ln\left(1+\frac1x\right)\sim\frac1x,\qquad \operatorname{arccot}x=\arctan\frac1x\sim\frac1x,$$</p>
+<p>故</p>
+<p>$$\lim_{x\to+\infty}\frac{\ln\left(1+\frac1x\right)}{\operatorname{arccot}x}<br>=\lim_{x\to+\infty}\frac{1/x}{1/x}=1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\dfrac{\sqrt2}{6}$</div>
+        <div class="steps"><p>分母因式分解：$x^2+x-2=(x-1)(x+2)$；分子有理化：</p>
+<p>$$\sqrt{3-x}-\sqrt{1+x}=\frac{(3-x)-(1+x)}{\sqrt{3-x}+\sqrt{1+x}}=\frac{-2(x-1)}{\sqrt{3-x}+\sqrt{1+x}}.$$</p>
+<p>于是</p>
+<p>$$\text{原式}=\lim_{x\to1}\frac{-2}{\left(\sqrt{3-x}+\sqrt{1+x}\right)(x+2)}<br>=\frac{-2}{2\sqrt2\cdot3}=-\frac{1}{3\sqrt2}=-\frac{\sqrt2}{6}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T2">
+    <div class="qhead"><span class="qno">k05_T2</span>
+      <span class="badge">共 14 小题</span><span class="badge year">1988</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1995</span> <span class="badge year">1997</span> <span class="badge year">2000</span> <span class="badge year">2006</span> <span class="badge year">2007</span> <span class="badge year">2008</span> <span class="badge year">2009</span> <span class="badge year">2012</span> <span class="badge year">2015</span> <span class="badge year">2025</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.5.2）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T2_0.png" alt="k05_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k05_T2_1.png" alt="k05_T2 题目图 2">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$x\to1$ 时 $x\ln x\to0$，故</p>
+<p>$$x^x-1=e^{x\ln x}-1\sim x\ln x,$$</p>
+<p>于是原式 $=\lim\limits_{x\to1}\dfrac{x\ln x}{x\ln x}=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac16$</div>
+        <div class="steps"><p>等价无穷小：$x-\sin x\sim\dfrac{x^3}{6}$，$e^x-1\sim x$，故分母 $\sim x^3$。</p>
+<p>$$\text{原式}=\lim_{x\to0}\frac{x^3/6}{x^3}=\frac16.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>$1-\sqrt{1-x^2}\sim\dfrac{x^2}{2}$；</p>
+<p>$$e^x-\cos x=\left(1+x+\frac{x^2}2+\cdots\right)-\left(1-\frac{x^2}2+\cdots\right)=x+x^2+o(x^2)\sim x.$$</p>
+<p>故原式 $=\lim\limits_{x\to0}\dfrac{x^2/2}{x}=0$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle -\dfrac{4}{\pi^2}$</div>
+        <div class="steps"><p>令 $t=x-1\to0$。$\ln\cos t\sim-\dfrac{t^2}{2}$；</p>
+<p>$$\sin\frac{\pi x}{2}=\sin\left(\frac\pi2+\frac{\pi t}2\right)=\cos\frac{\pi t}2=1-\frac{\pi^2t^2}{8}+o(t^2),$$</p>
+<p>故分母 $1-\sin\dfrac{\pi x}{2}\sim\dfrac{\pi^2t^2}{8}$。于是</p>
+<p>$$\text{原式}=\lim_{t\to0}\frac{-t^2/2}{\pi^2t^2/8}=-\frac{4}{\pi^2}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \dfrac12$</div>
+        <div class="steps"><p>$1-\sqrt{\cos x}\sim\dfrac{1-\cos x}{2}\sim\dfrac{x^2}{4}$；$1-\cos\sqrt x\sim\dfrac x2$，故分母 $\sim\dfrac{x^2}{2}$。</p>
+<p>$$\text{原式}=\lim_{x\to0^+}\frac{x^2/4}{x^2/2}=\frac12.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \dfrac32$</div>
+        <div class="steps"><p>$3\sin x\sim3x$，且 $\left|x^2\cos\frac1x\right|\le x^2=o(x)$，故分子 $\sim3x$；<br>分母 $(1+\cos x)\ln(1+x)\sim2x$。原式 $=\lim\dfrac{3x}{2x}=\dfrac32$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle -\dfrac16$</div>
+        <div class="steps"><p>$\arctan x-x\sim-\dfrac{x^3}{3}$，$\ln(1+2x^3)\sim2x^3$，故原式 $=\dfrac{-x^3/3}{2x^3}=-\dfrac16$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>$x\ln(1+x)\sim x^2$，$1-\cos x\sim\dfrac{x^2}{2}$，故原式 $=\dfrac{x^2}{x^2/2}=2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle -\dfrac16$</div>
+        <div class="steps"><p>$$\arctan x-\sin x=(\arctan x-x)+(x-\sin x)\sim-\frac{x^3}{3}+\frac{x^3}{6}=-\frac{x^3}{6},$$</p>
+<p>除以 $x^3$ 得 $-\dfrac16$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle \dfrac16$</div>
+        <div class="steps"><p>记 $u=\sin x\to0$，则 $\sin u=u-\dfrac{u^3}6+o(u^3)$，故</p>
+<p>$$\sin x-\sin(\sin x)=u-\sin u\sim\frac{u^3}{6}=\frac{\sin^3x}{6}.$$</p>
+<p>于是</p>
+<p>$$\lim_{x\to0}\frac{[\sin x-\sin(\sin x)]\sin x}{x^4}<br>=\lim_{x\to0}\frac{\sin^4x/6}{x^4}=\frac16.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle \dfrac{3e}{2}$</div>
+        <div class="steps"><p>$$e-e^{\cos x}=e\left(1-e^{\cos x-1}\right)\sim e(1-\cos x)\sim\frac{e\,x^2}{2};$$</p>
+<p>$\sqrt[3]{1+x^2}-1\sim\dfrac{x^2}{3}$。原式 $=\dfrac{e/2}{1/3}=\dfrac{3e}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle \dfrac{1}{12}$</div>
+        <div class="steps"><p>$$2-2\cos x=x^2-\frac{x^4}{12}+O(x^6)\ \Rightarrow\ 2-2\cos x-x^2=-\frac{x^4}{12}+O(x^6).$$</p>
+<p>于是</p>
+<p>$$e^{x^2}-e^{2-2\cos x}=e^{x^2}\left(1-e^{2-2\cos x-x^2}\right)\sim 1\cdot\left[-\left(2-2\cos x-x^2\right)\right]=\frac{x^4}{12},$$</p>
+<p>除以 $x^4$ 得 $\dfrac{1}{12}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle -\dfrac12$</div>
+        <div class="steps"><p>$\ln\cos x=\ln(1-\tfrac{x^2}2+O(x^4))=-\tfrac{x^2}{2}+O(x^4)$，故极限 $=-\dfrac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle -1$</div>
+        <div class="steps"><p>$x\to0^+$ 时 $x\ln x\to0$，故</p>
+<p>$$x^x-1=e^{x\ln x}-1\sim x\ln x;\qquad \ln(1-x)\sim-x,$$</p>
+<p>分母 $\ln x\cdot\ln(1-x)\sim-x\ln x$。原式 $=\dfrac{x\ln x}{-x\ln x}=-1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T3">
+    <div class="qhead"><span class="qno">k05_T3</span>
+      <span class="badge">共 5 小题</span><span class="badge year">1992</span> <span class="badge year">1998</span> <span class="badge year">1999</span> <span class="badge year">2009</span> <span class="badge year">2011</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T3_0.png" alt="k05_T3 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$$e^x-\sin x-1=\left(1+x+\frac{x^2}2+\frac{x^3}6+\cdots\right)-\left(x-\frac{x^3}6+\cdots\right)-1=\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)\sim\frac{x^2}{2};$$</p>
+<p>又 $1-\sqrt{1-x^2}\sim\dfrac{x^2}{2}$。原式 $=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\dfrac14$</div>
+        <div class="steps"><p>$$\sqrt{1+x}=1+\frac x2-\frac{x^2}{8}+o(x^2),\qquad \sqrt{1-x}=1-\frac x2-\frac{x^2}{8}+o(x^2),$$</p>
+<p>分子 $=-\dfrac{x^2}{4}+o(x^2)$，故极限 $=-\dfrac14$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle -\dfrac12$</div>
+        <div class="steps"><p>分子有理化：</p>
+<p>$$\sqrt{1+\tan x}-\sqrt{1+\sin x}=\frac{\tan x-\sin x}{\sqrt{1+\tan x}+\sqrt{1+\sin x}}\sim\frac{x^3/2}{2}=\frac{x^3}{4}.$$</p>
+<p>分母：$x\ln(1+x)-x^2=x\left(x-\dfrac{x^2}2+\cdots\right)-x^2=-\dfrac{x^3}{2}+o(x^3)$。</p>
+<p>$$\text{原式}=\frac{x^3/4}{-x^3/2}=-\frac12.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac14$</div>
+        <div class="steps"><p>$1-\cos x\sim\dfrac{x^2}{2}$。又</p>
+<p>$$\ln(1+\tan x)=\tan x-\frac{\tan^2x}{2}+o(x^3)=x-\frac{x^2}{2}+o(x^3),$$</p>
+<p>故 $x-\ln(1+\tan x)\sim\dfrac{x^2}{2}$。于是分子 $\sim\dfrac{x^2}{2}\cdot\dfrac{x^2}{2}=\dfrac{x^4}{4}$，$\sin^4x\sim x^4$，</p>
+<p>$$\text{原式}=\frac14.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle -\dfrac12$</div>
+        <div class="steps"><p>$$\sqrt{1+2\sin x}=1+\sin x-\frac{\sin^2x}{2}+o(x^2)=1+x-\frac{x^2}{2}+o(x^2),$$</p>
+<p>故分子 $=-\dfrac{x^2}{2}+o(x^2)$；分母 $x\ln(1+x)\sim x^2$。原式 $=-\dfrac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T4">
+    <div class="qhead"><span class="qno">k05_T4</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2002</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T4_0.png" alt="k05_T4 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>在方程中令 $x=0$：$y&#x27;&#x27;(0)+py&#x27;(0)+qy(0)=e^{0}=1$，即 $y&#x27;&#x27;(0)=1$。由泰勒公式</p>
+<p>$$y(x)=y(0)+y&#x27;(0)x+\frac{y&#x27;&#x27;(0)}{2}x^2+o(x^2)=\frac{x^2}{2}+o(x^2).$$</p>
+<p>又 $\ln(1+x^2)\sim x^2$，故</p>
+<p>$$\lim_{x\to0}\frac{\ln(1+x^2)}{y(x)}=\lim_{x\to0}\frac{x^2}{x^2/2}=2.$$</p>
+<p>选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T5">
+    <div class="qhead"><span class="qno">k05_T5</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1991</span> <span class="badge year">1997</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.5.5）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T5_0.png" alt="k05_T5 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -1$</div>
+        <div class="steps"><p>令 $t=\dfrac1x\to+\infty$：</p>
+<p>$$\lim_{t\to+\infty}\frac{1-e^{t}}{\frac1t+e^{t}}<br>=\lim_{t\to+\infty}\frac{e^{-t}-1}{\dfrac{e^{-t}}{t}+1}=\frac{0-1}{0+1}=-1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$x\to-\infty$ 时 $\sqrt{4x^2+x-1}=-2x\sqrt{1+\dfrac1{4x}-\dfrac1{4x^2}}=-2x-\dfrac14+o(1)$，故分子</p>
+<p>$$\sqrt{4x^2+x-1}+x+1=-x+\frac34+o(1);$$</p>
+<p>分母 $\sqrt{x^2+\sin x}=-x\sqrt{1+\dfrac{\sin x}{x^2}}=-x+o(x)$。于是</p>
+<p>$$\text{原式}=\lim_{x\to-\infty}\frac{-x+\frac34+o(1)}{-x+o(x)}=1.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T6">
+    <div class="qhead"><span class="qno">k05_T6</span>
+      <span class="badge">共 11 小题</span><span class="badge year">1988</span> <span class="badge year">1989</span> <span class="badge year">1993</span> <span class="badge year">1994</span> <span class="badge year">1996</span> <span class="badge year">2004</span> <span class="badge year">2005</span> <span class="badge year">2008</span> <span class="badge year">2018</span> <span class="badge year">2023</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.5.6）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T6_0.png" alt="k05_T6 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac4\pi$</div>
+        <div class="steps"><p>令 $t=x-1\to0$：$1-x^2=-(2t+t^2)$，$\tan\dfrac{\pi x}{2}=\tan\left(\dfrac\pi2+\dfrac{\pi t}{2}\right)=-\cot\dfrac{\pi t}{2}\sim-\dfrac{2}{\pi t}$。故</p>
+<p>$$\text{原式}=\lim_{t\to0}(2t+t^2)\cdot\frac{2}{\pi t}=\frac{4}{\pi}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac12$</div>
+        <div class="steps"><p>$$\lim_{x\to0}x\cot2x=\lim_{x\to0}\frac{x\cos2x}{\sin2x}=\lim_{x\to0}\frac{x}{2x}=\frac12.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle -50$</div>
+        <div class="steps"><p>令 $x=-t$，$t\to+\infty$：</p>
+<p>$$-t\left(\sqrt{t^2+100}-t\right)=-t\cdot\frac{100}{\sqrt{t^2+100}+t}\longrightarrow-\frac{100}{2}=-50.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac65$</div>
+        <div class="steps"><p>$x\to\infty$ 时 $\dfrac{3x^2+5}{5x+3}\sim\dfrac{3x^2}{5x}=\dfrac{3x}{5}$，$\sin\dfrac2x\sim\dfrac2x$。</p>
+<p>$$\text{原式}=\lim_{x\to\infty}\frac{3x}{5}\cdot\frac{2}{x}=\frac65.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \dfrac16$</div>
+        <div class="steps"><p>$$\cot x\left(\frac1{\sin x}-\frac1x\right)=\frac{\cos x\,(x-\sin x)}{x\sin^2x},$$</p>
+<p>$x-\sin x\sim\dfrac{x^3}{6}$，$\sin^2x\sim x^2$，故原式 $=\lim\dfrac{x^3/6}{x\cdot x^2}=\dfrac16$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>$x\to\infty$ 时 $\ln\left(1+\dfrac kx\right)\to0$，故</p>
+<p>$$\sin\left[\ln\left(1+\frac kx\right)\right]\sim\ln\left(1+\frac kx\right)\sim\frac kx.$$</p>
+<p>于是花括号内 $\sim\dfrac3x-\dfrac1x=\dfrac2x$，乘 $x$ 得极限 $2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle -\dfrac16$</div>
+        <div class="steps"><p>$$\ln\frac{2+\cos x}{3}=\ln\left(1+\frac{\cos x-1}{3}\right)\sim\frac{\cos x-1}{3}\sim-\frac{x^2}{6}.$$</p>
+<p>故</p>
+<p>$$\left(\frac{2+\cos x}{3}\right)^x-1=e^{x\ln\frac{2+\cos x}{3}}-1\sim x\ln\frac{2+\cos x}{3}\sim-\frac{x^3}{6},$$</p>
+<p>除以 $x^3$ 得 $-\dfrac16$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>$\dfrac{2x}{x^2+1}\to0$，故 $x\sin\dfrac{2x}{x^2+1}\sim x\cdot\dfrac{2x}{x^2+1}\to2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle -\dfrac16$</div>
+        <div class="steps"><p>$$\frac{\sin x}{x}=1-\frac{x^2}{6}+o(x^2)\ \Rightarrow\ \ln\frac{\sin x}{x}=-\frac{x^2}{6}+o(x^2),$$</p>
+<p>除以 $x^2$ 得 $-\dfrac16$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>由拉格朗日中值定理，存在 $\xi\in(x,x+1)$ 使</p>
+<p>$$\arctan(x+1)-\arctan x=\frac{1}{1+\xi^2}.$$</p>
+<p>$x\to+\infty$ 时 $\xi\sim x$，故原式 $=\lim\dfrac{x^2}{1+\xi^2}=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle \dfrac23$</div>
+        <div class="steps"><p>令 $t=\dfrac1x\to0$，原式 $=\lim\limits_{t\to0}\dfrac{2t^2-t\sin t-t^2\cos t}{t^2}$，分子分母同除 $t^2$ 后需更高阶：</p>
+<p>$$\frac{\sin t}{t}=1-\frac{t^2}{6}+\frac{t^4}{120}-\cdots,\qquad \cos t=1-\frac{t^2}{2}+\frac{t^4}{24}-\cdots,$$</p>
+<p>$$2-\frac{\sin t}{t}-\cos t=\left(\frac16+\frac12\right)t^2+\left(-\frac1{120}-\frac1{24}\right)t^4+\cdots=\frac{2}{3}t^2+O(t^4).$$</p>
+<p>故原式 $=\dfrac{2}{3}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T7">
+    <div class="qhead"><span class="qno">k05_T7</span>
+      <span class="badge">共 1 小题</span><span class="badge year">1993</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T7_0.png" alt="k05_T7 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>$0\cdot\infty$ 型，化为商：</p>
+<p>$$\lim_{x\to0^+}x\ln x=\lim_{x\to0^+}\frac{\ln x}{1/x}\overset{\text{L}}{=}\lim_{x\to0^+}\frac{1/x}{-1/x^2}=\lim_{x\to0^+}(-x)=0.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T8">
+    <div class="qhead"><span class="qno">k05_T8</span>
+      <span class="badge">共 7 小题</span><span class="badge year">1987</span> <span class="badge year">1999</span> <span class="badge year">2004</span> <span class="badge year">2005</span> <span class="badge year">2020</span> <span class="badge year">2026</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.5.8）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T8_0.png" alt="k05_T8 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac12$</div>
+        <div class="steps"><p>通分：$\dfrac{e^x-1-x}{x(e^x-1)}$。分子 $e^x-1-x\sim\dfrac{x^2}{2}$，分母 $\sim x^2$，故极限 $=\dfrac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac13$</div>
+        <div class="steps"><p>通分：$\dfrac{\tan x-x}{x^2\tan x}$。$\tan x-x\sim\dfrac{x^3}{3}$，分母 $\sim x^3$，故极限 $=\dfrac13$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac43$</div>
+        <div class="steps"><p>通分：$\dfrac{x^2-\sin^2x\cos^2x}{x^2\sin^2x}$。分子 $=x^2-\dfrac14\sin^22x$，而</p>
+<p>$$\sin2x=2x-\frac43x^3+o(x^3)\ \Rightarrow\ \sin^22x=4x^2-\frac{16}{3}x^4+o(x^4),$$</p>
+<p>故分子 $=\dfrac43x^4+o(x^4)$；分母 $x^2\sin^2x\sim x^4$。极限 $=\dfrac43$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac32$</div>
+        <div class="steps"><p>通分：$\dfrac{x(1+x)-(1-e^{-x})}{x(1-e^{-x})}$。由</p>
+<p>$$1-e^{-x}=x-\frac{x^2}{2}+\frac{x^3}{6}+o(x^3),$$</p>
+<p>分子 $=x+x^2-x+\dfrac{x^2}{2}+o(x^2)=\dfrac32x^2+o(x^2)$（一次项相消）；分母 $\sim x^2$。极限 $=\dfrac32$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle -1$</div>
+        <div class="steps"><p>通分：$\dfrac{\ln(1+x)-(e^x-1)}{(e^x-1)\ln(1+x)}$。分子</p>
+<p>$$\left(x-\frac{x^2}{2}+\frac{x^3}{3}+\cdots\right)-\left(x+\frac{x^2}{2}+\frac{x^3}{6}+\cdots\right)=-x^2+o(x^2)\sim-x^2,$$</p>
+<p>分母 $\sim x^2$。极限 $=-1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \dfrac12$</div>
+        <div class="steps"><p>通分：$\dfrac{\sin x-\ln(1+x)}{x\sin x}$。分子</p>
+<p>$$\left(x-\frac{x^3}{6}+\cdots\right)-\left(x-\frac{x^2}{2}+\frac{x^3}{3}-\cdots\right)=\frac{x^2}{2}+o(x^2)\sim\frac{x^2}{2},$$</p>
+<p>分母 $\sim x^2$。极限 $=\dfrac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>$$\frac1x\left(\frac{\sqrt{1+x^2}}{\sin x}-\frac{\cos x}{\sin x}\right)=\frac1x\cdot\frac{\sqrt{1+x^2}-\cos x}{\sin x}.$$</p>
+<p>$\sqrt{1+x^2}=1+\dfrac{x^2}{2}+o(x^2)$，$\cos x=1-\dfrac{x^2}{2}+o(x^2)$，故分子 $\sqrt{1+x^2}-\cos x\sim x^2$；$x\sin x\sim x^2$。极限 $=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T9">
+    <div class="qhead"><span class="qno">k05_T9</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1990</span> <span class="badge year">1993</span> <span class="badge year">1994</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T9_0.png" alt="k05_T9 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac12$</div>
+        <div class="steps"><p>平方差：$(n+3\sqrt[3]n)-(n-\sqrt n)=3n^{1/3}+n^{1/2}$；分母（共轭和）$\sim2\sqrt n$。故</p>
+<p>$$\text{原式}=\lim_{n\to\infty}\frac{3n^{1/3}+n^{1/2}}{2\sqrt n}=\frac12.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac{\sqrt2}{2}$</div>
+        <div class="steps"><p>$$=\sqrt{\frac{n(n+1)}{2}}-\sqrt{\frac{n(n-1)}{2}}=\sqrt{\frac n2}\left(\sqrt{n+1}-\sqrt{n-1}\right)<br>=\sqrt{\frac n2}\cdot\frac{2}{\sqrt{n+1}+\sqrt{n-1}},$$</p>
+<p>$\sqrt{n+1}+\sqrt{n-1}\sim2\sqrt n$，故极限 $=\sqrt{\dfrac n2}\cdot\dfrac{2}{2\sqrt n}=\dfrac{1}{\sqrt2}=\dfrac{\sqrt2}{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac12$</div>
+        <div class="steps"><p>$$\ln\left(1+\frac1x\right)=\frac1x-\frac{1}{2x^2}+\frac{1}{3x^3}+o(x^{-3}),$$</p>
+<p>$$x^2\ln\left(1+\frac1x\right)=x-\frac12+\frac{1}{3x}+o(1),$$</p>
+<p>故 $x-x^2\ln\left(1+\dfrac1x\right)=\dfrac12+o(1)\to\dfrac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T10">
+    <div class="qhead"><span class="qno">k05_T10</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1987</span> <span class="badge year">1990</span> <span class="badge year">1992</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T10_0.png" alt="k05_T10 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle e^{-3}$</div>
+        <div class="steps"><p>$$\left(\frac{n-2}{n+1}\right)^n=\left(1-\frac{3}{n+1}\right)^n,\quad<br>n\ln\left(1-\frac{3}{n+1}\right)\sim n\cdot\left(-\frac{3}{n+1}\right)\to-3,$$</p>
+<p>故极限 $=e^{-3}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e^{2a}$</div>
+        <div class="steps"><p>$$\left(\frac{x+a}{x-a}\right)^x=\left(1+\frac{2a}{x-a}\right)^x,\quad<br>x\ln\left(1+\frac{2a}{x-a}\right)\sim\frac{2ax}{x-a}\to2a,$$</p>
+<p>故极限 $=e^{2a}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle e^{-\frac32}$</div>
+        <div class="steps"><p>取对数：</p>
+<p>$$\frac{x-1}{2}\ln\frac{3+x}{6+x}=\frac{x-1}{2}\ln\left(1-\frac{3}{6+x}\right)\sim\frac{x-1}{2}\cdot\left(-\frac{3}{6+x}\right)\to-\frac32,$$</p>
+<p>故极限 $=e^{-\frac32}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T11">
+    <div class="qhead"><span class="qno">k05_T11</span>
+      <span class="badge">共 19 小题</span><span class="badge year">1987</span> <span class="badge year">1989</span> <span class="badge year">1991</span> <span class="badge year">1993</span> <span class="badge year">1994</span> <span class="badge year">1995</span> <span class="badge year">2002</span> <span class="badge year">2003</span> <span class="badge year">2010</span> <span class="badge year">2011</span> <span class="badge year">2012</span> <span class="badge year">2013</span> <span class="badge year">2016</span> <span class="badge year">2019</span> <span class="badge year">2022</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例1.5.11）</span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T11_0.png" alt="k05_T11 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k05_T11_1.png" alt="k05_T11 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k05_T11_2.png" alt="k05_T11 题目图 3">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle e$</div>
+        <div class="steps"><p>取对数：$\dfrac{\ln(1+xe^x)}{x}\sim\dfrac{xe^x}{x}\to1$，故极限 $=e$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e^2$</div>
+        <div class="steps"><p>$2\sin x+\cos x=1+2x+o(x)$。取对数：</p>
+<p>$$\frac{\ln(2\sin x+\cos x)}{x}=\frac{\ln(1+2x+o(x))}{x}\to2,$$</p>
+<p>故极限 $=e^{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle e^{-\frac\pi2}$</div>
+        <div class="steps"><p>$1-\cos\sqrt x\sim\dfrac x2$，故 $\ln\cos\sqrt x=\ln(1-(1-\cos\sqrt x))\sim-\dfrac x2$。取对数：</p>
+<p>$$\frac{\pi}{x}\ln\cos\sqrt x\to\frac{\pi}{x}\cdot\left(-\frac x2\right)=-\frac{\pi}{2},$$</p>
+<p>故极限 $=e^{-\frac\pi2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>A：$x\to0^+$ 时 $(1+\dfrac1x)^x=e^{x\ln(1+1/x)}$，指数 $x\ln\dfrac1x\to0$，极限 $=e^0=1$，正确。<br>B：同上极限为 $1$ 而非 $e$，错。<br>C：$\lim\limits_{x\to\infty}(1-\dfrac1x)^x=e^{-1}\ne-e$，错。<br>D：$\lim\limits_{x\to\infty}(1+\dfrac1x)^{-x}=e^{-1}\ne e$，错。<br>故选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle e^2$</div>
+        <div class="steps"><p>令 $t=\dfrac1x\to0$。$\sin2t+\cos t=1+2t+o(t)$。取对数：</p>
+<p>$$\frac{\ln(\sin2t+\cos t)}{t}=\frac{\ln(1+2t+o(t))}{t}\to2,$$</p>
+<p>故极限 $=e^{2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle e^{\frac{n+1}{2}}$</div>
+        <div class="steps"><p>$e^{kx}=1+kx+o(x)$，故分子和</p>
+<p>$$e^x+e^{2x}+\cdots+e^{nx}=n+x(1+2+\cdots+n)+o(x)=n\left[1+\frac{n+1}{2}x+o(x)\right].$$</p>
+<p>取对数：</p>
+<p>$$\frac1x\ln\left[1+\frac{n+1}{2}x+o(x)\right]\to\frac{n+1}{2},$$</p>
+<p>故极限 $=e^{\frac{n+1}{2}}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle e^4$</div>
+        <div class="steps"><p>记 $u=\dfrac2n\to0$：</p>
+<p>$$\tan\left(\frac\pi4+u\right)=\frac{1+\tan u}{1-\tan u}=\frac{1+u+o(u)}{1-u+o(u)}=1+2u+O(u^2)=1+\frac4n+O\left(\frac1{n^2}\right).$$</p>
+<p>取对数：$n\ln\left(1+\dfrac4n+O(n^{-2})\right)\to4$，故极限 $=e^4$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle e^6$</div>
+        <div class="steps"><p>取对数：$\dfrac{2\ln(1+3x)}{\sin x}\sim\dfrac{6x}{x}=6$，故极限 $=e^{6}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle e^{\frac{1}{1-2a}}$</div>
+        <div class="steps"><p>$$\frac{n-2na+1}{n(1-2a)}=\frac{n(1-2a)+1}{n(1-2a)}=1+\frac{1}{n(1-2a)},$$</p>
+<p>$$n\ln\left(1+\frac{1}{n(1-2a)}\right)\sim n\cdot\frac{1}{n(1-2a)}\to\frac{1}{1-2a},$$</p>
+<p>故所求 $=\ln e^{\frac{1}{1-2a}}$，即极限为 $e^{\frac{1}{1-2a}}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle e^{-\frac12}$</div>
+        <div class="steps"><p>取对数：$\dfrac{\ln\cos x}{\ln(1+x^2)}\sim\dfrac{-x^2/2}{x^2}=-\dfrac12$，故极限 $=e^{-\frac12}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>$$\frac{x^2}{(x-a)(x+b)}=\frac{1}{(1-\frac ax)(1+\frac bx)}=1+\frac{a-b}{x}+O\left(\frac1{x^2}\right).$$</p>
+<p>取对数：$x\ln\left(1+\dfrac{a-b}{x}+O(x^{-2})\right)\to a-b$，故极限 $=e^{a-b}$，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle e^{-\frac12}$</div>
+        <div class="steps"><p>$\dfrac{\ln(1+x)}{x}=1-\dfrac x2+O(x^2)$。取对数：</p>
+<p>$$\frac{\ln\left(\frac{\ln(1+x)}{x}\right)}{e^x-1}\sim\frac{-x/2}{x}=-\frac12,$$</p>
+<p>故极限 $=e^{-\frac12}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle \sqrt2$</div>
+        <div class="steps"><p>$\dfrac{1+2^x}{2}=1+\dfrac{2^x-1}{2}$，且 $2^x-1\sim x\ln2$。取对数：</p>
+<p>$$\frac1x\cdot\frac{2^x-1}{2}\to\frac{\ln2}{2},$$</p>
+<p>故极限 $=e^{\frac{\ln2}{2}}=\sqrt2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle e^{-\sqrt2}$</div>
+        <div class="steps"><p>令 $t=x-\dfrac\pi4\to0$。$\tan x=1+2t+o(t)$，故 $\ln\tan x\sim2t$；</p>
+<p>$$\cos x-\sin x=\sqrt2\cos\left(x+\frac\pi4\right)=\sqrt2\cos\left(\frac\pi2+t\right)=-\sqrt2\sin t\sim-\sqrt2\,t.$$</p>
+<p>取对数：$\dfrac{\ln\tan x}{\cos x-\sin x}\sim\dfrac{2t}{-\sqrt2t}=-\sqrt2$，故极限 $=e^{-\sqrt2}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle \sqrt e$</div>
+        <div class="steps"><p>$\dfrac{\ln(1+x)}{x}=1-\dfrac x2+O(x^2)$，故底数 $=1+\dfrac x2+O(x^2)$。取对数：</p>
+<p>$$\frac1x\ln\left(1+\frac x2+O(x^2)\right)\to\frac12,$$</p>
+<p>故极限 $=e^{\frac12}=\sqrt e$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle e^{\frac13}$</div>
+        <div class="steps"><p>$$\cos2x=1-2x^2+\frac23x^4+o(x^4),\qquad 2x\sin x=2x^2-\frac{x^4}{3}+o(x^4),$$</p>
+<p>底数 $=1+\dfrac{x^4}{3}+o(x^4)$。取对数：$\dfrac1{x^4}\ln\left(1+\dfrac{x^4}{3}+o(x^4)\right)\to\dfrac13$，故极限 $=e^{\frac13}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（17）</span><div class="ansline">$\displaystyle 4e^2$</div>
+        <div class="steps"><p>$2^x=1+x\ln2+o(x)$，故底数 $=1+(1+\ln2)x+o(x)$。取对数：</p>
+<p>$$\frac2x\ln\left(1+(1+\ln2)x+o(x)\right)\to2(1+\ln2),$$</p>
+<p>故极限 $=e^{2(1+\ln2)}=e^2\cdot e^{\ln4}=4e^2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（18）</span><div class="ansline">$\displaystyle e^{-1}$</div>
+        <div class="steps"><p>由裂项 $\dfrac{1}{k(k+1)}=\dfrac1k-\dfrac1{k+1}$，和 $=1-\dfrac{1}{n+1}=\dfrac{n}{n+1}$。</p>
+<p>$$\left(\frac{n}{n+1}\right)^n=\left(1-\frac{1}{n+1}\right)^n,\quad n\ln\left(1-\frac1{n+1}\right)\sim-\frac{n}{n+1}\to-1,$$</p>
+<p>故极限 $=e^{-1}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（19）</span><div class="ansline">$\displaystyle \sqrt e$</div>
+        <div class="steps"><p>取对数：$\cot x\cdot\ln\dfrac{1+e^x}{2}$，而</p>
+<p>$$\ln\frac{1+e^x}{2}=\ln\left(1+\frac{e^x-1}{2}\right)\sim\frac{e^x-1}{2}\sim\frac x2,\qquad \cot x\sim\frac1x,$$</p>
+<p>乘积 $\to\dfrac12$，故极限 $=e^{\frac12}=\sqrt e$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k05_T12">
+    <div class="qhead"><span class="qno">k05_T12</span>
+      <span class="badge">共 3 小题</span><span class="badge year">1988</span> <span class="badge year">1989</span> <span class="badge year">1991</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k05_T12_0.png" alt="k05_T12 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>取对数：$\tan x\ln\dfrac{1}{\sqrt x}=-\dfrac12\tan x\ln x\to0$（$\tan x\sim x$ 为无穷小，$x\ln x\to0$）。故极限 $=e^0=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e$</div>
+        <div class="steps"><p>取对数：$\dfrac{\ln(x+e^x)}{x}$。而 $x+e^x=e^x(1+xe^{-x})$，故</p>
+<p>$$\ln(x+e^x)=x+\ln(1+xe^{-x})=x+o(1),$$</p>
+<p>除以 $x\to1$，极限 $=e$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 1$</div>
+        <div class="steps"><p>取对数：$\dfrac{\ln\left(x+\sqrt{1+x^2}\right)}{x}$。$x\to+\infty$ 时 $x+\sqrt{1+x^2}\sim2x$，故</p>
+<p>$$\lim_{x\to+\infty}\frac{\ln(2x)}{x}=0,$$</p>
+<p>（对数增长远慢于幂），极限 $=e^0=1$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><span></span><a href="q2.html">下一页（2/2）</a></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>

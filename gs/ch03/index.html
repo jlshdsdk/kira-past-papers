@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点3 极限的性质 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 3</div>
+<h1 class="title">考点 3　极限的性质</h1>
+<div class="sub">题组 6 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四 · 解析完成 6/6　</div>
+
+  <div class="card q" id="k03_T1">
+    <div class="qhead"><span class="qno">k03_T1</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2000</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k03_T1_0.png" alt="k03_T1 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>$g-\varphi\to 0$ 只说明上下夹逼函数无限接近，它们本身未必有极限，不能用夹逼准则下结论，需构造反例讨论两种情形：</p>
+<p>极限存在情形：</p>
+<p>$$\varphi(x)=0,\quad f(x)=0,\quad g(x)=\frac{1}{1+|x|}$$</p>
+<p>满足 $\varphi\le f\le g$，且 $g-\varphi=\dfrac{1}{1+|x|}\to 0$，此时 $\lim\limits_{x\to\infty}f(x)=0$ 存在。</p>
+<p>极限不存在情形：</p>
+<p>$$f(x)=\sin x,\quad \varphi(x)=\sin x-\frac{1}{1+|x|},\quad g(x)=\sin x+\frac{1}{1+|x|}$$</p>
+<p>满足不等式且 $g-\varphi=\dfrac{2}{1+|x|}\to 0$，但 $\lim\limits_{x\to\infty}\sin x$ 不存在。</p>
+<p>故极限可能存在也可能不存在，即&quot;不一定存在&quot;，选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k03_T2">
+    <div class="qhead"><span class="qno">k03_T2</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2017</span> <span class="badge year">2022</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k03_T2_0.png" alt="k03_T2 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>设 $\lim\limits_{n\to\infty}x_n=a$。因 $\{x_n\}$ 收敛，各选项可利用连续性取极限：</p>
+<p>**A**：$\sin x_n\to\sin a=0\Rightarrow a=k\pi$，未必为 $0$。反例 $x_n\equiv\pi$：$\sin x_n\to 0$ 而 $\lim x_n=\pi$。错。</p>
+<p>**B**：$a+\sqrt{|a|}=0\Rightarrow a=-\sqrt{|a|}$，两边平方且 $a\le 0$，得 $a^2=|a|=-a\Rightarrow a=0$ 或 $a=-1$。反例 $x_n\equiv-1$：$x_n+\sqrt{|x_n|}=-1+1=0\to 0$，而 $\lim x_n=-1\ne 0$。错。</p>
+<p>**C**：$a+a^2=0\Rightarrow a=0$ 或 $a=-1$。同样 $x_n\equiv-1$：$x_n+x_n^2=0\to 0$，而 $\lim x_n=-1$。错。</p>
+<p>**D**：$a+\sin a=0$。令 $h(a)=a+\sin a$，则 $h&#x27;(a)=1+\cos a\ge 0$，且 $h&#x27;$ 仅在孤立点 $a=(2k+1)\pi$ 处为零，故 $h$ 在 $\mathbb{R}$ 上严格单增；又 $h(0)=0$，所以 $h(a)=0\Leftrightarrow a=0$，即 $\lim\limits_{n\to\infty}x_n=0$ 必成立。正确。</p>
+<p>选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>**先看 B、D（$\sin(\cos x_n)$ 型）**：由 $-\frac{\pi}{2}\le x_n\le\frac{\pi}{2}$ 得 $\cos x_n\in[0,1]$。$\arcsin t$ 在 $[0,1]$ 上连续，且 $u\in[0,1]$ 时 $\arcsin(\sin u)=u$。若 $\sin(\cos x_n)\to L$，则</p>
+<p>$$\cos x_n=\arcsin\bigl(\sin(\cos x_n)\bigr)\to\arcsin L,$$ </p>
+<p>即 $\lim\cos x_n$ 必存在。但取 $x_n=(-1)^n\theta$（$0&lt;\theta\le\frac{\pi}{2}$）：$\cos x_n\equiv\cos\theta$，$\sin(\cos x_n)\equiv\sin(\cos\theta)$ 收敛，而 $x_n$ 在 $\pm\theta$ 间振荡，$\lim x_n$ 不存在。故 B 错，**D 正确**（$\lim\cos x_n$ 存在，但 $\lim x_n$ 不一定存在）。</p>
+<p>**再看 A、C（$\cos(\sin x_n)$ 型）**：$\cos$ 为偶函数，$\cos(\sin x_n)=\cos|\sin x_n|$，在 $[-1,1]$ 上不单射。取同样的 $x_n=(-1)^n\theta$：$\cos(\sin x_n)\equiv\cos(\sin\theta)$ 收敛，但 $\sin x_n$ 交替取 $\pm\sin\theta$，$\lim\sin x_n$ 不存在（C 错），当然 $\lim x_n$ 也不存在（A 错）。</p>
+<p>选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k03_T3">
+    <div class="qhead"><span class="qno">k03_T3</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2004</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k03_T3_0.png" alt="k03_T3 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>$f$ 在各开区间内连续；连续函数在有限开区间上有界 $\Leftrightarrow$ 端点处单侧极限有限。逐点考察可疑间断点：</p>
+<p>**$x\to 0$**：$f(x)=\dfrac{|x|}{x}\cdot\dfrac{\sin(x-2)}{(x-1)(x-2)^2}$，前者有界（$\pm 1$），后者趋于有限值</p>
+<p>$$\lim_{x\to 0}\frac{\sin(x-2)}{(x-1)(x-2)^2}=\frac{\sin(-2)}{(-1)\cdot 4}=\frac{\sin 2}{4},$$</p>
+<p>故 $x\to 0^{\pm}$ 两侧单侧极限都有限；左端点 $x=-1$ 是 $f$ 的连续点。所以 $f$ 在 $(-1,0)$ 上有界，**A 正确**。</p>
+<p>**$x\to 1$**：分子 $\to\ |1|\cdot\sin(-1)=-\sin 1\ne 0$，分母含因子 $(x-1)\to 0$，故 $|f|\to+\infty$，$f$ 在 $(0,1)$ 内无界，B 错。</p>
+<p>**$x\to 2$**：$\sin(x-2)\sim x-2$，故</p>
+<p>$$f(x)\sim\frac{|x|\,(x-2)}{x(x-1)(x-2)^2}=\frac{1}{(x-1)(x-2)}\sim\frac{1}{x-2}\to\infty,$$</p>
+<p>$f$ 在 $(1,2)$、$(2,3)$ 内均无界，C、D 错。</p>
+<p>选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k03_T4">
+    <div class="qhead"><span class="qno">k03_T4</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1996</span> <span class="badge year">2002</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k03_T4_0.png" alt="k03_T4 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>**A 错**：$f(x)=x$，$x\to-\infty$ 时 $f\to-\infty$，但 $f&#x27;\equiv 1\not\to-\infty$。</p>
+<p>**B 错**：$f(x)=x^2$，$f&#x27;=2x\to-\infty$（$x\to-\infty$），但 $f=x^2\to+\infty$ 而非 $-\infty$。</p>
+<p>**C 错**：$f(x)=x$，$x\to+\infty$ 时 $f\to+\infty$，但 $f&#x27;\equiv 1\not\to+\infty$。</p>
+<p>**D 证明**：由 $\lim\limits_{x\to+\infty}f&#x27;(x)=+\infty$，存在 $M&gt;0$ 使 $x&gt;M$ 时 $f&#x27;(x)\ge 1$。对任意 $x&gt;M$，由拉格朗日中值定理存在 $\xi\in(M,x)$，</p>
+<p>$$f(x)-f(M)=f&#x27;(\xi)(x-M)\ge x-M,$$</p>
+<p>故 $f(x)\ge f(M)+(x-M)\to+\infty$，即 $\lim\limits_{x\to+\infty}f(x)=+\infty$。正确。</p>
+<p>选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B$</div>
+        <div class="steps"><p>**B 证明**：设 $\lim\limits_{x\to+\infty}f&#x27;(x)=A$ 存在。若 $A&gt;0$，存在 $M&gt;0$ 使 $x&gt;M$ 时 $f&#x27;(x)&gt;\frac{A}{2}&gt;0$；由中值定理 $f(x)-f(M)=f&#x27;(\xi)(x-M)&gt;\frac{A}{2}(x-M)\to+\infty$，与 $f$ 有界矛盾。若 $A&lt;0$，同理 $f(x)\to-\infty$，仍矛盾。故必有 $A=0$。B 正确。</p>
+<p>**A 错**：$f(x)=\dfrac{\sin x^2}{x}$ 在 $(0,+\infty)$ 有界且 $\lim\limits_{x\to+\infty}f(x)=0$，但</p>
+<p>$$f&#x27;(x)=2\cos x^2-\frac{\sin x^2}{x^2}$$</p>
+<p>因振荡项 $2\cos x^2$ 而无极限。A 错。</p>
+<p>**C、D 错**：$f(x)=\sin x$ 在 $(0,+\infty)$ 有界可导，$\lim\limits_{x\to0^+}f(x)=0$，而 $\lim\limits_{x\to0^+}f&#x27;(x)=\lim\limits_{x\to0^+}\cos x=1\ne 0$ 且存在。C、D 均被否定。</p>
+<p>选 B。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k03_T5">
+    <div class="qhead"><span class="qno">k03_T5</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2003</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k03_T5_0.png" alt="k03_T5 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>**A、B 错**：极限存在只保证&quot;充分往后&quot;不等式成立，不保证对任意 $n$ 成立。反例：$a_1=2,\ b_1=1,\ c_1=0$，$n\ge 2$ 时取 $a_n=0,\ b_n=1,\ c_n=n$，各极限条件均满足，但 $a_1&gt;b_1$、$b_1&gt;c_1$。</p>
+<p>**C 错**：$\lim a_nc_n$ 属 $0\cdot\infty$ 未定型，可能存在：取 $a_n=\dfrac{1}{n},\ c_n=n$，则 $a_nc_n\equiv 1$ 收敛。</p>
+<p>**D 对**：由 $b_n\to 1$，存在 $N$ 使 $n&gt;N$ 时 $b_n&gt;\dfrac{1}{2}$，于是</p>
+<p>$$b_nc_n&gt;\frac{1}{2}\,c_n\to+\infty,$$</p>
+<p>即 $\lim\limits_{n\to\infty}b_nc_n=+\infty$，极限（有限数意义下）不存在。D 必真。</p>
+<p>选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k03_T6">
+    <div class="qhead"><span class="qno">k03_T6</span>
+      <span class="badge">共 1 小题</span><span class="badge year">1988</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k03_T6_0.png" alt="k03_T6 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \times（结论不一定成立）$</div>
+        <div class="steps"><p>该命题**错误**。</p>
+<p>仅当 $\lim\limits_{x\to x_0}f(x)=A\ne 0$ 时，才可由 $g(x)=\dfrac{f(x)g(x)}{f(x)}$ 及商的极限法则得 $\lim g=\dfrac{\lim fg}{\lim f}$ 存在；当 $A=0$ 时结论可能失效。</p>
+<p>反例：取 $x_0=0$，$f(x)=x$，$g(x)=\sin\dfrac{1}{x}$，则</p>
+<p>$$\lim_{x\to 0}f(x)=0,\qquad \lim_{x\to 0}f(x)g(x)=\lim_{x\to 0}x\sin\frac{1}{x}=0$$</p>
+<p>均存在，而 $\lim\limits_{x\to 0}\sin\dfrac{1}{x}$ 不存在。</p>
+<p>故 $\lim\limits_{x\to x_0}g(x)$ 不一定存在，答案为 ×。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><span></span><span></span></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>

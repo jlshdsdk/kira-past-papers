@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点2 极限的定义 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 2</div>
+<h1 class="title">考点 2　极限的定义</h1>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：— · 解析完成 4/4　</div>
+
+  <div class="card q" id="k02_T1">
+    <div class="qhead"><span class="qno">k02_T1</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2014</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k02_T1_0.png" alt="k02_T1 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>取 $\varepsilon=\dfrac{|a|}{2}&gt;0$。由 $\lim\limits_{n\to\infty}a_n=a$，存在 $N$，当 $n&gt;N$ 时 $|a_n-a|&lt;\dfrac{|a|}{2}$。</p>
+<p>由三角不等式，<br>$$|a_n|\ge |a|-|a_n-a|&gt;|a|-\frac{|a|}{2}=\frac{|a|}{2},$$<br>即 $n$ 充分大时恒有 $|a_n|&gt;\dfrac{|a|}{2}$，A 正确（B 与 A 矛盾，不成立）。</p>
+<p>C、D 的右端含随 $n$ 变化的 $\dfrac1n\to 0$：极限定义只保证 $|a_n-a|$ 小于任意**固定**正数，保证不了 $a_n-a$ 被趋于 0 的 $\dfrac1n$ 控制。反例：<br>- 取 $a_n=a-\dfrac2n$，则 $a_n\to a$，但 $a_n=a-\dfrac2n&lt;a-\dfrac1n$，C 不成立；<br>- 取 $a_n=a+\dfrac2n$，则 $a_n\to a$，但 $a_n=a+\dfrac2n&gt;a+\dfrac1n$，D 不成立。</p>
+<p>故选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k02_T2">
+    <div class="qhead"><span class="qno">k02_T2</span>
+      <span class="badge">共 1 小题</span><span class="badge year">1999</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k02_T2_0.png" alt="k02_T2 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C$</div>
+        <div class="steps"><p>**充分性**：设该条件成立。任给 $\varepsilon&#x27;&gt;0$，取<br>$$\varepsilon=\min\left\{\frac{\varepsilon&#x27;}{4},\frac12\right\}\in(0,1),$$<br>则存在正整数 $N$，当 $n\ge N$ 时<br>$$|x_n-a|\le 2\varepsilon\le\frac{\varepsilon&#x27;}{2}&lt;\varepsilon&#x27;,$$<br>由 $\varepsilon&#x27;&gt;0$ 的任意性得 $x_n\to a$。故条件是充分的。</p>
+<p>**必要性**：设 $x_n\to a$。对任意给定的 $\varepsilon\in(0,1)$，有 $\varepsilon&gt;0$，从而 $2\varepsilon&gt;0$，由极限定义存在正整数 $N$，当 $n\ge N$ 时 $|x_n-a|&lt;2\varepsilon$，当然满足 $|x_n-a|\le 2\varepsilon$。故条件是必要的。</p>
+<p>注意两点：① $\varepsilon$ 限制在 $(0,1)$ 内不失一般性（大范围可由小范围内的选取覆盖）；② 不等号为 $\le$ 且放大为 $2\varepsilon$ 均不改变极限关系。</p>
+<p>故为充分必要条件，选 C。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k02_T3">
+    <div class="qhead"><span class="qno">k02_T3</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2015</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k02_T3_0.png" alt="k02_T3 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
+        <div class="steps"><p>A 正确：收敛数列的任何子列都收敛于同一极限，故 $x_{2n}\to a$，$x_{2n+1}\to a$。</p>
+<p>B 正确：任给 $\varepsilon&gt;0$，存在 $N_1,N_2$，使 $n&gt;N_1$ 时 $|x_{2n}-a|&lt;\varepsilon$，$n&gt;N_2$ 时 $|x_{2n+1}-a|&lt;\varepsilon$。取 $N=\max\{2N_1,\,2N_2+1\}$，当 $n&gt;N$ 时，$n$ 为偶数则 $n=2k$ 且 $k&gt;N_1$，$n$ 为奇数则 $n=2k+1$ 且 $k&gt;N_2$，两种情况都有 $|x_n-a|&lt;\varepsilon$，故 $x_n\to a$。</p>
+<p>C 正确：同 A，子列 $\{x_{3n}\}$ 与 $\{x_{3n+1}\}$ 均收敛于 $a$。</p>
+<p>D 不正确：子列 $x_{3n},x_{3n+1}$ 未覆盖下标形如 $3n+2$ 的项，它们可以任意。反例：<br>$$x_n=\begin{cases}0, &amp; n\neq 3k+2,\\[2pt] 1, &amp; n=3k+2,\end{cases}$$<br>则 $\lim x_{3n}=\lim x_{3n+1}=0$，但 $x_{3n+2}\to 1$，$\{x_n\}$ 不收敛（奇偶子列技巧只在子列并集覆盖全部正整数集时可用，如 2n 与 2n+1）。</p>
+<p>故不正确的命题是 D，选 D。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+
+  <div class="card q" id="k02_T4">
+    <div class="qhead"><span class="qno">k02_T4</span>
+      <span class="badge">共 1 小题</span><span class="badge year">2022</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k02_T4_0.png" alt="k02_T4 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>记 $b_n=n^{1/n}$。因 $\dfrac{\ln x}{x}$ 在 $(0,e)$ 递增、$(e,+\infty)$ 递减，比较整数点：$b_1=1&lt;b_2=\sqrt2&lt;b_3=\sqrt[3]3\approx1.442$，且 $n\ge4$ 时 $b_n$ 递减趋于 $1$，故对一切 $n$ 有 $b_n\le\sqrt[3]3$，等号仅在 $n=3$。</p>
+<p>按奇偶拆开：<br>$$a_n=n^{1/n}-\frac{(-1)^n}{n}=\begin{cases}b_n-\dfrac1n, &amp; n\ \text{为偶数},\\[4pt] b_n+\dfrac1n, &amp; n\ \text{为奇数}.\end{cases}$$</p>
+<p>**最大值**：$a_1=1+1=2$。当奇数 $n\ge3$ 时 $a_n\le\sqrt[3]3+\dfrac13\approx1.776&lt;2$；当 $n$ 为偶数时 $a_n=b_n-\dfrac1n\le\sqrt2-\dfrac12&lt;2$。故最大值为 $a_1=2$，取得。</p>
+<p>**最小值**：当偶数 $n\ge4$ 时，由 $e^x&gt;1+x$ 得 $b_n=e^{\frac{\ln n}{n}}&gt;1+\dfrac{\ln n}{n}$，于是<br>$$a_n=b_n-\frac1n&gt;1+\frac{\ln n-1}{n}&gt;1\quad(\ln n&gt;1\ \text{当}\ n\ge4).$$<br>当 $n$ 为奇数时 $a_n=b_n+\dfrac1n&gt;1$。而 $a_2=\sqrt2-\dfrac12\approx0.914&lt;1$，故最小值为 $a_2=\sqrt2-\dfrac12$，取得。</p>
+<p>具体数值验证：$a_1=2,\ a_2\approx0.914,\ a_3\approx1.776,\ a_4\approx1.164,\ a_5\approx1.580,\ a_6\approx1.181$，$a_n\to1$。</p>
+<p>综上 $\{a_n\}$ 既有最大值又有最小值，选 A。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><span></span><span></span></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>

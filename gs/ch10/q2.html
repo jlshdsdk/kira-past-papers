@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>考点10 导数的定义 · Kira 真题切片集自学站</title>
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+</head>
+<body>
+<div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
+  <nav><a href="../../index.html">首页</a><a href="../../gs/index.html">高等数学</a><a href="../../xd/index.html">线性代数</a><a href="../../gl/index.html">概率统计</a></nav>
+</div>
+<div class="wrap">
+<div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 10</div>
+<h1 class="title">考点 10　导数的定义</h1>
+<div class="sub">题组 13 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五 · 解析完成 0/13　</div>
+
+  <div class="card q" id="k10_T13">
+    <div class="qhead"><span class="qno">k10_T13</span>
+      <span class="badge">共 2 小题</span><span class="badge year">2008</span> <span class="badge year">2015</span>
+      <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
+    </div>
+    <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T13_0.png" alt="k10_T13 题目图 1">
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (\text{II})\ f'(x)=\sum_{k=1}^{n}u_1(x)\cdots u_{k-1}(x)\,u_k'(x)\,u_{k+1}(x)\cdots u_n(x)$</div>
+        <div class="steps"><p>**(I)** 由定义，加减项 $u(x+h)v(x)$：</p>
+<p>$$\bigl[u(x)v(x)\bigr]&#x27;=\lim_{h\to0}\frac{u(x+h)v(x+h)-u(x+h)v(x)+u(x+h)v(x)-u(x)v(x)}{h}$$</p>
+<p>$$=\lim_{h\to0}\left[v(x+h)\cdot\frac{u(x+h)-u(x)}{h}+u(x)\cdot\frac{v(x+h)-v(x)}{h}\right]$$</p>
+<p>$u,v$ 在 $x$ 处可导 $\Rightarrow$ 在 $x$ 处连续，故 $v(x+h)\to v(x)$。于是极限为</p>
+<p>$$v(x)u&#x27;(x)+u(x)v&#x27;(x).\qquad\blacksquare$$</p>
+<p>**(II)** 对 $n$ 用数学归纳法（对 $f=u_1(u_2\cdots u_n)$ 反复用 (I)），得</p>
+<p>$$f&#x27;(x)=u_1&#x27;(x)u_2(x)\cdots u_n(x)+u_1(x)u_2&#x27;(x)\cdots u_n(x)+\cdots+u_1(x)u_2(x)\cdots u_n&#x27;(x)$$</p>
+<p>即 $f&#x27;=\displaystyle\sum_{k=1}^{n}u_1\cdots u_{k-1}\,u_k&#x27;\,u_{k+1}\cdots u_n$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{证得 } F \text{ 可导且 } F'(x)=f(x)$</div>
+        <div class="steps"><p>对任意 $x$，考察差商</p>
+<p>$$\frac{F(x+h)-F(x)}{h}=\frac1h\int_x^{x+h}f(t)\,dt$$</p>
+<p>$f$ 在介于 $x$ 与 $x+h$ 之间的闭区间上连续，由积分中值定理，存在 $\xi$ 介于 $x$ 与 $x+h$ 之间，使</p>
+<p>$$\int_x^{x+h}f(t)\,dt=f(\xi)\,h$$</p>
+<p>于是差商 $=f(\xi)$。当 $h\to0$ 时 $\xi$ 夹在 $x$ 与 $x+h$ 之间故 $\xi\to x$，由 $f$ 连续得 $f(\xi)\to f(x)$。所以</p>
+<p>$$\lim_{h\to0}\frac{F(x+h)-F(x)}{h}=f(x)$$</p>
+<p>即 $F$ 在 $x$ 处可导且 $F&#x27;(x)=f(x)$。$\blacksquare$</p>
+<p>（不引用中值定理亦可：$\left|\dfrac1h\int_x^{x+h}[f(t)-f(x)]\,dt\right|\le\sup_{t\in[x,x+h]}|f(t)-f(x)|\to0$（$h\to0^\pm$），由 $f$ 在 $x$ 连续即得。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+    </details>
+  </div>
+<div class="pager"><a href="index.html">上一页</a><span></span></div>
+<footer>个人学习用途 · 题目版权归 Kira·考研数学全程班所有 · 解析由自动化流水线生成并经双重独立校验，如发现错误请以教材为准</footer>
+</div>
+</body>
+</html>
