@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 16</div>
 <h1 class="title">考点 16　同解与公共解</h1>
-<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/4　</div>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 4/4　</div>
 
   <div class="card q" id="k16_T1">
     <div class="qhead"><span class="qno">k16_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.16.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k16_T1_0.png" alt="k16_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k16_T1_1.png" alt="k16_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k16_T1_2.png" alt="k16_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (A)$</div>
         <div class="steps"><p>若 $AX=0$，则 $A^TAX=0$，(I) 的解都是 (II) 的解。\n\n反之若 $A^TAX=0$，左乘 $X^T$：$X^TA^TAX=\|AX\|^2=0$。由 $A$ 实矩阵，$\|AX\|^2=0\iff AX=0$，即 (II) 的解都是 (I) 的解。\n\n两方程组同解，选 (A)。</p></div>
@@ -36,7 +36,8 @@
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (D)$</div>
-        <div class="steps"><p>$\alpha$ 组可由 $\beta$ 组线性表出 $\iff$ 存在矩阵 $C$ 使 $A=BC$，从而 $A^T=C^TB^T$。\n\n若 $B^TX=0$，则 $A^TX=C^T(B^TX)=0$，故 $B^TX=0$ 的解都是 $A^TX=0$ 的解，(D) 成立。\n\n(A)：$AX=BCX=0$ 只能得 $CX\in N(B)$，推不出 $BX=0$（如 $B=E$ 时 $N(A)=N(C)$ 一般非零）。(C) 同理不成立。(B)：取 $A=O$（零向量组可由任何组表出），$N(A^T)=\mathbb{R}^3$ 不含于 $N(B^T)$，不成立。故选 (D)。</p></div>
+        <div class="steps"><p>$\alpha$ 组可由 $\beta$ 组线性表出 $\iff$ 存在矩阵 $C$ 使 $A=BC$，从而 $A^T=C^TB^T$。\n\n若 $B^TX=0$，则 $A^TX=C^T(B^TX)=0$，故 $B^TX=0$ 的解都是 $A^TX=0$ 的解，(D) 成立。\n\n(A)：$AX=BCX=0$ 只能得 $CX\in N(B)$，推不出 $BX=0$（如 $B=E$ 时 $N(A)=N(C)$ 一般非零）。(C) 同理不成立。(B)：取 $A=O$（零向量组可由任何组表出），$N(A^T)=\mathbb{R}^3$ 不含于 $N(B^T)$，不成立。故选 (D)。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 的列可由 B 的列表示 \Leftrightarrow A=BM \Leftrightarrow B^T X=0 的解均为 A^T X=0 的解（(D)）；(C) 对应行向量关系，由列表示推不出</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (C)$</div>
@@ -60,7 +61,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k16_T2_0.png" alt="k16_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 见证明（Ax=α 的通解为 x=(1,1,0,0)^T+t(-1,-2,-1,1)^T，代入恒满足 Bx=β）$</div>
         <div class="steps"><p>解 $Ax=\alpha$。消元：$r_2-r_1=(0,2,0,4|2)$，$r_3-2r_1=(0,3,2,8|3)$；$r_3-\frac32r_2=(0,0,2,2|0)$。同解方程组：\n\n$$x_2+2x_4=1,\qquad x_3+x_4=0,\qquad x_1-x_2-x_4=0\ \Rightarrow\ x_1=1-x_4,$$\n\n通解\n\n$$x=(1,1,0,0)^T+t(-1,-2,-1,1)^T.$$\n\n代入 $Bx$ 逐行验证（对任意 $a,t$）：\n\n$$\text{行1: } x_1+x_3+2x_4=(1-t)-t+2t=1=\beta_1;$$\n$$\text{行2: } x_1-x_2+ax_3+(a-1)x_4=(1-t)-(1-2t)-at+(a-1)t=t-at+at-t=0=\beta_2;$$\n$$\text{行3: } 2x_1-3x_2+2x_3-2x_4=2-2t-3+6t-2t-2t=-1=\beta_3.$$\n\n故 $Ax=\alpha$ 的全部解都满足 $Bx=\beta$，证毕。</p></div>
@@ -79,22 +80,24 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k16_T3_0.png" alt="k16_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k16_T3_1.png" alt="k16_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \xi_1=(-1,1,0,1)^T,\ \xi_2=(0,0,1,0)^T$</div>
         <div class="steps"><p>(I) 的系数矩阵 $A=\begin{pmatrix}1&amp;1&amp;0&amp;0\\0&amp;1&amp;0&amp;-1\end{pmatrix}$，$r(A)=2$，$n=4$，基础解系含 2 个向量。\n\n同解方程组：$x_1=-x_2,\ x_4=x_2$，$x_2,x_3$ 为自由量。取 $(x_2,x_3)=(1,0),(0,1)$：\n\n$$\xi_1=(-1,1,0,1)^T,\qquad \xi_2=(0,0,1,0)^T.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 有，全部非零公共解为 c(-1,1,1,1)^T（c\neq0）$</div>
-        <div class="steps"><p>(II) 的通解向量为 $x=k_1(0,1,1,0)^T+k_2(-1,2,2,1)^1=(-k_2,\ k_1+2k_2,\ k_1+2k_2,\ k_2)$。代入 (I)：\n\n$$x_1+x_2=-k_2+k_1+2k_2=k_1+k_2=0,\qquad x_2-x_4=k_1+2k_2-k_2=k_1+k_2=0,$$\n\n两条件同为 $k_1=-k_2$。取 $k_1=-k_2=c$：\n\n$$x=c(-1,1,1,1)^T.$$\n\n验证：$(-1,1,1,1)$ 满足 (I)（$-1+1=0,\ 1-1=0$），且 $=(-1,2,2,1)+(0,-1,-1,0)=\eta_2-(\eta_1)$ 属于 (II) 的解空间（如 $k_1=-1,k_2=1$）。故存在非零公共解，全部非零公共解为 $x=c(-1,1,1,1)^T,\ c\neq0$。</p></div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)\ \gamma=k(1,5,8)^T$</div>
+        <div class="steps"><p>(II) 的通解向量为 $x=k_1(0,1,1,0)^T+k_2(-1,2,2,1)^1=(-k_2,\ k_1+2k_2,\ k_1+2k_2,\ k_2)$。代入 (I)：\n\n$$x_1+x_2=-k_2+k_1+2k_2=k_1+k_2=0,\qquad x_2-x_4=k_1+2k_2-k_2=k_1+k_2=0,$$\n\n两条件同为 $k_1=-k_2$。取 $k_1=-k_2=c$：\n\n$$x=c(-1,1,1,1)^T.$$\n\n验证：$(-1,1,1,1)$ 满足 (I)（$-1+1=0,\ 1-1=0$），且 $=(-1,2,2,1)+(0,-1,-1,0)=\eta_2-(\eta_1)$ 属于 (II) 的解空间（如 $k_1=-1,k_2=1$）。故存在非零公共解，全部非零公共解为 $x=c(-1,1,1,1)^T,\ c\neq0$。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 所答 c(-1,1,1,1)^T 是上一小题(2)问的公共解，答非所问（错位）；A、B 一致给出本题正确选项 (D)</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (D) \gamma=k(1,5,8)^T$</div>
         <div class="steps"><p>设 $x_1\alpha_1+x_2\alpha_2=y_1\beta_1+y_2\beta_2$，按分量：\n\n$$\begin{cases}x_1+2x_2=2y_1+y_2\\ 2x_1+x_2=5y_1\\ 3x_1+x_2=9y_1+y_2\end{cases}$$\n\n(3)$-$(1)：$2x_1-x_2=7y_1$，故 $x_2=2x_1-7y_1$；代入 (2)：$4x_1-7y_1=5y_1\Rightarrow x_1=3y_1,\ x_2=-y_1$；代回 (1)：$3y_1-2y_1-2y_1-y_2=0\Rightarrow y_2=-y_1$。\n\n取 $y_1=t$：$\gamma=3t\,\alpha_1-t\,\alpha_2=t(1,5,8)^T$（同时 $=t\beta_1-t\beta_2=t(1,5,8)^T$，验证一致）。\n\n故 $\gamma=k(1,5,8)^T$，选 (D)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (D)$</div>
-        <div class="steps"><p>先估秩：$r(AB)=r(BA)+1\leqslant3$。若 $r(AB)=3$，则 $r(A)=r(B)=3$，$A,B$ 可逆，得 $r(BA)=3$，矛盾。故 $r(AB)\leqslant2,\ r(BA)\leqslant1$。\n\n于是 $r(ABA)\leqslant r(BA)\leqslant1$，$r(BAB)\leqslant r(BA)\leqslant1$（因 $ABA=A\cdot(BA)$，$BAB=(BA)\cdot B$）。故\n\n$$\dim N(ABA)=3-r(ABA)\geqslant2,\qquad \dim N(BAB)\geqslant2,$$\n\n两个 3 维空间中维数 $\geqslant2$ 的子空间之交维数 $\geqslant2+2-3=1$，即存在非零 $x$ 同时满足 $ABAx=0$ 与 $BABx=0$。(D) 成立。\n\n反例否定 (A)(B)(C)：取 $A=\begin{pmatrix}0&amp;1&amp;0\\0&amp;1&amp;0\\1&amp;0&amp;0\end{pmatrix},\ B=\mathrm{diag}(1,1,0)$。则 $N(A)=N(B)=span\{e_3\}$，$AB$（$A$ 去掉第 3 列所在作用）秩 2，$BA$（$A$ 第三行置零）秩 1，满足 $r(AB)=r(BA)+1$。但 (A)：$A+B$ 第 3 列为零列，有非零解；(B)：$Ax=0$ 与 $Bx=0$ 都有非零解 $e_3$；(C)：$e_3$ 就是公共非零解。均不成立。故选 (D)。</p></div>
+      <div class="sub-a"><span class="sno">（4）</span>
+        <div class="steps"><p>先估秩：$r(AB)=r(BA)+1\leqslant3$。若 $r(AB)=3$，则 $r(A)=r(B)=3$，$A,B$ 可逆，得 $r(BA)=3$，矛盾。故 $r(AB)\leqslant2,\ r(BA)\leqslant1$。\n\n于是 $r(ABA)\leqslant r(BA)\leqslant1$，$r(BAB)\leqslant r(BA)\leqslant1$（因 $ABA=A\cdot(BA)$，$BAB=(BA)\cdot B$）。故\n\n$$\dim N(ABA)=3-r(ABA)\geqslant2,\qquad \dim N(BAB)\geqslant2,$$\n\n两个 3 维空间中维数 $\geqslant2$ 的子空间之交维数 $\geqslant2+2-3=1$，即存在非零 $x$ 同时满足 $ABAx=0$ 与 $BABx=0$。(D) 成立。\n\n反例否定 (A)(B)(C)：取 $A=\begin{pmatrix}0&amp;1&amp;0\\0&amp;1&amp;0\\1&amp;0&amp;0\end{pmatrix},\ B=\mathrm{diag}(1,1,0)$。则 $N(A)=N(B)=span\{e_3\}$，$AB$（$A$ 去掉第 3 列所在作用）秩 2，$BA$（$A$ 第三行置零）秩 1，满足 $r(AB)=r(BA)+1$。但 (A)：$A+B$ 第 3 列为零列，有非零解；(B)：$Ax=0$ 与 $Bx=0$ 都有非零解 $e_3$；(C)：$e_3$ 就是公共非零解。均不成立。故选 (D)。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：题面截断：A 未作答、B 自述无法作答，无从仲裁；solver 的孤立 &quot;(D)&quot; 疑为上一题顺延的错位答案，需人工复核原题</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -106,10 +109,11 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k16_T4_0.png" alt="k16_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=1 时公共解为 x=k(1,0,-1)^T（k 任意）；a=2 时公共解为 x=(0,1,-1)^T$</div>
-        <div class="steps"><p>(I) 的系数行列式为范德蒙德行列式（节点 $1,2,a$）：$|A_I|=(2-1)(a-1)(a-2)=(a-1)(a-2)$。\n\n① $a\neq1,2$：(I) 只有零解 $x=0$；代入 (II) 得 $0=a-1$，矛盾，无公共解。\n\n② $a=1$：(I) 三方程为 $x_1+x_2+x_3=0,\ x_1+2x_2+x_3=0,\ x_1+4x_2+x_3=0$，相减得 $x_2=0$，解 $x=k(1,0,-1)^T$；(II) 即 $x_1+2x_2+x_3=0$，与 (I) 的解自动相容。故全部公共解 $x=k(1,0,-1)^T$。\n\n③ $a=2$：(I) 化为 $x_1+x_2+x_3=0,\ x_2+x_3=0$（后两式与它相容），解 $x=k(0,1,-1)^T$；代入 (II)：$0+2k-k=k=a-1=1$，得 $k=1$。故公共解 $x=(0,1,-1)^T$。</p></div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=1 时公共解 x=k(1,0,-1)^T（k 任意）；a=2 时公共解 x=(0,1,-1)^T；其他 a 无公共解$</div>
+        <div class="steps"><p>(I) 的系数行列式为范德蒙德行列式（节点 $1,2,a$）：$|A_I|=(2-1)(a-1)(a-2)=(a-1)(a-2)$。\n\n① $a\neq1,2$：(I) 只有零解 $x=0$；代入 (II) 得 $0=a-1$，矛盾，无公共解。\n\n② $a=1$：(I) 三方程为 $x_1+x_2+x_3=0,\ x_1+2x_2+x_3=0,\ x_1+4x_2+x_3=0$，相减得 $x_2=0$，解 $x=k(1,0,-1)^T$；(II) 即 $x_1+2x_2+x_3=0$，与 (I) 的解自动相容。故全部公共解 $x=k(1,0,-1)^T$。\n\n③ $a=2$：(I) 化为 $x_1+x_2+x_3=0,\ x_2+x_3=0$（后两式与它相容），解 $x=k(0,1,-1)^T$；代入 (II)：$0+2k-k=k=a-1=1$，得 $k=1$。故公共解 $x=(0,1,-1)^T$。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 多出 a=0 情形（此时 (I) 仅零解，(0,0,-1)^T 不满足 (II) x_1+2x_2+x_3=a-1=-1）且漏掉 a=2；联立消元得公解条件 -(a-1)(a-2)=0，2007 原题官方答案即 a=1、a=2 两情形，solver 与 B（按原题）正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>

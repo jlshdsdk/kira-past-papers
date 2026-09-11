@@ -21,89 +21,255 @@
 
   <div class="card q" id="k22_T1">
     <div class="qhead"><span class="qno">k22_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2020</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T1_0.png" alt="k22_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=-\dfrac{1}{2}$</div>
+        <div class="steps"><p>f 与 g 的矩阵分别为<br>$$A=\begin{pmatrix}1&amp;a&amp;a\\ a&amp;1&amp;a\\ a&amp;a&amp;1\end{pmatrix},\qquad C=\begin{pmatrix}1&amp;1&amp;0\\ 1&amp;1&amp;0\\ 0&amp;0&amp;4\end{pmatrix}.$$<br>经可逆线性变换 $x=Py$ 把 $f$ 化为 $g$，即 $C=P^{T}AP$，故 $A\simeq C$（合同），从而 $r(A)=r(C)$ 且正、负惯性指数相同。</p>
+<p>求 $C$ 的特征值：$C(1,1,0)^{T}=2(1,1,0)^{T}$，$C(0,0,1)^{T}=4(0,0,1)^{T}$，$C(1,-1,0)^{T}=0$，故特征值为 $2,\,4,\,0$，$r(C)=2$，正惯性指数为 $2$。</p>
+<p>由 $|A|=(1+2a)(1-a)^{2}=0$ 得 $a=-\tfrac12$ 或 $a=1$：<br>- $a=1$：$A$ 的特征值为 $3,0,0$，秩为 $1$，不合；<br>- $a=-\tfrac12$：$A$ 的特征值为 $\tfrac32,\tfrac32,0$，秩为 $2$、正惯性指数 $2$，符合。</p>
+<p>故 $a=-\dfrac12$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P=\dfrac{1}{\sqrt3}\begin{pmatrix}1&2&\sqrt3\\ -1&0&\sqrt3\\ 0&1&-\sqrt3\end{pmatrix}（不唯一）$</div>
+        <div class="steps"><p>$a=-\tfrac12$ 时 $f=x_1^2+x_2^2+x_3^2-x_1x_2-x_1x_3-x_2x_3$。取<br>$$p_1=\frac{1}{\sqrt3}(1,-1,0)^{T},\quad p_2=\frac{1}{\sqrt3}(2,0,1)^{T},\quad p_3=(1,1,-1)^{T},$$<br>直接验证（$Ap_3=(1,1,-2)^{T}$，且 $A$ 在 $p_1,p_2$ 上的作用相当于数乘）：<br>$$p_1^{T}Ap_1=1,\quad p_1^{T}Ap_2=1,\quad p_2^{T}Ap_2=1,\quad p_3^{T}Ap_3=4,\quad p_1^{T}Ap_3=p_2^{T}Ap_3=0.$$<br>故 $P=(p_1,p_2,p_3)=\dfrac{1}{\sqrt3}\begin{pmatrix}1&amp;2&amp;\sqrt3\\ -1&amp;0&amp;\sqrt3\\ 0&amp;1&amp;-\sqrt3\end{pmatrix}$ 满足<br>$$P^{T}AP=\begin{pmatrix}1&amp;1&amp;0\\ 1&amp;1&amp;0\\ 0&amp;0&amp;4\end{pmatrix}=C,$$<br>即 $x=Py$ 时 $f=g$，且 $|P|=-\tfrac43\neq0$（可逆）。（答案不唯一，验证 $P^{T}AP=C$ 即可。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T2">
     <div class="qhead"><span class="qno">k22_T2</span>
-      
+      <span class="badge">共 4 小题</span><span class="badge year">2002</span> <span class="badge year">2011</span> <span class="badge year">2015</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T2_0.png" alt="k22_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k22_T2_1.png" alt="k22_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=2$</div>
+        <div class="steps"><p>$A=\begin{pmatrix}a&amp;2&amp;2\\ 2&amp;a&amp;2\\ 2&amp;2&amp;a\end{pmatrix}=(a-2)E+2J$（$J$ 为全 1 矩阵），$J$ 的特征值为 $3,0,0$，故 $A$ 的特征值为<br>$$a+4,\quad a-2,\quad a-2.$$<br>正交变换不改变特征值，标准形为 $6y_1^2$ 说明特征值为 $\{6,0,0\}$，故 $a+4=6$ 且 $a-2=0$，得 $a=2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 3y_1^2$</div>
+        <div class="steps"><p>各行元素之和为 3 $\Rightarrow A(1,1,1)^{T}=3(1,1,1)^{T}$，即 $\lambda=3$ 是 $A$ 的特征值（特征向量 $(1,1,1)^{T}$）。</p>
+<p>$A$ 实对称且 $r(A)=1$，故特征值为 $\lambda,0,0$，其中唯一的非零特征值就是 $3$。</p>
+<p>故标准形为 $3y_1^2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>$P$ 的列为单位正交向量且 $P^{T}AP=\mathrm{diag}(2,1,-1)$，故<br>$$Ae_1=2e_1,\quad Ae_2=e_2,\quad Ae_3=-e_3.$$<br>$Q=(e_1,-e_3,e_2)$ 的列仍两两正交单位，故<br>$$Q^{T}AQ=\begin{pmatrix}2&amp;0&amp;0\\ 0&amp;-1&amp;0\\ 0&amp;0&amp;1\end{pmatrix},$$<br>即 $x=Qy$ 下的标准形为 $2y_1^2-y_2^2+y_3^2$。选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (C)，|A|=-6,\ \mathrm{tr}A=2$</div>
+        <div class="steps"><p>正交变换下标准形的系数即 $A$ 的特征值：$\lambda_1=1,\lambda_2=-2,\lambda_3=3$。</p>
+<p>故 $|A|=\lambda_1\lambda_2\lambda_3=1\times(-2)\times3=-6$，$\mathrm{tr}A=1+(-2)+3=2$。选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T3">
     <div class="qhead"><span class="qno">k22_T3</span>
-      <span class="badge">共 5 小题</span>
+      <span class="badge">共 8 小题</span><span class="badge year">1990</span> <span class="badge year">1993</span> <span class="badge year">1995</span> <span class="badge year">2003</span> <span class="badge year">2012</span> <span class="badge year">2017</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.22.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T3_0.png" alt="k22_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k22_T3_1.png" alt="k22_T3 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k22_T3_2.png" alt="k22_T3 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f=9y_1^2，Q=(\tfrac13(1,-2,2)^{T},\tfrac{1}{\sqrt5}(2,1,0)^{T},\tfrac{1}{3\sqrt5}(-2,4,5)^{T})$</div>
+        <div class="steps"><p>$$A=\begin{pmatrix}1&amp;-2&amp;2\\ -2&amp;4&amp;-4\\ 2&amp;-4&amp;4\end{pmatrix}=vv^{T},\qquad v=(1,-2,2)^{T},$$<br>故 $r(A)=1$，特征值为 $0,0,|v|^2=9$。<br>- $\lambda=9$：特征向量 $v$，单位化 $\xi_1=\tfrac13(1,-2,2)^{T}$；<br>- $\lambda=0$：$vx=0$ 即 $x_1-2x_2+2x_3=0$，取正交单位向量 $\xi_2=\tfrac{1}{\sqrt5}(2,1,0)^{T}$，$\xi_3=\tfrac{1}{3\sqrt5}(-2,4,5)^{T}$。</p>
+<p>令 $Q=(\xi_1,\xi_2,\xi_3)$（正交阵），$x=Qy$ 得<br>$$f=9y_1^2.$$<br>（经数值验证 $Q^{T}AQ=\mathrm{diag}(9,0,0)$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle a=2,\quad Q=\begin{pmatrix}0&1&0\\ \tfrac{1}{\sqrt2}&0&\tfrac{1}{\sqrt2}\\ -\tfrac{1}{\sqrt2}&0&\tfrac{1}{\sqrt2}\end{pmatrix}$</div>
+        <div class="steps"><p>$A=\begin{pmatrix}2&amp;0&amp;0\\ 0&amp;3&amp;a\\ 0&amp;a&amp;3\end{pmatrix}$ 的特征值为 $2,\ 3+a,\ 3-a$。</p>
+<p>标准形 $y_1^2+2y_2^2+5y_3^2$ 的系数 $\{1,2,5\}$ 即全部特征值，其中已有 $2$，故 $\{3+a,3-a\}=\{5,1\}$，得 $a=2$（$a&gt;0$）。</p>
+<p>求特征向量（按 $\lambda=1,2,5$ 排序）：<br>- $\lambda=1$：$(A-E)x=0$ 得 $(0,1,-1)^{T}$，单位化 $\tfrac{1}{\sqrt2}(0,1,-1)^{T}$；<br>- $\lambda=2$：$(A-2E)x=0$ 得 $(1,0,0)^{T}$；<br>- $\lambda=5$：$(A-5E)x=0$ 得 $(0,1,1)^{T}$，单位化 $\tfrac{1}{\sqrt2}(0,1,1)^{T}$。</p>
+<p>$$Q=\begin{pmatrix}0&amp;1&amp;0\\ \tfrac{1}{\sqrt2}&amp;0&amp;\tfrac{1}{\sqrt2}\\ -\tfrac{1}{\sqrt2}&amp;0&amp;\tfrac{1}{\sqrt2}\end{pmatrix},\qquad x=Qy:\quad f=y_1^2+2y_2^2+5y_3^2.$$<br>（已验证 $Q^{T}AQ=\mathrm{diag}(1,2,5)$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \alpha=\beta=0$</div>
+        <div class="steps"><p>$A=\begin{pmatrix}1&amp;\alpha&amp;1\\ \alpha&amp;1&amp;\beta\\ 1&amp;\beta&amp;1\end{pmatrix}$，标准形 $y_2^2+2y_3^2$ 说明特征值为 $\{0,\,1,\,2\}$。</p>
+<p>由 $|A|=0$：$|A|=2\alpha\beta-\alpha^2-\beta^2=-(\alpha-\beta)^2=0$，得 $\alpha=\beta$。</p>
+<p>特征值两两乘积之和等于所有 2 阶主子式之和：<br>$$(1-\alpha^2)+0+(1-\beta^2)=0\cdot1+1\cdot2+2\cdot0=2\ \Rightarrow\ 2-2\alpha^2=2\ \Rightarrow\ \alpha=0.$$<br>故 $\alpha=\beta=0$。此时 $A=\begin{pmatrix}1&amp;0&amp;1\\ 0&amp;1&amp;0\\ 1&amp;0&amp;1\end{pmatrix}$，特征值恰为 $0,1,2$，与标准形吻合。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle A=\begin{pmatrix}0&2&-2\\ 2&4&4\\ -2&4&-3\end{pmatrix}，\ f=6y_1^2+y_2^2-6y_3^2，\ Q=\begin{pmatrix}\tfrac{1}{\sqrt{30}}&-\tfrac{2}{\sqrt5}&\tfrac{1}{\sqrt6}\\ \tfrac{5}{\sqrt{30}}&0&-\tfrac{1}{\sqrt6}\\ \tfrac{2}{\sqrt{30}}&\tfrac{1}{\sqrt5}&\tfrac{2}{\sqrt6}\end{pmatrix}$</div>
+        <div class="steps"><p>(i) 交叉项系数减半放对称位置：<br>$$A=\begin{pmatrix}0&amp;2&amp;-2\\ 2&amp;4&amp;4\\ -2&amp;4&amp;-3\end{pmatrix}.$$<br>(ii) 特征多项式<br>$$|A-\lambda E|=-(\lambda-1)(\lambda-6)(\lambda+6),$$<br>特征值 $\lambda=6,\,1,\,-6$。</p>
+<p>- $\lambda=6$：$(A-6E)x=0\Rightarrow(1,5,2)^{T}$，单位化 $\tfrac{1}{\sqrt{30}}(1,5,2)^{T}$；<br>- $\lambda=1$：$(A-E)x=0\Rightarrow(-2,0,1)^{T}$，单位化 $\tfrac{1}{\sqrt5}(-2,0,1)^{T}$；<br>- $\lambda=-6$：$(A+6E)x=0\Rightarrow(1,-1,2)^{T}$，单位化 $\tfrac{1}{\sqrt6}(1,-1,2)^{T}$。</p>
+<p>三个特征向量属于不同特征值，两两正交（已验证）。令 $Q$ 为上述单位向量按序排成的矩阵，$x=Qy$：<br>$$f=6y_1^2+y_2^2-6y_3^2.$$<br>（已数值验证 $Q^{T}AQ=\mathrm{diag}(6,1,-6)$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=1,\ b=2；\ f=2y_1^2+2y_2^2-3y_3^2；\ Q=\begin{pmatrix}\tfrac{2}{\sqrt5}&0&-\tfrac{1}{\sqrt5}\\ 0&1&0\\ \tfrac{1}{\sqrt5}&0&\tfrac{2}{\sqrt5}\end{pmatrix}$</div>
+        <div class="steps"><p>(I) $A=\begin{pmatrix}a&amp;0&amp;b\\ 0&amp;2&amp;0\\ b&amp;0&amp;-2\end{pmatrix}$。</p>
+<p>特征值之和 $=\mathrm{tr}A=a+2-2=a=1$；特征值之积 $=|A|=2(-2a-b^2)=-12$，代入 $a=1$：$-4-2b^2=-12\Rightarrow b^2=4$，又 $b&gt;0$，得 $b=2$。</p>
+<p>(II) $A=\begin{pmatrix}1&amp;0&amp;2\\ 0&amp;2&amp;0\\ 2&amp;0&amp;-2\end{pmatrix}$：分块看，$x_2$ 方向特征值 $2$；$\begin{pmatrix}1&amp;2\\ 2&amp;-2\end{pmatrix}$ 的特征方程 $\lambda^2+\lambda-6=0$ 得 $\lambda=2,-3$。故特征值 $2,2,-3$（和 $1$、积 $-12$ ✓）。</p>
+<p>- $\lambda=2$（二重）：$(A-2E)x=0$ 即 $-x_1+2x_3=0$，取正交单位 $\xi_1=\tfrac{1}{\sqrt5}(2,0,1)^{T},\ \xi_2=(0,1,0)^{T}$；<br>- $\lambda=-3$：$(A+3E)x=0\Rightarrow(-1,0,2)^{T}$，单位化 $\xi_3=\tfrac{1}{\sqrt5}(-1,0,2)^{T}$。</p>
+<p>$x=Qy=(\xi_1,\xi_2,\xi_3)y$：<br>$$f=2y_1^2+2y_2^2-3y_3^2.$$<br>（已数值验证。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle a=-1；\ f=(3+\sqrt3)y_1^2+(3-\sqrt3)y_2^2；\ Q=\left(\tfrac{(2,\sqrt3-1,\sqrt3+1)^{T}}{2\sqrt3},\ \tfrac{(-2,\sqrt3+1,\sqrt3-1)^{T}}{2\sqrt3},\ \tfrac{(-1,-1,1)^{T}}{\sqrt3}\right)$</div>
+        <div class="steps"><p>(I) $r\big((A^{T}A)\big)=r(A)=2$，故 $|A|=0$。$|A|=a+1=0$，得 $a=-1$。</p>
+<p>(II) $A=\begin{pmatrix}1&amp;0&amp;1\\ 0&amp;1&amp;1\\ -1&amp;0&amp;-1\end{pmatrix}$，<br>$$A^{T}A=\begin{pmatrix}2&amp;0&amp;2\\ 0&amp;1&amp;1\\ 2&amp;1&amp;3\end{pmatrix}\quad(\text{即 } f=2(x_1+x_3)^2+(x_2+x_3)^2\text{ 的矩阵}).$$<br>特征多项式 $|\lambda E-A^{T}A|=\lambda(\lambda^2-6\lambda+6)$，特征值<br>$$\lambda_1=3+\sqrt3,\quad \lambda_2=3-\sqrt3,\quad \lambda_3=0.$$<br>特征向量（已正交化单位化，数值验证 $Q^{T}(A^{T}A)Q=\mathrm{diag}(3+\sqrt3,3-\sqrt3,0)$）：<br>- $\lambda_1=3+\sqrt3$：$\dfrac{1}{2\sqrt3}(2,\ \sqrt3-1,\ \sqrt3+1)^{T}$；<br>- $\lambda_2=3-\sqrt3$：$\dfrac{1}{2\sqrt3}(-2,\ \sqrt3+1,\ \sqrt3-1)^{T}$；<br>- $\lambda_3=0$：$\dfrac{1}{\sqrt3}(-1,-1,1)^{T}$。</p>
+<p>令 $Q$ 为其按序排成的正交阵，$x=Qy$：<br>$$f=(3+\sqrt3)y_1^2+(3-\sqrt3)y_2^2.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle a=2；\ f=6y_1^2-3y_2^2；\ Q=\begin{pmatrix}\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt3}&\tfrac{1}{\sqrt6}\\ 0&-\tfrac{1}{\sqrt3}&\tfrac{2}{\sqrt6}\\ -\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt3}&\tfrac{1}{\sqrt6}\end{pmatrix}$</div>
+        <div class="steps"><p>标准形只含两个平方项，故 $r(A)=2$，$|A|=0$。由<br>$$A=\begin{pmatrix}2&amp;1&amp;-4\\ 1&amp;-1&amp;1\\ -4&amp;1&amp;a\end{pmatrix},\qquad |A|=-3a+6=0\ \Rightarrow\ a=2.$$<br>$a=2$ 时：$\mathrm{tr}A=3$，所有 2 阶主子式之和 $=-3-12-3=-18$，$|A|=0$，故特征值满足 $\lambda^2-3\lambda-18=0$（非零部分）与 $0$，即<br>$$\lambda_1=6,\quad \lambda_2=-3,\quad \lambda_3=0.$$<br>特征向量：<br>- $\lambda=6$：$(1,0,-1)^{T}$，单位化 $\tfrac{1}{\sqrt2}(1,0,-1)^{T}$；<br>- $\lambda=-3$：$(1,-1,1)^{T}$，单位化 $\tfrac{1}{\sqrt3}(1,-1,1)^{T}$；<br>- $\lambda=0$：$(1,2,1)^{T}$，单位化 $\tfrac{1}{\sqrt6}(1,2,1)^{T}$。</p>
+<p>三者两两正交（已验证）。$x=Qy$：<br>$$f=6y_1^2-3y_2^2.$$<br>（已数值验证 $Q^{T}AQ=\mathrm{diag}(6,-3,0)$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (1)\ a=1,\ b=2；(2)\ f=6y_1^2，\ Q=\begin{pmatrix}\tfrac{1}{\sqrt6}&\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt3}\\ \tfrac{1}{\sqrt6}&-\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt3}\\ \tfrac{2}{\sqrt6}&0&-\tfrac{1}{\sqrt3}\end{pmatrix}$</div>
+        <div class="steps"><p>(1) $r(A)=2$，$Ax=0$ 的解空间为 $V_1=\mathrm{span}\{(-1,-a,1)^{T}\}$（由 $x_2+ax_3=0,\ x_1+x_3=0$）。$B^{T}x=0$ 即<br>$$x_1+x_2+bx_3=0,\qquad x_1+x_2+2x_3=0.$$<br>若 $b\neq2$，则 $x_3=0,\ x_1=-x_2$，解空间不含 $(-1,-a,1)^{T}$ 方向，与&quot;均是解&quot;矛盾；故 $b=2$。此时 $B^{T}x=0$ 等价于 $x_1+x_2+2x_3=0$，解空间 2 维，代入 $(-1,-a,1)^{T}$：$-1-a+2=0$，得 $a=1$。此时 $V_1$ 为 1 维、后者 2 维，两解空间不同 ✓。</p>
+<p>(2) $a=1,b=2$ 时<br>$$BA=\begin{pmatrix}1&amp;1\\ 1&amp;1\\ 2&amp;2\end{pmatrix}\begin{pmatrix}0&amp;1&amp;1\\ 1&amp;0&amp;1\end{pmatrix}=\begin{pmatrix}1&amp;1&amp;2\\ 1&amp;1&amp;2\\ 2&amp;2&amp;4\end{pmatrix}\quad(\text{对称}).$$<br>$f=x^{T}(BA)x$ 的矩阵即 $BA$（已对称）。$r(BA)=1$，特征值为 $0,0,\mathrm{tr}=6$。</p>
+<p>- $\lambda=6$：$(1,1,2)^{T}$，单位化 $\tfrac{1}{\sqrt6}(1,1,2)^{T}$；<br>- $\lambda=0$：$x_1+x_2+2x_3=0$，取 $\tfrac{1}{\sqrt2}(1,-1,0)^{T}$ 与 $\tfrac{1}{\sqrt3}(1,1,-1)^{T}$。</p>
+<p>$x=Qy$：<br>$$f=6y_1^2.$$<br>（已数值验证 $Q^{T}(BA)Q=\mathrm{diag}(6,0,0)$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T4">
     <div class="qhead"><span class="qno">k22_T4</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2020</span> <span class="badge year">2023</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T4_0.png" alt="k22_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ a=4,\ b=1；(II)\ Q=\dfrac15\begin{pmatrix}4&-3\\ -3&-4\end{pmatrix}$</div>
+        <div class="steps"><p>(I) $f$ 的矩阵 $A=\begin{pmatrix}1&amp;-2\\ -2&amp;4\end{pmatrix}$，$g$ 的矩阵 $C=\begin{pmatrix}a&amp;2\\ 2&amp;b\end{pmatrix}$。正交变换下 $Q^{T}AQ=C$，$A\sim C$，特征值相同。</p>
+<p>$A$：$\lambda^2-5\lambda=0$，$\lambda=5,0$。$C$：$\mathrm{tr}C=a+b=5$，$|C|=ab-4=0$，故 $\{a,b\}=\{4,1\}$；又 $a\ge b$，得 $a=4,\ b=1$。</p>
+<p>(II) $A=SDS^{T}$，$D=\mathrm{diag}(5,0)$，$S$ 的列：$\lambda=5$ 的 $\tfrac{1}{\sqrt5}(1,-2)^{T}$，$\lambda=0$ 的 $\tfrac{1}{\sqrt5}(2,1)^{T}$；<br>$C=TDT^{T}$，$T$ 的列：$\lambda=5$ 的 $\tfrac{1}{\sqrt5}(2,1)^{T}$，$\lambda=0$ 的 $\tfrac{1}{\sqrt5}(1,-2)^{T}$。<br>令 $Q=ST^{T}$：<br>$$Q=\frac15\begin{pmatrix}4&amp;-3\\ -3&amp;-4\end{pmatrix},$$<br>验证 $Q^{T}AQ=\begin{pmatrix}4&amp;2\\ 2&amp;1\end{pmatrix}=C$，即 $x=Qy$ 时 $f=g=4y_1^2+4y_1y_2+y_2^2$。（已数值验证。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ P=\begin{pmatrix}1&-1&1\\ 0&1&0\\ 0&0&1\end{pmatrix}；(II)\ 不存在$</div>
+        <div class="steps"><p>(I) 配方：<br>$$f=(x_1+x_2-x_3)^2+(x_2+x_3)^2,\qquad g=y_1^2+(y_2+y_3)^2.$$<br>令 $y_1=x_1+x_2-x_3,\ y_2=x_2,\ y_3=x_3$，即<br>$$x=Py,\qquad P=\begin{pmatrix}1&amp;-1&amp;1\\ 0&amp;1&amp;0\\ 0&amp;0&amp;1\end{pmatrix}\quad(|P|=1\neq0),$$<br>则 $f(P\,y)=y_1^2+(y_2+y_3)^2=g(y)$。（已数值验证 $P^{T}AP=$ $g$ 的矩阵。）</p>
+<p>(II) $f$ 的矩阵 $A=\begin{pmatrix}1&amp;1&amp;-1\\ 1&amp;2&amp;0\\ -1&amp;0&amp;2\end{pmatrix}$，特征多项式 $(2-\lambda)\lambda(\lambda-3)$，特征值为 $3,2,0$；$g$ 的矩阵 $C=\begin{pmatrix}1&amp;0&amp;0\\ 0&amp;1&amp;1\\ 0&amp;1&amp;1\end{pmatrix}$ 的特征值为 $2,1,0$。</p>
+<p>若存在正交 $Q$ 使 $Q^{T}AQ=C$，则 $A\sim C$，特征值必须相同，但 $\{3,2,0\}\neq\{2,1,0\}$，故不存在这样的正交矩阵。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T5">
     <div class="qhead"><span class="qno">k22_T5</span>
-      
+      <span class="badge">共 6 小题</span><span class="badge year">2011</span> <span class="badge year">2014</span> <span class="badge year">2016</span> <span class="badge year">2021</span> <span class="badge year">2025</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T5_0.png" alt="k22_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k22_T5_1.png" alt="k22_T5 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2$</div>
+        <div class="steps"><p>配方：$f=(x_1+x_2+x_3)^2+2x_2^2$。</p>
+<p>两个系数为正的独立平方项，故正惯性指数为 $2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -2\le a\le 2$</div>
+        <div class="steps"><p>$A=\begin{pmatrix}1&amp;0&amp;a\\ 0&amp;-1&amp;2\\ a&amp;2&amp;0\end{pmatrix}$。2 阶主子式 $\begin{vmatrix}1&amp;0\\ 0&amp;-1\end{vmatrix}=-1&lt;0$，由特征值插空，$A$ 必有至少一个正特征值与至少一个负特征值。</p>
+<p>又 $|A|=a^2-4$：<br>- $|A|&gt;0$（$a^2&gt;4$）：一正两负，负惯性指数为 $2$；<br>- $|A|\le0$（$a^2\le4$）：恰一个负特征值（$|A|=0$ 时第三个特征值为 $0$），负惯性指数为 $1$。</p>
+<p>故 $-2\le a\le2$。（已对 $a=-2,-1.9,0,1.9,2,2.1,-2.1$ 数值验证。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (C)$</div>
+        <div class="steps"><p>$A=\begin{pmatrix}a&amp;1&amp;1\\ 1&amp;a&amp;1\\ 1&amp;1&amp;a\end{pmatrix}$：每行和为 $a+2$，故 $\lambda_1=a+2$（特征向量 $(1,1,1)^{T}$）；其余特征值为 $a-1$（二重）。</p>
+<p>一正两负 $\Leftrightarrow a+2&gt;0$ 且 $a-1&lt;0$（且均非零）$\Leftrightarrow -2&lt;a&lt;1$。选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>展开：$f=2x_2^2+2x_1x_2+2x_2x_3+2x_1x_3$，矩阵<br>$$A=\begin{pmatrix}0&amp;1&amp;1\\ 1&amp;2&amp;1\\ 1&amp;1&amp;0\end{pmatrix},\qquad |\lambda E-A|=-\lambda(\lambda-3)(\lambda+1),$$<br>特征值 $3,-1,0$，正、负惯性指数为 $1,1$。选 (B)。（已数值验证。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>配方：$f=(x_1+x_2+x_3)^2-(x_2+x_3)^2$。</p>
+<p>一个正平方项、一个负平方项，秩为 2，正惯性指数为 $1$。选 (B)。（矩阵 $\begin{pmatrix}1&amp;1&amp;1\\ 1&amp;0&amp;0\\ 1&amp;0&amp;0\end{pmatrix}$ 特征值 $2,-1,0$，已数值验证。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (D)$</div>
+        <div class="steps"><p>$A$ 的特征值 $=b$ 与 $\begin{pmatrix}1&amp;2\\ 2&amp;a\end{pmatrix}$ 的两个特征值之和，后两者之积为 $a-4$。</p>
+<p>- $a&lt;4$：2 阶块的两个特征值异号（积 $a-4&lt;0$），一正一负；再取 $b&lt;0$，共一正两负 ✓；<br>- $a&gt;4$：2 阶块两个特征值同正（积正、和 $1+a&gt;0$），至多只有 $b$ 一个负特征值，不合；<br>- $a=4$：2 阶块特征值为 $0,5$，至多一负，不合。</p>
+<p>故 $a&lt;4,\ b&lt;0$，选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T6">
     <div class="qhead"><span class="qno">k22_T6</span>
-      <span class="badge">共 1 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">2009</span> <span class="badge year">2019</span> <span class="badge year">2023</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T6_0.png" alt="k22_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ \lambda=a+1,\ a,\ a-2；(II)\ a=2$</div>
+        <div class="steps"><p>$$A=\begin{pmatrix}a&amp;0&amp;1\\ 0&amp;a&amp;-1\\ 1&amp;-1&amp;a-1\end{pmatrix}.$$<br>(I) $$|A-\lambda E|=(a-\lambda)\big[(a-\lambda)(a-1-\lambda)-2\big]=-(\lambda-a-1)(\lambda-a)(\lambda-a+2),$$<br>特征值为<br>$$\lambda_1=a+1,\quad \lambda_2=a,\quad \lambda_3=a-2.$$<br>(II) 规范形 $y_1^2+y_2^2$：秩为 2、正惯性指数 2，即特征值恰有两个正、一个零：<br>- $a=2$：特征值 $3,2,0$ ✓；<br>- $a=0$：$1,0,-2$ ✗；$a=-1$：$0,-1,-3$ ✗；其余 $a$ 无零特征值 ✗。</p>
+<p>故 $a=2$。（已对 $a=0,1,2,5$ 数值验证特征值集合 $\{a+1,a,a-2\}$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (C)$</div>
+        <div class="steps"><p>设 $\lambda$ 为 $A$ 的特征值，由 $A^2+A=2E$ 得 $\lambda^2+\lambda-2=0$，$\lambda=1$ 或 $\lambda=-2$。</p>
+<p>$|A|=\lambda_1\lambda_2\lambda_3=4=1\cdot(-2)^2\cdot 1^0$，只能两个 $-2$、一个 $1$，即特征值为 $1,\,-2,\,-2$。</p>
+<p>故规范形为 $y_1^2-y_2^2-y_3^2$，选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>注意 $(x_1,x_2,x_3)\mapsto(x_1+x_2,\ x_1+x_3,\ x_2-x_3)$ 不是可逆代换（系数行列式为 0），不能直接数平方项，须用惯性定理。</p>
+<p>$f$ 的矩阵 $A=\begin{pmatrix}2&amp;1&amp;1\\ 1&amp;-3&amp;4\\ 1&amp;4&amp;-3\end{pmatrix}$：<br>$$|A|=0,\qquad \mathrm{tr}A=-4,\qquad \text{2 阶主子式之和}=-7-7-7=-21,$$<br>故特征值为 $0$ 与 $\lambda^2+4\lambda-21=0$ 的根，即 $3,\ -7,\ 0$。</p>
+<p>正惯性指数 1、负惯性指数 1，规范形为 $y_1^2-y_2^2$，选 (B)。（已数值验证特征值 $3,-7,0$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a+b=2$</div>
+        <div class="steps"><p>$AA^{T}$ 半正定，其规范形为 $y_1^2$ 说明 $r(AA^{T})=r(A)=1$（正惯性指数 1、秩 1）。</p>
+<p>故 $A$ 的两行成比例：$(a+2,\ 3,\ -3a)=k(1,\ b,\ -1)$。由第三分量 $-3a=-k$ 得 $k=3a$；由 $k=a+2$ 得 $3a=a+2$，$a=1$，$k=3$；再由 $3=kb$ 得 $b=1$。</p>
+<p>故 $a+b=2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T7">
     <div class="qhead"><span class="qno">k22_T7</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2005</span> <span class="badge year">2022</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T7_0.png" alt="k22_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ a=0；(II)\ f=2y_1^2+2y_2^2，Q=\begin{pmatrix}\tfrac{1}{\sqrt2}&0&\tfrac{1}{\sqrt2}\\ \tfrac{1}{\sqrt2}&0&-\tfrac{1}{\sqrt2}\\ 0&1&0\end{pmatrix}；(III)\ x=k(1,-1,0)^{T}$</div>
+        <div class="steps"><p>(I) $A=\begin{pmatrix}1-a&amp;1+a&amp;0\\ 1+a&amp;1-a&amp;0\\ 0&amp;0&amp;2\end{pmatrix}$，$|A|=2\big[(1-a)^2-(1+a)^2\big]=-8a$。秩为 2 $\Rightarrow|A|=0\Rightarrow a=0$。</p>
+<p>(II) $a=0$：$A=\begin{pmatrix}1&amp;1&amp;0\\ 1&amp;1&amp;0\\ 0&amp;0&amp;2\end{pmatrix}$，特征值 $2,2,0$。<br>- $\lambda=2$：$(1,1,0)^{T},\ (0,0,1)^{T}$，单位化 $\tfrac{1}{\sqrt2}(1,1,0)^{T},\ (0,0,1)^{T}$；<br>- $\lambda=0$：$(1,-1,0)^{T}$，单位化 $\tfrac{1}{\sqrt2}(1,-1,0)^{T}$。</p>
+<p>$Q=\begin{pmatrix}\tfrac{1}{\sqrt2}&amp;0&amp;\tfrac{1}{\sqrt2}\\ \tfrac{1}{\sqrt2}&amp;0&amp;-\tfrac{1}{\sqrt2}\\ 0&amp;1&amp;0\end{pmatrix}$，$x=Qy$：$f=2y_1^2+2y_2^2$。（已验证 $Q^{T}AQ=\mathrm{diag}(2,2,0)$。）</p>
+<p>(III) $f=0\iff y_1=y_2=0$，此时 $x=y_3\cdot\tfrac{1}{\sqrt2}(1,-1,0)^{T}$，即<br>$$x=k\,(1,-1,0)^{T},\quad k\in\mathbb{R}.$$<br>（直接看也行：$f=(x_1+x_2)^2+2x_3^2=0\iff x_1=-x_2,\ x_3=0$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ A=\begin{pmatrix}1&2&3\\ 2&4&6\\ 3&6&9\end{pmatrix}；(II)\ f=14y_1^2，Q=(\tfrac{(1,2,3)^{T}}{\sqrt{14}},\tfrac{(2,-1,0)^{T}}{\sqrt5},\tfrac{(3,6,-5)^{T}}{\sqrt{70}})；(III)\ x_1+2x_2+3x_3=0 的全部解$</div>
+        <div class="steps"><p>(I) $f=\sum_i\sum_j ij\,x_ix_j=\Big(\sum_i i x_i\Big)\Big(\sum_j j x_j\Big)=(x_1+2x_2+3x_3)^2$，故<br>$$A=aa^{T},\quad a=(1,2,3)^{T},\qquad A=\begin{pmatrix}1&amp;2&amp;3\\ 2&amp;4&amp;6\\ 3&amp;6&amp;9\end{pmatrix}.$$<br>(II) $r(A)=1$，特征值为 $0,0,\mathrm{tr}A=14$。<br>- $\lambda=14$：$a$ 方向，$\xi_1=\tfrac{1}{\sqrt{14}}(1,2,3)^{T}$；<br>- $\lambda=0$：$x_1+2x_2+3x_3=0$，取正交单位 $\xi_2=\tfrac{1}{\sqrt5}(2,-1,0)^{T},\ \xi_3=\tfrac{1}{\sqrt{70}}(3,6,-5)^{T}$。</p>
+<p>$x=Qy=(\xi_1,\xi_2,\xi_3)y$：$f=14y_1^2$。（已验证正交性与 $Q^{T}AQ=\mathrm{diag}(14,0,0)$。）</p>
+<p>(III) $f=0\iff y_1=0\iff x\perp(1,2,3)^{T}$，即 $x_1+2x_2+3x_3=0$，通解<br>$$x=s\,(-2,1,0)^{T}+t\,(-3,0,1)^{T},\quad s,t\in\mathbb{R}.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k22_T8">
     <div class="qhead"><span class="qno">k22_T8</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2022</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k22_T8_0.png" alt="k22_T8 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I)\ f=2y_1^2+4y_2^2+4y_3^2，Q=\begin{pmatrix}\tfrac{1}{\sqrt2}&0&\tfrac{1}{\sqrt2}\\ 0&1&0\\ -\tfrac{1}{\sqrt2}&0&\tfrac{1}{\sqrt2}\end{pmatrix}；(II)\ \min=2$</div>
+        <div class="steps"><p>(I) $A=\begin{pmatrix}3&amp;0&amp;1\\ 0&amp;4&amp;0\\ 1&amp;0&amp;3\end{pmatrix}$：$x_2$ 方向给特征值 $4$，块 $\begin{pmatrix}3&amp;1\\ 1&amp;3\end{pmatrix}$ 给特征值 $4,2$，故特征值 $2,4,4$。</p>
+<p>- $\lambda=2$：$(A-2E)x=0\Rightarrow(1,0,-1)^{T}$，单位化 $\tfrac{1}{\sqrt2}(1,0,-1)^{T}$；<br>- $\lambda=4$：$x_1=x_3$，取正交单位 $\tfrac{1}{\sqrt2}(1,0,1)^{T},\ (0,1,0)^{T}$。</p>
+<p>$Q=\begin{pmatrix}\tfrac{1}{\sqrt2}&amp;0&amp;\tfrac{1}{\sqrt2}\\ 0&amp;1&amp;0\\ -\tfrac{1}{\sqrt2}&amp;0&amp;\tfrac{1}{\sqrt2}\end{pmatrix}$（列序对应 $2,4,4$），$x=Qy$：<br>$$f=2y_1^2+4y_2^2+4y_3^2.$$<br>（已数值验证 $Q^{T}AQ=\mathrm{diag}(2,4,4)$。）</p>
+<p>(II) 因 $Q$ 正交，$x^{T}x=y^{T}y$，且<br>$$f=2y_1^2+4y_2^2+4y_3^2\ \ge\ 2(y_1^2+y_2^2+y_3^2)=2\,x^{T}x.$$<br>故对任意 $x\neq0$，$\dfrac{f(x)}{x^{T}x}\ge2$。取 $x=\dfrac{1}{\sqrt2}(1,0,-1)^{T}$（即 $y=(1,0,0)^{T}$）时 $f=2,\ x^{T}x=1$，比值恰为 $2$。故<br>$$\min_{x\neq0}\frac{f(x)}{x^{T}x}=2.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

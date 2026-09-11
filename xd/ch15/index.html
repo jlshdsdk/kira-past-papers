@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 15</div>
 <h1 class="title">考点 15　抽象方程组求解</h1>
-<div class="sub">题组 2 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/2　</div>
+<div class="sub">题组 2 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 2/2　</div>
 
   <div class="card q" id="k15_T1">
     <div class="qhead"><span class="qno">k15_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.15.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k15_T1_0.png" alt="k15_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle k(1,1,\dots,1)^T（k 为任意常数）$</div>
         <div class="steps"><p>各行元素之和为零，即 $A(1,1,\dots,1)^T=(0,\dots,0)^T$，故 $\xi=(1,1,\dots,1)^T$ 是 $AX=0$ 的非零解。\n\n又 $r(A)=n-1$，解空间维数 $n-r(A)=1$，故 $\xi$ 就构成基础解系，通解为 $x=k(1,1,\dots,1)^T$。</p></div>
@@ -44,7 +44,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.15.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k15_T2_0.png" alt="k15_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k15_T2_1.png" alt="k15_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
         <div class="steps"><p>通解 = 特解 + 齐次通解。\n\n$(\beta_1+\beta_2)/2$：$A\cdot\frac{\beta_1+\beta_2}{2}=\frac{b+b}{2}=b$，是 $Ax=b$ 的特解；$(\beta_1-\beta_2)/2$ 是齐次解而非特解，排除 (A)。\n\n齐次部分须构成 $N(A)$ 的基（二维）。$k_1\alpha_1+k_2(\alpha_1-\alpha_2)$：$\alpha_1,\ \alpha_1-\alpha_2$ 是齐次解且线性无关（$\alpha_2=\alpha_1-(\alpha_1-\alpha_2)$ 可被表示），构成基，(B) 可行。\n\n(C)：$\beta_1+\beta_2$ 不是齐次解（$A(\beta_1+\beta_2)=2b\neq0$），排除。\n\n(D)：齐次部分 $k_1\alpha_1+k_2(\beta_1-\beta_2)$ 至多张成一维方向加 $\beta_1-\beta_2$，一般不能覆盖二维解空间（缺 $\alpha_2$ 的独立方向），排除。\n\n故选 (B)。</p></div>

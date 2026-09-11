@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">线性代数</a> / 考点 14</div>
 <h1 class="title">考点 14　具体方程组求解</h1>
-<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/3　</div>
+<div class="sub">题组 3 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 3/3　</div>
 
   <div class="card q" id="k14_T1">
     <div class="qhead"><span class="qno">k14_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k14_T1_0.png" alt="k14_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k14_T1_1.png" alt="k14_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle t_1^{\,s}+(-1)^{s-1}t_2^{\,s}\neq 0（即 s 为奇数时 t_1\neq -t_2；s 为偶数时 t_1\neq \pm t_2）$</div>
         <div class="steps"><p>每个 $\beta_j$ 都是 $\alpha_1,\dots,\alpha_s$ 的线性组合，故都是 $Ax=0$ 的解；且向量个数恰为 $s=n-r(A)$，故 $\beta_1,\dots,\beta_s$为基础解系 $\iff$ 它们线性无关。\n\n记 $(\beta_1,\dots,\beta_s)=(\alpha_1,\dots,\alpha_s)C$，其中\n\n$$C=\begin{pmatrix}t_1&amp; &amp; &amp;t_2\\ t_2&amp;t_1&amp; &amp;\\ &amp;\ddots&amp;\ddots&amp;\\ &amp; &amp;t_2&amp;t_1\end{pmatrix}$$\n\n（第 $j$ 列为 $t_1e_j+t_2e_{j+1}$，第 $s$ 列为 $t_2e_1+t_1e_s$。）$C$ 的每行每列非零元只有 $t_1,t_2$，非零行列式项只有两个排列：全取对角元 $t_1$（恒等排列）与全取 $t_2$（轮换排列，符号 $(-1)^{s-1}$），故\n\n$$|C|=t_1^{s}+(-1)^{s-1}t_2^{s}.$$\n\n（验：$s=2$ 得 $t_1^2-t_2^2$，$s=3$ 得 $t_1^3+t_2^3$。）\n\n由 $\alpha_1,\dots,\alpha_s$ 线性无关，$\beta_1,\dots,\beta_s$ 线性无关 $\iff |C|\neq 0$，即 $t_1^{s}+(-1)^{s-1}t_2^{s}\neq 0$。</p></div>
@@ -56,7 +56,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k14_T2_0.png" alt="k14_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k14_T2_1.png" alt="k14_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \xi_1=(1,0,1,0,-1)^T,\quad \xi_2=(0,1,1,0,-1)^T$</div>
         <div class="steps"><p>系数矩阵三行 $(1,1,0,0,1),(1,1,-1,0,0),(0,0,1,1,1)$ 显然线性无关，$r(A)=3$，$n=5$，基础解系含 $5-3=2$ 个向量。\n\n解方程组：由第二式 $x_3=x_1+x_2$；代入第一式 $x_5=-x_1-x_2$；第三式给 $x_4=-(x_3+x_5)=0$。\n\n取 $(x_1,x_2)=(1,0),(0,1)$ 得\n\n$$\xi_1=(1,0,1,0,-1)^T,\qquad \xi_2=(0,1,1,0,-1)^T.$$\n\n（验证：均满足三方程，且线性无关。）</p></div>
@@ -66,12 +66,14 @@
         <div class="steps"><p>系数矩阵 $A=(a-b)E+bJ$（$J$ 为全 1 矩阵），特征值为 $a-b$（$n-1$ 重）与 $a+(n-1)b$（单重），故\n\n$$|A|=(a-b)^{n-1}\bigl(a+(n-1)b\bigr).$$\n\n(1) $a\neq b$ 且 $a+(n-1)b\neq 0$：$|A|\neq 0$，方程组仅有零解。\n\n(2) $a=b$（$b\neq0$）：$A$ 的每行都是 $(a,a,\dots,a)$，方程组等价于单方程\n\n$$x_1+x_2+\cdots+x_n=0,$$\n\n$r(A)=1$，基础解系含 $n-1$ 个向量，取 $\xi_i=e_1-e_{i+1}\ (i=1,\dots,n-1)$，通解 $x=\sum_{i=1}^{n-1}k_i\xi_i$。\n\n(3) $a+(n-1)b=0$（此时 $a-b=-nb\neq0$，即 $a\neq b$）：$r(A)=n-1$。第 $i$ 个方程为 $(a-b)x_i+b\sum_j x_j=0$，两相邻方程相减得 $(a-b)(x_i-x_{i+1})=0$，故 $x_1=x_2=\cdots=x_n$，即解为\n\n$$x=k(1,1,\dots,1)^T,$$\n\n基础解系 $(1,1,\dots,1)^T$。（代回验证：每方程 $=(a+(n-1)b)\cdot k=0$。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) b\neq 0 且 b+\Sigma a_i\neq 0 时仅零解；(II) b=0 时基础解系 \xi_k=(a_{k+1},0,\dots,0,-a_1,0,\dots,0)^T(k=1,\dots,n-1)；b=-\Sigma a_i 时基础解系 (1,1,\dots,1)^T$</div>
-        <div class="steps"><p>系数矩阵 $A=C+bE$，其中 $C$ 的每一行都是行向量 $a=(a_1,\dots,a_n)$。$C$ 的特征值为 $\sum a_i$（单重，特征向量 $(1,\dots,1)^T$）与 $0$（$n-1$ 重），故\n\n$$|A|=b^{\,n-1}\Bigl(b+\sum_{i=1}^n a_i\Bigr).$$\n\n(I) $|A|\neq0\iff b\neq0$ 且 $b+\sum a_i\neq0$，此时仅有零解。\n\n(II) 有非零解 $\iff b=0$ 或 $b=-\sum a_i$。\n\n① $b=0$：$A$ 的各行都是 $(a_1,\dots,a_n)$（由 $\sum a_i\neq0$ 该向量非零），$r(A)=1$，方程组即单方程 $a_1x_1+\cdots+a_nx_n=0$，解空间维 $n-1$。设 $a_1\neq0$（若 $a_1=0$，取任一非零 $a_j$ 代替下述 $a_1$ 的位置即可），基础解系取\n\n$$\xi_k=(a_{k+1},0,\dots,0,\,-a_1,\,0,\dots,0)^T\quad(k=1,\dots,n-1,\ -a_1\ 在第\ k+1\ 个分量)，$$\n\n验证 $a\cdot\xi_k=a_1a_{k+1}-a_{k+1}a_1=0$，且显然线性无关。\n\n② $b=-\sum a_i\neq0$：第 $i$ 个方程为 $\sum_j a_jx_j+b\,x_i=0$，即 $(\sum_j a_j)x_i=\sum_j a_jx_j$，右端与 $i$ 无关，故 $x_1=x_2=\cdots=x_n$，且 $b\neq0$ 保证 $r(A)=n-1$，解空间维 1：\n\n$$x=k(1,1,\dots,1)^T,$$\n\n（代回：每方程 $=\sum a_j+b=b+\sum a_j=0$。）基础解系 $(1,1,\dots,1)^T$。</p></div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle b=0 时基础解系 (a_2,-a_1,0,\ldots,0)^T,\ldots,(a_n,0,\ldots,0,-a_1)^T；b=-\sum a_i 时基础解系 (1,1,\ldots,1)^T$</div>
+        <div class="steps"><p>系数矩阵 $A=C+bE$，其中 $C$ 的每一行都是行向量 $a=(a_1,\dots,a_n)$。$C$ 的特征值为 $\sum a_i$（单重，特征向量 $(1,\dots,1)^T$）与 $0$（$n-1$ 重），故\n\n$$|A|=b^{\,n-1}\Bigl(b+\sum_{i=1}^n a_i\Bigr).$$\n\n(I) $|A|\neq0\iff b\neq0$ 且 $b+\sum a_i\neq0$，此时仅有零解。\n\n(II) 有非零解 $\iff b=0$ 或 $b=-\sum a_i$。\n\n① $b=0$：$A$ 的各行都是 $(a_1,\dots,a_n)$（由 $\sum a_i\neq0$ 该向量非零），$r(A)=1$，方程组即单方程 $a_1x_1+\cdots+a_nx_n=0$，解空间维 $n-1$。设 $a_1\neq0$（若 $a_1=0$，取任一非零 $a_j$ 代替下述 $a_1$ 的位置即可），基础解系取\n\n$$\xi_k=(a_{k+1},0,\dots,0,\,-a_1,\,0,\dots,0)^T\quad(k=1,\dots,n-1,\ -a_1\ 在第\ k+1\ 个分量)，$$\n\n验证 $a\cdot\xi_k=a_1a_{k+1}-a_{k+1}a_1=0$，且显然线性无关。\n\n② $b=-\sum a_i\neq0$：第 $i$ 个方程为 $\sum_j a_jx_j+b\,x_i=0$，即 $(\sum_j a_j)x_i=\sum_j a_jx_j$，右端与 $i$ 无关，故 $x_1=x_2=\cdots=x_n$，且 $b\neq0$ 保证 $r(A)=n-1$，解空间维 1：\n\n$$x=k(1,1,\dots,1)^T,$$\n\n（代回：每方程 $=\sum a_j+b=b+\sum a_j=0$。）基础解系 $(1,1,\dots,1)^T$。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 把 b=-\sum a_i 情形的基础解系写成 (a_1,\ldots,a_n)^T，代入不满足方程（系数矩阵每行为 a^T+b e_i^T，该情形解只能 x\propto(1,\ldots,1)^T）；n=2 验证：b=-(a_1+a_2) 时方程为 x_1=x_2</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a=0 或 a=-\dfrac{n(n+1)}{2}；a=0 时通解 x=\sum_{i=1}^{n-1}k_i(e_1-e_{i+1})；a=-\dfrac{n(n+1)}{2} 时通解 x=k(1,2,\dots,n)^T$</div>
-        <div class="steps"><p>系数矩阵 $A=\mathbf{1}\,(1,2,\dots,n)+aE$，其中 $\mathbf{1}=(1,2,\dots,n)^T$ 不对——准确写法：第 $i$ 行 $=i(1,1,\dots,1)+ae_i$。由矩阵行列式引理，\n\n$$|A|=a^{\,n-1}\Bigl(a+\sum_{i=1}^n i\Bigr)=a^{\,n-1}\Bigl(a+\tfrac{n(n+1)}{2}\Bigr).$$\n\n有非零解 $\iff |A|=0\iff a=0$ 或 $a=-\dfrac{n(n+1)}{2}$。\n\n① $a=0$：第 $i$ 方程为 $i(x_1+\cdots+x_n)=0$，即 $x_1+\cdots+x_n=0$，$r(A)=1$，解空间维 $n-1$，基础解系\n\n$$\xi_i=e_1-e_{i+1}\ (i=1,\dots,n-1),\qquad x=\sum_{i=1}^{n-1}k_i\xi_i.$$\n\n② $a=-\frac{n(n+1)}{2}\neq0$：第 $i$ 方程为 $i\sum_j x_j+a x_i=0$，故 $x_i=-\frac{i}{a}\sum_j x_j\propto i$，即 $x\propto(1,2,\dots,n)^T$。$a\neq0$ 时 $r(A)=n-1$，解空间维 1：\n\n$$x=k(1,2,\dots,n)^T.$$\n\n（验证：第 $i$ 方程 $=i\bigl(\sum_{j=1}^n j\bigr)+a\cdot i=i\bigl[\tfrac{n(n+1)}{2}+a\bigr]=0$。）</p></div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a=0 时 x=\sum_{i=1}^{n-1}k_i(e_1-e_{i+1})；a=-\frac{n(n+1)}{2} 时 x=k(1,2,\ldots,n)^T$</div>
+        <div class="steps"><p>系数矩阵 $A=\mathbf{1}\,(1,2,\dots,n)+aE$，其中 $\mathbf{1}=(1,2,\dots,n)^T$ 不对——准确写法：第 $i$ 行 $=i(1,1,\dots,1)+ae_i$。由矩阵行列式引理，\n\n$$|A|=a^{\,n-1}\Bigl(a+\sum_{i=1}^n i\Bigr)=a^{\,n-1}\Bigl(a+\tfrac{n(n+1)}{2}\Bigr).$$\n\n有非零解 $\iff |A|=0\iff a=0$ 或 $a=-\dfrac{n(n+1)}{2}$。\n\n① $a=0$：第 $i$ 方程为 $i(x_1+\cdots+x_n)=0$，即 $x_1+\cdots+x_n=0$，$r(A)=1$，解空间维 $n-1$，基础解系\n\n$$\xi_i=e_1-e_{i+1}\ (i=1,\dots,n-1),\qquad x=\sum_{i=1}^{n-1}k_i\xi_i.$$\n\n② $a=-\frac{n(n+1)}{2}\neq0$：第 $i$ 方程为 $i\sum_j x_j+a x_i=0$，故 $x_i=-\frac{i}{a}\sum_j x_j\propto i$，即 $x\propto(1,2,\dots,n)^T$。$a\neq0$ 时 $r(A)=n-1$，解空间维 1：\n\n$$x=k(1,2,\dots,n)^T.$$\n\n（验证：第 $i$ 方程 $=i\bigl(\sum_{j=1}^n j\bigr)+a\cdot i=i\bigl[\tfrac{n(n+1)}{2}+a\bigr]=0$。）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 把 a=-n(n+1)/2 情形通解写成 c(1,1,\ldots,1)^T，不满足方程组；n=2,3 验证正确解均为 (1,2,\ldots,n)^T</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a=0 或 a=-10；a=0 时通解 x=k1(1,-1,0,0)^T+k2(1,0,-1,0)^T+k3(1,0,0,-1)^T；a=-10 时通解 x=k(1,2,3,4)^T$</div>
@@ -87,7 +89,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例4.14.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k14_T3_0.png" alt="k14_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k14_T3_1.png" alt="k14_T3 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k14_T3_2.png" alt="k14_T3 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a\neq1 时唯一解；a=1,b\neq-1 时无解；a=1,b=-1 时无穷多解 x=(-1,1,0,0)^T+c_1(1,-2,1,0)^T+c_2(1,-2,0,1)^T$</div>
         <div class="steps"><p>增广矩阵消元：$r_4-3r_1=(0,-1,-2,a-3|-1)$；$r_3+r_2=(0,0,a-1,0|b+1)$；$r_4+r_2=(0,0,0,a-1|0)$：\n\n$$\bar A\to\begin{pmatrix}1&amp;1&amp;1&amp;1&amp;0\\0&amp;1&amp;2&amp;2&amp;1\\0&amp;0&amp;a-1&amp;0&amp;b+1\\0&amp;0&amp;0&amp;a-1&amp;0\end{pmatrix}$$\n\n① $a\neq1$：$r(A)=r(\bar A)=4$，唯一解。回代：$x_4=0,\ x_3=\frac{b+1}{a-1},\ x_2=1-\frac{2(b+1)}{a-1},\ x_1=-1+\frac{b+1}{a-1}$。\n\n② $a=1,\ b\neq-1$：出现矛盾行 $0=b+1\neq0$，无解。\n\n③ $a=1,\ b=-1$：$r(A)=r(\bar A)=2&lt;4$，无穷多解，自由量 $x_3=c_1,x_4=c_2$：\n\n$$x_2=1-2c_1-2c_2,\qquad x_1=-x_2-x_3-x_4=-1+c_1+c_2,$$\n\n$$x=(-1,1,0,0)^T+c_1(1,-2,1,0)^T+c_2(1,-2,0,1)^T.$$</p></div>
@@ -125,8 +127,9 @@
         <div class="steps"><p>(I) 设三个线性无关的解为 $\xi_1,\xi_2,\xi_3$，则 $\xi_2-\xi_1,\ \xi_3-\xi_1$ 是导出组 $Ax=0$ 的两个解。若它们线性相关，则 $\xi_3-\xi_1=k(\xi_2-\xi_1)$，得 $\xi_3=(1-k)\xi_1+k\xi_2$ 与线性无关矛盾，故线性无关，于是 $n-r(A)\geqslant2$，即 $r(A)\leqslant2$。\n\n又 $A$ 的前两行 $(1,1,1,1)$ 与 $(4,3,5,-1)$ 不成比例，$r(A)\geqslant2$。故 $r(A)=2$。\n\n(II) $r(A)=2$ 且有解，故 $r(\bar A)=2$。消元：$r_2-4r_1=(0,-1,1,-5|3)$；$r_3-ar_1=(0,1-a,3-a,b-a|1+a)$；再 $r_3+(1-a)r_2$：\n\n$$(0,\ 0,\ 4-2a,\ b+4a-5\,|\,4-2a).$$\n\n须此行系数全为零：$4-2a=0$ 且 $b+4a-5=0$，得 $a=2,\ b=-3$。\n\n此时同解方程组 $x_1+x_2+x_3+x_4=-1,\ -x_2+x_3-5x_4=3$，自由量 $x_3,x_4$：\n\n$$x_2=x_3-5x_4-3,\qquad x_1=2-2x_3+4x_4,$$\n\n$$x=(2,-3,0,0)^T+c_1(-2,1,1,0)^T+c_2(4,-5,0,1)^T.$$\n\n（验：特解 $(2,-3,0,0)$：$-1,-1,4-3=1$ ✓。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle (I) \xi_2=(0,0,1)^T+k_1(1,1,0)^T；\xi_3=(-\frac12,0,0)^T+k_2(-1,1,0)^T+k_3(0,0,1)^T；(II) 见证明$</div>
-        <div class="steps"><p>先算 $A\xi_1=(0,0,0)^T$（直接相乘验证），即 $\xi_1\in N(A)$。\n\n$$A^2=\begin{pmatrix}2&amp;2&amp;0\\-2&amp;-2&amp;0\\4&amp;4&amp;0\end{pmatrix}.$$\n\n(I) 解 $A\xi_2=\xi_1$：$\bar A\to\begin{pmatrix}1&amp;-1&amp;-1&amp;-1\\0&amp;0&amp;1&amp;1\\0&amp;0&amp;0&amp;0\end{pmatrix}$（$r_2+r_1$ 为零行，$r_3+4r_1=(0,0,-6|-6)$），得 $x_3=1,\ x_1=x_2$：\n\n$$\xi_2=(0,0,1)^T+k_1(1,1,0)^T.$$\n\n解 $A^2\xi_3=\xi_1$：即 $2x_1+2x_2=-1$（三行同解），$x_1=-\frac12-x_2$，$x_2,x_3$ 自由：\n\n$$\xi_3=\Bigl(-\frac12,0,0\Bigr)^T+k_2(-1,1,0)^T+k_3(0,0,1)^T.$$\n\n(II) 设 $k_1\xi_1+k_2\xi_2+k_3\xi_3=0$。两边左乘 $A^2$：$k_1A^2\xi_1+k_2A^2\xi_2+k_3A^2\xi_3=0$。由 $A\xi_1=0$ 得 $A^2\xi_1=0$；由 $A\xi_2=\xi_1$ 得 $A^2\xi_2=A\xi_1=0$；$A^2\xi_3=\xi_1$。故 $k_3\xi_1=0$，而 $\xi_1\neq0$，得 $k_3=0$。\n\n于是 $k_1\xi_1+k_2\xi_2=0$，左乘 $A$：$k_1A\xi_1+k_2A\xi_2=k_2\xi_1=0$，得 $k_2=0$；进而 $k_1\xi_1=0$ 得 $k_1=0$。故 $\xi_1,\xi_2,\xi_3$ 线性无关。</p></div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle \xi_2=(0,0,1)^T+k(1,-1,2)^T；\xi_3=(-\frac12,0,0)^T+k_1(-1,1,0)^T+k_2(0,0,1)^T$</div>
+        <div class="steps"><p>先算 $A\xi_1=(0,0,0)^T$（直接相乘验证），即 $\xi_1\in N(A)$。\n\n$$A^2=\begin{pmatrix}2&amp;2&amp;0\\-2&amp;-2&amp;0\\4&amp;4&amp;0\end{pmatrix}.$$\n\n(I) 解 $A\xi_2=\xi_1$：$\bar A\to\begin{pmatrix}1&amp;-1&amp;-1&amp;-1\\0&amp;0&amp;1&amp;1\\0&amp;0&amp;0&amp;0\end{pmatrix}$（$r_2+r_1$ 为零行，$r_3+4r_1=(0,0,-6|-6)$），得 $x_3=1,\ x_1=x_2$：\n\n$$\xi_2=(0,0,1)^T+k_1(1,1,0)^T.$$\n\n解 $A^2\xi_3=\xi_1$：即 $2x_1+2x_2=-1$（三行同解），$x_1=-\frac12-x_2$，$x_2,x_3$ 自由：\n\n$$\xi_3=\Bigl(-\frac12,0,0\Bigr)^T+k_2(-1,1,0)^T+k_3(0,0,1)^T.$$\n\n(II) 设 $k_1\xi_1+k_2\xi_2+k_3\xi_3=0$。两边左乘 $A^2$：$k_1A^2\xi_1+k_2A^2\xi_2+k_3A^2\xi_3=0$。由 $A\xi_1=0$ 得 $A^2\xi_1=0$；由 $A\xi_2=\xi_1$ 得 $A^2\xi_2=A\xi_1=0$；$A^2\xi_3=\xi_1$。故 $k_3\xi_1=0$，而 $\xi_1\neq0$，得 $k_3=0$。\n\n于是 $k_1\xi_1+k_2\xi_2=0$，左乘 $A$：$k_1A\xi_1+k_2A\xi_2=k_2\xi_1=0$，得 $k_2=0$；进而 $k_1\xi_1=0$ 得 $k_1=0$。故 $\xi_1,\xi_2,\xi_3$ 线性无关。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：由 A\xi_1=0、A\xi_2=\xi_1、A^2\xi_3=\xi_1 知 N(A^2)\supseteq N(A)=span(\xi_1)；A、B 给出的 N(A^2)=span{(-1,1,0)^T,(0,0,1)^T} 恰含 (1,-1,2)^T，故 \xi_1=(1,-1,2)^T，\xi_2 的自由方向应为 (1,-1,2)^T；solver 写成 (1,1,0)^T 且 (1,1,0)^T 不在其自身 N(A^2) 中，自相矛盾</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle (I) \lambda=-1,\ a=-2；(II) x=\bigl(\frac32,-\frac12,0\bigr)^T+c(1,0,1)^T$</div>
