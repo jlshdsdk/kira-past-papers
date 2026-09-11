@@ -21,34 +21,58 @@
 
   <div class="card q" id="k37_T1">
     <div class="qhead"><span class="qno">k37_T1</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1990</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.12.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k37_T1_0.png" alt="k37_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 独立（且 X,Y 均服从参数为 0.5 的指数分布）$</div>
+        <div class="steps"><p>求边缘分布函数：<br>$$F_X(x)=F(x,+\infty)=1-e^{-0.5x}\ (x\ge0),\qquad F_Y(y)=F(+\infty,y)=1-e^{-0.5y}\ (y\ge0).$$<br>对一切 x,y（含 x&lt;0 或 y&lt;0 时两边均为 0）都有<br>$$F(x,y)=\left(1-e^{-0.5x}\right)\left(1-e^{-0.5y}\right)=F_X(x)F_Y(y),$$<br>故 X 与 Y 相互独立，且均服从参数 0.5 的指数分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \alpha=e^{-0.1}$</div>
+        <div class="steps"><p>X,Y 单位为千小时，100 小时 = 0.1 千小时。由独立性：<br>$$\alpha=P\{X&gt;0.1,\,Y&gt;0.1\}=P\{X&gt;0.1\}\,P\{Y&gt;0.1\}=e^{-0.5\times0.1}\cdot e^{-0.5\times0.1}=e^{-0.1}\approx0.905.$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k37_T2">
     <div class="qhead"><span class="qno">k37_T2</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1991</span> <span class="badge year">1993</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.12.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k37_T2_0.png" alt="k37_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 不独立$</div>
+        <div class="steps"><p>$$f(x,y)=\begin{cases}\dfrac{1}{\pi r^2}, &amp; x^2+y^2\le r^2\\ 0, &amp; \text{其他}\end{cases}$$<br>边缘密度：<br>$$f_X(x)=\int_{-\sqrt{r^2-x^2}}^{\sqrt{r^2-x^2}}\frac{dy}{\pi r^2}=\frac{2\sqrt{r^2-x^2}}{\pi r^2},\quad |x|\le r,$$<br>f_Y(y) 同理。<br>在 (0,0) 处：f_X(0)f_Y(0)=\frac{4r^2}{\pi^2r^4}=\frac{4}{\pi^2r^2}\ne\frac{1}{\pi r^2}=f(0,0)，即 f(x,y)\ne f_X(x)f_Y(y)。<br>故 X 与 Y 不独立（几何原因：均匀分布的支撑是圆盘而非矩形乘积区域）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 不独立$</div>
+        <div class="steps"><p>取事件 A=\{X&gt;1\}，B=\{|X|\le1\}，则 A\cap B=\varnothing，故 P(AB)=0。<br>但 P(A)=\int_1^{+\infty}\frac12e^{-x}\,dx=\frac{1}{2e}&gt;0，P(B)=\int_{-1}^{1}\frac12e^{-|x|}\,dx=\int_0^1 e^{-x}dx=1-\frac1e&gt;0，<br>故 P(A)P(B)=\frac{1}{2e}\left(1-\frac1e\right)&gt;0\ne P(AB)。<br>P(AB)\ne P(A)P(B)，即事件 \{X&gt;1\} 与 \{|X|\le1\} 不独立，故 X 与 |X| 不相互独立。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k37_T3">
     <div class="qhead"><span class="qno">k37_T3</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2016</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例3.12.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k37_T3_0.png" alt="k37_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=\begin{cases}3, & 0<x<1,\ x^2<y<\sqrt{x}\\ 0, & \text{其他}\end{cases}$</div>
+        <div class="steps"><p>$$S=\int_0^{1}\left(\sqrt{x}-x^2\right)dx=\frac23-\frac13=\frac13.$$<br>故 f(x,y)=\frac{1}{S}=3（(x,y)\in D），其他处为 0。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 不独立$</div>
+        <div class="steps"><p>$$P\{U=1\}=P\{X\le Y\}=3\int_0^{1}(\sqrt{x}-x)\,dx=3\left(\frac23-\frac12\right)=\frac12.$$<br>若 U 与 X 独立，则对任意 0&lt;t&lt;1 应有 P\{U=1,\,X\le t\}=\frac12 P\{X\le t\}。计算：<br>$$P\{U=1,\,X\le t\}=3\int_0^{t}(\sqrt{x}-x)\,dx=2t^{3/2}-\frac32t^2,$$<br>$$P\{X\le t\}=3\int_0^{t}(\sqrt{x}-x^2)\,dx=2t^{3/2}-t^3.$$<br>取 t=\frac12：左边 =2\cdot\frac{1}{2\sqrt2}-\frac38=\frac{\sqrt2}{2}-\frac38\approx0.332；右边 =\frac12\left(\frac{\sqrt2}{2}-\frac18\right)\approx0.291，二者不等。<br>故 U 与 X 不相互独立。（等价地：P\{U=1\mid X=x\}=\frac{\sqrt{x}-x}{\sqrt{x}-x^2} 随 x 变化而非常数 1/2。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

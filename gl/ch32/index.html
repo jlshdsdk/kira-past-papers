@@ -21,100 +21,280 @@
 
   <div class="card q" id="k32_T1">
     <div class="qhead"><span class="qno">k32_T1</span>
-      <span class="badge">共 5 小题</span>
+      <span class="badge">共 5 小题</span><span class="badge year">1990</span> <span class="badge year">1993</span> <span class="badge year">2003</span> <span class="badge year">2018</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T1_0.png" alt="k32_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k32_T1_1.png" alt="k32_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (B)$</div>
+        <div class="steps"><p>由分布函数定义与偶函数性质：</p>
+<p>$$F(-a)=\int_{-\infty}^{-a}\varphi(x)\,dx \xlongequal{x=-t}\int_{a}^{+\infty}\varphi(t)\,dt=1-F(a).$$</p>
+<p>又 $\varphi$ 为偶函数，故 $\int_{-\infty}^{0}\varphi\,dx=\dfrac12$，从而</p>
+<p>$$F(a)=\frac12+\int_{0}^{a}\varphi(x)\,dx \;\Longrightarrow\; F(-a)=1-\frac12-\int_{0}^{a}\varphi(x)\,dx=\frac12-\int_{0}^{a}\varphi(x)\,dx.$$</p>
+<p>验证：(A) 中 $1-\int_0^a\varphi\,dx=1-F(a)+\frac12\neq F(-a)$（除非 $F(a)=\frac12$）；(C)(D) 显然不满足 $F(-a)=1-F(a)$。选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}\dfrac12 e^{x}, & x<0,\\[2mm] 1-\dfrac12 e^{-x}, & x\ge 0.\end{cases}$</div>
+        <div class="steps"><p>分段积分。</p>
+<p>当 $x&lt;0$：</p>
+<p>$$F(x)=\int_{-\infty}^{x}\frac12 e^{t}\,dt=\frac12 e^{x}.$$</p>
+<p>当 $x\ge 0$：</p>
+<p>$$F(x)=\int_{-\infty}^{0}\frac12 e^{t}\,dt+\int_{0}^{x}\frac12 e^{-t}\,dt=\frac12+\frac12\big(1-e^{-x}\big)=1-\frac12 e^{-x}.$$</p>
+<p>检验：$F$ 连续（$F(0)=\frac12$ 两侧一致）、单调不减、$F(+\infty)=1$，$F&#x27;=f$。此即 Laplace 分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, & x\le\theta,\\[1mm] 1-e^{-2(x-\theta)}, & x>\theta.\end{cases}$</div>
+        <div class="steps"><p>当 $x\le\theta$ 时 $f=0$，故 $F(x)=0$。</p>
+<p>当 $x&gt;\theta$ 时：</p>
+<p>$$F(x)=\int_{\theta}^{x}2e^{-2(t-\theta)}\,dt=\Big[-e^{-2(t-\theta)}\Big]_{\theta}^{x}=1-e^{-2(x-\theta)}.$$</p>
+<p>检验：$F(\theta^+)=0$ 连续，$F(+\infty)=1$，$F&#x27;=f$。即 $X\sim\theta+\mathrm{Exp}(2)$（平移指数分布）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (A)，即 0.2$</div>
+        <div class="steps"><p>$f(1+x)=f(1-x)$ 说明密度关于 $x=1$ 对称，故 $\displaystyle\int_0^2 f\,dx=2\int_0^1 f\,dx=0.6$，即 $\int_0^1 f\,dx=0.3$；且由对称性</p>
+<p>$$\int_{-\infty}^{0}f\,dx=\int_{2}^{+\infty}f\,dx=\frac{1-0.6}{2}=0.2.$$</p>
+<p>故 $P\{X&lt;0\}=\int_{-\infty}^{0}f\,dx=0.2$，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>设 $Y$ 的分布函数 $F_Y(y)=F(ay+b)$（$a\neq0$），则 $Y$ 与 $\dfrac{X-b}{a}$ 同分布，因为</p>
+<p>$$P\Big\{\frac{X-b}{a}\le y\Big\}=P\{X\le ay+b\}=F(ay+b).$$</p>
+<p>于是 $E Y=\dfrac{\mu-b}{a}=0\Rightarrow b=\mu$；$Var\,Y=\dfrac{\sigma^2}{a^2}=1\Rightarrow a^2=\sigma^2$。四个选项中 $a$ 只取正值，故 $a=\sigma,\ b=\mu$，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T2">
     <div class="qhead"><span class="qno">k32_T2</span>
-      <span class="badge">共 3 小题</span>
+      <span class="badge">共 3 小题</span><span class="badge year">2002</span> <span class="badge year">2010</span> <span class="badge year">2011</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T2_0.png" alt="k32_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k32_T2_1.png" alt="k32_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (D) F_1(x)F_2(x) 必为某一随机变量的分布函数$</div>
+        <div class="steps"><p>(A) $\int_{-\infty}^{+\infty}(f_1+f_2)dx=1+1=2\neq1$，排除。</p>
+<p>(B) 反例：$X_1,X_2\sim U(0,2)$，$f_1f_2=\frac14$ 于 $(0,2)$，积分 $=\frac12\neq1$，排除。</p>
+<p>(C) $\lim_{x\to+\infty}(F_1+F_2)=2\neq1$，不满足分布函数归一性，排除。</p>
+<p>(D) $G(x)=F_1(x)F_2(x)$：单调不减（两不减函数之积）、右连续、$G(-\infty)=0$、$G(+\infty)=1$，满足分布函数三条性质；事实上 $G$ 正是 $\max(X_1,X_2)$ 的分布函数 $P\{X_1\le x, X_2\le x\}$（用了独立性）。选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)$</div>
+        <div class="steps"><p>记 $G(x)=F_1(x)F_2(x)$，它是 $\max(X_1,X_2)$ 的分布函数（上题结论），且 $G(-\infty)=0,\ G(+\infty)=1$。由密度连续，</p>
+<p>$$G&#x27;(x)=f_1(x)F_2(x)+f_2(x)F_1(x),$$</p>
+<p>于是</p>
+<p>$$\int_{-\infty}^{+\infty}\big[f_1F_2+f_2F_1\big]\,dx=G(+\infty)-G(-\infty)=1,$$</p>
+<p>且被积函数非负连续，故 (D) 是概率密度。</p>
+<p>(A)(B)(C) 的积分均不必为 1（如两同分布 $U(0,2)$ 时 $\int f_1f_2=\frac12$；$\int 2f_2F_1dx=2E[F_1(X_2)]$ 未必为 1）。选 (D)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (A) 2a+3b=4$</div>
+        <div class="steps"><p>归一性：$1=\int_{-\infty}^{0}af_1\,dx+\int_{0}^{+\infty}bf_2\,dx$。</p>
+<p>第一段：$a\displaystyle\int_{-\infty}^{0}\frac{1}{\sqrt{2\pi}}e^{-x^2/2}dx=a\cdot\frac12=\frac a2$（标准正态关于 0 对称）。</p>
+<p>第二段：$f_2=\dfrac14$ 于 $[-1,3]$，故 $\displaystyle\int_{0}^{+\infty}f_2\,dx=\int_{0}^{3}\frac14\,dx=\frac34$，该段积分 $=\dfrac{3b}{4}$。</p>
+<p>于是 $\dfrac a2+\dfrac{3b}{4}=1$，即 $2a+3b=4$，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T3">
     <div class="qhead"><span class="qno">k32_T3</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1993</span> <span class="badge year">2000</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T3_0.png" alt="k32_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=\sqrt[3]{4}$</div>
+        <div class="steps"><p>记 $p=P\{X&gt;a\}$。当 $0&lt;a&lt;2$：</p>
+<p>$$p=\int_a^2\frac38x^2\,dx=\frac18\big(8-a^3\big)=1-\frac{a^3}{8}.$$</p>
+<p>由 $A,B$ 独立且同分布：</p>
+<p>$$P(A\cup B)=p+p-p^2=\frac34\;\Longrightarrow\;p^2-2p+\frac34=0\;\Longrightarrow\;p=\frac{2\pm1}{2}=\frac32\ \text{或}\ \frac12.$$</p>
+<p>$p\le1$，舍 $\frac32$，得 $p=\frac12$。于是 $1-\dfrac{a^3}{8}=\dfrac12\Rightarrow a^3=4\Rightarrow a=\sqrt[3]{4}\approx1.587\in(0,2)$，符合题设。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle k\in[1,3]$</div>
+        <div class="steps"><p>各段概率：$P\{0\le X\le1\}=\dfrac13$，$P\{3\le X\le6\}=\dfrac29\times3=\dfrac23$。</p>
+<p>- $k\in(1,3]$：$P\{X\ge k\}=P\{3\le X\le6\}=\dfrac23$，恒成立；<br>- $k=1$：$P\{X\ge1\}=\dfrac23$，成立；<br>- $k\in[0,1)$：$P\{X\ge k\}=\dfrac{1-k}{3}+\dfrac23&gt;\dfrac23$，不成立；<br>- $k&lt;0$：$P=1$；$k\in(3,6]$：$P=\dfrac29(6-k)&lt;\dfrac23$；$k&gt;6$：$P=0$，均不成立。</p>
+<p>故 $k$ 的取值范围是 $1\le k\le 3$，即 $k\in[1,3]$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T4">
     <div class="qhead"><span class="qno">k32_T4</span>
-      <span class="badge">共 2 小题</span>
+      <span class="badge">共 2 小题</span><span class="badge year">1993</span> <span class="badge year">2013</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T4_0.png" alt="k32_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k32_T4_1.png" alt="k32_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) F_T(t)=1-e^{-\lambda t}\ (t\ge0)，即 T\sim Exp(\lambda)；(II) Q=e^{-8\lambda}$</div>
+        <div class="steps"><p>(I) $T$ 是从某次故障到下一次故障的等待时间。当 $t\ge0$：</p>
+<p>$$P\{T&gt;t\}=P\{N(t)=0\}=\frac{(\lambda t)^0}{0!}e^{-\lambda t}=e^{-\lambda t},$$</p>
+<p>故</p>
+<p>$$F_T(t)=P\{T\le t\}=\begin{cases}1-e^{-\lambda t}, &amp; t\ge0,\\0, &amp; t&lt;0.\end{cases}$$</p>
+<p>即 $T$ 服从参数为 $\lambda$ 的指数分布。</p>
+<p>(II) 由指数分布的无记忆性（或直接用泊松分布独立增量）：</p>
+<p>$$Q=P\{T\ge16\mid T\ge8\}=\frac{P\{T\ge16\}}{P\{T\ge8\}}=\frac{e^{-16\lambda}}{e^{-8\lambda}}=e^{-8\lambda}.$$</p>
+<p>注意 $Q=P\{T\ge8\}$：已无故障工作 8 小时的条件不改变后续等待时间的分布。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 1-e^{-1}$</div>
+        <div class="steps"><p>$f(y)=e^{-y}\ (y\ge0)$，$P\{Y&gt;a\}=e^{-a}$。</p>
+<p>$$P\{Y\le a+1\mid Y&gt;a\}=\frac{P\{a&lt;Y\le a+1\}}{P\{Y&gt;a\}}=\frac{e^{-a}-e^{-(a+1)}}{e^{-a}}=1-e^{-1}.$$</p>
+<p>即无记忆性：$P\{Y\le a+1\mid Y&gt;a\}=P\{Y\le1\}=1-e^{-1}\approx0.632$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T5">
     <div class="qhead"><span class="qno">k32_T5</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">1989</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.5）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T5_0.png" alt="k32_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac45$</div>
+        <div class="steps"><p>方程有实根 $\iff$ 判别式 $\Delta=\xi^2-4\ge0\iff\xi\ge2$（因 $\xi&gt;1&gt;0$，舍 $\xi\le-2$）。</p>
+<p>$\xi\sim U(1,6)$，密度 $f=\dfrac15$ 于 $(1,6)$，故</p>
+<p>$$P\{\xi\ge2\}=\frac{6-2}{6-1}=\frac45.$$</p>
+<p>（$\{2\le\xi&lt;6\}$ 的长度为 4，区间总长 5。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T6">
     <div class="qhead"><span class="qno">k32_T6</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2021</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.6）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T6_0.png" alt="k32_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}1, & 0<x<1,\\0, & \text{其他}.\end{cases}$</div>
+        <div class="steps"><p>设取点坐标 $U\sim U(0,2)$，则 $X=\min(U,\,2-U)\in(0,1)$。</p>
+<p>当 $0&lt;x&lt;1$：</p>
+<p>$$F_X(x)=P\{\min(U,2-U)\le x\}=1-P\{x&lt;U&lt;2-x\}=1-\frac{(2-x)-x}{2}=1-(1-x)=x.$$</p>
+<p>当 $x\le0$ 时 $F_X=0$；$x\ge1$ 时 $F_X=1$。</p>
+<p>故 $f_X(x)=F_X&#x27;(x)=1\ (0&lt;x&lt;1)$，其他为 0，即 $X\sim U(0,1)$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T7">
     <div class="qhead"><span class="qno">k32_T7</span>
-      <span class="badge">共 4 小题</span>
+      <span class="badge">共 4 小题</span><span class="badge year">1988</span> <span class="badge year">1991</span> <span class="badge year">2002</span> <span class="badge year">2013</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T7_0.png" alt="k32_T7 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k32_T7_1.png" alt="k32_T7 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 0.9876$</div>
+        <div class="steps"><p>均方差即 $\sigma=0.02$。标准化：</p>
+<p>$$P\{9.95&lt;X&lt;10.05\}=P\Big\{\Big|\frac{X-10}{0.02}\Big|&lt;\frac{0.05}{0.02}\Big\}=P\{|Z|&lt;2.5\},\quad Z\sim N(0,1).$$</p>
+<p>$$P\{|Z|&lt;2.5\}=2\Phi(2.5)-1=2\times0.9938-1=0.9876.$$</p>
+<p>（题给 $\phi(x)=\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}}e^{-u^2/2}du$ 即标准正态分布函数 $\Phi$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 0.2$</div>
+        <div class="steps"><p>正态密度关于 $x=2$ 对称，故 $P\{X&lt;2\}=P\{X&gt;2\}=0.5$。</p>
+<p>$$P\{X\ge4\}=P\{X&gt;2\}-P\{2&lt;X&lt;4\}=0.5-0.3=0.2.$$</p>
+<p>0 与 4 关于对称轴 $x=2$ 等距，故 $P\{X&lt;0\}=P\{X&gt;4\}=0.2$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \mu=4$</div>
+        <div class="steps"><p>方程无实根 $\iff$ 判别式 $\Delta=16-4X&lt;0\iff X&gt;4$。</p>
+<p>由 $P\{X&gt;4\}=\dfrac12$，而正态分布仅有关于 $x=\mu$ 的一半概率（$P\{X&gt;\mu\}=\dfrac12$）且单峰对称，故 $\mu=4$。</p>
+<p>严格地说：$P\{X&gt;4\}=1-\Phi\big(\frac{4-\mu}{\sigma}\big)=\frac12\Rightarrow\frac{4-\mu}{\sigma}=0\Rightarrow\mu=4$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (A)\ p_1>p_2>p_3$</div>
+        <div class="steps"><p>$p_i=P\Big\{\dfrac{-2-\mu_i}{\sigma_i}\le Z\le\dfrac{2-\mu_i}{\sigma_i}\Big\}$：</p>
+<p>$$p_1=P\{-2\le Z\le2\}=2\Phi(2)-1\approx0.954\,5.$$</p>
+<p>$$p_2=P\{-1\le Z\le1\}=2\Phi(1)-1\approx0.682\,6.$$</p>
+<p>$$p_3=P\Big\{\frac{-7}{3}\le Z\le\frac{-3}{3}\Big\}=\Phi(-1)-\Phi(-2.33)\approx0.158\,7-0.009\,9\approx0.149.$$</p>
+<p>直观：$(-2,2]$ 恰是 $X_1$ 的对称区间，区间偏离 $X_2,X_3$ 的对称中心且 $X_3$ 偏得最远，概率递减。故 $p_1&gt;p_2&gt;p_3$，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T8">
     <div class="qhead"><span class="qno">k32_T8</span>
-      <span class="badge">共 6 小题</span>
+      <span class="badge">共 6 小题</span><span class="badge year">1995</span> <span class="badge year">2006</span> <span class="badge year">2016</span> <span class="badge year">2019</span> <span class="badge year">2024</span> <span class="badge year">2026</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.8）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T8_0.png" alt="k32_T8 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k32_T8_1.png" alt="k32_T8 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (C) 保持不变$</div>
+        <div class="steps"><p>标准化：</p>
+<p>$$P\{|X-\mu|&lt;\sigma\}=P\Big\{\Big|\frac{X-\mu}{\sigma}\Big|&lt;1\Big\}=2\Phi(1)-1\approx0.682\,6,$$</p>
+<p>与 $\sigma$（也无关 $\mu$）无关，保持不变，选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (A) \sigma_1<\sigma_2$</div>
+        <div class="steps"><p>$$P\{|X-\mu_1|&lt;1\}=2\Phi\Big(\frac{1}{\sigma_1}\Big)-1&gt;2\Phi\Big(\frac{1}{\sigma_2}\Big)-1=P\{|Y-\mu_2|&lt;1\}.$$</p>
+<p>$\Phi$ 严格递增，故 $\dfrac{1}{\sigma_1}&gt;\dfrac{1}{\sigma_2}$，即 $\sigma_1&lt;\sigma_2$。与 $\mu$ 无关，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (B) p 随 \sigma 的增加而增加$</div>
+        <div class="steps"><p>标准化：</p>
+<p>$$p=P\{X\le\mu+\sigma^2\}=\Phi\Big(\frac{\mu+\sigma^2-\mu}{\sigma}\Big)=\Phi(\sigma).$$</p>
+<p>$p$ 只依赖 $\sigma$：与 $\mu$ 无关（排除 A、C）；$\Phi$ 严格递增，故 $p$ 随 $\sigma$ 增加而增加，选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (A)$</div>
+        <div class="steps"><p>独立正态线性组合：$X-Y\sim N(\mu-\mu,\ \sigma^2+\sigma^2)=N(0,2\sigma^2)$。</p>
+<p>$$P\{|X-Y|&lt;1\}=P\Big\{\Big|\frac{X-Y}{\sqrt2\,\sigma}\Big|&lt;\frac{1}{\sqrt2\,\sigma}\Big\}=2\Phi\Big(\frac{1}{\sqrt2\,\sigma}\Big)-1.$$</p>
+<p>只含 $\sigma$，不含 $\mu$：与 $\mu$ 无关、与 $\sigma^2$ 有关，选 (A)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (B)\ a=\sqrt{10}-2$</div>
+        <div class="steps"><p>独立正态线性组合（第二参数为方差）：</p>
+<p>$$2X+Y\sim N(2\cdot0+(-2),\ 4\cdot2+2)=N(-2,10),$$</p>
+<p>$$P\{2X+Y&lt;a\}=\Phi\Big(\frac{a+2}{\sqrt{10}}\Big).$$</p>
+<p>$$X-Y\sim N(0-(-2),\ 2+2)=N(2,4),\qquad P\{X&gt;Y\}=P\{X-Y&gt;0\}=1-\Phi\Big(\frac{0-2}{2}\Big)=1-\Phi(-1)=\Phi(1).$$</p>
+<p>由 $\Phi\big(\frac{a+2}{\sqrt{10}}\big)=\Phi(1)$ 得 $\dfrac{a+2}{\sqrt{10}}=1$，故 $a=\sqrt{10}-2$，选 (B)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (C) 最小值点 -1，最小值 2$</div>
+        <div class="steps"><p>展开并利用 $EX=1$、$EX^2=Var X+(EX)^2=2+1=3$：</p>
+<p>$$f(t)=E[X^2]+2t\,E X+t^2=t^2+2t+3=(t+1)^2+2.$$</p>
+<p>最小值点 $t=-1$，最小值 $f(-1)=2$，选 (C)。</p>
+<p>（亦可由 $f(t)=E[(X+t)^2]=Var(X)+(EX+t)^2=2+(1+t)^2$ 直接得出。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k32_T9">
     <div class="qhead"><span class="qno">k32_T9</span>
-      
+      <span class="badge">共 1 小题</span><span class="badge year">2004</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例2.7.9）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T9_0.png" alt="k32_T9 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (C)\ x=u_{\frac{1-\alpha}{2}}$</div>
+        <div class="steps"><p>由标准正态对称性（$x&gt;0$）：</p>
+<p>$$\alpha=P\{|X|&lt;x\}=\Phi(x)-\Phi(-x)=2\Phi(x)-1\;\Longrightarrow\;\Phi(x)=\frac{1+\alpha}{2}.$$</p>
+<p>于是上侧概率</p>
+<p>$$P\{X&gt;x\}=1-\Phi(x)=\frac{1-\alpha}{2}.$$</p>
+<p>按题给定义 $P\{X&gt;u_\beta\}=\beta$，取 $\beta=\dfrac{1-\alpha}{2}$ 即得</p>
+<p>$$x=u_{\frac{1-\alpha}{2}}.$$</p>
+<p>排除法验证：取 $\alpha=0.95$，$x\approx1.96$，而 $u_{0.025}=1.96=u_{(1-\alpha)/2}$ 吻合；(B) $u_{1-\alpha/2}=u_{0.525}&lt;0$，代入则 $P\{|X|&lt;x\}=0$，矛盾；(A) $u_{\alpha/2}$、(D) $u_{1-\alpha}$ 同理不合。故选 (C)。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>
