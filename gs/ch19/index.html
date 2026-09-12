@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -82,7 +82,7 @@
 <p>故选 D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f'_+(0) 存在，且 f'_+(0)=A$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f&#x27;_+(0) 存在，且 f&#x27;_+(0)=A$</div>
         <div class="steps"><p>任取 $x\in(0,\delta)$。$f$ 在 $[0,x]$ 上连续（在 $x=0$ 处连续，在 $(0,x]$ 上连续）、在 $(0,x)$ 内可导，由拉格朗日中值定理，存在 $\xi_x\in(0,x)$ 使</p>
 <p>$$\frac{f(x)-f(0)}{x-0}=f&#x27;(\xi_x).$$</p>
 <p>当 $x\to0^+$ 时，$0&lt;\xi_x&lt;x\to0^+$。对任意 $\varepsilon&gt;0$，由 $\lim\limits_{t\to0^+}f&#x27;(t)=A$，存在 $\delta&#x27;\in(0,\delta)$，当 $0&lt;t&lt;\delta&#x27;$ 时 $\left|f&#x27;(t)-A\right|&lt;\varepsilon$。于是当 $0&lt;x&lt;\delta&#x27;$ 时，$0&lt;\xi_x&lt;x&lt;\delta&#x27;$，从而</p>
@@ -92,7 +92,7 @@
 <p>存在且等于 $A$。（注意不能用洛必达法则，否则要用到 $f&#x27;(0)$ 存在这一待证结论。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a<x_0=b-\dfrac{f(b)}{f'(b)}<b$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle a&lt;x_0=b-\dfrac{f(b)}{f&#x27;(b)}&lt;b$</div>
         <div class="steps"><p>曲线在点 $\left(b,f(b)\right)$ 处的切线为 $y=f(b)+f&#x27;(b)(x-b)$，令 $y=0$ 得交点横坐标</p>
 <p>$$x_0=b-\frac{f(b)}{f&#x27;(b)}.$$</p>
 <p>**证 $x_0&lt;b$：** 由拉格朗日中值定理，存在 $\xi\in(a,b)$ 使</p>
@@ -114,12 +114,12 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k19_T3_0.png" alt="k19_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 a>0，使 f(a)=1$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 a&gt;0，使 f(a)=1$</div>
         <div class="steps"><p>由 $\lim\limits_{x\to+\infty}f(x)=2&gt;1$，取 $\varepsilon=\dfrac12$，存在 $X&gt;0$，当 $x&gt;X$ 时 $|f(x)-2|&lt;\dfrac12$，即 $f(x)&gt;\dfrac32&gt;1$。取定 $b&gt;X$，则 $f(b)&gt;1$。</p>
 <p>$f$ 在 $[0,b]$ 上连续（可导 $\Rightarrow$ 连续），$f(0)=0&lt;1&lt;f(b)$，由零点定理，存在 $a\in(0,b)$ 使 $f(a)=1$，显然 $a&gt;0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,a)，使 f'(\xi)=\dfrac{1}{a}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,a)，使 f&#x27;(\xi)=\dfrac{1}{a}$</div>
         <div class="steps"><p>由 (1)，$f(a)=1,\ f(0)=0$。$f$ 在 $[0,a]$ 上连续、$(0,a)$ 内可导，由拉格朗日中值定理，存在 $\xi\in(0,a)$ 使</p>
 <p>$$f&#x27;(\xi)=\frac{f(a)-f(0)}{a-0}=\frac{1-0}{a}=\frac1a.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>

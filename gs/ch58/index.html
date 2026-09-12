@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -180,7 +180,7 @@
         <div class="steps"><p>(I) 化简 P=\frac{1}{y}+yf(xy),\ Q=xf(xy)-\frac{x}{y^2}：<br>$$\frac{\partial P}{\partial y}=-\frac{1}{y^2}+f(xy)+xyf&#x27;(xy),\qquad \frac{\partial Q}{\partial x}=f(xy)+xyf&#x27;(xy)-\frac{1}{y^2},$$<br>两者相等；上半平面为单连通区域，故 I 与路径无关。<br>(II) 注意 d\left(\frac{x}{y}\right)=\frac{dx}{y}-\frac{x\,dy}{y^2}，且 y\,dx+x\,dy=d(xy)，故<br>$$Pdx+Qdy=d\left(\frac{x}{y}\right)+f(xy)\,d(xy)=d\left(\frac{x}{y}+F(xy)\right),\quad F&#x27;(u)=f(u).$$<br>$$I=\left[\frac{x}{y}+F(xy)\right]_{(a,b)}^{(c,d)}=\frac{c}{d}-\frac{a}{b}+F(cd)-F(ab)\xlongequal{ab=cd}\frac{c}{d}-\frac{a}{b}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (B)，\int_\Gamma f(x,y)\,dy<0$</div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (B)，\int_\Gamma f(x,y)\,dy&lt;0$</div>
         <div class="steps"><p>在 \Gamma 上 f\equiv1，故：<br>(C) \int_\Gamma f\,ds=\int_\Gamma ds= 弧长 &gt;0；<br>(D) \int_\Gamma f_x&#x27;dx+f_y&#x27;dy=\int_\Gamma df=f(N)-f(M)=1-1=0；<br>(A) \int_\Gamma f\,dx=\int_\Gamma dx=x_N-x_M，M 在第二象限 x_M&lt;0，N 在第四象限 x_N&gt;0，故 &gt;0；<br>(B) \int_\Gamma f\,dy=\int_\Gamma dy=y_N-y_M，y_M&gt;0,\ y_N&lt;0，故 &lt;0。选 (B)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

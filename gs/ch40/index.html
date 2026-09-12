@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -87,7 +87,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T3_0.png" alt="k40_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k40_T3_1.png" alt="k40_T3 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y^2=2x^2(\ln x+1)\quad(x>0)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y^2=2x^2(\ln x+1)\quad(x&gt;0)$</div>
         <div class="steps"><p>$\dfrac{dy}{dx}=\dfrac{x^2+y^2}{xy}=\dfrac{x}{y}+\dfrac{y}{x}$，齐次方程。令 $u=\dfrac yx$，$y&#x27;=u+xu&#x27;$：<br>$$u+xu&#x27;=\frac1u+u\ \Rightarrow\ xu&#x27;=\frac1u\ \Rightarrow\ u\,du=\frac{dx}{x},$$<br>积分：$\dfrac{u^2}{2}=\ln|x|+C$，即<br>$$y^2=x^2\,(2\ln|x|+C_1).$$<br>代入 $x=e,\ y=2e$：$4e^2=e^2(2+C_1)\Rightarrow C_1=2$。故<br>$$y^2=2x^2(\ln x+1)\quad(x&gt;0).$$<br>验证：$2yy&#x27;=4x(\ln x+1)+2x$，$xy\,y&#x27;=2x^2\ln x+3x^2=x^2+y^2$（代入 $y^2$ 表达式可核）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -111,7 +111,7 @@
         <div class="steps"><p>$y=\dfrac{x}{\ln x}\Rightarrow y&#x27;=\dfrac{\ln x-1}{\ln^2 x}$，而 $\dfrac yx=\dfrac{1}{\ln x}$，故<br>$$y&#x27;=\frac{y}{x}-\frac{1}{\ln^2 x}=\frac yx-\Big(\frac yx\Big)^2 .$$<br>代入方程 $y&#x27;=\dfrac yx+\varphi\big(\dfrac xy\big)$：<br>$$\varphi\Big(\frac xy\Big)=-\Big(\frac yx\Big)^2=-\frac{1}{(x/y)^2}=-\frac{y^2}{x^2}.$$<br>故选 (A)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle y=\dfrac{x}{\sqrt{1+\ln x}}\quad(x>e^{-1})$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle y=\dfrac{x}{\sqrt{1+\ln x}}\quad(x&gt;e^{-1})$</div>
         <div class="steps"><p>令 $u=y/x$：$u+xu&#x27;=u-\dfrac{u^3}{2}$，即 $xu&#x27;=-\dfrac{u^3}{2}$，分离：<br>$$\frac{du}{u^3}=-\frac{dx}{2x}\ \Rightarrow\ -\frac{1}{2u^2}=-\frac12\ln x+C\ \Rightarrow\ \frac{1}{u^2}=\ln x+C_1 .$$<br>由 $x=1,\ u=1$：$C_1=1$。故 $u^2=\dfrac{1}{1+\ln x}$；由 $u(1)=1&gt;0$ 取<br>$$u=\frac{1}{\sqrt{1+\ln x}}\ \Rightarrow\ y=\frac{x}{\sqrt{1+\ln x}}\quad(x&gt;e^{-1}).$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -170,7 +170,7 @@
         <div class="steps"><p>视 $y$ 为未知函数：<br>$$y&#x27;+\frac{2x}{x^2-1}y=\frac{\cos x}{x^2-1}.$$<br>注意到 $\big[(x^2-1)y\big]&#x27;=(x^2-1)y&#x27;+2xy=\cos x$，直接积分：<br>$$(x^2-1)y=\sin x+C .$$<br>由 $y(0)=1$：$-1=0+C\Rightarrow C=-1$。故<br>$$y=\frac{\sin x-1}{x^2-1}=\frac{1-\sin x}{1-x^2}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle y(x)=\begin{cases}e^{2x}-1, & x\le 1,\\ (1-e^{-2})e^{2x}, & x>1.\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle y(x)=\begin{cases}e^{2x}-1, &amp; x\le 1,\\ (1-e^{-2})e^{2x}, &amp; x&gt;1.\end{cases}$</div>
         <div class="steps"><p>$x&lt;1$：$y&#x27;-2y=2$，齐次通解 $C_1e^{2x}$，特解 $y_p=-1$，故 $y=C_1e^{2x}-1$。<br>由 $y(0)=0$：$C_1=1$，得 $y=e^{2x}-1$。</p>
 <p>$x&gt;1$：$y&#x27;-2y=0$，$y=C_2e^{2x}$。</p>
 <p>要求 $y$ 在 $x=1$ 处连续：<br>$$\lim_{x\to1^-}y=e^2-1=\lim_{x\to1^+}C_2e^{2x}=C_2e^2\ \Rightarrow\ C_2=1-e^{-2}.$$<br>故<br>$$y(x)=\begin{cases}e^{2x}-1, &amp; x\le 1,\\[2pt] (1-e^{-2})\,e^{2x}, &amp; x&gt;1.\end{cases}$$<br>该函数在 $(-\infty,+\infty)$ 连续，且在各区间内满足方程，$y(0)=0$。</p></div>
@@ -184,7 +184,7 @@
         <div class="steps"><p>与 1992 年题同型：$y&#x27;-\dfrac{1}{2x}y=-\dfrac{x^2}{2}$，通解<br>$$y=C\sqrt{x}-\frac{x^3}{5}.$$<br>由 $y(1)=\dfrac65$：$C-\dfrac15=\dfrac65\Rightarrow C=\dfrac75$。故<br>$$y=\frac75\sqrt{x}-\frac{x^3}{5}=\frac{7\sqrt{x}-x^3}{5}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle \text{(I)}\ F'+2F=4e^{2x};\qquad \text{(II)}\ F(x)=e^{2x}-e^{-2x}$</div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle \text{(I)}\ F&#x27;+2F=4e^{2x};\qquad \text{(II)}\ F(x)=e^{2x}-e^{-2x}$</div>
         <div class="steps"><p>(I) $F&#x27;=f&#x27;g+fg&#x27;=g^2+f^2=(f+g)^2-2fg=4e^{2x}-2F$，即<br>$$F&#x27;+2F=4e^{2x}.$$</p>
 <p>(II) 一阶线性方程，两边乘 $e^{2x}$：<br>$$(Fe^{2x})&#x27;=4e^{4x}\ \Rightarrow\ Fe^{2x}=e^{4x}+C\ \Rightarrow\ F=e^{2x}+Ce^{-2x}.$$<br>初值：$f(0)=0\Rightarrow F(0)=f(0)g(0)=0$，故 $0=1+C\Rightarrow C=-1$。<br>$$F(x)=e^{2x}-e^{-2x}.$$<br>验证：$F&#x27;+2F=(2e^{2x}+2e^{-2x})+(2e^{2x}-2e^{-2x})=4e^{2x}$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>

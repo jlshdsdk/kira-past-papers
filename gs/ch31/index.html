@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -88,7 +88,7 @@
 <p>对一切正整数 m,n：1/n≤1，而 1+2/m&gt;1，不等式恒成立，故对任意正整数 m,n 都收敛，与 m,n 取值无关。选D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle A（-1<p<1）$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle A（-1&lt;p&lt;1）$</div>
         <div class="steps"><p>x=0 与 x=1 都是瑕点，需分别讨论。</p>
 <p>x→0⁺：lnx/x^p 起作用，∫_0 lnx·x^{-p}dx 只在 p&lt;1 时收敛（x^{-p}lnx 型：p&lt;1 时原函数 x^{1-p}(lnx/(1-p)−1/(1-p)²)→0）。</p>
 <p>x→1⁻：令 u=1−x，则 lnx=ln(1-u)∼−u，x^p→1，(1-x)^{1-p}=u^{1-p}，被积函数 ∼−u/u^{1-p}=−u^p，∫_0 u^p du 收敛 ⟺ p&gt;−1。</p>
@@ -106,21 +106,21 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k31_T3_0.png" alt="k31_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（0<α<2）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（0&lt;α&lt;2）$</div>
         <div class="steps"><p>x=1⁺ 是瑕点，+∞ 是无穷端，需同时收敛。</p>
 <p>x→1⁺：∫_1^2 dx/(x-1)^{α-1} 收敛 ⟺ α-1&lt;1 ⟺ α&lt;2。</p>
 <p>x→+∞：∫_e^{+∞}dx/(x·ln^{α+1}x)，令 t=lnx 得 ∫_1^{+∞}dt/t^{α+1}，收敛 ⟺ α+1&gt;1 ⟺ α&gt;0。</p>
 <p>综上 0&lt;α&lt;2。选D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C（a<1 且 a+b>1）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C（a&lt;1 且 a+b&gt;1）$</div>
         <div class="steps"><p>拆成 (0,1] 与 [1,+∞) 两段。</p>
 <p>x→0⁺：被积函数 ∼1/x^a，∫_0 dx/x^a 收敛 ⟺ a&lt;1。</p>
 <p>x→+∞：被积函数 ∼1/x^{a+b}，∫^{+∞}dx/x^{a+b} 收敛 ⟺ a+b&gt;1。</p>
 <p>故收敛 ⟺ a&lt;1 且 a+b&gt;1。选C。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 0<p<2$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 0&lt;p&lt;2$</div>
         <div class="steps"><p>x=0 与 +∞ 两端讨论。</p>
 <p>x→0⁺：arctanx∼x，被积函数 ∼x/x^p·1/(1+0)=x^{1-p}，∫_0 x^{1-p}dx 收敛 ⟺ 1-p&gt;-1 ⟺ p&lt;2。</p>
 <p>x→+∞：arctanx→π/2（不为零），x+1∼x，被积函数 ∼(π/2)/x^{p+1}，收敛 ⟺ p+1&gt;1 ⟺ p&gt;0。</p>

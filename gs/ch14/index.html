@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -143,7 +143,7 @@
 <p>故 $x=0$ 是不可导点、极值点。选 B。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f'(x)=2x^{2x}(1+\ln x)\ (x>0)，(1+x)e^x\ (x<0)，f'(0) 不存在；极大值 f(0)=1，极小值 f(1/e)=e^{-2/e}，f(-1)=1-\frac{1}{e}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f&#x27;(x)=2x^{2x}(1+\ln x)\ (x&gt;0)，(1+x)e^x\ (x&lt;0)，f&#x27;(0) 不存在；极大值 f(0)=1，极小值 f(1/e)=e^{-2/e}，f(-1)=1-\frac{1}{e}$</div>
         <div class="steps"><p>$x&gt;0$：$f=x^{2x}=e^{2x\ln x}$，$f&#x27;=2x^{2x}(\ln x+1)$；$x&lt;0$：$f&#x27;=(1+x)e^x$。</p>
 <p>连续性：$\lim_{x\to0^+}x^{2x}=e^{2x\ln x}\to e^0=1=f(0)$，$f$ 在 $\mathbb R$ 上连续。</p>
 <p>$x=0$ 处：左导数 $=\lim_{x\to0^-}\dfrac{xe^x+1-1}{x}=1$；右导数 $=\lim_{x\to0^+}\dfrac{x^{2x}-1}{x}=\lim_{x\to0^+}2\ln x=-\infty$，故 $f&#x27;(0)$ 不存在。</p>

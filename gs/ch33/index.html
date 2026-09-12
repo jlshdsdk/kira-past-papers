@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -109,11 +109,11 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_0.png" alt="k33_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_1.png" alt="k33_T3 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_2.png" alt="k33_T3 题目图 3"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_3.png" alt="k33_T3 题目图 4"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_4.png" alt="k33_T3 题目图 5"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_5.png" alt="k33_T3 题目图 6"><img class="qimg" loading="lazy" src="../../assets/q/up/k33_T3_6.png" alt="k33_T3 题目图 7">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1+y)\,g'(x+xy)\left[f'_1(x,xy)+y f'_2(x,xy)\right]$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1+y)\,g&#x27;(x+xy)\left[f&#x27;_1(x,xy)+y f&#x27;_2(x,xy)\right]$</div>
         <div class="steps"><p>$$\frac{\partial u}{\partial x}=f&#x27;_1(x,xy)+f&#x27;_2(x,xy)\cdot y$$<br>$$\frac{\partial v}{\partial x}=g&#x27;(x+xy)\cdot(1+y)$$<br>$$\frac{\partial u}{\partial x}\cdot\frac{\partial v}{\partial x}=(1+y)\,g&#x27;(x+xy)\left[f&#x27;_1(x,xy)+y f&#x27;_2(x,xy)\right]$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e^{y}f'_1+xe^{2y}f''_{11}+e^{y}f''_{13}+xe^{y}f''_{12}+f''_{23}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle e^{y}f&#x27;_1+xe^{2y}f&#x27;&#x27;_{11}+e^{y}f&#x27;&#x27;_{13}+xe^{y}f&#x27;&#x27;_{12}+f&#x27;&#x27;_{23}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=e^{y}f&#x27;_1+f&#x27;_2$$<br>再对 y 求导（注意第一中间变量对 y 的导数为 $xe^y$，第二变量 x 与 y 无关，第三变量即 y）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{y}f&#x27;_1+e^{y}\left(xe^{y}f&#x27;&#x27;_{11}+f&#x27;&#x27;_{13}\right)+\left(xe^{y}f&#x27;&#x27;_{21}+f&#x27;&#x27;_{23}\right)$$<br>利用 $f&#x27;&#x27;_{12}=f&#x27;&#x27;_{21}$ 得<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{y}f&#x27;_1+xe^{2y}f&#x27;&#x27;_{11}+e^{y}f&#x27;&#x27;_{13}+xe^{y}f&#x27;&#x27;_{12}+f&#x27;&#x27;_{23}$$</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 把对第三个中间变量 y 求导的下标写错：应为 f₁₃&#x27;&#x27;、f₂₃&#x27;&#x27;，A 写成 f₁₂&#x27;&#x27;、f₂₂&#x27;&#x27;；solver 与 B 正确（f&#x27;&#x27;_{12}=f&#x27;&#x27;_{21}）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
@@ -122,32 +122,32 @@
         <div class="steps"><p>$$\frac{\partial u}{\partial x}=f&#x27;\left(\frac{x}{y}\right)+g\left(\frac{y}{x}\right)-\frac{y}{x}g&#x27;\left(\frac{y}{x}\right)$$<br>$$\frac{\partial^{2}u}{\partial x^{2}}=\frac{1}{y}f&#x27;&#x27;\left(\frac{x}{y}\right)-\frac{y}{x^{2}}g&#x27;+\frac{y}{x^{2}}g&#x27;+\frac{y^{2}}{x^{3}}g&#x27;&#x27;=\frac{1}{y}f&#x27;&#x27;\left(\frac{x}{y}\right)+\frac{y^{2}}{x^{3}}g&#x27;&#x27;\left(\frac{y}{x}\right)$$<br>对 $\dfrac{\partial u}{\partial x}$ 逐项关于 y 求导：<br>$$\frac{d}{dy}\left[f&#x27;\left(\frac{x}{y}\right)\right]=-\frac{x}{y^{2}}f&#x27;&#x27;\left(\frac{x}{y}\right),\qquad \frac{d}{dy}\left[g\left(\frac{y}{x}\right)\right]=\frac{1}{x}g&#x27;\left(\frac{y}{x}\right)$$<br>$$\frac{d}{dy}\left[-\frac{y}{x}g&#x27;\left(\frac{y}{x}\right)\right]=-\frac{1}{x}g&#x27;\left(\frac{y}{x}\right)-\frac{y}{x^{2}}g&#x27;&#x27;\left(\frac{y}{x}\right)$$<br>后两项中 $g&#x27;$ 相消：<br>$$\frac{\partial^{2}u}{\partial x\partial y}=-\frac{x}{y^{2}}f&#x27;&#x27;\left(\frac{x}{y}\right)-\frac{y}{x^{2}}g&#x27;&#x27;\left(\frac{y}{x}\right)$$<br>$$x\frac{\partial^{2}u}{\partial x^{2}}+y\frac{\partial^{2}u}{\partial x\partial y}=\left(\frac{x}{y}f&#x27;&#x27;+\frac{y^{2}}{x^{2}}g&#x27;&#x27;\right)-\left(\frac{x}{y}f&#x27;&#x27;+\frac{y^{2}}{x^{2}}g&#x27;&#x27;\right)=0$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle -2f''(2x-y)+x\,g''_{12}+g'_2+xy\,g''_{22}$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle -2f&#x27;&#x27;(2x-y)+x\,g&#x27;&#x27;_{12}+g&#x27;_2+xy\,g&#x27;&#x27;_{22}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=2f&#x27;(2x-y)+g&#x27;_1(x,xy)+y\,g&#x27;_2(x,xy)$$<br>再对 y 求导（$g$ 的第一个中间变量 $x$ 与 y 无关，第二个为 $xy$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=-2f&#x27;&#x27;(2x-y)+x\,g&#x27;&#x27;_{12}+g&#x27;_2+y\cdot x\,g&#x27;&#x27;_{22}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle f''_{11}+(x+y)f''_{12}+xy f''_{22}+f'_2$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle f&#x27;&#x27;_{11}+(x+y)f&#x27;&#x27;_{12}+xy f&#x27;&#x27;_{22}+f&#x27;_2$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=f&#x27;_1+y f&#x27;_2$$<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\left(f&#x27;&#x27;_{11}\cdot1+f&#x27;&#x27;_{12}\cdot x\right)+f&#x27;_2+y\left(f&#x27;&#x27;_{21}\cdot1+f&#x27;&#x27;_{22}\cdot x\right)$$<br>利用对称性合并得<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;&#x27;_{11}+(x+y)f&#x27;&#x27;_{12}+xy f&#x27;&#x27;_{22}+f&#x27;_2$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -2f''_{11}+(2\sin x-y\cos x)f''_{12}+y\sin x\cos x\, f''_{22}+\cos x\, f'_2$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -2f&#x27;&#x27;_{11}+(2\sin x-y\cos x)f&#x27;&#x27;_{12}+y\sin x\cos x\, f&#x27;&#x27;_{22}+\cos x\, f&#x27;_2$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=2f&#x27;_1+y\cos x\, f&#x27;_2$$<br>再对 y 求导（中间变量对 y 的导数：第一个为 $-1$，第二个为 $\sin x$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=2\left(-f&#x27;&#x27;_{11}+\sin x\, f&#x27;&#x27;_{12}\right)+\cos x\, f&#x27;_2+y\cos x\left(-f&#x27;&#x27;_{21}+\sin x\, f&#x27;&#x27;_{22}\right)$$<br>$$=-2f&#x27;&#x27;_{11}+(2\sin x-y\cos x)f&#x27;&#x27;_{12}+y\sin x\cos x\, f&#x27;&#x27;_{22}+\cos x\, f&#x27;_2$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle e^{x}\cos y\, f'_1+e^{2x}\sin y\cos y\, f''_{11}+2e^{x}(y\sin y+x\cos y)f''_{12}+4xy f''_{22}$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle e^{x}\cos y\, f&#x27;_1+e^{2x}\sin y\cos y\, f&#x27;&#x27;_{11}+2e^{x}(y\sin y+x\cos y)f&#x27;&#x27;_{12}+4xy f&#x27;&#x27;_{22}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=e^{x}\sin y\, f&#x27;_1+2x f&#x27;_2$$<br>再对 y 求导（中间变量对 y 的导数：$e^x\cos y$ 与 $2y$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=e^{x}\cos y\, f&#x27;_1+e^{x}\sin y\left(e^{x}\cos y\, f&#x27;&#x27;_{11}+2y f&#x27;&#x27;_{12}\right)+2x\left(e^{x}\cos y\, f&#x27;&#x27;_{21}+2y f&#x27;&#x27;_{22}\right)$$<br>$$=e^{x}\cos y\, f&#x27;_1+e^{2x}\sin y\cos y\, f&#x27;&#x27;_{11}+2e^{x}(y\sin y+x\cos y)f&#x27;&#x27;_{12}+4xy f&#x27;&#x27;_{22}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \cos(xy)-xy\sin(xy)-\frac{1}{y^{2}}\varphi'_2-\frac{x}{y^{2}}\varphi''_{12}-\frac{x}{y^{3}}\varphi''_{22}$</div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \cos(xy)-xy\sin(xy)-\frac{1}{y^{2}}\varphi&#x27;_2-\frac{x}{y^{2}}\varphi&#x27;&#x27;_{12}-\frac{x}{y^{3}}\varphi&#x27;&#x27;_{22}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=y\cos(xy)+\varphi&#x27;_1+\frac{1}{y}\varphi&#x27;_2$$<br>再对 y 求导（$\varphi$ 的第二个中间变量 $x/y$ 对 y 的导数为 $-x/y^{2}$）：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\cos(xy)-xy\sin(xy)-\frac{x}{y^{2}}\varphi&#x27;&#x27;_{12}-\frac{1}{y^{2}}\varphi&#x27;_2+\frac{1}{y}\left(-\frac{x}{y^{2}}\right)\left(\varphi&#x27;&#x27;_{21}+\varphi&#x27;&#x27;_{22}\right)$$<br>利用 $\varphi&#x27;&#x27;_{12}=\varphi&#x27;&#x27;_{21}$：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\cos(xy)-xy\sin(xy)-\frac{1}{y^{2}}\varphi&#x27;_2-\frac{2x}{y^{3}}\varphi&#x27;&#x27;_{12}-\frac{x}{y^{3}}\varphi&#x27;&#x27;_{22}$$</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 把 φ&#x27;&#x27;₁₂ 项系数写成 2x/y³，重解（并用具体 φ 验证）应为 x/y²；A、B 一致正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle \dfrac{\partial z}{\partial y}=x^{4}f'_1+x^{2}f'_2；\ \dfrac{\partial^{2}z}{\partial y^{2}}=x^{5}f''_{11}+2x^{3}f''_{12}+xf''_{22}；\ \dfrac{\partial^{2}z}{\partial x\partial y}=4x^{3}f'_1+x^{4}y f''_{11}+2x f'_2-y f''_{22}$</div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle \dfrac{\partial z}{\partial y}=x^{4}f&#x27;_1+x^{2}f&#x27;_2；\ \dfrac{\partial^{2}z}{\partial y^{2}}=x^{5}f&#x27;&#x27;_{11}+2x^{3}f&#x27;&#x27;_{12}+xf&#x27;&#x27;_{22}；\ \dfrac{\partial^{2}z}{\partial x\partial y}=4x^{3}f&#x27;_1+x^{4}y f&#x27;&#x27;_{11}+2x f&#x27;_2-y f&#x27;&#x27;_{22}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial y}=x^{3}\left(xf&#x27;_1+\frac{1}{x}f&#x27;_2\right)=x^{4}f&#x27;_1+x^{2}f&#x27;_2$$<br>$$\frac{\partial^{2}z}{\partial y^{2}}=x^{4}\left(xf&#x27;&#x27;_{11}+\frac{1}{x}f&#x27;&#x27;_{12}\right)+x^{2}\left(xf&#x27;&#x27;_{21}+\frac{1}{x}f&#x27;&#x27;_{22}\right)=x^{5}f&#x27;&#x27;_{11}+2x^{3}f&#x27;&#x27;_{12}+xf&#x27;&#x27;_{22}$$<br>$$\frac{\partial^{2}z}{\partial x\partial y}=4x^{3}f&#x27;_1+x^{4}\left(yf&#x27;&#x27;_{11}-\frac{y}{x^{2}}f&#x27;&#x27;_{12}\right)+2xf&#x27;_2+x^{2}\left(yf&#x27;&#x27;_{21}-\frac{y}{x^{2}}f&#x27;&#x27;_{22}\right)$$<br>$$=4x^{3}f&#x27;_1+x^{4}y f&#x27;&#x27;_{11}+2x f&#x27;_2-y f&#x27;&#x27;_{22}$$（交叉项 $-x^{2}y f&#x27;&#x27;_{12}+x^{2}y f&#x27;&#x27;_{21}=0$）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle \dfrac{du}{dx}=f'_1+\cos x\, f'_2-\dfrac{f'_3}{\varphi'_3}\left(2x\varphi'_1+e^{\sin x}\cos x\,\varphi'_2\right)$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle \dfrac{du}{dx}=f&#x27;_1+\cos x\, f&#x27;_2-\dfrac{f&#x27;_3}{\varphi&#x27;_3}\left(2x\varphi&#x27;_1+e^{\sin x}\cos x\,\varphi&#x27;_2\right)$</div>
         <div class="steps"><p>由 $\varphi(x^{2},e^{y},z)=0$（$y=\sin x$）确定 $z=z(x)$，两边关于 x 求导：<br>$$\varphi&#x27;_1\cdot 2x+\varphi&#x27;_2\cdot e^{\sin x}\cos x+\varphi&#x27;_3\frac{dz}{dx}=0\ \Rightarrow\ \frac{dz}{dx}=-\frac{2x\varphi&#x27;_1+e^{\sin x}\cos x\,\varphi&#x27;_2}{\varphi&#x27;_3}$$<br>再由全导数公式（$dy/dx=\cos x$）：<br>$$\frac{du}{dx}=f&#x27;_1+f&#x27;_2\cos x+f&#x27;_3\frac{dz}{dx}=f&#x27;_1+\cos x\, f&#x27;_2-\frac{f&#x27;_3}{\varphi&#x27;_3}\left(2x\varphi&#x27;_1+e^{\sin x}\cos x\,\varphi&#x27;_2\right)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -155,16 +155,16 @@
         <div class="steps"><p>记 $u=\dfrac{y}{x}$：<br>$$\frac{\partial z}{\partial x}=y f(u)+xy f&#x27;(u)\left(-\frac{y}{x^{2}}\right)=y f(u)-\frac{y^{2}}{x}f&#x27;(u)$$<br>$$\frac{\partial z}{\partial y}=x f(u)+xy f&#x27;(u)\cdot\frac{1}{x}=x f(u)+y f&#x27;(u)$$<br>$$x z_x+y z_y=\left[xy f(u)-y^{2}f&#x27;(u)\right]+\left[xy f(u)+y^{2}f&#x27;(u)\right]=2xy f\left(\frac{y}{x}\right)$$<br>（$z$ 为二次齐次函数，亦可由欧拉定理直接得）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle y f''(xy)+\varphi'(x+y)$</div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle y f&#x27;&#x27;(xy)+\varphi&#x27;(x+y)$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial y}=\frac{1}{x}\cdot x f&#x27;(xy)+\varphi(x+y)=f&#x27;(xy)+\varphi(x+y)$$<br>$$\frac{\partial^{2}z}{\partial x\partial y}=y f&#x27;&#x27;(xy)+\varphi&#x27;(x+y)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle f'_1-\frac{1}{y^{2}}f'_2+xy f''_{11}-\frac{x}{y^{3}}f''_{22}-\frac{1}{x^{2}}g'-\frac{y}{x^{3}}g''$</div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle f&#x27;_1-\frac{1}{y^{2}}f&#x27;_2+xy f&#x27;&#x27;_{11}-\frac{x}{y^{3}}f&#x27;&#x27;_{22}-\frac{1}{x^{2}}g&#x27;-\frac{y}{x^{3}}g&#x27;&#x27;$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=y f&#x27;_1+\frac{1}{y}f&#x27;_2-\frac{y}{x^{2}}g&#x27;$$<br>再对 y 求导：<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;_1+y\left(xf&#x27;&#x27;_{11}-\frac{x}{y^{2}}f&#x27;&#x27;_{12}\right)-\frac{1}{y^{2}}f&#x27;_2+\frac{1}{y}\left(xf&#x27;&#x27;_{21}-\frac{x}{y^{2}}f&#x27;&#x27;_{22}\right)-\frac{1}{x^{2}}g&#x27;$$<br>交叉项 $-\frac{x}{y}f&#x27;&#x27;_{12}+\frac{x}{y}f&#x27;&#x27;_{21}=0$，故<br>$$\frac{\partial^{2}z}{\partial x\partial y}=f&#x27;_1-\frac{1}{y^{2}}f&#x27;_2+xy f&#x27;&#x27;_{11}-\frac{x}{y^{3}}f&#x27;&#x27;_{22}-\frac{1}{x^{2}}g&#x27;$$</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 漏掉 −(y/x³)g&#x27;&#x27; 项（g&#x27;(y/x) 对 y 再求导产生）；A、B 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle y f'_1+\dfrac{1}{y}f'_2-\dfrac{y}{x^{2}}g'$</div>
+      <div class="sub-a"><span class="sno">（14）</span><div class="ansline">$\displaystyle y f&#x27;_1+\dfrac{1}{y}f&#x27;_2-\dfrac{y}{x^{2}}g&#x27;$</div>
         <div class="steps"><p>由链式法则，$f$ 的两个中间变量 $xy$、$x/y$ 对 x 的导数分别为 $y$、$\dfrac{1}{y}$，$g$ 的中间变量 $y/x$ 对 x 的导数为 $-\dfrac{y}{x^{2}}$：<br>$$\frac{\partial z}{\partial x}=y f&#x27;_1+\frac{1}{y}f&#x27;_2-\frac{y}{x^{2}}g&#x27;$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -177,39 +177,39 @@
         <div class="steps"><p>记 $u=xy$，$v=\dfrac{x^{2}-y^{2}}{2}$，则 $u_x=y$，$u_y=x$，$v_x=x$，$v_y=-y$。<br>$$g_x=y f&#x27;_1+x f&#x27;_2$$<br>$$g_{xx}=y\left(yf&#x27;&#x27;_{11}+xf&#x27;&#x27;_{12}\right)+f&#x27;_2+x\left(yf&#x27;&#x27;_{21}+xf&#x27;&#x27;_{22}\right)=y^{2}f&#x27;&#x27;_{11}+2xy f&#x27;&#x27;_{12}+x^{2}f&#x27;&#x27;_{22}+f&#x27;_2$$<br>$$g_y=x f&#x27;_1-y f&#x27;_2,\qquad g_{yy}=x^{2}f&#x27;&#x27;_{11}-2xy f&#x27;&#x27;_{12}+y^{2}f&#x27;&#x27;_{22}-f&#x27;_2$$<br>$$g_{xx}+g_{yy}=(x^{2}+y^{2})(f&#x27;&#x27;_{11}+f&#x27;&#x27;_{22})=x^{2}+y^{2}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（17）</span><div class="ansline">$\displaystyle z_x=2x f'_1+ye^{xy}f'_2；\ z_y=-2y f'_1+xe^{xy}f'_2；\ z_{xy}=-4xy f''_{11}+2(x^{2}-y^{2})e^{xy}f''_{12}+xy e^{2xy}f''_{22}+(1+xy)e^{xy}f'_2$</div>
+      <div class="sub-a"><span class="sno">（17）</span><div class="ansline">$\displaystyle z_x=2x f&#x27;_1+ye^{xy}f&#x27;_2；\ z_y=-2y f&#x27;_1+xe^{xy}f&#x27;_2；\ z_{xy}=-4xy f&#x27;&#x27;_{11}+2(x^{2}-y^{2})e^{xy}f&#x27;&#x27;_{12}+xy e^{2xy}f&#x27;&#x27;_{22}+(1+xy)e^{xy}f&#x27;_2$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=2x f&#x27;_1+ye^{xy}f&#x27;_2,\qquad \frac{\partial z}{\partial y}=-2y f&#x27;_1+xe^{xy}f&#x27;_2$$<br>$$\frac{\partial^{2}z}{\partial x\partial y}=\frac{\partial}{\partial y}\left[2x f&#x27;_1+ye^{xy}f&#x27;_2\right]$$<br>$$=2x\left(-2y f&#x27;&#x27;_{11}+xe^{xy}f&#x27;&#x27;_{12}\right)+(1+xy)e^{xy}f&#x27;_2+ye^{xy}\left(-2y f&#x27;&#x27;_{21}+xe^{xy}f&#x27;&#x27;_{22}\right)$$<br>$$=-4xy f&#x27;&#x27;_{11}+2(x^{2}-y^{2})e^{xy}f&#x27;&#x27;_{12}+xy e^{2xy}f&#x27;&#x27;_{22}+(1+xy)e^{xy}f&#x27;_2$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（18）</span><div class="ansline">$\displaystyle -\dfrac{g'(v)}{g^{2}(v)}$</div>
+      <div class="sub-a"><span class="sno">（18）</span><div class="ansline">$\displaystyle -\dfrac{g&#x27;(v)}{g^{2}(v)}$</div>
         <div class="steps"><p>令 $u=xg(y)$，$v=y$，则 $x=\dfrac{u}{g(v)}$，代入得<br>$$f(u,v)=\frac{u}{g(v)}+g(v)$$<br>$$\frac{\partial f}{\partial u}=\frac{1}{g(v)}\ \Rightarrow\ \frac{\partial^{2}f}{\partial u\partial v}=-\frac{g&#x27;(v)}{g^{2}(v)}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（19）</span><div class="ansline">$\displaystyle \dfrac{2y}{x}f'\left(\dfrac{y}{x}\right)$</div>
+      <div class="sub-a"><span class="sno">（19）</span><div class="ansline">$\displaystyle \dfrac{2y}{x}f&#x27;\left(\dfrac{y}{x}\right)$</div>
         <div class="steps"><p>记 $a=\dfrac{y}{x}$，$b=\dfrac{x}{y}$。<br>$$g_x=-\frac{y}{x^{2}}f&#x27;(a)+f&#x27;(b),\qquad g_{xx}=\frac{2y}{x^{3}}f&#x27;(a)+\frac{y^{2}}{x^{4}}f&#x27;&#x27;(a)+\frac{1}{y}f&#x27;&#x27;(b)$$<br>$$g_y=\frac{1}{x}f&#x27;(a)+f(b)-\frac{x}{y}f&#x27;(b),\qquad g_{yy}=\frac{1}{x^{2}}f&#x27;&#x27;(a)+\frac{x^{2}}{y^{3}}f&#x27;&#x27;(b)$$<br>（$g_{yy}$ 中 $-\frac{x}{y}f&#x27;(b)$ 求导时 $f&#x27;$ 的两项相消）<br>$$x^{2}g_{xx}-y^{2}g_{yy}=\frac{2y}{x}f&#x27;(a)+\frac{y^{2}}{x^{2}}f&#x27;&#x27;(a)+\frac{x^{2}}{y}f&#x27;&#x27;(b)-\frac{y^{2}}{x^{2}}f&#x27;&#x27;(a)-\frac{x^{2}}{y}f&#x27;&#x27;(b)=\frac{2y}{x}f&#x27;\left(\frac{y}{x}\right)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（20）</span><div class="ansline">$\displaystyle yx^{y-1}f'_1+y^{x}\ln y\, f'_2$</div>
+      <div class="sub-a"><span class="sno">（20）</span><div class="ansline">$\displaystyle yx^{y-1}f&#x27;_1+y^{x}\ln y\, f&#x27;_2$</div>
         <div class="steps"><p>两个中间变量对 x 的导数分别为 $\dfrac{\partial}{\partial x}x^{y}=yx^{y-1}$ 与 $\dfrac{\partial}{\partial x}y^{x}=y^{x}\ln y$，故<br>$$\frac{\partial z}{\partial x}=yx^{y-1}f&#x27;_1+y^{x}\ln y\, f&#x27;_2$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（21）</span><div class="ansline">$\displaystyle 2\left(\dfrac{x}{y}f'_2-\dfrac{y}{x}f'_1\right)$</div>
+      <div class="sub-a"><span class="sno">（21）</span><div class="ansline">$\displaystyle 2\left(\dfrac{x}{y}f&#x27;_2-\dfrac{y}{x}f&#x27;_1\right)$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=-\frac{y}{x^{2}}f&#x27;_1+\frac{1}{y}f&#x27;_2,\qquad \frac{\partial z}{\partial y}=\frac{1}{x}f&#x27;_1-\frac{x}{y^{2}}f&#x27;_2$$<br>$$xz_x-yz_y=\left(-\frac{y}{x}f&#x27;_1+\frac{x}{y}f&#x27;_2\right)-\left(\frac{y}{x}f&#x27;_1-\frac{x}{y}f&#x27;_2\right)=2\left(\frac{x}{y}f&#x27;_2-\frac{y}{x}f&#x27;_1\right)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（22）</span><div class="ansline">$\displaystyle f'_2+xf''_{12}+xy f''_{22}$</div>
+      <div class="sub-a"><span class="sno">（22）</span><div class="ansline">$\displaystyle f&#x27;_2+xf&#x27;&#x27;_{12}+xy f&#x27;&#x27;_{22}$</div>
         <div class="steps"><p>$$\frac{\partial z}{\partial x}=f&#x27;_1+y f&#x27;_2$$<br>$$\frac{\partial^{2}z}{\partial x\partial y}=x f&#x27;&#x27;_{12}+f&#x27;_2+y\cdot x f&#x27;&#x27;_{22}=f&#x27;_2+xf&#x27;&#x27;_{12}+xy f&#x27;&#x27;_{22}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（23）</span><div class="ansline">$\displaystyle dz=(f'_1+f'_2+yf'_3)dx+(f'_1-f'_2+xf'_3)dy；\ z_{xy}=f''_{11}-f''_{22}+(x+y)f''_{13}+(x-y)f''_{23}+xy f''_{33}+f'_3$</div>
+      <div class="sub-a"><span class="sno">（23）</span><div class="ansline">$\displaystyle dz=(f&#x27;_1+f&#x27;_2+yf&#x27;_3)dx+(f&#x27;_1-f&#x27;_2+xf&#x27;_3)dy；\ z_{xy}=f&#x27;&#x27;_{11}-f&#x27;&#x27;_{22}+(x+y)f&#x27;&#x27;_{13}+(x-y)f&#x27;&#x27;_{23}+xy f&#x27;&#x27;_{33}+f&#x27;_3$</div>
         <div class="steps"><p>中间变量 $u=x+y$，$v=x-y$，$w=xy$：<br>$$z_x=f&#x27;_1+f&#x27;_2+y f&#x27;_3,\qquad z_y=f&#x27;_1-f&#x27;_2+x f&#x27;_3$$<br>$$dz=(f&#x27;_1+f&#x27;_2+y f&#x27;_3)\,dx+(f&#x27;_1-f&#x27;_2+x f&#x27;_3)\,dy$$<br>$$z_{xy}=\left(f&#x27;&#x27;_{11}-f&#x27;&#x27;_{12}+xf&#x27;&#x27;_{13}\right)+\left(f&#x27;&#x27;_{21}-f&#x27;&#x27;_{22}+xf&#x27;&#x27;_{23}\right)+f&#x27;_3+y\left(f&#x27;&#x27;_{31}-f&#x27;&#x27;_{32}+xf&#x27;&#x27;_{33}\right)$$<br>利用混合偏导相等（$f&#x27;&#x27;_{12}=f&#x27;&#x27;_{21}$，$f&#x27;&#x27;_{13}=f&#x27;&#x27;_{31}$，$f&#x27;&#x27;_{23}=f&#x27;&#x27;_{32}$）合并：<br>$$z_{xy}=f&#x27;&#x27;_{11}-f&#x27;&#x27;_{22}+(x+y)f&#x27;&#x27;_{13}+(x-y)f&#x27;&#x27;_{23}+xy f&#x27;&#x27;_{33}+f&#x27;_3$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（24）</span><div class="ansline">$\displaystyle f'_1(1,1)+f''_{11}(1,1)$</div>
+      <div class="sub-a"><span class="sno">（24）</span><div class="ansline">$\displaystyle f&#x27;_1(1,1)+f&#x27;&#x27;_{11}(1,1)$</div>
         <div class="steps"><p>由 $g$ 在 $x=1$ 取极值且可导得 $g&#x27;(1)=0$。<br>$$z_x=y f&#x27;_1+y g&#x27;(x) f&#x27;_2$$<br>$$z_{xy}=f&#x27;_1+y\left(x f&#x27;&#x27;_{11}+g&#x27;(x) f&#x27;&#x27;_{12}\right)+g&#x27;(x) f&#x27;_2+y g&#x27;(x)\left(x f&#x27;&#x27;_{21}+g&#x27;(x) f&#x27;&#x27;_{22}\right)$$<br>在 $(1,1)$ 处：$g&#x27;(1)=0$，中间变量之值均为 1，故<br>$$\left.\frac{\partial^{2}z}{\partial x\partial y}\right|_{(1,1)}=f&#x27;_1(1,1)+f&#x27;&#x27;_{11}(1,1)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（25）</span><div class="ansline">$\displaystyle f''_{11}(2,2)+f'_2(2,2)\, f''_{12}(1,1)$</div>
+      <div class="sub-a"><span class="sno">（25）</span><div class="ansline">$\displaystyle f&#x27;&#x27;_{11}(2,2)+f&#x27;_2(2,2)\, f&#x27;&#x27;_{12}(1,1)$</div>
         <div class="steps"><p>由 $f(1,1)=2$ 为极值得 $f&#x27;_1(1,1)=f&#x27;_2(1,1)=0$。记外层点 $A=(x+y,\,f(x,y))$：<br>$$z_x=f&#x27;_1(A)+f&#x27;_2(A)\,f&#x27;_1(x,y)$$<br>$$z_{xy}=f&#x27;&#x27;_{11}(A)+f&#x27;&#x27;_{12}(A)f&#x27;_2(x,y)+\left[f&#x27;&#x27;_{21}(A)+f&#x27;&#x27;_{22}(A)f&#x27;_2(x,y)\right]f&#x27;_1(x,y)+f&#x27;_2(A)f&#x27;&#x27;_{12}(x,y)$$<br>在 $(1,1)$ 处 $A=(2,2)$，且 $f&#x27;_1(1,1)=f&#x27;_2(1,1)=0$，中间三项全部消失：<br>$$\left.\frac{\partial^{2}z}{\partial x\partial y}\right|_{(1,1)}=f&#x27;&#x27;_{11}(2,2)+f&#x27;_2(2,2)f&#x27;&#x27;_{12}(1,1)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -225,7 +225,7 @@
         <div class="steps"><p>令 $u=x+y$，$v=y/x$，解出 $x=\dfrac{u}{1+v}$，$y=\dfrac{uv}{1+v}$，则<br>$$f(u,v)=x^{2}-y^{2}=(x+y)(x-y)=u\cdot\frac{u(1-v)}{1+v}=\frac{u^{2}(1-v)}{1+v}$$<br>$$f&#x27;_u=\frac{2u(1-v)}{1+v}\Big|_{(1,1)}=0,\qquad f&#x27;_v=u^{2}\cdot\frac{-(1+v)-(1-v)}{(1+v)^{2}}\Big|_{(1,1)}=-\frac{2}{4}=-\frac{1}{2}$$<br>即依次为 $0,\ -\dfrac12$，选 D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（29）</span><div class="ansline">$\displaystyle \dfrac{dy}{dx}\Big|_{x=0}=f'_1(1,1)；\ \dfrac{d^{2}y}{dx^{2}}\Big|_{x=0}=f'_1(1,1)+f''_{11}(1,1)-f'_2(1,1)$</div>
+      <div class="sub-a"><span class="sno">（29）</span><div class="ansline">$\displaystyle \dfrac{dy}{dx}\Big|_{x=0}=f&#x27;_1(1,1)；\ \dfrac{d^{2}y}{dx^{2}}\Big|_{x=0}=f&#x27;_1(1,1)+f&#x27;&#x27;_{11}(1,1)-f&#x27;_2(1,1)$</div>
         <div class="steps"><p>$$\frac{dy}{dx}=e^{x}f&#x27;_1-\sin x\, f&#x27;_2\ \Rightarrow\ y&#x27;(0)=f&#x27;_1(1,1)$$<br>$$\frac{d^{2}y}{dx^{2}}=e^{x}f&#x27;_1+e^{x}\left(e^{x}f&#x27;&#x27;_{11}-\sin x\, f&#x27;&#x27;_{12}\right)-\cos x\, f&#x27;_2-\sin x\left(e^{x}f&#x27;&#x27;_{21}-\sin x\, f&#x27;&#x27;_{22}\right)$$<br>代入 $x=0$（此时 $(u,v)=(1,1)$）：<br>$$y&#x27;&#x27;(0)=f&#x27;_1(1,1)+f&#x27;&#x27;_{11}(1,1)-f&#x27;_2(1,1)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -237,11 +237,11 @@
         <div class="steps"><p>记 $u=\dfrac{y^{2}}{x}$：<br>$$\frac{\partial z}{\partial x}=y f&#x27;(u)\left(-\frac{y^{2}}{x^{2}}\right)=-\frac{y^{3}}{x^{2}}f&#x27;(u),\qquad \frac{\partial z}{\partial y}=f(u)+y f&#x27;(u)\cdot\frac{2y}{x}=f(u)+\frac{2y^{2}}{x}f&#x27;(u)$$<br>$$2xz_x+yz_y=-\frac{2y^{3}}{x}f&#x27;(u)+y f(u)+\frac{2y^{3}}{x}f&#x27;(u)=y f\left(\frac{y^{2}}{x}\right)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（32）</span><div class="ansline">$\displaystyle 1-3f''_{11}-f''_{22}$</div>
+      <div class="sub-a"><span class="sno">（32）</span><div class="ansline">$\displaystyle 1-3f&#x27;&#x27;_{11}-f&#x27;&#x27;_{22}$</div>
         <div class="steps"><p>$$g_x=y-\left(f&#x27;_1+f&#x27;_2\right),\qquad g_y=x-\left(f&#x27;_1-f&#x27;_2\right)$$<br>$$g_{xx}=-\left(f&#x27;&#x27;_{11}+2f&#x27;&#x27;_{12}+f&#x27;&#x27;_{22}\right)$$<br>$$g_{xy}=1-\left(f&#x27;&#x27;_{11}-f&#x27;&#x27;_{12}\right)-\left(f&#x27;&#x27;_{21}-f&#x27;&#x27;_{22}\right)=1-f&#x27;&#x27;_{11}+f&#x27;&#x27;_{22}$$<br>$$g_{yy}=-\left(f&#x27;&#x27;_{11}-2f&#x27;&#x27;_{12}+f&#x27;&#x27;_{22}\right)$$<br>$$g_{xx}+g_{xy}+g_{yy}=1-3f&#x27;&#x27;_{11}-f&#x27;&#x27;_{22}$$<br>（$f$ 的各阶偏导数均在 $(x+y,\,x-y)$ 处取值）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（33）</span><div class="ansline">$\displaystyle B（f(1)=0，f'(1)=1/2）$</div>
+      <div class="sub-a"><span class="sno">（33）</span><div class="ansline">$\displaystyle B（f(1)=0，f&#x27;(1)=1/2）$</div>
         <div class="steps"><p>由本组第 (11) 题同法（欧拉定理）：$xz_x+yz_y=2xy f\left(\dfrac{y}{x}\right)$。依题意<br>$$2xy f\left(\frac{y}{x}\right)=y^{2}\ln\frac{y}{x}\ \Rightarrow\ 2f(u)=u\ln u\quad\left(u=\frac{y}{x}\right)$$<br>$$f(u)=\frac{u}{2}\ln u\ \Rightarrow\ f(1)=0,\qquad f&#x27;(u)=\frac{1}{2}(\ln u+1)\ \Rightarrow\ f&#x27;(1)=\frac{1}{2}$$<br>选 B。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -291,7 +291,7 @@
         <div class="steps"><p>方程 $u=\varphi(u)+\int_y^x p(t)\mathrm{d}t$ 两边分别对 x、y 求导：<br>$$u_x=\varphi&#x27;(u)u_x+p(x)\ \Rightarrow\ u_x=\frac{p(x)}{1-\varphi&#x27;(u)}$$<br>$$u_y=\varphi&#x27;(u)u_y-p(y)\ \Rightarrow\ u_y=-\frac{p(y)}{1-\varphi&#x27;(u)}$$<br>$$\frac{\partial z}{\partial x}=\frac{f&#x27;(u)p(x)}{1-\varphi&#x27;(u)},\qquad \frac{\partial z}{\partial y}=-\frac{f&#x27;(u)p(y)}{1-\varphi&#x27;(u)}$$<br>$$p(y)\frac{\partial z}{\partial x}+p(x)\frac{\partial z}{\partial y}=\frac{f&#x27;(u)}{1-\varphi&#x27;(u)}\left[p(y)p(x)-p(x)p(y)\right]=0$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac{du}{dx}=f'_1-\dfrac{y}{x}f'_2+\left[1-\dfrac{e^{x}(x-z)}{\sin(x-z)}\right]f'_3$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac{du}{dx}=f&#x27;_1-\dfrac{y}{x}f&#x27;_2+\left[1-\dfrac{e^{x}(x-z)}{\sin(x-z)}\right]f&#x27;_3$</div>
         <div class="steps"><p>由 $e^{xy}-xy=2$ 两边求导：$(y+xy&#x27;)(e^{xy}-1)=0$。因 $e^{xy}=xy+2&gt;1$，故 $e^{xy}-1\neq0$，得 $y&#x27;=-\dfrac{y}{x}$。<br>由 $e^{x}=\int_0^{x-z}\dfrac{\sin t}{t}\mathrm{d}t$ 两边求导：<br>$$e^{x}=\frac{\sin(x-z)}{x-z}\left(1-z&#x27;\right)\ \Rightarrow\ z&#x27;=1-\frac{e^{x}(x-z)}{\sin(x-z)}$$<br>$$\frac{du}{dx}=f&#x27;_1+f&#x27;_2 y&#x27;+f&#x27;_3 z&#x27;=f&#x27;_1-\frac{y}{x}f&#x27;_2+\left[1-\frac{e^{x}(x-z)}{\sin(x-z)}\right]f&#x27;_3$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -362,15 +362,15 @@
         <div class="steps"><p>记 $w=z-y-x$，$F=w+xe^{w}$，则<br>$$F_x=-1+(1-x)e^{w},\qquad F_y=-1-xe^{w},\qquad F_z=1+xe^{w}$$<br>$$z_x=-\frac{F_x}{F_z}=\frac{1-(1-x)e^{w}}{1+xe^{w}},\qquad z_y=-\frac{F_y}{F_z}=\frac{1+xe^{w}}{1+xe^{w}}=1$$<br>$$dz=\frac{1-(1-x)e^{z-y-x}}{1+xe^{z-y-x}}\,dx+dy$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac{du}{dx}=f'_1+\dfrac{y^{2}}{1-xy}f'_2+\dfrac{z}{x(z-1)}f'_3$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \dfrac{du}{dx}=f&#x27;_1+\dfrac{y^{2}}{1-xy}f&#x27;_2+\dfrac{z}{x(z-1)}f&#x27;_3$</div>
         <div class="steps"><p>由 $e^{xy}-y=0$（即 $e^{xy}=y$）两边求导：<br>$$e^{xy}(y+xy&#x27;)-y&#x27;=0\ \Rightarrow\ y&#x27;=\frac{-ye^{xy}}{xe^{xy}-1}=\frac{-y^{2}}{xy-1}=\frac{y^{2}}{1-xy}$$<br>由 $e^{z}-xz=0$ 两边求导：<br>$$e^{z}z&#x27;-z-xz&#x27;=0\ \Rightarrow\ z&#x27;=\frac{z}{e^{z}-x}=\frac{z}{xz-x}=\frac{z}{x(z-1)}$$<br>$$\frac{du}{dx}=f&#x27;_1+f&#x27;_2\,y&#x27;+f&#x27;_3\,z&#x27;=f&#x27;_1+\frac{y^{2}}{1-xy}f&#x27;_2+\frac{z}{x(z-1)}f&#x27;_3$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle du=\left[f'_1+\dfrac{(1+x)e^{x}}{(1+z)e^{z}}f'_3\right]dx+\left[f'_2-\dfrac{(1+y)e^{y}}{(1+z)e^{z}}f'_3\right]dy$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle du=\left[f&#x27;_1+\dfrac{(1+x)e^{x}}{(1+z)e^{z}}f&#x27;_3\right]dx+\left[f&#x27;_2-\dfrac{(1+y)e^{y}}{(1+z)e^{z}}f&#x27;_3\right]dy$</div>
         <div class="steps"><p>记 $G=xe^{x}-ye^{y}-ze^{z}=0$：<br>$$G_x=(1+x)e^{x},\qquad G_y=-(1+y)e^{y},\qquad G_z=-(1+z)e^{z}$$<br>$$z_x=-\frac{G_x}{G_z}=\frac{(1+x)e^{x}}{(1+z)e^{z}},\qquad z_y=-\frac{G_y}{G_z}=-\frac{(1+y)e^{y}}{(1+z)e^{z}}$$<br>$$du=f&#x27;_1dx+f&#x27;_2dy+f&#x27;_3(z_xdx+z_ydy)=\left[f&#x27;_1+\frac{(1+x)e^{x}}{(1+z)e^{z}}f&#x27;_3\right]dx+\left[f&#x27;_2-\frac{(1+y)e^{y}}{(1+z)e^{z}}f&#x27;_3\right]dy$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) dz=\dfrac{(2x-\varphi')dx+(2y-\varphi')dy}{1+\varphi'}；\ (II) \dfrac{\partial u}{\partial x}=-\dfrac{2(1+2x)\varphi''}{(1+\varphi')^{3}}（φ'、φ'' 在 x+y+z 处取值）$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) dz=\dfrac{(2x-\varphi&#x27;)dx+(2y-\varphi&#x27;)dy}{1+\varphi&#x27;}；\ (II) \dfrac{\partial u}{\partial x}=-\dfrac{2(1+2x)\varphi&#x27;&#x27;}{(1+\varphi&#x27;)^{3}}（φ&#x27;、φ&#x27;&#x27; 在 x+y+z 处取值）$</div>
         <div class="steps"><p>(I) 方程两边分别对 x、y 求导：<br>$$2x-z_x=\varphi&#x27;(1+z_x)\ \Rightarrow\ z_x=\frac{2x-\varphi&#x27;}{1+\varphi&#x27;},\qquad z_y=\frac{2y-\varphi&#x27;}{1+\varphi&#x27;}$$<br>$$dz=\frac{(2x-\varphi&#x27;)\,dx+(2y-\varphi&#x27;)\,dy}{1+\varphi&#x27;}$$<br>(II) <br>$$z_x-z_y=\frac{2(x-y)}{1+\varphi&#x27;}\ \Rightarrow\ u(x,y)=\frac{1}{x-y}\cdot\frac{2(x-y)}{1+\varphi&#x27;}=\frac{2}{1+\varphi&#x27;}$$<br>$$\frac{\partial u}{\partial x}=-\frac{2\varphi&#x27;&#x27;\,(1+z_x)}{(1+\varphi&#x27;)^{2}}=-\frac{2\varphi&#x27;&#x27;}{(1+\varphi&#x27;)^{2}}\cdot\frac{1+\varphi&#x27;+2x-\varphi&#x27;}{1+\varphi&#x27;}=-\frac{2(1+2x)\varphi&#x27;&#x27;}{(1+\varphi&#x27;)^{3}}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -414,7 +414,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k33_T7_0.png" alt="k33_T7 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac{dz}{dx}=\dfrac{(f+xf')F_y-xf'F_x}{F_y+xf'F_z}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \dfrac{dz}{dx}=\dfrac{(f+xf&#x27;)F_y-xf&#x27;F_x}{F_y+xf&#x27;F_z}$</div>
         <div class="steps"><p>对 $z=xf(x+y)$ 两边关于 x 求导：<br>$$\frac{dz}{dx}=f(x+y)+xf&#x27;(x+y)(1+y&#x27;)$$<br>对 $F(x,y,z)=0$ 两边关于 x 求导：<br>$$F_x+F_y\,y&#x27;+F_z\,z&#x27;=0\ \Rightarrow\ y&#x27;=-\frac{F_x+F_z z&#x27;}{F_y}\quad(F_y\neq0)$$<br>代入第一式：<br>$$z&#x27;=f+xf&#x27;+xf&#x27;\left(-\frac{F_x+F_z z&#x27;}{F_y}\right)$$<br>$$z&#x27;\left(F_y+xf&#x27;F_z\right)=(f+xf&#x27;)F_y-xf&#x27;F_x$$<br>$$\frac{dz}{dx}=\frac{(f+xf&#x27;)F_y-xf&#x27;F_x}{F_y+xf&#x27;F_z}$$<br>其中 $f&#x27;=f&#x27;(x+y)$，$F$ 的偏导数在 $(x,\,y(x),\,z(x))$ 处取值（设 $F_y+xf&#x27;F_z\neq0$）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

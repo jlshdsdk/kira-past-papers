@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -492,7 +492,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k04_T10_0.png" alt="k04_T10 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（f(x)<g(x)<h(x)）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（f(x)&lt;g(x)&lt;h(x)）$</div>
         <div class="steps"><p>比较三类函数在 x→+∞ 时的增长速度：对数 &lt; 幂函数 &lt; 指数函数。</p>
 <p>$$\lim_{x\to+\infty}\frac{\ln^{10}x}{x}=\lim_{x\to+\infty}\frac{10\ln^9 x\cdot(1/x)}{1}=\cdots=0\ \text{（洛必达或直接用阶的比较）},$$</p>
 <p>故充分大时 ln¹⁰x &lt; x，即 f &lt; g。</p>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -64,7 +64,7 @@
 <p>即 Z 以 e^{-λ} 取 0，以 (1/2)e^{-λ}λ^n/n! 取每个非零整数 ±n。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle p=P{Y>0}=1/4；M~π(δ/4)，P{M=m}=e^{-δ/4}(δ/4)^m/m! (m=0,1,2,…)$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle p=P{Y&gt;0}=1/4；M~π(δ/4)，P{M=m}=e^{-δ/4}(δ/4)^m/m! (m=0,1,2,…)$</div>
         <div class="steps"><p>先求 p：</p>
 <p>$$p=P\{Y&gt;0\}=P\{X&gt;100\}=\int_{100}^{\infty}\frac{2\cdot 100^2}{(100+x)^3}dx=100^2\cdot\frac{1}{(100+100)^2}=\frac{1}{4}$$</p>
 <p>再由全概率公式（泊松稀疏化）：对 m = 0, 1, 2, …</p>
@@ -85,14 +85,14 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T2_0.png" alt="k38_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T2_1.png" alt="k38_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T2_2.png" alt="k38_T2 题目图 3">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_Z(z)=0 (z<0)；(1-e^{-z})/2 (0≤z<2)；((e²-1)/2)e^{-z} (z≥2)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_Z(z)=0 (z&lt;0)；(1-e^{-z})/2 (0≤z&lt;2)；((e²-1)/2)e^{-z} (z≥2)$</div>
         <div class="steps"><p>令 W=2X，则 f_W(w)=1/2 (0≤w≤2)。Z=W+Y，由独立卷积公式：</p>
 <p>$$f_Z(z)=\int_{-\infty}^{\infty}f_W(w)f_Y(z-w)dw=\frac{1}{2}\int_{0}^{2}e^{-(z-w)}\cdot 1\{w&lt;z\}\,dw$$</p>
 <p>- z&lt;0 时：f_Z(z)=0。<br>- 0&lt;z&lt;2 时：$$f_Z(z)=\frac{1}{2}\int_0^{z}e^{-(z-w)}dw=\frac{1}{2}(1-e^{-z})$$<br>- z&gt;2 时：$$f_Z(z)=\frac{1}{2}e^{-z}\int_0^{2}e^{w}dw=\frac{1}{2}(e^2-1)e^{-z}$$</p>
 <p>两段在 z=2 处衔接连续，均为 (1/2)(1-e^{-2})。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle F_Z(z)=0 (z≤0)；1-(1+z)e^{-z} (z>0)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle F_Z(z)=0 (z≤0)；1-(1+z)e^{-z} (z&gt;0)$</div>
         <div class="steps"><p>z≤0 时 F_Z(z)=0。z&gt;0 时积分区域为 x&gt;0, y&gt;0, x+2y≤z：</p>
 <p>$$F_Z(z)=\int_{0}^{z/2}dy\int_{0}^{z-2y}2e^{-(x+2y)}dx$$</p>
 <p>内层积分：$$\int_0^{z-2y}2e^{-(x+2y)}dx=2e^{-2y}-2e^{-z}$$</p>
@@ -107,7 +107,7 @@
 <p>$$f_Z(z)=\frac{1}{2\pi}\int_{(z-\pi-\mu)/\sigma}^{(z+\pi-\mu)/\sigma}\frac{1}{\sqrt{2\pi}}e^{-u^2/2}du=\frac{1}{2\pi}\left[\Phi\left(\frac{z+\pi-\mu}{\sigma}\right)-\Phi\left(\frac{z-\pi-\mu}{\sigma}\right)\right]$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle p(u)=(2-u)/2 (0<u<2)；0（其他）$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle p(u)=(2-u)/2 (0&lt;u&lt;2)；0（其他）$</div>
         <div class="steps"><p>G 面积为 4，f(x,y)=1/4。F(u)=P{|X-Y|≤u}。</p>
 <p>- u&lt;0：F(u)=0；u≥2：正方形内 |x-y|≤2 恒成立，F(u)=1。<br>- 0≤u&lt;2：事件 {|X-Y|&gt;u} 对应正方形内两个等腰直角三角形（分别位于 x-y&gt;u 与 y-x&gt;u），直角边长均为 2-u，面积之和为 (2-u)²。</p>
 <p>$$F(u)=1-\frac{(2-u)^2}{4}$$</p>
@@ -116,7 +116,7 @@
 <p>其余处 p(u)=0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) fX(x)=2x (0<x<1)，fY(y)=1-y/2 (0<y<2)；(II) fZ(z)=1-z/2 (0<z<2)；(III) 3/4$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) fX(x)=2x (0&lt;x&lt;1)，fY(y)=1-y/2 (0&lt;y&lt;2)；(II) fZ(z)=1-z/2 (0&lt;z&lt;2)；(III) 3/4$</div>
         <div class="steps"><p>(I) </p>
 <p>$$f_X(x)=\int_0^{2x}1\,dy=2x\ (0&lt;x&lt;1)$$</p>
 <p>$$f_Y(y)=\int_{y/2}^{1}1\,dx=1-\frac{y}{2}\ (0&lt;y&lt;2)$$</p>
@@ -130,7 +130,7 @@
 <p>$$P\{Y\le 1/2\mid X\le 1/2\}=\frac{3/16}{1/4}=\frac{3}{4}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle fZ(z)=z(2-z) (0<z<1)；(2-z)² (1≤z<2)；0（其他）$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle fZ(z)=z(2-z) (0&lt;z&lt;1)；(2-z)² (1≤z&lt;2)；0（其他）$</div>
         <div class="steps"><p>由卷积公式 f_Z(z)=∫f(x, z-x)dx，积分域为 0&lt;x&lt;1 且 0&lt;z-x&lt;1，即 max(0, z-1)&lt;x&lt;min(1, z)；被积函数 2-x-(z-x)=2-z 与 x 无关。</p>
 <p>- 0&lt;z&lt;1：x∈(0, z)，</p>
 <p>$$f_Z(z)=\int_0^{z}(2-z)dx=z(2-z)$$</p>
@@ -139,7 +139,7 @@
 <p>- 其他 z：f_Z(z)=0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I) fX(x)=1 (0<x<1)；(II) fZ(z)=2/(1+z)² (z>1)，其他为 0$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I) fX(x)=1 (0&lt;x&lt;1)；(II) fZ(z)=2/(1+z)² (z&gt;1)，其他为 0$</div>
         <div class="steps"><p>设取点位置 U~U(0,2)，X=min(U, 2-U)。</p>
 <p>(I) 0&lt;x&lt;1 时</p>
 <p>$$F_X(x)=P\{U\le x\text{ 或 }U\ge 2-x\}=\frac{x+x}{2}=x$$</p>
@@ -223,13 +223,13 @@
 <p>z→0⁻ 时 F_Z→1/4，而 F_Z(0)=1/2+1/4=3/4，在 z=0 处有幅度 1/2 的跳跃；其余处处连续。间断点个数为 1，选 (B)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle fZ(z)=z (0<z<1)；z-2 (2<z<3)；0（其他）$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle fZ(z)=z (0&lt;z&lt;1)；z-2 (2&lt;z&lt;3)；0（其他）$</div>
         <div class="steps"><p>离散-连续混合卷积：</p>
 <p>$$f_Z(z)=P\{X=0\}f_Y(z)+P\{X=2\}f_Y(z-2)=\frac{1}{2}f_Y(z)+\frac{1}{2}f_Y(z-2)$$</p>
 <p>- 0&lt;z&lt;1：f_Y(z)=2z，f_Z(z)=(1/2)·2z=z；<br>- 2&lt;z&lt;3：f_Y(z-2)=2(z-2)，f_Z(z)=(1/2)·2(z-2)=z-2；<br>- 其他：0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle fZ(z)=p·e^{z} (z<0)；(1-p)·e^{-z} (z≥0)；0（其他）$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle fZ(z)=p·e^{z} (z&lt;0)；(1-p)·e^{-z} (z≥0)；0（其他）$</div>
         <div class="steps"><p>由全概率公式</p>
 <p>$$F_Z(z)=P\{XY\le z\}=p\,P\{-X\le z\}+(1-p)\,P\{X\le z\}$$</p>
 <p>对 z 求导（dP{-X≤z}/dz = f_X(-z)）：</p>
@@ -271,7 +271,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k38_T6_0.png" alt="k38_T6 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k38_T6_1.png" alt="k38_T6 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(z)=0\ (z<0);\ \tfrac32 z^2-z^3\ (0\le z<1);\ \tfrac12+2(z-1)^{3/2}-\tfrac32(z-1)^2\ (1\le z<2);\ 1\ (z\ge2)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(z)=0\ (z&lt;0);\ \tfrac32 z^2-z^3\ (0\le z&lt;1);\ \tfrac12+2(z-1)^{3/2}-\tfrac32(z-1)^2\ (1\le z&lt;2);\ 1\ (z\ge2)$</div>
         <div class="steps"><p>D 的面积 A=∫_0^1 (√x-x²)dx = 2/3-1/3 = 1/3，故 f(x,y)=3（D 内），边缘 f_X(x)=3(√x-x²) (0&lt;x&lt;1)。</p>
 <p>给定 X=x 时 Y 在 (x², √x) 内均匀。记 t=√x（0&lt;t&lt;1），由 x²&lt;x&lt;√x：</p>
 <p>$$P\{U=1\mid X=x\}=\frac{\sqrt{x}-x}{\sqrt{x}-x^2}=\frac{1-t}{1-t^3}=\frac{1}{1+t+t^2},\qquad P\{U=0\mid X=x\}=\frac{t+t^2}{1+t+t^2}$$</p>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,7 +27,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k23_T1_0.png" alt="k23_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 对一切 $x>0$，$\arctan x+\dfrac1x>\dfrac{\pi}2$ 成立。$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 对一切 $x&gt;0$，$\arctan x+\dfrac1x&gt;\dfrac{\pi}2$ 成立。$</div>
         <div class="steps"><p>设 $f(x)=\arctan x+\dfrac1x\ (x&gt;0)$。</p>
 <p>$$f&#x27;(x)=\frac{1}{1+x^2}-\frac{1}{x^2}=\frac{x^2-(1+x^2)}{x^2(1+x^2)}=-\frac{1}{x^2(1+x^2)}&lt;0,$$</p>
 <p>故 $f$ 在 $(0,+\infty)$ 上严格单调减少，从而对任意 $x&gt;0$，</p>
@@ -43,7 +43,7 @@
 <p>故选 A。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 不等式对一切 $-1<x<1$ 成立，等号当且仅当 $x=0$。$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 不等式对一切 $-1&lt;x&lt;1$ 成立，等号当且仅当 $x=0$。$</div>
         <div class="steps"><p>设 $f(x)=x\ln\dfrac{1+x}{1-x}+\cos x-1-\dfrac{x^2}{2}$，则 $f(0)=0$，且 $f$ 为偶函数（以 $-x$ 代入时对数变号、其余项不变），故只需证 $x\in[0,1)$。</p>
 <p>$$f&#x27;(x)=\ln\frac{1+x}{1-x}+\frac{2x}{1-x^2}-\sin x-x,\qquad f&#x27;(0)=0,$$</p>
 <p>$$f&#x27;&#x27;(x)=\frac{2}{1-x^2}+\frac{2+2x^2}{(1-x^2)^2}-\cos x-1 .$$</p>
@@ -76,7 +76,7 @@
 <p>所以 $\dfrac{1}{\ln2}-1&lt;g(x)&lt;\dfrac12$，即 (Ⅱ) 成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 对一切 $x>0$ 有 $(x^2-1)\ln x\ge (x-1)^2$，等号当且仅当 $x=1$。$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 对一切 $x&gt;0$ 有 $(x^2-1)\ln x\ge (x-1)^2$，等号当且仅当 $x=1$。$</div>
         <div class="steps"><p>设 $F(x)=(x^2-1)\ln x-(x-1)^2\ (x&gt;0)$，则 $F(1)=0$。</p>
 <p>$$F&#x27;(x)=2x\ln x+(x^2-1)\cdot\frac1x-2(x-1)=2x\ln x-x-\frac1x+2,\qquad F&#x27;(1)=0,$$</p>
 <p>$$F&#x27;&#x27;(x)=2\ln x+2-1+\frac{1}{x^2}=2\ln x+1+\frac{1}{x^2},\qquad F&#x27;&#x27;&#x27;(x)=\frac2x-\frac{2}{x^3}=\frac{2(x^2-1)}{x^3}.$$</p>
@@ -97,7 +97,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k23_T3_0.png" alt="k23_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle $x>1$ 时不等式成立。$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle $x&gt;1$ 时不等式成立。$</div>
         <div class="steps"><p>欲证不等式等价于 $(1+x)\ln(1+x)&gt;x\ln x$（去分母，两边均为正）。</p>
 <p>设 $f(x)=(1+x)\ln(1+x)-x\ln x\ (x\ge1)$，则</p>
 <p>$$f&#x27;(x)=\ln(1+x)+1-\ln x-1=\ln\frac{1+x}{x}&gt;0\qquad(x\ge1),$$</p>
@@ -106,7 +106,7 @@
 <p>$$\frac{\ln(1+x)}{\ln x}&gt;\frac{x}{1+x}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle $x>0$ 时 $(a+x)^a<a^{a+x}$ 成立。$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle $x&gt;0$ 时 $(a+x)^a&lt;a^{a+x}$ 成立。$</div>
         <div class="steps"><p>两边取对数，等价于 $a\ln(a+x)&lt;(a+x)\ln a$。</p>
 <p>设 $g(x)=(a+x)\ln a-a\ln(a+x)\ (x\ge0)$，则 $g(0)=a\ln a-a\ln a=0$，且</p>
 <p>$$g&#x27;(x)=\ln a-\frac{a}{a+x}.$$</p>
@@ -115,7 +115,7 @@
 <p>$g$ 在 $[0,+\infty)$ 严格单调增，$g(x)&gt;g(0)=0\ (x&gt;0)$，即 $(a+x)\ln a&gt;a\ln(a+x)$。由指数函数（以 $e$ 为底）的单调性即得 $a^{a+x}&gt;(a+x)^a$$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 对一切 $x>0$ 不等式成立。$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 对一切 $x&gt;0$ 不等式成立。$</div>
         <div class="steps"><p>设 $f(x)=x-\ln^2x+2k\ln x-1\ (x&gt;0)$，则 $f(1)=0$。</p>
 <p>$$f&#x27;(x)=1-\frac{2\ln x}{x}+\frac{2k}{x}=\frac{x-2\ln x+2k}{x}.$$</p>
 <p>令 $g(x)=x-2\ln x+2k$，则 $g&#x27;(x)=1-\dfrac2x=\dfrac{x-2}{x}$，$g$ 在 $x=2$ 处取最小值</p>
@@ -165,7 +165,7 @@
 <p>即 $f(a+b)\le f(a)+f(b)$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle $f(x_1+x_2)<f(x_1)+f(x_2)$ 成立。$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle $f(x_1+x_2)&lt;f(x_1)+f(x_2)$ 成立。$</div>
         <div class="steps"><p>在 $[0,x_1]$ 与 $[x_2,x_1+x_2]$ 上分别用拉格朗日中值定理：存在 $\xi_1\in(0,x_1)$，$\xi_2\in(x_2,x_1+x_2)$，使</p>
 <p>$$f(x_1)-f(0)=f&#x27;(\xi_1)\,x_1,\qquad f(x_1+x_2)-f(x_2)=f&#x27;(\xi_2)\,x_1 .$$</p>
 <p>由 $0&lt;\xi_1&lt;x_1&lt;x_2&lt;\xi_2$ 及 $f&#x27;&#x27;(x)&lt;0$（即 $f&#x27;$ 严格单调减少）得 $f&#x27;(\xi_2)&lt;f&#x27;(\xi_1)$，故</p>
@@ -206,7 +206,7 @@
 <p>$$F(x)\ge F(0)=0,\qquad\text{即}\ f(x)\ge x .$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1) $f(x)=f(c)+f'(c)(x-c)+\dfrac{f''(\xi)}2(x-c)^2$，$\xi$ 介于 $c$ 与 $x$ 之间；(2) $|f'(c)|\le 2a+\dfrac b2$。$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1) $f(x)=f(c)+f&#x27;(c)(x-c)+\dfrac{f&#x27;&#x27;(\xi)}2(x-c)^2$，$\xi$ 介于 $c$ 与 $x$ 之间；(2) $|f&#x27;(c)|\le 2a+\dfrac b2$。$</div>
         <div class="steps"><p>**(1)** 对任意 $x\in[0,1]$，在 $x=c$ 处作带拉格朗日余项的一阶泰勒展开：</p>
 <p>$$f(x)=f(c)+f&#x27;(c)(x-c)+\frac{f&#x27;&#x27;(\xi)}{2}(x-c)^2,$$</p>
 <p>其中 $\xi$ 介于 $c$ 与 $x$ 之间。</p>
@@ -232,7 +232,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k23_T7_0.png" alt="k23_T7 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle $a^b>b^a$ 成立。$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle $a^b&gt;b^a$ 成立。$</div>
         <div class="steps"><p>$a^b&gt;b^a\iff b\ln a&gt;a\ln b\iff\dfrac{\ln a}{a}&gt;\dfrac{\ln b}{b}$。</p>
 <p>设 $f(x)=\dfrac{\ln x}{x}\ (x\ge e)$，则</p>
 <p>$$f&#x27;(x)=\frac{1-\ln x}{x^2}&lt;0\qquad(x&gt;e),$$</p>

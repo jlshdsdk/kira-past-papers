@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -35,7 +35,7 @@
         <div class="steps"><p>曲边扇形面积 A=\frac12\int_0^\theta r^2\,\mathrm{d}\theta，弧长 s=\int_0^\theta\sqrt{r^2+r&#x27;^2}\,\mathrm{d}\theta。由 A=\frac12 s 得<br>$$r^2=\sqrt{r^2+r&#x27;^2}\ \Longrightarrow\ r&#x27;^2=r^4-r^2=r^2(r^2-1),$$<br>取 \frac{\mathrm{d}r}{r\sqrt{r^2-1}}=\mathrm{d}\theta，即 \mathrm{d}\!\left(\arccos\frac1r\right)=\mathrm{d}\theta，积分 \arccos\frac1r=\theta+C。<br>由 r(0)=2：C=\arccos\frac12=\frac{\pi}{3}，故 \frac1r=\cos\!\left(\theta+\frac{\pi}{3}\right)，即 r\cos(\theta+\frac{\pi}{3})=1。<br>展开：\frac12x-\frac{\sqrt3}{2}y=1，得直线<br>$$x-\sqrt3\,y=2.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y=\ln\cos\left(\frac{\pi}{4}-x\right)+1+\frac12\ln2\ \left(-\frac{\pi}{4}<x<\frac{3\pi}{4}\right)；极大值 y\left(\frac{\pi}{4}\right)=1+\frac12\ln2$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y=\ln\cos\left(\frac{\pi}{4}-x\right)+1+\frac12\ln2\ \left(-\frac{\pi}{4}&lt;x&lt;\frac{3\pi}{4}\right)；极大值 y\left(\frac{\pi}{4}\right)=1+\frac12\ln2$</div>
         <div class="steps"><p>向上凸 y&#x27;&#x27;&lt;0：K=\frac{-y&#x27;&#x27;}{(1+y&#x27;^2)^{3/2}}=\frac{1}{\sqrt{1+y&#x27;^2}}，即 -y&#x27;&#x27;=1+y&#x27;^2。<br>令 p=y&#x27;：\frac{\mathrm{d}p}{1+p^2}=-\mathrm{d}x，\arctan p=-x+C；由 (0,1) 处 y&#x27;(0)=1 得 C=\frac{\pi}{4}，p=\tan\left(\frac{\pi}{4}-x\right)。<br>$$y=1+\int_0^x\tan\!\left(\frac{\pi}{4}-t\right)\mathrm{d}t=1+\left[\ln\cos\!\left(\frac{\pi}{4}-t\right)\right]_0^x=1+\frac12\ln2+\ln\cos\!\left(\frac{\pi}{4}-x\right).$$<br>定义域 \cos\left(\frac{\pi}{4}-x\right)&gt;0，即 x\in\left(-\frac{\pi}{4},\frac{3\pi}{4}\right)。<br>令 y&#x27;=0：x=\frac{\pi}{4}；y&#x27;&#x27;&lt;0 恒成立，故为极大值：y\!\left(\frac{\pi}{4}\right)=1+\frac12\ln2。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -43,7 +43,7 @@
         <div class="steps"><p>切线 Y-y=y&#x27;(X-x) 交 x 轴于 \left(x-\frac{y}{y&#x27;},0\right)，S_1=\frac12\cdot\frac{y}{y&#x27;}\cdot y=\frac{y^2}{2y&#x27;}；S_2=\int_0^x y\,\mathrm{d}t。<br>2S_1-S_2=1：\dfrac{y^2}{y&#x27;}-\int_0^x y\,\mathrm{d}t=1。取 x=0：y&#x27;(0)=1。<br>求导：\frac{2yy&#x27;^2-y^2y&#x27;&#x27;}{y&#x27;^2}=y，即 yy&#x27;^2=y^2y&#x27;&#x27;，y&#x27;&#x27;=\dfrac{y&#x27;^2}{y}。<br>令 p=y&#x27;：p\dfrac{\mathrm{d}p}{\mathrm{d}y}=\dfrac{p^2}{y}，\dfrac{\mathrm{d}p}{p}=\dfrac{\mathrm{d}y}{y}，p=Cy；p(0)=1,\ y(0)=1\Rightarrow C=1，\dfrac{\mathrm{d}y}{\mathrm{d}x}=y，y=e^x。<br>验证：\dfrac{e^{2x}}{e^x}-(e^x-1)=1 ✓。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) x²+2y²=1（第一象限，y>0）； (II) s=\frac{\sqrt2}{4}l$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I) x²+2y²=1（第一象限，y&gt;0）； (II) s=\frac{\sqrt2}{4}l$</div>
         <div class="steps"><p>(I) 法线 Y-y=-\frac1{y&#x27;}(X-x) 交 y 轴于 Q\left(0,\,y+\frac{x}{y&#x27;}\right)。PQ 中点纵坐标 \frac{1}{2}\left(y+y+\frac{x}{y&#x27;}\right)=0，得 2yy&#x27;=-x，即 (y^2)&#x27;=-x，y^2=C-\dfrac{x^2}{2}。<br>代入 \left(\frac{\sqrt2}{2},\frac12\right)：\frac14=C-\frac14，C=\frac12，故 x^2+2y^2=1，即 y=\sqrt{\dfrac{1-x^2}{2}}（0&lt;x\le1）。<br>(II) 椭圆参数化 x=\cos t,\ y=\frac{1}{\sqrt2}\sin t：\mathrm{d}s=\sqrt{\sin^2t+\frac12\cos^2t}\,\mathrm{d}t=\frac{1}{\sqrt2}\sqrt{1+\sin^2t}\,\mathrm{d}t。<br>$$s=\frac{1}{\sqrt2}\int_0^{\pi/2}\sqrt{1+\sin^2t}\,\mathrm{d}t=\frac{1}{\sqrt2}\int_0^{\pi/2}\sqrt{1+\cos^2t}\,\mathrm{d}t=\frac{1}{\sqrt2}\cdot\frac{l}{2}=\frac{\sqrt2}{4}l,$$<br>其中利用 l=\int_0^{\pi}\sqrt{1+\cos^2x}\,\mathrm{d}x=2\int_0^{\pi/2}\sqrt{1+\cos^2x}\,\mathrm{d}x。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -63,7 +63,7 @@
         <div class="steps"><p>切线斜率 \dfrac{\mathrm{d}y}{\mathrm{d}x}=-\dfrac{\sin t}{f&#x27;(t)}，切线交 x 轴于 X=f(t)+\dfrac{\cos t\,f&#x27;(t)}{\sin t}。交点到切点距离：<br>$$\sqrt{\left(\frac{\cos t\,f&#x27;}{\sin t}\right)^2+\cos^2t}=1\ \Longrightarrow\ \cot^2t\,f&#x27;^2=\sin^2t\ \Longrightarrow\ f&#x27;=\frac{\sin^2t}{\cos t}=\sec t-\cos t.$$<br>$$f(t)=\ln|\sec t+\tan t|-\sin t+C;\quad f(0)=0\Rightarrow C=0.$$<br>面积 A=\int_0^{+\infty}y\,\mathrm{d}x=\int_0^{\pi/2}\cos t\cdot f&#x27;(t)\,\mathrm{d}t=\int_0^{\pi/2}\sin^2t\,\mathrm{d}t=\dfrac{\pi}{4}。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle y=Cx^3\ (C>0)$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle y=Cx^3\ (C&gt;0)$</div>
         <div class="steps"><p>M=(x,f(x))，切线交 x 轴于 T\left(x-\dfrac{f}{f&#x27;},0\right)，P=(x,0)。曲线下面积 \displaystyle\int_0^x f\,\mathrm{d}t，三角形面积 \dfrac12\cdot\dfrac{f}{f&#x27;}\cdot f=\dfrac{f^2}{2f&#x27;}。<br>由 3:2：\displaystyle\int_0^x f\,\mathrm{d}t=\dfrac{3f^2}{4f&#x27;}，即 4f&#x27;\displaystyle\int_0^x f\,\mathrm{d}t=3f^2。<br>记 F=\int_0^x f\,\mathrm{d}t（F&#x27;=f），上式两边对 x 求导：4f&#x27;&#x27;F+4f&#x27;f=6ff&#x27;，得 F=\dfrac{ff&#x27;}{2f&#x27;&#x27;}；与 F=\dfrac{3f^2}{4f&#x27;} 比较：3f^2f&#x27;&#x27;=2f&#x27;^2·\frac{...}{} 即 3ff&#x27;&#x27;=2f&#x27;^2。<br>令 p=f&#x27;：3fp\dfrac{\mathrm{d}p}{\mathrm{d}f}=2p^2，\dfrac{\mathrm{d}p}{p}=\dfrac{2}{3}\dfrac{\mathrm{d}f}{f}，p=C_1f^{2/3}；f&#x27;=C_1f^{2/3}，f^{1/3}=\dfrac{C_1}{3}x+C_2，由 f(0)=0 得 C_2=0。<br>$$f(x)=Cx^3,\quad C&gt;0\ (\text{验证比值 } \frac{Cx^4/4}{Cx^4/6}=\frac32\ \checkmark).$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

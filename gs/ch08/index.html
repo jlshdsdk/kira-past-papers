@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -156,7 +156,7 @@
 <p>\{a_n\} 单调不增且有下界 0，由单调有界准则，\{a_n\} 收敛，即极限存在。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) \frac{1}{n+1}<\ln\left(1+\frac{1}{n}\right)<\frac{1}{n}；(II) {a_n} 收敛（单调递减且 0<a_n<1）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) \frac{1}{n+1}&lt;\ln\left(1+\frac{1}{n}\right)&lt;\frac{1}{n}；(II) {a_n} 收敛（单调递减且 0&lt;a_n&lt;1）$</div>
         <div class="steps"><p>**(I)** 先证对 x&gt;0 有</p>
 <p>$$\frac{x}{1+x}&lt;\ln(1+x)&lt;x.$$</p>
 <p>右半：令 \varphi(x)=x-\ln(1+x)，\varphi(0)=0，\varphi&#x27;(x)=1-\dfrac{1}{1+x}=\dfrac{x}{1+x}&gt;0（x&gt;0），故 \varphi(x)&gt;0，即 \ln(1+x)&lt;x。</p>
@@ -194,7 +194,7 @@
 <p>故级数 \sum(x_{n+1}-x_n) 绝对收敛。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n 存在，且 1<\lim x_n<2（从而 0<\lim x_n<2）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lim_{n\to\infty}x_n 存在，且 1&lt;\lim x_n&lt;2（从而 0&lt;\lim x_n&lt;2）$</div>
         <div class="steps"><p>**存在性**：由 (1)，\sum_{k=1}^{\infty}(x_{k+1}-x_k) 收敛，而</p>
 <p>$$x_n=x_1+\sum_{k=1}^{n-1}(x_{k+1}-x_k),$$</p>
 <p>故 {x_n} 收敛。设 A=\lim x_n。</p>

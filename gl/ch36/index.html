@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -62,11 +62,11 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T2_0.png" alt="k36_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T2_1.png" alt="k36_T2 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T2_2.png" alt="k36_T2 题目图 3">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}2x, & 0<x<1\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}2x, &amp; 0&lt;x&lt;1\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>D 的面积 S=\int_0^{1}2x\,dx=1，故 f(x,y)=1（(x,y)\in D）。<br>对 0&lt;x&lt;1，y 的变动范围为 -x&lt;y&lt;x：<br>$$f_X(x)=\int_{-x}^{x}1\,dy=2x.$$<br>其他处 f_X(x)=0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}e^{-x}, & x>0\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}e^{-x}, &amp; x&gt;0\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>$$f_X(x)=\int_x^{+\infty}e^{-y}\,dy=\left[-e^{-y}\right]_x^{+\infty}=e^{-x},\quad x&gt;0;$$<br>x≤0 时 f_X(x)=0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -74,11 +74,11 @@
         <div class="steps"><p>$$S=\int_1^{e^2}\frac{1}{x}\,dx=\ln e^2=2,\qquad f(x,y)=\frac12\ (\text{D 内}).$$<br>$$f_X(x)=\int_0^{1/x}\frac12\,dy=\frac{1}{2x},\quad 1\le x\le e^2.$$<br>故 f_X(2)=\frac{1}{2\cdot2}=\frac14。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f_X(x)=2x\ (0<x<1)；\ f_Y(y)=1-\frac{y}{2}\ (0<y<2)，其他均为 0$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f_X(x)=2x\ (0&lt;x&lt;1)；\ f_Y(y)=1-\frac{y}{2}\ (0&lt;y&lt;2)，其他均为 0$</div>
         <div class="steps"><p>区域面积 S=\int_0^1 2x\,dx=1，f(x,y)=1。<br>$$f_X(x)=\int_0^{2x}1\,dy=2x,\quad 0&lt;x&lt;1.$$<br>0&lt;y&lt;2 时 x 需满足 \frac{y}{2}&lt;x&lt;1：<br>$$f_Y(y)=\int_{y/2}^{1}1\,dx=1-\frac{y}{2}.$$<br>其他处为 0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}x, & 0\le x\le1\\ 2-x, & 1<x\le2\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}x, &amp; 0\le x\le1\\ 2-x, &amp; 1&lt;x\le2\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>三角形顶点为 (0,0),(2,0),(1,1)，面积 S=\frac12\cdot2\cdot1=1，故 f(x,y)=1（G 内）。<br>0≤x≤1 时 y 从 0 到 x；1&lt;x≤2 时 y 从 0 到 2-x：<br>$$f_X(x)=\begin{cases}\int_0^{x}1\,dy=x, &amp; 0\le x\le1\\ \int_0^{2-x}1\,dy=2-x, &amp; 1&lt;x\le2\\ 0, &amp; \text{其他}\end{cases}$$<br>校验：\int_0^1 x\,dx+\int_1^2(2-x)\,dx=\frac12+\frac12=1。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -93,11 +93,11 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T3_0.png" alt="k36_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=\begin{cases}\dfrac{9y^2}{x}, & 0<y<x<1\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=\begin{cases}\dfrac{9y^2}{x}, &amp; 0&lt;y&lt;x&lt;1\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>$$f(x,y)=f_X(x)\,f_{Y|X}(y|x)=3x^2\cdot\frac{3y^2}{x^3}=\frac{9y^2}{x},\quad 0&lt;y&lt;x&lt;1,$$<br>其他处为 0。<br>校验：\int_0^1 dx\int_0^x \frac{9y^2}{x}\,dy=\int_0^1\frac{3x^3}{x}\,dx=\int_0^1 3x^2\,dx=1。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f_Y(y)=\begin{cases}-9y^2\ln y, & 0<y<1\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f_Y(y)=\begin{cases}-9y^2\ln y, &amp; 0&lt;y&lt;1\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>0&lt;y&lt;1 时：<br>$$f_Y(y)=\int_y^{1}\frac{9y^2}{x}\,dx=9y^2\left[\ln x\right]_y^{1}=9y^2(0-\ln y)=-9y^2\ln y.$$<br>其他处为 0。（可验证 \int_0^1 -9y^2\ln y\,dy=1。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -116,7 +116,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T4_0.png" alt="k36_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T4_1.png" alt="k36_T4 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_{Y|X}(y|x)=\begin{cases}\dfrac{1}{x}, & 0<y<x\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_{Y|X}(y|x)=\begin{cases}\dfrac{1}{x}, &amp; 0&lt;y&lt;x\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>x&gt;0 时的边缘密度：<br>$$f_X(x)=\int_0^{x}e^{-x}\,dy=xe^{-x}.$$<br>故当 x&gt;0：<br>$$f_{Y|X}(y|x)=\frac{f(x,y)}{f_X(x)}=\frac{e^{-x}}{xe^{-x}}=\frac{1}{x},\quad 0&lt;y&lt;x,$$<br>其他为 0（给定 X=x 时，Y 在区间 (0,x) 内均匀分布）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -124,7 +124,7 @@
         <div class="steps"><p>由 0&lt;y&lt;x 知 \{X\le1\}\subset\{Y\le1\}，故 P\{X\le1,Y\le1\}=P\{X\le1\}。<br>$$P\{X\le1\}=\int_0^{1}xe^{-x}\,dx=\left[-xe^{-x}-e^{-x}\right]_0^{1}=1-2e^{-1}.$$<br>Y 的边缘密度：f_Y(y)=\int_y^{+\infty}e^{-x}\,dx=e^{-y}\ (y&gt;0)，故 P\{Y\le1\}=1-e^{-1}。<br>$$P\{X\le1\mid Y\le1\}=\frac{1-2e^{-1}}{1-e^{-1}}=\frac{e-2}{e-1}\approx0.42.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f_{X|Y}(x|y)=\begin{cases}\dfrac{1}{2(1-y)}, & y<x<2-y\\ 0, & \text{其他}\end{cases}\quad(0<y<1)$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f_{X|Y}(x|y)=\begin{cases}\dfrac{1}{2(1-y)}, &amp; y&lt;x&lt;2-y\\ 0, &amp; \text{其他}\end{cases}\quad(0&lt;y&lt;1)$</div>
         <div class="steps"><p>G 顶点 (0,0),(2,0),(1,1)，面积 1，故 f(x,y)=1（G 内）。<br>0&lt;y&lt;1 时，x 的变动范围为 y&lt;x&lt;2-y：<br>$$f_Y(y)=\int_y^{2-y}1\,dx=2-2y=2(1-y).$$<br>于是<br>$$f_{X|Y}(x|y)=\frac{f(x,y)}{f_Y(y)}=\frac{1}{2(1-y)},\quad y&lt;x&lt;2-y,$$<br>其他为 0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -139,7 +139,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T5_0.png" alt="k36_T5 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A=\dfrac{1}{\pi}；\quad f_{Y|X}(y|x)=\dfrac{1}{\sqrt{\pi}}\,e^{-(y-x)^2},\ -\infty<y<+\infty$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A=\dfrac{1}{\pi}；\quad f_{Y|X}(y|x)=\dfrac{1}{\sqrt{\pi}}\,e^{-(y-x)^2},\ -\infty&lt;y&lt;+\infty$</div>
         <div class="steps"><p>配方：-2x^2+2xy-y^2=-x^2-(y-x)^2，故 f(x,y)=Ae^{-x^2}e^{-(y-x)^2}。<br>由归一性（\int e^{-t^2}dt=\sqrt{\pi}）：<br>$$1=A\int_{-\infty}^{+\infty}e^{-x^2}dx\int_{-\infty}^{+\infty}e^{-(y-x)^2}dy=A\sqrt{\pi}\cdot\sqrt{\pi}=A\pi \ \Rightarrow\ A=\frac{1}{\pi}.$$<br>边缘密度：<br>$$f_X(x)=\frac{1}{\pi}e^{-x^2}\int_{-\infty}^{+\infty}e^{-(y-x)^2}dy=\frac{1}{\sqrt{\pi}}e^{-x^2}.$$<br>于是<br>$$f_{Y|X}(y|x)=\frac{f(x,y)}{f_X(x)}=\frac{1}{\sqrt{\pi}}e^{-(y-x)^2},\quad -\infty&lt;y&lt;+\infty.$$<br>（即 X\sim N(0,\frac12)，Y\mid X=x\sim N(x,\frac12)。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -154,7 +154,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k36_T6_0.png" alt="k36_T6 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k36_T6_1.png" alt="k36_T6 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x,y)=\begin{cases}0, & x<0\ \text{或}\ y<0\\ x^2y^2, & 0\le x\le1,\ 0\le y\le1\\ x^2, & 0\le x\le1,\ y>1\\ y^2, & x>1,\ 0\le y\le1\\ 1, & x>1,\ y>1\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x,y)=\begin{cases}0, &amp; x&lt;0\ \text{或}\ y&lt;0\\ x^2y^2, &amp; 0\le x\le1,\ 0\le y\le1\\ x^2, &amp; 0\le x\le1,\ y&gt;1\\ y^2, &amp; x&gt;1,\ 0\le y\le1\\ 1, &amp; x&gt;1,\ y&gt;1\end{cases}$</div>
         <div class="steps"><p>F(x,y)=\int_{-\infty}^{x}dx\int_{-\infty}^{y}f(u,v)\,dv，按 (x,y) 所在位置分块：<br>(1) x&lt;0 或 y&lt;0：F=0。<br>(2) 0≤x≤1, 0≤y≤1：<br>$$F=\int_0^{x}4u\,du\int_0^{y}v\,dv=\left(2\cdot\frac{x^2}{2}\right)\!\left(2\cdot\frac{y^2}{2}\right)=x^2y^2.$$<br>(3) 0≤x≤1, y&gt;1：F=\int_0^{x}4u\,du\int_0^{1}v\,dv=x^2。<br>(4) x&gt;1, 0≤y≤1：F=y^2。<br>(5) x&gt;1, y&gt;1：F=1。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -65,7 +65,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k37_T3_0.png" alt="k37_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=\begin{cases}3, & 0<x<1,\ x^2<y<\sqrt{x}\\ 0, & \text{其他}\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x,y)=\begin{cases}3, &amp; 0&lt;x&lt;1,\ x^2&lt;y&lt;\sqrt{x}\\ 0, &amp; \text{其他}\end{cases}$</div>
         <div class="steps"><p>$$S=\int_0^{1}\left(\sqrt{x}-x^2\right)dx=\frac23-\frac13=\frac13.$$<br>故 f(x,y)=\frac{1}{S}=3（(x,y)\in D），其他处为 0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

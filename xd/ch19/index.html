@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -48,7 +48,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：特征多项式 (λ−1)(λ−3)(λ−b)，仅两个不同特征值 ⟹ b∈{1,3}；b=1 需 r(A−E)=1 ⟹ a=1，b=3 需 r(A−3E)=1 ⟹ a=−1，两组均满足可对角化，B 漏掉 (a,b)=(−1,3) 情形，solver 与 A 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I)\ A=\begin{pmatrix}1&1&1\\2&-1&1\\0&1&-1\end{pmatrix}；(II)\ P=(\,(1,0,-2)^T,(4,3,1)^T,(0,1,-1)^T\,)，\ \Lambda=\mathrm{diag}(-1,2,-2)$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I)\ A=\begin{pmatrix}1&amp;1&amp;1\\2&amp;-1&amp;1\\0&amp;1&amp;-1\end{pmatrix}；(II)\ P=(\,(1,0,-2)^T,(4,3,1)^T,(0,1,-1)^T\,)，\ \Lambda=\mathrm{diag}(-1,2,-2)$</div>
         <div class="steps"><p>**(I)** 取 $x=e_1,e_2,e_3$ 得 $A$ 的各列：<br>$$A=\begin{pmatrix}1&amp;1&amp;1\\2&amp;-1&amp;1\\0&amp;1&amp;-1\end{pmatrix}.$$</p>
 <p>**(II)** <br>$$|\lambda E-A|=\lambda^{3}-\lambda^{2}-4\lambda+4=(\lambda+1)(\lambda-2)(\lambda+2),$$<br>特征值 $\lambda=-1,\ 2,\ -2$。（检验迹：$-1+2-2=-1=\mathrm{tr}(A)$。）</p>
 <p>分别解 $(A-\lambda E)x=0$：<br>- $\lambda=-1$：$\xi_1=(1,0,-2)^T$（$A\xi_1=(-1,0,2)^T$）；<br>- $\lambda=2$：$\xi_2=(4,3,1)^T$（$A\xi_2=(8,6,2)^T$）；<br>- $\lambda=-2$：$\xi_3=(0,1,-1)^T$（$A\xi_3=(0,-2,2)^T$）。</p>

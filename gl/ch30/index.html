@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -42,7 +42,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k30_T2_0.png" alt="k30_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, & x<-1\\ \dfrac{5x+7}{16}, & -1\le x<1\\ 1, & x\ge 1\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, &amp; x&lt;-1\\ \dfrac{5x+7}{16}, &amp; -1\le x&lt;1\\ 1, &amp; x\ge 1\end{cases}$</div>
         <div class="steps"><p>$P\{-1&lt;X&lt;1\}=1-\tfrac18-\tfrac14=\tfrac58$。在 $(-1,1)$ 内条件分布为均匀分布，对 $-1&lt;x&lt;1$：</p>
 <p>$$P\{-1&lt;X\le x\mid -1&lt;X&lt;1\}=\frac{x+1}{2}$$</p>
 <p>故 $P\{-1&lt;X\le x\}=\dfrac58\cdot\dfrac{x+1}{2}=\dfrac{5(x+1)}{16}$，从而</p>
@@ -79,7 +79,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k30_T4_0.png" alt="k30_T4 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A=1,\quad P\left\{|X|<\frac{\pi}{6}\right\}=\frac{1}{2}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A=1,\quad P\left\{|X|&lt;\frac{\pi}{6}\right\}=\frac{1}{2}$</div>
         <div class="steps"><p>分布函数在分段点 $x=\dfrac{\pi}{2}$ 处右连续且此处连续（连续型）：$A\sin\dfrac{\pi}{2}=A=1$，故 $A=1$。</p>
 <p>$F$ 处处连续（$F(0)=0$ 衔接左段），故</p>
 <p>$$P\left\{|X|&lt;\frac{\pi}{6}\right\}=P\left\{-\frac{\pi}{6}&lt;X&lt;\frac{\pi}{6}\right\}=F\left(\frac{\pi}{6}\right)-F\left(-\frac{\pi}{6}\right)=\sin\frac{\pi}{6}-0=\frac12$$</p></div>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,7 +27,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k09_T1_0.png" alt="k09_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2n\le S(x)<2(n+1)\quad(n\pi\le x<(n+1)\pi)，证毕$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2n\le S(x)&lt;2(n+1)\quad(n\pi\le x&lt;(n+1)\pi)，证毕$</div>
         <div class="steps"><p>**(I) 证明**</p>
 <p>由周期性 |\cos(t+k\pi)|=|\cos t|，每个周期段上积分相等：</p>
 <p>$$\int_{k\pi}^{(k+1)\pi}|\cos t|\,dt=\int_0^{\pi}|\cos t|\,dt=\int_0^{\pi/2}\cos t\,dt-\int_{\pi/2}^{\pi}\cos t\,dt=1+1=2,$$</p>
@@ -81,7 +81,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k09_T3_0.png" alt="k09_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \int_0^1|\ln t|[\ln(1+t)]^n\,dt<\int_0^1 t^n|\ln t|\,dt$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \int_0^1|\ln t|[\ln(1+t)]^n\,dt&lt;\int_0^1 t^n|\ln t|\,dt$</div>
         <div class="steps"><p>先证 0&lt;\ln(1+t)&lt;t（0&lt;t&lt;1）：令 \varphi(t)=t-\ln(1+t)，\varphi(0)=0，\varphi&#x27;(t)=\dfrac{t}{1+t}&gt;0（0&lt;t\le 1），故 \varphi(t)&gt;\varphi(0)=0，即 \ln(1+t)&lt;t。</p>
 <p>于是对 n\ge 1：</p>
 <p>$$0&lt;[\ln(1+t)]^n&lt;t^n\quad(0&lt;t&lt;1).$$</p>

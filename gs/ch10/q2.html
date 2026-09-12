@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,7 +27,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T13_0.png" alt="k10_T13 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (\text{II})\ f'(x)=\sum_{k=1}^{n}u_1(x)\cdots u_{k-1}(x)\,u_k'(x)\,u_{k+1}(x)\cdots u_n(x)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (\text{II})\ f&#x27;(x)=\sum_{k=1}^{n}u_1(x)\cdots u_{k-1}(x)\,u_k&#x27;(x)\,u_{k+1}(x)\cdots u_n(x)$</div>
         <div class="steps"><p>**(I)** 由定义，加减项 $u(x+h)v(x)$：</p>
 <p>$$\bigl[u(x)v(x)\bigr]&#x27;=\lim_{h\to0}\frac{u(x+h)v(x+h)-u(x+h)v(x)+u(x+h)v(x)-u(x)v(x)}{h}$$</p>
 <p>$$=\lim_{h\to0}\left[v(x+h)\cdot\frac{u(x+h)-u(x)}{h}+u(x)\cdot\frac{v(x+h)-v(x)}{h}\right]$$</p>
@@ -38,7 +38,7 @@
 <p>即 $f&#x27;=\displaystyle\sum_{k=1}^{n}u_1\cdots u_{k-1}\,u_k&#x27;\,u_{k+1}\cdots u_n$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{证得 } F \text{ 可导且 } F'(x)=f(x)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{证得 } F \text{ 可导且 } F&#x27;(x)=f(x)$</div>
         <div class="steps"><p>对任意 $x$，考察差商</p>
 <p>$$\frac{F(x+h)-F(x)}{h}=\frac1h\int_x^{x+h}f(t)\,dt$$</p>
 <p>$f$ 在介于 $x$ 与 $x+h$ 之间的闭区间上连续，由积分中值定理，存在 $\xi$ 介于 $x$ 与 $x+h$ 之间，使</p>

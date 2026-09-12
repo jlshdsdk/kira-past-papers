@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,13 +27,13 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k23_T1_0.png" alt="k23_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=4；\ k>0$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=4；\ k&gt;0$</div>
         <div class="steps"><p>合同 $\Rightarrow$ 同秩。$|B|=0$，故 $|A|=0$：$|A|=3(a-4)=0$，得 $a=4$。</p>
 <p>$a=4$ 时 $A=\begin{pmatrix}4&amp;1&amp;-2\\ 1&amp;1&amp;1\\ -2&amp;1&amp;4\end{pmatrix}$ 的顺序主子式 $\Delta_1=4&gt;0,\ \Delta_2=3&gt;0$，且 $|A|=0$，由惯性定理 $A\simeq\mathrm{diag}(4,\tfrac34,0)$，即 $A$ 的惯性指数为（正 2, 负 0）、秩 2。</p>
 <p>$B=\mathrm{diag}(k,6,0)$ 须有相同的秩与惯性指数：$k\neq0$ 且 $k&gt;0$。故 $k&gt;0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle k=3；\ Q=\begin{pmatrix}\tfrac{1}{\sqrt3}&\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt6}\\ \tfrac{1}{\sqrt3}&0&-\tfrac{2}{\sqrt6}\\ \tfrac{1}{\sqrt3}&-\tfrac{1}{\sqrt2}&\tfrac{1}{\sqrt6}\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle k=3；\ Q=\begin{pmatrix}\tfrac{1}{\sqrt3}&amp;\tfrac{1}{\sqrt2}&amp;\tfrac{1}{\sqrt6}\\ \tfrac{1}{\sqrt3}&amp;0&amp;-\tfrac{2}{\sqrt6}\\ \tfrac{1}{\sqrt3}&amp;-\tfrac{1}{\sqrt2}&amp;\tfrac{1}{\sqrt6}\end{pmatrix}$</div>
         <div class="steps"><p>$Q$ 正交且 $Q^{T}AQ=B$，则 $A\sim B$，$B$ 的对角元即 $A$ 的全部特征值：$\{k,\,6,\,0\}$。</p>
 <p>$\mathrm{tr}A=4+1+4=9=k+6+0$，得 $k=3$。</p>
 <p>$a=4$ 时求 $A$ 的特征向量：<br>- $\lambda=3$：$(A-3E)x=0\Rightarrow(1,1,1)^{T}$，单位化 $\tfrac{1}{\sqrt3}(1,1,1)^{T}$；<br>- $\lambda=6$：$(A-6E)x=0\Rightarrow(1,0,-1)^{T}$，单位化 $\tfrac{1}{\sqrt2}(1,0,-1)^{T}$；<br>- $\lambda=0$：$Ax=0\Rightarrow(1,-2,1)^{T}$，单位化 $\tfrac{1}{\sqrt6}(1,-2,1)^{T}$。</p>

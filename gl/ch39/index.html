@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -51,7 +51,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T2_0.png" alt="k39_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P{X=0}=27/125, P{X=1}=54/125, P{X=2}=36/125, P{X=3}=8/125; F(x)=0 (x<0), 27/125 (0<=x<1), 81/125 (1<=x<2), 117/125 (2<=x<3), 1 (x>=3); E(X)=6/5$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P{X=0}=27/125, P{X=1}=54/125, P{X=2}=36/125, P{X=3}=8/125; F(x)=0 (x&lt;0), 27/125 (0&lt;=x&lt;1), 81/125 (1&lt;=x&lt;2), 117/125 (2&lt;=x&lt;3), 1 (x&gt;=3); E(X)=6/5$</div>
         <div class="steps"><p>$X\sim B\left(3,\frac25\right)$，$P\{X=k\}=C_3^k\left(\frac25\right)^k\left(\frac35\right)^{3-k}$：</p>
 <p>$$P\{X=0\}=\frac{27}{125},\quad P\{X=1\}=\frac{54}{125},\quad P\{X=2\}=\frac{36}{125},\quad P\{X=3\}=\frac{8}{125}.$$</p>
 <p>分布函数（阶梯形）：</p>
@@ -101,7 +101,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T4_0.png" alt="k39_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T4_1.png" alt="k39_T4 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P(X=i,Y=i)=1/9 (i=1,2,3); P(X=2,Y=1)=P(X=3,Y=1)=P(X=3,Y=2)=2/9; 其余 P(X=i,Y=j)=0 (i<j)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle P(X=i,Y=i)=1/9 (i=1,2,3); P(X=2,Y=1)=P(X=3,Y=1)=P(X=3,Y=2)=2/9; 其余 P(X=i,Y=j)=0 (i&lt;j)$</div>
         <div class="steps"><p>逐点枚举 $\xi,\eta$ 的 9 个等可能独立组合：</p>
 <p>- $X=Y=i$ 即 $\xi=\eta=i$：$P=\frac19$，得 $P(X=1,Y=1)=P(X=2,Y=2)=P(X=3,Y=3)=\frac19$；<br>- $X=i&gt;Y=j$：$\{\xi=i,\eta=j\}\cup\{\xi=j,\eta=i\}$，$P=\frac29$，得 $P(X=2,Y=1)=P(X=3,Y=1)=P(X=3,Y=2)=\frac29$；<br>- $X&lt;Y$ 不可能，概率为 0。</p>
 <p>联合分布律（行 $Y$，列 $X$）：</p>
@@ -137,14 +137,14 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k39_T5_0.png" alt="k39_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k39_T5_1.png" alt="k39_T5 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F_Y(y)=0 (y<0), 3y/4 (0<=y<1), 1/2+y/4 (1<=y<2), 1 (y>=2); EY = 3/4$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle F_Y(y)=0 (y&lt;0), 3y/4 (0&lt;=y&lt;1), 1/2+y/4 (1&lt;=y&lt;2), 1 (y&gt;=2); EY = 3/4$</div>
         <div class="steps"><p>**(I)** 全概率公式：$F_Y(y)=P\{Y\le y\}=\frac12 P\{U(0,1)\le y\}+\frac12 P\{U(0,2)\le y\}$，其中 $U(0,i)$ 的分布函数为 $y/i$（$0&lt;y&lt;i$）：</p>
 <p>- $y&lt;0$：$F_Y(y)=0$；<br>- $0\le y&lt;1$：$F_Y(y)=\frac12 y+\frac12\cdot\frac y2=\frac{3y}{4}$；<br>- $1\le y&lt;2$：$F_Y(y)=\frac12\cdot 1+\frac12\cdot\frac y2=\frac12+\frac y4$；<br>- $y\ge 2$：$F_Y(y)=1$。</p>
 <p>**(II)** 重期望公式：$E\left[U(0,i)\right]=\frac i2$，</p>
 <p>$$EY=E\left[E(Y\mid X)\right]=\frac12\cdot\frac12+\frac12\cdot\frac22\cdot\frac{1}{1}\cdot 1=\frac14+\frac12=\frac34.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) f_T(t)=9t^8/theta^9 (0<t<theta), 其他为 0; (II) a = 10/9$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) f_T(t)=9t^8/theta^9 (0&lt;t&lt;theta), 其他为 0; (II) a = 10/9$</div>
         <div class="steps"><p>**(I)** $F(x)=\left(\frac x\theta\right)^3$（$0&lt;x&lt;\theta$），样本独立同分布：</p>
 <p>$$F_T(t)=P\{\max\le t\}=\left[\frac{t}{\theta}\right]^9,\quad 0&lt;t&lt;\theta,$$</p>
 <p>$$f_T(t)=F_T&#x27;(t)=\frac{9t^8}{\theta^9},\quad 0&lt;t&lt;\theta;\ \text{其他为 }0.$$</p>
@@ -169,7 +169,7 @@
 <p>直接验证：$\dfrac{X^2}{4}&gt;\dfrac13\iff X&gt;\dfrac{2}{\sqrt3}$，$P=\int_{2/\sqrt3}^{2}\dfrac x2\,dx=\dfrac{1}{4}\left(4-\dfrac43\right)=\dfrac23$，一致。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle P{Y>0} = 1/4, E(Y) = 50$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle P{Y&gt;0} = 1/4, E(Y) = 50$</div>
         <div class="steps"><p>$P\{Y&gt;0\}=P\{X&gt;100\}$：</p>
 <p>$$P\{Y&gt;0\}=\int_{100}^{+\infty}\frac{2\cdot100^2}{(100+x)^3}\,dx=20000\left[-\frac{1}{2(100+x)^2}\right]_{100}^{\infty}=\frac{20000}{2\cdot200^2}=\frac14.$$</p>
 <p>期望（令 $u=100+x$，$x-100=u-200$）：</p>
@@ -211,7 +211,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 第二段 \int_5^{25}(25-x)dx=200 误算成 100（该段是底20高20的三角形，得100），总数 600/60=10 错；正确 EW=(12.5+200+450+37.5)/60=700/60=35/3（1997 数三官方答案），solver、A 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) F(x)=e^x/(1+e^x); (II) f_Y(y)=1/(1+y)^2 (y>0), 其他 0; (III) 不存在$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) F(x)=e^x/(1+e^x); (II) f_Y(y)=1/(1+y)^2 (y&gt;0), 其他 0; (III) 不存在$</div>
         <div class="steps"><p>**(I)** 令 $u=e^t$：</p>
 <p>$$F(x)=\int_{-\infty}^{x}\frac{e^t}{(1+e^t)^2}dt=\int_{0}^{e^x}\frac{du}{(1+u)^2}=\left[-\frac{1}{1+u}\right]_0^{e^x}=1-\frac{1}{1+e^x}=\frac{e^x}{1+e^x}.$$</p>
 <p>校验：$x\to-\infty$ 得 0，$x\to+\infty$ 得 1。（ Logistic 分布。）</p>
@@ -261,7 +261,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：Y&gt;X 时利润应为 1000X+500(Y-X)=500(X+Y)：A 误写成 500Y（漏掉 1000X 部分）得 32500/3；B 模型正确但结果 40000/3 算错（与其自给小数 14167 不符）；正确 ET=20000/3+7500=42500/3（1998 数三官方答案），solver 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) f_X(x)=1 (0<x<1); (II) f_Z(z)=2/(1+z)^2 (z>=1), 其他 0; (III) E(X/Y)=2\ln 2 - 1$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) f_X(x)=1 (0&lt;x&lt;1); (II) f_Z(z)=2/(1+z)^2 (z&gt;=1), 其他 0; (III) E(X/Y)=2\ln 2 - 1$</div>
         <div class="steps"><p>设所取点 $U\sim U(0,2)$，则 $X=\min(U,2-U)\in(0,1)$，$Y=2-X$。</p>
 <p>**(I)** $0\le x\le 1$ 时 $P\{X\le x\}=P\{U\le x\}+P\{U\ge 2-x\}=\dfrac x2+\dfrac x2=x$，故 $F_X(x)=x$（$0\le x\le1$），</p>
 <p>$$f_X(x)=1,\quad 0&lt;x&lt;1\ (\text{其他为 }0).$$</p>

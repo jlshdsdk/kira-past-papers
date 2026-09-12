@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,7 +27,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k21_T1_0.png" alt="k21_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=1-2x+2x^2-2x^3+\cdots+2(-1)^n x^n+\dfrac{2(-1)^{n+1}x^{n+1}}{(1+\xi)^{n+2}}，其中 \xi 介于 0 与 x 之间（x>-1）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=1-2x+2x^2-2x^3+\cdots+2(-1)^n x^n+\dfrac{2(-1)^{n+1}x^{n+1}}{(1+\xi)^{n+2}}，其中 \xi 介于 0 与 x 之间（x&gt;-1）$</div>
         <div class="steps"><p>先改写：</p>
 <p>$$f(x)=\frac{1-x}{1+x}=\frac{2}{1+x}-1.$$\n<br>由 $\left[(1+x)^{-1}\right]^{(k)}=(-1)^k k!(1+x)^{-k-1}$ 得</p>
 <p>$$f(0)=1,\qquad f^{(k)}(0)=2(-1)^k k!\ (k\ge1),\qquad f^{(n+1)}(\xi)=2(-1)^{n+1}(n+1)!(1+\xi)^{-n-2}.$$</p>
@@ -59,7 +59,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k21_T2_0.png" alt="k21_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(-1,1) 使 f'''(\xi)=3（泰勒展开+介值定理）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(-1,1) 使 f&#x27;&#x27;&#x27;(\xi)=3（泰勒展开+介值定理）$</div>
         <div class="steps"><p>在 x=0 处作带拉格朗日余项的二阶泰勒展开（注意 f&#x27;(0)=0）：对 x\in[-1,1]，</p>
 <p>$$f(x)=f(0)+\frac{f&#x27;&#x27;(0)}{2}x^2+\frac{f&#x27;&#x27;&#x27;(\xi_x)}{6}x^3.$$</p>
 <p>取 x=1（\xi_1\in(0,1)）与 x=-1（\xi_2\in(-1,0)）：</p>
@@ -70,7 +70,7 @@
 <p>$$f&#x27;&#x27;&#x27;(\xi)=\frac{f&#x27;&#x27;&#x27;(\xi_1)+f&#x27;&#x27;&#x27;(\xi_2)}{2}=3.\qquad\blacksquare$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1) 存在 \xi\in(0,1) 使 f'(\xi)=0；(2) 存在 \eta\in(0,1) 使 f''(\eta)<-2$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1) 存在 \xi\in(0,1) 使 f&#x27;(\xi)=0；(2) 存在 \eta\in(0,1) 使 f&#x27;&#x27;(\eta)&lt;-2$</div>
         <div class="steps"><p>**（1）** 令 F(x)=\int_0^x f(t)\,dt，则 F(0)=0，F(1)=1。对 F 在 [0,1] 用拉格朗日中值定理：存在 c\in(0,1) 使</p>
 <p>$$f(c)=F&#x27;(c)=\frac{F(1)-F(0)}{1-0}=1.$$</p>
 <p>又 f(1)=1，f 在 [c,1] 上连续、(c,1) 内可导，由罗尔定理存在 \xi\in(c,1)\subset(0,1) 使 f&#x27;(\xi)=0。</p>
@@ -82,7 +82,7 @@
 <p>故存在 \eta\in(0,1) 使 f&#x27;&#x27;(\eta)&lt;-2。\qquad\blacksquare</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) 存在 \xi\in(-a,a)：f''(\xi)=\dfrac{f(a)+f(-a)}{a^2}；(II) 存在 \eta\in(-a,a)：|f''(\eta)|\ge\dfrac{|f(a)-f(-a)|}{2a^2}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I) 存在 \xi\in(-a,a)：f&#x27;&#x27;(\xi)=\dfrac{f(a)+f(-a)}{a^2}；(II) 存在 \eta\in(-a,a)：|f&#x27;&#x27;(\eta)|\ge\dfrac{|f(a)-f(-a)|}{2a^2}$</div>
         <div class="steps"><p>**（I）** 在 x=0 处作带拉格朗日余项的一阶泰勒展开（f(0)=0）：</p>
 <p>$$f(a)=f&#x27;(0)a+\frac{f&#x27;&#x27;(\xi_1)}{2}a^2\quad(0&lt;\xi_1&lt;a),\qquad f(-a)=-f&#x27;(0)a+\frac{f&#x27;&#x27;(\xi_2)}{2}a^2\quad(-a&lt;\xi_2&lt;0).$$</p>
 <p>两式相加：</p>

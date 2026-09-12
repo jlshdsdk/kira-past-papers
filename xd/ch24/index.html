@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -44,13 +44,13 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T2_0.png" alt="k24_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k24_T2_1.png" alt="k24_T2 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -2<\lambda<1$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -2&lt;\lambda&lt;1$</div>
         <div class="steps"><p>二次型矩阵<br>$$A=\begin{pmatrix}1&amp;\lambda&amp;-1\\ \lambda&amp;4&amp;2\\ -1&amp;2&amp;4\end{pmatrix}.$$<br>f 正定 ⟺ 各顺序主子式全大于零：<br>Δ1=1&gt;0；Δ2=4−λ²&gt;0 ⟺ |λ|&lt;2；<br>$$\Delta_3=\det A=1(16-4)-\lambda(4\lambda+2)+(-1)(2\lambda+4)=12-4\lambda^{2}-4\lambda=4(2-\lambda)(\lambda+1)&gt;0,$$<br>即 −1&lt;λ&lt;2。与 |λ|&lt;2 取交集得<br>$$-1&lt;\lambda&lt;2 .$$</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 算错三阶顺序主子式（正确 \Delta_3=8-4\lambda^2-4\lambda=-4(\lambda+2)(\lambda-1)，如 \lambda=-1.5 时 f 正定），得错误区间 -1&lt;\lambda&lt;2；A、B 的 -2&lt;\lambda&lt;1 正确</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：正定要求 \Delta_2=4-\lambda^2&gt;0 且 \Delta_3=8-4\lambda^2-4\lambda=-4(\lambda+2)(\lambda-1)&gt;0，联立得 -2&lt;\lambda&lt;1；solver 把不等式解成了 -1&lt;\lambda&lt;2</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\sqrt{2}<t<\sqrt{2}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\sqrt{2}&lt;t&lt;\sqrt{2}$</div>
         <div class="steps"><p>矩阵<br>$$A=\begin{pmatrix}2&amp;1&amp;0\\1&amp;1&amp;t/2\\0&amp;t/2&amp;1\end{pmatrix}.$$<br>顺序主子式：Δ1=2&gt;0；Δ2=2×1−1²=1&gt;0；<br>$$\Delta_3=\det A=2\Big(1-\frac{t^{2}}{4}\Big)-1(1-0)+0=1-\frac{t^{2}}{2}&gt;0\iff t^{2}&lt;2 .$$<br>故正定 ⟺ −√2&lt;t&lt;√2。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -58,7 +58,7 @@
         <div class="steps"><p>A 实对称。特征方程<br>$$|\lambda E-A|=\begin{vmatrix}\lambda-1&amp;0&amp;-1\\0&amp;\lambda-2&amp;0\\-1&amp;0&amp;\lambda-1\end{vmatrix}=(\lambda-2)\big[(\lambda-1)^{2}-1\big]=\lambda(\lambda-2)^{2},$$<br>故 A 的特征值为 0, 2, 2。kE+A 的特征值为 k, k+2, k+2，B=(kE+A)² 的特征值为<br>$$k^{2},\ (k+2)^{2},\ (k+2)^{2}.$$<br>B 实对称必可对角化，取<br>$$\Lambda=\mathrm{diag}\big(k^{2},(k+2)^{2},(k+2)^{2}\big).$$<br>B 正定 ⟺ 特征值全大于零 ⟺ k²&gt;0 且 (k+2)²&gt;0 ⟺ k≠0 且 k≠−2。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) λ1=λ2=−2, λ3=0；(II) k>2$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) λ1=λ2=−2, λ3=0；(II) k&gt;2$</div>
         <div class="steps"><p>(I) 设 Ax=λx，由 A²+2A=0 得 (λ²+2λ)x=0，特征向量非零，故 λ²+2λ=0，λ∈{0,−2}。<br>A 实对称必可对角化，非零特征值的个数等于 r(A)=2，故特征值为<br>$$\lambda_1=\lambda_2=-2,\quad \lambda_3=0 .$$<br>(II) A+kE 的特征值为 k−2, k−2, k，仍为对称矩阵。正定 ⟺ 特征值全正 ⟺ k−2&gt;0 且 k&gt;0，即<br>$$k&gt;2 .$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -72,7 +72,7 @@
         <div class="steps"><p>(I) 标准形为 y_1^{2}+y_2^{2}（无 y_3^{2} 项），故 A 的特征值为 1, 1, 0。Q 的第 3 列 η_3=(√2/2,0,√2/2)^{T} 为单位向量，且 Aη_3=0。<br>A 实对称，正交对角化得<br>$$A=Q\,\mathrm{diag}(1,1,0)\,Q^{T}=QQ^{T}-Q\,\mathrm{diag}(0,0,1)\,Q^{T}=E-\eta_3\eta_3^{T} .$$<br>而<br>$$\eta_3\eta_3^{T}=\begin{pmatrix}1/2&amp;0&amp;1/2\\0&amp;0&amp;0\\1/2&amp;0&amp;1/2\end{pmatrix},$$<br>所以<br>$$A=E-\eta_3\eta_3^{T}=\begin{pmatrix}1/2&amp;0&amp;-1/2\\0&amp;1&amp;0\\-1/2&amp;0&amp;1/2\end{pmatrix}.$$<br>(II) A+E 的特征值为 1+1=2, 2, 0+1=1，全大于零，且 A+E 实对称，故 A+E 为正定矩阵。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (B)，即 2−√3<a<2+√3$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (B)，即 2−√3&lt;a&lt;2+√3$</div>
         <div class="steps"><p>$$xA+yB=\begin{pmatrix}x+y&amp;2x\\ -2x+y&amp;a(y-x)\end{pmatrix},$$<br>$$f(x,y)=|xA+yB|=(x+y)\cdot a(y-x)-2x\,(y-2x)=(4-a)x^{2}-2xy+ay^{2} .$$<br>其矩阵为 [[4−a, −1],[−1, a]]，正定条件：<br>$$4-a&gt;0,\qquad (4-a)a-1&gt;0 .$$<br>第二式即 a²−4a+1&lt;0，解得 2−√3&lt;a&lt;2+√3（约 0.27&lt;a&lt;3.73）；该区间自动满足 a&lt;4。故选 (B)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -87,7 +87,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k24_T3_0.png" alt="k24_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle |A+E|=∏(1+λ_i)，每个 λ_i>0，故 |A+E|>1$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle |A+E|=∏(1+λ_i)，每个 λ_i&gt;0，故 |A+E|&gt;1$</div>
         <div class="steps"><p>A 正定 ⟹ A 实对称且特征值 λ_1,…,λ_n 全大于零。A+E 的特征值为 1+λ_i（i=1,…,n），故<br>$$|A+E|=\prod_{i=1}^{n}(1+\lambda_i) .$$<br>由 λ_i&gt;0 知每个因子 1+λ_i&gt;1，因此<br>$$|A+E|=\prod_{i=1}^{n}(1+\lambda_i)&gt;1 .$$<br>证毕。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -95,13 +95,13 @@
         <div class="steps"><p>C 显然对称。任取 z=(x;y)∈R^{m+n}，z≠0，则 x,y 不全为零，且<br>$$z^{T}Cz=x^{T}Ax+y^{T}By .$$<br>若 x≠0，由 A 正定得 x^{T}Ax&gt;0；由 B 正定（从而半正定）得 y^{T}By≥0，故和大于零；<br>若 x=0，则 y≠0，y^{T}By&gt;0。<br>综上对任意 z≠0 有 z^{T}Cz&gt;0，故 C 为正定矩阵。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 必要性：B^TAB 正定 ⟹ Bx=0 只有零解 ⟹ r(B)=n；充分性：r(B)=n ⟹ 对 x≠0 有 (Bx)^TA(Bx)>0$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 必要性：B^TAB 正定 ⟹ Bx=0 只有零解 ⟹ r(B)=n；充分性：r(B)=n ⟹ 对 x≠0 有 (Bx)^TA(Bx)&gt;0$</div>
         <div class="steps"><p>先看对称性：(B^{T}AB)^{T}=B^{T}AB，故 B^{T}AB 总是对称矩阵。</p>
 <p>必要性：设 B^{T}AB 正定。若 r(B)&lt;n，齐次方程 Bx=0 有非零解 x_0，则<br>$$x_0^{T}(B^{T}AB)x_0=(Bx_0)^{T}A(Bx_0)=0,$$<br>与正定性（应大于零）矛盾。故 r(B)=n。</p>
 <p>充分性：设 r(B)=n，则 Bx=0 只有零解，即 x≠0 ⟹ Bx≠0。于是对任意 x≠0：<br>$$x^{T}(B^{T}AB)x=(Bx)^{T}A(Bx)&gt;0$$<br>（A 正定，Bx≠0）。故 B^{T}AB 正定。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle B 对称，且 x^TBx=λ‖x‖²+‖Ax‖²>0（x≠0），故 B 正定$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle B 对称，且 x^TBx=λ‖x‖²+‖Ax‖²&gt;0（x≠0），故 B 正定$</div>
         <div class="steps"><p>对称性：(A^{T}A)^{T}=A^{T}A，故 B^{T}=B。<br>对任意 n 维非零实向量 x：<br>$$x^{T}Bx=\lambda x^{T}x+x^{T}A^{T}Ax=\lambda\|x\|^{2}+\|Ax\|^{2}\ge\lambda\|x\|^{2}&gt;0,$$<br>其中 λ&gt;0 且 ‖x‖²&gt;0。故 B 为正定矩阵。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -120,7 +120,7 @@
         <div class="steps"><p>注：矩阵第一行按本切片图与例 6.24.3 图底部衔接处确认为 (a,1,−1)。<br>$$|\lambda E-A|=\det\begin{pmatrix}\lambda-a&amp;-1&amp;1\\ -1&amp;\lambda-a&amp;1\\ 1&amp;1&amp;\lambda-a\end{pmatrix}=(\lambda-a)^{3}-3(\lambda-a)-2 .$$<br>令 t=λ−a：t³−3t−2=(t+1)²(t−2)，故特征值<br>$$\lambda_1=\lambda_2=a-1,\qquad \lambda_3=a+2 .$$<br>λ=a−1：A−(a−1)E 的三行均成比例于 (1,1,−1)，方程为 x_1+x_2−x_3=0，取正交基础解系<br>$$\xi_1=(1,-1,0)^{T},\qquad \xi_2=(1,1,2)^{T}\ (\xi_1^{T}\xi_2=0).$$<br>λ=a+2：解 (A−(a+2)E)x=0 得 ξ_3=(1,1,−1)^{T}（与 ξ_1,ξ_2 自动正交）。<br>单位化得<br>$$P=\begin{pmatrix}1/\sqrt2&amp;1/\sqrt6&amp;1/\sqrt3\\ -1/\sqrt2&amp;1/\sqrt6&amp;1/\sqrt3\\ 0&amp;2/\sqrt6&amp;-1/\sqrt3\end{pmatrix},\qquad P^{T}AP=\mathrm{diag}(a-1,\,a-1,\,a+2) .$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C=P\,\mathrm{diag}(2,2,1)\,P^T=\frac{1}{3}\begin{pmatrix}5&-1&1\\-1&5&1\\1&1&5\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle C=P\,\mathrm{diag}(2,2,1)\,P^T=\frac{1}{3}\begin{pmatrix}5&amp;-1&amp;1\\-1&amp;5&amp;1\\1&amp;1&amp;5\end{pmatrix}$</div>
         <div class="steps"><p>记 B=(a+3)E−A=[[3,−1,1],[−1,3,1],[1,1,3]]。B 与 A 有相同特征向量，特征值为 (a+3)−(a−1)=4（二重）、(a+3)−(a+2)=1。<br>设 C 正定且 C²=B，则 C 与 B 共享特征向量系，C 的特征值为 √4=2（二重）、√1=1，且 C 为对称谱分解：<br>$$C=P\,\mathrm{diag}(2,2,1)\,P^{T}=2u_1u_1^{T}+2u_2u_2^{T}+u_3u_3^{T},$$<br>其中 u_i 为第 (1) 问的单位特征向量。展开：<br>2u_1u_1^{T}=[[1,−1,0],[−1,1,0],[0,0,0]]，2u_2u_2^{T}=(1/3)[[1,1,2],[1,1,2],[2,2,4]]，u_3u_3^{T}=(1/3)[[1,1,−1],[1,1,−1],[−1,−1,1]]，相加得<br>$$C=\frac13\begin{pmatrix}5&amp;-1&amp;1\\ -1&amp;5&amp;1\\ 1&amp;1&amp;5\end{pmatrix}\quad\Big(\text{即 }C=\tfrac13(B+2E)\Big).$$<br>验证：C²=(1/9)[[27,−9,9],[−9,27,9],[9,9,27]]=B ✓；C 的特征值为 2,2,1 全大于零，故 C 正定。该 C 与 a 无关。</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 把 (a+3)E-A 的特征值误为 1,4,2a+2（正确为 4,4,1，C=(B+2E)/3 与 a 无关、无需 a&gt;-1/2），给出错误的含参 C；solver 与 B 一致且正确</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 的特征值为 a-1（二重）、a+2，故 (a+3)E-A 的特征值为 4,4,1（与 a 无关），C 特征值为 2,2,1；A 误求为 1,4,2a+2，所得含参 C 及条件 a&gt;-1/2 均错</p></div>

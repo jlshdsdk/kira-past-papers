@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -59,7 +59,7 @@
 <p>对照选项：A、B 只是给表达式变号而分段区间没有正确对调；C 虽用了 $x^2-x$ 但把它配在了 $x&gt;0$ 段（区间未对调）；只有 D 与上式一致。选 D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle D，g[f(x)]=\begin{cases}2+x^2, & x<0\\ 2+x, & x\ge 0\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle D，g[f(x)]=\begin{cases}2+x^2, &amp; x&lt;0\\ 2+x, &amp; x\ge 0\end{cases}$</div>
         <div class="steps"><p>按外层 $g$ 所需，先看内层 $f(x)$ 的取值落在 $g$ 的哪一段。</p>
 <p>当 $x&lt;0$ 时，$f(x)=x^2&gt;0$，故代入 $g$ 的 $u&gt;0$ 段：</p>
 <p>$$g[f(x)]=g(x^2)=x^2+2=2+x^2;$$</p>
@@ -116,7 +116,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k01_T3_0.png" alt="k01_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=\dfrac{x}{\sqrt{1+x^2}}\quad(x>0)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=\dfrac{x}{\sqrt{1+x^2}}\quad(x&gt;0)$</div>
         <div class="steps"><p>（素材取自 2020 年数学二真题局部。）原式为</p>
 <p>$$2f(x)+x^2 f\Big(\frac{1}{x}\Big)=\frac{x^2+2x}{\sqrt{1+x^2}}\qquad(x&gt;0).$$</p>
 <p>把 $x$ 换成 $\dfrac{1}{x}$（仍在 $(0,+\infty)$ 内），得</p>
@@ -165,7 +165,7 @@
 <p>故选 D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f'(x)=\left(1+\frac{1}{x}\right)^{x}\left[\ln\left(1+\frac{1}{x}\right)-\frac{1}{x+1}\right]>0，故 f(x) 在 (0,+\infty) 内单调增加$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f&#x27;(x)=\left(1+\frac{1}{x}\right)^{x}\left[\ln\left(1+\frac{1}{x}\right)-\frac{1}{x+1}\right]&gt;0，故 f(x) 在 (0,+\infty) 内单调增加$</div>
         <div class="steps"><p>证明：当 $x&gt;0$ 时 $f(x)=\left(1+\dfrac{1}{x}\right)^{x}&gt;0$，对 $\ln f(x)=x\ln\left(1+\dfrac{1}{x}\right)$ 求导：</p>
 <p>$$\frac{f&#x27;(x)}{f(x)}=\ln\Big(1+\frac{1}{x}\Big)+x\cdot\frac{1}{1+\frac{1}{x}}\cdot\Big(-\frac{1}{x^2}\Big)=\ln\Big(1+\frac{1}{x}\Big)-\frac{1}{x+1}.$$</p>
 <p>关键不等式：对任意 $t&gt;0$，$\ln(1+t)&gt;\dfrac{t}{1+t}$。事实上令 $g(t)=\ln(1+t)-\dfrac{t}{1+t}$，则 $g(0)=0$，且</p>
@@ -177,7 +177,7 @@
 <p>所以 $f(x)=\left(1+\dfrac{1}{x}\right)^{x}$ 在 $(0,+\infty)$ 内单调增加。证毕。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle F'(x)=\frac{(x-a)\left[f'(x)-f'(\xi)\right]}{(x-a)^2}>0\ (a<\xi<x)，故 F(x) 在 (a,+\infty) 内单调增加$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle F&#x27;(x)=\frac{(x-a)\left[f&#x27;(x)-f&#x27;(\xi)\right]}{(x-a)^2}&gt;0\ (a&lt;\xi&lt;x)，故 F(x) 在 (a,+\infty) 内单调增加$</div>
         <div class="steps"><p>证明：当 $x&gt;a$ 时，</p>
 <p>$$F&#x27;(x)=\frac{f&#x27;(x)(x-a)-\left[f(x)-f(a)\right]}{(x-a)^2}.$$</p>
 <p>对 $f$ 在闭区间 $[a,x]$ 上用拉格朗日中值定理：存在 $\xi\in(a,x)$，使得</p>

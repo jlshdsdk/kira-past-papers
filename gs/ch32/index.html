@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -33,7 +33,7 @@
 <p>故不连续但偏导数存在，选C。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（f_x'不存在，f_y'存在）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（f_x&#x27;不存在，f_y&#x27;存在）$</div>
         <div class="steps"><p>$$f_x&#x27;(0,0)=\lim_{x\to0}\frac{e^{\sqrt{x^2}}-1}{x}=\lim_{x\to0}\frac{e^{|x|}-1}{x}$$</p>
 <p>右极限 lim_{x→0⁺}(e^x−1)/x=1，左极限 lim_{x→0⁻}(e^{−x}−1)/x=−1，不相等，f_x&#x27;(0,0) 不存在。</p>
 <p>$$f_y&#x27;(0,0)=\lim_{y\to0}\frac{e^{\sqrt{y^4}}-1}{y}=\lim_{y\to0}\frac{e^{y^2}-1}{y}=\lim_{y\to0}\frac{y^2}{y}=0\ \text{存在}$$</p>
@@ -59,13 +59,13 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k32_T2_0.png" alt="k32_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（x₁<x₂，y₁>y₂）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D（x₁&lt;x₂，y₁&gt;y₂）$</div>
         <div class="steps"><p>f 对 x 严格增、对 y 严格减。要保证 f(x₁,y₁)&lt;f(x₂,y₂)，应让 x₁&lt;x₂（增方向占优）且 y₁&gt;y₂（y₁ 大使 f 值更小）：</p>
 <p>f(x₁,y₁)≤f(x₂,y₁)（x₁&lt;x₂，严格增）&lt;f(x₂,y₂)（y₁&gt;y₂，对 y 严格减）。</p>
 <p>A 两个方向都反了（实际给出反向不等式的充分条件）；B、C 各有一项方向相反，均为混合情形不能保证。选D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D（f(0,1)<f(1,0)）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle D（f(0,1)&lt;f(1,0)）$</div>
         <div class="steps"><p>固定 y=0：g(x)=f(x,0) 满足 g&#x27;(x)=f_x&#x27;(x,0)&gt;0，严格增，故 f(0,0)&lt;f(1,0)。</p>
 <p>固定 x=0：h(y)=f(0,y) 满足 h&#x27;(y)=f_y&#x27;(0,y)&lt;0，严格减，故 f(0,1)&lt;f(0,0)。</p>
 <p>串联得 f(0,1)&lt;f(0,0)&lt;f(1,0)，即 f(0,1)&lt;f(1,0) 恒成立，D 正确。</p>

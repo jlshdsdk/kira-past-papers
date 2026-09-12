@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -79,14 +79,14 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k22_T3_0.png" alt="k22_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 记 x_0=\arccos\dfrac{2}{\pi}，c=x_0-\dfrac{\pi}{2}\sin x_0=\arccos\dfrac{2}{\pi}-\dfrac{\sqrt{\pi^2-4}}{2}<0：当 k\ge0 或 k<c 时无根；当 k=c 时恰 1 根；当 c<k<0 时恰 2 根$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 记 x_0=\arccos\dfrac{2}{\pi}，c=x_0-\dfrac{\pi}{2}\sin x_0=\arccos\dfrac{2}{\pi}-\dfrac{\sqrt{\pi^2-4}}{2}&lt;0：当 k\ge0 或 k&lt;c 时无根；当 k=c 时恰 1 根；当 c&lt;k&lt;0 时恰 2 根$</div>
         <div class="steps"><p>设 g(x)=x-\dfrac{\pi}{2}\sin x-k，x\in\left(0,\dfrac{\pi}{2}\right)。</p>
 <p>$$g&#x27;(x)=1-\frac{\pi}{2}\cos x=0\iff x_0=\arccos\frac{2}{\pi}\in\left(0,\frac{\pi}{2}\right).$$</p>
 <p>x&lt;x_0 时 g&#x27;&lt;0，x&gt;x_0 时 g&#x27;&gt;0，故 g 在 x_0 处取最小值 g(x_0)=x_0-\dfrac{\pi}{2}\sin x_0-k（其中 \sin x_0=\sqrt{1-\frac{4}{\pi^2}}=\dfrac{\sqrt{\pi^2-4}}{\pi}，故 c=x_0-\dfrac{\pi}{2}\sin x_0=\arccos\dfrac2\pi-\dfrac{\sqrt{\pi^2-4}}{2}&lt;0）。记 \varphi(x)=x-\dfrac{\pi}{2}\sin x（即 k=0 情形），\varphi 在 (0,x_0] 严格降、在 [x_0,\pi/2) 严格升，两端极限均为 0，故 \varphi(x)&lt;0 在开区间内恒成立且值域为 [c,0)。</p>
 <p>- 若 k\ge0：g(x)=\varphi(x)-k&lt;0 恒成立，无根；<br>- 若 k&lt;c：g(x_0)=c-k&gt;0 且两端极限 -k&gt;0，g(x)&gt;0 恒成立，无根；<br>- 若 k=c：g(x_0)=0 为最小值，恰 1 根 x=x_0；<br>- 若 c&lt;k&lt;0：两端极限 -k&gt;0 而最小值 g(x_0)=c-k&lt;0，g 在 (0,x_0) 严格减、(x_0,\pi/2) 严格增，各恰 1 根，共 2 根。\qquad\blacksquare</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle k<4 时无交点；k=4 时恰 1 个交点；k>4 时恰 2 个交点$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle k&lt;4 时无交点；k=4 时恰 1 个交点；k&gt;4 时恰 2 个交点$</div>
         <div class="steps"><p>交点满足 4\ln x+k=4x+\ln^4x，即 k=g(x):=4x+\ln^4x-4\ln x\ （x&gt;0）。</p>
 <p>$$g&#x27;(x)=4+\frac{4\ln^3x}{x}-\frac{4}{x}=\frac{4\left(x+\ln^3x-1\right)}{x}.$$</p>
 <p>令 h(x)=x+\ln^3x-1：h(1)=0，h&#x27;(x)=1+\dfrac{3\ln^2x}{x}\ge1&gt;0，故 h 严格增，x&lt;1 时 h&lt;0，x&gt;1 时 h&gt;0。于是 g 在 (0,1) 严格减、(1,+\infty) 严格增，最小值 g(1)=4+0-0=4。</p>
@@ -94,7 +94,7 @@
 <p>故：k&lt;4 时方程无解，无交点；k=4 时恰一解 x=1，恰 1 个交点；k&gt;4 时（0,1）与 (1,+\infty) 内各恰一解，恰 2 个交点。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle k≤1 时恰 1 个实根（x=0）；k>1 时恰 3 个实根$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle k≤1 时恰 1 个实根（x=0）；k&gt;1 时恰 3 个实根$</div>
         <div class="steps"><p>x=0 恒为根；左端为奇函数，根关于原点对称，只需讨论 x&gt;0。</p>
 <p>对 k\ne0，k\arctan x=x\iff\varphi(x):=\dfrac{\arctan x}{x}=\dfrac{1}{k}\ (x&gt;0)。</p>
 <p>$$\varphi&#x27;(x)=\frac{1}{x^2}\left(\frac{x}{1+x^2}-\arctan x\right).$$</p>
@@ -120,7 +120,7 @@
 <p>选项中只有 a=4，选 B。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac{1}{\ln 2}-1<k<\dfrac{1}{2}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \dfrac{1}{\ln 2}-1&lt;k&lt;\dfrac{1}{2}$</div>
         <div class="steps"><p>令 g(x)=\dfrac{1}{\ln(1+x)}-\dfrac{1}{x}，x\in(0,1)。方程有根 \iff k 属于 g 在 (0,1) 上的值域。</p>
 <p>$$g&#x27;(x)=\frac{1}{x^2}-\frac{1}{(1+x)\ln^2(1+x)}.$$</p>
 <p>比较 x^2 与 (1+x)\ln^2(1+x)：设 p(x)=(1+x)\ln^2(1+x)-x^2，则 p(0)=0，p&#x27;(x)=\ln^2(1+x)+2\ln(1+x)-2x，p&#x27;(0)=0，p&#x27;&#x27;(x)=\dfrac{2[\ln(1+x)-x]}{1+x}&lt;0\ (x&gt;0)。故 p&#x27;&lt;0、p&lt;0，即 (1+x)\ln^2(1+x)&lt;x^2，从而 g&#x27;(x)&lt;0，g 在 (0,1) 上严格减。</p>

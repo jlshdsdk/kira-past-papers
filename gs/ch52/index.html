@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -53,14 +53,14 @@
 <p>而 Σ(1/(a+1))^n 是公比 q=1/(a+1)∈(0,1) 的收敛几何级数，由比较判别法，Σ(1/(a_n+1))^n 收敛。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I)\ \sum=\sum\frac{1}{n(n+1)}=1；(II)\ 由 a_n<\frac{1}{n+1} 与比较判别法得证$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (I)\ \sum=\sum\frac{1}{n(n+1)}=1；(II)\ 由 a_n&lt;\frac{1}{n+1} 与比较判别法得证$</div>
         <div class="steps"><p>(I)<br>$$a_n+a_{n+2}=\int_0^{\pi/4}\tan^nx(1+\tan^2x)\,dx=\int_0^{\pi/4}\tan^nx\,d(\tan x)=\frac{\tan^{n+1}x}{n+1}\Big|_0^{\pi/4}=\frac{1}{n+1}$$</p>
 <p>$$\sum_{n=1}^{\infty}\frac{1}{n}(a_n+a_{n+2})=\sum_{n=1}^{\infty}\frac{1}{n(n+1)}=\sum_{n=1}^{\infty}\left(\frac1n-\frac{1}{n+1}\right)=1$$</p>
 <p>(II) 由于 a_n&gt;0 且 a_n&lt;a_n+a_{n+2}=1/(n+1)：<br>$$0&lt;\frac{a_n}{n^\lambda}&lt;\frac{1}{n^\lambda(n+1)}&lt;\frac{1}{n^{\lambda+1}}$$</p>
 <p>因 λ&gt;0，λ+1&gt;1，p-级数 Σ1/n^{λ+1} 收敛，由比较判别法 Σa_n/n^λ 收敛。证毕。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 唯一正根 x_n∈(0,1)；α>1 时 Σx_n^α 收敛（因 x_n<1/n）$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 唯一正根 x_n∈(0,1)；α&gt;1 时 Σx_n^α 收敛（因 x_n&lt;1/n）$</div>
         <div class="steps"><p>存在性：令 f_n(x)=x^n+nx-1，连续，f_n(0)=-1&lt;0，f_n(1)=n&gt;0，由零点定理存在根 x_n∈(0,1)。</p>
 <p>唯一性：f_n&#x27;(x)=nx^{n-1}+n&gt;0（x≥0），f_n 严格单调增，故正根唯一。</p>
 <p>收敛性：由 x_n^n+n x_n=1 得 n x_n&lt;1，即<br>$$0&lt;x_n&lt;\frac1n\ \Rightarrow\ 0&lt;x_n^\alpha&lt;\frac{1}{n^\alpha}$$</p>

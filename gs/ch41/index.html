@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -31,7 +31,7 @@
         <div class="steps"><p>由 $(x^3y&#x27;)&#x27;=x^3y&#x27;&#x27;+3x^2y&#x27;=x^2(xy&#x27;&#x27;+3y&#x27;)$，方程（$x\ne0$）等价于 $(x^3y&#x27;)&#x27;=0$。<br>$$x^3y&#x27;=C \Rightarrow y&#x27;=\frac{C}{x^3} \Rightarrow y=-\frac{C}{2x^2}+C_2$$<br>记 $C_1=-C/2$，得通解 $y=\dfrac{C_1}{x^2}+C_2$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ f'(x) = -\dfrac{e^{-x}}{x+1};\qquad (II)\ e^{-x}\le f(x)\le 1\ (x\ge0)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I)\ f&#x27;(x) = -\dfrac{e^{-x}}{x+1};\qquad (II)\ e^{-x}\le f(x)\le 1\ (x\ge0)$</div>
         <div class="steps"><p>(I) 原式两边乘 $(x+1)$：<br>$$(x+1)f&#x27;(x)+(x+1)f(x)=\int_0^x f(t)\,dt$$<br>两边对 $x$ 求导：<br>$$f&#x27;+(x+1)f&#x27;&#x27;+f+(x+1)f&#x27;-f=0\Rightarrow (x+1)f&#x27;&#x27;+(x+2)f&#x27;=0$$<br>令 $p=f&#x27;$：(x+1)p&#x27;+(x+2)p=0，分离变量 $\dfrac{dp}{p}=-\left(1+\dfrac{1}{x+1}\right)dx$，积分得 $p=\dfrac{C_1e^{-x}}{x+1}$。<br>在原式中令 $x=0$：$f&#x27;(0)+f(0)=0$，而 $f(0)=1$，故 $f&#x27;(0)=-1\Rightarrow C_1=-1$，<br>$$f&#x27;(x)=-\frac{e^{-x}}{x+1}$$<br>(II) $f(x)=f(0)+\int_0^x f&#x27;(t)dt=1-\int_0^x\dfrac{e^{-t}}{t+1}dt$。当 $x\ge0$ 时 $0&lt;\dfrac{e^{-t}}{t+1}\le e^{-t}$，故<br>$$0\le\int_0^x\frac{e^{-t}}{t+1}dt\le\int_0^xe^{-t}dt=1-e^{-x}$$<br>从而 $e^{-x}\le f(x)\le1$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -210,7 +210,7 @@
         <div class="steps"><p>方程即 $y&#x27;&#x27;-2y&#x27;=e^{2x}$，$r=0,2$；$\lambda=2$ 单根，$y^*=Axe^{2x}$：$y^{*\prime\prime}-2y^{*\prime}=2Ae^{2x}=e^{2x}\Rightarrow A=\dfrac12$。<br>$$y=C_1+C_2e^{2x}+\frac x2e^{2x},\qquad y(0)=1:\ C_1+C_2=1$$<br>$y&#x27;=2C_2e^{2x}+\dfrac12e^{2x}+xe^{2x}$，$y&#x27;(0)=1:\ 2C_2+\dfrac12=1\Rightarrow C_2=\dfrac14,\ C_1=\dfrac34$。<br>$$y=\frac34+\left(\frac14+\frac x2\right)e^{2x}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle (I)\ y''-y=\sin x;\qquad (II)\ y = e^x - e^{-x} - \dfrac{1}{2}\sin x$</div>
+      <div class="sub-a"><span class="sno">（16）</span><div class="ansline">$\displaystyle (I)\ y&#x27;&#x27;-y=\sin x;\qquad (II)\ y = e^x - e^{-x} - \dfrac{1}{2}\sin x$</div>
         <div class="steps"><p>由反函数求导法则（$y&#x27;\ne0$）：<br>$$\frac{dy}{dx}=\frac{1}{dx/dy},\qquad \frac{d^2x}{dy^2}=\frac{d}{dx}\left(\frac1{y&#x27;}\right)\cdot\frac{dx}{dy}=-\frac{y&#x27;&#x27;}{(y&#x27;)^3}$$<br>代入原方程：$-\dfrac{y&#x27;&#x27;}{(y&#x27;)^3}+(y+\sin x)\dfrac1{(y&#x27;)^3}=0$，乘 $(y&#x27;)^3$：<br>$$(I)\qquad y&#x27;&#x27;-y=\sin x$$<br>$r=\pm1$；设 $y^*=A\sin x+B\cos x$：$y^{*\prime\prime}-y^*=-2(A\sin x+B\cos x)=\sin x\Rightarrow A=-\dfrac12,\ B=0$。<br>$y=C_1e^x+C_2e^{-x}-\dfrac12\sin x$；$y(0)=0:\ C_1+C_2=0$；$y&#x27;(0)=\dfrac32:\ C_1-C_2-\dfrac12=\dfrac32\Rightarrow C_1=1,\ C_2=-1$。<br>$$(II)\qquad y=e^x-e^{-x}-\frac12\sin x$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

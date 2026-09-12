@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -35,7 +35,7 @@
 <p>验证：(A) 中 $1-\int_0^a\varphi\,dx=1-F(a)+\frac12\neq F(-a)$（除非 $F(a)=\frac12$）；(C)(D) 显然不满足 $F(-a)=1-F(a)$。选 (B)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}\dfrac12 e^{x}, & x<0,\\[2mm] 1-\dfrac12 e^{-x}, & x\ge 0.\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}\dfrac12 e^{x}, &amp; x&lt;0,\\[2mm] 1-\dfrac12 e^{-x}, &amp; x\ge 0.\end{cases}$</div>
         <div class="steps"><p>分段积分。</p>
 <p>当 $x&lt;0$：</p>
 <p>$$F(x)=\int_{-\infty}^{x}\frac12 e^{t}\,dt=\frac12 e^{x}.$$</p>
@@ -44,7 +44,7 @@
 <p>检验：$F$ 连续（$F(0)=\frac12$ 两侧一致）、单调不减、$F(+\infty)=1$，$F&#x27;=f$。此即 Laplace 分布。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, & x\le\theta,\\[1mm] 1-e^{-2(x-\theta)}, & x>\theta.\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle F(x)=\begin{cases}0, &amp; x\le\theta,\\[1mm] 1-e^{-2(x-\theta)}, &amp; x&gt;\theta.\end{cases}$</div>
         <div class="steps"><p>当 $x\le\theta$ 时 $f=0$，故 $F(x)=0$。</p>
 <p>当 $x&gt;\theta$ 时：</p>
 <p>$$F(x)=\int_{\theta}^{x}2e^{-2(t-\theta)}\,dt=\Big[-e^{-2(t-\theta)}\Big]_{\theta}^{x}=1-e^{-2(x-\theta)}.$$</p>
@@ -179,7 +179,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k32_T6_0.png" alt="k32_T6 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}1, & 0<x<1,\\0, & \text{其他}.\end{cases}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=\begin{cases}1, &amp; 0&lt;x&lt;1,\\0, &amp; \text{其他}.\end{cases}$</div>
         <div class="steps"><p>设取点坐标 $U\sim U(0,2)$，则 $X=\min(U,\,2-U)\in(0,1)$。</p>
 <p>当 $0&lt;x&lt;1$：</p>
 <p>$$F_X(x)=P\{\min(U,2-U)\le x\}=1-P\{x&lt;U&lt;2-x\}=1-\frac{(2-x)-x}{2}=1-(1-x)=x.$$</p>
@@ -217,7 +217,7 @@
 <p>严格地说：$P\{X&gt;4\}=1-\Phi\big(\frac{4-\mu}{\sigma}\big)=\frac12\Rightarrow\frac{4-\mu}{\sigma}=0\Rightarrow\mu=4$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (A)\ p_1>p_2>p_3$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (A)\ p_1&gt;p_2&gt;p_3$</div>
         <div class="steps"><p>$p_i=P\Big\{\dfrac{-2-\mu_i}{\sigma_i}\le Z\le\dfrac{2-\mu_i}{\sigma_i}\Big\}$：</p>
 <p>$$p_1=P\{-2\le Z\le2\}=2\Phi(2)-1\approx0.954\,5.$$</p>
 <p>$$p_2=P\{-1\le Z\le1\}=2\Phi(1)-1\approx0.682\,6.$$</p>
@@ -242,7 +242,7 @@
 <p>与 $\sigma$（也无关 $\mu$）无关，保持不变，选 (C)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (A) \sigma_1<\sigma_2$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (A) \sigma_1&lt;\sigma_2$</div>
         <div class="steps"><p>$$P\{|X-\mu_1|&lt;1\}=2\Phi\Big(\frac{1}{\sigma_1}\Big)-1&gt;2\Phi\Big(\frac{1}{\sigma_2}\Big)-1=P\{|Y-\mu_2|&lt;1\}.$$</p>
 <p>$\Phi$ 严格递增，故 $\dfrac{1}{\sigma_1}&gt;\dfrac{1}{\sigma_2}$，即 $\sigma_1&lt;\sigma_2$。与 $\mu$ 无关，选 (A)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>

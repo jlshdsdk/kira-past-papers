@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -85,7 +85,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k40_T3_0.png" alt="k40_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k40_T3_1.png" alt="k40_T3 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=2x (0<x<1)；D(Z)=2/9$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f_X(x)=2x (0&lt;x&lt;1)；D(Z)=2/9$</div>
         <div class="steps"><p>区域 D 的面积 = ∫₀¹ 2x dx = 1，故联合密度 f(x,y)=1（在 D 内）。</p>
 <p>$$f_X(x)=\int_{-x}^{x}1\,dy=2x,\quad 0&lt;x&lt;1.$$</p>
 <p>$$EX=\int_0^1 x\cdot2x\,dx=\tfrac23,\qquad E(X^2)=\int_0^1 x^2\cdot2x\,dx=\tfrac12,$$</p>
@@ -93,7 +93,7 @@
 <p>边缘密度在 x≤0 或 x≥1 处为 0。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)：EY_1=EY_2，DY_1>DY_2$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (D)：EY_1=EY_2，DY_1&gt;DY_2$</div>
         <div class="steps"><p>记 E_i=EX_i，D_i=DX_i。</p>
 <p>EY_1=\frac12(\int y f_1 dy+\int y f_2 dy)=\frac12(E_1+E_2)=EY_2，期望相等。</p>
 <p>$$DY_2=\tfrac14(D_1+D_2).$$</p>
@@ -133,7 +133,7 @@
 <p>$$E(X^2)=DX+(EX)^2=2.4+16=18.4.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(t)=25te^{-5t} (t>0，其余为0)；E(T)=2/5；D(T)=2/25$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(t)=25te^{-5t} (t&gt;0，其余为0)；E(T)=2/5；D(T)=2/25$</div>
         <div class="steps"><p>设两台寿命 X_1,X_2 独立同分布，密度 5e^{-5x}(x&gt;0)，T=X_1+X_2。由卷积公式，t&gt;0 时：</p>
 <p>$$f_T(t)=\int_0^t 5e^{-5x}\cdot5e^{-5(t-x)}\,dx=25e^{-5t}\int_0^t dx=25te^{-5t};$$</p>
 <p>t≤0 时 f_T(t)=0（伽马分布 Γ(2,5)）。</p>

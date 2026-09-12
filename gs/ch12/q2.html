@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -82,7 +82,7 @@
         <div class="steps"><p>$$\frac{dx}{dt}=1-\frac{1}{1+t}=\frac{t}{1+t},\qquad \frac{dy}{dt}=3t^2+2t$$<br>$$\frac{dy}{dx}=\frac{t(3t+2)}{t/(1+t)}=(3t+2)(1+t)=3t^2+5t+2$$<br>$$\frac{d^2y}{dx^2}=\frac{6t+5}{t/(1+t)}=\frac{(6t+5)(1+t)}{t}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{4f'(t^2)+8t^2 f''(t^2)}{f(t^2)}$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{4f&#x27;(t^2)+8t^2 f&#x27;&#x27;(t^2)}{f(t^2)}$</div>
         <div class="steps"><p>$$\frac{dx}{dt}=f(t^2),\qquad \frac{dy}{dt}=2f(t^2)\cdot f&#x27;(t^2)\cdot 2t=4t\,f(t^2)\,f&#x27;(t^2)$$<br>$$\frac{dy}{dx}=\frac{4t f(t^2)f&#x27;(t^2)}{f(t^2)}=4t f&#x27;(t^2)$$<br>$$\frac{d^2y}{dx^2}=\frac{4f&#x27;(t^2)+4t\cdot f&#x27;&#x27;(t^2)\cdot 2t}{f(t^2)}=\frac{4f&#x27;(t^2)+8t^2 f&#x27;&#x27;(t^2)}{f(t^2)}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

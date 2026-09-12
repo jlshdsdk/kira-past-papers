@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -124,13 +124,13 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k47_T5_0.png" alt="k47_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k47_T5_1.png" alt="k47_T5 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2x y''+\sqrt{1+(y')^2}=0\ (即\ y''=-\frac{\sqrt{1+(y')^2}}{2x});\quad y|_{x=-1}=0,\ y'|_{x=-1}=1$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 2x y&#x27;&#x27;+\sqrt{1+(y&#x27;)^2}=0\ (即\ y&#x27;&#x27;=-\frac{\sqrt{1+(y&#x27;)^2}}{2x});\quad y|_{x=-1}=0,\ y&#x27;|_{x=-1}=1$</div>
         <div class="steps"><p>设 B 的轨迹为 $y=y(x)$。时刻 $t$ 时 B 位于 $(x,y)$，A 位于 $(0,1+vt)$。B 的速度方向指向 A，故切线过 A 点：$$y&#x27;=\frac{(1+vt)-y}{0-x}=\frac{y-1-vt}{x},$$即$$vt=y-1-xy&#x27;.\tag{*}$$</p>
 <p>又 B 的速率恒为 $2v$，弧长 $s=\int_{-1}^{x}\sqrt{1+(y&#x27;)^2}\,d\xi=2vt$。代入 (*)：$$\int_{-1}^{x}\sqrt{1+(y&#x27;)^2}\,d\xi=2(y-1-xy&#x27;).$$两边对 $x$ 求导：$$\sqrt{1+(y&#x27;)^2}=2(y&#x27;-y&#x27;-xy&#x27;&#x27;)=-2xy&#x27;&#x27;,$$即$$2x y&#x27;&#x27;+\sqrt{1+(y&#x27;)^2}=0\qquad(-1\le x&lt;0).$$</p>
 <p>初始条件：出发时 B 在 $(-1,0)$，且指向 A$(0,1)$，斜率为 $\frac{1-0}{0-(-1)}=1$，故$$y|_{x=-1}=0,\qquad y&#x27;|_{x=-1}=1.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle m v\frac{dv}{dy}=mg-\rho B-kv;\quad y(v)=\frac{m(mg-\rho B)}{k^2}\ln\frac{mg-\rho B}{mg-\rho B-kv}-\frac{m}{k}v\ \Big(0\le v<\frac{mg-\rho B}{k}\Big)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle m v\frac{dv}{dy}=mg-\rho B-kv;\quad y(v)=\frac{m(mg-\rho B)}{k^2}\ln\frac{mg-\rho B}{mg-\rho B-kv}-\frac{m}{k}v\ \Big(0\le v&lt;\frac{mg-\rho B}{k}\Big)$</div>
         <div class="steps"><p>下沉中受重力 $mg$（向下）、浮力 $\rho B$（向上）、阻力 $kv$（向上）。由牛顿第二定律$$m\frac{dv}{dt}=mg-\rho B-kv,\qquad v=\frac{dy}{dt}.$$以 $y$ 为自变量，$\frac{dv}{dt}=v\frac{dv}{dy}$，得微分方程$$m v\frac{dv}{dy}=mg-\rho B-kv.$$</p>
 <p>记 $a=mg-\rho B$（静止即能下沉，故 $a&gt;0$），分离变量：$$dy=\frac{mv}{a-kv}\,dv.$$而$$\frac{v}{a-kv}=\frac{1}{k}\left(\frac{a}{a-kv}-1\right),$$故$$y=-\frac{ma}{k^2}\ln|a-kv|-\frac{m}{k}v+C.$$由初始静止且 $y|_{v=0}=0$：$0=-\frac{ma}{k^2}\ln a+C$，即 $C=\frac{ma}{k^2}\ln a$。于是$$y=\frac{ma}{k^2}\ln\frac{a}{a-kv}-\frac{m}{k}v=\frac{m(mg-\rho B)}{k^2}\ln\frac{mg-\rho B}{mg-\rho B-kv}-\frac{m}{k}v,$$定义域 $0\le v&lt;\frac{mg-\rho B}{k}$（$v$ 趋于收尾速度时 $y\to\infty$，符合物理直观）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>

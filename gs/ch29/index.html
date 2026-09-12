@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -48,7 +48,7 @@
         <div class="steps"><p>交点 $xe^x=ex \Rightarrow x=0,1$；在 $(0,1)$ 内 $ex&gt;xe^x$。<br>$$S=\int_0^1(ex-xe^x)dx=\frac{e}{2}-\big[(x-1)e^x\big]_0^1=\frac{e}{2}-1$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \frac{D}{D_1}=\frac{3(a^2+1)}{2a^2+3}<\frac{3}{2}$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \frac{D}{D_1}=\frac{3(a^2+1)}{2a^2+3}&lt;\frac{3}{2}$</div>
         <div class="steps"><p>$C=(0,\frac12)$，$B=(a, a^2+\frac12)$。<br>$$D=\frac{a}{2}\left[\frac12+\left(a^2+\frac12\right)\right]=\frac{a(a^2+1)}{2},\qquad D_1=\int_0^a\left(x^2+\frac12\right)dx=\frac{a^3}{3}+\frac{a}{2}=\frac{a(2a^2+3)}{6}$$<br>$$\frac{D}{D_1}=\frac{3(a^2+1)}{2a^2+3}$$<br>由于 $2(a^2+1)=2a^2+2&lt;2a^2+3$，故 $\dfrac{3(a^2+1)}{2a^2+3}&lt;\dfrac{3}{2}$，即 $\dfrac{D}{D_1}&lt;\dfrac32$。证毕。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -136,7 +136,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k29_T3_0.png" alt="k29_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle L（对应 t>0，即 x>1 的部分）是凸的（向上凸）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle L（对应 t&gt;0，即 x&gt;1 的部分）是凸的（向上凸）$</div>
         <div class="steps"><p>$$\frac{dy}{dx}=\frac{4-2t}{2t}=\frac{2}{t}-1,\qquad \frac{d^2y}{dx^2}=\frac{d(2/t-1)/dt}{dx/dt}=\frac{-2/t^2}{2t}=-\frac{1}{t^3}&lt;0\ (t&gt;0)$$<br>故 $L$ 在整个定义段（$t&gt;0$，即 $x&gt;1$）上是凸的（向上凸）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

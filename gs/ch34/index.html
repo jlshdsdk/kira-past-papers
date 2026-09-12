@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -75,7 +75,7 @@
 <p>故 $f=Ce^{4u}-\frac u4-\frac1{16}$，由 $f(0)=0$：$C=\frac1{16}$。<br>$$f(u)=\frac{e^{4u}}{16}-\frac{u}{4}-\frac{1}{16}=\frac{e^{4u}-1-4u}{16}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (1)\ \frac{f''(u)-f(u)}{u}\equiv C\ (\text{常数})；\quad (2)\ f(u)=u+e^{1-u}-e^{u-1}$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (1)\ \frac{f&#x27;&#x27;(u)-f(u)}{u}\equiv C\ (\text{常数})；\quad (2)\ f(u)=u+e^{1-u}-e^{u-1}$</div>
         <div class="steps"><p>(1) 记 $P=\dfrac{f(u)}{x^2y},\ Q=\dfrac{f&#x27;&#x27;(u)}{xy^2},\ u=xy$。由 $dF=P\,dx+Q\,dy$ 且 $f$ 三阶连续可导，有 $\dfrac{\partial P}{\partial y}=\dfrac{\partial Q}{\partial x}$：<br>$$\frac{\partial P}{\partial y}=\frac{f&#x27;(u)}{xy}-\frac{f(u)}{x^2y^2},\qquad \frac{\partial Q}{\partial x}=\frac{f&#x27;&#x27;&#x27;(u)}{xy}-\frac{f&#x27;&#x27;(u)}{x^2y^2}$$<br>（用了 $u_x=y,\ u_y=x$。）两项分别通乘 $x^2y^2=u^2$：<br>$$u f&#x27;(u)-f(u)=u f&#x27;&#x27;&#x27;(u)-f&#x27;&#x27;(u)\ \Longrightarrow\ f&#x27;&#x27;(u)-f(u)=u\left[f&#x27;&#x27;&#x27;(u)-f&#x27;(u)\right]$$<br>令 $\varphi(u)=\dfrac{f&#x27;&#x27;(u)-f(u)}{u}$，则<br>$$\varphi&#x27;(u)=\frac{u\left[f&#x27;&#x27;&#x27;(u)-f&#x27;(u)\right]-\left[f&#x27;&#x27;(u)-f(u)\right]}{u^2}=0$$<br>故 $\varphi(u)\equiv C$，即 $\dfrac{f&#x27;&#x27;(u)-f(u)}{u}=C$。</p>
 <p>(2) 代入初值：$C=\dfrac{f&#x27;&#x27;(1)-f(1)}{1}=0-1=-1$，于是 $f&#x27;&#x27;-f=-u$。<br>齐次通解 $C_1e^u+C_2e^{-u}$，特解 $u$（代入 $0-u=-u$ 成立），故 $f=C_1e^u+C_2e^{-u}+u$。</p>
 <p>由 $f(1)=1$：$C_1e+C_2e^{-1}+1=1\Rightarrow C_1e+C_2e^{-1}=0$；<br>由 $f&#x27;(u)=C_1e^u-C_2e^{-u}+1$ 及 $f&#x27;(1)=-1$：$C_1e-C_2e^{-1}=-2$。<br>解得 $C_1e=-1,\ C_2e^{-1}=1$，即 $C_1=-e^{-1},\ C_2=e$。<br>$$f(u)=u+e^{1-u}-e^{u-1}$$<br>（检验：$f(1)=1,\ f&#x27;(1)=1-2=-1,\ f&#x27;&#x27;(1)=0$，且 $(f&#x27;&#x27;-f)/u=-1$ 恒成立。）</p></div>

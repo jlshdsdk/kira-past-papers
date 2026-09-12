@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,7 +27,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k09_T1_0.png" alt="k09_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/down/k09_T1_1.png" alt="k09_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/down/k09_T1_2.png" alt="k09_T1 题目图 3">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}5&-2&-2\\4&-3&-2\\-2&2&3\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}5&amp;-2&amp;-2\\4&amp;-3&amp;-2\\-2&amp;2&amp;3\end{pmatrix}$</div>
         <div class="steps"><p>由 $AB=A+2B$ 得 $(A-2E)B=A$，故 $B=(A-2E)^{-1}A$。</p>
 <p>$$A-2E=\begin{pmatrix}1&amp;0&amp;1\\1&amp;-1&amp;0\\0&amp;1&amp;2\end{pmatrix},\quad |A-2E|=-2+1=-1\neq0$$</p>
 <p>初行变换求逆：$(A-2E)^{-1}=\begin{pmatrix}2&amp;-1&amp;-1\\2&amp;-2&amp;-1\\-1&amp;1&amp;1\end{pmatrix}$。</p>
@@ -35,7 +35,7 @@
 <p>验证：AB 各元素与 A+2B 逐一相等，成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}3&-8&-6\\2&-9&-6\\-2&12&9\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}3&amp;-8&amp;-6\\2&amp;-9&amp;-6\\-2&amp;12&amp;9\end{pmatrix}$</div>
         <div class="steps"><p>同上，$(A-2E)B=A$，$B=(A-2E)^{-1}A$。</p>
 <p>$$A-2E=\begin{pmatrix}2&amp;2&amp;3\\1&amp;-1&amp;0\\-1&amp;2&amp;1\end{pmatrix},\quad |A-2E|=-2-2+3=-1\neq0$$</p>
 <p>伴随矩阵法求逆：$(A-2E)^{-1}=\begin{pmatrix}1&amp;-4&amp;-3\\1&amp;-5&amp;-3\\-1&amp;6&amp;4\end{pmatrix}$（验证 $(A-2E)(A-2E)^{-1}=E$ 成立）。</p>
@@ -43,7 +43,7 @@
 <p>验证 AB=A+2B 成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle X=\begin{pmatrix}3&-1\\2&0\\1&-1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle X=\begin{pmatrix}3&amp;-1\\2&amp;0\\1&amp;-1\end{pmatrix}$</div>
         <div class="steps"><p>$(E-A)X=B$，$X=(E-A)^{-1}B$。</p>
 <p>$$E-A=\begin{pmatrix}1&amp;-1&amp;0\\1&amp;0&amp;-1\\1&amp;0&amp;2\end{pmatrix},\quad |E-A|=0+3+0=3\neq0$$</p>
 <p>$(E-A)^{-1}=\frac13\begin{pmatrix}0&amp;2&amp;1\\-3&amp;2&amp;1\\0&amp;-1&amp;1\end{pmatrix}$。</p>
@@ -51,7 +51,7 @@
 <p>验证 $(E-A)X=B$：各行分别为 $(3-2,-1-0)=(1,-1)$、$(3-1,-1+1)=(2,0)$、$(3+2,-1-2)=(5,-3)$，成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle A=\begin{pmatrix}1&0&0&0\\-2&1&0&0\\1&-2&1&0\\0&1&-2&1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle A=\begin{pmatrix}1&amp;0&amp;0&amp;0\\-2&amp;1&amp;0&amp;0\\1&amp;-2&amp;1&amp;0\\0&amp;1&amp;-2&amp;1\end{pmatrix}$</div>
         <div class="steps"><p>化简：$(E-C^{-1}B)^{T}C^{T}=[C(E-C^{-1}B)]^{T}=(C-B)^{T}$，故 $A(C-B)^{T}=E$，</p>
 <p>$$A=[(C-B)^{T}]^{-1}=\big[(C-B)^{-1}\big]^{T}$$</p>
 <p>$$C-B=\begin{pmatrix}1&amp;2&amp;3&amp;4\\0&amp;1&amp;2&amp;3\\0&amp;0&amp;1&amp;2\\0&amp;0&amp;0&amp;1\end{pmatrix}:=D$$</p>
@@ -59,39 +59,39 @@
 <p>$$A=(D^{-1})^{T}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\-2&amp;1&amp;0&amp;0\\1&amp;-2&amp;1&amp;0\\0&amp;1&amp;-2&amp;1\end{pmatrix}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle B=A+E=\begin{pmatrix}2&0&1\\0&3&0\\-1&0&2\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle B=A+E=\begin{pmatrix}2&amp;0&amp;1\\0&amp;3&amp;0\\-1&amp;0&amp;2\end{pmatrix}$</div>
         <div class="steps"><p>$AB+E=A^{2}+B \Rightarrow AB-B=A^{2}-E \Rightarrow (A-E)B=(A-E)(A+E)$。</p>
 <p>$$A-E=\begin{pmatrix}0&amp;0&amp;1\\0&amp;1&amp;0\\-1&amp;0&amp;0\end{pmatrix},\quad |A-E|=1\neq0$$</p>
 <p>$A-E$ 可逆，两边左乘 $(A-E)^{-1}$ 得 $B=A+E$。</p>
 <p>$$B=\begin{pmatrix}2&amp;0&amp;1\\0&amp;3&amp;0\\-1&amp;0&amp;2\end{pmatrix}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}3&0&0\\0&2&0\\0&0&1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}3&amp;0&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;1\end{pmatrix}$</div>
         <div class="steps"><p>两边左乘 $A$、右乘 $A^{-1}$：$B=6A^{2}+ABA$ 的左边……即 $BA=6A^{2}+ABA$，右乘 $A^{-1}$ 得 $B=6A+AB$，于是 $(E-A)B=6A$，$B=6(E-A)^{-1}A$。</p>
 <p>$E-A=\operatorname{diag}(\tfrac23,\tfrac34,\tfrac67)$，$(E-A)^{-1}=\operatorname{diag}(\tfrac32,\tfrac43,\tfrac76)$，</p>
 <p>$$(E-A)^{-1}A=\operatorname{diag}(\tfrac12,\tfrac13,\tfrac16),\quad B=6\begin{pmatrix}\tfrac12&amp;0&amp;0\\0&amp;\tfrac13&amp;0\\0&amp;0&amp;\tfrac16\end{pmatrix}=\begin{pmatrix}3&amp;0&amp;0\\0&amp;2&amp;0\\0&amp;0&amp;1\end{pmatrix}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}0&2&1\\0&0&0\\0&0&0\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}0&amp;2&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}$</div>
         <div class="steps"><p>$A(A-B)=E$，$|A|=-1\neq0$，故 $A-B=A^{-1}$，$B=A-A^{-1}$。</p>
 <p>$$A^{-1}=\begin{pmatrix}1&amp;-1&amp;-2\\0&amp;1&amp;1\\0&amp;0&amp;-1\end{pmatrix}$$</p>
 <p>$$B=\begin{pmatrix}1&amp;1&amp;-1\\0&amp;1&amp;1\\0&amp;0&amp;-1\end{pmatrix}-\begin{pmatrix}1&amp;-1&amp;-2\\0&amp;1&amp;1\\0&amp;0&amp;-1\end{pmatrix}=\begin{pmatrix}0&amp;2&amp;1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{pmatrix}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle A=\begin{pmatrix}1&0&0&0\\-2&1&0&0\\1&-2&1&0\\0&1&-2&1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle A=\begin{pmatrix}1&amp;0&amp;0&amp;0\\-2&amp;1&amp;0&amp;0\\1&amp;-2&amp;1&amp;0\\0&amp;1&amp;-2&amp;1\end{pmatrix}$</div>
         <div class="steps"><p>两边左乘 $C$：$(2C-B)A^{T}=E$，故 $A^{T}=(2C-B)^{-1}$，$A=\big[(2C-B)^{-1}\big]^{T}$。</p>
 <p>$$2C-B=\begin{pmatrix}1&amp;2&amp;3&amp;4\\0&amp;1&amp;2&amp;3\\0&amp;0&amp;1&amp;2\\0&amp;0&amp;0&amp;1\end{pmatrix},\quad (2C-B)^{-1}=\begin{pmatrix}1&amp;-2&amp;1&amp;0\\0&amp;1&amp;-2&amp;1\\0&amp;0&amp;1&amp;-2\\0&amp;0&amp;0&amp;1\end{pmatrix}$$</p>
 <p>$$A=\big[(2C-B)^{-1}\big]^{T}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\-2&amp;1&amp;0&amp;0\\1&amp;-2&amp;1&amp;0\\0&amp;1&amp;-2&amp;1\end{pmatrix}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}2&0&0\\0&-4&0\\0&0&2\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}2&amp;0&amp;0\\0&amp;-4&amp;0\\0&amp;0&amp;2\end{pmatrix}$</div>
         <div class="steps"><p>$|A|=-2$。原式右乘 $A^{-1}$：$A^{*}B=2B-8A^{-1}$；再左乘 $A$：$AA^{*}B=|A|B=-2B=2AB-8E$。</p>
 <p>整理：$-2B-2AB=-8E\Rightarrow (E+A)B=4E$，$B=4(E+A)^{-1}$。</p>
 <p>$E+A=\operatorname{diag}(2,-1,2)$，$(E+A)^{-1}=\operatorname{diag}(\tfrac12,-1,\tfrac12)$，</p>
 <p>$$B=\begin{pmatrix}2&amp;0&amp;0\\0&amp;-4&amp;0\\0&amp;0&amp;2\end{pmatrix}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle X=\frac14\begin{pmatrix}1&1&0\\0&1&1\\1&0&1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle X=\frac14\begin{pmatrix}1&amp;1&amp;0\\0&amp;1&amp;1\\1&amp;0&amp;1\end{pmatrix}$</div>
         <div class="steps"><p>$|A|=2+2+0=4$，$A^{*}=|A|A^{-1}=4A^{-1}$。</p>
 <p>$4A^{-1}X=A^{-1}+2X \Rightarrow (A^{*}-2E)X=A^{-1}$，</p>
 <p>$$X=(A^{*}-2E)^{-1}A^{-1}=\big[(A^{*}-2E)A\big]^{-1}=\big(|A|E-2A\big)^{-1}=\tfrac12(2E-A)^{-1}$$</p>
@@ -101,7 +101,7 @@
 <p>验证：$4X=E+2AX$ 成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}6&0&0&0\\0&6&0&0\\6&0&6&0\\0&3&0&-1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle B=\begin{pmatrix}6&amp;0&amp;0&amp;0\\0&amp;6&amp;0&amp;0\\6&amp;0&amp;6&amp;0\\0&amp;3&amp;0&amp;-1\end{pmatrix}$</div>
         <div class="steps"><p>$ABA^{-1}=BA^{-1}+3E$ 右乘 $A$：$AB=B+3A$，即 $(A-E)B=3A$，$B=3(A-E)^{-1}A=3\big[E+(A-E)^{-1}\big]$。</p>
 <p>先由 $A^{*}$ 求 $A$：$A^{*}$ 为下三角，$|A^{*}|=8=|A|^{3}\Rightarrow|A|=2$，$A=|A|(A^{*})^{-1}=2(A^{*})^{-1}$。</p>
 <p>$$(A^{*})^{-1}=\begin{pmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\-1&amp;0&amp;1&amp;0\\0&amp;\tfrac38&amp;0&amp;\tfrac18\end{pmatrix},\quad A=\begin{pmatrix}2&amp;0&amp;0&amp;0\\0&amp;2&amp;0&amp;0\\-2&amp;0&amp;2&amp;0\\0&amp;\tfrac34&amp;0&amp;\tfrac14\end{pmatrix}$$</p>
@@ -111,7 +111,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 把 (3,1) 处算成 3。按本题 A^{*}（(4,2)=-3）得 A=2(A^{*})^{-1}，B=3(A-E)^{-1}A，(3,1)=6；已数值验证 AB=B+3A 逐元素成立，solver 与 A 正确。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle X=\begin{pmatrix}1&2&5\\0&1&2\\0&0&1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle X=\begin{pmatrix}1&amp;2&amp;5\\0&amp;1&amp;2\\0&amp;0&amp;1\end{pmatrix}$</div>
         <div class="steps"><p>移项组因子：$AXA-AXB-BXA+BXB=E\Rightarrow (A-B)X(A-B)=E$，故 $X=\big[(A-B)^{-1}\big]^{2}$。</p>
 <p>$$A-B=\begin{pmatrix}1&amp;-1&amp;-1\\0&amp;1&amp;-1\\0&amp;0&amp;1\end{pmatrix},\quad (A-B)^{-1}=\begin{pmatrix}1&amp;1&amp;2\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}$$</p>
 <p>$$X=\begin{pmatrix}1&amp;1&amp;2\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}^{2}=\begin{pmatrix}1&amp;2&amp;5\\0&amp;1&amp;2\\0&amp;0&amp;1\end{pmatrix}$$</p></div>
@@ -140,7 +140,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：solver 按 B=\beta\alpha^{T} 误植题面判无解（对误植题面其证明本身成立，\gamma\notin span{\alpha,\beta} 属实），但 A、B 均按真题原意 B=\beta^{T}\alpha=2 求解且两者通解等价（(1/2,1,0)^{T}=\tfrac12(1,2,1)^{T}+(0,0,-\tfrac12)^{T}），solver 结论与其分歧，应为有解。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) \xi=(-1,2,3,1)^T；(II) B=\begin{pmatrix}2&6&-1\\-1&-3&1\\-1&-4&1\\0&0&0\end{pmatrix}+\begin{pmatrix}-1\\2\\3\\1\end{pmatrix}(k_1,k_2,k_3)，k_1,k_2,k_3\in R$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (I) \xi=(-1,2,3,1)^T；(II) B=\begin{pmatrix}2&amp;6&amp;-1\\-1&amp;-3&amp;1\\-1&amp;-4&amp;1\\0&amp;0&amp;0\end{pmatrix}+\begin{pmatrix}-1\\2\\3\\1\end{pmatrix}(k_1,k_2,k_3)，k_1,k_2,k_3\in R$</div>
         <div class="steps"><p>对 $\begin{pmatrix}A&amp;E\end{pmatrix}$ 作初行变换：</p>
 <p>$$\begin{pmatrix}1&amp;-2&amp;3&amp;-4&amp;1&amp;0&amp;0\\0&amp;1&amp;-1&amp;1&amp;0&amp;1&amp;0\\1&amp;2&amp;0&amp;-3&amp;0&amp;0&amp;1\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;0&amp;1&amp;2&amp;6&amp;-1\\0&amp;1&amp;0&amp;-2&amp;-1&amp;-3&amp;1\\0&amp;0&amp;1&amp;-3&amp;-1&amp;-4&amp;1\end{pmatrix}$$</p>
 <p>(I) $Ax=0$ 同解于 $x_1+x_4=0,\ x_2-2x_4=0,\ x_3-3x_4=0$，取 $x_4=1$：</p>
@@ -150,7 +150,7 @@
 <p>验证 $k_j=0$ 时 $AB_0=E$ 逐元素成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a\neq1且a\neq-2：唯一解 X=\begin{pmatrix}1&\frac{3a}{a+2}\\0&\frac{a-4}{a+2}\\-1&0\end{pmatrix}；a=1：无穷多解 X=\begin{pmatrix}1&1\\s&t\\-1-s&-1-t\end{pmatrix}（s,t\in R）；a=-2：无解$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle a\neq1且a\neq-2：唯一解 X=\begin{pmatrix}1&amp;\frac{3a}{a+2}\\0&amp;\frac{a-4}{a+2}\\-1&amp;0\end{pmatrix}；a=1：无穷多解 X=\begin{pmatrix}1&amp;1\\s&amp;t\\-1-s&amp;-1-t\end{pmatrix}（s,t\in R）；a=-2：无解$</div>
         <div class="steps"><p>对增广矩阵 $\begin{pmatrix}A&amp;B\end{pmatrix}$ 作行变换：</p>
 <p>$$\begin{pmatrix}1&amp;-1&amp;-1&amp;2&amp;2\\2&amp;a&amp;1&amp;1&amp;a\\-1&amp;1&amp;a&amp;-a-1&amp;-2\end{pmatrix}\to\begin{pmatrix}1&amp;-1&amp;-1&amp;2&amp;2\\0&amp;a+2&amp;3&amp;-3&amp;a-4\\0&amp;0&amp;a-1&amp;1-a&amp;0\end{pmatrix}$$</p>
 <p>$|A|=(a+2)(a-1)$。</p>
@@ -162,7 +162,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：a=1 时 r(A)=2 而 B 是 3×2 矩阵，X 的两列各带一个自由参数，通解应含 s,t 两个独立参数；B 只写了一个参数 k（相当于 s=t 的子族），通解不完整。其余两种情形三方一致。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) a=2；(II) P=\begin{pmatrix}3-6t_1&4-6t_2&4-6t_3\\-1+2t_1&-1+2t_2&-1+2t_3\\t_1&t_2&t_3\end{pmatrix}（t_2\neq t_3），如 P=\begin{pmatrix}3&4&-2\\-1&-1&1\\0&0&1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (I) a=2；(II) P=\begin{pmatrix}3-6t_1&amp;4-6t_2&amp;4-6t_3\\-1+2t_1&amp;-1+2t_2&amp;-1+2t_3\\t_1&amp;t_2&amp;t_3\end{pmatrix}（t_2\neq t_3），如 P=\begin{pmatrix}3&amp;4&amp;-2\\-1&amp;-1&amp;1\\0&amp;0&amp;1\end{pmatrix}$</div>
         <div class="steps"><p>(I) 初等列变换即右乘可逆阵，故 $r(A)=r(B)$。$\det A=0$（对任意 $a$：$-3a+2a+a=0$，$r(A)=2$），而 $\det B=2-a$，故 $a=2$。</p>
 <p>(II) $a=2$ 时解 $AP=B$，对 $\begin{pmatrix}A&amp;B\end{pmatrix}$ 行变换：</p>
 <p>$$\begin{pmatrix}1&amp;2&amp;2&amp;1&amp;2&amp;2\\1&amp;3&amp;0&amp;0&amp;1&amp;1\\2&amp;7&amp;-2&amp;-1&amp;1&amp;1\end{pmatrix}\to\begin{pmatrix}1&amp;0&amp;6&amp;3&amp;4&amp;4\\0&amp;1&amp;-2&amp;-1&amp;-1&amp;-1\\0&amp;0&amp;0&amp;0&amp;0&amp;0\end{pmatrix}$$</p>
@@ -182,7 +182,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k09_T3_0.png" alt="k09_T3 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=-1 且 b=0 时存在；C=\begin{pmatrix}1+s+t&-s\\s&t\end{pmatrix}（s,t 为任意常数）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a=-1 且 b=0 时存在；C=\begin{pmatrix}1+s+t&amp;-s\\s&amp;t\end{pmatrix}（s,t 为任意常数）$</div>
         <div class="steps"><p>设 $C=\begin{pmatrix}x_1&amp;x_2\\x_3&amp;x_4\end{pmatrix}$，则</p>
 <p>$$AC=\begin{pmatrix}x_1+ax_3&amp;x_2+ax_4\\x_1&amp;x_2\end{pmatrix},\quad CA=\begin{pmatrix}x_1+x_2&amp;ax_1\\x_3+x_4&amp;ax_3\end{pmatrix}$$</p>
 <p>$$AC-CA=\begin{pmatrix}ax_3-x_2&amp;x_2+a x_4-a x_1\\x_1-x_3-x_4&amp;x_2-ax_3\end{pmatrix}=\begin{pmatrix}0&amp;1\\1&amp;b\end{pmatrix}$$</p>

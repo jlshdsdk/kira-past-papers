@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,19 +27,19 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T1_0.png" alt="k12_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T1_1.png" alt="k12_T1 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y'=\frac{a}{1+ax},\quad y''=-\frac{a^2}{(1+ax)^2}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y&#x27;=\frac{a}{1+ax},\quad y&#x27;&#x27;=-\frac{a^2}{(1+ax)^2}$</div>
         <div class="steps"><p>由链式法则：<br>$$y&#x27;=\frac{a}{1+ax}$$<br>再求导：<br>$$y&#x27;&#x27;=a\cdot\left[-\frac{a}{(1+ax)^2}\right]=-\frac{a^2}{(1+ax)^2}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y'=\frac{2}{x\sqrt{1+x^2}}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle y&#x27;=\frac{2}{x\sqrt{1+x^2}}$</div>
         <div class="steps"><p>记 $s=\sqrt{1+x^2}$，则 $y=\ln(s-1)-\ln(s+1)$。<br>$$y&#x27;=\frac{x/s}{s-1}-\frac{x/s}{s+1}=\frac{x}{s}\cdot\frac{2}{s^2-1}=\frac{x}{s}\cdot\frac{2}{x^2}=\frac{2}{x\sqrt{1+x^2}}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y'=-\frac{e^{-\sqrt{x}}}{2\sqrt{x}\sqrt{1-e^{-2\sqrt{x}}}}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle y&#x27;=-\frac{e^{-\sqrt{x}}}{2\sqrt{x}\sqrt{1-e^{-2\sqrt{x}}}}$</div>
         <div class="steps"><p>由复合函数求导法则：<br>$$y&#x27;=\frac{1}{\sqrt{1-\left(e^{-\sqrt{x}}\right)^2}}\cdot e^{-\sqrt{x}}\cdot\left(-\frac{1}{2\sqrt{x}}\right)=-\frac{e^{-\sqrt{x}}}{2\sqrt{x}\sqrt{1-e^{-2\sqrt{x}}}}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle y'=-\frac{1}{x^2}e^{\tan\frac{1}{x}}\left[\sec^2\frac{1}{x}\,\sin\frac{1}{x}+\cos\frac{1}{x}\right]$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle y&#x27;=-\frac{1}{x^2}e^{\tan\frac{1}{x}}\left[\sec^2\frac{1}{x}\,\sin\frac{1}{x}+\cos\frac{1}{x}\right]$</div>
         <div class="steps"><p>记 $u=\frac{1}{x}$，$u&#x27;=-\frac{1}{x^2}$：<br>$$y&#x27;=e^{\tan u}\sec^2 u\cdot u&#x27;\cdot\sin u+e^{\tan u}\cos u\cdot u&#x27;$$<br>$$=-\frac{1}{x^2}e^{\tan\frac{1}{x}}\left[\sec^2\frac{1}{x}\sin\frac{1}{x}+\cos\frac{1}{x}\right].$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -47,7 +47,7 @@
         <div class="steps"><p>$$y&#x27;=\frac{-3^{-x}\ln 3}{1+3^{-x}}=-\frac{\ln 3}{3^x+1}$$<br>$$dy=-\frac{\ln 3}{3^x+1}\,dx.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle y'=-2x\sin x^2\,\sin^2\frac{1}{x}-\frac{1}{x^2}\cos x^2\,\sin\frac{2}{x}$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle y&#x27;=-2x\sin x^2\,\sin^2\frac{1}{x}-\frac{1}{x^2}\cos x^2\,\sin\frac{2}{x}$</div>
         <div class="steps"><p>乘积与复合求导：<br>$$y&#x27;=-\sin x^2\cdot 2x\cdot\sin^2\frac{1}{x}+\cos x^2\cdot 2\sin\frac{1}{x}\cos\frac{1}{x}\cdot\left(-\frac{1}{x^2}\right)$$<br>$$=-2x\sin x^2\sin^2\frac{1}{x}-\frac{1}{x^2}\cos x^2\sin\frac{2}{x}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -90,15 +90,15 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T2_0.png" alt="k12_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f'(t)=(1+2t)e^{2t}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f&#x27;(t)=(1+2t)e^{2t}$</div>
         <div class="steps"><p>$$\left(1+\frac{1}{x}\right)^{2tx}=e^{2tx\ln(1+1/x)}\to e^{2t}\quad(x\ln(1+1/x)\to 1)$$<br>故 $f(t)=te^{2t}$，<br>$$f&#x27;(t)=e^{2t}+2te^{2t}=(1+2t)e^{2t}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=2f'(x^2)\cos[f(x^2)]+4x^2f''(x^2)\cos[f(x^2)]-4x^2[f'(x^2)]^2\sin[f(x^2)]$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=2f&#x27;(x^2)\cos[f(x^2)]+4x^2f&#x27;&#x27;(x^2)\cos[f(x^2)]-4x^2[f&#x27;(x^2)]^2\sin[f(x^2)]$</div>
         <div class="steps"><p>$$y&#x27;=2x f&#x27;(x^2)\cos[f(x^2)]$$<br>再求导：<br>$$y&#x27;&#x27;=2f&#x27;(x^2)\cos[f(x^2)]+2x\cdot f&#x27;&#x27;(x^2)\cdot 2x\cdot\cos[f(x^2)]+2x f&#x27;(x^2)\cdot\left(-\sin[f(x^2)]\right)\cdot 2x f&#x27;(x^2)$$<br>$$=2f&#x27;(x^2)\cos[f(x^2)]+4x^2f&#x27;&#x27;(x^2)\cos[f(x^2)]-4x^2[f&#x27;(x^2)]^2\sin[f(x^2)].$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f'(t)=(1+2t)e^{2t}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f&#x27;(t)=(1+2t)e^{2t}$</div>
         <div class="steps"><p>$$\left(\frac{x+t}{x-t}\right)^x=\left(1+\frac{2t}{x-t}\right)^x=e^{x\ln\left(1+\frac{2t}{x-t}\right)}\to e^{2t}$$<br>（因 $x\cdot\frac{2t}{x-t}\to 2t$）。故 $f(t)=te^{2t}$，<br>$$f&#x27;(t)=e^{2t}+2te^{2t}=(1+2t)e^{2t}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -106,11 +106,11 @@
         <div class="steps"><p>记 $u=\frac{3x-2}{3x+2}$，则<br>$$u&#x27;=\frac{3(3x+2)-3(3x-2)}{(3x+2)^2}=\frac{12}{(3x+2)^2}$$<br>$$\frac{dy}{dx}=f&#x27;(u)\,u&#x27;=\arctan(u^2)\cdot\frac{12}{(3x+2)^2}$$<br>$x=0$ 时 $u=-1$：<br>$$\frac{dy}{dx}\bigg|_{x=0}=\arctan 1\cdot\frac{12}{4}=\frac{\pi}{4}\cdot 3=\frac{3\pi}{4}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle dy=e^{f(x)}\left[\frac{f'(\ln x)}{x}+f(\ln x)f'(x)\right]dx$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle dy=e^{f(x)}\left[\frac{f&#x27;(\ln x)}{x}+f(\ln x)f&#x27;(x)\right]dx$</div>
         <div class="steps"><p>$$y&#x27;=\frac{1}{x}f&#x27;(\ln x)\,e^{f(x)}+f(\ln x)\,e^{f(x)}f&#x27;(x)$$<br>$$dy=e^{f(x)}\left[\frac{f&#x27;(\ln x)}{x}+f(\ln x)f&#x27;(x)\right]dx.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle f'(x)=(1+3x)e^{3x}$</div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle f&#x27;(x)=(1+3x)e^{3x}$</div>
         <div class="steps"><p>$$\lim_{t\to 0}(1+3t)^{x/t}=e^{\lim_{t\to 0}\frac{x}{t}\ln(1+3t)}=e^{3x}$$<br>（$\ln(1+3t)\sim 3t$）。故 $f(x)=xe^{3x}$，<br>$$f&#x27;(x)=e^{3x}+3xe^{3x}=(1+3x)e^{3x}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -129,7 +129,7 @@
         <div class="steps"><p>x=1 处连续要求：$a+b=f(1)=1$。<br>x=1 处可导要求左、右导数相等：<br>$$f_- &#x27;(1)=2x\big|_{x=1}=2,\qquad f_+ &#x27;(1)=a$$<br>故 $a=2$，代回得 $b=-1$。<br>此时 $f&#x27;(x)=2\ (x&gt;1)$，$f&#x27;(x)=2x\ (x\le 1)$，$f&#x27;$ 处处连续，f 处处可导。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f'(x) 在 x=0 处连续（f'(0)=\pi/2）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle f&#x27;(x) 在 x=0 处连续（f&#x27;(0)=\pi/2）$</div>
         <div class="steps"><p>用定义求 $f&#x27;(0)$：<br>$$f&#x27;(0)=\lim_{x\to 0}\frac{x\arctan\frac{1}{x^2}-0}{x}=\lim_{x\to 0}\arctan\frac{1}{x^2}=\frac{\pi}{2}$$<br>$x\ne 0$ 时：<br>$$f&#x27;(x)=\arctan\frac{1}{x^2}+x\cdot\frac{1}{1+x^{-4}}\cdot\left(-\frac{2}{x^3}\right)=\arctan\frac{1}{x^2}-\frac{2x^2}{x^4+1}$$<br>$$\lim_{x\to 0}f&#x27;(x)=\frac{\pi}{2}-0=\frac{\pi}{2}=f&#x27;(0)$$<br>故 $f&#x27;(x)$ 在 $x=0$ 处连续。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -144,7 +144,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T4_0.png" alt="k12_T4 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) f'(x)=\frac{x[g'(x)+e^{-x}]-[g(x)-e^{-x}]}{x^2}\ (x\ne 0)，f'(0)=\frac{g''(0)-1}{2}；(II) f'(x) 在 (-\infty,+\infty) 上处处连续$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) f&#x27;(x)=\frac{x[g&#x27;(x)+e^{-x}]-[g(x)-e^{-x}]}{x^2}\ (x\ne 0)，f&#x27;(0)=\frac{g&#x27;&#x27;(0)-1}{2}；(II) f&#x27;(x) 在 (-\infty,+\infty) 上处处连续$</div>
         <div class="steps"><p>(I) $x\ne 0$ 时直接求导：<br>$$f&#x27;(x)=\frac{x[g&#x27;(x)+e^{-x}]-[g(x)-e^{-x}]}{x^2}.$$<br>x=0 处用定义。由泰勒公式（$g$ 二阶连续可导）：<br>$$g(x)=1-x+\frac{g&#x27;&#x27;(0)}{2}x^2+o(x^2),\qquad e^{-x}=1-x+\frac{x^2}{2}+o(x^2)$$<br>$$g(x)-e^{-x}=\frac{g&#x27;&#x27;(0)-1}{2}x^2+o(x^2)$$<br>$$f&#x27;(0)=\lim_{x\to 0}\frac{f(x)-f(0)}{x}=\lim_{x\to 0}\frac{g(x)-e^{-x}}{x^2}=\frac{g&#x27;&#x27;(0)-1}{2}.$$<br>(II) $x\ne 0$ 时 $f&#x27;$ 由连续函数（$g$ 二阶连续可导）构成，连续。考察 $x\to 0$：<br>$$g&#x27;(x)=-1+g&#x27;&#x27;(0)x+o(x)\ \Rightarrow\ g&#x27;(x)+e^{-x}=(g&#x27;&#x27;(0)-1)x+o(x)$$<br>$$x[g&#x27;(x)+e^{-x}]=(g&#x27;&#x27;(0)-1)x^2+o(x^2)$$<br>$$\lim_{x\to 0}f&#x27;(x)=\lim_{x\to 0}\frac{(g&#x27;&#x27;(0)-1)x^2-\frac{g&#x27;&#x27;(0)-1}{2}x^2+o(x^2)}{x^2}=\frac{g&#x27;&#x27;(0)-1}{2}=f&#x27;(0)$$<br>故 $f&#x27;$ 在 $x=0$ 处也连续，从而 $f&#x27;(x)$ 在 $(-\infty,+\infty)$ 上连续。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -159,7 +159,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T5_0.png" alt="k12_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k12_T5_1.png" alt="k12_T5 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y''=y+\sin x（即 y''-y=\sin x）$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y&#x27;&#x27;=y+\sin x（即 y&#x27;&#x27;-y=\sin x）$</div>
         <div class="steps"><p>$$\frac{dx}{dy}=\frac{1}{y&#x27;}$$<br>$$\frac{d^2x}{dy^2}=\frac{d}{dx}\left(\frac{1}{y&#x27;}\right)\cdot\frac{dx}{dy}=-\frac{y&#x27;&#x27;}{(y&#x27;)^2}\cdot\frac{1}{y&#x27;}=-\frac{y&#x27;&#x27;}{(y&#x27;)^3}$$<br>代入原方程：<br>$$-\frac{y&#x27;&#x27;}{(y&#x27;)^3}+(y+\sin x)\cdot\frac{1}{(y&#x27;)^3}=0$$<br>两边乘 $(y&#x27;)^3$：<br>$$y&#x27;&#x27;=y+\sin x.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -178,11 +178,11 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T6_0.png" alt="k12_T6 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) g(x)=\begin{cases}-\sqrt{\frac{1-x}{2}}, & x<-1\\ \sqrt[3]{x}, & -1\le x\le 8\\ \frac{x+16}{12}, & x>8\end{cases}；(II) g 无间断点，在 x=-1 和 x=0 处不可导$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (I) g(x)=\begin{cases}-\sqrt{\frac{1-x}{2}}, &amp; x&lt;-1\\ \sqrt[3]{x}, &amp; -1\le x\le 8\\ \frac{x+16}{12}, &amp; x&gt;8\end{cases}；(II) g 无间断点，在 x=-1 和 x=0 处不可导$</div>
         <div class="steps"><p>(I) 三段分别严格单调，值域为 $(-\infty,-1]$、$[-1,8]$、$(8,+\infty)$，逐一反解：<br>$$g(x)=\begin{cases}-\sqrt{\dfrac{1-x}{2}}, &amp; x&lt;-1,\\[2mm] \sqrt[3]{x}, &amp; -1\le x\le 8,\\[2mm] \dfrac{x+16}{12}, &amp; x&gt;8.\end{cases}$$<br>(II) 在 $x=-1$ 处左右极限均为 $-1$，在 $x=8$ 处左右极限均为 $2$，故 $g$ 处处连续，无间断点。<br>可导性：<br>- $x\to(-1)^-$：$g&#x27;(x)=\frac{1}{2\sqrt{2(1-x)}}\to\frac{1}{4}$；$x\to(-1)^+$：$g&#x27;(x)=\frac{1}{3}x^{-2/3}\to\frac{1}{3}$。左右导数不等，$x=-1$ 处不可导。<br>- $x=0$（属 $\sqrt[3]{x}$ 段）：$\lim_{h\to 0}\frac{h^{1/3}-0}{h}=\lim_{h\to 0}h^{-2/3}=+\infty$，不可导。<br>- $x=8$：左导数 $\frac{1}{3}\cdot 8^{-2/3}=\frac{1}{12}$，右导数 $\frac{1}{12}$，相等，可导。<br>综上：$g$ 没有间断点，在 $x=-1$ 与 $x=0$ 处不可导。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（g(0)=1,\ g'(0)=\frac{2}{3e}）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle B（g(0)=1,\ g&#x27;(0)=\frac{2}{3e}）$</div>
         <div class="steps"><p>$f(1)=0$，故 $g(0)=1$（排除 C、D）。<br>由变限积分求导：<br>$$f&#x27;(x)=\frac{e^{x^3}}{1+x^6}\cdot 3x^2,\qquad f&#x27;(1)=\frac{e}{2}\cdot 3=\frac{3e}{2}$$<br>由反函数求导法则：<br>$$g&#x27;(0)=\frac{1}{f&#x27;(g(0))}=\frac{1}{f&#x27;(1)}=\frac{2}{3e}$$<br>故选 B。</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：三方数值一致且正确（f(1)=0 故 g(0)=1；f&#x27;(1)=3e/2 故 g&#x27;(0)=2/(3e)）；原题选项 (B) 恰为此组数值、(D) 为 g(1)=0, g&#x27;(1)=2/(3e)，A 把选项字母误标为 D</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
@@ -254,7 +254,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T8_0.png" alt="k12_T8 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y'(0)=1,\quad y''(0)=2$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y&#x27;(0)=1,\quad y&#x27;&#x27;(0)=2$</div>
         <div class="steps"><p>x=0 代入：$y(0)=1$。<br>两边求导：<br>$$y&#x27;=e^{xy}+xe^{xy}(y+xy&#x27;)=e^{xy}(1+xy+x^2y&#x27;)$$<br>代入 $(0,1)$：$y&#x27;(0)=1$。<br>再求导：<br>$$y&#x27;&#x27;=e^{xy}(y+xy&#x27;)(1+xy+x^2y&#x27;)+e^{xy}(y+3xy&#x27;+x^2y&#x27;&#x27;)$$<br>代入 $x=0,\ y=1,\ y&#x27;=1$：<br>$$y&#x27;&#x27;(0)=e\cdot 1\cdot 1+e\cdot 1=2e.$$</p>
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：x=0 处 e^{xy}=e^0=1，解题代理误代成 e 致 y&#x27;&#x27;(0)=2e；直接求导或泰勒展开（y=1+x+x²+…）均得 y&#x27;&#x27;(0)=2，A、B 正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
@@ -263,7 +263,7 @@
         <div class="steps"><p>x=0 代入：$y(0)=1$。<br>两边求导：<br>$$y&#x27;-e^y-xe^y y&#x27;=0\ \Rightarrow\ y&#x27;(1-xe^y)=e^y$$<br>代入 $(0,1)$：$y&#x27;(0)=e$。<br>对 $y&#x27;(1-xe^y)=e^y$ 再求导：<br>$$y&#x27;&#x27;(1-xe^y)+y&#x27;(-e^y-xe^y y&#x27;)=e^y y&#x27;$$<br>代入 $x=0,\ y=1,\ y&#x27;=e$：<br>$$y&#x27;&#x27;-e^2=e^2\ \Rightarrow\ y&#x27;&#x27;(0)=2e^2.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{f''(x+y)}{[1-f'(x+y)]^3}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{d^2y}{dx^2}=\frac{f&#x27;&#x27;(x+y)}{[1-f&#x27;(x+y)]^3}$</div>
         <div class="steps"><p>记 $p=f&#x27;(x+y)$。对方程求导：<br>$$y&#x27;=p(1+y&#x27;)\ \Rightarrow\ y&#x27;=\frac{p}{1-p}$$<br>且 $\frac{dp}{dx}=f&#x27;&#x27;(x+y)(1+y&#x27;)=\frac{f&#x27;&#x27;(x+y)}{1-p}$。<br>$$y&#x27;&#x27;=\frac{d}{dx}\left(\frac{p}{1-p}\right)=\frac{p&#x27;(1-p)+p\,p&#x27;}{(1-p)^2}=\frac{p&#x27;}{(1-p)^2}=\frac{f&#x27;&#x27;(x+y)}{[1-f&#x27;(x+y)]^3}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -325,7 +325,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k12_T11_0.png" alt="k12_T11 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f^{(n)}(0)=n(n-1)(\ln 2)^{n-2}\ (n\ge 2)，且 f(0)=f'(0)=0$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f^{(n)}(0)=n(n-1)(\ln 2)^{n-2}\ (n\ge 2)，且 f(0)=f&#x27;(0)=0$</div>
         <div class="steps"><p>莱布尼茨公式：$f^{(n)}(0)=\sum_{k=0}^{n}\binom{n}{k}[x^2]^{(k)}\big|_{x=0}\cdot[2^x]^{(n-k)}\big|_{x=0}$。<br>$[x^2]^{(k)}$ 在 0 处仅 $k=2$ 时非零（值为 2）：<br>$$f^{(n)}(0)=\binom{n}{2}\cdot 2\cdot(2^x)^{(n-2)}\Big|_{x=0}=\frac{n(n-1)}{2}\cdot 2\cdot(\ln 2)^{n-2}=n(n-1)(\ln 2)^{n-2}\quad(n\ge 2)$$<br>另 $f&#x27;(0)=0$，$f(0)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

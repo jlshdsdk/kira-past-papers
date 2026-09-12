@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -54,7 +54,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k42_T2_0.png" alt="k42_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle u''+4u=e^x;\qquad y = \dfrac{1}{\cos x}\left(C_1\cos 2x + C_2\sin 2x + \dfrac{1}{5}e^x\right)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle u&#x27;&#x27;+4u=e^x;\qquad y = \dfrac{1}{\cos x}\left(C_1\cos 2x + C_2\sin 2x + \dfrac{1}{5}e^x\right)$</div>
         <div class="steps"><p>以 $y=u\sec x$ 计算：<br>$$y&#x27;=(u&#x27;+u\tan x)\sec x,\qquad y&#x27;&#x27;=\left[u&#x27;&#x27;+2u&#x27;\tan x+u(\sec^2x+\tan^2x)\right]\sec x$$<br>代入原方程：<br>$$\cos x\,y&#x27;&#x27;-2\sin x\,y&#x27;+3\cos x\,y=u&#x27;&#x27;+2u&#x27;\tan x+u(\sec^2x+\tan^2x)-2u&#x27;\tan x-2u\tan^2x+3u$$<br>$$=u&#x27;&#x27;+u(\sec^2x-\tan^2x+3)=u&#x27;&#x27;+4u$$<br>故化简为<br>$$u&#x27;&#x27;+4u=e^x$$<br>$r=\pm2i$；设 $y^*=Ae^x$：$A(1+4)=1\Rightarrow A=\dfrac15$。$u=C_1\cos2x+C_2\sin2x+\dfrac{e^x}5$，所以<br>$$y=\frac{1}{\cos x}\left(C_1\cos2x+C_2\sin2x+\frac{e^x}5\right)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

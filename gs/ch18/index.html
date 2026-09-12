@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,21 +27,21 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k18_T1_0.png" alt="k18_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 c\in(0,1)，使 f'(c)=0$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 c\in(0,1)，使 f&#x27;(c)=0$</div>
         <div class="steps"><p>$f$ 在 $\left[\dfrac23,1\right]$ 上连续，由积分中值定理，存在 $\xi\in\left[\dfrac23,1\right]$ 使</p>
 <p>$$\int_{2/3}^{1}f(x)\,dx=f(\xi)\left(1-\frac23\right)=\frac13 f(\xi).$$</p>
 <p>结合条件 $3\displaystyle\int_{2/3}^{1}f(x)\,dx=f(0)$ 得 $f(\xi)=f(0)$，且 $\xi\ge\dfrac23&gt;0$。</p>
 <p>$f$ 在 $[0,\xi]$ 上连续、$(0,\xi)$ 内可导，$f(0)=f(\xi)$，由罗尔定理，存在 $c\in(0,\xi)\subset(0,1)$ 使 $f&#x27;(c)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,3)，使 f'(\xi)=0$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,3)，使 f&#x27;(\xi)=0$</div>
         <div class="steps"><p>$f$ 在 $[0,2]$ 上连续，设其最小值为 $m$、最大值为 $M$，则</p>
 <p>$$m\le\frac{f(0)+f(1)+f(2)}{3}=1\le M.$$</p>
 <p>由介值定理，存在 $x_0\in[0,2]$ 使 $f(x_0)=1$（若 $f(0),f(1),f(2)$ 中恰有等于 $1$ 者，直接取之为 $x_0$）。于是 $f(x_0)=f(3)=1$，且 $x_0\le2&lt;3$。</p>
 <p>$f$ 在 $[x_0,3]$ 上连续、$(x_0,3)$ 内可导，$f(x_0)=f(3)$，由罗尔定理，存在 $\xi\in(x_0,3)\subset(0,3)$ 使 $f&#x27;(\xi)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f'(\xi)=0$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f&#x27;(\xi)=0$</div>
         <div class="steps"><p>令 $F(x)=\displaystyle\int_0^x f(t)\,dt-x$，则 $F(0)=0$，$F(1)=\displaystyle\int_0^1 f(t)\,dt-1=1-1=0$。</p>
 <p>$F$ 在 $[0,1]$ 上连续、$(0,1)$ 内可导，由罗尔定理，存在 $\eta\in(0,1)$ 使 $F&#x27;(\eta)=0$；而 $F&#x27;(x)=f(x)-1$，故 $f(\eta)=1=f(1)$。</p>
 <p>$f$ 在 $[\eta,1]$ 上连续、$(\eta,1)$ 内可导，$f(\eta)=f(1)$，再由罗尔定理，存在 $\xi\in(\eta,1)\subset(0,1)$ 使 $f&#x27;(\xi)=0$。</p></div>
@@ -80,7 +80,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k18_T3_0.png" alt="k18_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k18_T3_1.png" alt="k18_T3 题目图 2">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f''(\xi)=0$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f&#x27;&#x27;(\xi)=0$</div>
         <div class="steps"><p>$A,B,C$ 三点共线，故三个斜率相等：</p>
 <p>$$\frac{f(c)-f(0)}{c-0}=\frac{f(1)-f(c)}{1-c}=\frac{f(1)-f(0)}{1-0}.$$</p>
 <p>对 $f$ 在 $[0,c]$ 上用拉格朗日中值定理：存在 $\xi_1\in(0,c)$ 使 $f&#x27;(\xi_1)=\dfrac{f(c)-f(0)}{c}$；</p>
@@ -88,7 +88,7 @@
 <p>于是 $f&#x27;(\xi_1)=f&#x27;(\xi_2)$。$f&#x27;$ 在 $[\xi_1,\xi_2]$ 上连续、$(\xi_1,\xi_2)$ 内可导，由罗尔定理，存在 $\xi\in(\xi_1,\xi_2)\subset(0,1)$ 使 $f&#x27;&#x27;(\xi)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b) 使 f(\xi)=0，且存在 \eta\in(a,b) 使 f''(\eta)=0$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b) 使 f(\xi)=0，且存在 \eta\in(a,b) 使 f&#x27;&#x27;(\eta)=0$</div>
         <div class="steps"><p>**证 $f(\xi)=0$：** 不妨设 $f&#x27;(a)&gt;0,\ f&#x27;(b)&gt;0$（同为负时对 $-f$ 同理）。</p>
 <p>$$\lim_{x\to a^+}\frac{f(x)-f(a)}{x-a}=f&#x27;(a)&gt;0\ \Rightarrow\ \text{存在 } x_1\in(a,b),\ f(x_1)&gt;0;$$</p>
 <p>$$\lim_{x\to b^-}\frac{f(x)-f(b)}{x-b}=f&#x27;(b)&gt;0,\ \text{此时 } x-b&lt;0\ \Rightarrow\ \text{存在 } x_2\in(a,b),\ f(x_2)&lt;0.$$</p>
@@ -96,7 +96,7 @@
 <p>**证 $f&#x27;&#x27;(\eta)=0$：** 在 $[a,\xi]$ 上 $f(a)=f(\xi)=0$，由罗尔定理存在 $\eta_1\in(a,\xi)$ 使 $f&#x27;(\eta_1)=0$；在 $[\xi,b]$ 上 $f(\xi)=f(b)=0$，存在 $\eta_2\in(\xi,b)$ 使 $f&#x27;(\eta_2)=0$。再对 $f&#x27;$ 在 $[\eta_1,\eta_2]$ 上用罗尔定理：存在 $\eta\in(\eta_1,\eta_2)\subset(a,b)$ 使 $f&#x27;&#x27;(\eta)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \eta\in(0,2) 使 f(\eta)=f(0)；(Ⅱ) 存在 \xi\in(0,3) 使 f''(\xi)=0$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \eta\in(0,2) 使 f(\eta)=f(0)；(Ⅱ) 存在 \xi\in(0,3) 使 f&#x27;&#x27;(\xi)=0$</div>
         <div class="steps"><p>**(Ⅰ)** 令 $G(x)=\displaystyle\int_0^x f(t)\,dt$，则 $G$ 在 $[0,2]$ 上连续、$(0,2)$ 内可导，由拉格朗日中值定理，存在 $\eta\in(0,2)$ 使</p>
 <p>$$G(2)-G(0)=G&#x27;(\eta)\cdot(2-0),\quad\text{即}\quad\int_0^2 f(x)\,dx=2f(\eta).$$</p>
 <p>结合 $2f(0)=\displaystyle\int_0^2 f(x)\,dx$ 得 $f(\eta)=f(0)$（用 $G$ 的拉格朗日中值定理可保证 $\eta$ 落在开区间 $(0,2)$ 内）。</p>
@@ -105,7 +105,7 @@
 <p>在 $[\eta,x_2]$ 上 $f(\eta)=f(x_2)$，由罗尔定理存在 $\xi_2\in(\eta,x_2)$ 使 $f&#x27;(\xi_2)=0$。最后对 $f&#x27;$ 在 $[\xi_1,\xi_2]$ 上用罗尔定理：存在 $\xi\in(\xi_1,\xi_2)\subset(0,3)$ 使 $f&#x27;&#x27;(\xi)=0$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (Ⅰ) a>0；(Ⅱ) 存在 \xi\in(-1,1)，使 F''(\xi)=0$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (Ⅰ) a&gt;0；(Ⅱ) 存在 \xi\in(-1,1)，使 F&#x27;&#x27;(\xi)=0$</div>
         <div class="steps"><p>**(Ⅰ)** 反证：设 $a=\displaystyle\int_0^1 f(x)\,dx\le 0$。由 $f$ 严格递增：$x\in(0,1]$ 时 $f(x)&gt;f(0)$，$x\in[-1,0)$ 时 $f(x)&lt;f(0)$。于是</p>
 <p>$$a=\int_0^1 f(x)\,dx=\int_0^1\left[f(x)-f(0)\right]dx+f(0)&gt;f(0)\ \Rightarrow\ f(0)&lt;a\le 0,\ \text{即}\ f(0)&lt;0;$$</p>
 <p>$$\int_{-1}^{0}f(x)\,dx=\int_{-1}^{0}\left[f(x)-f(0)\right]dx+f(0)&lt;0+f(0)=f(0)&lt;0.$$</p>
@@ -127,7 +127,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k18_T4_0.png" alt="k18_T4 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b)，使 f''(\xi)=g''(\xi)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b)，使 f&#x27;&#x27;(\xi)=g&#x27;&#x27;(\xi)$</div>
         <div class="steps"><p>令 $h(x)=f(x)-g(x)$，则 $h$ 在 $[a,b]$ 上连续、$(a,b)$ 内二阶可导，且 $h(a)=h(b)=0$。</p>
 <p>设公共最大值为 $M$，分别在 $x_1,x_2\in(a,b)$ 处取得：$f(x_1)=M,\ g(x_2)=M$。则</p>
 <p>$$h(x_1)=M-g(x_1)\ge0,\qquad h(x_2)=f(x_2)-M\le0.$$</p>
@@ -135,7 +135,7 @@
 <p>于是 $h$ 有三个零点：$a&lt;\eta&lt;b$。在 $[a,\eta]$ 与 $[\eta,b]$ 上分别用罗尔定理：存在 $\zeta_1\in(a,\eta),\ \zeta_2\in(\eta,b)$ 使 $h&#x27;(\zeta_1)=h&#x27;(\zeta_2)=0$；再对 $h&#x27;$ 在 $[\zeta_1,\zeta_2]$ 上用罗尔定理：存在 $\xi\in(\zeta_1,\zeta_2)\subset(a,b)$ 使 $h&#x27;&#x27;(\xi)=0$，即 $f&#x27;&#x27;(\xi)=g&#x27;&#x27;(\xi)$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \eta\in(a,b) 使 f(\eta)=g(\eta)；(Ⅱ) 存在 \xi\in(a,b) 使 f''(\xi)=g''(\xi)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \eta\in(a,b) 使 f(\eta)=g(\eta)；(Ⅱ) 存在 \xi\in(a,b) 使 f&#x27;&#x27;(\xi)=g&#x27;&#x27;(\xi)$</div>
         <div class="steps"><p>**(Ⅰ)** 令 $h(x)=f(x)-g(x)$，公共最大值 $M$ 在 $x_1,x_2\in(a,b)$ 处取得，则 $h(x_1)=M-g(x_1)\ge0$，$h(x_2)=f(x_2)-M\le0$。若某处恰为零则直接取为 $\eta$；否则 $h(x_1)&gt;0&gt;h(x_2)$，由零点定理得 $\eta$ 介于 $x_1,x_2$ 之间使 $h(\eta)=0$，即 $f(\eta)=g(\eta)$。</p>
 <p>**(Ⅱ)** 此时 $h(a)=h(\eta)=h(b)=0$（$a&lt;\eta&lt;b$）。在 $[a,\eta]$、$[\eta,b]$ 上分别用罗尔定理得 $\zeta_1\in(a,\eta),\ \zeta_2\in(\eta,b)$ 使 $h&#x27;(\zeta_1)=h&#x27;(\zeta_2)=0$；再对 $h&#x27;$ 在 $[\zeta_1,\zeta_2]$ 上用罗尔定理得 $\xi\in(\zeta_1,\zeta_2)\subset(a,b)$ 使 $h&#x27;&#x27;(\xi)=0$，即 $f&#x27;&#x27;(\xi)=g&#x27;&#x27;(\xi)$。</p>
 <p>注：第(Ⅱ)问需二阶导数存在，2007 数三原题条件即为「在 $(a,b)$ 内二阶可导且存在相等的最大值」，图中「可导」应按原题理解为「二阶可导」。</p></div>
@@ -152,14 +152,14 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k18_T5_0.png" alt="k18_T5 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f(\xi)+\xi f'(\xi)=0$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f(\xi)+\xi f&#x27;(\xi)=0$</div>
         <div class="steps"><p>$xf(x)$ 在 $\left[0,\dfrac12\right]$ 上连续，由积分中值定理，存在 $\eta\in\left[0,\dfrac12\right]$ 使</p>
 <p>$$\int_0^{1/2}x f(x)\,dx=\eta f(\eta)\cdot\frac12,\qquad\text{故}\quad f(1)=2\int_0^{1/2}xf(x)\,dx=\eta f(\eta).$$</p>
 <p>令 $g(x)=xf(x)$，则 $g(\eta)=\eta f(\eta)=f(1)=g(1)$，且 $\eta\le\dfrac12&lt;1$。$g$ 在 $[\eta,1]$ 上连续、$(\eta,1)$ 内可导，由罗尔定理存在 $\xi\in(\eta,1)\subset(0,1)$ 使</p>
 <p>$$g&#x27;(\xi)=f(\xi)+\xi f&#x27;(\xi)=0.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \eta\in(1/2,1) 使 f(\eta)=\eta；(Ⅱ) 存在 \xi\in(0,\eta) 使 f'(\xi)-\lambda[f(\xi)-\xi]=1$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \eta\in(1/2,1) 使 f(\eta)=\eta；(Ⅱ) 存在 \xi\in(0,\eta) 使 f&#x27;(\xi)-\lambda[f(\xi)-\xi]=1$</div>
         <div class="steps"><p>**(Ⅰ)** 令 $g(x)=f(x)-x$，$g$ 在 $\left[\dfrac12,1\right]$ 上连续：$g\!\left(\dfrac12\right)=1-\dfrac12=\dfrac12&gt;0$，$g(1)=-1&lt;0$。由零点定理存在 $\eta\in\left(\dfrac12,1\right)$ 使 $g(\eta)=0$，即 $f(\eta)=\eta$。</p>
 <p>**(Ⅱ)** 对任意实数 $\lambda$，令 $\varphi(x)=e^{-\lambda x}\left[f(x)-x\right]$，则 $\varphi$ 在 $[0,\eta]$ 上连续、$(0,\eta)$ 内可导，且</p>
 <p>$$\varphi(0)=f(0)-0=0,\qquad \varphi(\eta)=e^{-\lambda\eta}\left[f(\eta)-\eta\right]=0.$$</p>
@@ -168,7 +168,7 @@
 <p>故 $f&#x27;(\xi)-1-\lambda\left[f(\xi)-\xi\right]=0$，即 $f&#x27;(\xi)-\lambda\left[f(\xi)-\xi\right]=1$，对任意实数 $\lambda$ 成立。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f'(\xi)=\left(1-\dfrac{1}{\xi}\right)f(\xi)$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 存在 \xi\in(0,1)，使 f&#x27;(\xi)=\left(1-\dfrac{1}{\xi}\right)f(\xi)$</div>
         <div class="steps"><p>令 $g(x)=xe^{1-x}f(x)$，则</p>
 <p>$$g&#x27;(x)=e^{1-x}\left[(1-x)f(x)+xf&#x27;(x)\right]=xe^{1-x}\left[f&#x27;(x)+\left(\frac1x-1\right)f(x)\right].$$</p>
 <p>$g$ 在 $\left[0,\dfrac1k\right]$（$\dfrac1k&lt;1$）上连续，由积分中值定理存在 $\eta\in\left[0,\dfrac1k\right]$ 使</p>
@@ -178,7 +178,7 @@
 <p>$$e^{1-\xi}\left[(1-\xi)f(\xi)+\xi f&#x27;(\xi)\right]=0\ \Rightarrow\ f&#x27;(\xi)=\left(1-\frac{1}{\xi}\right)f(\xi).$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \xi\in(0,1) 使 f'(\xi)=1；(Ⅱ) 存在 \eta\in(-1,1) 使 f''(\eta)+f'(\eta)=1$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle (Ⅰ) 存在 \xi\in(0,1) 使 f&#x27;(\xi)=1；(Ⅱ) 存在 \eta\in(-1,1) 使 f&#x27;&#x27;(\eta)+f&#x27;(\eta)=1$</div>
         <div class="steps"><p>**(Ⅰ)** $f$ 为奇函数，故 $f(0)=0,\ f(-1)=-f(1)=-1$。$f$ 在 $[0,1]$ 上连续、$(0,1)$ 内可导，由拉格朗日中值定理，存在 $\xi\in(0,1)$ 使</p>
 <p>$$f&#x27;(\xi)=\frac{f(1)-f(0)}{1-0}=1.$$</p>
 <p>**(Ⅱ)** 令 $G(x)=e^{x}\left[f&#x27;(x)-1\right]$，则 $G&#x27;(x)=e^{x}\left[f&#x27;&#x27;(x)+f&#x27;(x)-1\right]$，故只需找到 $G$ 的两个零点。</p>
@@ -198,7 +198,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k18_T6_0.png" alt="k18_T6 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (Ⅰ) 在 (a,b) 内 g(x)\ne 0；(Ⅱ) 存在 \xi\in(a,b) 使 \dfrac{f(\xi)}{g(\xi)}=\dfrac{f''(\xi)}{g''(\xi)}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (Ⅰ) 在 (a,b) 内 g(x)\ne 0；(Ⅱ) 存在 \xi\in(a,b) 使 \dfrac{f(\xi)}{g(\xi)}=\dfrac{f&#x27;&#x27;(\xi)}{g&#x27;&#x27;(\xi)}$</div>
         <div class="steps"><p>**(Ⅰ)** 反证：若存在 $x_0\in(a,b)$ 使 $g(x_0)=0$，结合 $g(a)=g(b)=0$：在 $[a,x_0]$ 上用罗尔定理得 $c_1\in(a,x_0)$ 使 $g&#x27;(c_1)=0$；在 $[x_0,b]$ 上得 $c_2\in(x_0,b)$ 使 $g&#x27;(c_2)=0$；再对 $g&#x27;$ 在 $[c_1,c_2]$ 上用罗尔定理得 $c_3\in(c_1,c_2)$ 使 $g&#x27;&#x27;(c_3)=0$，与 $g&#x27;&#x27;(x)\ne0$ 矛盾。故在 $(a,b)$ 内 $g(x)\ne0$。</p>
 <p>**(Ⅱ)** 令 $\varphi(x)=f(x)g&#x27;(x)-f&#x27;(x)g(x)$，则</p>
 <p>$$\varphi(a)=f(a)g&#x27;(a)-f&#x27;(a)g(a)=0,\qquad \varphi(b)=f(b)g&#x27;(b)-f&#x27;(b)g(b)=0,$$</p>
@@ -207,7 +207,7 @@
 <p>$$\frac{f(\xi)}{g(\xi)}=\frac{f&#x27;&#x27;(\xi)}{g&#x27;&#x27;(\xi)}.$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b)，使 f(b)-f(a)=f'(\xi)(b-a)$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 存在 \xi\in(a,b)，使 f(b)-f(a)=f&#x27;(\xi)(b-a)$</div>
         <div class="steps"><p>作辅助函数</p>
 <p>$$\varphi(x)=f(x)-f(a)-\frac{f(b)-f(a)}{b-a}\,(x-a).$$</p>
 <p>则 $\varphi$ 在 $[a,b]$ 上连续、$(a,b)$ 内可导，且</p>

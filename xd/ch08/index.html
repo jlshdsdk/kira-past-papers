@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -74,7 +74,7 @@
         <div class="steps"><p>$r(A^*)=1\iff r(A)=3-1=2\iff |A|=0$ 且 $r(A)\ge2$。A 的特征值为 $a+2b$ 与 $a-b$ (二重):<br>$$|A|=(a+2b)(a-b)^2=0\ \Rightarrow\ a=b\ \text{或}\ a=-2b.$$<br>若 $a=b$: A 为全同元素矩阵, $r(A)\le1$, 舍去。故 $a=-2b$, 且 $r(A)=2$ 要求 $b\ne0$ 即 $a\ne b$。<br>所以 $a\ne b$ 且 $a+2b=0$, 选 (C)。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I)\ r(A)\le2;\quad (II)\ \alpha,\beta\ \text{线性相关时}\ r(A)\le1<2\ (\text{证明见步骤})$</div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (I)\ r(A)\le2;\quad (II)\ \alpha,\beta\ \text{线性相关时}\ r(A)\le1&lt;2\ (\text{证明见步骤})$</div>
         <div class="steps"><p>(I) 分块表示:<br>$$A=\alpha\alpha^T+\beta\beta^T=(\alpha,\ \beta)\begin{pmatrix}\alpha^T\\\beta^T\end{pmatrix},$$<br>由秩不等式 $r(XY)\le\min\{r(X),r(Y)\}$:<br>$$r(A)\le r(\alpha,\beta)\le\min\{3,2\}=2.$$<br>(II) $\alpha,\beta$ 线性相关: 若 $\alpha=0$, 则 $A=O$, $r(A)=0&lt;2$; 否则不妨设 $\beta=k\alpha$, 于是<br>$$A=\alpha\alpha^T+k^2\alpha\alpha^T=(1+k^2)\,\alpha\alpha^T,$$<br>为秩 1 矩阵 (或零), $r(A)\le1&lt;2$。证毕。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

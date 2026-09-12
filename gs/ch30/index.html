@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -86,7 +86,7 @@
 <p>左右导数都存在但不相等，故F在x=π不可导。选C。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle A（∫₀ˣ[cos f(t)+f'(t)]dt是奇函数）$</div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle A（∫₀ˣ[cos f(t)+f&#x27;(t)]dt是奇函数）$</div>
         <div class="steps"><p>f为奇函数 ⟹ 对f(-x)=-f(x)两边求导得f&#x27;(-x)=f&#x27;(x)，即f&#x27;为偶函数；又 cos[f(-t)]=cos[-f(t)]=cos f(t)，即 cos f(t)为偶函数。</p>
 <p>于是 cos f(t)+f&#x27;(t) 为偶函数；偶函数从0到x的变限积分是奇函数，故</p>
 <p>$$\int_0^x[\cos f(t)+f&#x27;(t)]dt\ \text{为奇函数}$$</p>
@@ -104,7 +104,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k30_T2_0.png" alt="k30_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle ∫₋₁ˣ(1-|t|)dt = (x+1)²/2 (-1≤x≤0)；= 1/2 + x - x²/2 (x>0)$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle ∫₋₁ˣ(1-|t|)dt = (x+1)²/2 (-1≤x≤0)；= 1/2 + x - x²/2 (x&gt;0)$</div>
         <div class="steps"><p>去掉绝对值：1-|t|=1+t（-1≤t≤0），1-t（t&gt;0）。</p>
 <p>当-1≤x≤0：</p>
 <p>$$\int_{-1}^x(1+t)dt=\Big[t+\frac{t^2}{2}\Big]_{-1}^x=x+\frac{x^2}{2}-\Big(-1+\frac12\Big)=\frac{(x+1)^2}{2}$$</p>
@@ -191,7 +191,7 @@
 <p>只依赖于s，与t、x无关。选D。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1) f'(x)=e^{-x²/2}；(2) f在(-∞,+∞)上严格单调增；(3) f为奇函数；(4) 拐点为(0,0)；(5) 在(-∞,0)内凹（向下凸），在(0,+∞)内凸（向上凸）；(6) 水平渐近线 y=±√(2π)/2（即±√(π/2)）$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1) f&#x27;(x)=e^{-x²/2}；(2) f在(-∞,+∞)上严格单调增；(3) f为奇函数；(4) 拐点为(0,0)；(5) 在(-∞,0)内凹（向下凸），在(0,+∞)内凸（向上凸）；(6) 水平渐近线 y=±√(2π)/2（即±√(π/2)）$</div>
         <div class="steps"><p>(1) 变限积分求导：f&#x27;(x)=e^{-x^2/2}。</p>
 <p>(2) f&#x27;(x)&gt;0对一切x成立 ⟹ f在(-∞,+∞)严格单调增。</p>
 <p>(3) f(-x)=\int_0^{-x}e^{-t^2/2}dt=-\int_0^x e^{-u^2/2}du=-f(x)，故f为奇函数。</p>
@@ -200,7 +200,7 @@
 <p>(6) $\lim_{x\to+\infty}f(x)=\int_0^{+\infty}e^{-t^2/2}dt=\frac{\sqrt{2\pi}}{2}=\sqrt{\frac{\pi}{2}}$，同理 $\lim_{x\to-\infty}f(x)=-\sqrt{\pi/2}$，故有两条水平渐近线 y=±√(2π)/2（约±1.253）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 证明：F'(x)=∫ₐˣ[f(x)-f(t)]dt/(x-a)² ≤ 0$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle 证明：F&#x27;(x)=∫ₐˣ[f(x)-f(t)]dt/(x-a)² ≤ 0$</div>
         <div class="steps"><p>对x∈(a,b)，由商的求导法则：</p>
 <p>$$F&#x27;(x)=\frac{f(x)(x-a)-\int_a^x f(t)dt}{(x-a)^2}=\frac{\int_a^x f(x)dt-\int_a^x f(t)dt}{(x-a)^2}=\frac{1}{(x-a)^2}\int_a^x\big[f(x)-f(t)\big]dt$$</p>
 <p>因f&#x27;(x)≤0，f在[a,b]上单调不减（不增的反向说法：导数非正即单调不增，注意f&#x27;(x)≤0⟹f单调不增）——即对a≤t≤x有f(t)≥f(x)，故f(x)-f(t)≤0，被积函数非正，积分号下保持非负区间长度为正，得</p>
@@ -242,7 +242,7 @@
 <p>（(0,π)内sin u&gt;0且e^{sin u}&gt;e^{-sin u}）。故F为正常数，选A。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle 证明：0≤F(x)≤xⁿf(x)→0=F(0)得在0点连续；F'(x)=(1/x²)∫₀ˣ[xⁿf(x)-tⁿf(t)]dt≥0得单调不减$</div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle 证明：0≤F(x)≤xⁿf(x)→0=F(0)得在0点连续；F&#x27;(x)=(1/x²)∫₀ˣ[xⁿf(x)-tⁿf(t)]dt≥0得单调不减$</div>
         <div class="steps"><p>连续性：x&gt;0时f连续 ⟹ F连续。x=0处：因f单调不减且f(0)≥0，对0≤t≤x有0≤tⁿf(t)≤xⁿf(x)，于是</p>
 <p>$$0\le F(x)=\frac1x\int_0^x t^nf(t)dt\le\frac1x\cdot x\cdot x^nf(x)=x^nf(x)$$</p>
 <p>x→0⁺时xⁿf(x)→0（n&gt;0且f(x)→f(0)），故$\lim_{x\to0^+}F(x)=0=F(0)$，F在x=0右连续。综上F在[0,+∞)连续。</p>
@@ -330,7 +330,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k30_T5_0.png" alt="k30_T5 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle φ'(x)=[xf(x)-∫₀ˣf(u)du]/x² (x≠0)，φ'(0)=A/2，且φ'(x)在x=0处连续$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle φ&#x27;(x)=[xf(x)-∫₀ˣf(u)du]/x² (x≠0)，φ&#x27;(0)=A/2，且φ&#x27;(x)在x=0处连续$</div>
         <div class="steps"><p>先表达φ：令u=xt（x≠0），$\varphi(x)=\frac1x\int_0^x f(u)du$；x=0时$\varphi(0)=\int_0^1 f(0)dt=f(0)$。</p>
 <p>由$\lim_{x\to0}f(x)/x=A$有限知$\lim_{x\to0}f(x)=0$，又f连续，故f(0)=0，$\varphi(0)=0$；且$\lim_{x\to0}\varphi(x)=\lim_{x\to0}\frac{1}{x}\int_0^x f=f(0)=0=\varphi(0)$，φ在0处连续。</p>
 <p>x≠0时求导：</p>

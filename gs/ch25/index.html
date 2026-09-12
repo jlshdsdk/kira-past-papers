@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -62,7 +62,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k25_T2_0.png" alt="k25_T2 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a,b>0 时 \frac{1}{ab}\arctan\left(\frac{a}{b}\tan x\right)+C；a=0(b>0) 时 \frac{\tan x}{b^2}+C；b=0(a>0) 时 -\frac{\cot x}{a^2}+C$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle a,b&gt;0 时 \frac{1}{ab}\arctan\left(\frac{a}{b}\tan x\right)+C；a=0(b&gt;0) 时 \frac{\tan x}{b^2}+C；b=0(a&gt;0) 时 -\frac{\cot x}{a^2}+C$</div>
         <div class="steps"><p>**情形一：$a&gt;0,\ b&gt;0$。** 分子分母同除 $\cos^2x$：</p>
 <p>$$\int\frac{dx}{a^2\sin^2x+b^2\cos^2x}=\int\frac{\sec^2x\,dx}{b^2+a^2\tan^2x}=\frac{1}{b}\int\frac{d\left(\frac{a}{b}\tan x\right)}{1+\left(\frac{a}{b}\tan x\right)^2}=\frac{1}{ab}\arctan\left(\frac{a}{b}\tan x\right)+C.$$</p>
 <p>**情形二：$a=0\ (b&gt;0)$。**</p>
@@ -157,7 +157,7 @@
 <p>求导验证：$\dfrac{1}{\sqrt x}+\dfrac{\arcsin\sqrt x}{\sqrt{1-x}}-\dfrac{1}{\sqrt x}=\dfrac{\arcsin\sqrt x}{\sqrt{1-x}}$，恰为被积函数。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle A（F(x)=\begin{cases}x^2-2x, & x<1\\ x\ln x-x, & x\ge 1\end{cases}）$</div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle A（F(x)=\begin{cases}x^2-2x, &amp; x&lt;1\\ x\ln x-x, &amp; x\ge 1\end{cases}）$</div>
         <div class="steps"><p>分段求原函数：$x&lt;1$ 时 $F(x)=\int 2(x-1)dx=x^2-2x+C_1$；$x\ge1$ 时 $F(x)=\int\ln x\,dx=x\ln x-x+C_2$。</p>
 <p>原函数必须处处可导，从而连续：$F(1^-)=1-2+C_1=C_1-1$，$F(1)=0-1+C_2=C_2-1$，故 $C_1=C_2$。取 $C_1=C_2=0$：</p>
 <p>$$F(x)=\begin{cases}x^2-2x, &amp; x&lt;1\\ x\ln x-x, &amp; x\ge 1\end{cases}$$</p>

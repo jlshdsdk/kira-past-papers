@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -84,7 +84,7 @@
 <p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：f(1)=2/3。左导数 = lim_{x→1⁻} [(2/3)x³ − 2/3]/(x−1) = (2/3)lim(x²+x+1) = 2，存在。右导数 = lim_{x→1⁺} [x² − 2/3]/(x−1)：分子→1/3≠0，分母→0⁺，极限为 +∞，不存在（事实上 f 在 x=1 处右不连续：lim_{x→1⁺}x²=1≠2/3=f(1)）。故左导数存在（=2）而右导数不存在，选 B。校验 A 的错误：直接对右段用求导公式 2x→2，但右差商必须以 f(1)=2/3 为基点，(1+h)²−2/3 的常数项 1/3 不为零，差商发散。解题代理与校验 B 正确。｜官方核对：官方答案 B。该题为 1994 年考研数学二真题（标准答案 B：左导数存在，右导数不存在）；2023 年考研数学二第 4 题几乎原题复刻，教育部教育考试院曾发布公告确认参考答案为 (B)。检索来源：知乎专栏、百度题库、中国教育在线等。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(x) \text{ 在 } x=0 \text{ 处连续且可导，} f'(0)=0$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle f(x) \text{ 在 } x=0 \text{ 处连续且可导，} f&#x27;(0)=0$</div>
         <div class="steps"><p>**连续性**：</p>
 <p>$$\lim_{x\to0^-}f(x)=\lim_{x\to0^-}\frac{2(1-\cos x)}{x^2}=2\cdot\frac12=1$$</p>
 <p>$$\lim_{x\to0^+}f(x)=\lim_{x\to0^+}\frac1x\int_0^x\cos t^2\,dt=\lim_{x\to0^+}\cos x^2=1\ (\text{洛必达})$$</p>
@@ -149,7 +149,7 @@
 <p>**连续但不可导，选 C。**</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lambda>2$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \lambda&gt;2$</div>
         <div class="steps"><p>**第一步：$f&#x27;(0)$ 存在的条件。**</p>
 <p>$$f&#x27;(0)=\lim_{x\to0}\frac{x^\lambda\cos\frac1x-0}{x}=\lim_{x\to0}x^{\lambda-1}\cos\frac1x$$</p>
 <p>含振荡因子 $\cos\frac1x$，极限存在（为 0）$\iff\lambda-1&gt;0\iff\lambda&gt;1$。</p>
@@ -159,7 +159,7 @@
 <p>故 $\lambda$ 的取值范围是 $\lambda&gt;2$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \text{A}\ (\alpha-\beta>1)$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \text{A}\ (\alpha-\beta&gt;1)$</div>
         <div class="steps"><p>$x&gt;0$ 时</p>
 <p>$$f&#x27;(x)=\alpha x^{\alpha-1}\cos\frac1{x^\beta}+\beta x^{\alpha-\beta-1}\sin\frac1{x^\beta},\qquad x&lt;0\ \text{时}\ f&#x27;(x)=0$$</p>
 <p>先要 $f&#x27;(0)$ 存在：</p>
@@ -361,7 +361,7 @@
 <p>或用定义：$f&#x27;(0)=\lim_{x\to0}\dfrac{xg(x)-0}{x}=g(0)=n!$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{A},\ f'(0)=(-1)^{n-1}(n-1)!$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \text{A},\ f&#x27;(0)=(-1)^{n-1}(n-1)!$</div>
         <div class="steps"><p>$n$ 个因子中只有 $e^x-1$ 在 $x=0$ 处为零，其余因子 $e^{kx}-k$（$k\ge2$）在 $x=0$ 处值为 $1-k\neq0$。由乘积求导法则，只有对第一个因子求导的项在 $x=0$ 处非零：</p>
 <p>$$f&#x27;(0)=\left[(e^x-1)&#x27;\right]_{x=0}\prod_{k=2}^{n}(1-k)=1\cdot(-1)(-2)\cdots\bigl(-(n-1)\bigr)=(-1)^{n-1}(n-1)!$$</p>
 <p>选 **A**。</p></div>
@@ -378,7 +378,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T11_0.png" alt="k10_T11 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{B}\ (2f'(a))$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \text{B}\ (2f&#x27;(a))$</div>
         <div class="steps"><p>$$\frac{f(a+x)-f(a-x)}{x}=\underbrace{\frac{f(a+x)-f(a)}{x}}_{\to\ f&#x27;(a)}-\underbrace{\frac{f(a-x)-f(a)}{x}}_{\to\ -f&#x27;(a)}$$</p>
 <p>其中第二项：令 $t=-x$，$\dfrac{f(a-x)-f(a)}{x}=\dfrac{f(a+t)-f(a)}{-t}\to-f&#x27;(a)$。</p>
 <p>故原极限 $=f&#x27;(a)-(-f&#x27;(a))=2f&#x27;(a)$，选 **B**。</p></div>
@@ -395,14 +395,14 @@
 <p>$$\lim_{x\to0}\frac{x}{f(x_0-2x)-f(x_0-x)}=\frac{1}{1}=1$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac{f'(0)}{2n}$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \dfrac{f&#x27;(0)}{2n}$</div>
         <div class="steps"><p>换元 $u=x^n-t^n$，则 $t^{n-1}dt=-\dfrac1n du$；$t:0\to x$ 对应 $u:x^n\to0$：</p>
 <p>$$F(x)=\frac1n\int_0^{x^n}f(u)\,du$$</p>
 <p>由 $f(0)=0$ 且 $f$ 连续，分子分母均 $\to0$，洛必达：</p>
 <p>$$\lim_{x\to0}\frac{F(x)}{x^{2n}}=\lim_{x\to0}\frac{\frac1n\cdot n x^{n-1}f(x^n)}{2n\,x^{2n-1}}=\lim_{x\to0}\frac{f(x^n)}{2n\,x^n}=\frac{1}{2n}\lim_{x\to0}\frac{f(x^n)-f(0)}{x^n}=\frac{f&#x27;(0)}{2n}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \text{B}\ (−f'(0))$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \text{B}\ (−f&#x27;(0))$</div>
         <div class="steps"><p>$$\frac{x^2f(x)-2f(x^3)}{x^3}=\frac{f(x)}{x}-2\cdot\frac{f(x^3)}{x^3}$$</p>
 <p>由 $f(0)=0$：$\lim_{x\to0}\dfrac{f(x)}{x}=\lim_{x\to0}\dfrac{f(x)-f(0)}{x}=f&#x27;(0)$；令 $u=x^3$：$\lim_{x\to0}\dfrac{f(x^3)}{x^3}=\lim_{u\to0}\dfrac{f(u)-f(0)}{u}=f&#x27;(0)$。</p>
 <p>故原式 $=f&#x27;(0)-2f&#x27;(0)=-f&#x27;(0)$，选 **B**。</p></div>
@@ -419,7 +419,7 @@
     <img class="qimg" loading="lazy" src="../../assets/q/up/k10_T12_0.png" alt="k10_T12 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f'(1)=-1$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f&#x27;(1)=-1$</div>
         <div class="steps"><p>由 $f$ 在 $x=1$ 可导：$f(1+u)=f(1)+f&#x27;(1)u+o(u)\ (u\to0)$。又 $e^{x^2}-1=x^2+o(x^2)$，$\sin^2x=x^2+o(x^2)$，故</p>
 <p>$$f(e^{x^2})=f(1)+f&#x27;(1)x^2+o(x^2),\qquad f(1+\sin^2x)=f(1)+f&#x27;(1)x^2+o(x^2)$$</p>
 <p>代入：</p>

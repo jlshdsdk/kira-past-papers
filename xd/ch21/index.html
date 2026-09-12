@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -27,11 +27,11 @@
     <img class="qimg" loading="lazy" src="../../assets/q/down/k21_T1_0.png" alt="k21_T1 题目图 1">
     <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1)\ x=0,\ y=1;\quad (2)\ P=\begin{pmatrix}1&0&0\\0&1&1\\0&1&-1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (1)\ x=0,\ y=1;\quad (2)\ P=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;1\\0&amp;1&amp;-1\end{pmatrix}$</div>
         <div class="steps"><p>(1) A~B ⇒ 特征多项式相同。B 为对角阵，特征值 2,y,-1。<br>$$|\lambda E-A|=(\lambda-2)\big[\lambda(\lambda-x)-1\big]=(\lambda-2)(\lambda^{2}-x\lambda-1),$$<br>$$|\lambda E-B|=(\lambda-2)(\lambda-y)(\lambda+1).$$<br>比较 λ²-xλ-1=(λ-y)(λ+1)=λ²+(1-y)λ-y：由常数项 -1=-y 得 y=1；由一次项 -x=1-y=0 得 x=0。<br>(2) 此时 A=[[2,0,0],[0,0,1],[0,1,0]]，特征值 2,1,-1。分别求特征向量：<br>λ=2：解 (A-2E)x=0 得 ξ1=(1,0,0)^T；<br>λ=1：解 (A-E)x=0 得 ξ2=(0,1,1)^T；<br>λ=-1：解 (A+E)x=0 得 ξ3=(0,1,-1)^T。<br>取<br>$$P=(\xi_1,\xi_2,\xi_3)=\begin{pmatrix}1&amp;0&amp;0\\0&amp;1&amp;1\\0&amp;1&amp;-1\end{pmatrix},\quad |P|=-2\neq0,$$<br>则 P^{-1}AP=diag(2,1,-1)=B（列的顺序与 B 的对角元顺序一致）。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1)\ x=0,\ y=-2;\quad (2)\ P=\begin{pmatrix}0&0&1\\2&1&0\\-1&1&-1\end{pmatrix}$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle (1)\ x=0,\ y=-2;\quad (2)\ P=\begin{pmatrix}0&amp;0&amp;1\\2&amp;1&amp;0\\-1&amp;1&amp;-1\end{pmatrix}$</div>
         <div class="steps"><p>(1) A~B ⇒ tr A=tr B 且 |A|=|B|。<br>$$\mathrm{tr}\,A=-2+x+1=x-1=\mathrm{tr}\,B=-1+2+y=y+1\ \Rightarrow\ y=x-2.$$<br>$$|A|=-2\begin{vmatrix}x&amp;2\\1&amp;1\end{vmatrix}=-2(x-2)=4-2x,\qquad |B|=-2y.$$<br>联立 4-2x=-2y 与 y=x-2 得 x=0，y=-2。（校验：|λE-A|=(λ+2)[λ(λ-1)-2]=(λ+2)(λ-2)(λ+1)，特征值 2,-1,-2 与 B 一致。）<br>(2) B=diag(-1,2,-2)。求 A（此时 A=[[-2,0,0],[2,0,2],[3,1,1]]）的特征向量：<br>λ=-1：解 (A+E)x=0 得 ξ1=(0,2,-1)^T；<br>λ=2：解 (A-2E)x=0 得 ξ2=(0,1,1)^T；<br>λ=-2：解 (A+2E)x=0 得 ξ3=(1,0,-1)^T。<br>取<br>$$P=(\xi_1,\xi_2,\xi_3)=\begin{pmatrix}0&amp;0&amp;1\\2&amp;1&amp;0\\-1&amp;1&amp;-1\end{pmatrix},\quad |P|=3\neq0,$$<br>则 P^{-1}AP=diag(-1,2,-2)=B。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
@@ -88,7 +88,7 @@
         <div class="steps"><p>B 为上三角阵，特征值为 2,-1,y。A~B ⇒ 迹相等且行列式相等：<br>$$\mathrm{tr}\,A=-2+x-2=x-4=\mathrm{tr}\,B=2-1+y=y+1\ \Rightarrow\ y=x-5,$$<br>$$|A|=-2\begin{vmatrix}-2&amp;-2\\2&amp;x\end{vmatrix}=-2(-2x+4)=4x-8,\qquad |B|=2\cdot(-1)\cdot y=-2y.$$<br>联立 4x-8=-2y 与 y=x-5：4x-8=-2x+10 ⇒ 6x=18 ⇒ x=3，y=-2。<br>校验：|λE-A|=(λ+2)[(λ+2)(λ-3)+4]=(λ+2)(λ²-λ-2)=(λ+2)(λ-2)(λ+1)，特征值 2,-1,-2 与 B 的对角元一致 ✓。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P=\begin{pmatrix}1&-1&1\\-2&0&-2\\0&0&-4\end{pmatrix}\ (\text{不唯一})$</div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle P=\begin{pmatrix}1&amp;-1&amp;1\\-2&amp;0&amp;-2\\0&amp;0&amp;-4\end{pmatrix}\ (\text{不唯一})$</div>
         <div class="steps"><p>关键点：B 不是对角矩阵（(1,2) 元为 1），不能直接用特征向量拼 P。应按 AP=PB 逐列确定 P=(p1,p2,p3)：<br>$$Ap_1=2p_1,\quad Ap_2=p_1-p_2,\quad Ap_3=-2p_3.$$<br>① p1：λ=2 的特征向量。解 (A-2E)x=0（A-2E=[[-4,-2,1],[2,1,-2],[0,0,-4]]），第三行给 x3=0，得 p1=(1,-2,0)^T。<br>② p3：λ=-2 的特征向量。解 (A+2E)x=0（[[0,-2,1],[2,5,-2],[0,0,0]]），：由 -2x2+x3=0 得 x3=2x2，代入 2x1+5x2-2x3=0 得 x1=-x2/2；取 x2=-2 得 p3=(1,-2,-4)^T（验证 Ap3=(-2,4,8)^T=-2p3 ✓）。<br>③ p2：解非齐次方程组 (A+E)p2=p1，即 [[-1,-2,1],[2,4,-2],[0,0,-1]]p2=(1,-2,0)^T：第三行给 x3=0，前两行为同一方程 x1+2x2=-1。取特解 p2=(-1,0,0)^T（通解为 (-1,0,0)^T+t(-2,1,0)^T）。<br>于是<br>$$P=\begin{pmatrix}1&amp;-1&amp;1\\-2&amp;0&amp;-2\\0&amp;0&amp;-4\end{pmatrix},\quad |P|=-8\neq0.$$<br>逐列验证 AP=PB：Ap1=(2,-4,0)^T=2p1 ✓；Ap2=(2,-2,0)^T=p1-p2 ✓；Ap3=(-2,4,8)^T=-2p3 ✓。故 P^{-1}AP=B，答案不唯一。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>

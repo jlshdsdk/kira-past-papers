@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -54,7 +54,7 @@
 <p>故<br>$$f(x)=\frac{x^2}{1+x^2}+2x\arctan x-\ln(1+x^2),\quad x\in(-1,1)$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle S(x)=\frac{1}{2x}\ln\frac{1+x}{1-x}-1-\frac{x^2}{1-x^2}\ (0<|x|<1)，S(0)=0$</div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle S(x)=\frac{1}{2x}\ln\frac{1+x}{1-x}-1-\frac{x^2}{1-x^2}\ (0&lt;|x|&lt;1)，S(0)=0$</div>
         <div class="steps"><p>$$\sum_{n=1}^{\infty}\frac{x^{2n}}{2n+1}=\frac{1}{x}\left[\sum_{n=0}^{\infty}\frac{x^{2n+1}}{2n+1}-x\right]=\frac{1}{x}\left[\frac{1}{2}\ln\frac{1+x}{1-x}-x\right]$$<br>（用 Σ_{n≥0} x^{2n+1}/(2n+1) = \frac{1}{2}\ln\frac{1+x}{1-x}，0&lt;|x|&lt;1。）</p>
 <p>又 Σ_{n=1}^∞ x^{2n} = \frac{x^2}{1-x^2}。两部分相减：<br>$$S(x)=\frac{1}{2x}\ln\frac{1+x}{1-x}-1-\frac{x^2}{1-x^2},\quad 0&lt;|x|&lt;1$$</p>
 <p>x=0 时原级数每项含 x^{2n}(n≥1) 均为 0，故 S(0)=0（与上式取极限一致）。</p></div>
@@ -214,7 +214,7 @@
 <p>$$\sum_{n=0}^{\infty}\frac{x^{3n}}{(3n)!}=\frac{2}{3}e^{-x/2}\cos\frac{\sqrt3}{2}x+\frac{1}{3}e^x,\quad -\infty&lt;x&lt;+\infty$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I)\ S'-xS=\frac{x^3}{2}，S(0)=0；(II)\ S(x)=e^{x^2/2}-1-\frac{x^2}{2}$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle (I)\ S&#x27;-xS=\frac{x^3}{2}，S(0)=0；(II)\ S(x)=e^{x^2/2}-1-\frac{x^2}{2}$</div>
         <div class="steps"><p>S(x)=\sum_{n=1}^{\infty}\frac{x^{2n+2}}{2\cdot4\cdots(2n+2)}=\sum_{n=1}^{\infty}\frac{x^{2n+2}}{2^{n+1}(n+1)!}。</p>
 <p>(I) 逐项求导：<br>$$S&#x27;(x)=\sum_{n=1}^{\infty}\frac{(2n+2)x^{2n+1}}{2^{n+1}(n+1)!}=\sum_{n=1}^{\infty}\frac{x^{2n+1}}{2^n n!}$$<br>而 xS(x)=Σ_{n=1}^∞ x^{2n+3}/(2^{n+1}(n+1)!) 恰为 S&#x27;(x) 去掉首项 x³/2 后的部分，故<br>$$S&#x27;(x)-xS(x)=\frac{x^3}{2},\qquad S(0)=0$$</p>
 <p>(II) 一阶线性方程，积分因子 e^{-x²/2}：<br>$$\left(S e^{-x^2/2}\right)&#x27;=\frac{x^3}{2}e^{-x^2/2}$$<br>令 u=x²/2，∫_0^x (t³/2)e^{-t²/2}dt = ∫_0^{x²/2} ue^{-u}du = 1-\left(1+\frac{x^2}{2}\right)e^{-x^2/2}。</p>

@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -91,7 +91,7 @@
 <p>令 $\frac{1+\theta}{2}=\bar{X}$，解得 $\hat{\theta}=2\bar{X}-1$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (I) f_Z(z)=\sqrt{\frac{2}{\pi}}\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}\ (z>0),\ 0\ (z\le 0)； (II) \hat{\sigma}=\sqrt{\frac{\pi}{2}}\cdot\frac{1}{n}\sum_{i=1}^n|X_i-\mu|$</div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle (I) f_Z(z)=\sqrt{\frac{2}{\pi}}\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}\ (z&gt;0),\ 0\ (z\le 0)； (II) \hat{\sigma}=\sqrt{\frac{\pi}{2}}\cdot\frac{1}{n}\sum_{i=1}^n|X_i-\mu|$</div>
         <div class="steps"><p>(I) $X_1-\mu\sim N(0,\sigma^2)$。对 $z\ge 0$：</p>
 <p>$$F_Z(z)=P\{|X_1-\mu|\le z\}=P\{-z\le X_1-\mu\le z\}=2\Phi\left(\frac{z}{\sigma}\right)-1$$</p>
 <p>求导得</p>
@@ -232,7 +232,7 @@
 <p>即对任意 $\varepsilon&gt;0$，$\lim_{n\to\infty}P\left\{|\hat{\theta}_n-\theta|\ge\varepsilon\right\}=0$。故存在 $a=\theta$。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle (I) f_{Z_1}(z)=\sqrt{\frac{2}{\pi}}\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}\ (z>0),\ 0\ (z\le 0)； (III) \hat{\sigma}=\sqrt{\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2}$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle (I) f_{Z_1}(z)=\sqrt{\frac{2}{\pi}}\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}}\ (z&gt;0),\ 0\ (z\le 0)； (III) \hat{\sigma}=\sqrt{\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2}$</div>
         <div class="steps"><p>(I) 与 7.23.2(8) 相同：$F_Z(z)=2\Phi\left(\frac{z}{\sigma}\right)-1$（$z\ge 0$），求导得</p>
 <p>$$f_{Z_1}(z)=\sqrt{\frac{2}{\pi}}\cdot\frac{1}{\sigma}e^{-\frac{z^2}{2\sigma^2}},\ z&gt;0;\qquad f_{Z_1}(z)=0,\ z\le 0$$</p>
 <p>(III)</p>
@@ -262,7 +262,7 @@
 <p>$$\hat{\sigma}^2=\frac{1}{n}\sum_{i=1}^n(X_i-\mu)^2$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle (I) P\{T>t\}=e^{-(t/\theta)^m},\quad P\{T>s+t|T>s\}=e^{-\frac{(s+t)^m-s^m}{\theta^m}}； (II) \hat{\theta}=\left(\frac{1}{n}\sum_{i=1}^n t_i^m\right)^{1/m}$</div>
+      <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle (I) P\{T&gt;t\}=e^{-(t/\theta)^m},\quad P\{T&gt;s+t|T&gt;s\}=e^{-\frac{(s+t)^m-s^m}{\theta^m}}； (II) \hat{\theta}=\left(\frac{1}{n}\sum_{i=1}^n t_i^m\right)^{1/m}$</div>
         <div class="steps"><p>(I) $P\{T&gt;t\}=1-F(t)=e^{-\left(\frac{t}{\theta}\right)^m}$。</p>
 <p>$$P\{T&gt;s+t|T&gt;s\}=\frac{P\{T&gt;s+t\}}{P\{T&gt;s\}}=\frac{e^{-\left(\frac{s+t}{\theta}\right)^m}}{e^{-\left(\frac{s}{\theta}\right)^m}}=e^{-\frac{(s+t)^m-s^m}{\theta^m}}$$</p>
 <p>(II) $f(t;\theta)=F&#x27;(t)=\frac{m}{\theta}\left(\frac{t}{\theta}\right)^{m-1}e^{-\left(\frac{t}{\theta}\right)^m}=\frac{m}{\theta^m}t^{m-1}e^{-\frac{t^m}{\theta^m}}$（$t\ge 0$）。</p>
@@ -283,7 +283,7 @@
 <p>$$D(\hat{\theta})=\frac{n\theta^2+m\theta^2}{(n+m)^2}=\frac{\theta^2}{n+m}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle (1)(i) f_T(t)=\frac{n}{\theta}e^{-\frac{nt}{\theta}}\ (t>0)；(ii) a=n,\ D(\hat{\theta})=\theta^2； (2) \hat{\theta}=\frac{1}{k}\left[\sum_{i=1}^k t_i+(n-k)t_k\right]$</div>
+      <div class="sub-a"><span class="sno">（15）</span><div class="ansline">$\displaystyle (1)(i) f_T(t)=\frac{n}{\theta}e^{-\frac{nt}{\theta}}\ (t&gt;0)；(ii) a=n,\ D(\hat{\theta})=\theta^2； (2) \hat{\theta}=\frac{1}{k}\left[\sum_{i=1}^k t_i+(n-k)t_k\right]$</div>
         <div class="steps"><p>(1) 各元件寿命 $X_1,\dots,X_n$ 独立同服从均值为 $\theta$ 的指数分布。$k=1$ 时 $T=\min\{X_1,\dots,X_n\}$，</p>
 <p>$$F_T(t)=P\{\min X_i\le t\}=1-P\{X_1&gt;t,\dots,X_n&gt;t\}=1-e^{-\frac{nt}{\theta}}$$</p>
 <p>(i) $$f_T(t)=\frac{n}{\theta}e^{-\frac{nt}{\theta}},\quad t&gt;0$$</p>

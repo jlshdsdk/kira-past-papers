@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
-  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'\(',right:'\)',display:false}]});"></script>
+  onload="renderMathInElement(document.body,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\(',right:'\)',display:false}],throwOnError:false});"></script>
 </head>
 <body>
 <div class="topbar"><span class="brand">Kira 真题切片集 · 自学站</span>
@@ -44,7 +44,7 @@
 <p>所以 $f$ 在 $x=1$ 不连续，$x=1$ 为可去间断点。修改定义为 $f(1)=-\dfrac{4}{\pi^2}$，则 $f$ 在 $x=1$ 连续。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D（a\ge 0 且 b<0）$</div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D（a\ge 0 且 b&lt;0）$</div>
         <div class="steps"><p>（1）连续性要求：$a+e^{bx}$ 对一切 $x$ 无零点。当 $b\neq 0$ 时 $e^{bx}$ 取遍 $(0,+\infty)$，若 $a&lt;0$ 则必有 $e^{bx}=-a$ 的根使分母为零，故须 $a\ge 0$。若 $b=0$，则 $f(x)=\dfrac{x}{a+1}$，$x\to-\infty$ 时极限不为 0（$a\neq-1$）或无意义（$a=-1$），故 $b\neq 0$。</p>
 <p>（2）极限条件 $\lim_{x\to-\infty}\dfrac{x}{a+e^{bx}}=0$：</p>
 <p>- 若 $b&gt;0$：$x\to-\infty$ 时 $e^{bx}\to 0$，则 $f(x)\sim\dfrac{x}{a}\to-\infty\neq 0$，舍去；<br>- 若 $b&lt;0$：$x\to-\infty$ 时 $bx\to+\infty$，$e^{bx}\to+\infty$，指数增长压倒线性增长，$\lim_{x\to-\infty}\dfrac{x}{a+e^{bx}}=0$，满足。</p>
