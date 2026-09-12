@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 37</div>
 <h1 class="title">考点 37　换序与换系</h1>
-<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 0/4　</div>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一、题型二 · 解析完成 4/4　</div>
 
   <div class="card q" id="k37_T1">
     <div class="qhead"><span class="qno">k37_T1</span>
@@ -25,14 +25,15 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.37.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k37_T1_0.png" alt="k37_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k37_T1_1.png" alt="k37_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \int_0^1 dx\int_0^{x^2} f(x,y)\,dy + \int_1^{\sqrt2} dx\int_0^{\sqrt{2-x^2}} f(x,y)\,dy$</div>
         <div class="steps"><p>区域 $D:\ 0\le y\le1,\ \sqrt y\le x\le\sqrt{2-y^{2}}$，左界 $x=\sqrt y$ 即 $y=x^{2}$（抛物线），右界 $x=\sqrt{2-y^{2}}$ 即 $x^{2}+y^{2}=2$（圆弧，第一象限）。<br>联立 $y=x^{2}$ 与 $x^{2}+y^{2}=2$：$y+y^{2}=2\Rightarrow y=1$，交点 $(1,1)$。<br>按 $x$ 划分：$x\in[0,1]$ 时 $y$ 从 $0$ 到 $x^{2}$（在抛物线左侧、抛物线为其上界）；$x\in[1,\sqrt2]$ 时 $y$ 从 $0$ 到 $\sqrt{2-x^{2}}$（圆弧为上界）。故<br>$$\int_{0}^{1}dx\int_{0}^{x^{2}}f\,dy+\int_{1}^{\sqrt{2}}dx\int_{0}^{\sqrt{2-x^{2}}}f\,dy$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \int_1^2 dx\int_0^{1-x} f(x,y)\,dy + \int_2^3 dx\int_{-1}^0 f(x,y)\,dy$</div>
-        <div class="steps"><p>$y\in[-1,0]$ 时 $1-y\in[1,2]\le 2$，内层积分上下限倒置：<br>$$\int_{-1}^{0}dy\int_{2}^{1-y}f\,dx=-\iint_{R}f\,dA,\qquad R=\{-1\le y\le0,\ 1-y\le x\le2\}$$<br>把 $R$ 按 $x$ 改写：$x\ge 1-y\Leftrightarrow y\ge 1-x$，且 $-1\le y\le0$。<br>- $x\in[1,2]$：$1-x\in[-1,0]$，$y$ 从 $1-x$ 到 $0$；<br>- $x\in[2,3]$：$1-x\le-1$，$y$ 从 $-1$ 到 $0$。<br>故<br>$$\int_{-1}^{0}dy\int_{2}^{1-y}f\,dx=-\int_{1}^{2}dx\int_{1-x}^{0}f\,dy-\int_{2}^{3}dx\int_{-1}^{0}f\,dy=\int_{1}^{2}dx\int_{0}^{1-x}f\,dy+\int_{2}^{3}dx\int_{-1}^{0}f\,dy$$</p></div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -\int_1^2 dx\int_{1-x}^{0} f(x,y)\,dy$</div>
+        <div class="steps"><p>$y\in[-1,0]$ 时 $1-y\in[1,2]\le 2$，内层积分上下限倒置：<br>$$\int_{-1}^{0}dy\int_{2}^{1-y}f\,dx=-\iint_{R}f\,dA,\qquad R=\{-1\le y\le0,\ 1-y\le x\le2\}$$<br>把 $R$ 按 $x$ 改写：$x\ge 1-y\Leftrightarrow y\ge 1-x$，且 $-1\le y\le0$。<br>- $x\in[1,2]$：$1-x\in[-1,0]$，$y$ 从 $1-x$ 到 $0$；<br>- $x\in[2,3]$：$1-x\le-1$，$y$ 从 $-1$ 到 $0$。<br>故<br>$$\int_{-1}^{0}dy\int_{2}^{1-y}f\,dx=-\int_{1}^{2}dx\int_{1-x}^{0}f\,dy-\int_{2}^{3}dx\int_{-1}^{0}f\,dy=\int_{1}^{2}dx\int_{0}^{1-x}f\,dy+\int_{2}^{3}dx\int_{-1}^{0}f\,dy$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：原积分为∫₋₁⁰dy∫₂^{1-y}f dx（2001数一），内层上限1-y&lt;下限2须先反号，换序区域为1≤x≤2, 1-x≤y≤0，A正确；solver多加矩形块∫₂³dx∫₋₁⁰（取f≡1其答得1/2≠原式-1/2），B的区域误写为-1≤y≤1-x（取f=x时B给-2/3≠原式-5/6，仅数值上f≡1巧合相同）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \int_0^{1/2} dx\int_{x^2}^{x} f(x,y)\,dy$</div>
@@ -68,14 +69,15 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k37_T2_0.png" alt="k37_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(2)$</div>
         <div class="steps"><p>交换次序：区域 $\{1\le y\le t,\ y\le x\le t\}=\{1\le x\le t,\ 1\le y\le x\}$，故<br>$$F(t)=\int_{1}^{t}f(x)\,dx\int_{1}^{x}dy=\int_{1}^{t}(x-1)f(x)\,dx$$<br>由变限积分求导，$F&#x27;(t)=(t-1)f(t)$，故 $F&#x27;(2)=f(2)$，选 B。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{2}\left(\cos\frac{2}{\pi}-1\right)$</div>
-        <div class="steps"><p>被积函数对 $y$ 无初等原函数，先交换次序。区域 $\{1\le x\le t^{2},\ \sqrt x\le y\le t\}$（设 $t&gt;1$）：$y\in[1,t]$，由 $y\ge\sqrt x\Leftrightarrow x\le y^{2}$ 得 $x\in[1,y^{2}]$：<br>$$f(t)=\int_{1}^{t}dy\int_{1}^{y^{2}}\sin\frac{x}{y}\,dx=\int_{1}^{t}y\left(\cos\frac{1}{y}-\cos y\right)dy$$<br>（内层：$\int_1^{y^2}\sin\frac{x}{y}dx=\left[-y\cos\frac{x}{y}\right]_1^{y^2}=y\cos\frac1y-y\cos y$。）<br>由变限求导 $f&#x27;(t)=t\left(\cos\dfrac{1}{t}-\cos t\right)$，代入 $t=\dfrac{\pi}{2}$（$\cos\dfrac{\pi}{2}=0$）：<br>$$f&#x27;\left(\frac{\pi}{2}\right)=\frac{\pi}{2}\left(\cos\frac{2}{\pi}-1\right)$$</p></div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\pi}{2}\cos\frac{2}{\pi}$</div>
+        <div class="steps"><p>被积函数对 $y$ 无初等原函数，先交换次序。区域 $\{1\le x\le t^{2},\ \sqrt x\le y\le t\}$（设 $t&gt;1$）：$y\in[1,t]$，由 $y\ge\sqrt x\Leftrightarrow x\le y^{2}$ 得 $x\in[1,y^{2}]$：<br>$$f(t)=\int_{1}^{t}dy\int_{1}^{y^{2}}\sin\frac{x}{y}\,dx=\int_{1}^{t}y\left(\cos\frac{1}{y}-\cos y\right)dy$$<br>（内层：$\int_1^{y^2}\sin\frac{x}{y}dx=\left[-y\cos\frac{x}{y}\right]_1^{y^2}=y\cos\frac1y-y\cos y$。）<br>由变限求导 $f&#x27;(t)=t\left(\cos\dfrac{1}{t}-\cos t\right)$，代入 $t=\dfrac{\pi}{2}$（$\cos\dfrac{\pi}{2}=0$）：<br>$$f&#x27;\left(\frac{\pi}{2}\right)=\frac{\pi}{2}\left(\cos\frac{2}{\pi}-1\right)$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2021数二原题f(t)=∫₁^{t²}dx∫_{√x}^t sin(x/y)dy，换序后f&#x27;(t)=∫₁^{t²}sin(x/t)dx=t(cos(1/t)-cos t)，t=π/2时cos(π/2)=0，正确结果不含-1项（数值验证≈1.2631）；solver多减1，A、B正确</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
     </details>
@@ -87,7 +89,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.37.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k37_T3_0.png" alt="k37_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k37_T3_1.png" alt="k37_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
         <div class="steps"><p>$x^{2}+y^{2}\le2y$ 为圆心 $(0,1)$、半径 1 的圆盘。极坐标下 $x=r\cos\theta,\ y=r\sin\theta$：<br>$$r^{2}\le2r\sin\theta\Leftrightarrow r\le2\sin\theta,\quad\theta\in[0,\pi]$$<br>且 $xy=r^{2}\sin\theta\cos\theta$，面积元为 $r\,dr\,d\theta$。故<br>$$\iint_{D}f(xy)\,dxdy=\int_{0}^{\pi}d\theta\int_{0}^{2\sin\theta}f\left(r^{2}\sin\theta\cos\theta\right)r\,dr$$<br>选 D。（A 是原点处单位圆盘，区域错；B 把右半盘乘 2，但 $xy$ 关于 $x$ 是奇的，无此对称性；C 丢了雅可比因子 $r$。）</p></div>
@@ -97,8 +99,9 @@
         <div class="steps"><p>区域 $D=\{0\le y\le1,\ -\sqrt{1-y^{2}}\le x\le1-y\}$：左界为上半单位圆 $x^{2}+y^{2}=1\ (x\le0)$，右界为直线 $x+y=1$。<br>按 $x$ 分两块：$x\in[0,1]$ 时条件 $x\le1-y\Leftrightarrow y\le1-x$，得三角形 $\{0\le y\le1-x\}$；$x\in[-1,0]$ 时条件 $x\ge-\sqrt{1-y^{2}}\Leftrightarrow x^{2}+y^{2}\le1$，得 $\{0\le y\le\sqrt{1-x^{2}\}}$（左上四分之一圆盘）。<br>极坐标：三角形部分为 $\theta\in[0,\tfrac{\pi}{2}]$，$r\le\dfrac{1}{\cos\theta+\sin\theta}$（即 $r\cos\theta+r\sin\theta\le1$）；四分之一圆盘为 $\theta\in[\tfrac{\pi}{2},\pi]$，$r\le1$。故<br>$$\int_{0}^{\frac{\pi}{2}}d\theta\int_{0}^{\frac{1}{\cos\theta+\sin\theta}}f\left(r\cos\theta,r\sin\theta\right)r\,dr+\int_{\frac{\pi}{2}}^{\pi}d\theta\int_{0}^{1}f\left(r\cos\theta,r\sin\theta\right)r\,dr$$<br>选 D。（A、B 直角坐标分块上下限错；C 漏了雅可比因子 $r$。）</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D$</div>
-        <div class="steps"><p>极坐标下 $xy=r^{2}\sin\theta\cos\theta=\dfrac{r^{2}}{2}\sin2\theta$。<br>两条双曲线：$4xy=1\Leftrightarrow r^{2}=\dfrac{1}{2\sin2\theta}$；$2xy=1\Leftrightarrow r^{2}=\dfrac{1}{\sin2\theta}$，故 $r$ 介于 $\dfrac{1}{\sqrt{2\sin2\theta}}$ 与 $\dfrac{1}{\sqrt{\sin2\theta}}$ 之间。<br>两条直线：$y=x\Rightarrow\theta=\tfrac{\pi}{4}$；$y=\sqrt3x\Rightarrow\tan\theta=\sqrt3\Rightarrow\theta=\tfrac{\pi}{3}$。<br>故<br>$$\iint_{D}f\,dxdy=\int_{\frac{\pi}{4}}^{\frac{\pi}{3}}d\theta\int_{\frac{1}{\sqrt{2\sin2\theta}}}^{\frac{1}{\sqrt{\sin2\theta}}}f\left(r\cos\theta,r\sin\theta\right)r\,dr$$<br>选 D。（A、C 未对 $r^{2}$ 开方；B、A 缺少雅可比因子 $r$。）</p></div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle D（\int_{\pi/4}^{\pi/3}d\theta\int_{1/\sqrt{2\sin2\theta}}^{1/\sqrt{\sin2\theta}}f(r\cos\theta,r\sin\theta)\,r\,dr）$</div>
+        <div class="steps"><p>极坐标下 $xy=r^{2}\sin\theta\cos\theta=\dfrac{r^{2}}{2}\sin2\theta$。<br>两条双曲线：$4xy=1\Leftrightarrow r^{2}=\dfrac{1}{2\sin2\theta}$；$2xy=1\Leftrightarrow r^{2}=\dfrac{1}{\sin2\theta}$，故 $r$ 介于 $\dfrac{1}{\sqrt{2\sin2\theta}}$ 与 $\dfrac{1}{\sqrt{\sin2\theta}}$ 之间。<br>两条直线：$y=x\Rightarrow\theta=\tfrac{\pi}{4}$；$y=\sqrt3x\Rightarrow\tan\theta=\sqrt3\Rightarrow\theta=\tfrac{\pi}{3}$。<br>故<br>$$\iint_{D}f\,dxdy=\int_{\frac{\pi}{4}}^{\frac{\pi}{3}}d\theta\int_{\frac{1}{\sqrt{2\sin2\theta}}}^{\frac{1}{\sqrt{\sin2\theta}}}f\left(r\cos\theta,r\sin\theta\right)r\,dr$$<br>选 D。（A、C 未对 $r^{2}$ 开方；B、A 缺少雅可比因子 $r$。）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2015数一/二原题区域由2xy=1、4xy=1、y=x、y=√3x围成，极坐标r=1/√(2sin2θ)到1/√(sin2θ)且须乘Jacobian r；选项B缺r、A/C极限缺根号，正确选项为D；A括号内描述的积分本身正确但选项标号写错，solver与B均判D</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle B$</div>
@@ -114,7 +117,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.37.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k37_T4_0.png" alt="k37_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
         <div class="steps"><p>区域：$0\le\theta\le\tfrac{\pi}{2},\ 0\le r\le\cos\theta$，即 $r\le\cos\theta\Leftrightarrow x^{2}+y^{2}\le x$（圆心 $(\tfrac12,0)$、半径 $\tfrac12$ 的圆盘）与 $y\ge0$ 之交：上半圆盘。<br>直角坐标：$0\le x\le1,\ 0\le y\le\sqrt{x-x^{2}}$，故<br>$$\int_{0}^{1}dx\int_{0}^{\sqrt{x-x^{2}}}f(x,y)\,dy$$<br>选 D。（A 是上半圆盘但按 $y$ 外层时圆方程应为 $y=\sqrt{y-y^{2}}$ 的混淆形式；B 的 $\sqrt{1-y^{2}}$ 是单位圆；C 是正方形，区域均错。）</p></div>

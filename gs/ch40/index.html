@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 40</div>
 <h1 class="title">考点 40　一阶微分方程求解</h1>
-<div class="sub">题组 6 · 覆盖年份 — · 题型：题型一、题型二、题型三一 · 解析完成 0/6　</div>
+<div class="sub">题组 6 · 覆盖年份 — · 题型：题型一、题型二、题型三一 · 解析完成 6/6　</div>
 
   <div class="card q" id="k40_T1">
     <div class="qhead"><span class="qno">k40_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.40.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T1_0.png" alt="k40_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k40_T1_1.png" alt="k40_T1 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle (4-x)y^4=Cx\quad\left(\text{即 }y^4=\frac{Cx}{4-x}\right)$</div>
         <div class="steps"><p>分离变量（$y\neq0,\ x\neq0,\ x\neq4$）：<br>$$\frac{dy}{y}=\frac{dx}{4x-x^2}.$$<br>部分分式：<br>$$\frac{1}{4x-x^2}=\frac{1}{x(4-x)}=\frac14\Big(\frac1x+\frac{1}{4-x}\Big).$$<br>积分：<br>$$\ln|y|=\frac14\big(\ln|x|-\ln|4-x|\big)+C_1 .$$<br>两边乘 4 并指数化：<br>$$y^4=C\,\frac{x}{4-x},\qquad\text{即}\ (4-x)y^4=Cx\ (C\ \text{为任意常数}).$$<br>$y=0$ 也是解，对应 $C=0$。验证：对 $y^4=\dfrac{Cx}{4-x}$ 求导，<br>$$4y^3y&#x27;=C\cdot\frac{4}{(4-x)^2}=\frac{4y^4}{x(4-x)}\ \Rightarrow\ y&#x27;=\frac{y}{4x-x^2},$$<br>与原方程（$dy/dx=-\dfrac{y}{x^2-4x}=\dfrac{y}{4x-x^2}$）一致。</p></div>
@@ -70,7 +70,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.40.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T2_0.png" alt="k40_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle x=\tan\!\Big(y+\frac{\pi}{4}\Big)-y\quad\Big(\text{即 }y-\arctan(x+y)=-\frac{\pi}{4}\Big)$</div>
         <div class="steps"><p>令 $u=x+y$，则 $u&#x27;=1+y&#x27;=1+\dfrac{1}{u^2}=\dfrac{u^2+1}{u^2}$。视 $x$ 为 $u$ 的函数：<br>$$\frac{dx}{du}=\frac{u^2}{1+u^2}=1-\frac{1}{1+u^2},$$<br>积分得<br>$$x=u-\arctan u+C .$$<br>代回 $u=x+y$：<br>$$x=x+y-\arctan(x+y)+C\ \Rightarrow\ \arctan(x+y)-y=C_1 .$$<br>由 $y(1)=0$（$x=1,y=0$）：$\arctan 1=\dfrac{\pi}{4}$，故 $C_1=\dfrac{\pi}{4}$，即<br>$$\arctan(x+y)=y+\frac{\pi}{4}\ \Rightarrow\ x=\tan\Big(y+\frac{\pi}{4}\Big)-y .$$</p></div>
@@ -85,7 +85,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.40.3）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T3_0.png" alt="k40_T3 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k40_T3_1.png" alt="k40_T3 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y^2=2x^2(\ln x+1)\quad(x>0)$</div>
         <div class="steps"><p>$\dfrac{dy}{dx}=\dfrac{x^2+y^2}{xy}=\dfrac{x}{y}+\dfrac{y}{x}$，齐次方程。令 $u=\dfrac yx$，$y&#x27;=u+xu&#x27;$：<br>$$u+xu&#x27;=\frac1u+u\ \Rightarrow\ xu&#x27;=\frac1u\ \Rightarrow\ u\,du=\frac{dx}{x},$$<br>积分：$\dfrac{u^2}{2}=\ln|x|+C$，即<br>$$y^2=x^2\,(2\ln|x|+C_1).$$<br>代入 $x=e,\ y=2e$：$4e^2=e^2(2+C_1)\Rightarrow C_1=2$。故<br>$$y^2=2x^2(\ln x+1)\quad(x&gt;0).$$<br>验证：$2yy&#x27;=4x(\ln x+1)+2x$，$xy\,y&#x27;=2x^2\ln x+3x^2=x^2+y^2$（代入 $y^2$ 表达式可核）。</p></div>
@@ -132,7 +132,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例6.40.4）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T4_0.png" alt="k40_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k40_T4_1.png" alt="k40_T4 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k40_T4_2.png" alt="k40_T4 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y=\frac{x}{2}-\frac{1}{x}$</div>
         <div class="steps"><p>$y&#x27;+\dfrac yx=1$，一阶线性，$\int\frac1x dx=\ln x$：<br>$$y=e^{-\ln x}\Big[\int 1\cdot x\,dx+C\Big]=\frac1x\Big(\frac{x^2}{2}+C\Big)=\frac x2+\frac Cx .$$<br>由 $x=\sqrt2,\ y=0$：$0=\dfrac{\sqrt2}{2}+\dfrac{C}{\sqrt2}\Rightarrow C=-1$。故<br>$$y=\frac x2-\frac1x,\qquad y(\sqrt2)=0\ \checkmark$$</p></div>
@@ -218,7 +218,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T5_0.png" alt="k40_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle y(x)=e^{-ax}\int_0^x e^{at}f(t)\,dt;\qquad |y(x)|\le\frac ka\big(1-e^{-ax}\big)\ (x\ge0)$</div>
         <div class="steps"><p>(1) 积分因子 $\mu=e^{ax}$：<br>$$(ye^{ax})&#x27;=e^{ax}f(x).$$<br>在 $[0,x]$ 上积分并用 $y(0)=0$：<br>$$y(x)e^{ax}-0=\int_0^x e^{at}f(t)\,dt\ \Rightarrow\ y(x)=e^{-ax}\int_0^x e^{at}f(t)\,dt .$$</p>
@@ -242,7 +242,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k40_T6_0.png" alt="k40_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle f(x)=\frac{3a}{2}x^2+(4-a)x;\quad a=-5\ \text{时体积最小},\ V_{\min}=\frac{9\pi}{2}$</div>
         <div class="steps"><p>**求 f**：$f&#x27;-\dfrac1x f=\dfrac{3a}{2}x$，积分因子 $\mu=e^{-\int dx/x}=\dfrac1x$：<br>$$\Big(\frac fx\Big)&#x27;=\frac{3a}{2}\ \Rightarrow\ f(x)=\frac{3a}{2}x^2+Cx .$$<br>面积条件：$\displaystyle\int_0^1 f\,dx=\frac{3a}{2}\cdot\frac13+\frac C2=\frac a2+\frac C2=2\ \Rightarrow\ C=4-a$，故<br>$$f(x)=\frac{3a}{2}x^2+(4-a)x .$$</p>

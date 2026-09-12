@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 38</div>
 <h1 class="title">考点 38　二重积分的计算</h1>
-<div class="sub">题组 11 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 0/11　</div>
+<div class="sub">题组 11 · 覆盖年份 — · 题型：题型一、题型二、题型三、题型四、题型五、题型六 · 解析完成 11/11　</div>
 
   <div class="card q" id="k38_T1">
     <div class="qhead"><span class="qno">k38_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.38.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T1_0.png" alt="k38_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k38_T1_1.png" alt="k38_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k38_T1_2.png" alt="k38_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{e-2}{2}$</div>
         <div class="steps"><p>两曲线交于 (0,0),(1,1)，且 0≤x≤1 时 x≥x^3，故 D={0≤x≤1, x^3≤y≤x}。</p>
@@ -46,12 +46,13 @@
 <p>$$\int_{-\pi/2}^{\pi/2}\cos^3\theta\,d\theta=2\int_0^{\pi/2}(1-\sin^2\theta)d\sin\theta=2\Big(1-\frac13\Big)=\frac43,\qquad I=\frac25\cdot\frac43=\frac{8}{15}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle a^2\left(\frac{\pi^2}{16}-\frac12\right)=\frac{a^2(\pi^2-8)}{16}$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{a^2(\pi^2-8)}{16}=a^2\left(\frac{\pi^2}{16}-\frac12\right)$</div>
         <div class="steps"><p>y=−a+√(a²−x²) 是圆 x²+(y+a)²=a² 的上半圆。极坐标下该圆为 r=−2a sinθ，弦 y=−x 即 θ=−π/4，故 D={−π/4≤θ≤0, 0≤r≤−2a sinθ}。</p>
 <p>$$I=\int_{-\pi/4}^{0}\int_0^{-2a\sin\theta}\frac{r}{\sqrt{4a^2-r^2}}\,r\,dr\,d\theta$$</p>
 <p>利用 $$\int\frac{r^2}{\sqrt{4a^2-r^2}}dr=-\frac r2\sqrt{4a^2-r^2}+2a^2\arcsin\frac{r}{2a}$$</p>
 <p>在 r=−2a sinθ（θ∈[−π/4,0]）处取值 a²sin2θ−2a²θ，在 r=0 处为 0，故</p>
-<p>$$I=a^2\int_{-\pi/4}^{0}(\sin 2\theta-2\theta)d\theta=a^2\Big[-\frac{\cos2\theta}{2}-\theta^2\Big]_{-\pi/4}^0=a^2\Big(-\frac12+\frac{\pi^2}{16}\Big)$$</p></div>
+<p>$$I=a^2\int_{-\pi/4}^{0}(\sin 2\theta-2\theta)d\theta=a^2\Big[-\frac{\cos2\theta}{2}-\theta^2\Big]_{-\pi/4}^0=a^2\Big(-\frac12+\frac{\pi^2}{16}\Big)$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2000数三：极坐标 0≤r≤-2a sinθ、-π/4≤θ≤0，内层积分=a²(sin2θ-2θ)，结果 π²/16-1/2；B 写成 +1/2，符号错。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac{\pi(e^{\pi}+1)}{2}$</div>
@@ -102,7 +103,8 @@
       <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle \frac{\pi(2-\sqrt2)}{16}$</div>
         <div class="steps"><p>D={x≥0, 0≤y≤√x}，先对 y 积分（注意 $\frac{\partial}{\partial y}(1+x^2+y^4)^{-1}=-\frac{4y^3}{(1+x^2+y^4)^2}$）：</p>
 <p>$$\int_0^{\sqrt x}\frac{y^3\,dy}{(1+x^2+y^4)^2}=-\frac14\Big[\frac{1}{1+x^2+y^4}\Big]_0^{\sqrt x}=\frac14\Big(\frac{1}{1+x^2}-\frac{1}{1+2x^2}\Big)$$</p>
-<p>$$I=\frac14\int_0^{+\infty}\Big(\frac{1}{1+x^2}-\frac{1}{1+2x^2}\Big)dx=\frac14\Big(\frac\pi2-\frac{\pi}{2\sqrt2}\Big)=\frac{\pi(2-\sqrt2)}{16}$$</p></div>
+<p>$$I=\frac14\int_0^{+\infty}\Big(\frac{1}{1+x^2}-\frac{1}{1+2x^2}\Big)dx=\frac14\Big(\frac\pi2-\frac{\pi}{2\sqrt2}\Big)=\frac{\pi(2-\sqrt2)}{16}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2017数三：先对 y 积分得 1/4[1/(1+x²)-1/(1+2x²)]，积分=π/8(1-1/√2)=π(2-√2)/16；B 的 π(3-√3)/24 数值不符。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（13）</span><div class="ansline">$\displaystyle \frac{\sqrt3(\pi-2)}{32}$</div>
@@ -137,7 +139,8 @@
         <div class="steps"><p>积分区域：|x|≤y≤√(2−x²)，即 y≥|x| 且 x²+y²≤2，极坐标下为扇形 {π/4≤θ≤3π/4, 0≤r≤√2}（因 |cosθ|≤√2/2 时 1/|cosθ|≥√2，r 上限由 √2 决定）。</p>
 <p>$$I=\int_{\pi/4}^{3\pi/4}\sin\theta\,d\theta\int_0^{\sqrt2}r^2\sin r\,dr=\sqrt2\int_0^{\sqrt2}r^2\sin r\,dr$$</p>
 <p>$$\int_0^{\sqrt2}r^2\sin r\,dr=\big[-r^2\cos r+2(r\sin r+\cos r)\big]_0^{\sqrt2}=2\sqrt2\sin\sqrt2-2$$</p>
-<p>$$I=\sqrt2(2\sqrt2\sin\sqrt2-2)=4\sin\sqrt2-2\sqrt2$$</p></div>
+<p>$$I=\sqrt2(2\sqrt2\sin\sqrt2-2)=4\sin\sqrt2-2\sqrt2$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2026数二：极坐标 θ∈[π/4,3π/4]、r≤√2，被积 y=r sinθ，θ 向积分 ∫sinθdθ=√2（B 误用区间长 π/2），I=√2·(2√2 sin√2-2)=4sin√2-2√2；B 漏了 sinθ 因子。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（18）</span><div class="ansline">$\displaystyle \ln\frac{2+\sqrt2}{1+\sqrt3}$</div>
@@ -155,7 +158,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.38.2）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T2_0.png" alt="k38_T2 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k38_T2_1.png" alt="k38_T2 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -\frac{2}{3}$</div>
         <div class="steps"><p>D 为三角形 {(x,y): y≥−1, x≤1, y≥x}，顶点 (−1,−1),(1,−1),(1,1)。</p>
@@ -175,12 +178,13 @@
 <p>$$\iint_D x^2\,dxdy=\frac12\int_0^{2\pi}d\theta\int_0^1 r^3dr=\frac12\cdot2\pi\cdot\frac14=\frac{\pi}{4}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{11}{6}$</div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{14}{15}$</div>
         <div class="steps"><p>D 关于 x 轴对称，展开 (x+y)^3=x^3+3x^2y+3xy^2+y^3，奇次项（含 y 的奇数次）积分为 0，剩 $\iint(x^3+3xy^2)$。</p>
 <p>水平条带（0≤y≤1，x 从 √2y 到 √(1+y²)）：</p>
 <p>$$\int_{\sqrt2 y}^{\sqrt{1+y^2}}(x^3+3xy^2)dx=\Big[\frac{x^4}{4}+\frac32x^2y^2\Big]_{\sqrt2 y}^{\sqrt{1+y^2}}=\frac14+2y^2$$</p>
 <p>（中间项 (1+y²)²/4+3y²(1+y²)/2 = 1/4+2y²+7y^4/4，减去下限处 7y^4。）</p>
-<p>$$I=2\int_0^1\Big(\frac14+2y^2\Big)dy=2\Big(\frac14+\frac23\Big)=\frac{11}{6}$$</p></div>
+<p>$$I=2\int_0^1\Big(\frac14+2y^2\Big)dy=2\Big(\frac14+\frac23\Big)=\frac{11}{6}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2010数三：区域关于 x 轴对称，奇次项消失，I=∬(x³+3xy²)，按 -1≤y≤1、√2|y|≤x≤√(1+y²) 积分得 14/15；solver 的 11/6 与 A 的 4/3 均错，B 对。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle D（\ −π）$</div>
@@ -202,9 +206,10 @@
 <p>$$=\frac12\big[(1-\tfrac{3\pi}{2})-(-1-\tfrac{\pi}{2})\big]=1-\frac{\pi}{2}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \frac{1}{6}\left(1-\frac{2}{e}\right)$</div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \frac{e-2}{3e}=\frac13-\frac{2}{3e}$</div>
         <div class="steps"><p>D={0≤y≤1, −y≤x≤y}，先对 x 积分：</p>
-<p>$$I=\int_0^1 e^{-y^2}\cdot\frac{y^3}{3}dy=\frac13\int_0^1 y^3e^{-y^2}dy=\frac16\int_0^1 ue^{-u}du=\frac16\big[-(u+1)e^{-u}\big]_0^1=\frac16\Big(1-\frac2e\Big)$$</p></div>
+<p>$$I=\int_0^1 e^{-y^2}\cdot\frac{y^3}{3}dy=\frac13\int_0^1 y^3e^{-y^2}dy=\frac16\int_0^1 ue^{-u}du=\frac16\big[-(u+1)e^{-u}\big]_0^1=\frac16\Big(1-\frac2e\Big)$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2016数三：先对 x 积分得 2y³/3，I=(2/3)∫y³e^{-y²}dy=(1/3)(1-2/e)；solver 写成 (1/6)(1-2/e) 少乘 2。A、B 与正确值等价。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle \frac{5\pi}{4}$</div>
@@ -214,10 +219,11 @@
 <p>$$I=\frac{\pi}{4}+\pi=\frac{5\pi}{4}$$</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
-      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle C（\ \frac{7}{3}）$</div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle \frac{7}{3}\ （选C）$</div>
         <div class="steps"><p>两块区域合起来是 D={−1≤x≤1, |x|≤y≤2−x²}（V 形折线 y=|x| 与抛物线 y=2−x² 之间），关于 y 轴对称。xy 关于 x 为奇 → 积分为 0。</p>
 <p>$$I=\iint_D dxdy=\int_{-1}^1(2-x^2-|x|)dx=2\int_0^1(2-x^2-x)dx=2\Big(2-\frac13-\frac12\Big)=\frac{7}{3}$$</p>
-<p>选 C。</p></div>
+<p>选 C。</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2018数二：区域 |x|≤y≤2-x² 关于 y 轴对称，xy 项积分为 0，积分=面积 2∫₀¹(2-x²-x)dx=7/3；三方数值一致，但 7/3 对应选项 C（A 项是 5/3），A/B 误标选A。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle \sqrt2-2+\ln(1+\sqrt2)$</div>
@@ -238,7 +244,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T3_0.png" alt="k38_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{A^2}{2}$</div>
         <div class="steps"><p>记 I=∬_{0≤x≤y≤1} f(x)f(y)dxdy（对角线上方三角形）。由 f(x)f(y) 关于 x,y 对称，对角线下方三角形上积分相同：</p>
@@ -290,7 +296,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T4_0.png" alt="k38_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{3\pi}{2}$</div>
         <div class="steps"><p>配方：$(x-\frac12)^2+(y-\frac12)^2\le\frac32$，即圆心 $(\frac12,\frac12)$、半径 $\sqrt{3/2}$ 的圆盘，面积 $=\frac{3\pi}{2}$。</p>
@@ -314,7 +320,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T5_0.png" alt="k38_T5 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{16\pi}{3}-\frac{32}{9}$</div>
         <div class="steps"><p>∬_D y dσ=0：D 关于 x 轴对称。</p>
@@ -333,7 +339,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T6_0.png" alt="k38_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle C（\ xy+\frac18）$</div>
         <div class="steps"><p>设 c=∬_D f(u,v)dudv，则 f=xy+c。两边再积分：</p>
@@ -361,13 +367,14 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.38.7）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T7_0.png" alt="k38_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{43\sqrt2}{120}$</div>
         <div class="steps"><p>极坐标：(r²)³≤r⁴sin⁴θ ⇒ r≤sin²θ（需 sinθ≥0）；|x|≤y ⇒ π/4≤θ≤3π/4。</p>
 <p>$$I=\int_{\pi/4}^{3\pi/4}(\cos\theta+\sin\theta)\,d\theta\int_0^{\sin^2\theta}r\,dr=\frac12\int_{\pi/4}^{3\pi/4}(\cos\theta+\sin\theta)\sin^4\theta\,d\theta$$</p>
 <p>$\int_{\pi/4}^{3\pi/4}\cos\theta\sin^4\theta\,d\theta=\frac{\sin^5\theta}{5}\Big|_{\pi/4}^{3\pi/4}=0$；$\int_{\pi/4}^{3\pi/4}\sin^5\theta\,d\theta=2\int_{\pi/4}^{\pi/2}\sin^5\theta\,d\theta=2\int_0^{1/\sqrt2}(1-u^2)^2du$（u=cosθ）$=2\sqrt{\tfrac12}\big(1-\tfrac13+\tfrac{1}{20}\big)=\frac{43\sqrt2}{60}$。</p>
-<p>$$I=\frac12\cdot\frac{43\sqrt2}{60}=\frac{43\sqrt2}{120}$$</p></div>
+<p>$$I=\frac12\cdot\frac{43\sqrt2}{60}=\frac{43\sqrt2}{120}$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2019数二：极坐标 r≤sin²θ、θ∈[π/4,3π/4]，cos 项积分为零，I=(1/2)∫sin⁵θdθ·2=∫_{π/4}^{π/2}sin⁵θdθ=43√2/120；A 的 2√2/5、B 的 8/15 数值均不符，solver 对。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{\sqrt3\pi\ln2}{24}$</div>
@@ -386,7 +393,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T8_0.png" alt="k38_T8 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k38_T8_1.png" alt="k38_T8 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{\sqrt{2\pi}}{2}$</div>
         <div class="steps"><p>用直线 y=x 分平面，两半平面上积分相等：</p>
@@ -405,14 +412,16 @@
         <div class="steps"><p>0≤x²+y²≤√2 ⇒ 1≤1+x²+y²&lt;1+√2&lt;3，故取值：x²+y²&lt;1 时取 1；1≤x²+y²≤√2 时取 2。</p>
 <p>$$\iint_{r&lt;1}xy\,dxdy=\int_0^{\pi/2}\sin\theta\cos\theta\,d\theta\int_0^1r^3dr=\frac12\cdot\frac14=\frac18$$</p>
 <p>$$\iint_{1\le r\le 2^{1/4}}xy\,dxdy=\frac12\int_1^{\sqrt2}r^3dr=\frac{2-1}{8}=\frac18,\quad \text{其上被 2 乘}=\frac14$$</p>
-<p>$$I=\frac18+\frac14=\frac38$$</p></div>
+<p>$$I=\frac18+\frac14=\frac38$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2005数一：取整函数在 x²+y²&lt;1 取 1、1≤x²+y²≤√2 取 2，而两个区域上 ∬xy 各为 1/8，I=1/8+2·1/8=3/8；A、B 数值不符，solver 对。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{\pi}{4}-\frac{1}{3}$</div>
         <div class="steps"><p>$$I=\iint_D(x^2+y^2-1)d\sigma+2\iint_{D,\,x^2+y^2&lt;1}(1-x^2-y^2)d\sigma$$</p>
 <p>第一块：$\int_0^1\!\!\int_0^1(x^2+y^2-1)dxdy=\frac13+\frac13-1=-\frac13$。</p>
 <p>第二块（四分之一单位圆盘内）：$\frac{\pi}{4}-\int_0^{\pi/2}\!\!\int_0^1 r^3dr\,d\theta=\frac{\pi}{4}-\frac{\pi}{8}=\frac{\pi}{8}$。</p>
-<p>$$I=-\frac13+2\cdot\frac{\pi}{8}=\frac{\pi}{4}-\frac13$$</p></div>
+<p>$$I=-\frac13+2\cdot\frac{\pi}{8}=\frac{\pi}{4}-\frac13$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2005数二/三：按单位圆分块，I=∬_{D₁}(1-r²)+∬_{正方形}(r²-1)-∬_{D₁}(r²-1)=π/8-1/3+π/8=π/4-1/3；B 的 π-7/3 数值不符。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac13+4\sqrt2\ln(1+\sqrt2)$</div>
@@ -428,7 +437,8 @@
         <div class="steps"><p>xy≥1 的部分：x∈[1/2,2]，y∈[1/x,2]。</p>
 <p>$$\iint_{xy\ge1}xy\,dxdy=\int_{1/2}^2 x\cdot\frac12\Big(4-\frac{1}{x^2}\Big)dx=\frac12\Big[2x^2-\ln x\Big]_{1/2}^2=\frac12\Big(\frac{15}{2}-2\ln2\Big)=\frac{15}{4}-\ln2$$</p>
 <p>其余部分取 1：面积 $=4-\int_{1/2}^2(2-\tfrac1x)dx=4-(3-2\ln2)=1+2\ln2$。</p>
-<p>$$I=\frac{15}{4}-\ln2+1+2\ln2=\frac{19}{4}+\ln2$$</p></div>
+<p>$$I=\frac{15}{4}-\ln2+1+2\ln2=\frac{19}{4}+\ln2$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2008数二/三：xy≥1 区域积分 15/4-ln2，xy&lt;1 区域面积 1+2ln2，合计 19/4+ln2；A 的 23/8 系数错，solver、B 对。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle (e-1)^2$</div>
@@ -456,7 +466,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.38.10）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T9_0.png" alt="k38_T9 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac13-\frac{\pi}{16}$</div>
         <div class="steps"><p>化为直角坐标：r²sinθ·drdθ = (rsinθ)·(rdrdθ) = y·dxdy；又 1−r²cos2θ = 1−(x²−y²) = 1−x²+y²。区域：0≤θ≤π/4, r≤secθ 即 {0≤y≤x≤1}。</p>
@@ -474,7 +484,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.38.11）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T10_0.png" alt="k38_T10 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{ab^2}{30}$</div>
         <div class="steps"><p>令 x=a u², y=b v²（u,v≥0），则 √(x/a)+√(y/b)=u+v=1，J=4ab uv，dxdy=4ab\,uv\,dudv。</p>
@@ -497,13 +507,14 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k38_T11_0.png" alt="k38_T11 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
-      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{8}{5}$</div>
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{16}{15}$</div>
         <div class="steps"><p>极坐标：</p>
 <p>$$I=\int_0^{\pi}\!\!\int_0^{1+\cos\theta}r^3\cos\theta\sin\theta\,dr\,d\theta=\frac14\int_0^{\pi}\cos\theta\sin\theta(1+\cos\theta)^4d\theta$$</p>
 <p>展开 $(1+\cos\theta)^4=1+4c+6c^2+4c^3+c^4$。含奇数次幂 cos 的项积分为 0；$\int_0^{\pi}\sin\theta\,d\theta=2$，$\int_0^{\pi}\sin\theta\cos^2\theta\,d\theta=\frac23$，$\int_0^{\pi}\sin\theta\cos^4\theta\,d\theta=\frac25$。</p>
-<p>$$I=\frac14\big(1\cdot2+6\cdot\tfrac23+1\cdot\tfrac25\big)=\frac14\cdot\frac{32}{5}=\frac85$$</p></div>
+<p>$$I=\frac14\big(1\cdot2+6\cdot\tfrac23+1\cdot\tfrac25\big)=\frac14\cdot\frac{32}{5}=\frac85$$</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：2012数二：I=∫₀^π cosθ sinθ(1+cosθ)⁴/4 dθ=16/15；solver 的 8/5 是正确值的两倍，A、B 对。</p></div>
         <div class="src"><span class="badge src-self">【自解】</span></div>
       </div>
       <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 5\pi$</div>

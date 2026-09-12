@@ -17,93 +17,261 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 59</div>
 <h1 class="title">考点 59　曲面积分(仅数一）</h1>
-<div class="sub">题组 8 · 覆盖年份 — · 题型：— · 解析完成 0/8　</div>
+<div class="sub">题组 8 · 覆盖年份 — · 题型：— · 解析完成 8/8　</div>
 
   <div class="card q" id="k59_T1">
     <div class="qhead"><span class="qno">k59_T1</span>
-      
+      <span class="badge">共 7 小题</span><span class="badge year">1989</span> <span class="badge year">1994</span> <span class="badge year">1999</span> <span class="badge year">2001</span> <span class="badge year">2010</span> <span class="badge year">2012</span> <span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T1_0.png" alt="k59_T1 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k59_T1_1.png" alt="k59_T1 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k59_T1_2.png" alt="k59_T1 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{32\sqrt{2}}{9}$</div>
+        <div class="steps"><p>锥面 z=√(x²+y²)，$z_x=\frac{x}{\sqrt{x^2+y^2}},\ z_y=\frac{y}{\sqrt{x^2+y^2}}$，故 $\sqrt{1+z_x^2+z_y^2}=\sqrt2$，$dS=\sqrt2\,dxdy$，投影 $D:\ x^2+y^2\le 2x$。<br>$$\iint_\Sigma z\,dS=\sqrt2\iint_D\sqrt{x^2+y^2}\,dxdy=\sqrt2\int_{-\pi/2}^{\pi/2}\!d\theta\int_0^{2\cos\theta}r^2dr=\frac{8\sqrt2}{3}\int_{-\pi/2}^{\pi/2}\cos^3\theta\,d\theta=\frac{8\sqrt2}{3}\cdot\frac43=\frac{32\sqrt2}{9}.$$<br>（$\int_{-\pi/2}^{\pi/2}\cos^3\theta\,d\theta=\frac43$。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{3\pi}{2}$</div>
+        <div class="steps"><p>（原书分子疑多排一个 ρ，按 1999 年真题原意取被积函数 $\frac{z}{\rho(x,y,z)}$。）<br>切平面：$F=\frac{x^2}{2}+\frac{y^2}{2}+z^2-1$，$\nabla F=(x,y,2z)$，过 $P(x,y,z)$：$xX+yY+2zZ=x^2+y^2+2z^2=2$，故 $\rho=\frac{2}{\sqrt{x^2+y^2+4z^2}}$。<br>上半椭球 $z=\sqrt{1-\frac{x^2+y^2}{2}}$：$\sqrt{1+z_x^2+z_y^2}=\frac{\sqrt{x^2+y^2+4z^2}}{2z}$（即 $\frac{|\nabla F|}{|F_z|}$）。<br>$$\frac{z}{\rho}dS=\frac{z\sqrt{x^2+y^2+4z^2}}{2}\cdot\frac{\sqrt{x^2+y^2+4z^2}}{2z}\,dxdy=\frac{x^2+y^2+4z^2}{4}\,dxdy.$$<br>投影 $D:\ x^2+y^2\le 2$，且 $4z^2=4-2(x^2+y^2)$，被积式 $=1-\frac{x^2+y^2}{4}$：<br>$$I=\iint_D\Big(1-\frac{r^2}{4}\Big)dxdy=2\pi-\frac14\int_0^{2\pi}\!\!\int_0^{\sqrt2}r^3drd\theta=2\pi-\frac{2\pi}{4}=\frac{3\pi}{2}.$$<br>（数值复核：直接在椭球面上作第一型面积分 $=4.712207=\frac{3\pi}{2}$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle C: \{y=2z,\ x^2+3z^2=1\}；I=2\pi$</div>
+        <div class="steps"><p>**求 C**：$F=x^2+y^2+z^2-yz-1$，$\boldsymbol n=(2x,\,2y-z,\,2z-y)$。切平面垂直 xOy 面 $\Leftrightarrow$ 法向量水平 $\Leftrightarrow 2z-y=0$，即 $y=2z$。代入曲面：$x^2+4z^2+z^2-2z^2=1$，得<br>$$C:\ \{y=2z,\ x^2+3z^2=1\}.$$<br>**求 I**：$\Sigma=\{S\text{ 上 }2z-y\ge0\}$（含 $z$ 的最大值点 $(0,\frac{\sqrt3}{3},\frac{2\sqrt3}{3})$）。恒等式（用 $4x^2=4-4y^2-4z^2+4yz$）：<br>$$(2z-y)^2+(2y-z)^2+4x^2=4+y^2+z^2-4yz.$$<br>把 $\Sigma$ 向 xOy 面投影：解出 $z=\frac{y\pm\sqrt{4-4x^2-3y^2}}{2}$，条件 $z\ge y/2$ 恒选“+”支，故 $\Sigma$ 是 $D:\ 4x^2+3y^2\le4$ 上的单叶图 $z=z(x,y)$，且 $z_x=\frac{-2x}{2z-y},\ z_y=\frac{-(2y-z)}{2z-y}$，<br>$$dS=\sqrt{1+z_x^2+z_y^2}\,dxdy=\frac{\sqrt{4+y^2+z^2-4yz}}{2z-y}\,dxdy.$$<br>于是被积式化为<br>$$\frac{(x+\sqrt3)|y-2z|}{\sqrt{4+y^2+z^2-4yz}}\cdot dS=\frac{(x+\sqrt3)(2z-y)}{2z-y}\,dxdy=(x+\sqrt3)\,dxdy.$$<br>$$I=\iint_D(x+\sqrt3)\,dxdy=0+\sqrt3\cdot\pi\cdot1\cdot\frac{2}{\sqrt3}=2\pi.$$<br>（区域 $D$ 为半轴 $1,\frac{2}{\sqrt3}$ 的椭圆；$x$ 的奇次项由对称性消失。数值复核：在参数化椭球面上直接积分 $=6.283185=2\pi$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \frac{\sqrt{3}}{12}$</div>
+        <div class="steps"><p>平面 $z=1-x-y$，$dS=\sqrt{1+z_x^2+z_y^2}\,dxdy=\sqrt3\,dxdy$，投影 $D:\ x\ge0,y\ge0,x+y\le1$。<br>$$\iint_\Sigma y^2dS=\sqrt3\iint_D y^2\,dxdy=\sqrt3\int_0^1 y^2(1-y)\,dy=\sqrt3\Big(\frac13-\frac14\Big)=\frac{\sqrt3}{12}.$$<br>（数值复核 $=0.144338=\frac{\sqrt3}{12}$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle R=\frac{4a}{3}$</div>
+        <div class="steps"><p>由对称性设球心 $(0,0,a)$：$x^2+y^2+(z-a)^2=R^2$。在 Σ 上与定球方程联立：$R^2=x^2+y^2+z^2+a^2-2az$，故“在定球内”$\Leftrightarrow x^2+y^2+z^2\le a^2\Leftrightarrow z\le a-\frac{R^2}{2a}$。<br>即所求部分为球冠（下冠），高 $h=\big(a-\frac{R^2}{2a}\big)-(a-R)=R-\frac{R^2}{2a}$（$0&lt;R\le2a$）。<br>$$A(R)=2\pi Rh=2\pi R^2-\frac{\pi R^3}{a},\quad A&#x27;(R)=4\pi R-\frac{3\pi R^2}{a}=0\Rightarrow R=\frac{4a}{3}.$$<br>$A&#x27;&#x27;&lt;0$ 且 $A(0)=0$，故 $R=\frac{4a}{3}$ 时面积最大（$A_{\max}=\frac{32\pi a^2}{27}$）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle (1) a=b=-1；(2) 面积 S=\frac{13\pi}{3}$</div>
+        <div class="steps"><p>(1) $\nabla z\big|_{(3,4)}=(6a,\,8b)$。方向导数沿梯度方向取得最大值 $|\nabla z|$，故 $(6a,8b)$ 与 $(-3,-4)$ 同向：设 $(6a,8b)=t(-3,-4)\ (t&gt;0)$，得 $a=b=-\frac t2$；$|\nabla z|=5t=10\Rightarrow t=2$，故 $a=b=-1$。<br>(2) $z=2-x^2-y^2$，$z\ge0\Rightarrow D:\ x^2+y^2\le2$，$z_x=z_y$ 的模给出 $dS=\sqrt{1+4x^2+4y^2}\,dxdy$：<br>$$S=\int_0^{2\pi}\!\!\int_0^{\sqrt2}r\sqrt{1+4r^2}\,dr\,d\theta=2\pi\cdot\frac{1}{12}(1+4r^2)^{3/2}\Big|_0^{\sqrt2}=\frac{\pi}{6}(27-1)=\frac{13\pi}{3}.$$<br>（数值复核 $=13.61357=\frac{13\pi}{3}$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle 100 小时$</div>
+        <div class="steps"><p>底半径 $r_0$：$h-\frac{2r_0^2}{h}=0\Rightarrow r_0=\frac{h}{\sqrt2}$。<br>体积：$V=\iint\big(h-\tfrac{2r^2}{h}\big)dA=2\pi\int_0^{h/\sqrt2}\big(hr-\tfrac{2r^3}{h}\big)dr=2\pi\big(\tfrac{h^3}{4}-\tfrac{h^3}{8}\big)=\frac{\pi h^3}{4}$。<br>侧面积：$z_x=-\frac{4x}{h},\ z_y=-\frac{4y}{h}$，$S=\iint_D\sqrt{1+\tfrac{16r^2}{h^2}}\,dA=2\pi\int_0^{h/\sqrt2}r\sqrt{1+\tfrac{16r^2}{h^2}}dr=\frac{\pi h^2}{24}\big[(1+8)^{3/2}-1\big]=\frac{13\pi h^2}{12}$。<br>由 $-\frac{dV}{dt}=0.9S$：$-\frac{3\pi h^2}{4}h&#x27;=0.9\cdot\frac{13\pi h^2}{12}\Rightarrow h&#x27;=-1.3$ cm/h。<br>$h=130-1.3t=0\Rightarrow t=100$ 小时。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T2">
     <div class="qhead"><span class="qno">k59_T2</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2017</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T2_0.png" alt="k59_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \{x^2+y^2=2x,\ z=0\}$</div>
+        <div class="steps"><p>联立 $z^2=x^2+y^2$ 与 $z^2=2x$，消去 $z$：$x^2+y^2=2x$；又锥面上 $z=\sqrt{x^2+y^2}=\sqrt{2x}\ge0$。<br>故投影曲线为 $\{x^2+y^2=2x,\ z=0\}$（圆 $(x-1)^2+y^2=1$）。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 64$</div>
+        <div class="steps"><p>锥面上 $\sqrt{1+z_x^2+z_y^2}=\sqrt2$，$z^2=x^2+y^2=r^2$，故 $\mu=9\sqrt{2r^2}=9\sqrt2\,r$；投影 $D:\ x^2+y^2\le2x$（即 $r\le2\cos\theta,\ \theta\in[-\frac\pi2,\frac\pi2]$）。<br>$$M=\iint_S\mu\,dS=\iint_D 9\sqrt2\,r\cdot\sqrt2\,dxdy=18\int_{-\pi/2}^{\pi/2}\!\!\int_0^{2\cos\theta}r^2dr\,d\theta=18\cdot\frac83\cdot\frac43=64.$$<br>（数值复核 $=63.9991\approx64$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T3">
     <div class="qhead"><span class="qno">k59_T3</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1994</span> <span class="badge year">2019</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T3_0.png" alt="k59_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{\pi^2 R}{2}$</div>
+        <div class="steps"><p>S 包含原点，不能用 Gauss。分块直接算。<br>上盘 $z=R$（$\cos\gamma=1$）：被积式 $=\frac{R^2}{R^2}=1$，积分 $=\pi R^2$；下盘 $z=-R$（$\cos\gamma=-1$）：$=-\pi R^2$，二者抵消。<br>侧面 $x^2+y^2=R^2$：$\cos\gamma=0$，只剩 $\frac{x\,dydz}{r^2}$；$\boldsymbol n=\big(\frac xR,\frac yR,0\big)$，$dS=R\,d\theta dz$，$r^2=R^2+z^2$：<br>$$\iint_{\text{侧}}\frac{x\cos\alpha}{r^2}dS=\int_{-R}^{R}\!\!\int_0^{2\pi}\frac{R\cos\theta\cdot\cos\theta\cdot R}{R^2+z^2}\,d\theta dz=\pi R^2\int_{-R}^{R}\frac{dz}{R^2+z^2}=\pi R^2\cdot\frac1R\cdot\frac\pi2=\frac{\pi^2R}{2}.$$<br>故 $I=\frac{\pi^2R}{2}$。（数值复核 R=1 时 $=4.934802=\frac{\pi^2}{2}$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \frac{32}{3}$</div>
+        <div class="steps"><p>在 $\Sigma$ 上 $4-x^2-4z^2=y^2$，被积函数恒等于 $|y|$。上侧投影到 xOy 面：$z=\frac12\sqrt{4-x^2-y^2}$，$D:\ x^2+y^2\le4$，第二型积分直接化为<br>$$I=\iint_D|y|\,dxdy=\int_0^{2\pi}|\sin\theta|\,d\theta\int_0^2 r^2dr=4\cdot\frac83=\frac{32}{3}.$$<br>（数值复核 $=10.666667$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T4">
     <div class="qhead"><span class="qno">k59_T4</span>
-      
+      <span class="badge">共 7 小题</span><span class="badge year">1988</span> <span class="badge year">1989</span> <span class="badge year">1993</span> <span class="badge year">2000</span> <span class="badge year">2005</span> <span class="badge year">2016</span> <span class="badge year">2023</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T4_0.png" alt="k59_T4 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k59_T4_1.png" alt="k59_T4 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{12\pi}{5}$</div>
+        <div class="steps"><p>$\text{div}\,\boldsymbol F=3(x^2+y^2+z^2)$。Gauss 公式（球坐标 $\rho=\sqrt{x^2+y^2+z^2}$）：<br>$$I=3\int_0^{2\pi}\!\!\int_0^{\pi}\!\!\int_0^1\rho^2\cdot\rho^2\sin\varphi\,d\rho d\varphi d\theta=3\cdot4\pi\cdot\frac15=\frac{12\pi}{5}.$$<br>（数值复核 $=7.539822$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle 证明：∯ = ∭(1+2xyz)dV = V + 2∭xyz dV = V$</div>
+        <div class="steps"><p>记 $\boldsymbol F=(x^2yz^2,\ -xy^2z^2,\ z(1+xyz))$，则<br>$$\text{div}\,\boldsymbol F=2xyz^2-2xyz^2+\big[(1+xyz)+z\cdot xy\big]=1+2xyz.$$<br>由 Gauss 公式：$\oiint_S\boldsymbol F\cdot d\boldsymbol S=\iiint_\Omega(1+2xyz)dV=V+2\iiint_\Omega xyz\,dV$。<br>Ω 关于平面 $x=0$ 对称（$x\to-x$ 时方程不变），而 $xyz$ 关于 $x$ 为奇函数，故 $\iiint_\Omega xyz\,dV=0$。<br>从而 $\oiint_S=V$。∎</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{\pi}{2}$</div>
+        <div class="steps"><p>$\text{div}=2z+z-2z=z$。锥与球交线：$z=r,\ z^2=2-r^2\Rightarrow z=1,\ r=1$。球坐标下 $\Omega:\ 0\le\theta\le2\pi,\ 0\le\varphi\le\frac\pi4,\ 0\le\rho\le\sqrt2$：<br>$$I=\iiint_\Omega z\,dV=\int_0^{2\pi}\!\!\int_0^{\pi/4}\!\!\int_0^{\sqrt2}\rho\cos\varphi\cdot\rho^2\sin\varphi\,d\rho d\varphi d\theta=2\pi\cdot\frac12\sin^2\frac\pi4\cdot\frac{(\sqrt2)^4}{4}=2\pi\cdot\frac14=\frac{\pi}{2}.$$<br>（数值复核 $=1.570796$ ✓）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 错：div F=2z+z-2z=z，球坐标（ρ≤√2，φ≤π/4）∭z dV=2π·(1/4)·(√2)⁴/4=π/2，B 的 π/4 漏了一半（数值复核 1.570796 ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle f(x)=\frac{e^{2x}-e^{x}}{x}$</div>
+        <div class="steps"><p>任意闭曲面上通量为零 $\Leftrightarrow$ 散度恒为零：<br>$$\frac{\partial(xf)}{\partial x}+\frac{\partial(-xyf)}{\partial y}+\frac{\partial(-e^{2x}z)}{\partial z}=f+xf&#x27;-xf-e^{2x}=0,$$<br>即 $xf&#x27;+(1-x)f=e^{2x}$，标准化 $f&#x27;+\big(\frac1x-1\big)f=\frac{e^{2x}}{x}$。积分因子 $\mu=e^{\int(1/x-1)dx}=xe^{-x}$：<br>$$(xe^{-x}f)&#x27;=e^{x}\Rightarrow xe^{-x}f=e^{x}+C\Rightarrow f=\frac{e^{2x}+Ce^{x}}{x}.$$<br>由 $\lim_{x\to0^+}f=1$ 须分子 $\to0$：$1+C=0\Rightarrow C=-1$。故 $f(x)=\dfrac{e^{2x}-e^{x}}{x}$。</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle (2-\sqrt{2})\pi R^3$</div>
+        <div class="steps"><p>$\text{div}=3$，故 $I=3V$。锥与球交于 $z=\frac R{\sqrt2},\ r=\frac R{\sqrt2}$。<br>$$V=\pi\int_0^{R/\sqrt2}z^2dz+\pi\int_{R/\sqrt2}^{R}(R^2-z^2)dz=\frac{\pi R^3}{6\sqrt2}+\pi R^3\Big(\frac23-\frac{5}{6\sqrt2}\Big)=\frac{2\pi R^3}{3}\Big(1-\frac{1}{\sqrt2}\Big).$$<br>$$I=3V=(2-\sqrt2)\pi R^3.\quad(\text{数值复核}=1.840302\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle \frac{1}{2}$</div>
+        <div class="steps"><p>$\text{div}=2x-2+3=2x+1$。四面体顶点 $(0,0,0),(1,0,0),(0,2,0),(0,0,1)$，$V=\frac16\cdot1\cdot2\cdot1=\frac13$。<br>截面法：固定 $x$，截面为直角三角形（直角边 $2(1-x)$ 与 $(1-x)$），面积 $(1-x)^2$：<br>$$\iiint_\Omega x\,dV=\int_0^1 x(1-x)^2dx=\int_0^1(x-2x^2+x^3)dx=\frac12-\frac23+\frac14=\frac1{12}.$$<br>$$I=\iiint_\Omega(2x+1)dV=2\cdot\frac1{12}+\frac13=\frac12.\quad(\text{数值复核}=0.50017\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle \frac{5\pi}{4}$</div>
+        <div class="steps"><p>$\text{div}=2z-xz\sin y+3y\sin x$。对固定的 $x$，$y\in[-\sqrt{1-x^2},\sqrt{1-x^2}]$ 关于 $0$ 对称，而 $\sin y$、$y$ 均为奇函数，故<br>$$\iiint_\Omega xz\sin y\,dV=0,\qquad \iiint_\Omega 3y\sin x\,dV=0.$$<br>$$I=\iiint_\Omega 2z\,dV=\iint_{x^2+y^2\le1}\frac{(1-x)^2}{2}\,dxdy\cdot2=\iint_D(1-2x+x^2)dA=\pi+0+\frac{\pi}{4}=\frac{5\pi}{4}.$$<br>（数值复核 $=3.926991=\frac{5\pi}{4}$ ✓）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 错：由区域关于 y 的对称性，xz sin y 与 3y sin x 项积分为 0，I=∬_{x²+y²≤1}(1-x)²dA=π+π/4=5π/4（数值复核 3.926991 ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T5">
     <div class="qhead"><span class="qno">k59_T5</span>
-      
+      <span class="badge">共 12 小题</span><span class="badge year">1987</span> <span class="badge year">1991</span> <span class="badge year">1992</span> <span class="badge year">1996</span> <span class="badge year">1998</span> <span class="badge year">2004</span> <span class="badge year">2006</span> <span class="badge year">2007</span> <span class="badge year">2008</span> <span class="badge year">2009</span> <span class="badge year">2014</span> <span class="badge year">2018</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T5_0.png" alt="k59_T5 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k59_T5_1.png" alt="k59_T5 题目图 2"><img class="qimg" loading="lazy" src="../../assets/q/up/k59_T5_2.png" alt="k59_T5 题目图 3">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle 34\pi$</div>
+        <div class="steps"><p>旋转面：$y=x^2+z^2+1$（$1\le y\le3$，开口向 $+y$ 的抛物面）。所给定向（与 $y$ 轴夹角 $&gt;\frac\pi2$）即 Ω$=\{x^2+z^2+1\le y\le3\}$ 的外侧。<br>补 $D_1$：$y=3,\ x^2+z^2\le2$，法向 $+y$。$\text{div}=(8y+1)-4y-4y=1$：<br>$$\oiint=\iiint_\Omega dV=\iint_{x^2+z^2\le2}\big[3-(x^2+z^2+1)\big]dxdz=\int_0^{2\pi}\!\!\int_0^{\sqrt2}(2-r^2)r\,dr\,d\theta=2\pi.$$<br>$D_1$ 上 $\boldsymbol F\cdot\boldsymbol j=2(1-y^2)=-16$，flux $=-16\cdot\pi(\sqrt2)^2=-32\pi$。<br>$$I=\oiint-\iint_{D_1}=2\pi-(-32\pi)=34\pi.\quad(\text{数值复核}=106.8141\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -8\pi$</div>
+        <div class="steps"><p>$\boldsymbol F=(0,-y,z+1)$，$\text{div}=0-1+1=0$。补上顶斜盘 $D_1:\ z=2-x,\ x^2+y^2\le4$（$\boldsymbol n=\frac{(1,0,1)}{\sqrt2}$）与底盘 $D_2:\ z=0$（$\boldsymbol n=(0,0,-1)$），构成闭曲面的外侧。<br>$$\oiint_{\text{闭}}=\iiint_\Omega 0\,dV=0.$$<br>$D_1$：$dS=\sqrt2\,dxdy$，$\boldsymbol F\cdot\boldsymbol n\,dS=(z+1)\,dxdy=(3-x)dxdy$，$\iint_{D_1}=3\cdot4\pi=12\pi$（奇次项消失）。<br>$D_2$：$\boldsymbol F\cdot\boldsymbol n=-(z+1)=-1$，flux $=-4\pi$。<br>$$I=0-12\pi-(-4\pi)=-8\pi.$$<br>（直接参数化验证：$\iint_S(-y)\cos\beta\,dS=\int_0^{2\pi}\!\!\int_0^{2-2\cos\theta}(-2\sin\theta)\sin\theta\cdot2\,dz\,d\theta=-8\pi$ ✓，且 $\cos\gamma=0$ 时 dxdy 项为零 ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \frac{29\pi a^5}{20}$</div>
+        <div class="steps"><p>补 $D:\ z=0,\ x^2+y^2\le a^2$，$\boldsymbol n=(0,0,-1)$。$\text{div}=3(x^2+y^2+z^2)$：<br>$$\oiint=3\iiint_{\text{半球}}\rho^2dV=3\cdot\frac12\cdot\frac{4\pi a^5}{5}=\frac{6\pi a^5}{5}.$$<br>$D$ 上 $\boldsymbol F\cdot\boldsymbol n=-(z^3+ay^2)=-ay^2$，$\iint_D=-a\cdot\frac{\pi a^4}{4}=-\frac{\pi a^5}{4}$。<br>$$I=\frac{6\pi a^5}{5}+\frac{\pi a^5}{4}=\frac{29\pi a^5}{20}.$$<br>（直接法复核：上半球面上 $\boldsymbol F\cdot\boldsymbol n=x^4+y^4+z^4+xz^2+x^2y+y^2z$，奇对称项中 $y^2z$ 不消失，$\iint y^2z\,dS=\frac{\pi a^5}{4}$，其余奇项为 0，$\iint(x^4+y^4+z^4)dS=\frac{6\pi a^5}{5}$，合计 $\frac{29\pi a^5}{20}$ ✓，数值 $=4.555310$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle -\frac{\pi}{2}$</div>
+        <div class="steps"><p>补 $D:\ z=1,\ x^2+y^2\le1$，$\boldsymbol n=(0,0,1)$。$\text{div}=2+1=3$：$\oiint=3V=3\iint_{r\le1}(1-r^2)dA=\frac{3\pi}{2}$。<br>$D$ 上 $\boldsymbol F\cdot\boldsymbol n=z=1$：flux $=\pi$。故 $\iint_S^{\text{外}}=\frac{3\pi}{2}-\pi=\frac\pi2$（外法向朝下，与 z 轴夹角钝角）。<br>所给定方向（与 z 轴成锐角）为其相反侧：$I=-\frac{\pi}{2}$。<br>（数值复核 $=-1.570796$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle -\frac{\pi a^3}{2}$</div>
+        <div class="steps"><p>Σ 上 $\sqrt{x^2+y^2+z^2}=a$：$I=\frac1a\iint_\Sigma ax\,dydz+(z+a)^2dxdy$。补 $D:\ z=0,\ x^2+y^2\le a^2$，$\boldsymbol n=(0,0,1)$（下半球体 Ω 的外侧面）。取 $\boldsymbol F=\big(x,\,0,\,\frac{(z+a)^2}{a}\big)$：$\text{div}=1+\frac{2(z+a)}{a}=3+\frac{2z}{a}$。<br>$$\oiint_\Omega=3\cdot\frac{2\pi a^3}{3}+\frac2a\iiint z\,dV=2\pi a^3+\frac2a\Big(-\frac{\pi a^4}{4}\Big)=\frac{3\pi a^3}{2}.$$<br>$D$ 上 $\boldsymbol F\cdot\boldsymbol n=\frac{(0+a)^2}{a}=a$：flux $=\pi a^3$。故 $\iint_\Sigma^{\text{外}}=\frac{3\pi a^3}{2}-\pi a^3=\frac{\pi a^3}{2}$。<br>Σ 的上侧（法向量朝上）指向球心，为内侧：$I=-\frac{\pi a^3}{2}$。（数值复核 $=-1.570796$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle -\pi$</div>
+        <div class="steps"><p>补 $D:\ z=0,\ x^2+y^2\le1$，$\boldsymbol n=(0,0,-1)$。$\text{div}=6x^2+6y^2+6z$。<br>$$\oiint=6\iiint_\Omega(x^2+y^2)dV+6\iiint_\Omega z\,dV=6\cdot\frac{\pi}{6}+6\cdot\frac{\pi}{6}=2\pi,$$<br>其中 $\iiint(x^2+y^2)dV=\int_0^1\frac{\pi}{2}(1-z)^2dz=\frac\pi6$，$\iiint z\,dV=\int_0^1 z\pi(1-z)dz=\frac\pi6$。<br>$D$ 上 $\boldsymbol F\cdot\boldsymbol n=-3(z^2-1)=3$：flux $=3\pi$。抛物面碗的外法向朝上，与上侧一致：$I=2\pi-3\pi=-\pi$。（数值复核 $=-3.141593$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle 2\pi$</div>
+        <div class="steps"><p>$\text{div}=1+2+3=6$。补 $D:\ z=1,\ x^2+y^2\le1$，$\boldsymbol n=(0,0,1)$：$\boldsymbol F\cdot\boldsymbol n=3(z-1)=0$，flux $=0$。<br>$$I=\oiint=6V=6\cdot\frac{\pi}{3}=2\pi.\quad(\text{数值复核}=6.283185\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（8）</span><div class="ansline">$\displaystyle \pi$</div>
+        <div class="steps"><p>补 $D:\ z=0,\ x^2+\frac{y^2}{4}\le1$（椭圆，面积 $2\pi$），$\boldsymbol n=(0,0,-1)$：$\boldsymbol F\cdot\boldsymbol n=-3xy$，由对称性 flux $=0$。$\text{div}=z+2z=3z$：<br>$$\oiint=\iiint_\Omega 3z\,dV=\int_0^1 3z\cdot\pi\sqrt{1-z}\cdot2\sqrt{1-z}\,dz=6\pi\int_0^1 z(1-z)dz=\pi.$$<br>Ω 的外法向在 Σ 上朝上，与上侧一致：$I=\pi$。（数值复核 $=3.141593$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（9）</span><div class="ansline">$\displaystyle 4\pi$</div>
+        <div class="steps"><p>补 $D:\ z=0,\ x^2+y^2\le4$，$\boldsymbol n=(0,0,-1)$：$\boldsymbol F\cdot\boldsymbol n=-x^2$，$\iint_D=-\frac12\iint_D(x^2+y^2)dA=-\frac12\int_0^{2\pi}\!\!\int_0^2 r^3dr\,d\theta=-4\pi$。<br>$\text{div}=y$：$\oiint=\iiint_\Omega y\,dV=0$（对称性）。上侧即上半球体外侧：<br>$$I=0-(-4\pi)=4\pi.\quad(\text{数值复核}=12.566371\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（10）</span><div class="ansline">$\displaystyle -4\pi$</div>
+        <div class="steps"><p>补 $D:\ z=1,\ x^2+y^2\le1$，$\boldsymbol n=(0,0,1)$：$\boldsymbol F\cdot\boldsymbol n=z-1=0$，flux $=0$。$\text{div}=3(x-1)^2+3(y-1)^2+1$。令 Ω$=\{x^2+y^2\le z\le1\}$：$\iiint x^2dV=\frac{\pi}{12}$，$V=\frac{\pi}{2}$，故 $\iiint(x-1)^2dV=\frac{\pi}{12}-0+\frac{\pi}{2}=\frac{7\pi}{12}$，同理 $y$。<br>$$\oiint=3\cdot\frac{7\pi}{12}+3\cdot\frac{7\pi}{12}+\frac{\pi}{2}=4\pi.$$<br>Ω 的外法向在 Σ（底面抛物面）上朝下，上侧为其反侧：$I=-4\pi$。（数值复核 $=-12.566371$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（11）</span><div class="ansline">$\displaystyle \frac{14\pi}{45}$</div>
+        <div class="steps"><p>补 $D:\ x=0,\ 3y^2+3z^2\le1$，$\boldsymbol n=(-1,0,0)$：$\boldsymbol F\cdot\boldsymbol n=-x=0$，flux $=0$。Ω$=\{x^2+3y^2+3z^2\le1,\ x\ge0\}$，$\text{div}=1+3y^2+3z^2$。<br>椭球半轴 $(1,\frac1{\sqrt3},\frac1{\sqrt3})$：$\iiint_1dV=\frac{2\pi}{9}$；$\iiint_{\text{椭球}}y^2dV=\frac{4\pi}{15}ab^3c=\frac{4\pi}{135}$，故 $\iiint_\Omega3y^2dV=3\cdot\frac{2\pi}{135}=\frac{2\pi}{45}$，同理 $z$。<br>$$\oiint=\frac{2\pi}{9}+\frac{2\pi}{45}+\frac{2\pi}{45}=\frac{14\pi}{45}.$$<br>前侧即外侧：$I=\frac{14\pi}{45}$。（解析投影法复核：$I=\iint_D\big[x+\frac{3y^4+6y+3z^4}{x}\big]dydz$，极坐标 $y=\frac{\rho\cos\theta}{\sqrt3},z=\frac{\rho\sin\theta}{\sqrt3}$ 逐项积分 $=\frac{2\pi}{9}+\frac{4\pi}{45}=\frac{14\pi}{45}$ ✓，数值 $=0.977384$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（12）</span><div class="ansline">$\displaystyle 4\pi$</div>
+        <div class="steps"><p>$\boldsymbol A=\frac{(x,y,z)}{r^3}$ 在 $r&gt;0$ 处 $\text{div}\,\boldsymbol A\equiv0$。Σ 内部含原点（奇点），作以原点为心、半径 ε 的球面 $\Sigma_\varepsilon$（外侧），在 Σ 与 Σ_ε 之间的区域用 Gauss：<br>$$I=\oiint_{\Sigma_\varepsilon{}^{\text{外}}}\frac{x\,dydz+y\,dzdx+z\,dxdy}{\varepsilon^3}=\frac{1}{\varepsilon^3}\cdot\frac{1}{\varepsilon^3}\cdot 3\cdot\frac{4}{3}\pi\varepsilon^3=4\pi.$$<br>（在 Σ_ε 上 $\boldsymbol A\cdot\boldsymbol n=\frac{1}{\varepsilon^2}$，$\oiint=\frac{1}{\varepsilon^2}\cdot4\pi\varepsilon^2=4\pi$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T6">
     <div class="qhead"><span class="qno">k59_T6</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">2020</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T6_0.png" alt="k59_T6 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle \frac{14\pi}{3}$</div>
+        <div class="steps"><p>下侧投影公式：$\hat{\boldsymbol n}dS=(z_x,z_y,-1)dxdy$，$z=r$，$z_x=\frac xr,\ z_y=\frac yr$，投影 $D:\ 1\le x^2+y^2\le4$。<br>$$I=\iint_D\Big\{[xf(xy)+2x-y]\frac xr+[yf(xy)+2y+x]\frac yr-[rf(xy)+r]\Big\}dxdy.$$<br>f(xy) 的系数：$f\cdot\big(\frac{x^2+y^2}{r}-r\big)=f\cdot(r-r)=0$，与 f 无关地完全消去。剩余项：<br>$$\frac{2x^2-xy+2y^2+xy}{r}-r=\frac{2r^2}{r}-r=r.$$<br>$$I=\iint_D r\,dxdy=\int_0^{2\pi}\!\!\int_1^2 r^2dr\,d\theta=2\pi\cdot\frac{7}{3}=\frac{14\pi}{3}.$$<br>（取 $f(u)=e^u+\sin u^2$ 数值复核 $=14.660766=\frac{14\pi}{3}$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle A$</div>
+        <div class="steps"><p>上侧曲面 $z=z(x,y)$ 的转换公式：$\hat{\boldsymbol n}dS=(-z_x,-z_y,1)dxdy$。$z=\sqrt{1-x^2-y^2}$，$z_x=-\frac xz,\ z_y=-\frac yz$，故 $-z_x=\frac xz,\ -z_y=\frac yz$。<br>$$\iint_\Sigma P\,dydz+Q\,dzdx=\iint_D\Big(\frac{x}{z}P+\frac{y}{z}Q\Big)dxdy.\quad\text{选 A.}$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T7">
     <div class="qhead"><span class="qno">k59_T7</span>
-      
+      <span class="badge">共 2 小题</span><span class="badge year">1992</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T7_0.png" alt="k59_T7 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -3\pi$</div>
+        <div class="steps"><p>**旋转面**：母线为 z 轴，旋转轴为直线 $\{x=0,\ y=z\}$（方向 $(0,1,1)$），夹角 $45^\circ$，故曲面为半角 $45^\circ$ 的锥面：$\frac{(y+z)^2}{2}=x^2+y^2+z^2$，即 $x^2=2yz$。<br>**区域**：$\Omega=\{x^2\le2yz,\ 0\le x+y+z=:c\le1\}$。平面 $c=0$ 与锥仅交于原点（代入得 $(x+y)^2+y^2=0$）；$c=c_0&gt;0$ 的截面在 xOy 上的投影为 $E_{c_0}=\{(x,y): (x+y)^2+(y-c_0)^2\le c_0^2\}$（面积 $\pi c_0^2$，线性替换 $u=x+y,\ v=y-c$ 行列式为 1）。故<br>$$V=\int_0^1|E_c|\,dc=\int_0^1\pi c^2dc=\frac{\pi}{3}.$$<br>**Gauss**：$\text{div}\,\boldsymbol F=3$。补 $D_1$：$x+y+z=1$ 上的 $E_1$，外法向 $\boldsymbol n=\frac{(1,1,1)}{\sqrt3}$：<br>$$\boldsymbol F\cdot\boldsymbol n=\frac{x+y+1+z+2}{\sqrt3}=\frac{c+3}{\sqrt3}=\frac4{\sqrt3},\quad dS=\sqrt3\,dxdy\Rightarrow \iint_{D_1}=4|E_1|=4\pi.$$<br>锥面块的外侧即 Ω 的外侧：$I=\oiint-\iint_{D_1}=3V-4\pi=\pi-4\pi=-3\pi$。<br>（数值验证：锥面 $(\rho,\theta)$ 参数化直接计算通量 $=-9.424778=-3\pi$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle \xi=\frac{\sqrt3}{3}a,\ \eta=\frac{\sqrt3}{3}b,\ \zeta=\frac{\sqrt3}{3}c；W_{\max}=\frac{\sqrt3}{9}abc$</div>
+        <div class="steps"><p>沿直线 $(t\xi,t\eta,t\zeta)\ (0\le t\le1)$：$\boldsymbol F\cdot d\boldsymbol r=\big(yz\xi+zx\eta+xy\zeta\big)dt=3\xi\eta\zeta\,t^2dt$。<br>$$W=\int_0^1 3\xi\eta\zeta\,t^2dt=\xi\eta\zeta.$$<br>条件极值：$L=\xi\eta\zeta-\lambda\big(\frac{\xi^2}{a^2}+\frac{\eta^2}{b^2}+\frac{\zeta^2}{c^2}-1\big)$，驻点满足 $\eta\zeta=\frac{2\lambda\xi}{a^2}$ 等，三式分别乘 $\xi,\eta,\zeta$ 后相加得 $3\xi\eta\zeta=2\lambda$，进而 $\frac{\xi^2}{a^2}=\frac{\eta^2}{b^2}=\frac{\zeta^2}{c^2}=\frac13$。<br>$$\xi=\frac{\sqrt3}{3}a,\quad\eta=\frac{\sqrt3}{3}b,\quad\zeta=\frac{\sqrt3}{3}c,\quad W_{\max}=\xi\eta\zeta=\frac{abc}{3\sqrt3}=\frac{\sqrt3}{9}abc.$$<br>（边界上 $W=0$，故为最大值。）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 
   <div class="card q" id="k59_T8">
     <div class="qhead"><span class="qno">k59_T8</span>
-      
+      <span class="badge">共 7 小题</span><span class="badge year">1997</span> <span class="badge year">2001</span> <span class="badge year">2011</span> <span class="badge year">2014</span> <span class="badge year">2015</span> <span class="badge year">2022</span> <span class="badge year">2024</span>
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k59_T8_0.png" alt="k59_T8 题目图 1"><img class="qimg" loading="lazy" src="../../assets/q/up/k59_T8_1.png" alt="k59_T8 题目图 2">
-    <details class="ans"><summary>展开答案与详解（状态：pending）</summary>
-      <div class="placeholder">解析整理中，先自行作答后展开对照。</div>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
+      
+      <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle -2\pi$</div>
+        <div class="steps"><p>Stokes，取 C 所围的平面片（$x-y+z=2$ 内柱内部分）。$\text{rot}\,\boldsymbol F=(0,0,2)$。从 $+z$ 看顺时针 $\Rightarrow$ 按右手法则法向量朝下：$\boldsymbol n=\frac{(1,-1,-1)}{\sqrt3}$。<br>$$\oint_C=\iint_\Sigma(0,0,2)\cdot\frac{(1,-1,-1)}{\sqrt3}dS=-\frac{2}{\sqrt3}\iint_\Sigma dS.$$<br>平面片在 xOy 投影为单位圆，$dS=\sqrt{1+z_x^2+z_y^2}dxdy=\sqrt3\,dxdy$，面积 $=\sqrt3\pi$。<br>$$I=-\frac{2}{\sqrt3}\cdot\sqrt3\pi=-2\pi.\quad(\text{数值复核}=-6.283185\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（2）</span><div class="ansline">$\displaystyle -24$</div>
+        <div class="steps"><p>Stokes，取平面片上侧：$\hat{\boldsymbol n}dS=(1,1,1)dxdy$，$D:\ |x|+|y|\le1$（面积 2）。<br>$\text{rot}\,\boldsymbol F=(-2y-4z,\ -2z-6x,\ -2x-2y)$，点乘得 $-8x-4y-6z$，代 $z=2-x-y$：$-2x+2y-12$。<br>$$I=\iint_D(-2x+2y-12)dA=0+0-12\cdot2=-24.\quad(\text{数值复核}=-24.000000\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（3）</span><div class="ansline">$\displaystyle \pi$</div>
+        <div class="steps"><p>Stokes，取平面片 $z=x+y$ 上侧：$\hat{\boldsymbol n}dS=(-z_x,-z_y,1)dxdy=(-1,-1,1)dxdy$，$D:\ x^2+y^2\le1$。$\text{rot}=(y,x,1)$：<br>$$\text{rot}\cdot\hat{\boldsymbol n}dS=(-y-x+1)dxdy\Rightarrow I=\iint_D(1-x-y)dxdy=\pi-0-0=\pi.$$<br>（数值复核 $=3.141593$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（4）</span><div class="ansline">$\displaystyle \pi$</div>
+        <div class="steps"><p>$\text{rot}\,(z,0,y)=(1,1,0)$。取平面片 $z=-y$ 上侧：$\hat{\boldsymbol n}dS=(-z_x,-z_y,1)dxdy=(0,1,1)dxdy$，$D$ 为单位圆盘。<br>$$I=\iint_D(0\cdot1+1\cdot1+0)dxdy=\pi.\quad(\text{数值复核}=3.141593\ \checkmark)$$</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（5）</span><div class="ansline">$\displaystyle \frac{5\sqrt{2}\pi}{8}$</div>
+        <div class="steps"><p>由 $z=\sqrt{2-x^2-y^2}\ge0$ 且 $z=x$ 知 $L$ 为 $x\ge0$ 的半椭圆 $2x^2+y^2=2,\ z=x$。参数化（$A\to B$）：$x=\cos t,\ y=\sqrt2\sin t,\ z=\cos t$，$t:\ \frac\pi2\to-\frac\pi2$；$dx=dz=-\sin t\,dt,\ dy=\sqrt2\cos t\,dt$。<br>$$I=\int_{\pi/2}^{-\pi/2}\big[-\sqrt2\sin^2t-\sin t\cos t+2\sin t\cos t-\sqrt2\sin^2t\cos^2t\big]dt.$$<br>翻转积分限并利用奇偶性（$\sin t\cos t$ 为奇）：<br>$$I=\int_{-\pi/2}^{\pi/2}\big[\sqrt2\sin^2t-\sin t\cos t+\sqrt2\sin^2t\cos^2t\big]dt=\sqrt2\cdot\frac{\pi}{2}-0+\sqrt2\cdot\frac{\pi}{8}=\frac{5\sqrt2\pi}{8}.$$<br>（数值复核 $=2.776802$ ✓）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：B 错：参数化 x=cos t, y=√2 sin t, z=cos t（t: π/2→-π/2）积分得 √2·π/2+√2·π/8=5√2π/8，B 漏掉 x²y dz 项贡献的 √2π/8（数值复核 2.776802 ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（6）</span><div class="ansline">$\displaystyle 0$</div>
+        <div class="steps"><p>L 是闭曲线（椭球第一卦限片的三段弧）。$\text{rot}\,\boldsymbol F=(-2xz,\ 0,\ z^2)$。<br>补三块坐标面薄片与 Σ（外向）构成闭曲面：$\Sigma_1(z=0,\boldsymbol n=(0,0,-1))$ 上 $\text{rot}\cdot\boldsymbol n=0$；$\Sigma_2(x=0,\boldsymbol n=(-1,0,0))$ 上 $\text{rot}\cdot\boldsymbol n=2xz=0$；$\Sigma_3(y=0,\boldsymbol n=(0,-1,0))$ 上 $\text{rot}\cdot\boldsymbol n=0$。<br>由 $\text{div}(\text{rot}\,\boldsymbol F)\equiv0$：$\oiint_{\text{闭}}=0$，故 $I=\iint_\Sigma^{\text{上}}\text{rot}\cdot\boldsymbol n\,dS=0$。<br>（投影法复核：$I=\iint_D(-8x^2+z^2)dxdy$，$z^2=1-4x^2-y^2$，$u=2x,v=y$ 变换后 $=\frac12\iint_{\text{四分之一单位圆}}(1-3u^2-v^2)dudv=\frac12\big(\frac\pi4-\frac{3\pi}{16}-\frac{\pi}{16}\big)=0$ ✓，直接分段线积分数值亦 $=0$ ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
+      <div class="sub-a"><span class="sno">（7）</span><div class="ansline">$\displaystyle \frac{4\sqrt{5}\pi}{25}$</div>
+        <div class="steps"><p>Stokes，取平面片 $z=2x-1$ 上侧：$\hat{\boldsymbol n}dS=(-z_x,-z_y,1)dxdy=(-2,0,1)dxdy$。$\text{rot}=(xz-2x^2,\ 6xy-3yz,\ z^2-2xz)$：<br>$$\text{rot}\cdot\hat{\boldsymbol n}dS=\big[-2(xz-2x^2)+(z^2-2xz)\big]dxdy=(4x^2-4xz+z^2)dxdy=(2x-z)^2dxdy.$$<br>平面上 $2x-z\equiv1$，故被积式 $\equiv1$，$I=$ 投影椭圆 $D$ 的面积。代入 $z=2x-1$ 于球面：$5(x-\frac35)^2+y^2=\frac45$，即 $(x-\frac35)^2/\frac{4}{25}+y^2/\frac45=1$，半轴 $\frac25,\ \frac{2}{\sqrt5}$：<br>$$I=\pi\cdot\frac25\cdot\frac{2}{\sqrt5}=\frac{4\pi}{5\sqrt5}=\frac{4\sqrt5\pi}{25}.$$<br>（数值复核：沿交线直接积分 $=1.123970$ ✓）</p>
+<p>【仲裁修正】独立校验发现分歧，经仲裁重解，以本答案为准：A 错：rot·n̂dS=(2x-z)²dxdy≡1，I=投影椭圆面积 π·(2/5)·(2/√5)=4√5π/25，A 把椭圆面积算成 π/√5（数值复核 1.123970 ✓）</p></div>
+        <div class="src"><span class="badge src-self">【自解】</span></div>
+      </div>
     </details>
   </div>
 <div class="pager"><span></span><span></span></div>

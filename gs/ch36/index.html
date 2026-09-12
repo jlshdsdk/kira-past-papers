@@ -17,7 +17,7 @@
 <div class="wrap">
 <div class="crumbs"><a href="../../index.html">首页</a> / <a href="../index.html">高等数学</a> / 考点 36</div>
 <h1 class="title">考点 36　二重积分的定义与性质</h1>
-<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一二、题型二二 · 解析完成 0/4　</div>
+<div class="sub">题组 4 · 覆盖年份 — · 题型：题型一二、题型二二 · 解析完成 4/4　</div>
 
   <div class="card q" id="k36_T1">
     <div class="qhead"><span class="qno">k36_T1</span>
@@ -25,7 +25,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px">（原书标签 例5.36.1）</span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k36_T1_0.png" alt="k36_T1 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle D$</div>
         <div class="steps"><p>把通项凑成黎曼和：<br>$$\frac{n}{(n+i)(n^{2}+j^{2})}=\frac{n}{n(1+i/n)\cdot n^{2}(1+(j/n)^{2})}=\frac{1}{n^{2}}\cdot\frac{1}{\left(1+\frac{i}{n}\right)\left(1+\frac{j^{2}}{n^{2}}\right)}$$<br>故原式 $=\lim\limits_{n\to\infty}\dfrac{1}{n^{2}}\sum_{i=1}^{n}\sum_{j=1}^{n}f\left(\dfrac{i}{n},\dfrac{j}{n}\right)$，其中 $f(x,y)=\dfrac{1}{(1+x)(1+y^{2})}$，分割为 $[0,1]$ 上步长 $1/n$ 的方格、取点 $\left(\dfrac{i}{n},\dfrac{j}{n}\right)$（每格面积 $\dfrac{1}{n^{2}}$），由 $f$ 连续，极限为<br>$$\int_{0}^{1}\!dx\int_{0}^{1}\frac{1}{(1+x)(1+y^{2})}\,dy$$<br>对照选项，D 正确（A、B 区域上限错，C 中 $1+y$ 应为 $1+y^2$）。</p></div>
@@ -44,7 +44,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k36_T2_0.png" alt="k36_T2 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
         <div class="steps"><p>$D=\{-1\le x\le1,\ x\le y\le1\}$，$D_1=\{0\le x\le1,\ x\le y\le1\}$。<br>先算 $xy$ 项：<br>$$\iint_{D}xy\,dxdy=\int_{-1}^{1}x\,dx\int_{x}^{1}y\,dy=\int_{-1}^{1}x\cdot\frac{1-x^{2}}{2}\,dx=\frac12\int_{-1}^{1}(x-x^{3})\,dx=0\ (奇函数)$$<br>再算 $\cos x\sin y$ 项：<br>$$\iint_{D}\cos x\sin y\,dxdy=\int_{-1}^{1}\cos x\,dx\int_{x}^{1}\sin y\,dy=\int_{-1}^{1}\cos x(\cos x-\cos 1)\,dx$$<br>被积函数为 $x$ 的偶函数，且 $\int_x^1\sin y\,dy$ 与 $D_1$ 上的内层积分一致，故<br>$$=2\int_{0}^{1}\cos x(\cos x-\cos 1)\,dx=2\iint_{D_{1}}\cos x\sin y\,dxdy$$<br>所以 $\displaystyle\iint_{D}(xy+\cos x\sin y)\,dxdy=2\iint_{D_{1}}\cos x\sin y\,dxdy$，选 A。</p></div>
@@ -59,7 +59,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k36_T3_0.png" alt="k36_T3 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
         <div class="steps"><p>在 $D$ 上记 $r=\sqrt{x^{2}+y^{2}}\in[0,1]$，三个被积函数为 $\cos r,\ \cos r^{2},\ \cos r^{4}$。<br>当 $0&lt;r&lt;1$ 时 $r&gt;r^{2}&gt;r^{4}$；又 $\cos u$ 在 $[0,1]\subset[0,\tfrac{\pi}{2})$ 上严格单调递减，故<br>$$\cos r&lt;\cos r^{2}&lt;\cos r^{4}\quad(0&lt;r&lt;1)$$<br>不等式在正面积集合上严格成立，积分保持严格不等：$I_1&lt;I_2&lt;I_3$，即 $I_3&gt;I_2&gt;I_1$，选 A。</p></div>
@@ -78,7 +78,7 @@
       <span class="meta" style="color:var(--muted);font-size:12.5px"></span>
     </div>
     <img class="qimg" loading="lazy" src="../../assets/q/up/k36_T4_0.png" alt="k36_T4 题目图 1">
-    <details class="ans"><summary>展开答案与详解（状态：answered）</summary>
+    <details class="ans"><summary>展开答案与详解（状态：verifiedB）</summary>
       
       <div class="sub-a"><span class="sno">（1）</span><div class="ansline">$\displaystyle A$</div>
         <div class="steps"><p>因 $|x|\le1&lt;\tfrac{\pi}{2}$，被积函数中 $\cos x&gt;0$。<br>$D_1$（上）与 $D_3$（下）关于 $x$ 轴对称，$y\cos x$ 关于 $y$ 为奇函数，故 $I_3=-I_1$；<br>$D_2$（左）与 $D_4$（右）关于 $y$ 轴对称，$\cos x$ 为偶函数，故 $I_2=I_4$。具体计算：$D_2=\{-1\le x\le0,\ x\le y\le -x\}$，<br>$$I_2=\int_{-1}^{0}\cos x\,dx\int_{x}^{-x}y\,dy=\int_{-1}^{0}\cos x\cdot\frac{x^{2}-x^{2}}{2}\,dx=0$$<br>故 $I_2=I_4=0$。<br>$D_1=\{0\le y\le1,\ -y\le x\le y\}$：<br>$$I_1=\int_{0}^{1}y\,dy\int_{-y}^{y}\cos x\,dx=\int_{0}^{1}2y\sin y\,dy&gt;0$$<br>故 $\max=I_1&gt;0=I_2=I_4&gt;-I_1=I_3$，选 A。</p></div>
